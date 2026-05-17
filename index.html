@@ -11,7 +11,7 @@
 <style>
 .taos-top-nav{position:sticky;top:0;z-index:9999;background:rgba(10,6,18,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(139,92,246,.22);padding:12px 24px;font-family:Inter,system-ui,sans-serif}.taos-top-nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px}.taos-top-brand{font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a78bfa}.taos-top-links{display:flex;gap:8px;flex-wrap:wrap}.taos-top-links a{color:#a89cc7;text-decoration:none;border:1px solid rgba(139,92,246,.22);background:#1f1538;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:700}.taos-top-links a.active{color:white;background:linear-gradient(135deg,#8b5cf6,#a78bfa);border-color:transparent}@media(max-width:640px){.taos-top-nav-inner{align-items:flex-start;flex-direction:column}.taos-top-nav{padding:10px 16px}.taos-top-links a{font-size:12px;padding:7px 10px}}
 </style>
-<nav class="taos-top-nav"><div class="taos-top-nav-inner"><div class="taos-top-brand">TAOS · Central XDental</div><div class="taos-top-links"><a class="active" href="/">Painel Operacional</a><a href="/processos.html">Processos</a><a href="/lowtickets.html">Low Tickets</a></div></div></nav>
+<nav class="taos-top-nav"><div class="taos-top-nav-inner"><div class="taos-top-brand">TAOS · Central XDental</div><div class="taos-top-links"><a class="active" href="./">Painel Operacional</a><a href="processos.html">Processos</a><a href="lowtickets.html">Low Tickets</a></div></div></nav>
 <div class="dashboard-root">
 <style>
   /* === FONTES === */
@@ -1398,7 +1398,7 @@
   <section class="kanban-section">
     <h2 class="kanban-section-title">
       🎯 Kanban por Frente
-      <span class="kanban-section-count">9 frentes ativas</span>
+      <span class="kanban-section-count">9 frentes ativas · atualizado 17/05</span>
     </h2>
 
     <div class="kanban-actions">
@@ -1406,23 +1406,19 @@
       <button class="kanban-action-btn" id="collapse-all">Recolher todas</button>
     </div>
 
-    <!-- FRENTE 1: LOW TICKETS -->
-    <article class="frente-card" data-frente="lowticket" style="animation-delay: 0.4s">
+    <article class="frente-card" data-frente="lowticket">
       <div class="frente-head">
         <div class="frente-title">
           <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
           <div class="frente-icon">🛒</div>
           <div>
             <div class="frente-name">Low Tickets</div>
-            <div class="frente-id">FRENTE 1 · consolidado atualizado 14/05 · ROAS 1,97x</div>
+            <div class="frente-id">FRENTE 1 · esteira criativos atualizada 18/05</div>
           </div>
         </div>
         <div class="frente-summary">
-          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>2</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>1</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
-          <div class="frente-health">
-          <span class="health-dot green"></span>
-          Consolidado · $8.809,87 receita · +$4.346,42 lucro
-        </div>
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>3</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>2</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health"><span class="health-dot green"></span>Sérgio entregou 40 criativos · próxima trava é edição/subida</div>
         </div>
       </div>
       <div class="frente-body">
@@ -1430,55 +1426,52 @@
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
-            <span class="kanban-col-count">2</span>
+            <span class="kanban-col-count">3</span>
           </div>
-          <div class="kanban-card priority p1">Consolidado atualizado · 5 produtos<div class="kanban-card-meta">Receita $8.809,87 · Investimento $4.463,45 · 849 vendas · ROAS 1,97x · Lucro +$4.346,42</div></div>
-          <div class="kanban-card">40 criativos Sérgio recebidos · enviar para Chicão</div>
-          <div class="kanban-card">Engrenagem Ruan: Sérgio → Ruan → Chicão → Ruan → Batista + Bruno copies</div>
+          <div class="kanban-card priority p1">Enviar 40 criativos do Sérgio para Chicão<div class="kanban-card-meta">Pedido: edição dos criativos dos 6 produtos low ticket</div></div>
+          <div class="kanban-card">Mapear esteira Ruan: Sérgio → Chicão → Batista + Bruno copies<div class="kanban-card-meta">Ruan é o conector operacional entre gravação, edição, copy e tráfego</div></div>
+          <div class="kanban-card">Checar radar 0 vendas do fim de semana<div class="kanban-card-meta">Hotmart como fonte da verdade; acionar checklist se produto zerar</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
-            <span class="kanban-col-count">1</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card wait">Edição Chicão pendente após envio dos 40 criativos</div>
+          <div class="kanban-card">Chicão editar os criativos após receber arquivos<div class="kanban-card-meta">Depois volta para Ruan repassar ao Batista</div></div>
+          <div class="kanban-card">Bruno entregar/organizar copies correspondentes<div class="kanban-card-meta">Casar copy com criativo/produto antes da subida</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
-            <span class="kanban-col-count">1</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card">Protocolo de Attachments corrigido<div class="kanban-card-meta">ROAS 0,57x · Vendas 10 · Receita $105,41 · Investimento $183,55 · Lucro -$78,14 · CAC $18,36</div></div>
-          <div class="kanban-card">Reunião semanal qua 13/05 · 14h<div class="kanban-card-meta">Bruno + Batista</div></div>
+          <div class="kanban-card priority p1">Batista subir novos criativos nas campanhas Meta<div class="kanban-card-meta">Após edição + copy + organização por produto</div></div>
+          <div class="kanban-card">Ativar 4 order bumps + combo nos 6 produtos<div class="kanban-card-meta">Meta mínima: 20% conversão do combo</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
             <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card">Ciclo semana anterior fechado</div>
+          <div class="kanban-card">Sérgio gravou e entregou 40 criativos<div class="kanban-card-meta">Atualizado por Ruan em 17/05</div></div>
         </div>
-      </div>
+        </div>
       </div>
     </article>
 
-    <!-- FRENTE 2: SNIPER VIP -->
-    <article class="frente-card" data-frente="sniper" style="animation-delay: 0.45s">
+    <article class="frente-card" data-frente="sniper">
       <div class="frente-head">
         <div class="frente-title">
           <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
           <div class="frente-icon">🎯</div>
           <div>
             <div class="frente-name">Sniper VIP</div>
-            <div class="frente-id">FRENTE 2 · T-15 dias · 25-27/05</div>
+            <div class="frente-id">FRENTE 2 · última semana antes do evento 25–27/05</div>
           </div>
         </div>
         <div class="frente-summary">
-          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>4</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>3</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>8</span></div>
-          <div class="frente-health">
-          <span class="health-dot yellow"></span>
-          Atenção · 5 itens sem valor lançado
-        </div>
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>2</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>2</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health"><span class="health-dot orange"></span>P0 operacional · fechar material e logística</div>
         </div>
       </div>
       <div class="frente-body">
@@ -1486,67 +1479,51 @@
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
-            <span class="kanban-col-count">4</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card priority p1">🍇 Pagar 40% açaí HOJE<div class="kanban-card-meta">R$ 100 · total R$ 250 · resto a confirmar</div></div>
-          <div class="kanban-card">Lilian · info pagamentos pré-evento<div class="kanban-card-meta">conversa de hoje</div></div>
-          <div class="kanban-card priority p2">Antecipar: cardápio Bassi<div class="kanban-card-meta">Lilian sem retorno</div></div>
-          <div class="kanban-card priority p2">Antecipar: orçamento almoço dia 3<div class="kanban-card-meta">Centervale vs rua lateral</div></div>
-          <div class="kanban-card priority p2">Antecipar: definir barista<div class="kanban-card-meta">sem retorno · decidir cancelar?</div></div>
+          <div class="kanban-card priority p1">Abrir checklist final da semana do evento<div class="kanban-card-meta">Workbook, cronograma, crachás, certificado, gráfica, logística e transfers</div></div>
+          <div class="kanban-card priority p1">Validar pacote Klyro e encaminhar para gráfica<div class="kanban-card-meta">Nome correto confirmado pelo Ruan: Klyro.</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
-            <span class="kanban-col-count">3</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card">Cardápio Bassi (Happy Hour)</div>
-          <div class="kanban-card">Orçamentos almoço dia 3 (2 opções)</div>
-          <div class="kanban-card">Barista · sem retorno</div>
+          <div class="kanban-card">Klyro finalizar/ajustar materiais finais<div class="kanban-card-meta">Capa workbook, cronograma, crachás, certificado</div></div>
+          <div class="kanban-card">Confirmações logísticas finais<div class="kanban-card-meta">Bassi, barista, almoço dia 3, transfers e compras</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
             <span class="kanban-col-count">2</span>
           </div>
-          
-          
-          <div class="kanban-card priority p1">Reunião 15h com equipe de design Klyro + envio do pacote SVIP<div class="kanban-card-meta">explicar na reunião e enviar depois: capa workbook + cronograma do evento + crachás + certificado · entrega qui 14/05</div></div>
+          <div class="kanban-card priority p1">Enviar materiais aprovados para gráfica<div class="kanban-card-meta">Assim que Klyro fechar versão final</div></div>
+          <div class="kanban-card">Preparar fechamento diário até o evento<div class="kanban-card-meta">Evitar pendência virar urgência na semana do SVIP</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
-            <span class="kanban-col-count">8</span>
+            <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card">✓ Workbook entregue pelo Sérgio (sem capa) · 12/05</div>
-          <div class="kanban-card">✓ Compra Shopee · aventais cirúrgicos · 12/05</div>
-          <div class="kanban-card">✓ 50% churrasco PAGO (sex 08/05) · comprovante na arena</div>
-          <div class="kanban-card">✓ Briefing transfers enviado pras empresas (11/05)</div>
-          <div class="kanban-card">✓ Coffees 25/26 · Lilian + padaria</div>
-          <div class="kanban-card">✓ Amicci jantar dia 1 OK</div>
-          <div class="kanban-card">✓ Camisas em produção</div>
-          <div class="kanban-card">✓ Brindes definidos</div>
+          <div class="kanban-card">Reunião/design Klyro realizada e pacote mapeado<div class="kanban-card-meta">Base do pacote já definida</div></div>
         </div>
-      </div>
+        </div>
       </div>
     </article>
 
-    <!-- FRENTE 3: DIPLOMADO -->
-    <article class="frente-card" data-frente="diplomado" style="animation-delay: 0.5s">
+    <article class="frente-card" data-frente="diplomado">
       <div class="frente-head">
         <div class="frente-title">
           <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
           <div class="frente-icon">🎓</div>
           <div>
             <div class="frente-name">Diplomado Ortho Pro</div>
-            <div class="frente-id">FRENTE 3 · M5 em diagramação · M4 prova em produção</div>
+            <div class="frente-id">FRENTE 3 · M5 em andamento</div>
           </div>
         </div>
         <div class="frente-summary">
-          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>2</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>1</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>3</span></div>
-          <div class="frente-health">
-          <span class="health-dot green"></span>
-          Saudável · M5 + M4 sob controle
-        </div>
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>1</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>1</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health"><span class="health-dot green"></span>Próxima data crítica: M5 Encuentro + exame 26/05</div>
         </div>
       </div>
       <div class="frente-body">
@@ -1554,56 +1531,49 @@
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
-            <span class="kanban-col-count">2</span>
+            <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card priority p1">Prova M4 · plataforma separada Felipe<div class="kanban-card-meta">tela login separada · libera sex 15/05</div></div>
-          <div class="kanban-card priority p2">M6 · alinhamento c/ Sérgio (tema + gravação)</div>
+          <div class="kanban-card">Monitorar M5 José Rodriguez<div class="kanban-card-meta">Encuentro 26/05 às 11h México; exame 13h México</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
             <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card">Klyro diagramando M5<div class="kanban-card-meta">deadline sex 15/05</div></div>
+          <div class="kanban-card">Mônica/Felipe operação de prova e liberação<div class="kanban-card-meta">Confirmar material e comunicação antes do dia 26/05</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
             <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card">Liberação prova M4 (sex 15/05)</div>
-          <div class="kanban-card">Encuentro M5 · José Rodríguez (26/05)</div>
+          <div class="kanban-card">Preparar M6 Sérgio Cury — aula 01/06<div class="kanban-card-meta">Confirmar agenda e comunicação do próximo módulo</div></div>
+          <div class="kanban-card priority p1">Resolver conflito M8 × Chile até 30/06<div class="kanban-card-meta">Encuentro M8 cai em 25/08, dia de montagem/viagem Chile</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
-            <span class="kanban-col-count">3</span>
+            <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card">✓ Pacote M5 enviado pra Klyro</div>
-          <div class="kanban-card">✓ 10 questões M4 + gabarito</div>
-          <div class="kanban-card">✓ Slides M5 HD no Drive</div>
+          <div class="kanban-card">Cronograma 2026 ingerido no TAOS<div class="kanban-card-meta">Fonte de referência já registrada</div></div>
         </div>
-      </div>
+        </div>
       </div>
     </article>
 
-    <!-- FRENTE 4: PLATAFORMA DE ASSINATURA -->
-    <article class="frente-card" data-frente="plataforma" style="animation-delay: 0.55s">
+    <article class="frente-card" data-frente="plataforma">
       <div class="frente-head">
         <div class="frente-title">
           <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
           <div class="frente-icon">🎬</div>
           <div>
             <div class="frente-name">Plataforma de Assinatura</div>
-            <div class="frente-id">FRENTE 4 · P0 divulgação Plataforma XDental + Paul Medina</div>
+            <div class="frente-id">FRENTE 4 · Paul Medina + encontro pausado</div>
           </div>
         </div>
         <div class="frente-summary">
-          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>3</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>4</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>3</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>6</span></div>
-          <div class="frente-health">
-          <span class="health-dot orange"></span>
-          P0 · pacote hoje + Paul 18/05
-        </div>
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>2</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>2</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health"><span class="health-dot orange"></span>Encontro com Sérgio provavelmente abortado esta semana</div>
         </div>
       </div>
       <div class="frente-body">
@@ -1611,66 +1581,51 @@
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
-            <span class="kanban-col-count">3</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card priority p0">Produzir pacote divulgação Plataforma XDental HOJE<div class="kanban-card-meta">imagens + legendas + mensagens · encontro 18/05 21h BR</div></div>
-          <div class="kanban-card priority p0">Montar sequência disparos API<div class="kanban-card-meta">início sexta 15/05 · convite assinantes para 18/05</div></div>
-          <div class="kanban-card priority p1">Nova plataforma Felipe<div class="kanban-card-meta">apresentação aos assinantes 18/05 21h BR</div></div>
-          
-
+          <div class="kanban-card priority p1">Falar com Paul Medina / confirmar entrega 101 Tips<div class="kanban-card-meta">Entrega prometida para segunda 18/05</div></div>
+          <div class="kanban-card priority p1">Registrar decisão sobre pausar apresentação da nova plataforma<div class="kanban-card-meta">Evitar disparos soltos se Sérgio não puder apresentar</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
-            <span class="kanban-col-count">4</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card priority p1">Paul Medina · aguardando entrega até seg 18/05<div class="kanban-card-meta">Curso 101 Tips para Plataforma de Assinatura · pediu extensão do prazo</div></div>
-          <div class="kanban-card">Joaquim Ariza · Ferramenta 2.1 enviada, aguardando dados</div>
-          <div class="kanban-card">Fernando Pari · 1ª msg enviada, aguardando resposta</div>
-          <div class="kanban-card">Victor Arguedas · Ferramenta 2.1 enviada, aguardando resposta</div>
+          <div class="kanban-card">Paul Medina entregar curso 101 Tips<div class="kanban-card-meta">Curso para Plataforma XDental</div></div>
+          <div class="kanban-card">Sérgio confirmar nova janela da apresentação<div class="kanban-card-meta">Sem isso, comunicação fica pausada</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
-            <span class="kanban-col-count">3</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card">Auditoria planilha cursos · ter 12/05</div>
-          <div class="kanban-card">Pipeline Jul-Set c/ Sérgio</div>
-          <div class="kanban-card">Revisão semanal · sex 17h</div>
+          <div class="kanban-card priority p1">Se pausar, remarcar campanha e sequência de mensagens<div class="kanban-card-meta">Replanejar quando houver data real</div></div>
+          <div class="kanban-card">Se entrega Paul chegar, encaminhar fluxo para edição/publicação<div class="kanban-card-meta">Chicão edita; Mônica publica</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
-            <span class="kanban-col-count">6</span>
+            <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card">✓ Marcos Prieto liberado (08/05)</div>
-          <div class="kanban-card">✓ Tema Paul Medina confirmado · "101 Tips alineadores"</div>
-          <div class="kanban-card">✓ Mensagem Mônica liberar acesso Joaquim (11/05)</div>
-          <div class="kanban-card">✓ Ferramenta 2.1 → Joaquim Ariza (11/05)</div>
-          <div class="kanban-card">✓ Mensagem → Fernando Pari (11/05)</div>
-          <div class="kanban-card">✓ Mensagem → Victor Arguedas (11/05)</div>
+          <div class="kanban-card">Base/copy da campanha de apresentação foi estruturada<div class="kanban-card-meta">Mensagens e peças base existem, mas dependem da data</div></div>
         </div>
-      </div>
+        </div>
       </div>
     </article>
 
-    <!-- FRENTE 5: CHILE -->
-    <article class="frente-card" data-frente="chile" style="animation-delay: 0.6s">
+    <article class="frente-card" data-frente="chile">
       <div class="frente-head">
         <div class="frente-title">
           <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
           <div class="frente-icon">🇨🇱</div>
           <div>
-            <div class="frente-name">Chile · XX CIOCH Santiago</div>
-            <div class="frente-id">FRENTE 5 · T-108 dias · 26-28/08</div>
+            <div class="frente-name">Chile / CIOCH</div>
+            <div class="frente-id">FRENTE 5 · congresso agosto</div>
           </div>
         </div>
         <div class="frente-summary">
-          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>1</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>2</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>2</span></div>
-          <div class="frente-health">
-          <span class="health-dot orange"></span>
-          Avançando lento · várias decisões em aberto
-        </div>
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>2</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>1</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health"><span class="health-dot orange"></span>Prazos críticos preservados · decisões pendentes</div>
         </div>
       </div>
       <div class="frente-body">
@@ -1678,56 +1633,50 @@
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
-            <span class="kanban-col-count">1</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          
-          <div class="kanban-card">Verificar email · qual stand foi definido</div>
+          <div class="kanban-card priority p1">Confirmar status do 2º pagamento do patrocínio<div class="kanban-card-meta">Pagamento foi encaminhado; confirmar compensação/status</div></div>
+          <div class="kanban-card">Verificar email CIOCH sobre tipo de stand<div class="kanban-card-meta">Definir 3x2, 4x2 ou 6x2</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
-            <span class="kanban-col-count">2</span>
+            <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card">2º pagamento Chile<div class="kanban-card-meta">encaminhado ao financeiro · confirmar 26/05</div></div>
-          <div class="kanban-card">Envio arquivos gráfica · prazo 26/07</div>
+          <div class="kanban-card">Definição se Vinícius vai ou não<div class="kanban-card-meta">Impacta equipe/viagem/logística</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
             <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card">Decisão Vinícius vai/não</div>
-          <div class="kanban-card priority p2">Resolver conflito M8 × Chile (25-28/08)</div>
+          <div class="kanban-card">Preencher formulários expositor até 20/07<div class="kanban-card-meta">Normas, credenciais, stand/equipamentos e venda/regalo se aplicável</div></div>
+          <div class="kanban-card">Preparar arquivos gráficos até 26/07<div class="kanban-card-meta">Stand/gráfica/projeto especial</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
-            <span class="kanban-col-count">2</span>
+            <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card">✓ Manual expositor recebido</div>
-          <div class="kanban-card">✓ Stand definido (verificar email)</div>
+          <div class="kanban-card">Manual expositor CIOCH ingerido<div class="kanban-card-meta">Prazos e regras já estão na memória</div></div>
         </div>
-      </div>
+        </div>
       </div>
     </article>
 
-    <!-- FRENTE 6: SNIPER ELITE -->
-    <article class="frente-card" data-frente="elite" style="animation-delay: 0.65s">
+    <article class="frente-card" data-frente="elite">
       <div class="frente-head">
         <div class="frente-title">
           <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
           <div class="frente-icon">💎</div>
           <div>
             <div class="frente-name">Sniper Elite</div>
-            <div class="frente-id">FRENTE 6 · operação Mônica · USD 997</div>
+            <div class="frente-id">FRENTE 6 · lançamento junho</div>
           </div>
         </div>
         <div class="frente-summary">
-          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>1</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done zero" title="Concluído"><span class="count-dot"></span>0</span></div>
-          <div class="frente-health">
-          <span class="health-dot green"></span>
-          Saudável · Mônica conduz · só visibilidade
-        </div>
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>2</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>1</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health"><span class="health-dot orange"></span>Narrativa do evento ainda precisa consolidar</div>
         </div>
       </div>
       <div class="frente-body">
@@ -1735,51 +1684,50 @@
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
-            <span class="kanban-col-count">1</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card">Comunicações Mônica</div>
+          <div class="kanban-card priority p1">Confirmar entrevista com Sérgio para narrativa Elite<div class="kanban-card-meta">Envolvidos: Lucas, Bruno Koppe e Sérgio</div></div>
+          <div class="kanban-card priority p1">Transformar reunião de 15/05 em plano operacional<div class="kanban-card-meta">Datas, oferta, promessa, provas, equipe e cronograma</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
-            <span class="kanban-col-count">0</span>
+            <span class="kanban-col-count">1</span>
           </div>
+          <div class="kanban-card">Sérgio confirmar/participar da entrevista<div class="kanban-card-meta">Base técnica para a narrativa do evento</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
             <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card">Imersão "Biprotrusión con Alineadores" · seg 11/05 · 14h · Zoom</div>
-          <div class="kanban-card">Lançamento Elite junho · evento pago 20/06</div>
+          <div class="kanban-card priority p1">Criar demandas no ClickUp após narrativa<div class="kanban-card-meta">Copy, tráfego, páginas, comunicação e operação</div></div>
+          <div class="kanban-card">Fechar cronograma do lançamento de junho<div class="kanban-card-meta">Produto Sniper Elite / evento pago</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
-            <span class="kanban-col-count">0</span>
+            <span class="kanban-col-count">1</span>
           </div>
+          <div class="kanban-card">Reunião inicial com Bruno Copy + Lucas mapeada<div class="kanban-card-meta">Ponto de partida do lançamento</div></div>
         </div>
-      </div>
+        </div>
       </div>
     </article>
 
-    <!-- FRENTE 7: ORTOPLANNER -->
-    <article class="frente-card" data-frente="ortoplanner" style="animation-delay: 0.7s">
+    <article class="frente-card" data-frente="ortoplanner">
       <div class="frente-head">
         <div class="frente-title">
           <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
           <div class="frente-icon">🦷</div>
           <div>
             <div class="frente-name">OrtoPlanner</div>
-            <div class="frente-id">FRENTE 7 · MVP em definição</div>
+            <div class="frente-id">FRENTE 7 · standby estratégico</div>
           </div>
         </div>
         <div class="frente-summary">
-          <div class="frente-counts"><span class="frente-count-pill exec zero" title="Em execução"><span class="count-dot"></span>0</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>3</span><span class="frente-count-pill done zero" title="Concluído"><span class="count-dot"></span>0</span></div>
-          <div class="frente-health">
-          <span class="health-dot blue"></span>
-          Ativa · MVP em definição · reunião hoje 10h
-        </div>
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>1</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>1</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health"><span class="health-dot gray"></span>Pausado até pós-Sniper VIP</div>
         </div>
       </div>
       <div class="frente-body">
@@ -1787,51 +1735,48 @@
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
-            <span class="kanban-col-count">0</span>
+            <span class="kanban-col-count">1</span>
           </div>
+          <div class="kanban-card">Manter em standby intencional<div class="kanban-card-meta">Não puxar energia antes do evento 25–27/05</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
             <span class="kanban-col-count">0</span>
           </div>
+          <div class="kanban-card-meta">Sem itens ativos</div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
-            <span class="kanban-col-count">3</span>
+            <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card priority p1">Reunião hoje 10h (Ruan + Sérgio + Felipe)<div class="kanban-card-meta">apresentar plataforma XDental + alinhar OrtoPlanner + definir MVP</div></div>
-          <div class="kanban-card">Definir funcionalidades do MVP<div class="kanban-card-meta">entrega em maio</div></div>
-          <div class="kanban-card">Validar próximos passos<div class="kanban-card-meta">OrtoPlanner</div></div>
+          <div class="kanban-card priority p1">Retomar escopo e MVP após 28/05<div class="kanban-card-meta">Definir prioridade, cronograma e responsável técnico</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
-            <span class="kanban-col-count">0</span>
+            <span class="kanban-col-count">1</span>
           </div>
+          <div class="kanban-card">Reunião/plataforma de 13/05 registrada<div class="kanban-card-meta">Contexto inicial preservado</div></div>
         </div>
-      </div>
+        </div>
       </div>
     </article>
 
-    <!-- FRENTE 8: PLATAFORMA PRÓPRIA -->
-    <article class="frente-card" data-frente="app" style="animation-delay: 0.75s">
+    <article class="frente-card" data-frente="app">
       <div class="frente-head">
         <div class="frente-title">
           <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
           <div class="frente-icon">📱</div>
           <div>
-            <div class="frente-name">Plataforma Própria (App)</div>
-            <div class="frente-id">FRENTE 8 · base de assinantes pronta</div>
+            <div class="frente-name">Plataforma Própria / App</div>
+            <div class="frente-id">FRENTE 8 · base pronta, GTM pendente</div>
           </div>
         </div>
         <div class="frente-summary">
-          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>1</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>1</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
-          <div class="frente-health">
-          <span class="health-dot yellow"></span>
-          Atenção · falta go-to-market
-        </div>
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>1</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>1</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health"><span class="health-dot orange"></span>Produto pronto parcialmente; falta transição/comunicação</div>
         </div>
       </div>
       <div class="frente-body">
@@ -1841,49 +1786,47 @@
             <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
             <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card">Estratégia comunicação + acesso</div>
+          <div class="kanban-card priority p1">Revisar estratégia de acesso e comunicação<div class="kanban-card-meta">Como assinantes entram, entendem e usam a nova experiência</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
-            <span class="kanban-col-count">0</span>
+            <span class="kanban-col-count">1</span>
           </div>
+          <div class="kanban-card">Sérgio sem disponibilidade para apresentação nesta semana<div class="kanban-card-meta">Encontro deve ser pausado até nova data</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
-            <span class="kanban-col-count">1</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card">Marcar aula apresentação c/ Sérgio</div>
+          <div class="kanban-card priority p1">Definir cronograma de transição Hotmart → plataforma própria<div class="kanban-card-meta">Inclui comunicação, suporte e onboarding</div></div>
+          <div class="kanban-card">Remarcar apresentação com Sérgio quando houver janela real<div class="kanban-card-meta">Só então reativar disparos para assinantes/base</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
             <span class="kanban-col-count">1</span>
           </div>
-          <div class="kanban-card">✓ Felipe subiu base assinantes</div>
+          <div class="kanban-card">Felipe subiu base de assinantes<div class="kanban-card-meta">Base de dados pronta para migração</div></div>
         </div>
-      </div>
+        </div>
       </div>
     </article>
 
-    <!-- FRENTE 9: LANÇAMENTOS -->
-    <article class="frente-card" data-frente="lancamentos" style="animation-delay: 0.8s">
+    <article class="frente-card" data-frente="lancamentos">
       <div class="frente-head">
         <div class="frente-title">
           <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
           <div class="frente-icon">🚀</div>
           <div>
             <div class="frente-name">Lançamentos</div>
-            <div class="frente-id">FRENTE 9 · próximo: junho · Sniper Elite</div>
+            <div class="frente-id">FRENTE 9 · próximo: Elite junho</div>
           </div>
         </div>
         <div class="frente-summary">
-          <div class="frente-counts"><span class="frente-count-pill exec zero" title="Em execução"><span class="count-dot"></span>0</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>1</span><span class="frente-count-pill done zero" title="Concluído"><span class="count-dot"></span>0</span></div>
-          <div class="frente-health">
-          <span class="health-dot blue"></span>
-          Próximo · planejamento esta semana
-        </div>
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>2</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>1</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health"><span class="health-dot orange"></span>Planejamento precisa virar execução ClickUp</div>
         </div>
       </div>
       <div class="frente-body">
@@ -1891,32 +1834,36 @@
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
-            <span class="kanban-col-count">0</span>
+            <span class="kanban-col-count">2</span>
           </div>
+          <div class="kanban-card priority p1">Consolidar narrativa/oferta do Elite Junho<div class="kanban-card-meta">Depende da entrevista com Sérgio e reunião Lucas/Bruno</div></div>
+          <div class="kanban-card">Listar tarefas de lançamento por área<div class="kanban-card-meta">Copy, página, tráfego, criativos, calendário, entrega e suporte</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
-            <span class="kanban-col-count">0</span>
+            <span class="kanban-col-count">1</span>
           </div>
+          <div class="kanban-card">Definição final de tema/promessa/provas<div class="kanban-card-meta">Sem isso, copy e tráfego não andam</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
-            <span class="kanban-col-count">1</span>
+            <span class="kanban-col-count">2</span>
           </div>
-          <div class="kanban-card">Planejar lançamento Elite junho<div class="kanban-card-meta">evento pago sabadão 20/06 · entrevista Sérgio seg 18/05</div></div>
+          <div class="kanban-card priority p1">Subir demandas no ClickUp<div class="kanban-card-meta">Com owners e prazos reais</div></div>
+          <div class="kanban-card">Construir cronograma macro do lançamento<div class="kanban-card-meta">Da preparação até o evento/venda</div></div>
         </div>
         <div class="kanban-col">
           <div class="kanban-col-head">
             <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
-            <span class="kanban-col-count">0</span>
+            <span class="kanban-col-count">1</span>
           </div>
+          <div class="kanban-card">Janela de planejamento 12–16/05 mapeada<div class="kanban-card-meta">Contexto inicial registrado</div></div>
+        </div>
         </div>
       </div>
-      </div>
     </article>
-
   </section>
 
   <!-- STANDBY -->
