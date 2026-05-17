@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Low Tickets — XDental</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+  :root {
+    --bg:#0D0D0D;--bg2:#161616;--bg3:#1C1C1C;
+    --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.12);
+    --text:#E8E8E6;--text2:#888780;--text3:#555550;
+    --green:#1D9E75;--green-lt:#4DD4A0;--green-bg:#0A1F17;--green-border:rgba(29,158,117,0.35);
+    --blue:#378ADD;--blue-lt:#6AADEA;--blue-bg:#0D1A2E;--blue-border:rgba(55,138,221,0.35);
+    --orange:#EF9F27;--orange-lt:#F0A84A;--orange-bg:#2A1500;--orange-border:rgba(239,159,39,0.35);
+    --purple-lt:#B68AEA;--purple-bg:#1A0E2E;--red:#E0873A;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:1.5rem 2rem;}
+
+  .topbar{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1.25rem;}
+  .topbar-title{font-size:20px;font-weight:600;color:var(--text);margin-bottom:3px;}
+  .topbar-sub{font-size:12px;color:var(--text3);}
+  .header-badge{background:var(--blue-bg);border:0.5px solid var(--blue-border);color:var(--blue-lt);font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;white-space:nowrap;margin-top:4px;}
+
+  .kpi-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:1.25rem;}
+  .kcard{background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;padding:14px 16px;}
+  .kcard.highlight{background:var(--green-bg);border-color:var(--green-border);}
+  .kcard-label{font-size:11px;color:var(--text2);margin-bottom:4px;}
+  .kcard-value{font-size:24px;font-weight:600;color:var(--text);}
+  .kcard-value.green{color:var(--green-lt);}
+  .kcard-sub{font-size:11px;color:var(--text3);margin-top:3px;}
+
+  .rotina{background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:1.25rem;}
+  .rotina-label{font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;}
+  .color-legend{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:12px;}
+  .cl-item{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--text2);}
+  .cl-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .rotina-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;}
+  .day-label{font-size:10px;font-weight:600;color:var(--text3);margin-bottom:5px;text-align:center;text-transform:uppercase;letter-spacing:.04em;}
+  .rt{font-size:10px;border-radius:6px;padding:4px 6px;margin-bottom:4px;line-height:1.4;text-align:center;font-weight:500;}
+  .rt-green{background:var(--green-bg);color:var(--green-lt);border:0.5px solid rgba(29,158,117,0.3);}
+  .rt-blue{background:var(--blue-bg);color:var(--blue-lt);border:0.5px solid rgba(55,138,221,0.3);}
+  .rt-purple{background:var(--purple-bg);color:var(--purple-lt);border:0.5px solid rgba(182,138,234,0.3);}
+  .rt-orange{background:var(--orange-bg);color:var(--orange-lt);border:0.5px solid rgba(239,159,39,0.3);}
+  .rt-gray{background:#1A1A1A;color:#AAAAAA;border:0.5px solid rgba(100,100,100,0.25);}
+  .rt-new{background:#1A1A2E;color:#9090DD;border:0.5px solid rgba(100,100,200,0.3);}
+
+  .section-label{font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;}
+
+  .kanban{display:grid;grid-template-columns:270px 1fr 1fr 1fr;gap:10px;margin-bottom:1.5rem;align-items:start;}
+
+  .col-header{display:flex;align-items:center;gap:7px;margin-bottom:8px;}
+  .col-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+  .col-name{font-size:12px;font-weight:600;color:var(--text2);}
+  .col-count{font-size:10px;color:var(--text3);background:var(--bg3);border-radius:10px;padding:1px 8px;font-family:'DM Mono',monospace;}
+
+  .pcard{background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;padding:13px;margin-bottom:8px;}
+  .pcard:last-child{margin-bottom:0;}
+  .pcard-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:7px;}
+  .roas-badge{display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;margin-bottom:9px;}
+  .roas-ok{background:#0A2018;color:#2ECC8A;border:0.5px solid rgba(29,158,117,0.4);}
+  .roas-warn{background:#2A1A08;color:var(--red);border:0.5px solid rgba(224,135,58,0.4);}
+  .roas-bad{background:#2A0F0A;color:#FF9A7A;border:0.5px solid rgba(255,122,82,0.45);}
+  .bar-wrap{margin-bottom:9px;}
+  .bar-label{font-size:10px;color:var(--text3);display:flex;justify-content:space-between;margin-bottom:4px;}
+  .bar-track{display:flex;gap:3px;}
+  .cb{flex:1;height:4px;border-radius:2px;background:var(--bg3);}
+  .cb.v{background:var(--green);}
+  .status-tag{display:inline-block;font-size:10px;font-weight:500;padding:3px 9px;border-radius:10px;margin-bottom:9px;}
+  .st-green{background:var(--green-bg);color:var(--green-lt);}
+  .st-warn{background:var(--orange-bg);color:var(--orange-lt);}
+  .st-info{background:var(--bg3);color:var(--text2);}
+  .st-purple{background:var(--purple-bg);color:var(--purple-lt);}
+  .st-blue{background:var(--blue-bg);color:var(--blue-lt);}
+  .metrics{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-bottom:8px;}
+  .m-label{font-size:10px;color:var(--text3);margin-bottom:1px;}
+  .m-value{font-size:12px;font-weight:600;color:var(--text2);font-family:'DM Mono',monospace;}
+  .m-value.green{color:var(--green-lt);}
+  .m-value.red{color:#FF9A7A;}
+  .pcard.danger{border-color:rgba(255,122,82,0.28);background:linear-gradient(180deg,#1A1513 0%,var(--bg2) 100%);}
+  .pcard.danger .m-label{color:#9A9992;}
+  .pcard.danger .m-value{color:#E8E8E6;}
+  .pcard.danger .m-value.red{color:#FF9A7A;}
+  .pcard.danger .pcard-footer{color:#9A9992;}
+  .pcard-footer{font-size:10px;color:var(--text3);border-top:0.5px solid var(--border);padding-top:6px;line-height:1.4;}
+
+  .empty-col{border:0.5px dashed var(--border);border-radius:10px;min-height:80px;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--text3);text-align:center;padding:12px;line-height:1.5;}
+
+  .phase-legend{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+  .pl-card{background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;padding:12px 14px;}
+  .pl-title{font-size:11px;font-weight:600;color:var(--text2);margin-bottom:6px;display:flex;align-items:center;gap:7px;}
+  .pl-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .pl-desc{font-size:10px;color:var(--text3);line-height:1.6;}
+
+  @media(max-width:900px){
+    .kanban{grid-template-columns:1fr;}
+    .kpi-row{grid-template-columns:repeat(2,1fr);}
+    .kpi-row .kcard:last-child{grid-column:span 2;}
+    .rotina-grid{grid-template-columns:repeat(2,1fr);}
+    .phase-legend{grid-template-columns:repeat(2,1fr);}
+  }
+</style>
+</head>
+<body>
+<style>
+.taos-top-nav{position:sticky;top:0;z-index:9999;background:rgba(10,6,18,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(139,92,246,.22);padding:12px 24px;font-family:Inter,system-ui,sans-serif}.taos-top-nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px}.taos-top-brand{font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a78bfa}.taos-top-links{display:flex;gap:8px;flex-wrap:wrap}.taos-top-links a{color:#a89cc7;text-decoration:none;border:1px solid rgba(139,92,246,.22);background:#1f1538;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:700}.taos-top-links a.active{color:white;background:linear-gradient(135deg,#8b5cf6,#a78bfa);border-color:transparent}@media(max-width:640px){.taos-top-nav-inner{align-items:flex-start;flex-direction:column}.taos-top-nav{padding:10px 16px}.taos-top-links a{font-size:12px;padding:7px 10px}}
+</style>
+<nav class="taos-top-nav"><div class="taos-top-nav-inner"><div class="taos-top-brand">TAOS · Central XDental</div><div class="taos-top-links"><a href="/">Painel Operacional</a><a href="/processos.html">Processos</a><a class="active" href="/lowtickets.html">Low Tickets</a></div></div></nav>
+
+
+  <div class="topbar">
+    <div>
+      <div class="topbar-title">Low Tickets — XDental</div>
+      <div class="topbar-sub">Maio 2026 · 6 produtos monitorados · Atualizado 13/05/26 pós-reunião</div>
+    </div>
+    <div class="header-badge">Fase 1 · 3 quase avançando + 3 novos</div>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kcard">
+      <div class="kcard-label">Receita total</div>
+      <div class="kcard-value">$8.809,87</div>
+      <div class="kcard-sub">Consolidado 14/05 · 5 produtos</div>
+    </div>
+    <div class="kcard">
+      <div class="kcard-label">Gasto tráfego</div>
+      <div class="kcard-value">$4.463,45</div>
+      <div class="kcard-sub">Meta Ads · acumulado</div>
+    </div>
+    <div class="kcard">
+      <div class="kcard-label">Total de vendas</div>
+      <div class="kcard-value">849</div>
+      <div class="kcard-sub">5 produtos ativos</div>
+    </div>
+    <div class="kcard">
+      <div class="kcard-label">ROAS médio</div>
+      <div class="kcard-value">1,97x</div>
+      <div class="kcard-sub">Meta fase 4: 2,0x</div>
+    </div>
+    <div class="kcard highlight">
+      <div class="kcard-label">Lucro total</div>
+      <div class="kcard-value green">+$4.346,42</div>
+      <div class="kcard-sub">Margem consolidada 49,3%</div>
+    </div>
+  </div>
+
+  <div class="rotina">
+    <div class="rotina-label">Rotina Semanal — atualizada em 13/05/26</div>
+    <div class="color-legend">
+      <div class="cl-item"><div class="cl-dot" style="background:var(--green-lt)"></div>Marcos principais</div>
+      <div class="cl-item"><div class="cl-dot" style="background:var(--orange-lt)"></div>Dr. Sérgio</div>
+      <div class="cl-item"><div class="cl-dot" style="background:var(--purple-lt)"></div>Chicão (edição)</div>
+      <div class="cl-item"><div class="cl-dot" style="background:var(--blue-lt)"></div>Batista (tráfego)</div>
+      <div class="cl-item"><div class="cl-dot" style="background:#AAAAAA"></div>Bruno (copies)</div>
+      <div class="cl-item"><div class="cl-dot" style="background:#9090DD"></div>Batista + Bruno (análise)</div>
+    </div>
+    <div class="rotina-grid">
+      <div>
+        <div class="day-label">Seg</div>
+        <div class="rt rt-orange">Sérgio entrega vídeos gravados</div>
+        <div class="rt rt-new">Batista + Bruno revisam dados e métricas</div>
+        <div class="rt rt-purple">Chicão inicia edição</div>
+      </div>
+      <div>
+        <div class="day-label">Ter</div>
+        <div class="rt rt-purple">Chicão edita criativos</div>
+      </div>
+      <div>
+        <div class="day-label">Qua</div>
+        <div class="rt rt-green">Reunião semanal (14h)</div>
+        <div class="rt rt-purple">Chicão entrega editados</div>
+        <div class="rt rt-blue">Batista sobe criativos</div>
+      </div>
+      <div>
+        <div class="day-label">Qui</div>
+        <div class="rt rt-green">Criativos ativos</div>
+        <div class="rt rt-gray">Bruno entrega copies</div>
+        <div class="rt rt-orange">Sérgio começa a gravar</div>
+      </div>
+      <div>
+        <div class="day-label">Sex / Sáb / Dom</div>
+        <div class="rt rt-orange">Sérgio grava</div>
+        <div class="rt rt-blue">Análise dos criativos ativos</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="rotina">
+    <div class="rotina-label">Decisões da reunião · 13/05</div>
+    <div class="color-legend">
+      <div class="cl-item"><div class="cl-dot" style="background:var(--orange-lt)"></div>Alerta diário obrigatório</div>
+      <div class="cl-item"><div class="cl-dot" style="background:var(--blue-lt)"></div>Novos testes amanhã</div>
+      <div class="cl-item"><div class="cl-dot" style="background:var(--green-lt)"></div>Bumps + combo semana que vem</div>
+    </div>
+    <div class="rotina-grid">
+      <div><div class="day-label">Alerta</div><div class="rt rt-orange">Produto com 0 vendas no dia = checar página, checkout, campanha e tracking</div></div>
+      <div><div class="day-label">14/05</div><div class="rt rt-blue">Subir estáticos dos 3 primeiros produtos</div><div class="rt rt-blue">Retomar Attachments</div><div class="rt rt-blue">Subir 13 Mandamientos</div></div>
+      <div><div class="day-label">Copies</div><div class="rt rt-gray">Bruno entrega 15 copies estáticas até 18h</div><div class="rt rt-gray">Vídeos: Mesialización, Complicaciones e Fluxo</div></div>
+      <div><div class="day-label">Semana que vem</div><div class="rt rt-green">Ativar 4 order bumps + combo nos 6 produtos</div></div>
+      <div><div class="day-label">2 semanas</div><div class="rt rt-purple">Testar upsell/VSL da Plataforma · meta mínima 5%</div></div>
+    </div>
+  </div>
+
+  <div class="section-label">Produtos por fase</div>
+  <div class="kanban">
+
+    <div>
+      <div class="col-header">
+        <div class="col-dot" style="background:var(--blue)"></div>
+        <span class="col-name">Fase 1 — Teste</span>
+        <span class="col-count">6</span>
+      </div>
+
+      <!-- Tracción -->
+      <div class="pcard">
+        <div class="pcard-name">Tracción de Dientes Retenidos</div>
+        <div class="roas-badge roas-ok">ROAS 2,29x</div>
+        <div class="bar-wrap">
+          <div class="bar-label"><span>Criativos validados</span><span style="color:var(--orange-lt);font-weight:600">3 / 4</span></div>
+          <div class="bar-track"><div class="cb v"></div><div class="cb v"></div><div class="cb v"></div><div class="cb"></div></div>
+        </div>
+        <div class="status-tag st-blue">3/4 validados · estáticos entram 14/05</div>
+        <div class="metrics">
+          <div><div class="m-label">Vendas</div><div class="m-value">387</div></div>
+          <div><div class="m-label">Faturamento</div><div class="m-value">$3.980,10</div></div>
+          <div><div class="m-label">Investimento</div><div class="m-value">$1.735,21</div></div>
+          <div><div class="m-label">Lucro</div><div class="m-value green">+$2.244,89</div></div>
+          <div><div class="m-label">CAC</div><div class="m-value">$4,48</div></div>
+          <div><div class="m-label">Margem</div><div class="m-value green">56,4%</div></div>
+        </div>
+        <div class="pcard-footer">Nenhum novo criativo validou na semana · Bruno entrega estáticos · falta 1 criativo para Fase 2</div>
+      </div>
+
+      <!-- Mesialización -->
+      <div class="pcard">
+        <div class="pcard-name">Mesialización de Molares</div>
+        <div class="roas-badge roas-warn">ROAS 1,98x</div>
+        <div class="bar-wrap">
+          <div class="bar-label"><span>Criativos validados</span><span style="color:var(--orange-lt);font-weight:600">3 / 4</span></div>
+          <div class="bar-track"><div class="cb v"></div><div class="cb v"></div><div class="cb v"></div><div class="cb"></div></div>
+        </div>
+        <div class="status-tag st-green">Validou +1 · falta 1 para Fase 2</div>
+        <div class="metrics">
+          <div><div class="m-label">Vendas</div><div class="m-value">257</div></div>
+          <div><div class="m-label">Faturamento</div><div class="m-value">$2.697,29</div></div>
+          <div><div class="m-label">Investimento</div><div class="m-value">$1.361,61</div></div>
+          <div><div class="m-label">Lucro</div><div class="m-value green">+$1.335,68</div></div>
+          <div><div class="m-label">CAC</div><div class="m-value">$5,30</div></div>
+          <div><div class="m-label">Margem</div><div class="m-value green">49,5%</div></div>
+        </div>
+        <div class="pcard-footer">Mês caiu para 1,98x, mas ontem foi o melhor dia · tendência de melhora · novos vídeos amanhã</div>
+      </div>
+
+      <!-- Complicaciones -->
+      <div class="pcard">
+        <div class="pcard-name">Explorando las Complicaciones</div>
+        <div class="roas-badge roas-warn">ROAS 1,66x ⚠</div>
+        <div class="bar-wrap">
+          <div class="bar-label"><span>Criativos validados</span><span style="color:var(--orange-lt);font-weight:600">3 / 4</span></div>
+          <div class="bar-track"><div class="cb v"></div><div class="cb v"></div><div class="cb v"></div><div class="cb"></div></div>
+        </div>
+        <div class="status-tag st-warn">3/4 validados · ROAS abaixo de 2,0</div>
+        <div class="metrics">
+          <div><div class="m-label">Vendas</div><div class="m-value">149</div></div>
+          <div><div class="m-label">Faturamento</div><div class="m-value">$1.548,04</div></div>
+          <div><div class="m-label">Investimento</div><div class="m-value">$931,59</div></div>
+          <div><div class="m-label">Lucro</div><div class="m-value green">+$616,45</div></div>
+          <div><div class="m-label">CAC</div><div class="m-value">$6,25</div></div>
+          <div><div class="m-label">Margem</div><div class="m-value green">39,8%</div></div>
+        </div>
+        <div class="pcard-footer">Falta 1 para Fase 2 · dois criativos quase validaram · estáticos + vídeos entram no próximo teste</div>
+      </div>
+
+      <!-- Fluxo -->
+      <div class="pcard">
+        <div class="pcard-name">Flujo de Tratamiento</div>
+        <div class="roas-badge roas-warn">ROAS 1,90x ↗</div>
+        <div class="bar-wrap"><div class="bar-label"><span>Criativos validados</span><span style="color:var(--red);font-weight:600">2 / 4</span></div><div class="bar-track"><div class="cb v"></div><div class="cb v"></div><div class="cb"></div><div class="cb"></div></div></div>
+        <div class="status-tag st-green">Novo produto começou forte</div>
+        <div class="metrics">
+          <div><div class="m-label">Vendas</div><div class="m-value">46</div></div>
+          <div><div class="m-label">Faturamento</div><div class="m-value">$479,03</div></div>
+          <div><div class="m-label">Investimento</div><div class="m-value">$251,49</div></div>
+          <div><div class="m-label">Lucro</div><div class="m-value green">+$227,54</div></div>
+          <div><div class="m-label">CAC</div><div class="m-value">$5,47</div></div>
+          <div><div class="m-label">Margem</div><div class="m-value green">47,5%</div></div>
+        </div>
+        <div class="pcard-footer">Já validou 2 criativos · ROAS subindo diariamente · Bruno entrega novos vídeos/estáticos</div>
+      </div>
+
+      <!-- Attachments -->
+      <div class="pcard danger">
+        <div class="pcard-name">Protocolo de Attachments</div>
+        <div class="roas-badge roas-bad">ROAS 0,57x ⚠</div>
+        <div class="bar-wrap"><div class="bar-label"><span>Criativos validados</span><span style="color:var(--text3);font-weight:600">reiniciar</span></div><div class="bar-track"><div class="cb"></div><div class="cb"></div><div class="cb"></div><div class="cb"></div></div></div>
+        <div class="status-tag st-warn">Dados corrigidos · teste em prejuízo</div>
+        <div class="metrics"><div><div class="m-label">Vendas</div><div class="m-value">10</div></div><div><div class="m-label">Faturamento</div><div class="m-value">$105,41</div></div><div><div class="m-label">Investimento</div><div class="m-value">$183,55</div></div><div><div class="m-label">Lucro</div><div class="m-value red">-$78,14</div></div><div><div class="m-label">CAC</div><div class="m-value">$18,36</div></div><div><div class="m-label">Margem</div><div class="m-value red">-74,1%</div></div></div>
+        <div class="pcard-footer">Consolidado corrigido em 14/05 · ROAS abaixo de 1,0 e CAC alto · acompanhar antes de escalar</div>
+      </div>
+
+      <!-- 13 Mandamientos -->
+      <div class="pcard">
+        <div class="pcard-name">13 Mandamientos</div>
+        <div class="roas-badge roas-warn">Sobe 14/05</div>
+        <div class="bar-wrap"><div class="bar-label"><span>Criativos validados</span><span style="color:var(--text3);font-weight:600">0 / 4</span></div><div class="bar-track"><div class="cb"></div><div class="cb"></div><div class="cb"></div><div class="cb"></div></div></div>
+        <div class="status-tag st-info">Estrutura pronta · aguardando ativação</div>
+        <div class="metrics"><div><div class="m-label">Status</div><div class="m-value">pronto</div></div><div><div class="m-label">Início</div><div class="m-value green">14/05</div></div></div>
+        <div class="pcard-footer">Entrará na Fase 1 com os demais novos produtos · acompanhar primeira janela de dados</div>
+      </div>
+    </div>
+
+    <!-- FASE 2 -->
+    <div>
+      <div class="col-header">
+        <div class="col-dot" style="background:var(--orange)"></div>
+        <span class="col-name">Fase 2 — Otimização</span>
+        <span class="col-count">0</span>
+      </div>
+      <div class="empty-col">4 criativos validados<br>para entrar</div>
+    </div>
+
+    <!-- FASE 3 -->
+    <div>
+      <div class="col-header">
+        <div class="col-dot" style="background:var(--purple-lt)"></div>
+        <span class="col-name">Fase 3 — Escala</span>
+        <span class="col-count">0</span>
+      </div>
+      <div class="empty-col">Estrutura validada<br>para entrar</div>
+    </div>
+
+    <!-- FASE 4 -->
+    <div>
+      <div class="col-header">
+        <div class="col-dot" style="background:var(--green)"></div>
+        <span class="col-name">Fase 4 — ROAS 2 + LTV</span>
+        <span class="col-count">0</span>
+      </div>
+      <div class="empty-col">$1k/dia → $2k/dia</div>
+    </div>
+
+  </div>
+
+  <div class="section-label">Critérios por fase — Método Bruno / PLP</div>
+  <div class="phase-legend">
+    <div class="pl-card">
+      <div class="pl-title"><div class="pl-dot" style="background:var(--blue)"></div>Fase 1 — Teste</div>
+      <div class="pl-desc">10 criativos/semana (vídeo original)<br>Meta: 4 criativos com ROAS ≥ 2,5<br>Alerta: 0 vendas/dia aciona checagem</div>
+    </div>
+    <div class="pl-card">
+      <div class="pl-title"><div class="pl-dot" style="background:var(--orange)"></div>Fase 2 — Otimização</div>
+      <div class="pl-desc">Testar 5 estruturas de campanha<br>Pausa no teste de criativos<br>Duração: ~30 dias</div>
+    </div>
+    <div class="pl-card">
+      <div class="pl-title"><div class="pl-dot" style="background:var(--purple-lt)"></div>Fase 3 — Escala</div>
+      <div class="pl-desc">Duplicar conjuntos até 35 (ABO)<br>ou aumentar orçamento (CBO/ADV)<br>Duração: ~30 dias</div>
+    </div>
+    <div class="pl-card">
+      <div class="pl-title"><div class="pl-dot" style="background:var(--green)"></div>Fase 4 — ROAS 2 + LTV</div>
+      <div class="pl-desc">Volta a testar criativos (20% verba)<br>Variações, IA e UGC liberados<br>4 order bumps + combo · upsell VSL meta ≥5%</div>
+    </div>
+  </div>
+
+</body>
+</html>

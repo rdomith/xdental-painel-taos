@@ -1,0 +1,280 @@
+{
+  "dashboard": {
+    "name": "Painel Operacional XDental",
+    "version": "2.9-persistent",
+    "lastUpdated": "2026-05-15 · preparado painel de sábado/segunda 19:35",
+    "owner": "Ruan Domith",
+    "operator": "TAOS",
+    "status": "operational",
+    "headline": "Sábado leve de acompanhamento · gráfica Clara/SVIP se material chegar · segunda radar semanal + Elite + última semana Sniper VIP"
+  },
+  "fronts": [
+    {
+      "id": "low-tickets",
+      "name": "Low Tickets",
+      "status": "on_track",
+      "priority": "p3",
+      "progress": 85,
+      "owner": "Bruno + Batista",
+      "summary": "Operação piloto automático; rotina semanal e análise contínua dos criativos Meta.",
+      "nextActions": [
+        "Rotina semanal Sérgio→Chicão→Batista",
+        "Análise contínua criativos Meta",
+        "Reunião semanal qua 13/05 · 14h com Bruno + Batista"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "sniper-vip",
+      "name": "Sniper VIP",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 65,
+      "owner": "Ruan / Sérgio / Lilian / Klyro",
+      "summary": "Evento 25-27/05 entra na última semana; acompanhar materiais Clara/Klyro e envio para gráfica.",
+      "nextActions": [
+        "Acompanhar Clara: receber materiais revisados e enviar para gráfica (sexta à noite ou sábado)",
+        "Segunda: radar da semana final pré-Sniper VIP",
+        "Fechar ações pendentes de logística/material impresso antes do evento 25-27/05",
+        "Pagar 40% açaí — R$ 100 (total R$ 250; resto a confirmar)",
+        "Lilian · info pagamentos pré-evento",
+        "Antecipar cardápio Bassi",
+        "Antecipar orçamento almoço dia 3"
+      ],
+      "blockers": [
+        "Materiais Clara ainda em edição; gráfica ainda não recebeu arquivo final",
+        "Cardápio Bassi (Happy Hour) sem retorno",
+        "Orçamentos almoço dia 3 — 2 opções",
+        "Barista sem retorno"
+      ]
+    },
+    {
+      "id": "diplomado-ortho-pro",
+      "name": "Diplomado Ortho Pro",
+      "status": "on_track",
+      "priority": "p2",
+      "progress": 80,
+      "owner": "Ruan / Felipe / Klyro / Sérgio",
+      "summary": "M5 em diagramação; M4 prova em produção; Klyro entrega PDF M5 em 13/05.",
+      "nextActions": [
+        "Receber entrega Klyro · PDF M5 Diplomado",
+        "Prova M4 em plataforma separada Felipe — libera sex 15/05",
+        "M6 · alinhamento com Sérgio (tema + gravação)",
+        "Liberação prova M4 sex 15/05",
+        "Encuentro M5 José Rodríguez em 26/05"
+      ],
+      "blockers": [
+        "Klyro diagramando M5 — deadline sex 15/05"
+      ]
+    },
+    {
+      "id": "plataforma-assinatura",
+      "name": "Plataforma de Assinatura",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 60,
+      "owner": "Ruan / Felipe / Mônica",
+      "summary": "Convite aos assinantes para apresentação da nova plataforma em 18/05; pacote visual completo fica para próxima semana.",
+      "nextActions": [
+        "Acompanhar disparo do Felipe para assinantes",
+        "Segunda: enviar mais duas mensagens para assinantes",
+        "Postergar pacote completo de imagens/divulgação para próxima semana, após encontro",
+        "Desenvolver mensagens/legendas para Instagram e convite aos assinantes",
+        "Criar sequência de disparos API de convite — começa sex 15/05 e vai até seg 18/05",
+        "Validar CTA/link/local de acesso antes dos disparos",
+        "Organizar pacote final para Mônica/equipe executar os envios"
+      ],
+      "blockers": [
+        "Pacote completo de imagens e comunicação visual ficou para próxima semana"
+      ]
+    },
+    {
+      "id": "chile-cioch",
+      "name": "Chile / CIOCH",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 15,
+      "owner": "Ruan / Vinícius / financeiro",
+      "summary": "XX CIOCH Santiago 26-28/08; avançando lento, com decisões e confirmações em aberto.",
+      "nextActions": [
+        "Verificar email para confirmar stand definido",
+        "Decidir Vinícius vai/não",
+        "Resolver conflito M8 × Chile 25-28/08"
+      ],
+      "blockers": [
+        "2º pagamento Chile encaminhado ao financeiro — confirmar 26/05",
+        "Envio arquivos gráfica — prazo 26/07"
+      ]
+    },
+    {
+      "id": "sniper-elite",
+      "name": "Sniper Elite",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 70,
+      "owner": "Mônica / Ruan",
+      "summary": "Elite junho: evento pago em formato sabadão definido para 20/06; narrativa depende de entrevista com Sérgio.",
+      "nextActions": [
+        "Confirmar horário da entrevista com Sérgio na segunda-feira",
+        "Lembrar envolvidos: Lucas, Bruno Koppe e Sérgio para entrevista de construção da narrativa",
+        "Sair da entrevista com tema técnico, promessa, provas/casos e estrutura do evento"
+      ],
+      "blockers": [
+        "Horário da reunião de segunda com Sérgio ainda pendente",
+        "Narrativa/oferta ainda dependem da entrevista com Sérgio"
+      ]
+    },
+    {
+      "id": "ortoplanner",
+      "name": "OrtoPlanner",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 35,
+      "owner": "Ruan / Sérgio / Felipe",
+      "summary": "Nova plataforma XDental + OrtoPlanner: reunião 13/05 10h para plataforma, MVP e próximos passos.",
+      "nextActions": [
+        "Reunião Ruan + Sérgio + Felipe — 13/05 10h",
+        "Apresentar plataforma XDental + alinhar OrtoPlanner + definir MVP",
+        "Definir funcionalidades do MVP com entrega em maio",
+        "Validar próximos passos do OrtoPlanner"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "plataforma-app",
+      "name": "Plataforma Própria (App)",
+      "status": "attention",
+      "priority": "p2",
+      "progress": 55,
+      "owner": "Ruan / Felipe / Sérgio",
+      "summary": "Base de assinantes pronta; falta estratégia de comunicação/acesso e go-to-market.",
+      "nextActions": [
+        "Estratégia comunicação + acesso",
+        "Marcar aula apresentação com Sérgio"
+      ],
+      "blockers": [
+        "Go-to-market ainda não definido"
+      ]
+    },
+    {
+      "id": "lancamentos",
+      "name": "Lançamentos",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 45,
+      "owner": "Ruan",
+      "summary": "Elite junho: evento pago em formato sabadão definido para 20/06; narrativa depende de entrevista com Sérgio.",
+      "nextActions": [
+        "Confirmar horário da entrevista com Sérgio na segunda-feira",
+        "Lembrar envolvidos: Lucas, Bruno Koppe e Sérgio para entrevista de construção da narrativa",
+        "Sair da entrevista com tema técnico, promessa, provas/casos e estrutura do evento"
+      ],
+      "blockers": [
+        "Horário da reunião de segunda com Sérgio ainda pendente",
+        "Narrativa/oferta ainda dependem da entrevista com Sérgio"
+      ]
+    }
+  ],
+  "gargalos": [
+    {
+      "title": "Materiais Clara/Klyro → gráfica",
+      "priority": "p1",
+      "frente": "Sniper VIP",
+      "deadline": "Sexta à noite ou sábado 16/05",
+      "blocks": "Materiais impressos/visuais do Sniper VIP; evento entra na última semana",
+      "owner": "Ruan / Clara"
+    },
+    {
+      "title": "Entrevista Sérgio — narrativa Elite",
+      "priority": "p1",
+      "frente": "Lançamentos / Elite Junho",
+      "deadline": "Segunda 18/05 · horário a confirmar",
+      "blocks": "Tema técnico, promessa, copy, provas e estrutura do evento pago de 20/06",
+      "owner": "Lucas + Bruno Koppe + Sérgio"
+    },
+    {
+      "title": "Última semana pré-Sniper VIP",
+      "priority": "p1",
+      "frente": "Sniper VIP",
+      "deadline": "Semana 18-24/05",
+      "blocks": "Fechamento de materiais, logística e checklist final antes do evento 25-27/05",
+      "owner": "Ruan / TAOS"
+    },
+    {
+      "title": "Mensagens assinantes — Plataforma XDental",
+      "priority": "p2",
+      "frente": "Plataforma de Assinatura",
+      "deadline": "Segunda 18/05",
+      "blocks": "Aquecimento para apresentação da nova plataforma aos assinantes",
+      "owner": "Felipe / Ruan"
+    }
+  ],
+  "radarDoDia": [
+    {
+      "time": "sábado",
+      "task": "Acompanhar se Clara enviou materiais revisados; se sim, enviar para gráfica",
+      "frente": "🎯 SVIP",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "sábado",
+      "task": "Conferir rapidamente calendário e pendências; Ruan terá pouco tempo disponível",
+      "frente": "⚙️ TAOS",
+      "status": "⏳",
+      "done": false
+    },
+    {
+      "time": "sábado",
+      "task": "Manter no radar: segunda começa última semana antes do Sniper VIP",
+      "frente": "🎯 SVIP",
+      "status": "⏳",
+      "done": false
+    },
+    {
+      "time": "segunda",
+      "task": "Radar semanal: resumo + atividades de segunda + checklist última semana Sniper VIP",
+      "frente": "📡 RADAR",
+      "status": "⏳",
+      "done": false
+    },
+    {
+      "time": "segunda",
+      "task": "Confirmar horário da entrevista com Sérgio e lembrar Lucas, Bruno Koppe e Sérgio",
+      "frente": "💎 ELITE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "segunda",
+      "task": "Acompanhar gravação/entrega Paulo Medina — 101 Tips Plataforma XDental",
+      "frente": "🎬 PLAT",
+      "status": "⏳",
+      "done": false
+    },
+    {
+      "time": "segunda",
+      "task": "Enviar mais duas mensagens para assinantes sobre apresentação da nova plataforma",
+      "frente": "🎬 PLAT",
+      "status": "⏳",
+      "done": false
+    },
+    {
+      "time": "19h",
+      "task": "Mentoria Cloud Code — Módulo 1 Fundação ao vivo",
+      "frente": "☁️ CLOUD",
+      "status": "📅",
+      "done": false
+    }
+  ],
+  "metrics": {
+    "p0": 0,
+    "p1": 4,
+    "p2": 2,
+    "p3": 1,
+    "done": 15,
+    "tasks": 8
+  },
+  "radarExtra": "Calendário conferido: sábado 16/05 sem eventos no Google Calendar. Segunda 18/05 tem Entrega Paul Medina — 101 Tips Plataforma XDental (dia todo) e Mentoria Cloud Code Módulo 1 às 19h. Falta entrar/confirmar horário da entrevista com Sérgio para Elite.",
+  "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
+}
