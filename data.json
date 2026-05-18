@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-05-18 · pipeline professores Plataforma atualizado 17:19 UTC",
+    "lastUpdated": "2026-05-18 · transição editorial Chicão/Fabian registrada 18:26 UTC",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Plataforma de Assinatura: Fernando Pari, Joaquim Ariza e Victor Arguedas no radar — sem datas, tema e dados recebidos."
+    "headline": "Operação: Fabian aprovado para entrada como editor; Ruan conversa com Chicão na quarta sobre transição editorial."
   },
   "fronts": [
     {
@@ -16,16 +16,18 @@
       "priority": "p1",
       "progress": 85,
       "owner": "Bruno + Batista",
-      "summary": "Operação semanal ativa + nova alavanca de LTV: 4 order bumps por checkout e combo dos 4 por $10 para tentar dobrar ticket médio.",
+      "summary": "Operação semanal ativa; atenção à transição editorial Chicão → Fabian e order bumps/combos de quinta.",
       "nextActions": [
+        "Quarta 20/05: Ruan conversar com Chicão sobre transição editorial/saída",
+        "Fabian aprovado para entrada como novo editor; preparar passagem de bastão e primeiras demandas",
         "Felipe configurar 4 order bumps + combo nos 6 checkouts Low Ticket a partir de quinta 21/05",
         "Criar/validar combos por produto: 4 bumps de $5 ou combo dos 4 por $10",
         "Checklist pós-configuração: preço, checkout, entrega, tracking, UTMs e conversão bump/combo",
-        "Rotina semanal Sérgio→Chicão→Batista",
         "Análise contínua criativos Meta",
         "Reunião semanal qua 13/05 · 14h com Bruno + Batista"
       ],
       "blockers": [
+        "Transição editorial Chicão → Fabian precisa ser comunicada e organizada para não travar esteira de criativos",
         "Felipe precisa configurar checkout/Hotmart para bumps e combos antes do teste de quinta"
       ]
     },
@@ -186,6 +188,14 @@
   ],
   "gargalos": [
     {
+      "title": "Transição editorial Chicão → Fabian",
+      "priority": "p1",
+      "frente": "Low Tickets / Operação",
+      "deadline": "Quarta 20/05",
+      "blocks": "Esteira de criativos; precisa comunicar Chicão e preparar entrada/passagem de bastão do Fabian",
+      "owner": "Ruan"
+    },
+    {
       "title": "Professores Plataforma sem data/tema/dados",
       "priority": "p1",
       "frente": "Plataforma de Assinatura",
@@ -235,6 +245,20 @@
     }
   ],
   "radarDoDia": [
+    {
+      "time": "feito",
+      "task": "Entrevista com Fabian concluída — Ruan gostou muito e Fabian vai entrar",
+      "frente": "👤 RH",
+      "status": "✅",
+      "done": true
+    },
+    {
+      "time": "qua 20/05",
+      "task": "Conversar com Chicão sobre transição editorial e próximos passos",
+      "frente": "👤 RH",
+      "status": "🔥",
+      "done": false
+    },
     {
       "time": "semana",
       "task": "Manter no radar Fernando Pari, Joaquim Ariza e Victor Arguedas: confirmar tema do curso, data de gravação e dados",
@@ -322,12 +346,12 @@
   ],
   "metrics": {
     "p0": 0,
-    "p1": 5,
+    "p1": 6,
     "p2": 2,
     "p3": 1,
     "done": 15,
-    "tasks": 12
+    "tasks": 14
   },
-  "radarExtra": "Atualização 18/05 17:19 UTC: Ruan pediu manter no radar os professores da Plataforma de Assinatura — Fernando Pari, Joaquim Ariza e Victor Arguedas. Status: Ruan em contato, mas sem definições de datas, tema do curso e dados recebidos.",
+  "radarExtra": "Atualização 18/05 18:26 UTC: Fabian entrevistado e aprovado para entrada como editor. Ruan vai conversar com Chicão na quarta 20/05 para comunicar a saída/transição editorial.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
