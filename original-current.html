@@ -1,0 +1,2028 @@
+<div class="dashboard-root">
+<style>
+  /* === FONTES === */
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Geist+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+  /* === RESET LOCAL === */
+  .dashboard-root, .dashboard-root *,
+  .dashboard-root *::before, .dashboard-root *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dashboard-root {
+    --bg-deep: #0a0612;
+    --bg-base: #110a1f;
+    --bg-elevated: #1a1030;
+    --bg-card: #1f1538;
+    --bg-card-hover: #2a1d4d;
+    --border: rgba(139, 92, 246, 0.15);
+    --border-strong: rgba(139, 92, 246, 0.35);
+    --text-primary: #e9e5f5;
+    --text-secondary: #a89cc7;
+    --text-muted: #6b5d8c;
+    --accent: #a78bfa;
+    --accent-bright: #c4b5fd;
+    --accent-glow: rgba(167, 139, 250, 0.4);
+    --p0: #f87171;
+    --p1: #fb923c;
+    --p2: #facc15;
+    --p3: #4ade80;
+    --done: #22d3ee;
+    --waiting: #facc15;
+    --gradient-violet: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 50%, #c084fc 100%);
+    --gradient-card: linear-gradient(180deg, rgba(167, 139, 250, 0.03) 0%, rgba(167, 139, 250, 0) 100%);
+    --shadow-glow: 0 0 0 1px rgba(167, 139, 250, 0.1), 0 8px 32px rgba(139, 92, 246, 0.12);
+    --shadow-hover: 0 0 0 1px rgba(167, 139, 250, 0.3), 0 16px 48px rgba(139, 92, 246, 0.25);
+
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 32px;
+    line-height: 1.5;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === BACKGROUND ATMOSFÉRICO === */
+  .dashboard-root::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 85% 80%, rgba(192, 132, 252, 0.06) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.03) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .dashboard-root::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+      linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 40px;
+    animation: slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .brand-mark {
+    width: 56px;
+    height: 56px;
+    background: var(--gradient-violet);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: white;
+    box-shadow: 0 8px 32px var(--accent-glow);
+    position: relative;
+  }
+
+  .brand-mark::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: var(--gradient-violet);
+    border-radius: 16px;
+    z-index: -1;
+    filter: blur(12px);
+    opacity: 0.6;
+  }
+
+  .brand-info h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--text-primary);
+  }
+
+  .brand-info .subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-family: 'Geist Mono', monospace;
+    letter-spacing: 0.02em;
+    margin-top: 2px;
+  }
+
+  .header-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
+  .meta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-family: 'Geist Mono', monospace;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  .meta-pill .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 8px #4ade80;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  /* === FILTROS === */
+  .filters-bar {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 16px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    margin-bottom: 32px;
+    backdrop-filter: blur(20px);
+    animation: slideUp 0.6s 0.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .filter-label {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-right: 6px;
+  }
+
+  .filter-btn {
+    padding: 6px 12px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .filter-btn:hover {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+    transform: translateY(-1px);
+  }
+
+  .filter-btn.active {
+    background: var(--gradient-violet);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 4px 12px var(--accent-glow);
+  }
+
+  .filter-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--border);
+    margin: 0 4px;
+  }
+
+  /* === PULSO/HERO METRICS === */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 968px) {
+    .hero-grid { grid-template-columns: 1fr; }
+  }
+
+  .pulse-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    animation: slideUp 0.6s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .pulse-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: var(--gradient-violet);
+    opacity: 0.5;
+  }
+
+  .section-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-title::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .pulse-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  @media (max-width: 640px) {
+    .pulse-grid { grid-template-columns: 1fr; }
+  }
+
+  .pulse-item {
+    padding: 16px;
+    background: var(--bg-base);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+  }
+
+  .pulse-item:hover {
+    border-color: var(--border-strong);
+    transform: translateY(-2px);
+  }
+
+  .pulse-item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .pulse-item-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .pulse-item-time {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    padding: 2px 8px;
+    background: var(--bg-card);
+    border-radius: 6px;
+  }
+
+  .progress-track {
+    height: 6px;
+    background: rgba(167, 139, 250, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: var(--gradient-violet);
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 0 12px var(--accent-glow);
+    animation: progressFill 1s 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+    transform-origin: left;
+  }
+
+  .progress-pct {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--accent-bright);
+    margin-top: 6px;
+    text-align: right;
+  }
+
+  /* === INDICADORES === */
+  .stats-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+    animation: slideUp 0.6s 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .stat {
+    padding: 14px;
+    background: var(--bg-base);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+
+  .stat-value {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-value.p0 { color: var(--p0); }
+  .stat-value.p1 { color: var(--p1); }
+  .stat-value.done { color: var(--p3); }
+  .stat-value.tasks { color: var(--accent-bright); }
+
+  .stat-label {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* === GARGALOS === */
+  .gargalos-section {
+    margin-bottom: 32px;
+    animation: slideUp 0.6s 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .gargalos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 16px;
+  }
+
+  .gargalo {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid;
+    border-radius: 14px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .gargalo:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+    background: var(--bg-card-hover);
+  }
+
+  .gargalo.p0 { border-left-color: var(--p0); }
+  .gargalo.p1 { border-left-color: var(--p1); }
+
+  .gargalo-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+
+  .gargalo-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+  }
+
+  .priority-badge {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+  }
+
+  .priority-badge.p0 {
+    background: rgba(248, 113, 113, 0.15);
+    color: var(--p0);
+    border: 1px solid rgba(248, 113, 113, 0.3);
+  }
+
+  .priority-badge.p1 {
+    background: rgba(251, 146, 60, 0.15);
+    color: var(--p1);
+    border: 1px solid rgba(251, 146, 60, 0.3);
+  }
+
+  .gargalo-meta {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 14px;
+    font-size: 12px;
+  }
+
+  .meta-key {
+    font-family: 'Geist Mono', monospace;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    padding-top: 2px;
+  }
+
+  .meta-val {
+    color: var(--text-secondary);
+  }
+
+  .meta-val strong {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  /* === RADAR DO DIA === */
+  .radar-section {
+    margin-bottom: 32px;
+    animation: slideUp 0.6s 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .radar-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+  }
+
+  .radar-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .radar-title-block h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+  }
+
+  .radar-subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .radar-counter {
+    font-family: 'Geist Mono', monospace;
+    font-size: 13px;
+    color: var(--accent-bright);
+    padding: 6px 12px;
+    background: rgba(167, 139, 250, 0.1);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+
+  .radar-list {
+    list-style: none;
+  }
+
+  .radar-item {
+    display: grid;
+    grid-template-columns: auto 80px 1fr auto auto;
+    gap: 14px;
+    align-items: center;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    margin-bottom: 6px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .radar-item {
+      grid-template-columns: auto 1fr;
+      gap: 8px;
+    }
+    .radar-item .radar-time,
+    .radar-item .radar-frente { grid-column: 2; }
+  }
+
+  .radar-item:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border);
+    transform: translateX(4px);
+  }
+
+  .radar-item.done {
+    opacity: 0.5;
+  }
+
+  .radar-item.done .radar-task {
+    text-decoration: line-through;
+  }
+
+  .radar-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1.5px solid var(--border-strong);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    flex-shrink: 0;
+  }
+
+  .radar-check:hover {
+    border-color: var(--accent);
+    background: rgba(167, 139, 250, 0.1);
+  }
+
+  .radar-item.done .radar-check {
+    background: var(--gradient-violet);
+    border-color: transparent;
+  }
+
+  .radar-check svg {
+    width: 12px;
+    height: 12px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .radar-item.done .radar-check svg {
+    opacity: 1;
+  }
+
+  .radar-time {
+    font-family: 'Geist Mono', monospace;
+    font-size: 12px;
+    color: var(--accent-bright);
+    font-weight: 500;
+  }
+
+  .radar-task {
+    font-size: 14px;
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .radar-frente {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    padding: 3px 8px;
+    background: var(--bg-base);
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+
+  .radar-status {
+    font-size: 16px;
+  }
+
+  .radar-extra {
+    margin-top: 20px;
+    padding: 14px 16px;
+    background: var(--bg-base);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .radar-extra-icon {
+    color: var(--text-muted);
+  }
+
+  /* === KANBAN POR FRENTE === */
+  .kanban-section {
+    margin-bottom: 32px;
+  }
+
+  .kanban-section-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .kanban-section-count {
+    font-family: 'Geist Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+
+  .kanban-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .kanban-action-btn {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    background: transparent;
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .kanban-action-btn:hover {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+    border-color: var(--border-strong);
+  }
+
+  .frente-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    margin-bottom: 12px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+    overflow: hidden;
+  }
+
+  .frente-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .frente-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s ease;
+  }
+
+  .frente-head:hover {
+    background: rgba(167, 139, 250, 0.04);
+  }
+
+  .frente-card.expanded .frente-head {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .frente-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .frente-chevron {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .frente-card.expanded .frente-chevron {
+    transform: rotate(90deg);
+    color: var(--accent-bright);
+  }
+
+  .frente-chevron svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .frente-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--bg-base);
+    border: 1px solid var(--border-strong);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .frente-name {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+  }
+
+  .frente-id {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  .frente-summary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .frente-health {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  .frente-counts {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .frente-count-pill {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: var(--bg-base);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .frente-count-pill .count-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  .frente-count-pill.exec .count-dot { background: #4ade80; box-shadow: 0 0 4px #4ade80; }
+  .frente-count-pill.wait .count-dot { background: var(--waiting); }
+  .frente-count-pill.next .count-dot { background: #60a5fa; }
+  .frente-count-pill.done .count-dot { background: var(--done); }
+
+  .frente-count-pill.zero {
+    opacity: 0.4;
+  }
+
+  .health-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .health-dot.green { background: #4ade80; box-shadow: 0 0 8px #4ade80; }
+  .health-dot.yellow { background: #facc15; box-shadow: 0 0 8px #facc15; }
+  .health-dot.orange { background: #fb923c; box-shadow: 0 0 8px #fb923c; }
+  .health-dot.blue { background: #60a5fa; box-shadow: 0 0 8px #60a5fa; }
+  .health-dot.gray { background: #6b5d8c; }
+
+  .frente-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .frente-card.expanded .frente-body {
+    max-height: 2000px;
+  }
+
+  .kanban-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 20px 24px 24px;
+  }
+
+  @media (max-width: 968px) {
+    .kanban-cols { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 540px) {
+    .kanban-cols { grid-template-columns: 1fr; }
+  }
+
+  .kanban-col {
+    background: var(--bg-base);
+    border-radius: 12px;
+    padding: 14px;
+    min-height: 80px;
+    border: 1px solid var(--border);
+  }
+
+  .kanban-col-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .kanban-col-name {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  .kanban-col-count {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    padding: 2px 6px;
+    background: var(--bg-card);
+    border-radius: 6px;
+    color: var(--text-secondary);
+  }
+
+  .kanban-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    font-size: 12.5px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    line-height: 1.4;
+  }
+
+  .kanban-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-strong);
+    transform: translateY(-1px);
+  }
+
+  .kanban-card.priority::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 8px; bottom: 8px;
+    width: 2px;
+    border-radius: 2px;
+  }
+
+  .kanban-card.p0::before { background: var(--p0); }
+  .kanban-card.p1::before { background: var(--p1); }
+  .kanban-card.p2::before { background: var(--p2); }
+
+  .kanban-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 5px;
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+  }
+
+  .col-status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .col-status-dot.exec { background: #4ade80; box-shadow: 0 0 6px #4ade80; }
+  .col-status-dot.wait { background: var(--waiting); }
+  .col-status-dot.next { background: #60a5fa; }
+  .col-status-dot.done { background: var(--done); }
+
+  /* === STANDBY === */
+  .parked-section {
+    margin-bottom: 32px;
+  }
+
+  .parked-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 24px;
+    opacity: 0.85;
+  }
+
+  .parked-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+  }
+
+  .parked-item {
+    padding: 12px 14px;
+    background: var(--bg-base);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    font-size: 13px;
+    transition: all 0.2s ease;
+  }
+
+  .parked-item:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-strong);
+  }
+
+  .parked-name {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  .parked-meta {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* === FOOTER === */
+  .footer {
+    text-align: center;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+    margin-top: 32px;
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+
+  /* === ANIMAÇÕES === */
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes progressFill {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* === ESTADOS DE FILTRO === */
+  .frente-card.hidden { display: none; }
+  .kanban-card.filtered-out { opacity: 0.25; pointer-events: none; }
+
+  /* === ALERT BAR === */
+  .alert-bar {
+    background: linear-gradient(90deg, rgba(248, 113, 113, 0.12) 0%, rgba(248, 113, 113, 0.04) 100%);
+    border: 1px solid rgba(248, 113, 113, 0.25);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    animation: slideUp 0.6s 0.15s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .alert-bar strong {
+    color: var(--p0);
+  }
+</style>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <div class="brand">
+        <div class="brand-mark">X</div>
+        <div class="brand-info">
+          <h1>Painel XDental</h1>
+          <div class="subtitle">v2.9 · sincronizado com Google Calendar</div>
+        </div>
+      </div>
+      <div class="header-meta">
+        <div class="meta-pill"><span class="dot"></span>Atualizado qua 13/05 · atualizado 12:31</div>
+        <div class="meta-pill">📅 Semana 19/26 · 10/05 → 17/05</div>
+      </div>
+    </div>
+
+    <div class="alert-bar" style="background: linear-gradient(90deg, rgba(167, 139, 250, 0.12) 0%, rgba(167, 139, 250, 0.04) 100%); border: 1px solid rgba(167, 139, 250, 0.25);">
+      <span style="font-size: 18px;">📅</span>
+      <span><strong style="color: var(--accent-bright);">Quarta densa</strong> — Klyro entrega M5 · 10h reunião nova plataforma/OrtoPlanner · 14h Low Tickets · 15h design Klyro + envio do pacote SVIP</span>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="filters-bar">
+      <div class="filter-group">
+        <span class="filter-label">Prioridade</span>
+        <button class="filter-btn active" data-filter="prio" data-value="all">Todas</button>
+        <button class="filter-btn" data-filter="prio" data-value="p0">🔴 P0</button>
+        <button class="filter-btn" data-filter="prio" data-value="p1">🟠 P1</button>
+        <button class="filter-btn" data-filter="prio" data-value="p2">🟡 P2</button>
+      </div>
+      <div class="filter-divider"></div>
+      <div class="filter-group">
+        <span class="filter-label">Frente</span>
+        <button class="filter-btn active" data-filter="frente" data-value="all">Todas</button>
+        <button class="filter-btn" data-filter="frente" data-value="lowticket">🛒 LT</button>
+        <button class="filter-btn" data-filter="frente" data-value="sniper">🎯 SVIP</button>
+        <button class="filter-btn" data-filter="frente" data-value="diplomado">🎓 DIP</button>
+        <button class="filter-btn" data-filter="frente" data-value="plataforma">🎬 PA</button>
+        <button class="filter-btn" data-filter="frente" data-value="chile">🇨🇱 CHL</button>
+        <button class="filter-btn" data-filter="frente" data-value="elite">💎 ELITE</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO GRID (Pulso + Stats) -->
+  <div class="hero-grid">
+    <div class="pulse-card">
+      <div class="section-title">Pulso da Semana</div>
+      <div class="pulse-grid">
+        <div class="pulse-item">
+          <div class="pulse-item-head">
+            <div class="pulse-item-name">🎯 Sniper VIP</div>
+            <div class="pulse-item-time">T-13 dias</div>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width: 60%"></div></div>
+          <div class="progress-pct">60% pronto</div>
+        </div>
+        <div class="pulse-item">
+          <div class="pulse-item-head">
+            <div class="pulse-item-name">🎓 Diplomado M5</div>
+            <div class="pulse-item-time">T-06 dias</div>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width: 80%"></div></div>
+          <div class="progress-pct">80% pronto</div>
+        </div>
+        <div class="pulse-item">
+          <div class="pulse-item-head">
+            <div class="pulse-item-name">📝 Prova M4 (Lovable)</div>
+            <div class="pulse-item-time">T-03 dias</div>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width: 75%"></div></div>
+          <div class="progress-pct">75% pronto</div>
+        </div>
+        <div class="pulse-item">
+          <div class="pulse-item-head">
+            <div class="pulse-item-name">🇨🇱 Chile · CIOCH</div>
+            <div class="pulse-item-time">T-106 dias</div>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width: 15%"></div></div>
+          <div class="progress-pct">15% pronto</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-card">
+      <div class="section-title">Indicadores</div>
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-value p0">1</div>
+          <div class="stat-label">P0 abertos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value p1">3</div>
+          <div class="stat-label">P1 abertos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value tasks">7</div>
+          <div class="stat-label">Tarefas hoje</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value done">15</div>
+          <div class="stat-label">Done · 7 dias</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GARGALOS -->
+  <section class="gargalos-section">
+    <h2 class="section-title">🚨 Gargalos Ativos</h2>
+    <div class="gargalos-grid">
+
+      <article class="gargalo p1" data-prio="p1" data-frente="sniper">
+        <div class="gargalo-head">
+          <h3 class="gargalo-title">Workbook do Sérgio</h3>
+          <span class="priority-badge p1">P1</span>
+        </div>
+        <div class="gargalo-meta">
+          <span class="meta-key">Frente</span><span class="meta-val">🎯 Sniper VIP</span>
+          <span class="meta-key">Deadline</span><span class="meta-val"><strong>Ter 12/05 manhã</strong> (cobrar Sérgio amanhã cedo)</span>
+          <span class="meta-key">Bloqueia</span><span class="meta-val">Produção de 14 workbooks até 25/05</span>
+          <span class="meta-key">Owner</span><span class="meta-val">Sérgio (entrega) · Ruan (cobra cedo)</span>
+        </div>
+      </article>
+
+      <article class="gargalo p1" data-prio="p1" data-frente="plataforma">
+        <div class="gargalo-head">
+          <h3 class="gargalo-title">Paul Medina · acompanhar gravação</h3>
+          <span class="priority-badge p1">P1</span>
+        </div>
+        <div class="gargalo-meta">
+          <span class="meta-key">Frente</span><span class="meta-val">🎬 Plataforma de Assinatura</span>
+          <span class="meta-key">Tema</span><span class="meta-val"><strong>"101 Tips para el éxito con alineadores"</strong></span>
+          <span class="meta-key">Gravação</span><span class="meta-val">11-21/05 · liberação 05/06</span>
+          <span class="meta-key">Owner</span><span class="meta-val">Ruan · Plano B: Victor Arguedas</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- RADAR DO DIA -->
+  <section class="radar-section">
+    <div class="radar-card">
+      <div class="radar-head">
+        <div class="radar-title-block">
+          <h2>📌 Radar de hoje · Quarta 13/05</h2>
+          <div class="radar-subtitle">Janela útil concentrada manhã / início tarde</div>
+        </div>
+        <span class="radar-counter">7 tarefas</span>
+      </div>
+
+      <ul class="radar-list" id="radar-list">
+        <li class="radar-item" data-id="t1">
+          <button class="radar-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></button>
+          <span class="radar-time">9h-10h</span>
+          <span class="radar-task">🍇 Pagar 40% do açaí — R$ 100 (total R$ 250)</span>
+          <span class="radar-frente">🎯 SVIP</span>
+          <span class="radar-status">⏳</span>
+        </li>
+        <li class="radar-item" data-id="t2">
+          <button class="radar-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></button>
+          <span class="radar-time">manhã</span>
+          <span class="radar-task">Receber entrega Klyro · PDF M5 Diplomado</span>
+          <span class="radar-frente">🎓 DIP</span>
+          <span class="radar-status">⏳</span>
+        </li>
+        <li class="radar-item" data-id="t5">
+          <button class="radar-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></button>
+          <span class="radar-time">10h-11h</span>
+          <span class="radar-task">🤝 Reunião c/ Sérgio + Felipe (Plataforma XDental + OrtoPlanner)</span>
+          <span class="radar-frente">🦷 OP</span>
+          <span class="radar-status">⏳</span>
+        </li>
+        <li class="radar-item" data-id="t6">
+          <button class="radar-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></button>
+          <span class="radar-time">14h-15h</span>
+          <span class="radar-task">📊 Reunião semanal Low Tickets (Bruno + Batista)</span>
+          <span class="radar-frente">🛒 LT</span>
+          <span class="radar-status">⏳</span>
+        </li>
+        <li class="radar-item" data-id="t6b">
+          <button class="radar-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></button>
+          <span class="radar-time">15h</span>
+          <span class="radar-task">🎨 Reunião com equipe de design Klyro + envio do pacote SVIP após a reunião: capa workbook, cronograma do evento, crachás e certificado</span>
+          <span class="radar-frente">🎨 DESIGN</span>
+          <span class="radar-status">⏳</span>
+        </li>
+        <li class="radar-item" data-id="t7">
+          <button class="radar-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></button>
+          <span class="radar-time">tarde</span>
+          <span class="radar-task">Iniciar orçamento workbook em 2 gráficas locais</span>
+          <span class="radar-frente">🎯 SVIP</span>
+          <span class="radar-status">⏳</span>
+        </li>
+        <li class="radar-item" data-id="t8">
+          <button class="radar-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></button>
+          <span class="radar-time">tarde</span>
+          <span class="radar-task">Continuar planejamento Lançamento Elite junho</span>
+          <span class="radar-frente">🚀 LANÇ</span>
+          <span class="radar-status">⏳</span>
+        </li>
+      </ul>
+
+      <div class="radar-extra">
+        <span class="radar-extra-icon">📡</span>
+        <span>📊 Aguardando: gravação Paul Medina (recebida ontem) · 2-3 propostas transfer (Trip Tour fechando) · cardápio Bassi · barista · orçamento almoço dia 3</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- KANBAN POR FRENTE -->
+  <section class="kanban-section">
+    <h2 class="kanban-section-title">
+      🎯 Kanban por Frente
+      <span class="kanban-section-count">9 frentes ativas</span>
+    </h2>
+
+    <div class="kanban-actions">
+      <button class="kanban-action-btn" id="expand-all">Expandir todas</button>
+      <button class="kanban-action-btn" id="collapse-all">Recolher todas</button>
+    </div>
+
+    <!-- FRENTE 1: LOW TICKETS -->
+    <article class="frente-card" data-frente="lowticket" style="animation-delay: 0.4s">
+      <div class="frente-head">
+        <div class="frente-title">
+          <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+          <div class="frente-icon">🛒</div>
+          <div>
+            <div class="frente-name">Low Tickets</div>
+            <div class="frente-id">FRENTE 1 · operação piloto automático</div>
+          </div>
+        </div>
+        <div class="frente-summary">
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>2</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>1</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health">
+          <span class="health-dot green"></span>
+          Saudável · piloto automático
+        </div>
+        </div>
+      </div>
+      <div class="frente-body">
+        <div class="kanban-cols">
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
+            <span class="kanban-col-count">2</span>
+          </div>
+          <div class="kanban-card">Rotina semanal Sérgio→Chicão→Batista</div>
+          <div class="kanban-card">Análise contínua criativos Meta</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
+            <span class="kanban-col-count">0</span>
+          </div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
+            <span class="kanban-col-count">1</span>
+          </div>
+          <div class="kanban-card">Reunião semanal qua 13/05 · 14h<div class="kanban-card-meta">Bruno + Batista</div></div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
+            <span class="kanban-col-count">1</span>
+          </div>
+          <div class="kanban-card">Ciclo semana anterior fechado</div>
+        </div>
+      </div>
+      </div>
+    </article>
+
+    <!-- FRENTE 2: SNIPER VIP -->
+    <article class="frente-card" data-frente="sniper" style="animation-delay: 0.45s">
+      <div class="frente-head">
+        <div class="frente-title">
+          <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+          <div class="frente-icon">🎯</div>
+          <div>
+            <div class="frente-name">Sniper VIP</div>
+            <div class="frente-id">FRENTE 2 · T-15 dias · 25-27/05</div>
+          </div>
+        </div>
+        <div class="frente-summary">
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>4</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>3</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>8</span></div>
+          <div class="frente-health">
+          <span class="health-dot yellow"></span>
+          Atenção · 5 itens sem valor lançado
+        </div>
+        </div>
+      </div>
+      <div class="frente-body">
+        <div class="kanban-cols">
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
+            <span class="kanban-col-count">4</span>
+          </div>
+          <div class="kanban-card priority p1">🍇 Pagar 40% açaí HOJE<div class="kanban-card-meta">R$ 100 · total R$ 250 · resto a confirmar</div></div>
+          <div class="kanban-card">Lilian · info pagamentos pré-evento<div class="kanban-card-meta">conversa de hoje</div></div>
+          <div class="kanban-card priority p2">Antecipar: cardápio Bassi<div class="kanban-card-meta">Lilian sem retorno</div></div>
+          <div class="kanban-card priority p2">Antecipar: orçamento almoço dia 3<div class="kanban-card-meta">Centervale vs rua lateral</div></div>
+          <div class="kanban-card priority p2">Antecipar: definir barista<div class="kanban-card-meta">sem retorno · decidir cancelar?</div></div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
+            <span class="kanban-col-count">3</span>
+          </div>
+          <div class="kanban-card">Cardápio Bassi (Happy Hour)</div>
+          <div class="kanban-card">Orçamentos almoço dia 3 (2 opções)</div>
+          <div class="kanban-card">Barista · sem retorno</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
+            <span class="kanban-col-count">2</span>
+          </div>
+          
+          
+          <div class="kanban-card priority p1">Reunião 15h com equipe de design Klyro + envio do pacote SVIP<div class="kanban-card-meta">explicar na reunião e enviar depois: capa workbook + cronograma do evento + crachás + certificado · entrega qui 14/05</div></div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
+            <span class="kanban-col-count">8</span>
+          </div>
+          <div class="kanban-card">✓ Workbook entregue pelo Sérgio (sem capa) · 12/05</div>
+          <div class="kanban-card">✓ Compra Shopee · aventais cirúrgicos · 12/05</div>
+          <div class="kanban-card">✓ 50% churrasco PAGO (sex 08/05) · comprovante na arena</div>
+          <div class="kanban-card">✓ Briefing transfers enviado pras empresas (11/05)</div>
+          <div class="kanban-card">✓ Coffees 25/26 · Lilian + padaria</div>
+          <div class="kanban-card">✓ Amicci jantar dia 1 OK</div>
+          <div class="kanban-card">✓ Camisas em produção</div>
+          <div class="kanban-card">✓ Brindes definidos</div>
+        </div>
+      </div>
+      </div>
+    </article>
+
+    <!-- FRENTE 3: DIPLOMADO -->
+    <article class="frente-card" data-frente="diplomado" style="animation-delay: 0.5s">
+      <div class="frente-head">
+        <div class="frente-title">
+          <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+          <div class="frente-icon">🎓</div>
+          <div>
+            <div class="frente-name">Diplomado Ortho Pro</div>
+            <div class="frente-id">FRENTE 3 · M5 em diagramação · M4 prova em produção</div>
+          </div>
+        </div>
+        <div class="frente-summary">
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>2</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>1</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>3</span></div>
+          <div class="frente-health">
+          <span class="health-dot green"></span>
+          Saudável · M5 + M4 sob controle
+        </div>
+        </div>
+      </div>
+      <div class="frente-body">
+        <div class="kanban-cols">
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
+            <span class="kanban-col-count">2</span>
+          </div>
+          <div class="kanban-card priority p1">Prova M4 · plataforma separada Felipe<div class="kanban-card-meta">tela login separada · libera sex 15/05</div></div>
+          <div class="kanban-card priority p2">M6 · alinhamento c/ Sérgio (tema + gravação)</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
+            <span class="kanban-col-count">1</span>
+          </div>
+          <div class="kanban-card">Klyro diagramando M5<div class="kanban-card-meta">deadline sex 15/05</div></div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
+            <span class="kanban-col-count">2</span>
+          </div>
+          <div class="kanban-card">Liberação prova M4 (sex 15/05)</div>
+          <div class="kanban-card">Encuentro M5 · José Rodríguez (26/05)</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
+            <span class="kanban-col-count">3</span>
+          </div>
+          <div class="kanban-card">✓ Pacote M5 enviado pra Klyro</div>
+          <div class="kanban-card">✓ 10 questões M4 + gabarito</div>
+          <div class="kanban-card">✓ Slides M5 HD no Drive</div>
+        </div>
+      </div>
+      </div>
+    </article>
+
+    <!-- FRENTE 4: PLATAFORMA DE ASSINATURA -->
+    <article class="frente-card" data-frente="plataforma" style="animation-delay: 0.55s">
+      <div class="frente-head">
+        <div class="frente-title">
+          <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+          <div class="frente-icon">🎬</div>
+          <div>
+            <div class="frente-name">Plataforma de Assinatura</div>
+            <div class="frente-id">FRENTE 4 · Paul Medina grava esta quinzena</div>
+          </div>
+        </div>
+        <div class="frente-summary">
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>2</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>3</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>3</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>6</span></div>
+          <div class="frente-health">
+          <span class="health-dot yellow"></span>
+          Atenção · 4 contatos novos pra alinhar
+        </div>
+        </div>
+      </div>
+      <div class="frente-body">
+        <div class="kanban-cols">
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
+            <span class="kanban-col-count">2</span>
+          </div>
+          <div class="kanban-card priority p1">Paul Medina · GRAVANDO HOJE 12/05<div class="kanban-card-meta">"101 Tips alineadores" · libera 05/06 · receber EOD</div></div>
+          <div class="kanban-card priority p1">Nova plataforma Felipe<div class="kanban-card-meta">reunião hoje 10h · apresentação aos assinantes 18/05 21h</div></div>
+          
+
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
+            <span class="kanban-col-count">3</span>
+          </div>
+          <div class="kanban-card">Joaquim Ariza · Ferramenta 2.1 enviada, aguardando dados</div>
+          <div class="kanban-card">Fernando Pari · 1ª msg enviada, aguardando resposta</div>
+          <div class="kanban-card">Victor Arguedas · Ferramenta 2.1 enviada, aguardando resposta</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
+            <span class="kanban-col-count">3</span>
+          </div>
+          <div class="kanban-card">Auditoria planilha cursos · ter 12/05</div>
+          <div class="kanban-card">Pipeline Jul-Set c/ Sérgio</div>
+          <div class="kanban-card">Revisão semanal · sex 17h</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
+            <span class="kanban-col-count">6</span>
+          </div>
+          <div class="kanban-card">✓ Marcos Prieto liberado (08/05)</div>
+          <div class="kanban-card">✓ Tema Paul Medina confirmado · "101 Tips alineadores"</div>
+          <div class="kanban-card">✓ Mensagem Mônica liberar acesso Joaquim (11/05)</div>
+          <div class="kanban-card">✓ Ferramenta 2.1 → Joaquim Ariza (11/05)</div>
+          <div class="kanban-card">✓ Mensagem → Fernando Pari (11/05)</div>
+          <div class="kanban-card">✓ Mensagem → Victor Arguedas (11/05)</div>
+        </div>
+      </div>
+      </div>
+    </article>
+
+    <!-- FRENTE 5: CHILE -->
+    <article class="frente-card" data-frente="chile" style="animation-delay: 0.6s">
+      <div class="frente-head">
+        <div class="frente-title">
+          <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+          <div class="frente-icon">🇨🇱</div>
+          <div>
+            <div class="frente-name">Chile · XX CIOCH Santiago</div>
+            <div class="frente-id">FRENTE 5 · T-108 dias · 26-28/08</div>
+          </div>
+        </div>
+        <div class="frente-summary">
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>1</span><span class="frente-count-pill wait" title="Aguardando"><span class="count-dot"></span>2</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>2</span></div>
+          <div class="frente-health">
+          <span class="health-dot orange"></span>
+          Avançando lento · várias decisões em aberto
+        </div>
+        </div>
+      </div>
+      <div class="frente-body">
+        <div class="kanban-cols">
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
+            <span class="kanban-col-count">1</span>
+          </div>
+          
+          <div class="kanban-card">Verificar email · qual stand foi definido</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
+            <span class="kanban-col-count">2</span>
+          </div>
+          <div class="kanban-card">2º pagamento Chile<div class="kanban-card-meta">encaminhado ao financeiro · confirmar 26/05</div></div>
+          <div class="kanban-card">Envio arquivos gráfica · prazo 26/07</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
+            <span class="kanban-col-count">2</span>
+          </div>
+          <div class="kanban-card">Decisão Vinícius vai/não</div>
+          <div class="kanban-card priority p2">Resolver conflito M8 × Chile (25-28/08)</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
+            <span class="kanban-col-count">2</span>
+          </div>
+          <div class="kanban-card">✓ Manual expositor recebido</div>
+          <div class="kanban-card">✓ Stand definido (verificar email)</div>
+        </div>
+      </div>
+      </div>
+    </article>
+
+    <!-- FRENTE 6: SNIPER ELITE -->
+    <article class="frente-card" data-frente="elite" style="animation-delay: 0.65s">
+      <div class="frente-head">
+        <div class="frente-title">
+          <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+          <div class="frente-icon">💎</div>
+          <div>
+            <div class="frente-name">Sniper Elite</div>
+            <div class="frente-id">FRENTE 6 · operação Mônica · USD 997</div>
+          </div>
+        </div>
+        <div class="frente-summary">
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>1</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>2</span><span class="frente-count-pill done zero" title="Concluído"><span class="count-dot"></span>0</span></div>
+          <div class="frente-health">
+          <span class="health-dot green"></span>
+          Saudável · Mônica conduz · só visibilidade
+        </div>
+        </div>
+      </div>
+      <div class="frente-body">
+        <div class="kanban-cols">
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
+            <span class="kanban-col-count">1</span>
+          </div>
+          <div class="kanban-card">Comunicações Mônica</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
+            <span class="kanban-col-count">0</span>
+          </div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
+            <span class="kanban-col-count">2</span>
+          </div>
+          <div class="kanban-card">Imersão "Biprotrusión con Alineadores" · seg 11/05 · 14h · Zoom</div>
+          <div class="kanban-card">Lançamento junho (planejar esta semana)</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
+            <span class="kanban-col-count">0</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </article>
+
+    <!-- FRENTE 7: ORTOPLANNER -->
+    <article class="frente-card" data-frente="ortoplanner" style="animation-delay: 0.7s">
+      <div class="frente-head">
+        <div class="frente-title">
+          <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+          <div class="frente-icon">🦷</div>
+          <div>
+            <div class="frente-name">OrtoPlanner</div>
+            <div class="frente-id">FRENTE 7 · MVP em definição</div>
+          </div>
+        </div>
+        <div class="frente-summary">
+          <div class="frente-counts"><span class="frente-count-pill exec zero" title="Em execução"><span class="count-dot"></span>0</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>3</span><span class="frente-count-pill done zero" title="Concluído"><span class="count-dot"></span>0</span></div>
+          <div class="frente-health">
+          <span class="health-dot blue"></span>
+          Ativa · MVP em definição · reunião hoje 10h
+        </div>
+        </div>
+      </div>
+      <div class="frente-body">
+        <div class="kanban-cols">
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
+            <span class="kanban-col-count">0</span>
+          </div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
+            <span class="kanban-col-count">0</span>
+          </div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
+            <span class="kanban-col-count">3</span>
+          </div>
+          <div class="kanban-card priority p1">Reunião hoje 10h (Ruan + Sérgio + Felipe)<div class="kanban-card-meta">apresentar plataforma XDental + alinhar OrtoPlanner + definir MVP</div></div>
+          <div class="kanban-card">Definir funcionalidades do MVP<div class="kanban-card-meta">entrega em maio</div></div>
+          <div class="kanban-card">Validar próximos passos<div class="kanban-card-meta">OrtoPlanner</div></div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
+            <span class="kanban-col-count">0</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </article>
+
+    <!-- FRENTE 8: PLATAFORMA PRÓPRIA -->
+    <article class="frente-card" data-frente="app" style="animation-delay: 0.75s">
+      <div class="frente-head">
+        <div class="frente-title">
+          <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+          <div class="frente-icon">📱</div>
+          <div>
+            <div class="frente-name">Plataforma Própria (App)</div>
+            <div class="frente-id">FRENTE 8 · base de assinantes pronta</div>
+          </div>
+        </div>
+        <div class="frente-summary">
+          <div class="frente-counts"><span class="frente-count-pill exec" title="Em execução"><span class="count-dot"></span>1</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>1</span><span class="frente-count-pill done" title="Concluído"><span class="count-dot"></span>1</span></div>
+          <div class="frente-health">
+          <span class="health-dot yellow"></span>
+          Atenção · falta go-to-market
+        </div>
+        </div>
+      </div>
+      <div class="frente-body">
+        <div class="kanban-cols">
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
+            <span class="kanban-col-count">1</span>
+          </div>
+          <div class="kanban-card">Estratégia comunicação + acesso</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
+            <span class="kanban-col-count">0</span>
+          </div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
+            <span class="kanban-col-count">1</span>
+          </div>
+          <div class="kanban-card">Marcar aula apresentação c/ Sérgio</div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
+            <span class="kanban-col-count">1</span>
+          </div>
+          <div class="kanban-card">✓ Felipe subiu base assinantes</div>
+        </div>
+      </div>
+      </div>
+    </article>
+
+    <!-- FRENTE 9: LANÇAMENTOS -->
+    <article class="frente-card" data-frente="lancamentos" style="animation-delay: 0.8s">
+      <div class="frente-head">
+        <div class="frente-title">
+          <div class="frente-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+          <div class="frente-icon">🚀</div>
+          <div>
+            <div class="frente-name">Lançamentos</div>
+            <div class="frente-id">FRENTE 9 · próximo: junho · Sniper Elite</div>
+          </div>
+        </div>
+        <div class="frente-summary">
+          <div class="frente-counts"><span class="frente-count-pill exec zero" title="Em execução"><span class="count-dot"></span>0</span><span class="frente-count-pill wait zero" title="Aguardando"><span class="count-dot"></span>0</span><span class="frente-count-pill next" title="Próximo"><span class="count-dot"></span>1</span><span class="frente-count-pill done zero" title="Concluído"><span class="count-dot"></span>0</span></div>
+          <div class="frente-health">
+          <span class="health-dot blue"></span>
+          Próximo · planejamento esta semana
+        </div>
+        </div>
+      </div>
+      <div class="frente-body">
+        <div class="kanban-cols">
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot exec"></span> Em execução</span>
+            <span class="kanban-col-count">0</span>
+          </div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot wait"></span> Aguardando</span>
+            <span class="kanban-col-count">0</span>
+          </div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot next"></span> Próximo</span>
+            <span class="kanban-col-count">1</span>
+          </div>
+          <div class="kanban-card">Planejar lançamento junho Sniper Elite<div class="kanban-card-meta">janela: 12-16/05</div></div>
+        </div>
+        <div class="kanban-col">
+          <div class="kanban-col-head">
+            <span class="kanban-col-name"><span class="col-status-dot done"></span> Concluído</span>
+            <span class="kanban-col-count">0</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- STANDBY -->
+  <section class="parked-section">
+    <h2 class="section-title">⏸️ Standby · sem prazo imediato</h2>
+    <div class="parked-card">
+      <div class="parked-list">
+        <div class="parked-item">
+          <div class="parked-name">Substituto do Chicão</div>
+          <div class="parked-meta"><span>Equipe</span><span>Jun/Jul</span></div>
+        </div>
+        <div class="parked-item">
+          <div class="parked-name">Conflito Encuentro M8 × Chile</div>
+          <div class="parked-meta"><span>Diplomado</span><span>Até 30/06</span></div>
+        </div>
+        <div class="parked-item">
+          <div class="parked-name">Política alunos falham recuperação</div>
+          <div class="parked-meta"><span>Diplomado</span><span>Até out</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Painel mantido em conjunto: Ruan + Claude · Comunicação interna XDental: WhatsApp / Discord<br>
+    Sincronização automática com Google Calendar XDental · próxima revisão na próxima conversa
+  </footer>
+</div>
+
+<script>
+  (function() {
+    const root = document.querySelector('.dashboard-root');
+    if (!root) return;
+
+    // === CHECKBOXES DAS TAREFAS DO RADAR ===
+    const STORAGE_KEY = 'xdental_radar_2026_05_11';
+
+    async function loadDone() {
+      try {
+        const result = await window.storage.get(STORAGE_KEY);
+        return result ? JSON.parse(result.value) : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    async function saveDone(arr) {
+      try {
+        await window.storage.set(STORAGE_KEY, JSON.stringify(arr));
+      } catch (e) {
+        console.warn('storage failed', e);
+      }
+    }
+
+    async function initRadar() {
+      const done = await loadDone();
+      const items = root.querySelectorAll('.radar-item');
+      items.forEach(item => {
+        const id = item.dataset.id;
+        if (done.includes(id)) {
+          item.classList.add('done');
+          item.querySelector('.radar-status').textContent = '✅';
+        }
+        item.querySelector('.radar-check').addEventListener('click', async (e) => {
+          e.stopPropagation();
+          const currentDone = await loadDone();
+          if (item.classList.contains('done')) {
+            item.classList.remove('done');
+            item.querySelector('.radar-status').textContent = '⏳';
+            await saveDone(currentDone.filter(x => x !== id));
+          } else {
+            item.classList.add('done');
+            item.querySelector('.radar-status').textContent = '✅';
+            if (!currentDone.includes(id)) {
+              currentDone.push(id);
+              await saveDone(currentDone);
+            }
+          }
+        });
+      });
+    }
+    initRadar();
+
+    // === FILTROS ===
+    const filterBtns = root.querySelectorAll('.filter-btn');
+    const state = { prio: 'all', frente: 'all' };
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const f = btn.dataset.filter;
+        const v = btn.dataset.value;
+        state[f] = v;
+
+        // Visual feedback nos botões
+        root.querySelectorAll(`.filter-btn[data-filter="${f}"]`).forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        applyFilters();
+      });
+    });
+
+    function applyFilters() {
+      // Frentes (cards inteiros)
+      const frentes = root.querySelectorAll('.frente-card');
+      frentes.forEach(card => {
+        const matchFrente = state.frente === 'all' || card.dataset.frente === state.frente;
+        card.classList.toggle('hidden', !matchFrente);
+      });
+
+      // Gargalos (atomic cards)
+      const gargalos = root.querySelectorAll('.gargalo');
+      gargalos.forEach(g => {
+        const matchPrio = state.prio === 'all' || g.dataset.prio === state.prio;
+        const matchFrente = state.frente === 'all' || g.dataset.frente === state.frente;
+        g.style.display = (matchPrio && matchFrente) ? '' : 'none';
+      });
+
+      // Kanban cards (prioridade)
+      const cards = root.querySelectorAll('.kanban-card');
+      cards.forEach(c => {
+        if (state.prio === 'all') {
+          c.classList.remove('filtered-out');
+        } else {
+          const hasPrio = c.classList.contains(state.prio);
+          c.classList.toggle('filtered-out', !hasPrio);
+        }
+      });
+
+      // Se filtrou por frente específica, auto-expande
+      if (state.frente !== 'all') {
+        const targetFrente = root.querySelector(`.frente-card[data-frente="${state.frente}"]`);
+        if (targetFrente) targetFrente.classList.add('expanded');
+      }
+    }
+
+    // === ACCORDION DAS FRENTES ===
+    const EXPANDED_KEY = 'xdental_expanded_frentes_v1';
+
+    async function loadExpanded() {
+      try {
+        const result = await window.storage.get(EXPANDED_KEY);
+        return result ? JSON.parse(result.value) : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    async function saveExpanded(arr) {
+      try {
+        await window.storage.set(EXPANDED_KEY, JSON.stringify(arr));
+      } catch (e) {
+        console.warn('storage failed', e);
+      }
+    }
+
+    async function initAccordion() {
+      const expanded = await loadExpanded();
+      const frentes = root.querySelectorAll('.frente-card');
+
+      // Aplicar estado salvo
+      frentes.forEach(f => {
+        if (expanded.includes(f.dataset.frente)) {
+          f.classList.add('expanded');
+        }
+      });
+
+      // Toggle ao clicar no header
+      frentes.forEach(f => {
+        const head = f.querySelector('.frente-head');
+        head.addEventListener('click', async () => {
+          f.classList.toggle('expanded');
+          const current = await loadExpanded();
+          const id = f.dataset.frente;
+          if (f.classList.contains('expanded')) {
+            if (!current.includes(id)) current.push(id);
+          } else {
+            const idx = current.indexOf(id);
+            if (idx > -1) current.splice(idx, 1);
+          }
+          await saveExpanded(current);
+        });
+      });
+
+      // Botões expandir/recolher todas
+      const expandAllBtn = root.querySelector('#expand-all');
+      const collapseAllBtn = root.querySelector('#collapse-all');
+
+      if (expandAllBtn) {
+        expandAllBtn.addEventListener('click', async () => {
+          const allIds = [];
+          frentes.forEach(f => {
+            f.classList.add('expanded');
+            allIds.push(f.dataset.frente);
+          });
+          await saveExpanded(allIds);
+        });
+      }
+
+      if (collapseAllBtn) {
+        collapseAllBtn.addEventListener('click', async () => {
+          frentes.forEach(f => f.classList.remove('expanded'));
+          await saveExpanded([]);
+        });
+      }
+    }
+    initAccordion();
+  })();
+</script>
+</div>

@@ -1,0 +1,1470 @@
+<div class="presentation-root">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Geist+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+  .presentation-root, .presentation-root *,
+  .presentation-root *::before, .presentation-root *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .presentation-root {
+    --bg-deep: #0a0612;
+    --bg-base: #110a1f;
+    --bg-elevated: #1a1030;
+    --bg-card: #1f1538;
+    --bg-card-hover: #2a1d4d;
+    --border: rgba(139, 92, 246, 0.15);
+    --border-strong: rgba(139, 92, 246, 0.35);
+    --text-primary: #e9e5f5;
+    --text-secondary: #a89cc7;
+    --text-muted: #6b5d8c;
+    --accent: #a78bfa;
+    --accent-bright: #c4b5fd;
+    --accent-glow: rgba(167, 139, 250, 0.4);
+    --gradient-violet: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 50%, #c084fc 100%);
+    --shadow-glow: 0 0 0 1px rgba(167, 139, 250, 0.1), 0 8px 32px rgba(139, 92, 246, 0.12);
+    --shadow-hover: 0 0 0 1px rgba(167, 139, 250, 0.3), 0 16px 48px rgba(139, 92, 246, 0.25);
+
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 48px 32px;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .presentation-root::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(139, 92, 246, 0.10) 0%, transparent 40%),
+      radial-gradient(circle at 85% 80%, rgba(192, 132, 252, 0.08) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .presentation-root::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+      linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* === HEADER === */
+  .pres-header {
+    text-align: center;
+    margin-bottom: 56px;
+    animation: slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .pres-eyebrow {
+    font-family: 'Geist Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .pres-eyebrow::before, .pres-eyebrow::after {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0.5;
+  }
+
+  .pres-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    background: var(--gradient-violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+  }
+
+  .pres-subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 640px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+
+  /* === NAVEGAÇÃO DAS FRENTES === */
+  .frentes-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 48px;
+    animation: slideUp 0.6s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @media (max-width: 768px) {
+    .frentes-nav { grid-template-columns: 1fr; }
+  }
+
+  .frente-tab {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .frente-tab::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--gradient-violet);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .frente-tab:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--border-strong);
+  }
+
+  .frente-tab.active {
+    background: var(--bg-card-hover);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .frente-tab.active::before {
+    opacity: 1;
+  }
+
+  .frente-tab-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--bg-base);
+    border: 1px solid var(--border-strong);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin: 0 auto 16px;
+    transition: all 0.3s ease;
+  }
+
+  .frente-tab.active .frente-tab-icon {
+    background: var(--gradient-violet);
+    border-color: transparent;
+    box-shadow: 0 8px 24px var(--accent-glow);
+  }
+
+  .frente-tab-name {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+
+  .frente-tab-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-family: 'Geist Mono', monospace;
+  }
+
+  /* === CONTEÚDO === */
+  .frente-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 48px;
+    animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    min-height: 400px;
+  }
+
+  .frente-content.hidden {
+    display: none;
+  }
+
+  .content-header {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .content-eyebrow {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent-bright);
+    margin-bottom: 8px;
+  }
+
+  .content-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+  }
+
+  .content-tagline {
+    font-size: 16px;
+    color: var(--text-secondary);
+    font-weight: 300;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-title::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  /* === TIMELINE LOW TICKETS (CICLO SEMANAL) === */
+  .week-cycle {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  @media (max-width: 968px) {
+    .week-cycle { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 540px) {
+    .week-cycle { grid-template-columns: 1fr; }
+  }
+
+  .day-card {
+    background: var(--bg-base);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .day-card:hover {
+    border-color: var(--border-strong);
+    transform: translateY(-2px);
+    background: var(--bg-card-hover);
+  }
+
+  .day-card.highlight {
+    background: var(--bg-card-hover);
+    border-color: var(--accent);
+  }
+
+  .day-name {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+
+  .day-content {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+  }
+
+  .day-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .day-icon {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* === REUNIÃO DESTACADA === */
+  .meeting-callout {
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.08), rgba(167, 139, 250, 0.02));
+    border: 1px solid var(--border-strong);
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .meeting-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-violet);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 16px var(--accent-glow);
+  }
+
+  .meeting-info h4 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+  }
+
+  .meeting-info p {
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+
+  /* === TIMELINE PLATAFORMA (8 ETAPAS) === */
+  .timeline-pa {
+    position: relative;
+    margin-top: 24px;
+    padding-left: 32px;
+  }
+
+  .timeline-pa::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    bottom: 12px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--accent) 0%, rgba(167, 139, 250, 0.2) 100%);
+  }
+
+  .timeline-step {
+    position: relative;
+    margin-bottom: 24px;
+    padding: 16px 20px;
+    background: var(--bg-base);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    transition: all 0.3s ease;
+  }
+
+  .timeline-step:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-strong);
+    transform: translateX(4px);
+  }
+
+  .timeline-step::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 22px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.15);
+  }
+
+  .timeline-step-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .timeline-step-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+  }
+
+  .timeline-step-period {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--accent-bright);
+    padding: 4px 10px;
+    background: rgba(167, 139, 250, 0.1);
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+
+  .timeline-step-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+  }
+
+  .timeline-step-owner {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    padding: 4px 10px;
+    background: var(--bg-elevated);
+    border-radius: 6px;
+  }
+
+  .timeline-step-owner strong {
+    color: var(--accent-bright);
+    font-weight: 600;
+  }
+
+  /* === DIPLOMADO - MÓDULOS LIST === */
+  .modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 16px;
+  }
+
+  .module-card {
+    background: var(--bg-base);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .module-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--border-strong);
+    background: var(--bg-card-hover);
+  }
+
+  .module-num {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    background: var(--gradient-violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .module-month {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+
+  .module-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+
+  .module-prof {
+    font-size: 11px;
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+
+  /* === FLUXO DE CADA MÓDULO === */
+  .module-flow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 16px;
+    position: relative;
+  }
+
+  @media (max-width: 768px) {
+    .module-flow { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .flow-stage {
+    background: var(--bg-base);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 16px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .flow-stage:hover {
+    border-color: var(--border-strong);
+    transform: translateY(-2px);
+  }
+
+  .flow-stage:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--accent);
+    font-weight: 700;
+    z-index: 2;
+  }
+
+  @media (max-width: 768px) {
+    .flow-stage:not(:last-child)::after { display: none; }
+  }
+
+  .flow-stage-num {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--accent-bright);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .flow-stage-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .flow-stage-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+  }
+
+  .flow-stage-when {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* === RESPONSABILIDADES === */
+  .responsibilities-table {
+    width: 100%;
+    margin-top: 16px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--bg-base);
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .responsibilities-table th {
+    background: var(--bg-elevated);
+    color: var(--accent-bright);
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 14px 18px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .responsibilities-table td {
+    padding: 14px 18px;
+    font-size: 13.5px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .responsibilities-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .responsibilities-table tr:hover td {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+  }
+
+  .responsibilities-table .role-cell {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  /* === MÓDULOS DETALHADOS === */
+  .modules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .module-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 200px;
+    gap: 20px;
+    align-items: center;
+    padding: 16px 20px;
+    background: var(--bg-base);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.2s ease;
+  }
+
+  @media (max-width: 768px) {
+    .module-row { grid-template-columns: 60px 1fr; }
+    .module-row .module-prof-col { grid-column: 1 / -1; padding-left: 80px; padding-top: 4px; }
+  }
+
+  .module-row:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-strong);
+    transform: translateX(4px);
+  }
+
+  .module-row-num {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    background: var(--gradient-violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+  }
+
+  .module-row-info .module-row-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 3px;
+  }
+
+  .module-row-info .module-row-month {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .module-prof-col {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-style: italic;
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    .module-prof-col { text-align: left; }
+  }
+
+  /* === FOOTER === */
+  .pres-footer {
+    text-align: center;
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* === ANIMAÇÕES === */
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  /* === MODULES GRID HORIZONTAL === */
+  .modules-grid-h {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 16px;
+  }
+
+  @media (max-width: 1024px) {
+    .modules-grid-h { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .modules-grid-h { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .modules-grid-h { grid-template-columns: 1fr; }
+  }
+
+  .module-card-h {
+    background: var(--bg-base);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 16px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .module-card-h::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--gradient-violet);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .module-card-h:hover {
+    transform: translateY(-3px);
+    border-color: var(--border-strong);
+    background: var(--bg-card-hover);
+    box-shadow: 0 12px 32px rgba(139, 92, 246, 0.15);
+  }
+
+  .module-card-h:hover::before {
+    opacity: 1;
+  }
+
+  .module-card-num {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    background: var(--gradient-violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  .module-card-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.35;
+    margin-bottom: 8px;
+    min-height: 38px;
+    letter-spacing: -0.005em;
+  }
+
+  .module-card-prof {
+    font-size: 12px;
+    color: var(--accent-bright);
+    font-style: italic;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .module-card-dates {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .date-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .date-label {
+    font-family: 'Geist Mono', monospace;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 10px;
+  }
+
+  .date-value {
+    font-family: 'Geist Mono', monospace;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 12px;
+    padding: 3px 8px;
+    background: var(--bg-elevated);
+    border-radius: 6px;
+  }
+
+  /* === TIMELINE HORIZONTAL === */
+  .timeline-horizontal {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  @media (max-width: 1100px) {
+    .timeline-horizontal { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .timeline-horizontal { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .timeline-horizontal { grid-template-columns: 1fr; }
+  }
+
+  .timeline-h-card {
+    background: var(--bg-base);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 14px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 130px;
+  }
+
+  .timeline-h-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    background: var(--bg-card-hover);
+    box-shadow: 0 8px 24px rgba(139, 92, 246, 0.18);
+  }
+
+  .timeline-h-card.highlight {
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.10), rgba(167, 139, 250, 0.02));
+    border-color: var(--accent);
+  }
+
+  .timeline-h-card.highlight::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--gradient-violet);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .timeline-h-period {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--accent-bright);
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    background: rgba(167, 139, 250, 0.12);
+    border-radius: 6px;
+    display: inline-block;
+    align-self: center;
+    border: 1px solid rgba(167, 139, 250, 0.2);
+  }
+
+  .timeline-h-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.005em;
+  }
+
+  .timeline-h-owner {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
+
+</style>
+
+<div class="container">
+
+  <header class="pres-header">
+    <div class="pres-eyebrow">XDental · Estrutura Operacional</div>
+    <h1 class="pres-title">O que construímos</h1>
+    <p class="pres-subtitle">Visão consolidada dos processos, ciclos e responsabilidades das três principais frentes operacionais da XDental</p>
+  </header>
+
+  <!-- NAVEGAÇÃO -->
+  <nav class="frentes-nav">
+    <div class="frente-tab active" data-frente="lowticket">
+      <div class="frente-tab-icon">🛒</div>
+      <div class="frente-tab-name">Low Tickets</div>
+      <div class="frente-tab-desc">Operação semanal</div>
+    </div>
+    <div class="frente-tab" data-frente="diplomado">
+      <div class="frente-tab-icon">🎓</div>
+      <div class="frente-tab-name">Diplomado Ortho Pro</div>
+      <div class="frente-tab-desc">13 módulos · 2026</div>
+    </div>
+    <div class="frente-tab" data-frente="plataforma">
+      <div class="frente-tab-icon">🎬</div>
+      <div class="frente-tab-name">Plataforma de Assinatura</div>
+      <div class="frente-tab-desc">Curso novo a cada mês</div>
+    </div>
+  </nav>
+
+  <!-- ===================== LOW TICKETS ===================== -->
+  <section class="frente-content" data-content="lowticket">
+    <div class="content-header">
+      <div class="content-eyebrow">Frente 1 · Operação Contínua</div>
+      <h2 class="content-title">🛒 Low Tickets</h2>
+      <p class="content-tagline">Operação em piloto automático. Ciclo semanal estruturado de criação, edição, tráfego e análise.</p>
+    </div>
+
+    <!-- CICLO SEMANAL -->
+    <div class="section">
+      <h3 class="section-title">Ciclo Semanal · Quem Faz o Quê e Quando</h3>
+
+      <div class="week-cycle">
+        <div class="day-card highlight">
+          <div class="day-name">Segunda</div>
+          <div class="day-icon">🎥</div>
+          <div class="day-content">
+            <strong>Sérgio</strong>
+            grava vídeos e materiais
+          </div>
+        </div>
+        <div class="day-card">
+          <div class="day-name">Seg–Ter</div>
+          <div class="day-icon">✂️</div>
+          <div class="day-content">
+            <strong>Chicão</strong>
+            edita os vídeos
+          </div>
+        </div>
+        <div class="day-card highlight">
+          <div class="day-name">Quarta</div>
+          <div class="day-icon">📈</div>
+          <div class="day-content">
+            <strong>Batista</strong>
+            sobe criativos no Meta Ads
+          </div>
+        </div>
+        <div class="day-card">
+          <div class="day-name">Quinta</div>
+          <div class="day-icon">✍️</div>
+          <div class="day-content">
+            <strong>Bruno</strong>
+            entrega copies da nova rodada
+          </div>
+        </div>
+        <div class="day-card">
+          <div class="day-name">Qui–Sáb</div>
+          <div class="day-icon">🔄</div>
+          <div class="day-content">
+            <strong>Sérgio</strong>
+            inicia nova rodada de gravação
+          </div>
+        </div>
+        <div class="day-card">
+          <div class="day-name">Qua–Dom</div>
+          <div class="day-icon">⚡</div>
+          <div class="day-content">
+            <strong>Meta</strong>
+            criativos rodando + análise contínua
+          </div>
+        </div>
+        <div class="day-card highlight">
+          <div class="day-name">Quarta</div>
+          <div class="day-icon">🤝</div>
+          <div class="day-content">
+            <strong>Reunião semanal</strong>
+            Ruan + Bruno + Batista
+          </div>
+        </div>
+      </div>
+
+      <div class="meeting-callout">
+        <div class="meeting-icon">🤝</div>
+        <div class="meeting-info">
+          <h4>Reunião Fixa · Toda quarta-feira · 14h–15h</h4>
+          <p>Ruan + Bruno + Batista — alinhamento de performance, análise de criativos e plano da semana seguinte</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESPONSABILIDADES -->
+    <div class="section">
+      <h3 class="section-title">Responsabilidades</h3>
+      <table class="responsibilities-table">
+        <thead>
+          <tr>
+            <th style="width: 30%;">Papel</th>
+            <th>Função na Operação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="role-cell">🎓 Sérgio</td>
+            <td>Gravação dos vídeos e materiais (expertise + face da operação)</td>
+          </tr>
+          <tr>
+            <td class="role-cell">✂️ Chicão</td>
+            <td>Edição dos vídeos para criativos curtos</td>
+          </tr>
+          <tr>
+            <td class="role-cell">✍️ Bruno</td>
+            <td>Copywriting · headlines, textos de anúncio, hooks</td>
+          </tr>
+          <tr>
+            <td class="role-cell">📈 Batista</td>
+            <td>Tráfego pago · subida dos criativos no Meta Ads, otimização</td>
+          </tr>
+          <tr>
+            <td class="role-cell">👤 Ruan</td>
+            <td>Supervisão geral · validação de ciclos, reunião semanal</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===================== DIPLOMADO ===================== -->
+  <section class="frente-content hidden" data-content="diplomado">
+    <div class="content-header">
+      <div class="content-eyebrow">Frente 2 · Programa Estruturado</div>
+      <h2 class="content-title">🎓 Diplomado Ortho Pro</h2>
+      <p class="content-tagline">Programa formal de ortodontia em parceria com a Faculdade Focus · 13 módulos mensais ao longo de 2026 · Conteúdo em espanhol para profissionais hispano-falantes</p>
+    </div>
+
+    <!-- MÓDULOS -->
+    <div class="section">
+      <h3 class="section-title">Próximos Módulos · Cronograma 2026</h3>
+      <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 20px;">A partir do Módulo 5 — em curso · Cada módulo tem 2 datas-chave: liberação da aula gravada e Encuentro ao vivo com o professor</p>
+
+      <div class="modules-grid-h">
+
+        <div class="module-card-h">
+          <div class="module-card-num">05</div>
+          <div class="module-card-title">Tratamientos de la Clase II</div>
+          <div class="module-card-prof">Dr. José Rodríguez</div>
+          <div class="module-card-dates">
+            <div class="date-row"><span class="date-label">Liberação</span><span class="date-value">04/05</span></div>
+            <div class="date-row"><span class="date-label">Encuentro</span><span class="date-value">26/05</span></div>
+          </div>
+        </div>
+
+        <div class="module-card-h">
+          <div class="module-card-num">06</div>
+          <div class="module-card-title">Maloclusiones Transversales</div>
+          <div class="module-card-prof">Dr. Sérgio Cury</div>
+          <div class="module-card-dates">
+            <div class="date-row"><span class="date-label">Liberação</span><span class="date-value">01/06</span></div>
+            <div class="date-row"><span class="date-label">Encuentro</span><span class="date-value">30/06</span></div>
+          </div>
+        </div>
+
+        <div class="module-card-h">
+          <div class="module-card-num">07</div>
+          <div class="module-card-title">Tratamientos de la Clase III</div>
+          <div class="module-card-prof">Dr. Hector Rodriguez</div>
+          <div class="module-card-dates">
+            <div class="date-row"><span class="date-label">Liberação</span><span class="date-value">06/07</span></div>
+            <div class="date-row"><span class="date-label">Encuentro</span><span class="date-value">28/07</span></div>
+          </div>
+        </div>
+
+        <div class="module-card-h">
+          <div class="module-card-num">08</div>
+          <div class="module-card-title">Sobremordida Profunda</div>
+          <div class="module-card-prof">Dr. Sérgio Cury</div>
+          <div class="module-card-dates">
+            <div class="date-row"><span class="date-label">Liberação</span><span class="date-value">03/08</span></div>
+            <div class="date-row"><span class="date-label">Encuentro</span><span class="date-value">25/08</span></div>
+          </div>
+        </div>
+
+        <div class="module-card-h">
+          <div class="module-card-num">09</div>
+          <div class="module-card-title">Verticalización de Molares</div>
+          <div class="module-card-prof">Dr. Stefan Cardon</div>
+          <div class="module-card-dates">
+            <div class="date-row"><span class="date-label">Liberação</span><span class="date-value">08/09</span></div>
+            <div class="date-row"><span class="date-label">Encuentro</span><span class="date-value">29/09</span></div>
+          </div>
+        </div>
+
+        <div class="module-card-h">
+          <div class="module-card-num">10</div>
+          <div class="module-card-title">Mordida Abierta Anterior</div>
+          <div class="module-card-prof">Dr. Sérgio Cury</div>
+          <div class="module-card-dates">
+            <div class="date-row"><span class="date-label">Liberação</span><span class="date-value">05/10</span></div>
+            <div class="date-row"><span class="date-label">Encuentro</span><span class="date-value">29/10</span></div>
+          </div>
+        </div>
+
+        <div class="module-card-h">
+          <div class="module-card-num">11</div>
+          <div class="module-card-title">Finalización</div>
+          <div class="module-card-prof">Dr. Nelson del Hierro</div>
+          <div class="module-card-dates">
+            <div class="date-row"><span class="date-label">Liberação</span><span class="date-value">09/11</span></div>
+            <div class="date-row"><span class="date-label">Encuentro</span><span class="date-value">30/11</span></div>
+          </div>
+        </div>
+
+        <div class="module-card-h">
+          <div class="module-card-num">12</div>
+          <div class="module-card-title">Tracción Dientes Retenidos</div>
+          <div class="module-card-prof">Dr. Sérgio Cury</div>
+          <div class="module-card-dates">
+            <div class="date-row"><span class="date-label">Liberação</span><span class="date-value">07/12</span></div>
+            <div class="date-row"><span class="date-label">Encuentro</span><span class="date-value">22/12</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CICLO COMPLETO DE UM MÓDULO (60 dias) -->
+    <div class="section">
+      <h3 class="section-title">Ciclo Completo de um Módulo · 60 dias</h3>
+      <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 24px;">11 etapas estruturadas — da confirmação com o professor (D-30) até o encerramento da janela da prova (D+37)</p>
+
+      <div class="timeline-horizontal">
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-30</div>
+          <div class="timeline-h-title">Confirmação c/ professor</div>
+          <div class="timeline-h-owner">Ruan</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-14</div>
+          <div class="timeline-h-title">Entrega da gravação</div>
+          <div class="timeline-h-owner">Professor</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-13</div>
+          <div class="timeline-h-title">Início edição da aula</div>
+          <div class="timeline-h-owner">Chicão</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-10</div>
+          <div class="timeline-h-title">Produção do PDF</div>
+          <div class="timeline-h-owner">Ruan + Claude</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-7</div>
+          <div class="timeline-h-title">Envio pacote Klyro</div>
+          <div class="timeline-h-owner">Ruan</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-2</div>
+          <div class="timeline-h-title">Checkpoint final</div>
+          <div class="timeline-h-owner">Ruan</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-1</div>
+          <div class="timeline-h-title">Subida na Hotmart</div>
+          <div class="timeline-h-owner">Mônica</div>
+        </div>
+
+        <div class="timeline-h-card highlight">
+          <div class="timeline-h-period">D 0</div>
+          <div class="timeline-h-title">Liberação oficial</div>
+          <div class="timeline-h-owner">Mônica</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D+X</div>
+          <div class="timeline-h-title">Encuentro ao vivo</div>
+          <div class="timeline-h-owner">Professor</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D+23</div>
+          <div class="timeline-h-title">Criação da prova</div>
+          <div class="timeline-h-owner">Ruan</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D+30 → D+37</div>
+          <div class="timeline-h-title">Liberação da prova</div>
+          <div class="timeline-h-owner">Mônica · janela 7 dias</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RESPONSABILIDADES -->
+    <div class="section">
+      <h3 class="section-title">Responsabilidades</h3>
+      <table class="responsibilities-table">
+        <thead>
+          <tr>
+            <th style="width: 30%;">Papel</th>
+            <th>Função no Diplomado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="role-cell">🎓 Sérgio + Professores convidados</td>
+            <td>Conteúdo · gravação da aula + Encuentro ao vivo</td>
+          </tr>
+          <tr>
+            <td class="role-cell">🎨 Klyro (parceiro externo)</td>
+            <td>Design · material complementar em PDF de cada módulo</td>
+          </tr>
+          <tr>
+            <td class="role-cell">📤 Mônica</td>
+            <td>Liberação das aulas na plataforma · comunicação com alunos</td>
+          </tr>
+          <tr>
+            <td class="role-cell">⚙️ Felipe</td>
+            <td>Plataforma técnica · estrutura dos exames</td>
+          </tr>
+          <tr>
+            <td class="role-cell">👤 Ruan</td>
+            <td>Coordenação geral · prazos · relação com professores e Klyro</td>
+          </tr>
+          <tr>
+            <td class="role-cell">🏛️ Faculdade Focus (parceira)</td>
+            <td>Certificação acadêmica formal</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===================== PLATAFORMA DE ASSINATURA ===================== -->
+  <section class="frente-content hidden" data-content="plataforma">
+    <div class="content-header">
+      <div class="content-eyebrow">Frente 3 · Catálogo Recorrente</div>
+      <h2 class="content-title">🎬 Plataforma de Assinatura</h2>
+      <p class="content-tagline">Acervo de cursos curtos com professores especialistas · 1 curso novo lançado a cada mês · Modelo de assinatura mensal com acesso ao catálogo completo</p>
+    </div>
+
+    <!-- TIMELINE DAS 8 ETAPAS -->
+    <div class="section">
+      <h3 class="section-title">Ciclo de Lançamento · 9 Etapas</h3>
+      <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 24px;">Do primeiro contato com o professor (D-45) ao pós-lançamento (D+30) · 75 dias de ciclo total</p>
+
+      <div class="timeline-horizontal">
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-45</div>
+          <div class="timeline-h-title">1a · Primeiro contato</div>
+          <div class="timeline-h-owner">Sérgio</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-45</div>
+          <div class="timeline-h-title">1b · Coleta de dados</div>
+          <div class="timeline-h-owner">Ruan</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-40</div>
+          <div class="timeline-h-title">2 · Contrato</div>
+          <div class="timeline-h-owner">Ruan</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-35 → D-25</div>
+          <div class="timeline-h-title">3 · Arte do curso</div>
+          <div class="timeline-h-owner">Ruan → Klyro</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-25 → D-15</div>
+          <div class="timeline-h-title">4 · Janela de gravação</div>
+          <div class="timeline-h-owner">Professor</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-15 → D-7</div>
+          <div class="timeline-h-title">5 · Edição</div>
+          <div class="timeline-h-owner">Chicão</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D-7 → D-3</div>
+          <div class="timeline-h-title">6 · Upload Hotmart</div>
+          <div class="timeline-h-owner">Mônica</div>
+        </div>
+
+        <div class="timeline-h-card highlight">
+          <div class="timeline-h-period">D-3 → D 0</div>
+          <div class="timeline-h-title">7 · Comunicação</div>
+          <div class="timeline-h-owner">Mônica</div>
+        </div>
+
+        <div class="timeline-h-card">
+          <div class="timeline-h-period">D 0 → D+30</div>
+          <div class="timeline-h-title">8 · Pós-lançamento</div>
+          <div class="timeline-h-owner">Ruan + Mônica</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RESPONSABILIDADES -->
+    <div class="section">
+      <h3 class="section-title">Responsabilidades</h3>
+      <table class="responsibilities-table">
+        <thead>
+          <tr>
+            <th style="width: 30%;">Papel</th>
+            <th>Função na Plataforma</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="role-cell">🎓 Sérgio</td>
+            <td>Porta de entrada · primeiro contato com professores candidatos</td>
+          </tr>
+          <tr>
+            <td class="role-cell">👤 Ruan</td>
+            <td>Continuidade do processo · coleta de dados · contratos · briefing de arte · pagamentos</td>
+          </tr>
+          <tr>
+            <td class="role-cell">🎨 Klyro</td>
+            <td>Design · banner e capa de cada curso lançado</td>
+          </tr>
+          <tr>
+            <td class="role-cell">🎙️ Professor convidado</td>
+            <td>Gravação do curso na janela definida</td>
+          </tr>
+          <tr>
+            <td class="role-cell">✂️ Chicão</td>
+            <td>Edição dos vídeos em aulas de 20-30 min</td>
+          </tr>
+          <tr>
+            <td class="role-cell">📤 Mônica</td>
+            <td>Upload · configuração na plataforma · comunicação de lançamento aos assinantes</td>
+          </tr>
+          <tr>
+            <td class="role-cell">⚙️ Felipe</td>
+            <td>Plataforma técnica · infraestrutura de acesso</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="pres-footer">
+    XDENTAL · OPERAÇÃO ESTRUTURADA · MAIO 2026
+  </footer>
+
+</div>
+
+<script>
+  (function() {
+    const root = document.querySelector('.presentation-root');
+    if (!root) return;
+
+    const tabs = root.querySelectorAll('.frente-tab');
+    const contents = root.querySelectorAll('.frente-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.dataset.frente;
+
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        contents.forEach(c => {
+          if (c.dataset.content === target) {
+            c.classList.remove('hidden');
+          } else {
+            c.classList.add('hidden');
+          }
+        });
+
+        // Scroll suave até o conteúdo
+        const activeContent = root.querySelector(`.frente-content[data-content="${target}"]`);
+        if (activeContent) {
+          setTimeout(() => {
+            activeContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
+      });
+    });
+  })();
+</script>
+</div>
