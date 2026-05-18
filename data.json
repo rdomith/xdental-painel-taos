@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-05-18 · order bumps Low Tickets mapeados 17:15 UTC",
+    "lastUpdated": "2026-05-18 · pipeline professores Plataforma atualizado 17:19 UTC",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Low Tickets: Felipe configura order bumps + combos nos checkouts a partir de quinta; meta é dobrar ticket médio com combo $10."
+    "headline": "Plataforma de Assinatura: Fernando Pari, Joaquim Ariza e Victor Arguedas no radar — sem datas, tema e dados recebidos."
   },
   "fronts": [
     {
@@ -79,8 +79,11 @@
       "priority": "p1",
       "progress": 60,
       "owner": "Ruan / Felipe / Mônica",
-      "summary": "Convite aos assinantes para apresentação da nova plataforma em 18/05; pacote visual completo fica para próxima semana.",
+      "summary": "Pipeline de cursos depende de professores: Paul Medina em entrega; Fernando Pari, Joaquim Ariza e Victor Arguedas em contato com Ruan, ainda sem datas, tema do curso e dados recebidos.",
       "nextActions": [
+        "Cobrar/registrar Fernando Pari: tema do curso, data de gravação, dados/foto/bio e material de apoio",
+        "Cobrar/registrar Joaquim Ariza: tema do curso, data de gravação, dados/foto/bio e material de apoio",
+        "Cobrar/registrar Victor Arguedas: tema do curso, data de gravação, dados/foto/bio e material de apoio",
         "Acompanhar disparo do Felipe para assinantes",
         "Segunda: enviar mais duas mensagens para assinantes",
         "Postergar pacote completo de imagens/divulgação para próxima semana, após encontro",
@@ -90,6 +93,7 @@
         "Organizar pacote final para Mônica/equipe executar os envios"
       ],
       "blockers": [
+        "Fernando Pari, Joaquim Ariza e Victor Arguedas ainda sem definição de data, tema do curso e dados para produção/publicação",
         "Pacote completo de imagens e comunicação visual ficou para próxima semana"
       ]
     },
@@ -182,6 +186,14 @@
   ],
   "gargalos": [
     {
+      "title": "Professores Plataforma sem data/tema/dados",
+      "priority": "p1",
+      "frente": "Plataforma de Assinatura",
+      "deadline": "Esta semana",
+      "blocks": "Pipeline de novos cursos da assinatura; sem tema/data/dados não há briefing, edição nem publicação programável",
+      "owner": "Ruan / TAOS"
+    },
+    {
       "title": "Order bumps + combo nos Low Tickets",
       "priority": "p1",
       "frente": "Low Tickets",
@@ -223,6 +235,13 @@
     }
   ],
   "radarDoDia": [
+    {
+      "time": "semana",
+      "task": "Manter no radar Fernando Pari, Joaquim Ariza e Victor Arguedas: confirmar tema do curso, data de gravação e dados",
+      "frente": "🎬 PLAT",
+      "status": "🔥",
+      "done": false
+    },
     {
       "time": "terça",
       "task": "Fechar com Felipe o mapa dos 6 checkouts Low Ticket com 4 bumps + combo por produto",
@@ -303,12 +322,12 @@
   ],
   "metrics": {
     "p0": 0,
-    "p1": 4,
+    "p1": 5,
     "p2": 2,
     "p3": 1,
     "done": 15,
-    "tasks": 11
+    "tasks": 12
   },
-  "radarExtra": "Atualização 18/05 17:15 UTC: Ruan definiu teste de order bumps nos low tickets a partir de quinta. Estrutura: 4 bumps de $5 por checkout + combo com os mesmos 4 produtos por $10 para dobrar ticket médio. Responsável configuração: Felipe.",
+  "radarExtra": "Atualização 18/05 17:19 UTC: Ruan pediu manter no radar os professores da Plataforma de Assinatura — Fernando Pari, Joaquim Ariza e Victor Arguedas. Status: Ruan em contato, mas sem definições de datas, tema do curso e dados recebidos.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
