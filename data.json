@@ -2,27 +2,32 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-05-15 · preparado painel de sábado/segunda 19:35",
+    "lastUpdated": "2026-05-18 · order bumps Low Tickets mapeados 17:15 UTC",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Sábado leve de acompanhamento · gráfica Clara/SVIP se material chegar · segunda radar semanal + Elite + última semana Sniper VIP"
+    "headline": "Low Tickets: Felipe configura order bumps + combos nos checkouts a partir de quinta; meta é dobrar ticket médio com combo $10."
   },
   "fronts": [
     {
       "id": "low-tickets",
       "name": "Low Tickets",
       "status": "on_track",
-      "priority": "p3",
+      "priority": "p1",
       "progress": 85,
       "owner": "Bruno + Batista",
-      "summary": "Operação piloto automático; rotina semanal e análise contínua dos criativos Meta.",
+      "summary": "Operação semanal ativa + nova alavanca de LTV: 4 order bumps por checkout e combo dos 4 por $10 para tentar dobrar ticket médio.",
       "nextActions": [
+        "Felipe configurar 4 order bumps + combo nos 6 checkouts Low Ticket a partir de quinta 21/05",
+        "Criar/validar combos por produto: 4 bumps de $5 ou combo dos 4 por $10",
+        "Checklist pós-configuração: preço, checkout, entrega, tracking, UTMs e conversão bump/combo",
         "Rotina semanal Sérgio→Chicão→Batista",
         "Análise contínua criativos Meta",
         "Reunião semanal qua 13/05 · 14h com Bruno + Batista"
       ],
-      "blockers": []
+      "blockers": [
+        "Felipe precisa configurar checkout/Hotmart para bumps e combos antes do teste de quinta"
+      ]
     },
     {
       "id": "sniper-vip",
@@ -177,6 +182,14 @@
   ],
   "gargalos": [
     {
+      "title": "Order bumps + combo nos Low Tickets",
+      "priority": "p1",
+      "frente": "Low Tickets",
+      "deadline": "Quinta 21/05",
+      "blocks": "Teste de aumento de ticket médio/LTV; sem configuração do Felipe, seguimos só com venda principal de $10",
+      "owner": "Felipe / Ruan / TAOS"
+    },
+    {
       "title": "Materiais Clara/Klyro → gráfica",
       "priority": "p1",
       "frente": "Sniper VIP",
@@ -210,6 +223,27 @@
     }
   ],
   "radarDoDia": [
+    {
+      "time": "terça",
+      "task": "Fechar com Felipe o mapa dos 6 checkouts Low Ticket com 4 bumps + combo por produto",
+      "frente": "🛒 LOW",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "quinta",
+      "task": "Felipe configurar order bumps/combos no checkout; validar preço $5 cada e combo $10",
+      "frente": "🛒 LOW",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "quinta",
+      "task": "Checklist pós-subida: página, checkout, entrega, tracking/UTM e leitura de conversão bump/combo",
+      "frente": "🛒 LOW",
+      "status": "⏳",
+      "done": false
+    },
     {
       "time": "sábado",
       "task": "Acompanhar se Clara enviou materiais revisados; se sim, enviar para gráfica",
@@ -273,8 +307,8 @@
     "p2": 2,
     "p3": 1,
     "done": 15,
-    "tasks": 8
+    "tasks": 11
   },
-  "radarExtra": "Calendário conferido: sábado 16/05 sem eventos no Google Calendar. Segunda 18/05 tem Entrega Paul Medina — 101 Tips Plataforma XDental (dia todo) e Mentoria Cloud Code Módulo 1 às 19h. Falta entrar/confirmar horário da entrevista com Sérgio para Elite.",
+  "radarExtra": "Atualização 18/05 17:15 UTC: Ruan definiu teste de order bumps nos low tickets a partir de quinta. Estrutura: 4 bumps de $5 por checkout + combo com os mesmos 4 produtos por $10 para dobrar ticket médio. Responsável configuração: Felipe.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }

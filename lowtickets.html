@@ -88,6 +88,13 @@
   .empty-col{border:0.5px dashed var(--border);border-radius:10px;min-height:80px;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--text3);text-align:center;padding:12px;line-height:1.5;}
 
   .phase-legend{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+  .bump-table{width:100%;border-collapse:separate;border-spacing:0;background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:1.5rem;}
+  .bump-table th,.bump-table td{font-size:11px;text-align:left;vertical-align:top;padding:10px 12px;border-bottom:0.5px solid var(--border);line-height:1.45;}
+  .bump-table th{color:var(--text3);font-weight:600;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,255,255,0.02);}
+  .bump-table td{color:var(--text2);}
+  .bump-table tr:last-child td{border-bottom:0;}
+  .bump-product{font-weight:600;color:var(--text);}
+  .bump-price{font-family:'DM Mono',monospace;color:var(--green-lt);font-weight:600;white-space:nowrap;}
   .pl-card{background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;padding:12px 14px;}
   .pl-title{font-size:11px;font-weight:600;color:var(--text2);margin-bottom:6px;display:flex;align-items:center;gap:7px;}
   .pl-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
@@ -99,6 +106,7 @@
     .kpi-row .kcard:last-child{grid-column:span 2;}
     .rotina-grid{grid-template-columns:repeat(2,1fr);}
     .phase-legend{grid-template-columns:repeat(2,1fr);}
+    .bump-table{display:block;overflow-x:auto;}
   }
 </style>
 </head>
@@ -112,9 +120,9 @@
   <div class="topbar">
     <div>
       <div class="topbar-title">Low Tickets — XDental</div>
-      <div class="topbar-sub">Maio 2026 · 6 produtos monitorados · Atualizado 13/05/26 pós-reunião</div>
+      <div class="topbar-sub">Maio 2026 · 6 produtos monitorados · Atualizado 18/05/26 · order bumps mapeados</div>
     </div>
-    <div class="header-badge">Fase 1 · 3 quase avançando + 3 novos</div>
+    <div class="header-badge">Fase 1 · bumps/combos para quinta</div>
   </div>
 
   <div class="kpi-row">
@@ -199,10 +207,72 @@
       <div><div class="day-label">Alerta</div><div class="rt rt-orange">Produto com 0 vendas no dia = checar página, checkout, campanha e tracking</div></div>
       <div><div class="day-label">14/05</div><div class="rt rt-blue">Subir estáticos dos 3 primeiros produtos</div><div class="rt rt-blue">Retomar Attachments</div><div class="rt rt-blue">Subir 13 Mandamientos</div></div>
       <div><div class="day-label">Copies</div><div class="rt rt-gray">Bruno entrega 15 copies estáticas até 18h</div><div class="rt rt-gray">Vídeos: Mesialización, Complicaciones e Fluxo</div></div>
-      <div><div class="day-label">Semana que vem</div><div class="rt rt-green">Ativar 4 order bumps + combo nos 6 produtos</div></div>
+      <div><div class="day-label">Qui 21/05</div><div class="rt rt-green">Felipe configura 4 order bumps + combo nos checkouts</div><div class="rt rt-green">Meta: dobrar ticket médio com combo de $10</div></div>
       <div><div class="day-label">2 semanas</div><div class="rt rt-purple">Testar upsell/VSL da Plataforma · meta mínima 5%</div></div>
     </div>
   </div>
+
+
+  <div class="section-label">Mapa da ação — Order bumps + combo · alvo: quinta 21/05</div>
+  <div class="rotina">
+    <div class="rotina-label">Lógica operacional</div>
+    <div class="rotina-grid">
+      <div><div class="day-label">Oferta</div><div class="rt rt-green">4 order bumps por checkout</div><div class="rt rt-green">Cada bump: $5</div></div>
+      <div><div class="day-label">Combo</div><div class="rt rt-blue">Mesmo pacote dos 4 bumps por $10</div><div class="rt rt-blue">Percepção: $20 → $10</div></div>
+      <div><div class="day-label">Objetivo</div><div class="rt rt-green">Dobrar ticket médio do low ticket</div><div class="rt rt-green">Aumentar LTV sem mexer no tráfego</div></div>
+      <div><div class="day-label">Responsável</div><div class="rt rt-gray">Felipe configura checkout/Hotmart</div><div class="rt rt-gray">TAOS deixa mapa e checklist</div></div>
+      <div><div class="day-label">Validação</div><div class="rt rt-orange">Testar página, checkout, preço e entrega</div><div class="rt rt-orange">Monitorar conversão bump + combo</div></div>
+    </div>
+  </div>
+
+  <table class="bump-table" aria-label="Mapa de order bumps por produto low ticket">
+    <thead>
+      <tr>
+        <th>Checkout base</th>
+        <th>4 order bumps sugeridos</th>
+        <th>Combo no checkout</th>
+        <th>Dono / próximo passo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="bump-product">Tracción de Dientes Retenidos</span></td>
+        <td>Mesialización · Complicaciones · 13 Mandamientos · Flujo de Tratamiento</td>
+        <td><span class="bump-price">Combo 4 por $10</span> · versus $20 separado</td>
+        <td>Felipe configurar a partir de quinta · TAOS validar checklist</td>
+      </tr>
+      <tr>
+        <td><span class="bump-product">Mesialización de Molares</span></td>
+        <td>Tracción · Complicaciones · 13 Mandamientos · Flujo de Tratamiento</td>
+        <td><span class="bump-price">Combo 4 por $10</span> · versus $20 separado</td>
+        <td>Replicar estrutura sem repetir o produto base</td>
+      </tr>
+      <tr>
+        <td><span class="bump-product">Explorando las Complicaciones</span></td>
+        <td>Tracción · Mesialización · 13 Mandamientos · Flujo de Tratamiento</td>
+        <td><span class="bump-price">Combo 4 por $10</span> · versus $20 separado</td>
+        <td>Prioridade alta: produto já tem tração e pode elevar AOV</td>
+      </tr>
+      <tr>
+        <td><span class="bump-product">Flujo de Tratamiento</span></td>
+        <td>Tracción · Mesialización · Complicaciones · 13 Mandamientos</td>
+        <td><span class="bump-price">Combo 4 por $10</span> · versus $20 separado</td>
+        <td>Usar como teste forte por ser produto novo com boa resposta inicial</td>
+      </tr>
+      <tr>
+        <td><span class="bump-product">Protocolo de Attachments</span></td>
+        <td>Tracción · Mesialización · Complicaciones · Flujo de Tratamiento</td>
+        <td><span class="bump-price">Combo 4 por $10</span> · versus $20 separado</td>
+        <td>Subir com atenção extra: checkout/página precisam estar 100% estáveis</td>
+      </tr>
+      <tr>
+        <td><span class="bump-product">13 Mandamientos</span></td>
+        <td>Tracción · Mesialización · Complicaciones · Flujo de Tratamiento</td>
+        <td><span class="bump-price">Combo 4 por $10</span> · versus $20 separado</td>
+        <td>Boa vitrine para cross-sell dos produtos clínicos principais</td>
+      </tr>
+    </tbody>
+  </table>
 
   <div class="section-label">Produtos por fase</div>
   <div class="kanban">
