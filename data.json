@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-05-19 · Low Tickets atualizado até 18/05; radar do dia preparado",
+    "lastUpdated": "2026-05-19 · Radar atualizado com Sniper VIP destravado e Paul Medina gravando",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça de execução crítica: Low Tickets sem 0 vendas em 18/05; foco em Klyro/Sniper VIP, order bumps de quinta e transição Chicão → Fabian amanhã."
+    "headline": "Terça de execução crítica: Low Tickets sem 0 vendas em 18/05; Sniper VIP com Klyro/gráfica destravados; Paul Medina gravando hoje."
   },
   "fronts": [
     {
@@ -38,23 +38,22 @@
       "name": "Sniper VIP",
       "status": "attention",
       "priority": "p1",
-      "progress": 65,
+      "progress": 75,
       "owner": "Ruan / Sérgio / Lilian / Klyro",
-      "summary": "Evento 25-27/05 entra na última semana; acompanhar materiais Clara/Klyro e envio para gráfica.",
+      "summary": "Evento 25-27/05 entra na última semana; Klyro já enviou todo o pacote e os materiais já foram para a gráfica, que está produzindo. Manter logística e checklist final no radar.",
       "nextActions": [
-        "Acompanhar Clara: receber materiais revisados e enviar para gráfica (sexta à noite ou sábado)",
-        "Segunda: radar da semana final pré-Sniper VIP",
-        "Fechar ações pendentes de logística/material impresso antes do evento 25-27/05",
+        "Fechar status Sniper VIP no fim do dia: logística, fornecedores, transfers e próximos donos",
+        "Manter checklist final da semana do evento 25-27/05",
         "Pagar 40% açaí — R$ 100 (total R$ 250; resto a confirmar)",
         "Lilian · info pagamentos pré-evento",
         "Antecipar cardápio Bassi",
         "Antecipar orçamento almoço dia 3"
       ],
       "blockers": [
-        "Materiais Clara ainda em edição; gráfica ainda não recebeu arquivo final",
         "Cardápio Bassi (Happy Hour) sem retorno",
         "Orçamentos almoço dia 3 — 2 opções",
-        "Barista sem retorno"
+        "Barista sem retorno",
+        "Pendências logísticas finais precisam de dono até o evento"
       ]
     },
     {
@@ -83,22 +82,19 @@
       "priority": "p1",
       "progress": 60,
       "owner": "Ruan / Felipe / Mônica",
-      "summary": "Pipeline de cursos depende de professores: Paul Medina em entrega; Fernando Pari, Joaquim Ariza e Victor Arguedas em contato com Ruan, ainda sem datas, tema do curso e dados recebidos.",
+      "summary": "Paul Medina está gravando hoje o curso 101 Tips, com entrega prevista ainda hoje. Fernando Pari, Joaquim Ariza e Victor Arguedas seguem no radar até Ruan liberar.",
       "nextActions": [
+        "Acompanhar Paul Medina gravando hoje e confirmar entrega do curso 101 Tips ainda hoje",
         "Cobrar/registrar Fernando Pari: tema do curso, data de gravação, dados/foto/bio e material de apoio",
         "Cobrar/registrar Joaquim Ariza: tema do curso, data de gravação, dados/foto/bio e material de apoio",
         "Cobrar/registrar Victor Arguedas: tema do curso, data de gravação, dados/foto/bio e material de apoio",
+        "Quando entrega Paul chegar, encaminhar fluxo para edição/publicação",
         "Acompanhar disparo do Felipe para assinantes",
-        "Segunda: enviar mais duas mensagens para assinantes",
-        "Postergar pacote completo de imagens/divulgação para próxima semana, após encontro",
-        "Desenvolver mensagens/legendas para Instagram e convite aos assinantes",
-        "Criar sequência de disparos API de convite — começa sex 15/05 e vai até seg 18/05",
-        "Validar CTA/link/local de acesso antes dos disparos",
-        "Organizar pacote final para Mônica/equipe executar os envios"
+        "Postergar pacote completo de imagens/divulgação para próxima semana, após encontro"
       ],
       "blockers": [
         "Fernando Pari, Joaquim Ariza e Victor Arguedas ainda sem definição de data, tema do curso e dados para produção/publicação",
-        "Pacote completo de imagens e comunicação visual ficou para próxima semana"
+        "Entrega final do Paul Medina ainda pendente até concluir a gravação de hoje"
       ]
     },
     {
@@ -214,14 +210,6 @@
       "owner": "Felipe / Ruan / TAOS"
     },
     {
-      "title": "Materiais Clara/Klyro → gráfica",
-      "priority": "p1",
-      "frente": "Sniper VIP",
-      "deadline": "Sexta à noite ou sábado 16/05",
-      "blocks": "Materiais impressos/visuais do Sniper VIP; evento entra na última semana",
-      "owner": "Ruan / Clara"
-    },
-    {
       "title": "Entrevista Sérgio — narrativa Elite",
       "priority": "p1",
       "frente": "Lançamentos / Elite Junho",
@@ -230,11 +218,11 @@
       "owner": "Lucas + Bruno Koppe + Sérgio"
     },
     {
-      "title": "Última semana pré-Sniper VIP",
+      "title": "Pendências finais Sniper VIP",
       "priority": "p1",
       "frente": "Sniper VIP",
       "deadline": "Semana 18-24/05",
-      "blocks": "Fechamento de materiais, logística e checklist final antes do evento 25-27/05",
+      "blocks": "Materiais e gráfica destravados; manter logística, fornecedores, transfers e checklist final sob controle antes do evento 25-27/05",
       "owner": "Ruan / TAOS"
     },
     {
@@ -258,6 +246,20 @@
       "time": "qua 20/05",
       "task": "Conversar com Chicão sobre transição editorial e próximos passos",
       "frente": "👤 RH",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "Acompanhar Paul Medina gravando e confirmar entrega do curso 101 Tips ainda hoje",
+      "frente": "🎬 PLAT",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "fim do dia",
+      "task": "Fechar status Sniper VIP: logística, fornecedores, transfers, compras e próximos donos",
+      "frente": "🎯 SVIP",
       "status": "🔥",
       "done": false
     },
@@ -291,29 +293,8 @@
     },
     {
       "time": "sábado",
-      "task": "Acompanhar se Clara enviou materiais revisados; se sim, enviar para gráfica",
-      "frente": "🎯 SVIP",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "sábado",
       "task": "Conferir rapidamente calendário e pendências; Ruan terá pouco tempo disponível",
       "frente": "⚙️ TAOS",
-      "status": "⏳",
-      "done": false
-    },
-    {
-      "time": "sábado",
-      "task": "Manter no radar: segunda começa última semana antes do Sniper VIP",
-      "frente": "🎯 SVIP",
-      "status": "⏳",
-      "done": false
-    },
-    {
-      "time": "segunda",
-      "task": "Radar semanal: resumo + atividades de segunda + checklist última semana Sniper VIP",
-      "frente": "📡 RADAR",
       "status": "⏳",
       "done": false
     },
@@ -322,13 +303,6 @@
       "task": "Confirmar horário da entrevista com Sérgio e lembrar Lucas, Bruno Koppe e Sérgio",
       "frente": "💎 ELITE",
       "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "segunda",
-      "task": "Acompanhar gravação/entrega Paulo Medina — 101 Tips Plataforma XDental",
-      "frente": "🎬 PLAT",
-      "status": "⏳",
       "done": false
     },
     {
@@ -347,13 +321,13 @@
     }
   ],
   "metrics": {
-    "p0": 0,
+    "p0": 1,
     "p1": 6,
     "p2": 2,
     "p3": 1,
     "done": 15,
-    "tasks": 14
+    "tasks": 12
   },
-  "radarExtra": "Atualização 19/05: Low Tickets atualizado até 18/05 com 976 vendas acumuladas, receita US$9.760, lucro US$4.340 e nenhum produto com 0 vendas no dia. Próximos gargalos: Klyro/Sniper VIP, order bumps de quinta e transição Chicão → Fabian amanhã.",
+  "radarExtra": "Atualização 19/05: Klyro já enviou o pacote Sniper VIP e os materiais já foram para a gráfica, que está produzindo. Paul Medina está gravando hoje e a entrega segue prevista para hoje. Fernando Pari, Joaquim Ariza e Victor Arguedas permanecem no radar até Ruan liberar.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
