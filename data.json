@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-05-19 · Radar atualizado com Sniper VIP destravado e Paul Medina gravando",
+    "lastUpdated": "2026-05-19 · Radar atualizado com Fabian, Paul Medina e Elite Junho",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça de execução crítica: Low Tickets sem 0 vendas em 18/05; Sniper VIP com Klyro/gráfica destravados; Paul Medina gravando hoje."
+    "headline": "Terça de execução crítica: Fabian com boas-vindas feitas e contrato pendente; Paul Medina gravou e envia arquivos hoje; Elite em planejamento no ClickUp."
   },
   "fronts": [
     {
@@ -21,7 +21,7 @@
         "Validar foco de otimização dos produtos abaixo de ROAS 2,0 com Batista/Bruno",
         "Preparar matriz final de order bumps + combo para Felipe configurar quinta 21/05",
         "Quarta 20/05: Ruan conversar com Chicão sobre transição editorial/saída",
-        "Fabian aprovado para entrada como novo editor; preparar passagem de bastão e primeiras demandas",
+        "Preparar contrato e onboarding do Fabian para início na segunda 25/05",
         "Felipe configurar 4 order bumps + combo nos 6 checkouts Low Ticket a partir de quinta 21/05",
         "Criar/validar combos por produto: 4 bumps de $5 ou combo dos 4 por $10",
         "Checklist pós-configuração: preço, checkout, entrega, tracking, UTMs e conversão bump/combo",
@@ -29,7 +29,7 @@
         "Reunião semanal qua 13/05 · 14h com Bruno + Batista"
       ],
       "blockers": [
-        "Transição editorial Chicão → Fabian precisa ser comunicada e organizada para não travar esteira de criativos",
+        "Contrato/onboarding do Fabian precisa ficar pronto para início na segunda 25/05; conversa com Chicão segue necessária para passagem de bastão",
         "Felipe precisa configurar checkout/Hotmart para bumps e combos antes do teste de quinta"
       ]
     },
@@ -82,9 +82,9 @@
       "priority": "p1",
       "progress": 60,
       "owner": "Ruan / Felipe / Mônica",
-      "summary": "Paul Medina está gravando hoje o curso 101 Tips, com entrega prevista ainda hoje. Fernando Pari, Joaquim Ariza e Victor Arguedas seguem no radar até Ruan liberar.",
+      "summary": "Paul Medina já gravou o curso 101 Tips e prometeu enviar os arquivos prontos ainda hoje. Fernando Pari, Joaquim Ariza e Victor Arguedas seguem no radar até Ruan liberar.",
       "nextActions": [
-        "Acompanhar Paul Medina gravando hoje e confirmar entrega do curso 101 Tips ainda hoje",
+        "Acompanhar envio dos arquivos finais do Paul Medina — gravação concluída, promessa de envio ainda hoje",
         "Cobrar/registrar Fernando Pari: tema do curso, data de gravação, dados/foto/bio e material de apoio",
         "Cobrar/registrar Joaquim Ariza: tema do curso, data de gravação, dados/foto/bio e material de apoio",
         "Cobrar/registrar Victor Arguedas: tema do curso, data de gravação, dados/foto/bio e material de apoio",
@@ -94,7 +94,7 @@
       ],
       "blockers": [
         "Fernando Pari, Joaquim Ariza e Victor Arguedas ainda sem definição de data, tema do curso e dados para produção/publicação",
-        "Entrega final do Paul Medina ainda pendente até concluir a gravação de hoje"
+        "Entrega final do Paul Medina ainda pendente: gravação concluída, aguardando envio dos arquivos"
       ]
     },
     {
@@ -122,8 +122,10 @@
       "priority": "p1",
       "progress": 70,
       "owner": "Mônica / Ruan",
-      "summary": "Elite junho: evento pago em formato sabadão definido para 20/06; narrativa depende de entrevista com Sérgio.",
+      "summary": "Elite junho: planejamento das tarefas no ClickUp em andamento; Bruno já iniciou primeiras demandas de copy. Detalhamento estratégico segue no tópico de Planejamento de Lançamentos.",
       "nextActions": [
+        "Planejar tarefas do próximo lançamento Elite no ClickUp",
+        "Bruno executar primeiras demandas de copy",
         "Confirmar horário da entrevista com Sérgio na segunda-feira",
         "Lembrar envolvidos: Lucas, Bruno Koppe e Sérgio para entrevista de construção da narrativa",
         "Sair da entrevista com tema técnico, promessa, provas/casos e estrutura do evento"
@@ -172,8 +174,10 @@
       "priority": "p1",
       "progress": 45,
       "owner": "Ruan",
-      "summary": "Elite junho: evento pago em formato sabadão definido para 20/06; narrativa depende de entrevista com Sérgio.",
+      "summary": "Elite junho: planejamento das tarefas no ClickUp em andamento; Bruno já iniciou primeiras demandas de copy. Detalhamento estratégico segue no tópico de Planejamento de Lançamentos.",
       "nextActions": [
+        "Planejar tarefas do próximo lançamento Elite no ClickUp",
+        "Bruno executar primeiras demandas de copy",
         "Confirmar horário da entrevista com Sérgio na segunda-feira",
         "Lembrar envolvidos: Lucas, Bruno Koppe e Sérgio para entrevista de construção da narrativa",
         "Sair da entrevista com tema técnico, promessa, provas/casos e estrutura do evento"
@@ -189,8 +193,8 @@
       "title": "Transição editorial Chicão → Fabian",
       "priority": "p1",
       "frente": "Low Tickets / Operação",
-      "deadline": "Quarta 20/05",
-      "blocks": "Esteira de criativos; precisa comunicar Chicão e preparar entrada/passagem de bastão do Fabian",
+      "deadline": "Segunda 25/05",
+      "blocks": "Início do novo editor; contrato/onboarding do Fabian precisa ficar pronto e conversa com Chicão segue necessária para passagem de bastão",
       "owner": "Ruan"
     },
     {
@@ -243,15 +247,15 @@
       "done": true
     },
     {
-      "time": "qua 20/05",
-      "task": "Conversar com Chicão sobre transição editorial e próximos passos",
+      "time": "hoje/amanhã",
+      "task": "Preparar contrato e checklist de onboarding do Fabian para início na segunda 25/05",
       "frente": "👤 RH",
       "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "Acompanhar Paul Medina gravando e confirmar entrega do curso 101 Tips ainda hoje",
+      "task": "Acompanhar envio dos arquivos finais do Paul Medina — gravação concluída, promessa de envio ainda hoje",
       "frente": "🎬 PLAT",
       "status": "🔥",
       "done": false
@@ -261,6 +265,13 @@
       "task": "Fechar status Sniper VIP: logística, fornecedores, transfers, compras e próximos donos",
       "frente": "🎯 SVIP",
       "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "andamento",
+      "task": "Elite Junho: planejamento de tarefas no ClickUp em andamento; Bruno já iniciou primeiras demandas de copy",
+      "frente": "💎 ELITE",
+      "status": "📊",
       "done": false
     },
     {
@@ -326,8 +337,8 @@
     "p2": 2,
     "p3": 1,
     "done": 15,
-    "tasks": 12
+    "tasks": 13
   },
-  "radarExtra": "Atualização 19/05: Klyro já enviou o pacote Sniper VIP e os materiais já foram para a gráfica, que está produzindo. Paul Medina está gravando hoje e a entrega segue prevista para hoje. Fernando Pari, Joaquim Ariza e Victor Arguedas permanecem no radar até Ruan liberar.",
+  "radarExtra": "Atualização 19/05: Ruan fez reunião de boas-vindas com Carolina/headhunter; Fabian já está no WhatsApp e precisa de contrato para começar segunda 25/05. Paul Medina já gravou e prometeu enviar os arquivos hoje. Elite Junho entrou em planejamento no ClickUp e Bruno já iniciou primeiras demandas de copy.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
