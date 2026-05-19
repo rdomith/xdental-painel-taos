@@ -6,7 +6,7 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça de execução crítica: Fabian com boas-vindas feitas e contrato pendente; Paul Medina gravou e envia arquivos hoje; Elite em planejamento no ClickUp."
+    "headline": "Terça de execução crítica: Fabian com boas-vindas feitas e contrato pendente; Paul Medina gravou e envia arquivos hoje; Ruan planejando Elite no ClickUp."
   },
   "fronts": [
     {
@@ -122,7 +122,7 @@
       "priority": "p1",
       "progress": 70,
       "owner": "Mônica / Ruan",
-      "summary": "Elite junho: planejamento das tarefas no ClickUp em andamento; Bruno já iniciou primeiras demandas de copy. Detalhamento estratégico segue no tópico de Planejamento de Lançamentos.",
+      "summary": "Elite junho: Ruan está fazendo o planejamento das tarefas no ClickUp; Bruno já iniciou primeiras demandas de copy. Detalhamento estratégico segue no tópico de Planejamento de Lançamentos.",
       "nextActions": [
         "Planejar tarefas do próximo lançamento Elite no ClickUp",
         "Bruno executar primeiras demandas de copy",
@@ -174,7 +174,7 @@
       "priority": "p1",
       "progress": 45,
       "owner": "Ruan",
-      "summary": "Elite junho: planejamento das tarefas no ClickUp em andamento; Bruno já iniciou primeiras demandas de copy. Detalhamento estratégico segue no tópico de Planejamento de Lançamentos.",
+      "summary": "Elite junho: Ruan está fazendo o planejamento das tarefas no ClickUp; Bruno já iniciou primeiras demandas de copy. Detalhamento estratégico segue no tópico de Planejamento de Lançamentos.",
       "nextActions": [
         "Planejar tarefas do próximo lançamento Elite no ClickUp",
         "Bruno executar primeiras demandas de copy",
@@ -269,7 +269,7 @@
     },
     {
       "time": "andamento",
-      "task": "Elite Junho: planejamento de tarefas no ClickUp em andamento; Bruno já iniciou primeiras demandas de copy",
+      "task": "Elite Junho: Ruan fazendo o planejamento no ClickUp; Bruno já iniciou primeiras demandas de copy",
       "frente": "💎 ELITE",
       "status": "📊",
       "done": false
@@ -339,6 +339,6 @@
     "done": 15,
     "tasks": 13
   },
-  "radarExtra": "Atualização 19/05: Ruan fez reunião de boas-vindas com Carolina/headhunter; Fabian já está no WhatsApp e precisa de contrato para começar segunda 25/05. Paul Medina já gravou e prometeu enviar os arquivos hoje. Elite Junho entrou em planejamento no ClickUp e Bruno já iniciou primeiras demandas de copy.",
+  "radarExtra": "Atualização 19/05: Ruan fez reunião de boas-vindas com Carolina/headhunter; Fabian já está no WhatsApp e precisa de contrato para começar segunda 25/05. Paul Medina já gravou e prometeu enviar os arquivos hoje. Ruan está fazendo o planejamento do Elite Junho no ClickUp e Bruno já iniciou primeiras demandas de copy.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
