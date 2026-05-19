@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-05-18 · transição editorial Chicão/Fabian registrada 18:26 UTC",
+    "lastUpdated": "2026-05-19 · Low Tickets atualizado até 18/05; radar do dia preparado",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Operação: Fabian aprovado para entrada como editor; Ruan conversa com Chicão na quarta sobre transição editorial."
+    "headline": "Terça de execução crítica: Low Tickets sem 0 vendas em 18/05; foco em Klyro/Sniper VIP, order bumps de quinta e transição Chicão → Fabian amanhã."
   },
   "fronts": [
     {
@@ -14,10 +14,12 @@
       "name": "Low Tickets",
       "status": "on_track",
       "priority": "p1",
-      "progress": 85,
+      "progress": 86,
       "owner": "Bruno + Batista",
-      "summary": "Operação semanal ativa; atenção à transição editorial Chicão → Fabian e order bumps/combos de quinta.",
+      "summary": "Operação semanal ativa; dados até 18/05: 976 vendas acumuladas, receita US$9.760, lucro US$4.340, sem produto com 0 vendas no dia.",
       "nextActions": [
+        "Validar foco de otimização dos produtos abaixo de ROAS 2,0 com Batista/Bruno",
+        "Preparar matriz final de order bumps + combo para Felipe configurar quinta 21/05",
         "Quarta 20/05: Ruan conversar com Chicão sobre transição editorial/saída",
         "Fabian aprovado para entrada como novo editor; preparar passagem de bastão e primeiras demandas",
         "Felipe configurar 4 order bumps + combo nos 6 checkouts Low Ticket a partir de quinta 21/05",
@@ -352,6 +354,6 @@
     "done": 15,
     "tasks": 14
   },
-  "radarExtra": "Atualização 18/05 18:26 UTC: Fabian entrevistado e aprovado para entrada como editor. Ruan vai conversar com Chicão na quarta 20/05 para comunicar a saída/transição editorial.",
+  "radarExtra": "Atualização 19/05: Low Tickets atualizado até 18/05 com 976 vendas acumuladas, receita US$9.760, lucro US$4.340 e nenhum produto com 0 vendas no dia. Próximos gargalos: Klyro/Sniper VIP, order bumps de quinta e transição Chicão → Fabian amanhã.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
