@@ -130,18 +130,18 @@
       ]
     },
     {
-      "id": "ortoplanner",
-      "name": "OrtoPlanner",
+      "id": "oralplanner",
+      "name": "OralPlanner",
       "status": "attention",
       "priority": "p1",
       "progress": 35,
       "owner": "Ruan / Sérgio / Felipe",
-      "summary": "Nova plataforma XDental + OrtoPlanner: reunião 13/05 10h para plataforma, MVP e próximos passos.",
+      "summary": "Nova plataforma XDental + OralPlanner: reunião 13/05 10h para plataforma, MVP e próximos passos.",
       "nextActions": [
         "Reunião Ruan + Sérgio + Felipe — 13/05 10h",
-        "Apresentar plataforma XDental + alinhar OrtoPlanner + definir MVP",
+        "Apresentar plataforma XDental + alinhar OralPlanner + definir MVP",
         "Definir funcionalidades do MVP com entrega em maio",
-        "Validar próximos passos do OrtoPlanner"
+        "Validar próximos passos do OralPlanner"
       ],
       "blockers": []
     },
