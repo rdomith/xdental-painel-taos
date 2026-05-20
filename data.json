@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-05-19 · Radar de quarta 20/05 preparado",
+    "lastUpdated": "2026-05-20 · Radar de quinta 21/05 preparado",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quarta de execução: Paul Medina entregue; briefing Klyro/Clairou + contrato Fabian + revisão Elite/Low Tickets."
+    "headline": "Quinta de travas operacionais: Low Tickets em Fase 2/bump, Elite pesquisa/tema e Sniper VIP logística final."
   },
   "fronts": [
     {
@@ -16,23 +16,17 @@
       "priority": "p1",
       "progress": 86,
       "owner": "Bruno + Batista",
-      "summary": "Operação semanal ativa; dados até 18/05: 976 vendas acumuladas, receita US$9.760, lucro US$4.340, sem produto com 0 vendas no dia.",
+      "summary": "Quinta 21/05 é dia de ativar Fase 2 de Tracción, configurar bumps/combos nos 6 checkouts e iniciar o novo ciclo de copies/gravações/criativos.",
       "nextActions": [
-        "Reunião semanal quarta 20/05: vendas, criativos, ROAS e order bumps de quinta",
-        "Enviar contrato Fabian ao jurídico e fechar onboarding para início em 25/05",
-        "Validar foco de otimização dos produtos abaixo de ROAS 2,0 com Batista/Bruno",
-        "Preparar matriz final de order bumps + combo para Felipe configurar quinta 21/05",
-        "Quarta 20/05: Ruan conversar com Chicão sobre transição editorial/saída",
-        "Preparar contrato e onboarding do Fabian para início na segunda 25/05",
-        "Felipe configurar 4 order bumps + combo nos 6 checkouts Low Ticket a partir de quinta 21/05",
-        "Criar/validar combos por produto: 4 bumps de $5 ou combo dos 4 por $10",
-        "Checklist pós-configuração: preço, checkout, entrega, tracking, UTMs e conversão bump/combo",
-        "Análise contínua criativos Meta",
-        "Reunião semanal qua 13/05 · 14h com Bruno + Batista"
+        "Felipe configurar 4 order bumps de US$5 + combo US$10 nos 6 checkouts",
+        "Validar preço, checkout, entrega, tracking, UTMs e conversão",
+        "Tracción iniciar Fase 2 com CBO 1x5 e aumentar verba dos criativos Direct/WhatsApp",
+        "Bruno entregar copies e Sérgio começar gravações da nova semana",
+        "Batista subir/revisar nova leva de criativos e UTMs"
       ],
       "blockers": [
-        "Contrato/onboarding do Fabian precisa ficar pronto para início na segunda 25/05; conversa com Chicão segue necessária para passagem de bastão",
-        "Felipe precisa configurar checkout/Hotmart para bumps e combos antes do teste de quinta"
+        "Sem configuração do Felipe, ticket médio segue travado em US$10",
+        "Sem Fase 2/novos criativos, produtos abaixo de ROAS 2 continuam drenando ritmo"
       ]
     },
     {
@@ -124,18 +118,15 @@
       "priority": "p1",
       "progress": 70,
       "owner": "Mônica / Ruan",
-      "summary": "Elite junho: Ruan está fazendo o planejamento das tarefas no ClickUp; amanhã precisa conferir demandas, owners, prazos e primeiras copies do Bruno.",
+      "summary": "Elite junho precisa sair do genérico: pesquisa de tema com a base, revisão do ClickUp e entrevista/narrativa com Sérgio/Lucas/Bruno.",
       "nextActions": [
-        "Conferir demandas do Elite no ClickUp na quarta 20/05",
-        "Planejar tarefas do próximo lançamento Elite no ClickUp",
-        "Bruno executar primeiras demandas de copy",
-        "Confirmar horário da entrevista com Sérgio na segunda-feira",
-        "Lembrar envolvidos: Lucas, Bruno Koppe e Sérgio para entrevista de construção da narrativa",
-        "Sair da entrevista com tema técnico, promessa, provas/casos e estrutura do evento"
+        "Confirmar disparo da pesquisa de tema via Felipe",
+        "Puxar respostas e selecionar temas candidatos",
+        "Revisar ClickUp: owners, prazos, copy do Bruno e cronograma até 20/06",
+        "Alinhar entrevista/narrativa com Sérgio + Lucas + Bruno"
       ],
       "blockers": [
-        "Horário da reunião de segunda com Sérgio ainda pendente",
-        "Narrativa/oferta ainda dependem da entrevista com Sérgio"
+        "Sem tema técnico validado, página/copy/tráfego ficam genéricos"
       ]
     },
     {
@@ -177,18 +168,15 @@
       "priority": "p1",
       "progress": 45,
       "owner": "Ruan",
-      "summary": "Elite junho: Ruan está fazendo o planejamento das tarefas no ClickUp; amanhã precisa conferir demandas, owners, prazos e primeiras copies do Bruno.",
+      "summary": "Lançamento Sniper Elite de 20/06 em fase de estruturação; próxima trava é tema/narrativa + owners no ClickUp.",
       "nextActions": [
-        "Conferir demandas do Elite no ClickUp na quarta 20/05",
-        "Planejar tarefas do próximo lançamento Elite no ClickUp",
-        "Bruno executar primeiras demandas de copy",
-        "Confirmar horário da entrevista com Sérgio na segunda-feira",
-        "Lembrar envolvidos: Lucas, Bruno Koppe e Sérgio para entrevista de construção da narrativa",
-        "Sair da entrevista com tema técnico, promessa, provas/casos e estrutura do evento"
+        "Fechar narrativa central do Sniper Elite junho",
+        "Finalizar tarefas no ClickUp com owners e prazos",
+        "Bruno avançar copy com base no tema escolhido",
+        "Construir cronograma operacional até 20/06"
       ],
       "blockers": [
-        "Horário da reunião de segunda com Sérgio ainda pendente",
-        "Narrativa/oferta ainda dependem da entrevista com Sérgio"
+        "Narrativa/oferta ainda dependem de tema técnico e insumo do Sérgio"
       ]
     }
   ],
@@ -245,85 +233,99 @@
   "radarDoDia": [
     {
       "time": "09h00",
-      "task": "📡 Abrir radar de quarta: revisar calendário, gargalos P1 e pendências carregadas de terça",
+      "task": "📡 Abrir radar de quinta: conferir checks não concluídos, calendário XDental e gargalos P1 antes de executar",
       "frente": "📡 RADAR",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🎬 Plataforma: confirmar arquivo fechado Paul Medina salvo e definir D0 do curso 101 Tips — referência operacional: liberação 05/06",
-      "frente": "🎬 PA",
-      "status": "✅",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🎨 Passar para Klyro/Clairou o briefing do pacote de imagens do curso Paul Medina: capa/banner + logo/overlay para edição",
-      "frente": "🎬 PA",
+      "task": "🛒 Felipe configurar 4 order bumps de US$5 + combo dos 4 por US$10 nos 6 checkouts Low Ticket",
+      "frente": "🛒 LT",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "📅 Negociar prazo do design: material completo até sexta 22/05, antes da semana do Elite",
+      "task": "🛒 Pós-configuração: validar preço, checkout, entrega, tracking, UTMs e conversão dos bumps/combos",
+      "frente": "🛒 LT",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "🛒 Tracción: iniciar Fase 2 com CBO 1x5, aumentar verba dos estáticos Direct/WhatsApp e desligar campanha antiga fraca",
+      "frente": "🛒 LT",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "🛒 Quinta do ciclo: Bruno entrega copies, Sérgio começa gravações e Batista prepara nova leva de criativos",
+      "frente": "🛒 LT",
+      "status": "📅",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "💎 Confirmar se Felipe disparou a pesquisa para a base de alunos sobre temas do Elite e puxar primeiras respostas",
+      "frente": "💎 ELITE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "💎 Revisar ClickUp do Elite: owners, prazos, copy do Bruno, cronograma até 20/06 e bloqueios abertos",
+      "frente": "💎 ELITE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "tarde",
+      "task": "💎 Alinhar entrevista/narrativa com Sérgio + Lucas + Bruno: tema técnico, promessa, casos/provas e estrutura da imersão",
+      "frente": "💎 ELITE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "tarde",
+      "task": "🎬 Paul Medina: fechar briefing Klyro/Clairou, confirmar se faltam slides/foto/bio e manter design com prazo sexta 22/05",
       "frente": "🎬 PA",
       "status": "🔥",
       "done": false
     },
     {
       "time": "após design",
-      "task": "🎞️ Enviar vídeo Paul Medina + logo/overlay para Chicão editar; depois Mônica sobe na Hotmart",
+      "task": "🎬 Enviar vídeo Paul Medina + logo/overlay para Chicão editar; depois Mônica sobe na Hotmart e prepara comunicação D-3/D0",
       "frente": "🎬 PA",
       "status": "⏳",
       "done": false
     },
     {
-      "time": "manhã",
-      "task": "👤 Passar contrato do Fabian para o jurídico e fechar checklist de onboarding para início segunda 25/05",
+      "time": "tarde",
+      "task": "👤 Fabian: passar contrato ao jurídico, fechar checklist de onboarding e organizar conversa/passagem com Chicão",
       "frente": "👤 RH",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "quarta",
-      "task": "🛒 Reunião semanal Low Tickets: revisar vendas, criativos, produtos abaixo de ROAS 2 e order bumps de quinta",
-      "frente": "🛒 LT",
-      "status": "📅",
-      "done": false
-    },
-    {
       "time": "tarde",
-      "task": "💎 Conferir demandas do Elite no ClickUp: owners, prazos, copy do Bruno e próximos bloqueios",
-      "frente": "💎 ELITE",
+      "task": "🎯 Sniper VIP: fechar logística final — gráfica, alimentação, barista, almoço, compras Shopee, transfers e donos até 25/05",
+      "frente": "🎯 SVIP",
       "status": "🔥",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "💎 Falar com Felipe: disparar hoje pesquisa para todos os alunos XDental perguntando qual tema do Elite é mais chamativo para o lançamento",
-      "frente": "💎 ELITE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "tarde",
-      "task": "🛒 Preparar Felipe para configurar order bumps/combos nos 6 checkouts na quinta 21/05",
-      "frente": "🛒 LT",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "tarde",
-      "task": "🎬 Manter Fernando Pari, Joaquim Ariza e Victor Arguedas no radar até Ruan liberar",
-      "frente": "🎬 PA",
+      "task": "🎓 Diplomado: preparar M5 José Rodríguez de 26/05 e deixar M6 Sérgio Cury encaminhado",
+      "frente": "🎓 DIP",
       "status": "⏳",
       "done": false
     },
     {
       "time": "fim do dia",
-      "task": "🎯 Fechar status Sniper VIP: logística, fornecedores, gráfica em produção e próximos donos até o evento",
-      "frente": "🎯 SVIP",
+      "task": "🇨🇱 Chile/CIOCH: confirmar 2º pagamento, tipo de stand no email e manter conflito M8 × Chile no radar",
+      "frente": "🇨🇱 CHL",
       "status": "🔥",
       "done": false
     }
@@ -334,8 +336,8 @@
     "p2": 2,
     "p3": 1,
     "done": 15,
-    "tasks": 12
+    "tasks": 14
   },
-  "radarExtra": "Atualização 20/05: Paul Medina enviou o arquivo fechado e o curso 101 Tips está garantido para junho. Pelo processo da Plataforma, o próximo D0 segue como 05/06; agora estamos no trecho crítico de arte/design → edição → upload Hotmart → comunicação. Hoje também entra contrato Fabian com jurídico, revisão das demandas do Elite no ClickUp, pesquisa de tema do Elite para a base de alunos via Felipe e reunião semanal de Low Tickets.",
+  "radarExtra": "Preparado 20/05 para 21/05: pendências não concluídas do radar anterior + calendário XDental. Agenda de quinta: deadline Paul Medina e rotina Low Tickets — criativos ativos, Bruno entrega copies e Sérgio começa gravações. Travas principais: Felipe nos bumps/combos, Batista/Bruno na Fase 2 e Ruan amarrando tema do Elite.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
