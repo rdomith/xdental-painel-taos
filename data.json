@@ -301,6 +301,13 @@
     },
     {
       "time": "tarde",
+      "task": "💎 Falar com Felipe: disparar hoje pesquisa para todos os alunos XDental perguntando qual tema do Elite é mais chamativo para o lançamento",
+      "frente": "💎 ELITE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "tarde",
       "task": "🛒 Preparar Felipe para configurar order bumps/combos nos 6 checkouts na quinta 21/05",
       "frente": "🛒 LT",
       "status": "🔥",
@@ -327,8 +334,8 @@
     "p2": 2,
     "p3": 1,
     "done": 15,
-    "tasks": 11
+    "tasks": 12
   },
-  "radarExtra": "Atualização 20/05: Paul Medina enviou o arquivo fechado e o curso 101 Tips está garantido para junho. Pelo processo da Plataforma, o próximo D0 segue como 05/06; agora estamos no trecho crítico de arte/design → edição → upload Hotmart → comunicação. Amanhã também entra contrato Fabian com jurídico, revisão das demandas do Elite no ClickUp e reunião semanal de Low Tickets.",
+  "radarExtra": "Atualização 20/05: Paul Medina enviou o arquivo fechado e o curso 101 Tips está garantido para junho. Pelo processo da Plataforma, o próximo D0 segue como 05/06; agora estamos no trecho crítico de arte/design → edição → upload Hotmart → comunicação. Hoje também entra contrato Fabian com jurídico, revisão das demandas do Elite no ClickUp, pesquisa de tema do Elite para a base de alunos via Felipe e reunião semanal de Low Tickets.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
