@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-05-20 · Radar de quinta 21/05 preparado",
+    "lastUpdated": "2026-05-21 · Radar de sexta 22/05 preparado",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quinta de travas operacionais: Low Tickets em Fase 2/bump, Elite pesquisa/tema e Sniper VIP logística final."
+    "headline": "Sexta de ajuste fino: sem edição de M6/Paul Medina; foco em Low Tickets, Elite, Sniper VIP e preparação do Fabian."
   },
   "fronts": [
     {
@@ -55,20 +55,21 @@
     {
       "id": "diplomado-ortho-pro",
       "name": "Diplomado Ortho Pro",
-      "status": "on_track",
+      "status": "attention",
       "priority": "p2",
-      "progress": 80,
+      "progress": 76,
       "owner": "Ruan / Felipe / Klyro / Sérgio",
-      "summary": "M5 em diagramação; M4 prova em produção; Klyro entrega PDF M5 em 13/05.",
+      "summary": "M5 segue para Encuentro/exame em 26/05. M6 mudou de ciclo: Sérgio fará aula/gravação ao vivo em 01/06 via Google Meet, com alunos podendo assistir sem interação; edição só começa depois da gravação e será com Fabian.",
       "nextActions": [
-        "Receber entrega Klyro · PDF M5 Diplomado",
-        "Prova M4 em plataforma separada Felipe — libera sex 15/05",
-        "M6 · alinhamento com Sérgio (tema + gravação)",
-        "Liberação prova M4 sex 15/05",
-        "Encuentro M5 José Rodríguez em 26/05"
+        "Preparar checklist técnico do Google Meet para M6 em 01/06",
+        "Definir comunicação aos alunos: podem assistir ao vivo, sem interação com o professor",
+        "Garantir gravação correta do Meet e backup do arquivo bruto no fim da aula",
+        "Enviar gravação do M6 para Fabian assim que Sérgio encerrar a aula",
+        "Manter M5 José Rodríguez de 26/05 pronto para Encuentro/exame"
       ],
       "blockers": [
-        "Klyro diagramando M5 — deadline sex 15/05"
+        "Não deve existir tarefa de edição do M6 antes da gravação de 01/06",
+        "Risco principal do M6 agora é técnico: Meet, gravação, backup, envio para Fabian e upload pós-aula"
       ]
     },
     {
@@ -78,19 +79,17 @@
       "priority": "p1",
       "progress": 70,
       "owner": "Ruan / Felipe / Mônica",
-      "summary": "Paul Medina enviou o arquivo fechado do curso 101 Tips; curso de junho garantido. Próximo processo: briefing design Klyro/Clairou, edição Chicão e upload Hotmart para liberação prevista em 05/06.",
+      "summary": "Paul Medina enviou o arquivo fechado do curso 101 Tips; edição não acontece em 22/05. A edição fica para segunda 25/05 com Fabian, novo editor, e depois Mônica sobe na Hotmart para liberação prevista em 05/06.",
       "nextActions": [
-        "Salvar/validar arquivo fechado Paul Medina",
-        "Passar briefing do pacote de imagens para Klyro/Clairou amanhã: capa/banner + logo/overlay",
-        "Negociar entrega do material de design até sexta 22/05",
-        "Após design, enviar vídeo + logo/overlay para Chicão editar",
-        "Mônica subir aulas na Hotmart entre D-7 e D-3",
-        "Preparar comunicação D-3 a D0 para liberação em 05/06",
-        "Manter Fernando Pari, Joaquim Ariza e Victor Arguedas no radar"
+        "Sexta 22/05: fechar/confirmar briefing, logo/overlay e pacote visual Klyro/Clairou",
+        "Preparar pacote Paul Medina para Fabian sem acionar edição na sexta",
+        "Segunda 25/05: enviar vídeo Paul Medina + logo/overlay para Fabian editar",
+        "Após edição Fabian: Mônica subir aulas na Hotmart entre D-7 e D-3",
+        "Preparar comunicação D-3 a D0 para liberação em 05/06"
       ],
       "blockers": [
-        "Especificações finais do pacote de imagens ainda serão enviadas por Ruan para registrar na memória",
-        "Design precisa entregar esta semana porque semana seguinte entra pacote Elite"
+        "Edição Paul Medina foi deslocada de sexta 22/05 para segunda 25/05",
+        "Design/logo/overlay precisam estar prontos antes de acionar Fabian"
       ]
     },
     {
@@ -182,12 +181,20 @@
   ],
   "gargalos": [
     {
+      "title": "M6 Diplomado — aula/gravação ao vivo 01/06",
+      "priority": "p1",
+      "frente": "Diplomado Ortho Pro",
+      "deadline": "01/06 — execução ao vivo via Google Meet; edição imediatamente após a aula",
+      "blocks": "Sala Meet, gravação correta, backup do bruto, envio para Fabian, edição e upload Hotmart pós-aula",
+      "owner": "Ruan / Sérgio / Fabian / Mônica"
+    },
+    {
       "title": "Transição editorial Chicão → Fabian",
       "priority": "p1",
       "frente": "Low Tickets / Operação",
-      "deadline": "Segunda 25/05",
-      "blocks": "Início do novo editor; contrato/onboarding do Fabian precisa ficar pronto e conversa com Chicão segue necessária para passagem de bastão",
-      "owner": "Ruan"
+      "deadline": "Segunda 25/05 — Fabian assume demandas de edição de vídeo",
+      "blocks": "Passagem de bastão editorial; a partir de 25/05 novas demandas de edição deixam de ir para Chicão e passam para Fabian",
+      "owner": "Ruan / Fabian"
     },
     {
       "title": "Professores Plataforma sem data/tema/dados",
@@ -201,7 +208,7 @@
       "title": "Order bumps + combo nos Low Tickets",
       "priority": "p1",
       "frente": "Low Tickets",
-      "deadline": "Quinta 21/05",
+      "deadline": "Sexta 22/05 — confirmar configuração/validação",
       "blocks": "Teste de aumento de ticket médio/LTV; sem configuração do Felipe, seguimos só com venda principal de $10",
       "owner": "Felipe / Ruan / TAOS"
     },
@@ -233,42 +240,35 @@
   "radarDoDia": [
     {
       "time": "09h00",
-      "task": "📡 Abrir radar de quinta: conferir checks não concluídos, calendário XDental e gargalos P1 antes de executar",
+      "task": "📡 Abrir radar de sexta: conferir pendências de quinta, checar o que caiu do calendário e priorizar gargalos P1",
       "frente": "📡 RADAR",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🛒 Felipe configurar 4 order bumps de US$5 + combo dos 4 por US$10 nos 6 checkouts Low Ticket",
+      "task": "🛒 Confirmar se Felipe configurou os 4 order bumps de US$5 + combo US$10 nos 6 checkouts Low Ticket",
       "frente": "🛒 LT",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🛒 Pós-configuração: validar preço, checkout, entrega, tracking, UTMs e conversão dos bumps/combos",
+      "task": "🛒 Se bumps/combos estiverem ativos: validar preço, checkout, entrega, tracking, UTMs e conversão",
       "frente": "🛒 LT",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🛒 Tracción: iniciar Fase 2 com CBO 1x5, aumentar verba dos estáticos Direct/WhatsApp e desligar campanha antiga fraca",
+      "task": "🛒 Tracción/Fase 2: checar CBO 1x5, aumento de verba dos criativos Direct/WhatsApp e desligamento da campanha antiga fraca",
       "frente": "🛒 LT",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🛒 Quinta do ciclo: Bruno entrega copies, Sérgio começa gravações e Batista prepara nova leva de criativos",
-      "frente": "🛒 LT",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "💎 Confirmar se Felipe disparou a pesquisa para a base de alunos sobre temas do Elite e puxar primeiras respostas",
+      "task": "💎 Elite Junho: confirmar disparo da pesquisa de tema via Felipe e puxar primeiras respostas da base",
       "frente": "💎 ELITE",
       "status": "🔥",
       "done": false
@@ -282,44 +282,44 @@
     },
     {
       "time": "tarde",
-      "task": "💎 Alinhar entrevista/narrativa com Sérgio + Lucas + Bruno: tema técnico, promessa, casos/provas e estrutura da imersão",
+      "task": "💎 Alinhar narrativa/entrevista com Sérgio + Lucas + Bruno ou registrar pendência se tema técnico ainda não estiver fechado",
       "frente": "💎 ELITE",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "tarde",
-      "task": "🎬 Paul Medina: fechar briefing Klyro/Clairou, confirmar se faltam slides/foto/bio e manter design com prazo sexta 22/05",
+      "time": "manhã",
+      "task": "🎬 Paul Medina: NÃO editar sexta; fechar/confirmar design Klyro/Clairou, logo/overlay e materiais necessários para Fabian",
       "frente": "🎬 PA",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "após design",
-      "task": "🎬 Enviar vídeo Paul Medina + logo/overlay para Chicão editar; depois Mônica sobe na Hotmart e prepara comunicação D-3/D0",
+      "time": "tarde",
+      "task": "🎬 Preparar pacote Paul Medina para segunda 25/05: vídeo bruto + logo/overlay + briefing de edição para Fabian",
       "frente": "🎬 PA",
-      "status": "⏳",
+      "status": "📅",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "👤 Fabian: passar contrato ao jurídico, fechar checklist de onboarding e organizar conversa/passagem com Chicão",
+      "task": "👤 Fabian: fechar onboarding/checklist e deixar claro que novas demandas de edição de vídeo começam com ele em 25/05",
       "frente": "👤 RH",
       "status": "🔥",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "🎯 Sniper VIP: fechar logística final — gráfica, alimentação, barista, almoço, compras Shopee, transfers e donos até 25/05",
+      "task": "🎯 Sniper VIP: checklist final — gráfica, alimentação, barista, almoço, compras Shopee, transfers e donos até 25/05",
       "frente": "🎯 SVIP",
       "status": "🔥",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "🎓 Diplomado: preparar M5 José Rodríguez de 26/05 e deixar M6 Sérgio Cury encaminhado",
+      "task": "🎓 Diplomado: preparar M5 José Rodríguez de 26/05 e checklist técnico do M6 Meet 01/06; sem edição antes da gravação",
       "frente": "🎓 DIP",
-      "status": "⏳",
+      "status": "🔥",
       "done": false
     },
     {
@@ -332,12 +332,12 @@
   ],
   "metrics": {
     "p0": 1,
-    "p1": 6,
+    "p1": 7,
     "p2": 2,
     "p3": 1,
     "done": 15,
-    "tasks": 14
+    "tasks": 13
   },
-  "radarExtra": "Preparado 20/05 para 21/05: pendências não concluídas do radar anterior + calendário XDental. Agenda de quinta: deadline Paul Medina e rotina Low Tickets — criativos ativos, Bruno entrega copies e Sérgio começa gravações. Travas principais: Felipe nos bumps/combos, Batista/Bruno na Fase 2 e Ruan amarrando tema do Elite.",
+  "radarExtra": "Preparado 21/05 para 22/05: Radar de sexta remove as edições indevidas de M6 e Paul Medina. M6 só edita após aula/gravação ao vivo de 01/06; Paul Medina fica para Fabian na segunda 25/05. Prioridade de sexta: Low Tickets/bump, Elite tema/narrativa, Sniper VIP logística e checklist de transição Fabian.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
