@@ -25,7 +25,7 @@
     </section>
 
     <section class="grid">
-      <div class="kpi color1"><div class="label">Seguidores</div><div class="value">31.484</div><div class="sub">base atual da conta</div></div>
+      <div class="kpi color1"><div class="label">Seguidores</div><div class="value">31.488</div><div class="sub">base atual da conta</div></div>
       <div class="kpi color2"><div class="label">Alcance diário</div><div class="value">18.769</div><div class="sub">último dia fechado retornado: 21/05</div></div>
       <div class="kpi color3"><div class="label">Mídias publicadas</div><div class="value">455</div><div class="sub">histórico total da conta</div></div>
       <div class="kpi color4"><div class="label">Posts analisados</div><div class="value">2</div><div class="sub">publicados na janela semanal</div></div>
@@ -33,23 +33,23 @@
 
     <section class="section follower-section">
       <h2>Crescimento de seguidores</h2>
-      <p class="lead">A API retornou o total atual de seguidores, mas a série de crescimento veio zerada/incompleta nesta janela. Para não forçar uma leitura falsa, o relatório preserva o bloco V9 e marca a métrica como indisponível até termos histórico confiável.</p>
+      <p class="lead">Corrigido: a série diária foi puxada com <strong>ig_user_id=me</strong> e janela por data, que é o formato que retorna o histórico completo. O dia 21/05 veio zerado/incompleto no corte da API e ficou fora dos acumulados fechados.</p>
       <div class="growth-strip">
-        <div class="growth-card primary"><span>Últimos 7 dias</span><strong>—</strong><small>indisponível: follower_count retornou 0 na série da API</small></div>
-        <div class="growth-card"><span>Últimos 15 dias</span><strong>—</strong><small>sem série histórica confiável</small></div>
-        <div class="growth-card"><span>Últimos 30 dias</span><strong>—</strong><small>usar baseline próprio nas próximas semanas</small></div>
+        <div class="growth-card primary"><span>Últimos 7 dias</span><strong>+161</strong><small>novos seguidores · 14/05 a 20/05</small></div>
+        <div class="growth-card"><span>Últimos 15 dias</span><strong>+291</strong><small>novos seguidores · 06/05 a 20/05</small></div>
+        <div class="growth-card"><span>Últimos 30 dias</span><strong>+524</strong><small>novos seguidores · 21/04 a 20/05</small></div>
       </div>
       <div class="follower-grid single">
         <div class="card follower-chart-card wide">
-          <div class="chart-head"><div><strong>Série diária de seguidores</strong><span>15/05 a 22/05 · métrica não confiável no retorno atual</span></div><div class="delta">Base atual: 31.484</div></div>
-          <svg class="line-chart" viewBox="0 0 920 260" role="img" aria-label="Gráfico indisponível de crescimento de seguidores">
-            <g stroke="#E4EEF4" stroke-width="1"><line x1="40" y1="40" x2="882" y2="40"/><line x1="40" y1="130" x2="882" y2="130"/><line x1="40" y1="220" x2="882" y2="220"/></g>
-            <path d="M40,130 L882,130" fill="none" stroke="#35B6D9" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 10"/>
-            <g fill="#FFFFFF" stroke="#0E5D8F" stroke-width="3"><circle cx="40" cy="130" r="5"/><circle cx="160" cy="130" r="5"/><circle cx="280" cy="130" r="5"/><circle cx="400" cy="130" r="5"/><circle cx="520" cy="130" r="5"/><circle cx="640" cy="130" r="5"/><circle cx="760" cy="130" r="5"/><circle cx="882" cy="130" r="5"/></g>
-            <text x="460" y="112" text-anchor="middle" fill="#0B2B42" font-size="22" font-weight="900">série indisponível / retorno zerado</text>
-            <g fill="#0E5D8F" font-size="18" font-weight="800"><text x="40" y="248">15/05</text><text x="410" y="248">18/05</text><text x="790" y="248">22/05</text></g>
+          <div class="chart-head"><div><strong>Novos seguidores por dia</strong><span>21/04 a 20/05 · último dia fechado confiável</span></div><div class="delta">↑ pico: +35/dia</div></div>
+          <svg class="line-chart" viewBox="0 0 920 330" role="img" aria-label="Gráfico de novos seguidores por dia de 21/04 a 20/05">
+            <g stroke="#E4EEF4" stroke-width="1"><line x1="46" y1="36" x2="890" y2="36"/><line x1="46" y1="102" x2="890" y2="102"/><line x1="46" y1="168" x2="890" y2="168"/><line x1="46" y1="234" x2="890" y2="234"/><line x1="46" y1="268" x2="890" y2="268"/></g>
+            <path d="M 46.0,188.5 L 75.1,234.9 L 104.2,234.9 L 133.3,181.8 L 162.4,195.1 L 191.5,188.5 L 220.6,215.0 L 249.7,36.0 L 278.8,69.1 L 307.9,69.1 L 337.0,82.4 L 366.1,168.6 L 395.2,201.7 L 424.3,215.0 L 453.4,195.1 L 482.6,208.3 L 511.7,181.8 L 540.8,161.9 L 569.9,148.7 L 599.0,148.7 L 628.1,195.1 L 657.2,95.7 L 686.3,142.1 L 715.4,108.9 L 744.5,135.4 L 773.6,102.3 L 802.7,108.9 L 831.8,115.5 L 860.9,142.1 L 890.0,95.7" fill="none" stroke="#35B6D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <g fill="#FFFFFF" stroke="#0E5D8F" stroke-width="3"><circle cx="46.0" cy="188.5" r="4"/><circle cx="75.1" cy="234.9" r="4"/><circle cx="104.2" cy="234.9" r="4"/><circle cx="133.3" cy="181.8" r="4"/><circle cx="162.4" cy="195.1" r="4"/><circle cx="191.5" cy="188.5" r="4"/><circle cx="220.6" cy="215.0" r="4"/><circle cx="249.7" cy="36.0" r="4"/><circle cx="278.8" cy="69.1" r="4"/><circle cx="307.9" cy="69.1" r="4"/><circle cx="337.0" cy="82.4" r="4"/><circle cx="366.1" cy="168.6" r="4"/><circle cx="395.2" cy="201.7" r="4"/><circle cx="424.3" cy="215.0" r="4"/><circle cx="453.4" cy="195.1" r="4"/><circle cx="482.6" cy="208.3" r="4"/><circle cx="511.7" cy="181.8" r="4"/><circle cx="540.8" cy="161.9" r="4"/><circle cx="569.9" cy="148.7" r="4"/><circle cx="599.0" cy="148.7" r="4"/><circle cx="628.1" cy="195.1" r="4"/><circle cx="657.2" cy="95.7" r="4"/><circle cx="686.3" cy="142.1" r="4"/><circle cx="715.4" cy="108.9" r="4"/><circle cx="744.5" cy="135.4" r="4"/><circle cx="773.6" cy="102.3" r="4"/><circle cx="802.7" cy="108.9" r="4"/><circle cx="831.8" cy="115.5" r="4"/><circle cx="860.9" cy="142.1" r="4"/><circle cx="890.0" cy="95.7" r="4"/></g>
+            <g><text x="46.0" y="178.5" text-anchor="middle" class="data-label">+12</text><text x="75.1" y="254.9" text-anchor="middle" class="data-label">+5</text><text x="104.2" y="224.9" text-anchor="middle" class="data-label">+5</text><text x="133.3" y="201.8" text-anchor="middle" class="data-label">+13</text><text x="162.4" y="185.1" text-anchor="middle" class="data-label">+11</text><text x="191.5" y="208.5" text-anchor="middle" class="data-label">+12</text><text x="220.6" y="205.0" text-anchor="middle" class="data-label">+8</text><text x="249.7" y="56.0" text-anchor="middle" class="data-label">+35</text><text x="278.8" y="59.1" text-anchor="middle" class="data-label">+30</text><text x="307.9" y="89.1" text-anchor="middle" class="data-label">+30</text><text x="337.0" y="72.4" text-anchor="middle" class="data-label">+28</text><text x="366.1" y="188.6" text-anchor="middle" class="data-label">+15</text><text x="395.2" y="191.7" text-anchor="middle" class="data-label">+10</text><text x="424.3" y="235.0" text-anchor="middle" class="data-label">+8</text><text x="453.4" y="185.1" text-anchor="middle" class="data-label">+11</text><text x="482.6" y="228.3" text-anchor="middle" class="data-label">+9</text><text x="511.7" y="171.8" text-anchor="middle" class="data-label">+13</text><text x="540.8" y="181.9" text-anchor="middle" class="data-label">+16</text><text x="569.9" y="138.7" text-anchor="middle" class="data-label">+18</text><text x="599.0" y="168.7" text-anchor="middle" class="data-label">+18</text><text x="628.1" y="185.1" text-anchor="middle" class="data-label">+11</text><text x="657.2" y="115.7" text-anchor="middle" class="data-label">+26</text><text x="686.3" y="132.1" text-anchor="middle" class="data-label">+19</text><text x="715.4" y="128.9" text-anchor="middle" class="data-label">+24</text><text x="744.5" y="125.4" text-anchor="middle" class="data-label">+20</text><text x="773.6" y="122.3" text-anchor="middle" class="data-label">+25</text><text x="802.7" y="98.9" text-anchor="middle" class="data-label">+24</text><text x="831.8" y="135.5" text-anchor="middle" class="data-label">+23</text><text x="860.9" y="132.1" text-anchor="middle" class="data-label">+19</text><text x="890.0" y="115.7" text-anchor="middle" class="data-label">+26</text></g>
+            <g fill="#0E5D8F" font-size="15" font-weight="800"><text x="46.0" y="312" text-anchor="middle">21/04</text><text x="191.5" y="312" text-anchor="middle">26/04</text><text x="337.0" y="312" text-anchor="middle">01/05</text><text x="482.6" y="312" text-anchor="middle">06/05</text><text x="628.1" y="312" text-anchor="middle">11/05</text><text x="773.6" y="312" text-anchor="middle">16/05</text><text x="890.0" y="312" text-anchor="middle">20/05</text></g>
           </svg>
-          <div class="chart-note">Crescimento de seguidores não foi calculado porque o endpoint devolveu follower_count=0 para os dias disponíveis. O total atual validado é 31.484 seguidores.</div>
+          <div class="chart-note">Fonte: Instagram Graph API via ClawLink, métrica follower_count/day. Atual validado da conta: 31.488 seguidores. O retorno de 21/05 apareceu como 0 e foi tratado como dado incompleto, não como queda real.</div>
         </div>
       </div>
     </section>
@@ -116,7 +116,7 @@
         <p class="lead">A semana teve só 2 conteúdos publicados, com bom alcance em conteúdo técnico. O gargalo não está em audiência; está em converter conversa clínica e Direct pendente em fluxo comercial limpo.</p>
         <div class="insight"><div class="dot green"></div><div><strong>Top conteúdo: Reel Classe II.</strong><span>30.859 views, 15.456 de alcance, 382 likes e 11 comentários técnicos.</span></div></div>
         <div class="insight"><div class="dot amber"></div><div><strong>Direct é onde está o dinheiro.</strong><span>8 leads comerciais claros, sendo 4 ainda pendentes no recorte analisado.</span></div></div>
-        <div class="insight"><div class="dot red"></div><div><strong>Crescimento de seguidores precisa de baseline próprio.</strong><span>A API retornou série zerada; usar o total atual como marco inicial da próxima rotina.</span></div></div>
+        <div class="insight"><div class="dot green"></div><div><strong>Crescimento de seguidores corrigido.</strong><span>O bloco agora usa follower_count/day com ig_user_id=me e janela por data: +161 em 7 dias, +291 em 15 dias e +524 em 30 dias fechados.</span></div></div>
       </div>
       <div class="card">
         <h2>Alertas</h2>
