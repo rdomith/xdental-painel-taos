@@ -14,19 +14,19 @@
       "name": "Low Tickets",
       "status": "on_track",
       "priority": "p1",
-      "progress": 86,
-      "owner": "Bruno + Batista",
-      "summary": "Quinta 21/05 é dia de ativar Fase 2 de Tracción, configurar bumps/combos nos 6 checkouts e iniciar o novo ciclo de copies/gravações/criativos.",
+      "progress": 94,
+      "owner": "Ruan + Bruno + Batista + Sérgio",
+      "summary": "Esteira da semana fechada: estáticos gerados, 40 criativos enviados e editados, copies do Bruno entregues, campanhas Batista subidas e bumps/combo ativados. Agora foco é monitorar fim de semana e formalizar o ciclo.",
       "nextActions": [
-        "Felipe configurar 4 order bumps de US$5 + combo US$10 nos 6 checkouts",
-        "Validar preço, checkout, entrega, tracking, UTMs e conversão",
-        "Tracción iniciar Fase 2 com CBO 1x5 e aumentar verba dos criativos Direct/WhatsApp",
-        "Bruno entregar copies e Sérgio começar gravações da nova semana",
-        "Batista subir/revisar nova leva de criativos e UTMs"
+        "Mapear/registrar a esteira Low Tickets completa no painel de processos",
+        "Checar radar 0 vendas no fim de semana pela Hotmart e acionar checklist se algum produto zerar",
+        "Acompanhar performance dos criativos ativos, bumps e combo: vendas, ROAS, ticket médio e produtos zerados",
+        "Aguardar assinatura do contrato do Fabian para transição editorial",
+        "Registrar exceção do ciclo: Sérgio não entrega novos criativos na segunda 25/05 por causa do Sniper VIP; retoma no ciclo seguinte"
       ],
       "blockers": [
-        "Sem configuração do Felipe, ticket médio segue travado em US$10",
-        "Sem Fase 2/novos criativos, produtos abaixo de ROAS 2 continuam drenando ritmo"
+        "Próximo risco operacional é fim de semana com produto zerado ou tracking/checkout fora do ar",
+        "Assinatura do Fabian ainda pendente para consolidar transição editorial"
       ]
     },
     {
@@ -338,6 +338,6 @@
     "done": 15,
     "tasks": 13
   },
-  "radarExtra": "Preparado 21/05 para 22/05: Radar de sexta remove as edições indevidas de M6 e Paul Medina. M6 só edita após aula/gravação ao vivo de 01/06; Paul Medina fica para Fabian na segunda 25/05. Prioridade de sexta: Low Tickets/bump, Elite tema/narrativa, Sniper VIP logística e checklist de transição Fabian.",
+  "radarExtra": "Atualizado 22/05 por áudio do Ruan: Low Tickets teve esteira da semana praticamente concluída (estáticos, 40 criativos, edição Chicão, copies Bruno, subida Batista e bumps/combo). Manter só mapeamento da esteira, radar 0 vendas no fim de semana, assinatura Fabian e exceção: Sérgio não entrega novos criativos na segunda 25/05 por Sniper VIP.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
