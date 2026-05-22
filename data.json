@@ -97,17 +97,19 @@
       "name": "Chile / CIOCH",
       "status": "attention",
       "priority": "p1",
-      "progress": 15,
+      "progress": 20,
       "owner": "Ruan / Vinícius / financeiro",
-      "summary": "XX CIOCH Santiago 26-28/08; avançando lento, com decisões e confirmações em aberto.",
+      "summary": "Frente Chile/CIOCH está controlada no geral. A pendência maior agora é definir/selecionar o tipo de stand; há também pagamento previsto para 26/05 a acompanhar.",
       "nextActions": [
-        "Verificar email para confirmar stand definido",
-        "Decidir Vinícius vai/não",
-        "Resolver conflito M8 × Chile 25-28/08"
+        "Definir/selecionar tipo de stand CIOCH como pendência principal",
+        "Acompanhar pagamento previsto para 26/05 e confirmar compensação/status",
+        "Manter decisão Vinícius vai/não no radar de logística",
+        "Preencher formulários expositor até 20/07",
+        "Preparar arquivos gráficos/projeto especial até 26/07"
       ],
       "blockers": [
-        "2º pagamento Chile encaminhado ao financeiro — confirmar 26/05",
-        "Envio arquivos gráfica — prazo 26/07"
+        "Seleção do stand ainda precisa de definição",
+        "Pagamento de 26/05 precisa confirmação"
       ]
     },
     {
@@ -115,17 +117,18 @@
       "name": "Sniper Elite",
       "status": "attention",
       "priority": "p1",
-      "progress": 70,
+      "progress": 45,
       "owner": "Mônica / Ruan",
-      "summary": "Elite junho precisa sair do genérico: pesquisa de tema com a base, revisão do ClickUp e entrevista/narrativa com Sérgio/Lucas/Bruno.",
+      "summary": "Entrevista com Sérgio para narrativa já foi realizada. Ruan está planejando as tarefas do lançamento no ClickUp. Próximo gargalo é definir e comunicar a reunião de kickoff, provavelmente segunda ou terça, conforme logística do Sniper VIP em São José dos Campos.",
       "nextActions": [
-        "Confirmar disparo da pesquisa de tema via Felipe",
-        "Puxar respostas e selecionar temas candidatos",
-        "Revisar ClickUp: owners, prazos, copy do Bruno e cronograma até 20/06",
-        "Alinhar entrevista/narrativa com Sérgio + Lucas + Bruno"
+        "Ruan finalizar planejamento das tarefas do lançamento no ClickUp",
+        "Definir data/horário e comunicar kickoff do lançamento para a equipe — segunda ou terça",
+        "Bruno executar primeiras demandas de copy após kickoff/alinhamento",
+        "Fechar cronograma do lançamento de junho com data nova em 20/06"
       ],
       "blockers": [
-        "Sem tema técnico validado, página/copy/tráfego ficam genéricos"
+        "Kickoff ainda sem data/horário comunicado por depender da logística do Sniper VIP",
+        "Cronograma final depende do planejamento no ClickUp e kickoff"
       ]
     },
     {
@@ -338,6 +341,6 @@
     "done": 15,
     "tasks": 13
   },
-  "radarExtra": "Atualizado 22/05 por áudio do Ruan: Plataforma de Assinatura com briefing Paul Medina enviado para Clairou, pacote visual previsto para hoje, gravação já recebida e edição Fabian em 25/05. Apresentação da nova plataforma já foi pausada na segunda; remover cobrança de nova janela do Sérgio. Manter Fernando Pari, Joaquim Ariza e Victor Arguedas no radar para cursos a partir de julho.",
+  "radarExtra": "Atualizado 22/05 por áudio do Ruan: Chile/CIOCH está controlado, mas seleção do stand vira pendência maior e há pagamento em 26/05. Sniper Elite: entrevista com Sérgio já feita; Ruan está planejando tarefas no ClickUp; aguardar definição/comunicação do kickoff segunda ou terça conforme logística em São José dos Campos/Sniper VIP.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
