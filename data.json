@@ -77,19 +77,19 @@
       "name": "Plataforma de Assinatura",
       "status": "on_track",
       "priority": "p1",
-      "progress": 70,
-      "owner": "Ruan / Felipe / Mônica",
-      "summary": "Paul Medina enviou o arquivo fechado do curso 101 Tips; edição não acontece em 22/05. A edição fica para segunda 25/05 com Fabian, novo editor, e depois Mônica sobe na Hotmart para liberação prevista em 05/06.",
+      "progress": 78,
+      "owner": "Ruan / Clairou / Fabian / Mônica",
+      "summary": "Paul Medina/101 Tips já tem gravação recebida; briefing visual enviado para Clairou, que entrega o pacote hoje. Apresentação da nova plataforma foi pausada na segunda. Edição fica para Fabian na segunda 25/05; Fernando Pari, Joaquim Ariza e Victor Arguedas seguem no radar para pipeline a partir de julho.",
       "nextActions": [
-        "Sexta 22/05: fechar/confirmar briefing, logo/overlay e pacote visual Klyro/Clairou",
-        "Preparar pacote Paul Medina para Fabian sem acionar edição na sexta",
-        "Segunda 25/05: enviar vídeo Paul Medina + logo/overlay para Fabian editar",
-        "Após edição Fabian: Mônica subir aulas na Hotmart entre D-7 e D-3",
-        "Preparar comunicação D-3 a D0 para liberação em 05/06"
+        "Aguardar Clairou entregar hoje o pacote visual Paul Medina: capa/banner/logo/overlay",
+        "Segunda 25/05: enviar gravação Paul Medina + logo/overlay para Fabian editar",
+        "Consolidar pipeline Jul-Set com Fernando Pari, Joaquim Ariza e Victor Arguedas",
+        "Remarcar campanha e sequência de mensagens da plataforma quando houver nova data real",
+        "Após edição Fabian: Mônica subir aulas na Hotmart para liberação prevista em 05/06"
       ],
       "blockers": [
-        "Edição Paul Medina foi deslocada de sexta 22/05 para segunda 25/05",
-        "Design/logo/overlay precisam estar prontos antes de acionar Fabian"
+        "Pacote visual da Clairou ainda precisa chegar antes de acionar Fabian",
+        "Pipeline pós-Paul Medina ainda depende de definição com Fernando, Joaquim e Victor"
       ]
     },
     {
@@ -338,6 +338,6 @@
     "done": 15,
     "tasks": 13
   },
-  "radarExtra": "Atualizado 22/05 por áudio do Ruan: Low Tickets teve esteira da semana praticamente concluída (estáticos, 40 criativos, edição Chicão, copies Bruno, subida Batista e bumps/combo). Manter só mapeamento da esteira, radar 0 vendas no fim de semana, assinatura Fabian e exceção: Sérgio não entrega novos criativos na segunda 25/05 por Sniper VIP.",
+  "radarExtra": "Atualizado 22/05 por áudio do Ruan: Plataforma de Assinatura com briefing Paul Medina enviado para Clairou, pacote visual previsto para hoje, gravação já recebida e edição Fabian em 25/05. Apresentação da nova plataforma já foi pausada na segunda; remover cobrança de nova janela do Sérgio. Manter Fernando Pari, Joaquim Ariza e Victor Arguedas no radar para cursos a partir de julho.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
