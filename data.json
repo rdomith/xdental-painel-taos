@@ -117,18 +117,18 @@
       "name": "Sniper Elite",
       "status": "attention",
       "priority": "p1",
-      "progress": 45,
-      "owner": "Mônica / Ruan",
-      "summary": "Entrevista com Sérgio para narrativa já foi realizada. Ruan está planejando as tarefas do lançamento no ClickUp. Próximo gargalo é definir e comunicar a reunião de kickoff, provavelmente segunda ou terça, conforme logística do Sniper VIP em São José dos Campos.",
+      "progress": 75,
+      "owner": "Mônica / Sérgio / Ruan",
+      "summary": "Frente Sniper Elite agora fica restrita à entrega do produto: nova imersão mensal com Sérgio, liberação da imersão e avisos nos grupos pela Mônica. Todo lançamento do Elite Junho/20-06 foi movido para a frente Lançamentos.",
       "nextActions": [
-        "Ruan finalizar planejamento das tarefas do lançamento no ClickUp",
-        "Definir data/horário e comunicar kickoff do lançamento para a equipe — segunda ou terça",
-        "Bruno executar primeiras demandas de copy após kickoff/alinhamento",
-        "Fechar cronograma do lançamento de junho com data nova em 20/06"
+        "Organizar próxima imersão mensal do Elite com Sérgio",
+        "Confirmar agenda/tema da nova imersão — Torque con Alineadores mapeada para 29/06",
+        "Mônica preparar avisos nos grupos sobre a imersão/liberação",
+        "Checklist de entrega: data, link, lembretes, suporte, gravação e disponibilização pós-aula"
       ],
       "blockers": [
-        "Kickoff ainda sem data/horário comunicado por depender da logística do Sniper VIP",
-        "Cronograma final depende do planejamento no ClickUp e kickoff"
+        "Confirmar agenda/tema final com Sérgio",
+        "Garantir avisos e suporte da entrega mensal para alunos"
       ]
     },
     {
@@ -136,31 +136,36 @@
       "name": "OralPlanner",
       "status": "attention",
       "priority": "p1",
-      "progress": 35,
-      "owner": "Ruan / Sérgio / Felipe",
-      "summary": "Nova plataforma XDental + OralPlanner: reunião 13/05 10h para plataforma, MVP e próximos passos.",
+      "progress": 60,
+      "owner": "Ruan / Felipe",
+      "summary": "OralPlanner volta para o radar: ainda precisa liberar este mês porque foi prometido. Falta Ruan falar com Felipe e fechar os ajustes pendentes para a versão de liberação.",
       "nextActions": [
-        "Reunião Ruan + Sérgio + Felipe — 13/05 10h",
-        "Apresentar plataforma XDental + alinhar OralPlanner + definir MVP",
-        "Definir funcionalidades do MVP com entrega em maio",
-        "Validar próximos passos do OralPlanner"
+        "Ruan falar com Felipe sobre ajustes pendentes do OralPlanner",
+        "Listar o que falta para liberar a versão prometida este mês",
+        "Fechar checklist de liberação: ajustes finais, teste, comunicação e responsável técnico"
       ],
-      "blockers": []
+      "blockers": [
+        "Ajustes finais ainda não estão fechados com Felipe",
+        "Prazo prometido é este mês; risco de cair por causa do Sniper VIP"
+      ]
     },
     {
       "id": "plataforma-app",
       "name": "Plataforma Própria (App)",
-      "status": "attention",
+      "status": "on_track",
       "priority": "p2",
-      "progress": 55,
-      "owner": "Ruan / Felipe / Sérgio",
-      "summary": "Base de assinantes pronta; falta estratégia de comunicação/acesso e go-to-market.",
+      "progress": 72,
+      "owner": "Ruan / Felipe / Suporte",
+      "summary": "Ações iniciais para levar usuários à plataforma própria já foram feitas; mais de 800 usuários receberam acesso. Agora a frente é adoção gradual: reforços, suporte e acompanhamento até a base migrar naturalmente para uso da plataforma nova.",
       "nextActions": [
-        "Estratégia comunicação + acesso",
-        "Marcar aula apresentação com Sérgio"
+        "Monitorar adoção da nova plataforma pelos 800+ usuários com acesso",
+        "Planejar novas ações de incentivo à migração e uso contínuo",
+        "Acompanhar dúvidas e atritos de login, navegação e consumo de aulas",
+        "Reforçar comunicação conforme a base migra gradualmente"
       ],
       "blockers": [
-        "Go-to-market ainda não definido"
+        "Migração de uso será gradual; precisa reforço recorrente para não perder adoção",
+        "Mapear atritos de usuários na nova plataforma"
       ]
     },
     {
@@ -169,16 +174,18 @@
       "status": "attention",
       "priority": "p1",
       "progress": 45,
-      "owner": "Ruan",
-      "summary": "Lançamento Sniper Elite de 20/06 em fase de estruturação; próxima trava é tema/narrativa + owners no ClickUp.",
+      "owner": "Ruan / Bruno / Lucas",
+      "summary": "Frente Lançamentos concentra tudo do lançamento Sniper Elite Junho, com data nova em 20/06: ClickUp, kickoff, narrativa/oferta, copy, cronograma, página, tráfego e criativos. Sniper Elite fica só para entrega mensal do produto.",
       "nextActions": [
-        "Fechar narrativa central do Sniper Elite junho",
-        "Finalizar tarefas no ClickUp com owners e prazos",
-        "Bruno avançar copy com base no tema escolhido",
-        "Construir cronograma operacional até 20/06"
+        "Ruan organizar tarefas do lançamento Sniper Elite Junho no ClickUp",
+        "Definir data/horário e comunicar kickoff do lançamento — segunda ou terça, conforme logística do Sniper VIP",
+        "Consolidar narrativa/oferta a partir da entrevista já feita com Sérgio",
+        "Bruno executar primeiras demandas de copy após kickoff/alinhamento",
+        "Fechar cronograma macro até o evento/venda de 20/06"
       ],
       "blockers": [
-        "Narrativa/oferta ainda dependem de tema técnico e insumo do Sérgio"
+        "Kickoff ainda sem data/horário comunicado",
+        "Cronograma e owners dependem do planejamento no ClickUp"
       ]
     }
   ],
@@ -341,6 +348,6 @@
     "done": 15,
     "tasks": 13
   },
-  "radarExtra": "Atualizado 22/05 por áudio do Ruan: Chile/CIOCH está controlado, mas seleção do stand vira pendência maior e há pagamento em 26/05. Sniper Elite: entrevista com Sérgio já feita; Ruan está planejando tarefas no ClickUp; aguardar definição/comunicação do kickoff segunda ou terça conforme logística em São José dos Campos/Sniper VIP.",
+  "radarExtra": "Atualizado 22/05 por áudio do Ruan: separar Sniper Elite de Lançamentos. Sniper Elite = entrega do produto/imersões mensais com Sérgio e avisos da Mônica. Lançamentos = todo lançamento do Sniper Elite Junho 20/06. OralPlanner volta ao radar para liberar ainda este mês com Felipe. Plataforma própria: usuários já receberam acesso; agora foco é adoção gradual dos 800+ usuários com novas ações e suporte.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
