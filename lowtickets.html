@@ -47,6 +47,10 @@
   .rt-new{background:#1A1A2E;color:#9090DD;border:0.5px solid rgba(100,100,200,0.3);}
 
   .section-label{font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;}
+  .subtabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 1.25rem 0;}
+  .subtab{display:inline-flex;align-items:center;gap:6px;text-decoration:none;background:var(--bg2);border:0.5px solid var(--border);color:var(--text2);border-radius:999px;padding:8px 13px;font-size:12px;font-weight:600;}
+  .subtab.active{background:var(--green-bg);border-color:var(--green-border);color:var(--green-lt);}
+
 
   .kanban{display:grid;grid-template-columns:repeat(4,270px);gap:10px;margin-bottom:1.5rem;align-items:start;justify-content:center;}
 
@@ -108,6 +112,13 @@
 </style>
 <nav class="taos-top-nav"><div class="taos-top-nav-inner"><div class="taos-top-brand">TAOS · Central XDental</div><div class="taos-top-links"><a href="./">Painel Operacional</a><a href="processos.html">Processos</a><a class="active" href="lowtickets.html">Low Tickets</a></div></div></nav>
 
+
+
+  <div class="subtabs">
+    <a class="subtab active" href="lowtickets.html">Visão geral</a>
+    <a class="subtab" href="lowtickets-projecao.html">Planejado vs Realizado</a>
+    <a class="subtab" href="lowtickets-projecao-ritmo.html">Ritmo mensal</a>
+  </div>
 
   <div class="topbar">
     <div>
