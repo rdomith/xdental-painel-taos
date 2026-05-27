@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-05-27 · Radar operacional de quarta preparado",
+    "lastUpdated": "2026-05-27 · Radar operacional corrigido com Google Calendar",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quarta de fechamento operacional: Sniper VIP D3/encerramento, prova M5, CIOCH, Paul Medina/Fabian, Elite Junho e OralPlanner."
+    "headline": "Quarta de fechamento operacional: Sniper VIP D3, reunião Low Tickets 14h, prova M5, CIOCH, Paul Medina/Fabian, Elite Junho e OralPlanner."
   },
   "fronts": [
     {
@@ -298,6 +298,20 @@
       "done": false
     },
     {
+      "time": "14h",
+      "task": "🛒 Low Tickets — reunião semanal Bruno + Batista: revisar criativos, próximos testes, produtos fracos/zerados, bumps/combo e plano da semana",
+      "frente": "🛒 LT",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "após reunião LT",
+      "task": "🛒 Low Tickets — QUA: confirmar entrega do Fabian e subida dos criativos pelo Batista conforme calendário",
+      "frente": "🛒 LT",
+      "status": "🔥",
+      "done": false
+    },
+    {
       "time": "tarde",
       "task": "🎬 Paul Medina / Plataforma: confirmar com Fabian andamento da edição do 101 Tips e próximos passos até liberação referência 05/06",
       "frente": "🎬 PA",
@@ -353,8 +367,8 @@
     "p2": 2,
     "p3": 1,
     "done": 15,
-    "tasks": 14
+    "tasks": 16
   },
-  "radarExtra": "Atualizado 27/05: radar operacional sem Low Tickets neste tópico; foco em Sniper VIP D3, prova M5, M6 01/06, CIOCH, Paul Medina/Fabian, Elite Junho, OralPlanner e Plataforma/App. Regra: sem check explícito, pendência carrega para o dia seguinte.",
+  "radarExtra": "Atualizado 27/05 após correção do Ruan: todo painel operacional precisa cruzar Google Calendar + pendências sem check do dia anterior. Incluída reunião semanal Low Tickets 14h e tarefa QUA Fabian/Batista do calendário. Foco segue em Sniper VIP D3, prova M5, M6 01/06, CIOCH, Paul Medina/Fabian, Elite Junho, OralPlanner e Plataforma/App.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
