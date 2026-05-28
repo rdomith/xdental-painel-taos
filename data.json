@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-05-27 · Radar operacional corrigido com Google Calendar",
+    "lastUpdated": "2026-05-28 · Radar de quinta 28/05 preparado",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quarta de fechamento operacional: Sniper VIP D3, reunião Low Tickets 14h, prova M5, CIOCH, Paul Medina/Fabian, Elite Junho e OralPlanner."
+    "headline": "Quinta de retomada: pós-Sniper VIP, ciclo Low Tickets, prova M5, M6 01/06, CIOCH, Paul Medina, Elite e OralPlanner."
   },
   "fronts": [
     {
@@ -250,112 +250,105 @@
   "radarDoDia": [
     {
       "time": "09h30",
-      "task": "📡 Abrir radar de quarta: carregar pendências sem check, tirar Low Tickets deste tópico e priorizar o que vence hoje",
+      "task": "📡 Abrir radar de quinta: revisar pendências sem check de 27/05 e puxar pendências reais para hoje",
       "frente": "📡 RADAR",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🎯 Sniper VIP D3: confirmar agenda final, equipe/fornecedores, almoço, barista/açaí, materiais, encerramento e qualquer compra pendente",
+      "task": "🎯 Sniper VIP pós-evento: consolidar pagamentos, fornecedores, materiais, logística encerrada e donos do follow-up",
       "frente": "🎯 SVIP",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🎯 Sniper VIP pós-evento: separar registros, depoimentos, fotos/vídeos, pendências de fornecedor, pagamentos e donos do follow-up",
+      "task": "🎯 Sniper VIP conteúdo/prova social: separar fotos, vídeos, depoimentos e aprendizados do evento",
       "frente": "🎯 SVIP",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🎓 Diplomado M5: Ruan criar prova do módulo José Rodríguez e alinhar comunicação/aplicação conforme SOP D+30 para 03/06",
+      "task": "🛒 Low Tickets: garantir criativos anteriores ativos no Meta e revisar sinais de escala/queda",
+      "frente": "🛒 LT",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "🛒 Bruno entregar copies da nova semana e validar temas prioritários",
+      "frente": "🛒 LT",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "🛒 Sérgio começar gravações dos vídeos do novo ciclo com pauta objetiva para Fabian",
+      "frente": "🛒 LT",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "🎓 Diplomado M5: confirmar criação/status da prova José Rodríguez e aplicação referência 03/06",
       "frente": "🎓 DIP",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🎓 M6 Diplomado 01/06: fechar checklist Google Meet — sala, gravação, backup, envio bruto para Fabian e comunicação aos alunos",
+      "task": "🎓 M6 01/06: fechar checklist Meet, gravação, backup, envio bruto para Fabian, edição e upload",
       "frente": "🎓 DIP",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "manhã",
-      "task": "🇨🇱 Chile/CIOCH: confirmar se o pagamento de 26/05 foi executado/compensado e registrar status financeiro",
+      "time": "tarde",
+      "task": "🇨🇱 CIOCH: confirmar compensação/status do pagamento de 26/05",
       "frente": "🇨🇱 CHL",
       "status": "🔥",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "🇨🇱 Chile/CIOCH: definir tipo de stand (3x2, 4x2 ou 6x2) e manter prazos 20/07 formulários, 26/07 gráfica/projeto, 21/08 placas",
+      "task": "🇨🇱 CIOCH: decidir tipo de stand e manter prazos 20/07, 26/07 e 21/08 no radar",
       "frente": "🇨🇱 CHL",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "14h",
-      "task": "🛒 Low Tickets — reunião semanal Bruno + Batista: revisar criativos, próximos testes, produtos fracos/zerados, bumps/combo e plano da semana",
-      "frente": "🛒 LT",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "após reunião LT",
-      "task": "🛒 Low Tickets — QUA: confirmar entrega do Fabian e subida dos criativos pelo Batista conforme calendário",
-      "frente": "🛒 LT",
-      "status": "🔥",
-      "done": false
-    },
-    {
       "time": "tarde",
-      "task": "🎬 Paul Medina / Plataforma: confirmar com Fabian andamento da edição do 101 Tips e próximos passos até liberação referência 05/06",
+      "task": "🎬 Paul Medina: cobrar andamento da edição Fabian e caminho até upload Hotmart/liberação 05/06",
       "frente": "🎬 PA",
       "status": "🔥",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "🎬 Plataforma: puxar pipeline Fernando Pari, Joaquim Ariza e Victor Arguedas — tema, data de gravação, dados/foto/bio e material de apoio",
+      "task": "🎬 Pipeline Plataforma: avançar Fernando Pari, Joaquim Ariza e Victor Arguedas",
       "frente": "🎬 PA",
       "status": "📅",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "🚀 Elite Junho: revisar/estruturar ClickUp do lançamento 20/06 — kickoff, owners, cronograma, copy do Bruno, narrativa/oferta e bloqueios",
+      "task": "🚀 Elite Junho: estruturar ClickUp do lançamento 20/06 — kickoff, owners, cronograma, copy e narrativa",
       "frente": "🚀 LANÇ",
       "status": "🔥",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "🧩 OralPlanner: falar com Felipe e fechar lista objetiva do que falta para liberar a versão prometida até 31/05",
+      "task": "🧩 OralPlanner: falar com Felipe e fechar lista objetiva do que falta para liberar até 31/05",
       "frente": "🧩 ORAL",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "tarde",
-      "task": "📱 Plataforma própria/app: mapear adoção dos 800+ usuários, dúvidas de login/navegação e próxima ação de incentivo à migração",
-      "frente": "📱 APP",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "12h / quando possível",
-      "task": "🧠 Mentoria Cloud Code — Módulo 2 Skills: assistir gravação/liberação e extrair insumos para evoluir skills operacionais do TAOS",
-      "frente": "🧠 IA",
-      "status": "📅",
-      "done": false
-    },
-    {
       "time": "fim do dia",
-      "task": "📡 Fechamento TAOS: registrar checks informados por Ruan, arquivar concluídos e carregar pendências não concluídas para 28/05",
+      "task": "📡 Fechamento TAOS: registrar checks, atualizar memória e carregar pendências para 29/05",
       "frente": "📡 RADAR",
       "status": "📅",
       "done": false
@@ -367,8 +360,8 @@
     "p2": 2,
     "p3": 1,
     "done": 15,
-    "tasks": 16
+    "tasks": 15
   },
-  "radarExtra": "Atualizado 27/05 após correção do Ruan: todo painel operacional precisa cruzar Google Calendar + pendências sem check do dia anterior. Incluída reunião semanal Low Tickets 14h e tarefa QUA Fabian/Batista do calendário. Foco segue em Sniper VIP D3, prova M5, M6 01/06, CIOCH, Paul Medina/Fabian, Elite Junho, OralPlanner e Plataforma/App.",
+  "radarExtra": "Atualizado em 28/05 com Google Calendar: Low Tickets — quinta do ciclo (criativos anteriores ativos, Bruno entrega copies e Sérgio começa gravações). Pendências sem check de 27/05 carregadas para hoje.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
