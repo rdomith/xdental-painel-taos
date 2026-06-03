@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-06-01 · Radar de terça 02/06 preparado",
+    "lastUpdated": "2026-06-03 · Radar de quarta 03/06 preparado",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça de follow-up: enviar gravação M6 para Fabian, manter Clínica de Maestría no lote zero, validar tráfego, confirmar CIOCH pagamento/stand e destravar OralPlanner."
+    "headline": "Quarta de acompanhamento: reunião 10h Batista + Lucas sobre vendas/ingressos/testes, cobrar casos clínicos do Sérgio, configurar acesso Stripe com Ruan e começar playbook de testes do lançamento XDental."
   },
   "fronts": [
     {
@@ -16,17 +16,17 @@
       "priority": "p1",
       "progress": 75,
       "owner": "Ruan + Bruno + Batista + Sérgio",
-      "summary": "Ciclo ativo; acompanhar vendas/performance pela API oficial Hotmart e evitar falso alerta por ClawLink. Low tickets seguem como porta de entrada para o ecossistema Elite/CDM.",
+      "summary": "Quarta com rotina Low Tickets ativa: Fabian entrega criativos, Batista sobe testes no Meta Ads e reunião de acompanhamento com Batista/Lucas para vendas, ingressos e definição dos próximos testes.",
       "nextActions": [
-        "Mapear/registrar a esteira Low Tickets completa no painel de processos",
-        "Checar radar 0 vendas no fim de semana pela Hotmart e acionar checklist se algum produto zerar",
+        "10h: reunião Batista + Lucas — acompanhar vendas/ingressos e decidir testes ativos",
+        "Registrar todos os testes do lançamento em playbook: hipótese, setup, métrica de sucesso, resultado e decisão",
+        "Confirmar com Batista quais criativos/campanhas sobem hoje e quais permanecem ativos",
         "Acompanhar performance dos criativos ativos, bumps e combo: vendas, ROAS, ticket médio e produtos zerados",
-        "Aguardar assinatura do contrato do Fabian para transição editorial",
-        "Registrar exceção do ciclo: Sérgio não entrega novos criativos na segunda 25/05 por causa do Sniper VIP; retoma no ciclo seguinte"
+        "Checar radar 0 vendas pela Hotmart/API oficial no fechamento do dia"
       ],
       "blockers": [
-        "Próximo risco operacional é fim de semana com produto zerado ou tracking/checkout fora do ar",
-        "Assinatura do Fabian ainda pendente para consolidar transição editorial"
+        "Sem registro padronizado dos testes, aprendizado do lançamento se perde",
+        "Dependência de Batista para status real de campanhas/testes do dia"
       ]
     },
     {
@@ -59,17 +59,16 @@
       "priority": "p0",
       "progress": 95,
       "owner": "Ruan / Felipe / Klyro / Sérgio",
-      "summary": "Sérgio gravou o M6 em 01/06. Próxima demanda de 02/06: enviar o bruto para Fabian, confirmar recebimento, prazo de edição, upload e liberação.",
+      "summary": "Rollover de 02/06: confirmar se o bruto M6 já foi enviado ao Fabian e se há prazo de edição/upload/liberação. Hoje também liberar prova M5 na Hotmart com janela de 7 dias.",
       "nextActions": [
-        "Preparar checklist técnico do Google Meet para M6 em 01/06",
-        "Definir comunicação aos alunos: podem assistir ao vivo, sem interação com o professor",
-        "Garantir gravação correta do Meet e backup do arquivo bruto no fim da aula",
-        "Enviar gravação do M6 para Fabian assim que Sérgio encerrar a aula",
-        "Manter M5 José Rodríguez de 26/05 pronto para Encuentro/exame"
+        "Confirmar se gravação M6 do Sérgio já foi enviada para Fabian",
+        "Confirmar com Fabian recebimento, prazo de edição, upload e responsável pela liberação do M6",
+        "Hoje: garantir liberação da prova M5 na Hotmart com janela até 10/06",
+        "Registrar status final do M6 para não carregar pendência falsa amanhã"
       ],
       "blockers": [
-        "Não deve existir tarefa de edição do M6 antes da gravação de 01/06",
-        "Risco principal do M6 agora é técnico: Meet, gravação, backup, envio para Fabian e upload pós-aula"
+        "Se o bruto M6 não chegou ao Fabian, edição/upload/liberação ficam travados",
+        "Prova M5 precisa ser liberada hoje conforme calendário XDental"
       ]
     },
     {
@@ -99,7 +98,7 @@
       "priority": "p1",
       "progress": 25,
       "owner": "Ruan / Vinícius / financeiro",
-      "summary": "Para 02/06: confirmar se existe novo pagamento a fazer e levantar dados do stand. Manter prazos críticos de julho/agosto no radar.",
+      "summary": "Rollover de 02/06: confirmar pagamento/stand e próximos prazos do expositor. Sem confirmação explícita de check, segue no radar.",
       "nextActions": [
         "Definir/selecionar tipo de stand CIOCH como pendência principal",
         "Acompanhar pagamento previsto para 26/05 e confirmar compensação/status",
@@ -119,16 +118,16 @@
       "priority": "p1",
       "progress": 50,
       "owner": "Mônica / Sérgio / Ruan",
-      "summary": "Clínica de Maestría permanece no lote zero por mais alguns dias. Virada de lote suspensa em 01/06 por problemas no tráfego, sem nova data definida.",
+      "summary": "Frente ativa do lançamento/Elite: compilar casos clínicos no grupo Telegram do Elite e cobrar Sérgio/Serginho pelos casos necessários para estratégia de conteúdo e prova social.",
       "nextActions": [
-        "Organizar próxima imersão mensal do Elite com Sérgio",
-        "Confirmar agenda/tema da nova imersão — Torque con Alineadores mapeada para 29/06",
-        "Mônica preparar avisos nos grupos sobre a imersão/liberação",
-        "Checklist de entrega: data, link, lembretes, suporte, gravação e disponibilização pós-aula"
+        "Cobrar Sérgio/Serginho: enviar casos clínicos para compilar no Telegram do Elite",
+        "Organizar casos clínicos do grupo do Elite por tema, qualidade, etapa clínica e potencial de uso no lançamento",
+        "Definir quais casos entram como prova social/argumento nos testes do lançamento",
+        "Manter Clínica de Maestría/lote zero no radar enquanto tráfego e virada de lote não estabilizam"
       ],
       "blockers": [
-        "Confirmar agenda/tema final com Sérgio",
-        "Garantir avisos e suporte da entrega mensal para alunos"
+        "Casos clínicos dependem de envio do Sérgio/Serginho",
+        "Sem os casos, a estratégia de prova social do Elite fica fraca"
       ]
     },
     {
@@ -138,7 +137,7 @@
       "priority": "p1",
       "progress": 55,
       "owner": "Ruan / Felipe",
-      "summary": "Entrega prometida para maio não aconteceu. Permanece no radar como atraso até haver checklist real de liberação com Felipe.",
+      "summary": "Rollover de 02/06: cobrar Felipe/status técnico e transformar atraso em checklist real de liberação.",
       "nextActions": [
         "Ruan falar com Felipe sobre ajustes pendentes do OralPlanner",
         "Listar o que falta para liberar a versão prometida este mês",
@@ -175,43 +174,58 @@
       "priority": "p2",
       "progress": 35,
       "owner": "Ruan / Bruno / Lucas",
-      "summary": "Demandas Xflow/Elite removidas do radar de 02/06 por orientação do Ruan. Manter atenção apenas na Clínica de Maestría/lote zero e problemas de tráfego.",
+      "summary": "Hoje começa disciplina de playbook: cada teste do lançamento XDental precisa ser registrado com hipótese, execução, métrica, resultado e decisão para criar biblioteca do que funciona/não funciona.",
       "nextActions": [
-        "Ruan organizar tarefas do lançamento Sniper Elite Junho no ClickUp",
-        "Definir data/horário e comunicar kickoff do lançamento — segunda ou terça, conforme logística do Sniper VIP",
-        "Consolidar narrativa/oferta a partir da entrevista já feita com Sérgio",
-        "Bruno executar primeiras demandas de copy após kickoff/alinhamento",
-        "Fechar cronograma macro até o evento/venda de 20/06"
+        "10h: acompanhar Batista + Lucas sobre vendas/ingressos e testes do lançamento",
+        "Criar/usar playbook de testes do lançamento com padrão único de registro",
+        "Depois da reunião: registrar testes definidos, owners, orçamento/campanhas e métrica de decisão",
+        "Conectar aprendizados com futuras campanhas da XDental"
       ],
       "blockers": [
-        "Kickoff ainda sem data/horário comunicado",
-        "Cronograma e owners dependem do planejamento no ClickUp"
+        "Testes ainda precisam sair da reunião das 10h com setup claro",
+        "Sem owner/métrica, teste vira tentativa solta e não aprendizado"
       ]
     }
   ],
   "gargalos": [
     {
-      "title": "Diplomado M6 — enviar bruto para Fabian",
+      "title": "Lançamento XDental — reunião 10h Batista + Lucas",
       "priority": "p0",
+      "frente": "Lançamentos / Low Tickets",
+      "deadline": "03/06 10h",
+      "blocks": "Definição dos testes, acompanhamento de vendas/ingressos e playbook de aprendizados",
+      "owner": "Ruan / Lucas / Batista / TAOS"
+    },
+    {
+      "title": "Sérgio/Serginho — casos clínicos do Elite",
+      "priority": "p0",
+      "frente": "Sniper Elite / Estratégia",
+      "deadline": "03/06",
+      "blocks": "Compilado de casos clínicos no Telegram do Elite e uso como prova social no lançamento",
+      "owner": "Ruan / Sérgio"
+    },
+    {
+      "title": "Diplomado M6 — confirmar envio bruto para Fabian",
+      "priority": "p1",
       "frente": "Diplomado Ortho Pro",
-      "deadline": "02/06 manhã",
-      "blocks": "Edição, upload, liberação e comunicação do módulo",
+      "deadline": "Rollover 02/06 → 03/06",
+      "blocks": "Edição, upload e liberação do M6",
       "owner": "Ruan / Fabian"
     },
     {
-      "title": "Clínica de Maestría — lote zero estendido",
+      "title": "Stripe XDental — finalizar configuração de acessos",
       "priority": "p1",
-      "frente": "Elite / Clínica de Maestría",
-      "deadline": "Sem nova data de virada",
-      "blocks": "Correção de tráfego e decisão futura de virada de lote",
-      "owner": "Ruan / Batista / tráfego"
+      "frente": "Dados / Integrações",
+      "deadline": "03/06",
+      "blocks": "Consolidação financeira Hotmart + Stripe BR + Stripe LLC",
+      "owner": "Ruan / TAOS"
     },
     {
-      "title": "Chile/CIOCH — pagamento e stand",
+      "title": "CIOCH — pagamento e stand",
       "priority": "p1",
       "frente": "Chile / CIOCH",
-      "deadline": "02/06",
-      "blocks": "Regularidade expositor, dados do stand e próximos prazos",
+      "deadline": "Rollover 02/06 → 03/06",
+      "blocks": "Regularidade expositor, dados do stand e próximos documentos",
       "owner": "Ruan / financeiro / Vinícius"
     },
     {
@@ -221,62 +235,82 @@
       "deadline": "Atrasado desde maio",
       "blocks": "Liberação prometida, testes e comunicação",
       "owner": "Ruan / Felipe"
-    },
-    {
-      "title": "Low Tickets — acompanhamento de vendas",
-      "priority": "p2",
-      "frente": "Low Tickets",
-      "deadline": "Diário",
-      "blocks": "Leitura de performance; Ruan está acompanhando",
-      "owner": "Ruan / TAOS"
     }
   ],
   "radarDoDia": [
     {
-      "time": "09h00",
-      "task": "📡 Abrir radar de terça: confirmar agenda do dia e carregar ajustes que Ruan fizer no painel",
+      "time": "09h30",
+      "task": "📡 Abrir radar de quarta: carregar demandas sem check de 02/06 e agenda do calendário",
       "frente": "📡 RADAR",
       "status": "📅",
       "done": false
     },
     {
-      "time": "manhã",
-      "task": "🎓 Enviar gravação da aula M6 do Sérgio para Fabian editar",
-      "frente": "🎓 DIP",
+      "time": "10h00",
+      "task": "🚀 Reunião Batista + Lucas: vendas, ingressos e testes ativos do lançamento",
+      "frente": "🚀 LANÇ",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "10h00",
+      "task": "📘 Durante a reunião: registrar cada teste no playbook — hipótese, setup, métrica, resultado esperado e owner",
+      "frente": "📘 PLAYBOOK",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🎓 Confirmar com Fabian recebimento, prazo de edição, upload e responsável pela liberação do M6",
-      "frente": "🎓 DIP",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "💎 Clínica de Maestría: manter lote zero aberto e registrar virada suspensa sem nova data",
+      "task": "💎 Cobrar Sérgio/Serginho: enviar casos clínicos para compilar no Telegram do Elite",
       "frente": "💎 ELITE",
       "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "💎 Começar compilado dos casos clínicos no grupo Telegram do Elite: tema, qualidade, etapa clínica e uso potencial",
+      "frente": "💎 ELITE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "🎓 Confirmar status do M6: bruto enviado ao Fabian, recebimento, prazo de edição/upload/liberação",
+      "frente": "🎓 DIP",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "🎓 Diplomado M5: garantir liberação da prova na Hotmart; janela até 10/06",
+      "frente": "🎓 DIP",
+      "status": "📅",
       "done": false
     },
     {
       "time": "12h00",
-      "task": "💎 Revisar radar parcial da Clínica: vendas, gasto, CAC/ROAS e impacto dos problemas de tráfego",
-      "frente": "💎 ELITE",
-      "status": "📊",
+      "task": "🎧 Mentoria Cloud Code — Módulo 3: MCPs, gravação liberada no calendário",
+      "frente": "🤖 IA",
+      "status": "📅",
+      "done": false
+    },
+    {
+      "time": "14h00",
+      "task": "🛒 Low Tickets — reunião semanal: Bruno + Batista; revisar criativos/performance e próximos testes",
+      "frente": "🛒 LT",
+      "status": "📅",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "🇨🇱 CIOCH: confirmar se existe novo pagamento a fazer e qual valor/prazo",
-      "frente": "🇨🇱 CHL",
+      "task": "💳 Stripe XDental: com Ruan, finalizar acesso aos 2 Stripes e mapear dados necessários junto da Hotmart",
+      "frente": "💳 DADOS",
       "status": "🔥",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "🇨🇱 CIOCH: levantar dados do stand e próximos prazos/documentos do expositor",
+      "task": "🇨🇱 CIOCH: confirmar pagamento/valor/prazo e levantar dados do stand",
       "frente": "🇨🇱 CHL",
       "status": "🔥",
       "done": false
@@ -289,28 +323,21 @@
       "done": false
     },
     {
-      "time": "tarde",
-      "task": "🛒 Low Tickets: acompanhar vendas do dia pela Hotmart/API oficial, sem transformar em cobrança operacional",
-      "frente": "🛒 LT",
-      "status": "📊",
-      "done": false
-    },
-    {
       "time": "fim do dia",
-      "task": "📡 Fechar terça: incorporar atualizações do Ruan, registrar checks e carregar pendências para 03/06",
+      "task": "📡 Fechar quarta: registrar checks, resultados dos testes e carregar pendências para 04/06",
       "frente": "📡 RADAR",
       "status": "📅",
       "done": false
     }
   ],
   "metrics": {
-    "p0": 1,
+    "p0": 2,
     "p1": 4,
-    "p2": 2,
-    "tasksToday": 10,
+    "p2": 1,
+    "tasksToday": 13,
     "done7d": 2,
-    "updatedAt": "2026-06-02"
+    "updatedAt": "2026-06-03"
   },
-  "radarExtra": "Atualizado em 28/05 com Google Calendar: Low Tickets — quinta do ciclo (criativos anteriores ativos, Bruno entrega copies e Sérgio começa gravações). Pendências sem check de 27/05 carregadas para hoje.",
+  "radarExtra": "Atualizado em 03/06 com Google Calendar: Low Tickets reunião semanal, rotina Fabian/Batista, liberação prova M5 e Mentoria Cloud Code 12h. Pendências sem check de 02/06 carregadas para hoje.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
