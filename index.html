@@ -1088,6 +1088,38 @@
   .frente-card.hidden { display: none; }
   .kanban-card.filtered-out { opacity: 0.25; pointer-events: none; }
 
+  .daily-cdm-box {
+    margin: 14px 0 18px;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(167, 139, 250, 0.28);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.16), rgba(20, 184, 166, 0.06));
+  }
+  .daily-cdm-title {
+    font-family: 'Geist Mono', monospace;
+    font-size: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent-bright);
+    margin-bottom: 10px;
+  }
+  .daily-cdm-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .daily-cdm-task {
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(15, 10, 28, .72);
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--text);
+  }
+  .daily-cdm-task strong { color: #fff; }
+  @media (max-width: 900px) { .daily-cdm-list { grid-template-columns: 1fr; } }
+
   /* === ALERT BAR === */
   .alert-bar {
     background: linear-gradient(90deg, rgba(248, 113, 113, 0.12) 0%, rgba(248, 113, 113, 0.04) 100%);
@@ -1230,6 +1262,16 @@
       <div class="radar-head">
         <div class="radar-title-block"><h2>📌 Radar de hoje · Quinta 04/06</h2><div class="radar-subtitle">Prioridade atualizada: Clínica de Maestría precisa reforço comercial imediato — alinhar Felipe/API, programar grupos antigos com link da página e entregar criativos para Batista — sem perder playbook, Sérgio, Low Tickets, Paul Medina, Stripe/CIOCH/OralPlanner.</div></div>
         <span class="radar-counter">16 tarefas</span>
+      </div>
+
+
+      <div class="daily-cdm-box">
+        <div class="daily-cdm-title">🔥 Tarefas de hoje adicionadas · Clínica de Maestría</div>
+        <div class="daily-cdm-list">
+          <div class="daily-cdm-task"><strong>Felipe/API:</strong> alinhar hoje a cadência de disparo a cada 2–3 dias, começando segunda 08/06.</div>
+          <div class="daily-cdm-task"><strong>Seg/Qua/Sex:</strong> a partir de segunda, rodar API + mensagens nos grupos antigos sempre com link da página de vendas.</div>
+          <div class="daily-cdm-task"><strong>Criativos/Batista:</strong> Ruan separar/fazer imagens hoje e Batista subir na campanha com setup e janela de leitura.</div>
+        </div>
       </div>
 
       <ul class="radar-list" id="radar-list">
