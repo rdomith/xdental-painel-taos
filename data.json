@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-06-03 · Radar de quinta 04/06 preparado",
+    "lastUpdated": "2026-06-04 · Atualizado com demandas Clínica de Maestría",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quinta de feriado com foco enxuto: follow-up dos testes definidos com Batista/Lucas, cobrar casos clínicos do Sérgio, rotina Low Tickets de quinta, D-1 Paul Medina e manter Stripe/CIOCH/OralPlanner no radar."
+    "headline": "Quinta 04/06 atualizada: Clínica de Maestría ganha rotina comercial seg/qua/sex a partir de segunda — disparo API com Felipe, mensagens nos grupos antigos com link da página e novos criativos para Batista — sem tirar do radar Playbook, Sérgio, Paul Medina, Stripe/CIOCH/OralPlanner."
   },
   "fronts": [
     {
@@ -109,21 +109,23 @@
     },
     {
       "id": "sniper-elite",
-      "name": "Sniper Elite",
+      "name": "Sniper Elite / Clínica de Maestría",
       "status": "attention",
-      "priority": "p1",
-      "progress": 50,
+      "priority": "p0",
+      "progress": 58,
       "owner": "Mônica / Sérgio / Ruan",
-      "summary": "Prioridade segue nos casos clínicos do Sérgio/Serginho e compilado no Telegram do Elite para aquecimento, prova social e próximos testes do lançamento.",
+      "summary": "Clínica de Maestría precisa reforço comercial imediato: alinhar com Felipe disparos API a cada 2–3 dias e, a partir de segunda, operar segunda/quarta/sexta com API + mensagens nos grupos antigos sempre levando para a página de vendas. Batista precisa receber novas imagens/criativos para subir campanha.",
       "nextActions": [
-        "Cobrar Sérgio/Serginho novamente: quantos casos clínicos consegue separar e quando envia",
-        "Compilar casos recebidos no Telegram do Elite por tema, qualidade, etapa clínica e potencial de uso",
-        "Separar casos que podem virar prova social, conteúdo, live ou análise ao vivo",
-        "Se Sérgio não enviar até quinta, reforçar na reunião semanal"
+        "Alinhar com Felipe rotina de disparo API: a cada 2–3 dias, começando segunda 08/06",
+        "Definir cadência fixa de segunda/quarta/sexta: disparo API + mensagem nos grupos antigos com link da página de vendas",
+        "Ruan produzir/separar imagens de criativos da Clínica para Batista subir nas campanhas",
+        "Batista subir novos criativos e confirmar campanha, orçamento, página e janela de leitura",
+        "Manter cobrança dos casos clínicos do Sérgio/Serginho e compilar materiais recebidos no Telegram do Elite"
       ],
       "blockers": [
-        "Casos clínicos seguem dependentes do envio do Sérgio/Serginho",
-        "Sem casos, aquecimento e prova social do Elite ficam mais fracos"
+        "Só houve 1 disparo API até agora; base ainda subutilizada para vender ingresso",
+        "Sem cadência nos grupos antigos, o aquecimento depende demais do tráfego pago",
+        "Batista precisa de novas imagens para renovar campanha e leitura de criativos"
       ]
     },
     {
@@ -167,22 +169,39 @@
       "id": "lancamentos",
       "name": "Lançamentos",
       "status": "attention",
-      "priority": "p2",
-      "progress": 35,
+      "priority": "p0",
+      "progress": 45,
       "owner": "Ruan / Bruno / Lucas",
-      "summary": "Após reunião Batista + Lucas de 03/06, foco de 04/06 é transformar decisões em playbook: testes, owners, verba, métrica e primeira janela de leitura.",
+      "summary": "04/06 atualizado com foco Clínica de Maestría: transformar rotina comercial em execução semanal — segunda/quarta/sexta API + grupos antigos — e garantir pacote de criativos para Batista. Mantém playbook dos testes de 03/06 como pendência crítica.",
       "nextActions": [
-        "Registrar no playbook todos os testes definidos na reunião de 03/06",
-        "Cobrar/confirmar com Batista setup real dos testes: campanhas, públicos, criativos, verba e janela",
-        "Definir para cada teste: métrica principal, critério de pausa/escala e próximo follow-up",
-        "Conectar aprendizados ao histórico de lançamentos XDental"
+        "Criar card/checklist Clínica: Felipe/API, grupos antigos, link da página de vendas e Batista/criativos",
+        "Registrar cadência seg/qua/sex a partir de 08/06 para disparo API + grupos antigos",
+        "Confirmar com Batista subida dos novos criativos, verba, público e critério de pausa/escala",
+        "Registrar no playbook todos os testes definidos na reunião de 03/06"
       ],
       "blockers": [
+        "Sem owner/checklist, a rotina API + grupos vira intenção e não execução",
         "Sem os detalhes pós-reunião, o playbook fica só estrutura e não aprendizado real"
       ]
     }
   ],
   "gargalos": [
+    {
+      "title": "Clínica de Maestría — rotina API + grupos antigos",
+      "priority": "p0",
+      "frente": "Sniper Elite / Clínica de Maestría",
+      "deadline": "04/06 para alinhar · execução 08/06",
+      "blocks": "Venda de ingressos depende de reativar base própria; até agora só houve 1 disparo API",
+      "owner": "Ruan / Felipe / Mônica"
+    },
+    {
+      "title": "Clínica de Maestría — criativos para Batista subir campanha",
+      "priority": "p1",
+      "frente": "Sniper Elite / Clínica de Maestría",
+      "deadline": "04/06",
+      "blocks": "Renovação de campanha e leitura de criativos no tráfego pago",
+      "owner": "Ruan / Batista"
+    },
     {
       "title": "Playbook do lançamento — registrar testes de 03/06",
       "priority": "p0",
@@ -245,6 +264,27 @@
       "task": "📡 Abrir radar de quinta: revisar pendências de 03/06 sem check explícito e ajustar foco do feriado",
       "frente": "📡 RADAR",
       "status": "📅",
+      "done": false
+    },
+    {
+      "time": "agora",
+      "task": "💎 Clínica de Maestría: alinhar com Felipe disparo API a cada 2–3 dias; primeira cadência fixa segunda/quarta/sexta a partir de 08/06",
+      "frente": "💎 CDM",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "agora",
+      "task": "💬 Clínica de Maestría: programar mensagens nos grupos antigos 3x/semana com link da página de vendas junto dos disparos API",
+      "frente": "💎 CDM",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "agora",
+      "task": "🎨 Clínica de Maestría: Ruan separar/fazer imagens de criativos e Batista subir na campanha com setup e janela de leitura definidos",
+      "frente": "💎 CDM",
+      "status": "🔥",
       "done": false
     },
     {
@@ -326,13 +366,13 @@
     }
   ],
   "metrics": {
-    "p0": 2,
-    "p1": 4,
+    "p0": 3,
+    "p1": 5,
     "p2": 1,
-    "tasksToday": 13,
+    "tasksToday": 16,
     "done7d": 2,
-    "updatedAt": "2026-06-04"
+    "updatedAt": "2026-06-04 14:43 BRT"
   },
-  "radarExtra": "Atualizado em 03/06 para 04/06 com Google Calendar: Corpo de Deus, Low Tickets quinta do ciclo e D-1 Paul Medina. Pendências sem check explícito de 03/06 foram carregadas para amanhã.",
+  "radarExtra": "📊 Atualizado em 04/06 com áudio do Ruan: Clínica de Maestría ganha cadência comercial seg/qua/sex a partir de segunda (API + grupos antigos + link da página), com novos criativos para Batista. Pendências anteriores seguem carregadas.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
