@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-06-04 · Atualizado com demandas Clínica de Maestría",
+    "lastUpdated": "2026-06-08 · Radar segunda atualizado com demandas por frente",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quinta 04/06 atualizada: Clínica de Maestría ganha rotina comercial seg/qua/sex a partir de segunda — disparo API com Felipe, mensagens nos grupos antigos com link da página e novos criativos para Batista — sem tirar do radar Playbook, Sérgio, Paul Medina, Stripe/CIOCH/OralPlanner."
+    "headline": "Segunda 08/06 atualizada: foco do dia é Clínica de Maestría — falar com Felipe sobre OralPlanner e disparos API, alinhar com Mônica recebimento dos dados/fotos clínicas dos casos, rodar cadência seg/qua/sex API + grupos antigos de WhatsApp e revisar demandas por frente no painel."
   },
   "fronts": [
     {
@@ -16,17 +16,14 @@
       "priority": "p1",
       "progress": 75,
       "owner": "Ruan + Bruno + Batista + Sérgio",
-      "summary": "Quinta do ciclo Low Tickets: criativos da semana anterior seguem ativos, Bruno entrega novas copies e Sérgio deve começar gravações. Como é Corpo de Deus, manter foco em follow-up enxuto e evitar perder o ciclo.",
+      "summary": "Manter leitura operacional dos low tickets e aproveitar a base/compradores como ativo de aquecimento para Clínica de Maestría quando fizer sentido.",
       "nextActions": [
-        "Conferir com Batista status dos testes definidos na reunião de 03/06: campanha, criativo, verba e janela de leitura",
-        "Registrar no playbook os testes que saíram da reunião Batista + Lucas",
-        "Confirmar entrega das copies do Bruno para o novo ciclo",
-        "Cobrar/confirmar início das gravações do Sérgio para o novo ciclo",
-        "Acompanhar criativos ativos da semana anterior: vendas, ROAS, ticket médio, bumps/combo e produtos zerados"
+        "Conferir vendas e produtos zerados pelo radar oficial Hotmart",
+        "Revisar criativos vencedores e próximos testes com Batista/Bruno",
+        "Mapear oportunidades de ponte low ticket → Clínica de Maestría/Elite sem misturar os relatórios"
       ],
       "blockers": [
-        "Feriado pode quebrar ritmo de produção do novo ciclo",
-        "Sem registro dos testes, aprendizados do lançamento se perdem"
+        "Sem atualização diária, risco de perder leitura de produto zerado ou criativo cansado"
       ]
     },
     {
@@ -35,56 +32,47 @@
       "status": "done",
       "priority": "p3",
       "progress": 100,
-      "owner": "Ruan / Sérgio / Lilian / Klyro",
-      "summary": "Sniper VIP concluído. Não permanece no radar principal de 02/06.",
+      "owner": "Ruan / Sérgio / Klyro",
+      "summary": "Evento concluído; manter apenas pós-evento, prova social e pendências residuais fora do foco principal do dia.",
       "nextActions": [
-        "Fechar status Sniper VIP no fim do dia: logística, fornecedores, transfers e próximos donos",
-        "Manter checklist final da semana do evento 25-27/05",
-        "Pagar 40% açaí — R$ 100 (total R$ 250; resto a confirmar)",
-        "Lilian · info pagamentos pré-evento",
-        "Antecipar cardápio Bassi",
-        "Antecipar orçamento almoço dia 3"
+        "Consolidar aprendizados, fotos/depoimentos e pendências finais quando Ruan trouxer novos inputs"
       ],
       "blockers": [
-        "Cardápio Bassi (Happy Hour) sem retorno",
-        "Orçamentos almoço dia 3 — 2 opções",
-        "Barista sem retorno",
-        "Pendências logísticas finais precisam de dono até o evento"
+        "Sem bloqueio crítico para o radar de hoje"
       ]
     },
     {
       "id": "diplomado-ortho-pro",
       "name": "Diplomado Ortho Pro",
       "status": "attention",
-      "priority": "p0",
+      "priority": "p1",
       "progress": 95,
-      "owner": "Ruan / Felipe / Klyro / Sérgio",
-      "summary": "Rollover: confirmar status final do M6 com Fabian e garantir que a prova M5 liberada em 03/06 segue operacional dentro da janela até 10/06.",
+      "owner": "Ruan / Felipe / Fabian / Sérgio",
+      "summary": "Rollover controlado: confirmar se M6 e prova M5 seguem operacionais, sem deixar virar gargalo silencioso enquanto Clínica domina a agenda.",
       "nextActions": [
-        "Confirmar se M6 está com Fabian e se há prazo claro de edição/upload/liberação",
-        "Checar se prova M5 foi liberada corretamente na Hotmart e se janela até 10/06 está ativa",
-        "Se M6 ainda não andou, definir owner e próxima ação até sexta"
+        "Confirmar status de edição/upload do M6 com Fabian",
+        "Checar janela da prova M5 até 10/06",
+        "Manter conflito M8 × Chile no radar de planejamento"
       ],
       "blockers": [
-        "M6 segue travando edição/upload se Fabian não tiver recebido ou prazo não estiver claro"
+        "M6 pode travar se bruto/edição/upload não estiverem com dono claro"
       ]
     },
     {
       "id": "plataforma-assinatura",
       "name": "Plataforma de Assinatura",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 78,
-      "owner": "Ruan / Clairou / Fabian / Mônica",
-      "summary": "Paul Medina/101 Tips entra em D-1 de liberação. Amanhã: stories Instagram, confirmação Hotmart e aprovação final de material/post.",
+      "status": "on_track",
+      "priority": "p2",
+      "progress": 82,
+      "owner": "Ruan / Mônica / Diego / Fabian",
+      "summary": "Após liberação Paul Medina, foco volta para pipeline de próximos professores e comunicação recorrente da assinatura.",
       "nextActions": [
-        "D-1 Paul Medina: Diego preparar/publicar stories com chamada “Mañana liberamos!”",
-        "Mônica confirmar se está tudo pronto na Hotmart para liberação automática de 05/06",
-        "Ruan conferir material e aprovar post/comunicação",
-        "Manter pipeline Fernando Pari, Joaquim Ariza e Victor Arguedas no radar pós-liberação"
+        "Confirmar se Paul Medina/101 Tips foi liberado e comunicado sem pendências",
+        "Atualizar pipeline Fernando Pari, Joaquim Ariza e Victor Arguedas",
+        "Checar dúvidas/suporte pós-liberação"
       ],
       "blockers": [
-        "Se Hotmart/material/post não estiverem prontos no D-1, liberação de 05/06 fica vulnerável"
+        "Pipeline dos próximos professores precisa continuar andando para não gerar buraco de conteúdo"
       ]
     },
     {
@@ -92,58 +80,54 @@
       "name": "Chile / CIOCH",
       "status": "attention",
       "priority": "p1",
-      "progress": 25,
+      "progress": 28,
       "owner": "Ruan / Vinícius / financeiro",
-      "summary": "Rollover: confirmar pagamento/stand e próximos prazos do expositor. Sem confirmação explícita de check, segue ativo.",
+      "summary": "CIOCH segue como pendência de planejamento: stand, pagamento e prazos do expositor precisam ficar visíveis, mas não são o P0 do dia.",
       "nextActions": [
-        "Definir/selecionar tipo de stand CIOCH como pendência principal",
-        "Acompanhar pagamento previsto para 26/05 e confirmar compensação/status",
-        "Manter decisão Vinícius vai/não no radar de logística",
-        "Preencher formulários expositor até 20/07",
-        "Preparar arquivos gráficos/projeto especial até 26/07"
+        "Confirmar pagamento/compensação do CIOCH",
+        "Definir/selecionar tipo de stand",
+        "Manter prazos 20/07 formulários e 26/07 gráfica/projeto no radar"
       ],
       "blockers": [
-        "Seleção do stand ainda precisa de definição",
-        "Pagamento de 26/05 precisa confirmação"
+        "Sem definição de stand/pagamento confirmado, logística do congresso fica vulnerável"
       ]
     },
     {
       "id": "sniper-elite",
       "name": "Sniper Elite / Clínica de Maestría",
-      "status": "attention",
+      "status": "risk",
       "priority": "p0",
-      "progress": 58,
-      "owner": "Mônica / Sérgio / Ruan",
-      "summary": "Clínica de Maestría precisa reforço comercial imediato: alinhar com Felipe disparos API a cada 2–3 dias e, a partir de segunda, operar segunda/quarta/sexta com API + mensagens nos grupos antigos sempre levando para a página de vendas. Batista precisa receber novas imagens/criativos para subir campanha.",
+      "progress": 62,
+      "owner": "Ruan / Felipe / Mônica / Sérgio / Batista",
+      "summary": "Clínica de Maestría virou centro do dia: disparos API seg/qua/sex para base de leads, mensagens nos grupos antigos de WhatsApp nos mesmos dias e captação de casos clínicos via Mônica para possível análise/planejamento pelo Serginho.",
       "nextActions": [
-        "Alinhar com Felipe rotina de disparo API: a cada 2–3 dias, começando segunda 08/06",
-        "Definir cadência fixa de segunda/quarta/sexta: disparo API + mensagem nos grupos antigos com link da página de vendas",
-        "Ruan produzir/separar imagens de criativos da Clínica para Batista subir nas campanhas",
-        "Batista subir novos criativos e confirmar campanha, orçamento, página e janela de leitura",
-        "Manter cobrança dos casos clínicos do Sérgio/Serginho e compilar materiais recebidos no Telegram do Elite"
+        "Falar com Felipe hoje: confirmar disparo API desta segunda para toda base de leads e deixar quarta/sexta pré-alinhados",
+        "Falar com Mônica hoje: validar se já está recebendo dados, fotos clínicas e casos dos participantes",
+        "Checar volume/qualidade dos casos recebidos e próximos follow-ups de WhatsApp",
+        "Enviar mensagens nos grupos antigos de WhatsApp hoje com link/pitch da Clínica",
+        "Monitorar resposta dos disparos, vendas, dúvidas e gargalos de atendimento"
       ],
       "blockers": [
-        "Só houve 1 disparo API até agora; base ainda subutilizada para vender ingresso",
-        "Sem cadência nos grupos antigos, o aquecimento depende demais do tráfego pago",
-        "Batista precisa de novas imagens para renovar campanha e leitura de criativos"
+        "Se Felipe/API ou grupos antigos não rodarem hoje, perde-se o primeiro dia da cadência comercial da semana",
+        "Sem controle com Mônica, os casos clínicos podem se perder e enfraquecer a ação do Serginho"
       ]
     },
     {
       "id": "oralplanner",
       "name": "OralPlanner",
       "status": "risk",
-      "priority": "p1",
+      "priority": "p0",
       "progress": 55,
       "owner": "Ruan / Felipe",
-      "summary": "Rollover: cobrar Felipe/status técnico e transformar atraso em checklist real de liberação.",
+      "summary": "Ruan precisa falar com Felipe hoje e marcar/alinha reunião para destravar OralPlanner; transformar conversa em checklist real de liberação.",
       "nextActions": [
-        "Ruan falar com Felipe sobre ajustes pendentes do OralPlanner",
-        "Listar o que falta para liberar a versão prometida este mês",
-        "Fechar checklist de liberação: ajustes finais, teste, comunicação e responsável técnico"
+        "Ruan falar com Felipe hoje sobre OralPlanner",
+        "Marcar conversa/reunião com Felipe",
+        "Listar pendências técnicas, responsável, prazo e data de liberação",
+        "Separar o que é bloqueio técnico do que é comunicação/lançamento"
       ],
       "blockers": [
-        "Ajustes finais ainda não estão fechados com Felipe",
-        "Prazo prometido é este mês; risco de cair por causa do Sniper VIP"
+        "Sem conversa com Felipe, OralPlanner continua como atraso sem plano de liberação"
       ]
     },
     {
@@ -153,226 +137,186 @@
       "priority": "p2",
       "progress": 72,
       "owner": "Ruan / Felipe / Suporte",
-      "summary": "Acesso distribuído para base; foco atual em adoção, reforço de uso e suporte.",
+      "summary": "Adoção da plataforma própria segue em acompanhamento; sem demanda nova no áudio de hoje.",
       "nextActions": [
-        "Monitorar adoção da nova plataforma pelos 800+ usuários com acesso",
-        "Planejar novas ações de incentivo à migração e uso contínuo",
-        "Acompanhar dúvidas e atritos de login, navegação e consumo de aulas",
-        "Reforçar comunicação conforme a base migra gradualmente"
+        "Monitorar adoção, dúvidas de acesso e atritos de uso",
+        "Planejar reforços de migração conforme necessidade"
       ],
       "blockers": [
-        "Migração de uso será gradual; precisa reforço recorrente para não perder adoção",
-        "Mapear atritos de usuários na nova plataforma"
+        "Adoção pode esfriar se não houver reforço recorrente"
       ]
     },
     {
       "id": "lancamentos",
       "name": "Lançamentos",
-      "status": "attention",
+      "status": "risk",
       "priority": "p0",
-      "progress": 45,
-      "owner": "Ruan / Bruno / Lucas",
-      "summary": "04/06 atualizado com foco Clínica de Maestría: transformar rotina comercial em execução semanal — segunda/quarta/sexta API + grupos antigos — e garantir pacote de criativos para Batista. Mantém playbook dos testes de 03/06 como pendência crítica.",
+      "progress": 50,
+      "owner": "Ruan / Felipe / Mônica / Batista / TAOS",
+      "summary": "Lançamento Clínica de Maestría precisa virar rotina executada: API + grupos antigos segunda/quarta/sexta, controle de casos clínicos com Mônica e leitura diária de resposta/vendas.",
       "nextActions": [
-        "Criar card/checklist Clínica: Felipe/API, grupos antigos, link da página de vendas e Batista/criativos",
-        "Registrar cadência seg/qua/sex a partir de 08/06 para disparo API + grupos antigos",
-        "Confirmar com Batista subida dos novos criativos, verba, público e critério de pausa/escala",
-        "Registrar no playbook todos os testes definidos na reunião de 03/06"
+        "Transformar cadência seg/qua/sex em checklist semanal: API, grupos antigos, link, copy, responsável e confirmação de envio",
+        "Registrar acompanhamento dos casos clínicos recebidos pela Mônica",
+        "Monitorar vendas e respostas após cada disparo",
+        "Revisar criativos/campanhas com Batista conforme leitura dos disparos"
       ],
       "blockers": [
-        "Sem owner/checklist, a rotina API + grupos vira intenção e não execução",
-        "Sem os detalhes pós-reunião, o playbook fica só estrutura e não aprendizado real"
+        "Sem checklist e confirmação de envio, a cadência vira intenção e não execução"
       ]
     }
   ],
   "gargalos": [
     {
-      "title": "Clínica de Maestría — rotina API + grupos antigos",
+      "title": "Clínica de Maestría — disparo API de segunda",
       "priority": "p0",
       "frente": "Sniper Elite / Clínica de Maestría",
-      "deadline": "04/06 para alinhar · execução 08/06",
-      "blocks": "Venda de ingressos depende de reativar base própria; até agora só houve 1 disparo API",
-      "owner": "Ruan / Felipe / Mônica"
+      "deadline": "Hoje 08/06",
+      "blocks": "Primeiro dia da cadência comercial seg/qua/sex para toda base de leads",
+      "owner": "Ruan / Felipe"
     },
     {
-      "title": "Clínica de Maestría — criativos para Batista subir campanha",
-      "priority": "p1",
+      "title": "Clínica de Maestría — Mônica e casos clínicos",
+      "priority": "p0",
       "frente": "Sniper Elite / Clínica de Maestría",
-      "deadline": "04/06",
-      "blocks": "Renovação de campanha e leitura de criativos no tráfego pago",
-      "owner": "Ruan / Batista"
+      "deadline": "Hoje 08/06",
+      "blocks": "Recebimento de dados/fotos clínicas e seleção de casos para análise/planejamento do Serginho",
+      "owner": "Ruan / Mônica / Sérgio"
     },
     {
-      "title": "Playbook do lançamento — registrar testes de 03/06",
+      "title": "Clínica de Maestría — grupos antigos WhatsApp",
       "priority": "p0",
-      "frente": "Lançamentos / Low Tickets",
-      "deadline": "04/06",
-      "blocks": "Aprendizado dos testes, leitura de performance e próximas decisões de escala/pausa",
-      "owner": "Ruan / TAOS / Batista / Lucas"
+      "frente": "Lançamentos / Clínica de Maestría",
+      "deadline": "Hoje 08/06",
+      "blocks": "Captação orgânica e venda para bases antigas nos mesmos dias da API",
+      "owner": "Ruan / Mônica / Time"
     },
     {
-      "title": "Sérgio/Serginho — casos clínicos do Elite",
+      "title": "OralPlanner — conversa com Felipe",
       "priority": "p0",
-      "frente": "Sniper Elite / Estratégia",
-      "deadline": "04/06",
-      "blocks": "Prova social, aquecimento, conteúdo e análise ao vivo",
-      "owner": "Ruan / Sérgio"
+      "frente": "OralPlanner",
+      "deadline": "Hoje 08/06",
+      "blocks": "Checklist técnico de liberação e data real para destravar o produto",
+      "owner": "Ruan / Felipe"
     },
     {
-      "title": "Paul Medina — D-1 liberação",
+      "title": "CIOCH — stand/pagamento",
       "priority": "p1",
-      "frente": "Plataforma de Assinatura",
-      "deadline": "04/06",
-      "blocks": "Liberação de 05/06, comunicação aos alunos e Hotmart pronta",
-      "owner": "Ruan / Diego / Mônica"
+      "frente": "Chile / CIOCH",
+      "deadline": "Rollover da semana",
+      "blocks": "Planejamento do congresso de agosto e prazos do expositor",
+      "owner": "Ruan / Vinícius / financeiro"
     },
     {
-      "title": "Low Tickets — quinta do ciclo em feriado",
+      "title": "Diplomado — M6/prova M5",
+      "priority": "p1",
+      "frente": "Diplomado Ortho Pro",
+      "deadline": "Semana 08/06",
+      "blocks": "Entrega acadêmica e continuidade do cronograma 2026",
+      "owner": "Ruan / Fabian / Felipe"
+    },
+    {
+      "title": "Low Tickets — leitura diária Hotmart",
       "priority": "p1",
       "frente": "Low Tickets",
-      "deadline": "04/06",
-      "blocks": "Novo ciclo de copies/gravações e continuidade dos criativos ativos",
-      "owner": "Bruno / Sérgio / Batista / Ruan"
-    },
-    {
-      "title": "Stripe XDental — finalizar acessos",
-      "priority": "p1",
-      "frente": "Dados / Integrações",
-      "deadline": "Rollover 03/06 → 04/06",
-      "blocks": "Consolidação financeira Hotmart + Stripe BR + Stripe LLC",
-      "owner": "Ruan / TAOS"
-    },
-    {
-      "title": "CIOCH + OralPlanner — pendências carregadas",
-      "priority": "p2",
-      "frente": "Chile / OralPlanner",
-      "deadline": "04/06",
-      "blocks": "Stand/pagamento CIOCH e checklist técnico OralPlanner",
-      "owner": "Ruan / Vinícius / Felipe"
+      "deadline": "Diário",
+      "blocks": "Produtos zerados, fadiga de criativos e escala dos vencedores",
+      "owner": "Ruan / Batista / Bruno"
     }
   ],
   "radarDoDia": [
     {
-      "time": "feriado",
-      "task": "📅 Corpo de Deus no Brasil: manter radar enxuto e priorizar follow-ups críticos",
-      "frente": "📅 AGENDA",
-      "status": "📅",
-      "done": false
-    },
-    {
       "time": "09h00",
-      "task": "📡 Abrir radar de quinta: revisar pendências de 03/06 sem check explícito e ajustar foco do feriado",
+      "task": "📡 Abrir radar de segunda e revisar demandas por frente no painel",
       "frente": "📡 RADAR",
       "status": "📅",
       "done": false
     },
     {
-      "time": "agora",
-      "task": "💎 Clínica de Maestría: alinhar com Felipe disparo API a cada 2–3 dias; primeira cadência fixa segunda/quarta/sexta a partir de 08/06",
-      "frente": "💎 CDM",
+      "time": "manhã",
+      "task": "🦷 Falar com Felipe sobre OralPlanner e marcar/alinha conversa para checklist de liberação",
+      "frente": "🦷 ORAL",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "agora",
-      "task": "💬 Clínica de Maestría: programar mensagens nos grupos antigos 3x/semana com link da página de vendas junto dos disparos API",
-      "frente": "💎 CDM",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "agora",
-      "task": "🎨 Clínica de Maestría: Ruan separar/fazer imagens de criativos e Batista subir na campanha com setup e janela de leitura definidos",
+      "time": "manhã",
+      "task": "💎 Falar com Felipe sobre disparo API de hoje para toda base de leads da Clínica de Maestría",
       "frente": "💎 CDM",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "📘 Playbook: registrar testes definidos com Batista + Lucas — hipótese, setup, métrica, owner e janela de leitura",
-      "frente": "📘 PLAYBOOK",
+      "task": "💎 Confirmar cadência API de quarta e sexta já no mesmo alinhamento com Felipe",
+      "frente": "💎 CDM",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🚀 Confirmar com Batista o setup real dos testes: campanhas, públicos, criativos, verba e critério de pausa/escala",
-      "frente": "🚀 LANÇ",
+      "task": "📲 Enviar/confirmar mensagens nos grupos antigos de WhatsApp com chamada para Clínica de Maestría",
+      "frente": "📲 GRUPOS",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "💎 Cobrar Sérgio/Serginho: envio dos casos clínicos do Elite; se não enviar até quinta, reforçar na reunião semanal",
-      "frente": "💎 ELITE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "💎 Compilar casos recebidos no Telegram do Elite por tema, qualidade e uso potencial no lançamento",
-      "frente": "💎 ELITE",
+      "task": "👩‍💼 Falar com Mônica: verificar se já está recebendo dados, fotos clínicas e casos dos participantes",
+      "frente": "💎 CDM",
       "status": "🔥",
       "done": false
     },
     {
       "time": "dia todo",
-      "task": "🛒 Low Tickets quinta: criativos anteriores ativos, Bruno entrega copies e Sérgio começa gravações do novo ciclo",
+      "task": "🗂️ Organizar recebimento dos casos clínicos: participante, contato, dados enviados, fotos e potencial de análise pelo Serginho",
+      "frente": "💎 CDM",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "📊 Monitorar resposta dos disparos API/grupos: dúvidas, leads quentes, vendas e gargalos de atendimento",
+      "frente": "🚀 LANÇ",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "🛒 Low Tickets: manter leitura Hotmart oficial, produtos zerados e próximos testes/criativos",
       "frente": "🛒 LT",
       "status": "📅",
       "done": false
     },
     {
       "time": "dia todo",
-      "task": "🎬 Paul Medina D-1: Diego stories “Mañana liberamos!”, Mônica confirma Hotmart e Ruan aprova material/post",
-      "frente": "🎬 PA",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "🎓 Diplomado: confirmar M6 com Fabian e checar prova M5 liberada/janela até 10/06",
+      "task": "🎓 Diplomado: checar M6/Fabian e prova M5 dentro da janela até 10/06",
       "frente": "🎓 DIP",
-      "status": "🔥",
+      "status": "📅",
       "done": false
     },
     {
       "time": "tarde",
-      "task": "💳 Stripe XDental: finalizar com Ruan acesso aos 2 Stripes e mapear dados necessários junto da Hotmart",
-      "frente": "💳 DADOS",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "tarde",
-      "task": "🇨🇱 CIOCH: confirmar pagamento/valor/prazo e levantar dados do stand",
+      "task": "🇨🇱 CIOCH: manter stand/pagamento e prazos do expositor no radar da semana",
       "frente": "🇨🇱 CHL",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "tarde",
-      "task": "🦷 OralPlanner: cobrar Felipe/status técnico e transformar atraso em checklist de liberação",
-      "frente": "🦷 ORAL",
-      "status": "🔥",
+      "status": "📅",
       "done": false
     },
     {
       "time": "fim do dia",
-      "task": "📡 Fechar quinta: atualizar checks, playbook de testes e preparar radar de sexta 05/06",
+      "task": "📡 Fechar segunda: atualizar checks, resultado da API/grupos, status Mônica e próximos envios quarta/sexta",
       "frente": "📡 RADAR",
       "status": "📅",
       "done": false
     }
   ],
   "metrics": {
-    "p0": 3,
-    "p1": 5,
-    "p2": 1,
-    "tasksToday": 16,
+    "p0": 4,
+    "p1": 3,
+    "p2": 2,
+    "tasksToday": 12,
     "done7d": 2,
-    "updatedAt": "2026-06-04 14:43 BRT"
+    "updatedAt": "2026-06-08 10:20 BRT"
   },
-  "radarExtra": "📊 Atualizado em 04/06 com áudio do Ruan: Clínica de Maestría ganha cadência comercial seg/qua/sex a partir de segunda (API + grupos antigos + link da página), com novos criativos para Batista. Pendências anteriores seguem carregadas.",
+  "radarExtra": "📊 Atualizado em 08/06 com áudio do Ruan: foco do dia é Clínica de Maestría (Felipe/API, Mônica/casos clínicos, grupos antigos WhatsApp) + destravar conversa com Felipe sobre OralPlanner. Frentes do meio para baixo também revisadas.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
