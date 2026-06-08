@@ -6,7 +6,7 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Segunda 08/06 atualizada: foco do dia é Clínica de Maestría — falar com Felipe sobre OralPlanner e disparos API, alinhar com Mônica recebimento dos dados/fotos clínicas dos casos, rodar cadência seg/qua/sex API + grupos antigos de WhatsApp e revisar demandas por frente no painel."
+    "headline": "Segunda 08/06 atualizada: foco do dia é Clínica de Maestría — Felipe/API, Mônica/casos clínicos, grupos antigos WhatsApp, live no Instagram com Serginho (imagem orgânica + criativo para tráfego se Batista confirmar) e OralPlanner com Felipe."
   },
   "fronts": [
     {
@@ -99,17 +99,20 @@
       "priority": "p0",
       "progress": 62,
       "owner": "Ruan / Felipe / Mônica / Sérgio / Batista",
-      "summary": "Clínica de Maestría virou centro do dia: disparos API seg/qua/sex para base de leads, mensagens nos grupos antigos de WhatsApp nos mesmos dias e captação de casos clínicos via Mônica para possível análise/planejamento pelo Serginho.",
+      "summary": "Clínica de Maestría virou centro do dia: disparos API seg/qua/sex, mensagens nos grupos antigos, captação de casos clínicos via Mônica e live no Instagram com Serginho — precisa imagem orgânica e criativo para tráfego se Batista confirmar disponibilidade na Meta.",
       "nextActions": [
         "Falar com Felipe hoje: confirmar disparo API desta segunda para toda base de leads e deixar quarta/sexta pré-alinhados",
         "Falar com Mônica hoje: validar se já está recebendo dados, fotos clínicas e casos dos participantes",
         "Checar volume/qualidade dos casos recebidos e próximos follow-ups de WhatsApp",
         "Enviar mensagens nos grupos antigos de WhatsApp hoje com link/pitch da Clínica",
+        "Criar imagem de divulgação da live no Instagram com as infos enviadas pelo Serginho",
+        "Preparar criativo de tráfego para Batista caso a conta já consiga impulsionar pessoas para a live",
         "Monitorar resposta dos disparos, vendas, dúvidas e gargalos de atendimento"
       ],
       "blockers": [
         "Se Felipe/API ou grupos antigos não rodarem hoje, perde-se o primeiro dia da cadência comercial da semana",
-        "Sem controle com Mônica, os casos clínicos podem se perder e enfraquecer a ação do Serginho"
+        "Sem controle com Mônica, os casos clínicos podem se perder e enfraquecer a ação do Serginho",
+        "Sem imagem/criativo hoje, a live perde alcance orgânico e possível audiência paga"
       ]
     },
     {
@@ -153,11 +156,12 @@
       "priority": "p0",
       "progress": 50,
       "owner": "Ruan / Felipe / Mônica / Batista / TAOS",
-      "summary": "Lançamento Clínica de Maestría precisa virar rotina executada: API + grupos antigos segunda/quarta/sexta, controle de casos clínicos com Mônica e leitura diária de resposta/vendas.",
+      "summary": "Lançamento Clínica de Maestría precisa virar rotina executada: API + grupos antigos segunda/quarta/sexta, controle de casos clínicos com Mônica, live Instagram com Serginho e leitura diária de resposta/vendas.",
       "nextActions": [
         "Transformar cadência seg/qua/sex em checklist semanal: API, grupos antigos, link, copy, responsável e confirmação de envio",
         "Registrar acompanhamento dos casos clínicos recebidos pela Mônica",
         "Monitorar vendas e respostas após cada disparo",
+        "Adicionar live Instagram ao checklist do dia: imagem orgânica, criativo de tráfego e confirmação Batista/Meta",
         "Revisar criativos/campanhas com Batista conforme leitura dos disparos"
       ],
       "blockers": [
@@ -189,6 +193,14 @@
       "deadline": "Hoje 08/06",
       "blocks": "Captação orgânica e venda para bases antigas nos mesmos dias da API",
       "owner": "Ruan / Mônica / Time"
+    },
+    {
+      "title": "Clínica de Maestría — live Instagram Serginho",
+      "priority": "p0",
+      "frente": "Sniper Elite / Clínica de Maestría",
+      "deadline": "Hoje 08/06",
+      "blocks": "Comunicação da live e possível tráfego para aumentar audiência",
+      "owner": "Ruan / Sérgio / Batista"
     },
     {
       "title": "OralPlanner — conversa com Felipe",
@@ -281,6 +293,20 @@
       "done": false
     },
     {
+      "time": "hoje",
+      "task": "📸 Live Instagram Serginho: criar imagem de divulgação para postar/comunicar a live",
+      "frente": "💎 CDM",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "🎯 Live Instagram Serginho: preparar criativo para Batista rodar tráfego se a Meta já liberar campanha para live",
+      "frente": "🚀 TRÁFEGO",
+      "status": "🔥",
+      "done": false
+    },
+    {
       "time": "dia todo",
       "task": "🛒 Low Tickets: manter leitura Hotmart oficial, produtos zerados e próximos testes/criativos",
       "frente": "🛒 LT",
@@ -310,13 +336,13 @@
     }
   ],
   "metrics": {
-    "p0": 4,
+    "p0": 5,
     "p1": 3,
     "p2": 2,
-    "tasksToday": 12,
+    "tasksToday": 14,
     "done7d": 2,
-    "updatedAt": "2026-06-08 10:20 BRT"
+    "updatedAt": "2026-06-08 10:25 BRT"
   },
-  "radarExtra": "📊 Atualizado em 08/06 com áudio do Ruan: foco do dia é Clínica de Maestría (Felipe/API, Mônica/casos clínicos, grupos antigos WhatsApp) + destravar conversa com Felipe sobre OralPlanner. Frentes do meio para baixo também revisadas.",
+  "radarExtra": "📊 Atualizado em 08/06 com áudios do Ruan: Clínica de Maestría no centro do dia + live Instagram com Serginho (imagem orgânica e criativo para tráfego/Batista) + OralPlanner com Felipe. Frentes do meio para baixo revisadas.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
