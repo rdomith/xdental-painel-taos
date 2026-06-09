@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-06-09 · Radar terça atualizado com Plataforma, Biblioteca Elite e páginas CDM",
+    "lastUpdated": "2026-06-09 · Radar terça atualizado com Victor Arguedas fixo",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça 09/06 atualizada: foco P0 em três frentes — Plataforma de Assinatura sem professor fechado para julho, Biblioteca de Casos do Elite precisa avançar para classificação por má oclusão antes da Fase 2, e páginas de vendas da Clínica de Maestría precisam de rota de produção até amanhã/quinta. Rollover de ontem: Low Tickets SEG — confirmar vídeos do Sérgio e edição Fabian."
+    "headline": "Terça 09/06 atualizada: Victor Arguedas confirmou que prepara o curso XDental ainda esta semana e grava na semana que vem; manter no radar fixo até Ruan dar check. Plataforma segue P0 até julho ter professor fechado."
   },
   "fronts": [
     {
@@ -66,16 +66,16 @@
       "priority": "p0",
       "progress": 68,
       "owner": "Ruan / TAOS / Mônica / Diego / Fabian",
-      "summary": "Paul Medina já cobriu junho; julho ainda não tem professor fechado. Fernando Pari, Joaquim Ariza e Victor Arguedas ficam como radar permanente até virar compromisso com tema, data de gravação e materiais.",
+      "summary": "Paul Medina cobriu junho. Victor Arguedas confirmou que prepara o curso XDental ainda esta semana e grava na semana que vem; manter como radar fixo até Ruan marcar/checkar. Fernando Pari e Joaquim Ariza seguem como pipeline complementar para não depender de uma única gravação.",
       "nextActions": [
-        "Follow-up com Victor Arguedas: tema, data de gravação, foto/bio e material de apoio",
-        "Follow-up com Joaquim Ariza: tema, data de gravação, foto/bio e material de apoio",
-        "Follow-up com Fernando Pari: tema, data de gravação, foto/bio e material de apoio",
-        "Definir plano B de professor/conteúdo se nenhum dos três fechar rapidamente"
+        "Victor Arguedas: acompanhar preparo do curso XDental até esta semana (09-14/06)",
+        "Victor Arguedas: confirmar gravação na semana que vem (15-21/06)",
+        "Coletar tema, estrutura, foto/bio, materiais de apoio e previsão de entrega do bruto",
+        "Manter Fernando Pari e Joaquim Ariza no radar como pipeline reserva/complementar"
       ],
       "blockers": [
-        "Julho sem professor fechado cria buraco de conteúdo na assinatura",
-        "Sem data/tema não dá para acionar briefing, edição, Hotmart e comunicação"
+        "Se Victor atrasar preparo ou gravação, julho volta a ficar descoberto",
+        "Sem tema/estrutura/material, Fabian/Hotmart/comunicação não conseguem montar a esteira de publicação"
       ]
     },
     {
@@ -169,13 +169,13 @@
   ],
   "gargalos": [
     {
-      "title": "Plataforma de Assinatura · julho sem professor fechado",
+      "title": "Plataforma de Assinatura · Victor Arguedas curso de julho",
       "priority": "p0",
       "frente": "Plataforma de Assinatura",
-      "deadline": "Permanente até fechar julho",
-      "blocks": "Sem professor fechado para julho, a assinatura perde cadência depois do curso Paul Medina",
-      "owner": "Ruan / TAOS",
-      "meta": "Fernando Pari · Joaquim Ariza · Victor Arguedas"
+      "deadline": "Preparo até 14/06 · gravação 15-21/06",
+      "blocks": "Curso de julho da assinatura; precisa virar gravação real, não só promessa verbal",
+      "owner": "Ruan / Victor Arguedas / TAOS",
+      "meta": "Radar fixo até Ruan dar check"
     },
     {
       "title": "Biblioteca de Casos Elite · classificação por má oclusão",
@@ -239,8 +239,8 @@
       "done": false
     },
     {
-      "time": "manhã",
-      "task": "🎬 Fazer follow-up/definir próximo passo com Victor Arguedas para curso de julho: tema, data de gravação e materiais",
+      "time": "fixo",
+      "task": "🎬 Victor Arguedas: preparar curso XDental até esta semana e gravar na semana que vem — manter até Ruan dar check",
       "frente": "🎬 PA",
       "status": "🔥",
       "done": false
@@ -331,6 +331,6 @@
     "done": 0,
     "tasks": 14
   },
-  "radarExtra": "Atualizado em 09/06 por áudio do Ruan: professores da Plataforma ficam no radar permanente até fechar julho (Fernando Pari, Joaquim Ariza, Victor Arguedas); Biblioteca de Casos Elite avança para classificação por má oclusão; páginas CDM novas do Bruno precisam rota Clairou ou plano B; rollover Calendar 08/06 Low Tickets.",
+  "radarExtra": "Atualizado em 09/06: Victor Arguedas disse que prepara o curso XDental até esta semana e grava na semana que vem; manter radar fixo até Ruan dar check. Fernando Pari e Joaquim Ariza continuam no pipeline complementar.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
