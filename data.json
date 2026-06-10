@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-06-09 · Radar terça atualizado com Victor Arguedas fixo",
+    "lastUpdated": "2026-06-10 · Radar quarta atualizado com live do Serginho + Calendar XDental",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça 09/06 atualizada: Victor Arguedas confirmou que prepara o curso XDental ainda esta semana e grava na semana que vem; manter no radar fixo até Ruan dar check. Plataforma segue P0 até julho ter professor fechado."
+    "headline": "Quarta 10/06 atualizada: live do Serginho hoje no perfil da XDental com tráfego apontado para lá; Batista já avisado e falta Diego. Calendar traz Low Tickets 14h + rotina Fabian/Batista. Plataforma de Assinatura segue P0 com Victor gravando na semana que vem e follow-up em Fernando Pari/Joaquim Ariza."
   },
   "fronts": [
     {
@@ -14,17 +14,19 @@
       "name": "Low Tickets",
       "status": "attention",
       "priority": "p1",
-      "progress": 75,
+      "progress": 78,
       "owner": "Ruan + Bruno + Batista + Sérgio",
-      "summary": "Radar diário continua; rollover do Calendar de ontem precisa de check: confirmar se Sérgio entregou vídeos da segunda e Fabian iniciou edição dos criativos.",
+      "summary": "Quarta de rotina Low Tickets no Calendar: reunião semanal Bruno + Batista 14h, Fabian entrega criativos e Batista sobe no Meta. Além disso, hoje tem live do Serginho no perfil da XDental com tráfego direcionado para lá; Batista já foi avisado, falta avisar Diego.",
       "nextActions": [
-        "Confirmar entrega de vídeos do Sérgio de segunda",
-        "Confirmar início de edição dos criativos por Fabian",
-        "Conferir vendas/produtos zerados pelo radar oficial Hotmart",
-        "Revisar próximos testes com Batista/Bruno"
+        "Live Serginho no perfil da XDental: garantir alinhamento de tráfego e operação",
+        "Avisar Diego sobre a live/tráfego de hoje",
+        "Reunião Low Tickets 14h: Bruno + Batista + Ruan",
+        "Confirmar Fabian entregando criativos e Batista subindo no Meta Ads",
+        "Conferir vendas/produtos zerados pelo radar oficial Hotmart"
       ],
       "blockers": [
-        "Rotina semanal não pode ficar sem check; se vídeos/edição atrasam, a quarta de subida de criativos fica vulnerável"
+        "Se Diego não for avisado, a operação da live pode ficar desalinhada",
+        "Quarta é dia crítico de criativos: entrega Fabian + subida Batista não pode ficar sem check"
       ]
     },
     {
@@ -64,18 +66,19 @@
       "name": "Plataforma de Assinatura",
       "status": "risk",
       "priority": "p0",
-      "progress": 68,
+      "progress": 70,
       "owner": "Ruan / TAOS / Mônica / Diego / Fabian",
-      "summary": "Paul Medina cobriu junho. Victor Arguedas confirmou que prepara o curso XDental ainda esta semana e grava na semana que vem; manter como radar fixo até Ruan marcar/checkar. Fernando Pari e Joaquim Ariza seguem como pipeline complementar para não depender de uma única gravação.",
+      "summary": "Paul Medina cobriu junho. Ruan conversou com Victor Arguedas ontem; Victor ficou de gravar na semana que vem. Fernando Pari e Joaquim Ariza seguem no follow-up como pipeline complementar para garantir julho sem depender de um único professor.",
       "nextActions": [
-        "Victor Arguedas: acompanhar preparo do curso XDental até esta semana (09-14/06)",
-        "Victor Arguedas: confirmar gravação na semana que vem (15-21/06)",
-        "Coletar tema, estrutura, foto/bio, materiais de apoio e previsão de entrega do bruto",
-        "Manter Fernando Pari e Joaquim Ariza no radar como pipeline reserva/complementar"
+        "Victor Arguedas: manter follow-up até gravação confirmada na semana 15-21/06",
+        "Coletar/confirmar tema, estrutura, materiais, foto/bio e data de entrega do bruto do Victor",
+        "Ruan falar com os professores pendentes da plataforma de assinatura",
+        "Follow-up com Fernando Pari: tema, data de gravação e materiais",
+        "Follow-up com Joaquim Ariza: tema, data de gravação e materiais"
       ],
       "blockers": [
-        "Se Victor atrasar preparo ou gravação, julho volta a ficar descoberto",
-        "Sem tema/estrutura/material, Fabian/Hotmart/comunicação não conseguem montar a esteira de publicação"
+        "Se Victor atrasar gravação, julho volta a ficar descoberto",
+        "Pipeline de professores ainda depende de follow-up ativo do Ruan"
       ]
     },
     {
@@ -153,29 +156,56 @@
       "name": "Lançamentos",
       "status": "risk",
       "priority": "p0",
-      "progress": 52,
-      "owner": "Ruan / Felipe / Mônica / Batista / TAOS",
-      "summary": "Bruno entrega hoje duas novas versões de página de vendas da Clínica de Maestría. A decisão operacional é validar primeiro se Clairou consegue produzir até amanhã; se não, acionar plano B para testar/entregar quinta.",
+      "progress": 54,
+      "owner": "Ruan / Felipe / Mônica / Batista / Lilian / TAOS",
+      "summary": "Clínica de Maestría segue na cadência comercial. Nova demanda do dia: Ruan precisa falar com Lilian sobre vendas do curso de Nova York que será feito junto com eles.",
       "nextActions": [
-        "Receber as 2 versões de página do Bruno",
-        "Verificar prazo real com Clairou para entregar até amanhã",
-        "Se Clairou não garantir, definir alternativa de produção/teste para quinta",
-        "Manter leitura de conversão e vendas da CDM durante a troca/teste das páginas"
+        "Falar com Lilian sobre vendas do curso de Nova York em parceria",
+        "Manter leitura de conversão/vendas da Clínica de Maestría",
+        "Acompanhar tráfego e mensagens relacionadas à live do Serginho se impactar captação/vendas",
+        "Revisar rota das páginas/testes da CDM se ainda estiver pendente"
       ],
       "blockers": [
-        "Sem rota de produção hoje, as páginas novas viram gargalo e atrasam teste de conversão"
+        "Sem alinhamento com Lilian, a frente Curso Nova York fica sem próximo passo comercial claro"
       ]
     }
   ],
   "gargalos": [
     {
-      "title": "Plataforma de Assinatura · Victor Arguedas curso de julho",
+      "title": "Plataforma de Assinatura · Victor Arguedas + pipeline professores",
       "priority": "p0",
       "frente": "Plataforma de Assinatura",
-      "deadline": "Preparo até 14/06 · gravação 15-21/06",
-      "blocks": "Curso de julho da assinatura; precisa virar gravação real, não só promessa verbal",
-      "owner": "Ruan / Victor Arguedas / TAOS",
-      "meta": "Radar fixo até Ruan dar check"
+      "deadline": "Victor grava 15-21/06 · follow-up professores hoje",
+      "blocks": "Curso de julho da assinatura; precisa virar gravação real e ter backup com Fernando/Joaquim",
+      "owner": "Ruan / Victor Arguedas / Fernando Pari / Joaquim Ariza / TAOS",
+      "meta": "Ruan conversou com Victor ontem; manter radar fixo até gravação confirmada"
+    },
+    {
+      "title": "Live Serginho XDental · Diego ainda precisa ser avisado",
+      "priority": "p0",
+      "frente": "Low Tickets / Operação Live",
+      "deadline": "Hoje 10/06 antes da live",
+      "blocks": "Tráfego será enviado para o perfil da XDental; operação precisa estar alinhada com Diego além do Batista",
+      "owner": "Ruan / Batista / Diego / Sérgio",
+      "meta": "Batista já avisado pelo Ruan; falta Diego"
+    },
+    {
+      "title": "Curso Nova York · alinhamento com Lilian",
+      "priority": "p1",
+      "frente": "Lançamentos / Comercial",
+      "deadline": "Hoje 10/06",
+      "blocks": "Venda/parceria do curso de Nova York precisa de conversa comercial para virar plano",
+      "owner": "Ruan / Lilian",
+      "meta": "Puxado do áudio do Ruan em 10/06"
+    },
+    {
+      "title": "Low Tickets · quarta de rotina Calendar",
+      "priority": "p1",
+      "frente": "Low Tickets",
+      "deadline": "Hoje 10/06",
+      "blocks": "Reunião 14h, entrega Fabian e subida Batista no Meta; se falhar, próxima rodada de criativos atrasa",
+      "owner": "Ruan / Bruno / Batista / Fabian",
+      "meta": "Calendar XDental: reunião semanal + rotina QUA"
     },
     {
       "title": "Biblioteca de Casos Elite · classificação por má oclusão",
@@ -185,33 +215,6 @@
       "blocks": "Sem agrupamento clínico, a biblioteca vira acervo bruto e não ferramenta útil de estudo/consulta",
       "owner": "TAOS / Sérgio / Ruan",
       "meta": "Triagem por áudio + mensagem do aluno + baixa confiança para revisão humana"
-    },
-    {
-      "title": "Páginas CDM · 2 versões novas do Bruno",
-      "priority": "p0",
-      "frente": "Lançamentos / Clínica de Maestría",
-      "deadline": "Hoje definir rota; entrega ideal amanhã ou quinta",
-      "blocks": "Teste de página e evolução de conversão da campanha",
-      "owner": "Ruan / Bruno / Clairou ou Plano B",
-      "meta": "Verificar capacidade Clairou antes de acionar alternativa"
-    },
-    {
-      "title": "Low Tickets · rollover calendário de ontem",
-      "priority": "p1",
-      "frente": "Low Tickets",
-      "deadline": "Hoje 09/06",
-      "blocks": "Rotina de segunda ficou sem check visível: Sérgio entrega vídeos e Fabian inicia edição",
-      "owner": "Ruan / Sérgio / Fabian",
-      "meta": "Evento Calendar XDental 08/06"
-    },
-    {
-      "title": "Clínica de Maestría · cadência comercial da semana",
-      "priority": "p1",
-      "frente": "Sniper Elite / Clínica de Maestría",
-      "deadline": "Semana 09/06",
-      "blocks": "API, grupos, casos e vendas precisam continuar sendo monitorados depois do primeiro envio",
-      "owner": "Ruan / Felipe / Mônica / Batista",
-      "meta": "Rollover do radar 08/06"
     },
     {
       "title": "CIOCH · stand/pagamento",
@@ -226,86 +229,79 @@
   "radarDoDia": [
     {
       "time": "09h00",
-      "task": "📡 Abrir radar de terça e atualizar painel com demandas novas do áudio do Ruan",
+      "task": "📡 Abrir radar de quarta e atualizar painel com áudio do Ruan + Calendar do dia",
       "frente": "📡 RADAR",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "manhã",
-      "task": "🎬 Plataforma: manter Fernando Pari, Joaquim Ariza e Victor Arguedas no radar permanente até julho ter professor fechado",
-      "frente": "🎬 PA",
+      "time": "12h00",
+      "task": "🧠 Calendar pessoal: Mentoria Cloud Code — Módulo 4 Biblioteca / gravação liberada 12h-12h30",
+      "frente": "📅 CAL",
+      "status": "📅",
+      "done": false
+    },
+    {
+      "time": "antes da live",
+      "task": "📣 Live Serginho no perfil da XDental: garantir operação/tráfego apontando para o perfil",
+      "frente": "📣 LIVE",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "fixo",
-      "task": "🎬 Victor Arguedas: preparar curso XDental até esta semana e gravar na semana que vem — manter até Ruan dar check",
-      "frente": "🎬 PA",
+      "time": "antes da live",
+      "task": "📣 Avisar Diego sobre a live do Serginho e tráfego de hoje — Batista já avisado",
+      "frente": "📣 LIVE",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "manhã",
-      "task": "🎬 Fazer follow-up/definir próximo passo com Joaquim Ariza para curso de julho: tema, data de gravação e materiais",
-      "frente": "🎬 PA",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🎬 Fazer follow-up/definir próximo passo com Fernando Pari para curso de julho: tema, data de gravação e materiais",
-      "frente": "🎬 PA",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "💎 Biblioteca Elite: preparar proposta de classificação dos casos por má oclusão antes da Fase 2",
-      "frente": "💎 ELITE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "💎 Biblioteca Elite: testar triagem com dados já existentes — mensagem do aluno + transcrição dos áudios do Sérgio + palavras-chave clínicas",
-      "frente": "💎 ELITE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "💎 Biblioteca Elite: separar casos em grupos prováveis por má oclusão e marcar baixa confiança para revisão do Sérgio",
-      "frente": "💎 ELITE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🚀 Página CDM: aguardar Bruno entregar 2 novas versões e definir rota de produção",
-      "frente": "🚀 LANÇ",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🚀 Página CDM: verificar com Clairou se consegue entregar as 2 páginas até amanhã",
-      "frente": "🚀 LANÇ",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "tarde",
-      "task": "🚀 Se Clairou não garantir amanhã: escolher plano B para testar/entregar até quinta",
-      "frente": "🚀 LANÇ",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "tarde",
-      "task": "🛒 Rollover Calendar ontem: confirmar se Sérgio entregou vídeos Low Tickets e se Fabian iniciou edição",
+      "time": "14h00",
+      "task": "🛒 Calendar XDental: Reunião semanal Low Tickets — Bruno + Batista + Ruan",
       "frente": "🛒 LT",
       "status": "📅",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "🛒 Calendar XDental: Fabian entrega criativos e Batista sobe criativos no Meta Ads",
+      "frente": "🛒 LT",
+      "status": "📅",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "🎬 Plataforma: manter Victor Arguedas no radar — conversado ontem; gravação prevista para semana que vem",
+      "frente": "🎬 PA",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "🎬 Falar/fazer follow-up com professores da Plataforma de Assinatura: Fernando Pari e Joaquim Ariza",
+      "frente": "🎬 PA",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "🎬 Victor Arguedas: confirmar tema, estrutura, materiais, foto/bio e data de entrega do bruto",
+      "frente": "🎬 PA",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "💵 Falar com Lilian sobre vendas do curso de Nova York em parceria com eles",
+      "frente": "💵 NY",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "💎 Biblioteca Elite: avançar proposta de classificação dos casos por má oclusão antes da Fase 2",
+      "frente": "💎 ELITE",
+      "status": "🔥",
       "done": false
     },
     {
@@ -316,21 +312,28 @@
       "done": false
     },
     {
+      "time": "tarde",
+      "task": "🚀 Clínica de Maestría/páginas: revisar se rota de produção/teste da semana já está definida",
+      "frente": "🚀 LANÇ",
+      "status": "📅",
+      "done": false
+    },
+    {
       "time": "fim do dia",
-      "task": "📡 Fechar terça: checks feitos, pendências travadas e rota das páginas CDM definida",
+      "task": "📡 Fechar quarta: live/tráfego, Diego, reunião LT, professores PA e Lilian/NY",
       "frente": "📡 RADAR",
       "status": "📅",
       "done": false
     }
   ],
   "metrics": {
-    "p0": 3,
+    "p0": 4,
     "p1": 3,
-    "p2": 2,
+    "p2": 1,
     "p3": 1,
     "done": 0,
     "tasks": 14
   },
-  "radarExtra": "Atualizado em 09/06: Victor Arguedas disse que prepara o curso XDental até esta semana e grava na semana que vem; manter radar fixo até Ruan dar check. Fernando Pari e Joaquim Ariza continuam no pipeline complementar.",
+  "radarExtra": "Atualizado em 10/06: Calendar confirmado com Low Tickets 14h + rotina Fabian/Batista; áudio do Ruan adicionou live do Serginho no perfil XDental com tráfego, Diego pendente, Victor Arguedas gravando na semana que vem, follow-up com Fernando/Joaquim e conversa com Lilian sobre curso de Nova York.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
