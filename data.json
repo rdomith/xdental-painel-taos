@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-06-10 · Radar quarta atualizado com live do Serginho + Calendar XDental",
+    "lastUpdated": "2026-06-10 · Radar quarta + correção processo PDF Diplomado",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quarta 10/06 atualizada: live do Serginho hoje no perfil da XDental com tráfego apontado para lá; Batista já avisado e falta Diego. Calendar traz Low Tickets 14h + rotina Fabian/Batista. Plataforma de Assinatura segue P0 com Victor gravando na semana que vem e follow-up em Fernando Pari/Joaquim Ariza."
+    "headline": "Quarta 10/06 atualizada: além da live do Serginho, entrou correção crítica no processo do Diplomado: PDF do módulo gravado começa D-10; PDF de módulo ao vivo começa D+1 após a aula. M6 está vencido e virou P0 operacional."
   },
   "fronts": [
     {
@@ -47,18 +47,21 @@
     {
       "id": "diplomado-ortho-pro",
       "name": "Diplomado Ortho Pro",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 95,
+      "status": "risk",
+      "priority": "p0",
+      "progress": 88,
       "owner": "Ruan / Felipe / Fabian / Sérgio",
-      "summary": "Rollover controlado: confirmar se M6 e prova M5 seguem operacionais, sem deixar virar gargalo silencioso enquanto Clínica domina a agenda.",
+      "summary": "Furo identificado no processo do M6: módulo ao vivo em 01/06 precisava de PDF/material complementar, mas o Calendar não tinha a atividade porque o processo tratava PDF só como D-10. Regra corrigida: gravado = D-10; ao vivo = D+1 após aula. M6 PDF está vencido e precisa virar pacote emergencial.",
       "nextActions": [
-        "Confirmar status de edição/upload do M6 com Fabian",
-        "Checar janela da prova M5 até 10/06",
+        "M6 Maloclusiones Transversales: iniciar PDF/material complementar emergencial agora",
+        "Extrair estrutura da gravação/aula do Sérgio e montar base do PDF",
+        "Enviar pacote para Klyro assim que base estiver pronta",
+        "Adicionar atividades mensais de PDF no Google Calendar após validação das datas",
         "Manter conflito M8 × Chile no radar de planejamento"
       ],
       "blockers": [
-        "M6 pode travar se bruto/edição/upload não estiverem com dono claro"
+        "Aluna já reclamou: material complementar do M6 virou risco de experiência do aluno",
+        "Sem eventos mensais de PDF no Calendar, o erro tende a se repetir"
       ]
     },
     {
@@ -172,6 +175,15 @@
   ],
   "gargalos": [
     {
+      "title": "PDF Diplomado M6 · material complementar vencido",
+      "priority": "p0",
+      "frente": "Diplomado Ortho Pro",
+      "deadline": "Imediato",
+      "blocks": "Experiência dos alunos e cumprimento do processo do módulo; já houve reclamação de aluna",
+      "owner": "Ruan / TAOS / Klyro / Mônica",
+      "meta": "Processo corrigido: gravado D-10; ao vivo D+1 após aula"
+    },
+    {
       "title": "Plataforma de Assinatura · Victor Arguedas + pipeline professores",
       "priority": "p0",
       "frente": "Plataforma de Assinatura",
@@ -239,6 +251,13 @@
       "task": "🧠 Calendar pessoal: Mentoria Cloud Code — Módulo 4 Biblioteca / gravação liberada 12h-12h30",
       "frente": "📅 CAL",
       "status": "📅",
+      "done": false
+    },
+    {
+      "time": "imediato",
+      "task": "🎓 Diplomado M6: iniciar PDF/material complementar emergencial e corrigir processo para próximos módulos",
+      "frente": "🎓 DOP",
+      "status": "🔥",
       "done": false
     },
     {
@@ -327,13 +346,13 @@
     }
   ],
   "metrics": {
-    "p0": 4,
+    "p0": 5,
     "p1": 3,
     "p2": 1,
     "p3": 1,
     "done": 0,
-    "tasks": 14
+    "tasks": 15
   },
-  "radarExtra": "Atualizado em 10/06: Calendar confirmado com Low Tickets 14h + rotina Fabian/Batista; áudio do Ruan adicionou live do Serginho no perfil XDental com tráfego, Diego pendente, Victor Arguedas gravando na semana que vem, follow-up com Fernando/Joaquim e conversa com Lilian sobre curso de Nova York.",
+  "radarExtra": "Atualizado em 10/06: Calendar confirmado com Low Tickets 14h + rotina Fabian/Batista; áudio do Ruan adicionou live do Serginho no perfil XDental com tráfego, Diego pendente, Victor Arguedas gravando na semana que vem, follow-up com Fernando/Joaquim e conversa com Lilian sobre curso de Nova York. Correção 21h48: processo do PDF Diplomado corrigido; M6 ao vivo deveria ter iniciado PDF em D+1 (02/06) e agora é P0 emergencial.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
