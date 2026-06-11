@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-06-10 · Radar quarta + correção processo PDF Diplomado",
+    "lastUpdated": "2026-06-11 · Radar quinta + Felipe/API + OralPlanner",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quarta 10/06 atualizada: além da live do Serginho, entrou correção crítica no processo do Diplomado: PDF do módulo gravado começa D-10; PDF de módulo ao vivo começa D+1 após a aula. M6 está vencido e virou P0 operacional."
+    "headline": "Quinta 11/06 atualizada: Calendar XDental trouxe rotina Low Tickets de quinta e M6 emergencial; áudio do Ruan adicionou P0 com Felipe/API e cobrança do cronograma de entrega do OralPlanner."
   },
   "fronts": [
     {
@@ -16,17 +16,15 @@
       "priority": "p1",
       "progress": 78,
       "owner": "Ruan + Bruno + Batista + Sérgio",
-      "summary": "Quarta de rotina Low Tickets no Calendar: reunião semanal Bruno + Batista 14h, Fabian entrega criativos e Batista sobe no Meta. Além disso, hoje tem live do Serginho no perfil da XDental com tráfego direcionado para lá; Batista já foi avisado, falta avisar Diego.",
+      "summary": "Quinta do ciclo Low Tickets no Calendar: criativos da semana anterior ativos no Meta, Bruno entrega copies da nova semana e Sérgio começa a gravar os vídeos novos.",
       "nextActions": [
-        "Live Serginho no perfil da XDental: garantir alinhamento de tráfego e operação",
-        "Avisar Diego sobre a live/tráfego de hoje",
-        "Reunião Low Tickets 14h: Bruno + Batista + Ruan",
-        "Confirmar Fabian entregando criativos e Batista subindo no Meta Ads",
-        "Conferir vendas/produtos zerados pelo radar oficial Hotmart"
+        "Confirmar criativos da semana anterior ativos no Meta",
+        "Bruno entregar copies da nova semana",
+        "Sérgio começar gravação dos vídeos da nova semana",
+        "Monitorar produtos zerados e performance do dia"
       ],
       "blockers": [
-        "Se Diego não for avisado, a operação da live pode ficar desalinhada",
-        "Quarta é dia crítico de criativos: entrega Fabian + subida Batista não pode ficar sem check"
+        "Se Bruno/copies ou gravação do Sérgio atrasarem, o próximo ciclo de criativos perde velocidade"
       ]
     },
     {
@@ -51,17 +49,15 @@
       "priority": "p0",
       "progress": 88,
       "owner": "Ruan / Felipe / Fabian / Sérgio",
-      "summary": "Furo identificado no processo do M6: módulo ao vivo em 01/06 precisava de PDF/material complementar, mas o Calendar não tinha a atividade porque o processo tratava PDF só como D-10. Regra corrigida: gravado = D-10; ao vivo = D+1 após aula. M6 PDF está vencido e precisa virar pacote emergencial.",
+      "summary": "M6 segue como P0 emergencial: aula ao vivo de 01/06 deveria ter iniciado PDF/material complementar em D+1. Pacote precisa avançar hoje.",
       "nextActions": [
-        "M6 Maloclusiones Transversales: iniciar PDF/material complementar emergencial agora",
-        "Extrair estrutura da gravação/aula do Sérgio e montar base do PDF",
-        "Enviar pacote para Klyro assim que base estiver pronta",
-        "Adicionar atividades mensais de PDF no Google Calendar após validação das datas",
-        "Manter conflito M8 × Chile no radar de planejamento"
+        "Avançar PDF/material complementar emergencial do M6",
+        "Extrair estrutura da gravação/aula do Sérgio",
+        "Preparar pacote para Klyro",
+        "Garantir que próximos módulos ao vivo tenham rotina D+1 no Calendar"
       ],
       "blockers": [
-        "Aluna já reclamou: material complementar do M6 virou risco de experiência do aluno",
-        "Sem eventos mensais de PDF no Calendar, o erro tende a se repetir"
+        "Material complementar atrasado afeta experiência dos alunos e já gerou reclamação"
       ]
     },
     {
@@ -108,16 +104,16 @@
       "priority": "p0",
       "progress": 58,
       "owner": "Ruan / Felipe / Mônica / Sérgio / Batista",
-      "summary": "Além da Clínica de Maestría, a Biblioteca de Casos do Elite precisa avançar antes da Fase 2: separar casos por má oclusão usando dados já existentes, mensagens dos alunos e transcrição dos áudios do Sérgio, com revisão humana apenas nos casos de baixa confiança.",
+      "summary": "Clínica de Maestría entra no radar de quinta com disparo API via Felipe; Biblioteca de Casos segue em paralelo para classificação por má oclusão.",
       "nextActions": [
-        "Criar taxonomia inicial de má oclusão para classificação dos casos",
-        "Transcrever/usar áudios do Sérgio como fonte de palavras-chave clínicas",
-        "Cruzar áudio + mensagem do aluno + dados da planilha para agrupar casos prováveis",
-        "Marcar casos de baixa confiança para revisão do Sérgio por foto"
+        "Ruan falar com Felipe e confirmar disparo API de hoje",
+        "Definir base, link/pitch, horário e tracking do disparo",
+        "Monitorar respostas, casos e vendas geradas pelo disparo",
+        "Continuar triagem da Biblioteca Elite por má oclusão"
       ],
       "blockers": [
-        "Sem classificação clínica, a biblioteca fica organizada administrativamente, mas fraca como produto de valor",
-        "Se tudo depender do Sérgio olhando foto por foto, a frente perde velocidade"
+        "Se o disparo API não sair hoje, a cadência comercial da CDM perde tração",
+        "Sem tracking claro, o resultado do disparo fica difícil de medir"
       ]
     },
     {
@@ -127,15 +123,15 @@
       "priority": "p0",
       "progress": 55,
       "owner": "Ruan / Felipe",
-      "summary": "Ruan precisa falar com Felipe hoje e marcar/alinha reunião para destravar OralPlanner; transformar conversa em checklist real de liberação.",
+      "summary": "Nova cobrança direta do Ruan: falar com Felipe hoje e cobrar cronograma de entrega do OralPlanner com datas, marcos e bloqueios técnicos.",
       "nextActions": [
         "Ruan falar com Felipe hoje sobre OralPlanner",
-        "Marcar conversa/reunião com Felipe",
-        "Listar pendências técnicas, responsável, prazo e data de liberação",
-        "Separar o que é bloqueio técnico do que é comunicação/lançamento"
+        "Cobrar cronograma de entrega com datas e marcos",
+        "Listar bloqueios técnicos e responsáveis",
+        "Separar entrega técnica de plano de comunicação/lançamento"
       ],
       "blockers": [
-        "Sem conversa com Felipe, OralPlanner continua como atraso sem plano de liberação"
+        "Sem cronograma real do Felipe, OralPlanner continua como atraso aberto sem data de liberação"
       ]
     },
     {
@@ -175,56 +171,56 @@
   ],
   "gargalos": [
     {
-      "title": "PDF Diplomado M6 · material complementar vencido",
+      "title": "Felipe/API · disparo de hoje",
+      "priority": "p0",
+      "frente": "Clínica de Maestría / Sniper Elite",
+      "deadline": "Hoje 11/06",
+      "blocks": "Cadência comercial da CDM; disparo precisa sair e ficar rastreável",
+      "owner": "Ruan / Felipe",
+      "meta": "Puxado do áudio do Ruan em 11/06"
+    },
+    {
+      "title": "OralPlanner · cobrar cronograma de entrega",
+      "priority": "p0",
+      "frente": "OralPlanner",
+      "deadline": "Hoje 11/06",
+      "blocks": "Sem cronograma real, a frente segue como atraso aberto sem data de liberação",
+      "owner": "Ruan / Felipe",
+      "meta": "Pedir datas, marcos, bloqueios técnicos e responsável por cada etapa"
+    },
+    {
+      "title": "Diplomado M6 · PDF/material complementar emergencial",
       "priority": "p0",
       "frente": "Diplomado Ortho Pro",
-      "deadline": "Imediato",
-      "blocks": "Experiência dos alunos e cumprimento do processo do módulo; já houve reclamação de aluna",
+      "deadline": "Hoje 11/06",
+      "blocks": "Experiência dos alunos; aula ao vivo de 01/06 deveria ter iniciado PDF em D+1",
       "owner": "Ruan / TAOS / Klyro / Mônica",
       "meta": "Processo corrigido: gravado D-10; ao vivo D+1 após aula"
     },
     {
-      "title": "Plataforma de Assinatura · Victor Arguedas + pipeline professores",
+      "title": "Plataforma de Assinatura · Victor Arguedas curso de julho",
       "priority": "p0",
       "frente": "Plataforma de Assinatura",
-      "deadline": "Victor grava 15-21/06 · follow-up professores hoje",
-      "blocks": "Curso de julho da assinatura; precisa virar gravação real e ter backup com Fernando/Joaquim",
-      "owner": "Ruan / Victor Arguedas / Fernando Pari / Joaquim Ariza / TAOS",
-      "meta": "Ruan conversou com Victor ontem; manter radar fixo até gravação confirmada"
+      "deadline": "Preparo até 14/06 · gravação 15-21/06",
+      "blocks": "Curso de julho da assinatura; precisa virar gravação real",
+      "owner": "Ruan / Victor Arguedas / TAOS",
+      "meta": "Manter até Ruan dar check"
     },
     {
-      "title": "Live Serginho XDental · Diego ainda precisa ser avisado",
-      "priority": "p0",
-      "frente": "Low Tickets / Operação Live",
-      "deadline": "Hoje 10/06 antes da live",
-      "blocks": "Tráfego será enviado para o perfil da XDental; operação precisa estar alinhada com Diego além do Batista",
-      "owner": "Ruan / Batista / Diego / Sérgio",
-      "meta": "Batista já avisado pelo Ruan; falta Diego"
-    },
-    {
-      "title": "Curso Nova York · alinhamento com Lilian",
-      "priority": "p1",
-      "frente": "Lançamentos / Comercial",
-      "deadline": "Hoje 10/06",
-      "blocks": "Venda/parceria do curso de Nova York precisa de conversa comercial para virar plano",
-      "owner": "Ruan / Lilian",
-      "meta": "Puxado do áudio do Ruan em 10/06"
-    },
-    {
-      "title": "Low Tickets · quarta de rotina Calendar",
+      "title": "Low Tickets · quinta do ciclo de criativos",
       "priority": "p1",
       "frente": "Low Tickets",
-      "deadline": "Hoje 10/06",
-      "blocks": "Reunião 14h, entrega Fabian e subida Batista no Meta; se falhar, próxima rodada de criativos atrasa",
-      "owner": "Ruan / Bruno / Batista / Fabian",
-      "meta": "Calendar XDental: reunião semanal + rotina QUA"
+      "deadline": "Hoje 11/06",
+      "blocks": "Criativos ativos, Bruno copies e Sérgio gravação não podem ficar sem check",
+      "owner": "Ruan / Bruno / Sérgio / Batista",
+      "meta": "Calendar XDental"
     },
     {
       "title": "Biblioteca de Casos Elite · classificação por má oclusão",
-      "priority": "p0",
+      "priority": "p1",
       "frente": "Sniper Elite / Biblioteca de Casos",
       "deadline": "Antes da Fase 2",
-      "blocks": "Sem agrupamento clínico, a biblioteca vira acervo bruto e não ferramenta útil de estudo/consulta",
+      "blocks": "Sem agrupamento clínico, a biblioteca vira acervo bruto",
       "owner": "TAOS / Sérgio / Ruan",
       "meta": "Triagem por áudio + mensagem do aluno + baixa confiança para revisão humana"
     },
@@ -241,118 +237,111 @@
   "radarDoDia": [
     {
       "time": "09h00",
-      "task": "📡 Abrir radar de quarta e atualizar painel com áudio do Ruan + Calendar do dia",
+      "task": "📡 Abrir radar de quinta e atualizar painel com Calendar + áudio do Ruan",
       "frente": "📡 RADAR",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "12h00",
-      "task": "🧠 Calendar pessoal: Mentoria Cloud Code — Módulo 4 Biblioteca / gravação liberada 12h-12h30",
-      "frente": "📅 CAL",
-      "status": "📅",
+      "time": "manhã",
+      "task": "💎 Felipe/API: falar com Felipe e confirmar disparo API de hoje — base, horário, link/pitch e tracking",
+      "frente": "💎 CDM",
+      "status": "🔥",
       "done": false
     },
     {
-      "time": "imediato",
-      "task": "🎓 Diplomado M6: iniciar PDF/material complementar emergencial e corrigir processo para próximos módulos",
+      "time": "manhã",
+      "task": "🦷 OralPlanner: cobrar Felipe pelo cronograma de entrega com datas, marcos e bloqueios técnicos",
+      "frente": "🦷 ORAL",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "🎓 Diplomado M6: manter PDF/material complementar emergencial como P0 e avançar base do pacote",
       "frente": "🎓 DOP",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "antes da live",
-      "task": "📣 Live Serginho no perfil da XDental: garantir operação/tráfego apontando para o perfil",
-      "frente": "📣 LIVE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "antes da live",
-      "task": "📣 Avisar Diego sobre a live do Serginho e tráfego de hoje — Batista já avisado",
-      "frente": "📣 LIVE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "14h00",
-      "task": "🛒 Calendar XDental: Reunião semanal Low Tickets — Bruno + Batista + Ruan",
+      "time": "dia todo",
+      "task": "🛒 Calendar XDental: criativos da semana anterior ativos no Meta — acompanhar performance/zerados",
       "frente": "🛒 LT",
       "status": "📅",
       "done": false
     },
     {
       "time": "dia todo",
-      "task": "🛒 Calendar XDental: Fabian entrega criativos e Batista sobe criativos no Meta Ads",
+      "task": "🛒 Calendar XDental: Bruno entrega copies da nova semana",
       "frente": "🛒 LT",
       "status": "📅",
       "done": false
     },
     {
       "time": "dia todo",
-      "task": "🎬 Plataforma: manter Victor Arguedas no radar — conversado ontem; gravação prevista para semana que vem",
+      "task": "🛒 Calendar XDental: Sérgio começa a gravar vídeos da nova semana",
+      "frente": "🛒 LT",
+      "status": "📅",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "🎬 Plataforma: Victor Arguedas preparar curso esta semana e confirmar gravação 15-21/06",
       "frente": "🎬 PA",
       "status": "🔥",
       "done": false
     },
     {
       "time": "dia todo",
-      "task": "🎬 Falar/fazer follow-up com professores da Plataforma de Assinatura: Fernando Pari e Joaquim Ariza",
+      "task": "🎬 Plataforma: manter Fernando Pari e Joaquim Ariza como backup/pipeline do curso de julho",
       "frente": "🎬 PA",
-      "status": "🔥",
+      "status": "📅",
       "done": false
     },
     {
       "time": "dia todo",
-      "task": "🎬 Victor Arguedas: confirmar tema, estrutura, materiais, foto/bio e data de entrega do bruto",
-      "frente": "🎬 PA",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "💵 Falar com Lilian sobre vendas do curso de Nova York em parceria com eles",
-      "frente": "💵 NY",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "💎 Biblioteca Elite: avançar proposta de classificação dos casos por má oclusão antes da Fase 2",
-      "frente": "💎 ELITE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "💎 CDM: manter leitura dos disparos/grupos/casos/vendas da cadência desta semana",
+      "task": "💎 CDM: monitorar resultado do disparo API, respostas, casos e vendas do dia",
       "frente": "💎 CDM",
       "status": "📅",
       "done": false
     },
     {
+      "time": "dia todo",
+      "task": "💎 Biblioteca Elite: seguir classificação inicial dos casos por má oclusão usando áudio + mensagem + planilha",
+      "frente": "💎 ELITE",
+      "status": "📅",
+      "done": false
+    },
+    {
       "time": "tarde",
-      "task": "🚀 Clínica de Maestría/páginas: revisar se rota de produção/teste da semana já está definida",
-      "frente": "🚀 LANÇ",
+      "task": "🇨🇱 CIOCH: manter stand/pagamento no radar de rollover da semana",
+      "frente": "🇨🇱 CHL",
       "status": "📅",
       "done": false
     },
     {
       "time": "fim do dia",
-      "task": "📡 Fechar quarta: live/tráfego, Diego, reunião LT, professores PA e Lilian/NY",
+      "task": "📡 Fechar quinta: Felipe/API enviado, OralPlanner com cronograma cobrado, LT do calendário checado e M6 avançado",
       "frente": "📡 RADAR",
+      "status": "📅",
+      "done": false
+    },
+    {
+      "time": "fixo",
+      "task": "⚙️ Se faltar algo após revisão do Ruan, ajustar painel no mesmo dia sem mexer em produção externa",
+      "frente": "⚙️ TAOS",
       "status": "📅",
       "done": false
     }
   ],
   "metrics": {
-    "p0": 5,
+    "p0": 4,
     "p1": 3,
     "p2": 1,
     "p3": 1,
     "done": 0,
-    "tasks": 15
+    "tasks": 14
   },
-  "radarExtra": "Atualizado em 10/06: Calendar confirmado com Low Tickets 14h + rotina Fabian/Batista; áudio do Ruan adicionou live do Serginho no perfil XDental com tráfego, Diego pendente, Victor Arguedas gravando na semana que vem, follow-up com Fernando/Joaquim e conversa com Lilian sobre curso de Nova York. Correção 21h48: processo do PDF Diplomado corrigido; M6 ao vivo deveria ter iniciado PDF em D+1 (02/06) e agora é P0 emergencial.",
+  "radarExtra": "Atualizado em 11/06: Calendar XDental trouxe rotina de quinta dos Low Tickets e M6 emergencial; áudio do Ruan adicionou Felipe/API e cobrança do cronograma do OralPlanner como prioridades do dia.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
