@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-06-11 · Radar quinta + Felipe/API + OralPlanner",
+    "lastUpdated": "2026-06-12 · Radar sexta + Comunicação CDM + teaser Fabião",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quinta 11/06 atualizada: Calendar XDental trouxe rotina Low Tickets de quinta e M6 emergencial; áudio do Ruan adicionou P0 com Felipe/API e cobrança do cronograma de entrega do OralPlanner."
+    "headline": "Sexta 12/06 atualizada: prioridade do dia é destravar a régua de comunicação da Clínica de Maestría — briefing do teaser countdown para Fabião, imagens para grupos e conferência das demandas de comunicação/acomodação antes da reta final do evento."
   },
   "fronts": [
     {
@@ -48,7 +48,7 @@
       "status": "risk",
       "priority": "p0",
       "progress": 88,
-      "owner": "Ruan / Felipe / Fabian / Sérgio",
+      "owner": "Ruan / Felipe / Fabião / Sérgio",
       "summary": "M6 segue como P0 emergencial: aula ao vivo de 01/06 deveria ter iniciado PDF/material complementar em D+1. Pacote precisa avançar hoje.",
       "nextActions": [
         "Avançar PDF/material complementar emergencial do M6",
@@ -66,7 +66,7 @@
       "status": "risk",
       "priority": "p0",
       "progress": 70,
-      "owner": "Ruan / TAOS / Mônica / Diego / Fabian",
+      "owner": "Ruan / TAOS / Mônica / Diego / Fabião",
       "summary": "Paul Medina cobriu junho. Ruan conversou com Victor Arguedas ontem; Victor ficou de gravar na semana que vem. Fernando Pari e Joaquim Ariza seguem no follow-up como pipeline complementar para garantir julho sem depender de um único professor.",
       "nextActions": [
         "Victor Arguedas: manter follow-up até gravação confirmada na semana 15-21/06",
@@ -102,18 +102,19 @@
       "name": "Sniper Elite / Clínica de Maestría",
       "status": "risk",
       "priority": "p0",
-      "progress": 58,
-      "owner": "Ruan / Felipe / Mônica / Sérgio / Batista",
-      "summary": "Clínica de Maestría entra no radar de quinta com disparo API via Felipe; Biblioteca de Casos segue em paralelo para classificação por má oclusão.",
+      "progress": 63,
+      "owner": "Ruan / Fabião / Felipe / Mônica / Sérgio / Batista",
+      "summary": "Clínica de Maestría entra na reta final para o evento de 20/06. P0 de hoje: passar para Fabião o teaser countdown rápido (faltam 7, 5, 3 dias e é amanhã), produzir imagens para envio nos grupos e conferir demandas de comunicação/acomodação.",
       "nextActions": [
-        "Ruan falar com Felipe e confirmar disparo API de hoje",
-        "Definir base, link/pitch, horário e tracking do disparo",
-        "Monitorar respostas, casos e vendas geradas pelo disparo",
-        "Continuar triagem da Biblioteca Elite por má oclusão"
+        "Ruan passar hoje o briefing para Fabião produzir teaser countdown",
+        "Fabião criar variações rápidas: faltam 7 dias, 5 dias, 3 dias e é amanhã",
+        "Preparar/adaptar imagens para mandar nos grupos",
+        "Conferir demandas de comunicação/acomodação da reta final",
+        "Definir quem dispara cada peça e em quais grupos/canais"
       ],
       "blockers": [
-        "Se o disparo API não sair hoje, a cadência comercial da CDM perde tração",
-        "Sem tracking claro, o resultado do disparo fica difícil de medir"
+        "Sem briefing hoje, a régua de urgência da reta final perde timing",
+        "Sem checklist de comunicação/acomodação, a equipe pode chegar no evento sem alinhamento operacional"
       ]
     },
     {
@@ -155,74 +156,75 @@
       "name": "Lançamentos",
       "status": "risk",
       "priority": "p0",
-      "progress": 54,
-      "owner": "Ruan / Felipe / Mônica / Batista / Lilian / TAOS",
-      "summary": "Clínica de Maestría segue na cadência comercial. Nova demanda do dia: Ruan precisa falar com Lilian sobre vendas do curso de Nova York que será feito junto com eles.",
+      "progress": 57,
+      "owner": "Ruan / Fabião / Felipe / Mônica / Batista / Lilian / TAOS",
+      "summary": "Reta final da Clínica de Maestría: comunicação precisa virar execução hoje. Fabião entra com teaser countdown; Ruan pode fazer/adaptar imagens para grupos; manter vendas/tráfego no radar.",
       "nextActions": [
-        "Falar com Lilian sobre vendas do curso de Nova York em parceria",
+        "Briefing Fabião: teaser countdown D-7/D-5/D-3/D-1",
+        "Montar imagens para grupos e validar mensagem curta de urgência",
+        "Conferir calendário de disparos até 20/06",
         "Manter leitura de conversão/vendas da Clínica de Maestría",
-        "Acompanhar tráfego e mensagens relacionadas à live do Serginho se impactar captação/vendas",
-        "Revisar rota das páginas/testes da CDM se ainda estiver pendente"
+        "Falar com Lilian sobre vendas do curso de Nova York em parceria"
       ],
       "blockers": [
-        "Sem alinhamento com Lilian, a frente Curso Nova York fica sem próximo passo comercial claro"
+        "Se a régua de comunicação não sair hoje, a última semana perde pressão de presença e comparecimento"
       ]
     }
   ],
   "gargalos": [
     {
-      "title": "Felipe/API · disparo de hoje",
+      "title": "CDM · teaser countdown Fabião",
       "priority": "p0",
-      "frente": "Clínica de Maestría / Sniper Elite",
-      "deadline": "Hoje 11/06",
-      "blocks": "Cadência comercial da CDM; disparo precisa sair e ficar rastreável",
-      "owner": "Ruan / Felipe",
-      "meta": "Puxado do áudio do Ruan em 11/06"
+      "frente": "Clínica de Maestría / Lançamentos",
+      "deadline": "Hoje 12/06",
+      "blocks": "Reta final do evento de 20/06; urgência precisa entrar nos grupos com peças D-7, D-5, D-3 e D-1",
+      "owner": "Ruan / Fabião",
+      "meta": "Pedido por áudio do Ruan em 12/06"
     },
     {
-      "title": "OralPlanner · cobrar cronograma de entrega",
+      "title": "CDM · imagens para grupos + comunicação/acomodação",
       "priority": "p0",
-      "frente": "OralPlanner",
-      "deadline": "Hoje 11/06",
-      "blocks": "Sem cronograma real, a frente segue como atraso aberto sem data de liberação",
+      "frente": "Clínica de Maestría / Operação",
+      "deadline": "Hoje 12/06",
+      "blocks": "Sem checklist final, a equipe fica sem clareza do que disparar, para quem e em qual ordem",
+      "owner": "Ruan / Mônica / Felipe / TAOS",
+      "meta": "Conferir demandas de comunicação/acomodação e donos dos disparos"
+    },
+    {
+      "title": "Felipe/API · disparos e tracking da CDM",
+      "priority": "p0",
+      "frente": "Clínica de Maestría / Sniper Elite",
+      "deadline": "Hoje 12/06",
+      "blocks": "Cadência comercial da CDM; disparos precisam sair com link/pitch e tracking claros",
       "owner": "Ruan / Felipe",
-      "meta": "Pedir datas, marcos, bloqueios técnicos e responsável por cada etapa"
+      "meta": "Rollover do P0 de 11/06 até confirmação"
     },
     {
       "title": "Diplomado M6 · PDF/material complementar emergencial",
       "priority": "p0",
       "frente": "Diplomado Ortho Pro",
-      "deadline": "Hoje 11/06",
+      "deadline": "Hoje 12/06",
       "blocks": "Experiência dos alunos; aula ao vivo de 01/06 deveria ter iniciado PDF em D+1",
       "owner": "Ruan / TAOS / Klyro / Mônica",
-      "meta": "Processo corrigido: gravado D-10; ao vivo D+1 após aula"
+      "meta": "Manter aberto até pacote avançar"
+    },
+    {
+      "title": "OralPlanner · cronograma de entrega",
+      "priority": "p1",
+      "frente": "OralPlanner",
+      "deadline": "Rollover da semana",
+      "blocks": "Sem cronograma real, a frente segue como atraso aberto sem data de liberação",
+      "owner": "Ruan / Felipe",
+      "meta": "Pedir datas, marcos, bloqueios técnicos e responsável por cada etapa"
     },
     {
       "title": "Plataforma de Assinatura · Victor Arguedas curso de julho",
-      "priority": "p0",
+      "priority": "p1",
       "frente": "Plataforma de Assinatura",
       "deadline": "Preparo até 14/06 · gravação 15-21/06",
       "blocks": "Curso de julho da assinatura; precisa virar gravação real",
       "owner": "Ruan / Victor Arguedas / TAOS",
-      "meta": "Manter até Ruan dar check"
-    },
-    {
-      "title": "Low Tickets · quinta do ciclo de criativos",
-      "priority": "p1",
-      "frente": "Low Tickets",
-      "deadline": "Hoje 11/06",
-      "blocks": "Criativos ativos, Bruno copies e Sérgio gravação não podem ficar sem check",
-      "owner": "Ruan / Bruno / Sérgio / Batista",
-      "meta": "Calendar XDental"
-    },
-    {
-      "title": "Biblioteca de Casos Elite · classificação por má oclusão",
-      "priority": "p1",
-      "frente": "Sniper Elite / Biblioteca de Casos",
-      "deadline": "Antes da Fase 2",
-      "blocks": "Sem agrupamento clínico, a biblioteca vira acervo bruto",
-      "owner": "TAOS / Sérgio / Ruan",
-      "meta": "Triagem por áudio + mensagem do aluno + baixa confiança para revisão humana"
+      "meta": "Manter follow-up ativo"
     },
     {
       "title": "CIOCH · stand/pagamento",
@@ -237,50 +239,71 @@
   "radarDoDia": [
     {
       "time": "09h00",
-      "task": "📡 Abrir radar de quinta e atualizar painel com Calendar + áudio do Ruan",
+      "task": "📡 Abrir radar de sexta e atualizar painel com áudio do Ruan",
       "frente": "📡 RADAR",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "💎 Felipe/API: falar com Felipe e confirmar disparo API de hoje — base, horário, link/pitch e tracking",
+      "task": "💎 CDM/Fabião: passar briefing do teaser countdown — faltam 7 dias, 5 dias, 3 dias e é amanhã",
       "frente": "💎 CDM",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🦷 OralPlanner: cobrar Felipe pelo cronograma de entrega com datas, marcos e bloqueios técnicos",
-      "frente": "🦷 ORAL",
+      "task": "💎 CDM: definir formato rápido do teaser para Fabião executar sem travar — vídeo curto + variações de texto/data",
+      "frente": "💎 CDM",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🎓 Diplomado M6: manter PDF/material complementar emergencial como P0 e avançar base do pacote",
-      "frente": "🎓 DOP",
+      "task": "📲 Grupos: preparar/adaptar imagens para envio nos grupos da Clínica de Maestría",
+      "frente": "📲 COM",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "📋 Conferir demandas de comunicação/acomodação da reta final e separar responsáveis",
+      "frente": "📋 OPS",
       "status": "🔥",
       "done": false
     },
     {
       "time": "dia todo",
-      "task": "🛒 Calendar XDental: criativos da semana anterior ativos no Meta — acompanhar performance/zerados",
-      "frente": "🛒 LT",
+      "task": "💎 CDM: montar calendário de disparos D-7, D-5, D-3 e D-1 até o evento de 20/06",
+      "frente": "💎 CDM",
       "status": "📅",
       "done": false
     },
     {
       "time": "dia todo",
-      "task": "🛒 Calendar XDental: Bruno entrega copies da nova semana",
-      "frente": "🛒 LT",
+      "task": "💎 Felipe/API: confirmar disparos, base, horário, link/pitch e tracking",
+      "frente": "💎 CDM",
       "status": "📅",
       "done": false
     },
     {
       "time": "dia todo",
-      "task": "🛒 Calendar XDental: Sérgio começa a gravar vídeos da nova semana",
-      "frente": "🛒 LT",
+      "task": "💎 CDM: monitorar vendas, respostas e sinais de presença/comparecimento",
+      "frente": "💎 CDM",
+      "status": "📅",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "🎓 Diplomado M6: manter PDF/material complementar emergencial como P0 e avançar base do pacote",
+      "frente": "🎓 DOP",
+      "status": "📅",
+      "done": false
+    },
+    {
+      "time": "dia todo",
+      "task": "🦷 OralPlanner: manter cobrança de cronograma de entrega com Felipe no rollover da semana",
+      "frente": "🦷 ORAL",
       "status": "📅",
       "done": false
     },
@@ -288,27 +311,13 @@
       "time": "dia todo",
       "task": "🎬 Plataforma: Victor Arguedas preparar curso esta semana e confirmar gravação 15-21/06",
       "frente": "🎬 PA",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "🎬 Plataforma: manter Fernando Pari e Joaquim Ariza como backup/pipeline do curso de julho",
-      "frente": "🎬 PA",
       "status": "📅",
       "done": false
     },
     {
       "time": "dia todo",
-      "task": "💎 CDM: monitorar resultado do disparo API, respostas, casos e vendas do dia",
-      "frente": "💎 CDM",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "💎 Biblioteca Elite: seguir classificação inicial dos casos por má oclusão usando áudio + mensagem + planilha",
-      "frente": "💎 ELITE",
+      "task": "🛒 Low Tickets: acompanhar produtos zerados e performance do dia",
+      "frente": "🛒 LT",
       "status": "📅",
       "done": false
     },
@@ -321,7 +330,7 @@
     },
     {
       "time": "fim do dia",
-      "task": "📡 Fechar quinta: Felipe/API enviado, OralPlanner com cronograma cobrado, LT do calendário checado e M6 avançado",
+      "task": "📡 Fechar sexta: briefing Fabião enviado, imagens encaminhadas/produzidas e checklist comunicação/acomodação revisado",
       "frente": "📡 RADAR",
       "status": "📅",
       "done": false
@@ -340,8 +349,8 @@
     "p2": 1,
     "p3": 1,
     "done": 0,
-    "tasks": 14
+    "tasks": 15
   },
-  "radarExtra": "Atualizado em 11/06: Calendar XDental trouxe rotina de quinta dos Low Tickets e M6 emergencial; áudio do Ruan adicionou Felipe/API e cobrança do cronograma do OralPlanner como prioridades do dia.",
+  "radarExtra": "Atualizado em 12/06: áudio do Ruan colocou a reta final de comunicação da Clínica de Maestría como P0 — teaser countdown com Fabião, imagens para grupos e conferência das demandas de comunicação/acomodação.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
