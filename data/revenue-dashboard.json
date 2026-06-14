@@ -1,0 +1,1469 @@
+{
+  "generated_at": "2026-06-14T19:40:41.633689-03:00",
+  "timezone": "America/Sao_Paulo",
+  "period": {
+    "start": "2026-06-01T00:00:00-03:00",
+    "end": "2026-06-14T19:40:41.633689-03:00",
+    "label": "June/2026"
+  },
+  "currency_note": "Valores convertidos para BRL com câmbio live best-effort (open.er-api) e fallback operacional quando necessário; próxima etapa: câmbio diário fechado/contábil.",
+  "target": {
+    "month_brl": null,
+    "daily_required_brl": null
+  },
+  "fx_to_brl_sample": {
+    "USD": 5.096372,
+    "EUR": 5.897513,
+    "MXN": 0.296146,
+    "ARS": 0.003562,
+    "GTQ": 0.678645,
+    "COP": 0.00146,
+    "CLP": 0.00564,
+    "PEN": 1.501078,
+    "BRL": 1.0
+  },
+  "summary": {
+    "total_brl_est": 95061.78,
+    "today_brl_est": 4539.13,
+    "orders": 1697,
+    "days": [
+      {
+        "name": "2026-06-01",
+        "gross_brl_est": 6168.12,
+        "orders": 98
+      },
+      {
+        "name": "2026-06-02",
+        "gross_brl_est": 9653.71,
+        "orders": 115
+      },
+      {
+        "name": "2026-06-03",
+        "gross_brl_est": 6276.12,
+        "orders": 107
+      },
+      {
+        "name": "2026-06-04",
+        "gross_brl_est": 8917.25,
+        "orders": 168
+      },
+      {
+        "name": "2026-06-05",
+        "gross_brl_est": 5705.17,
+        "orders": 134
+      },
+      {
+        "name": "2026-06-06",
+        "gross_brl_est": 6240.2,
+        "orders": 132
+      },
+      {
+        "name": "2026-06-07",
+        "gross_brl_est": 5792.79,
+        "orders": 128
+      },
+      {
+        "name": "2026-06-08",
+        "gross_brl_est": 3862.59,
+        "orders": 89
+      },
+      {
+        "name": "2026-06-09",
+        "gross_brl_est": 6307.05,
+        "orders": 126
+      },
+      {
+        "name": "2026-06-10",
+        "gross_brl_est": 10986.07,
+        "orders": 139
+      },
+      {
+        "name": "2026-06-11",
+        "gross_brl_est": 8970.02,
+        "orders": 120
+      },
+      {
+        "name": "2026-06-12",
+        "gross_brl_est": 5151.32,
+        "orders": 123
+      },
+      {
+        "name": "2026-06-13",
+        "gross_brl_est": 6492.23,
+        "orders": 133
+      },
+      {
+        "name": "2026-06-14",
+        "gross_brl_est": 4539.13,
+        "orders": 85
+      }
+    ],
+    "sources": [
+      {
+        "name": "Hotmart XDental",
+        "gross_brl_est": 71733.26,
+        "orders": 1578
+      },
+      {
+        "name": "Hotmart RX",
+        "gross_brl_est": 9186.83,
+        "orders": 98
+      },
+      {
+        "name": "Stripe LLC XDental",
+        "gross_brl_est": 8620.51,
+        "orders": 13
+      },
+      {
+        "name": "Stripe BR XDental",
+        "gross_brl_est": 5521.18,
+        "orders": 8
+      }
+    ],
+    "funnels": [
+      {
+        "name": "Lançamentos",
+        "gross_brl_est": 40865.01,
+        "orders": 1153
+      },
+      {
+        "name": "Plataforma de Assinatura",
+        "gross_brl_est": 26683.24,
+        "orders": 122
+      },
+      {
+        "name": "Low Tickets",
+        "gross_brl_est": 18267.56,
+        "orders": 371
+      },
+      {
+        "name": "Sniper Elite",
+        "gross_brl_est": 6344.65,
+        "orders": 2
+      },
+      {
+        "name": "Outros",
+        "gross_brl_est": 2901.31,
+        "orders": 49
+      }
+    ],
+    "products": [
+      {
+        "name": "Clínica de Maestría",
+        "gross_brl_est": 23721.8,
+        "orders": 813,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Lançamentos"
+      },
+      {
+        "name": "Subscription update",
+        "gross_brl_est": 11766.78,
+        "orders": 19,
+        "platforms": [
+          "Stripe"
+        ],
+        "funnel": "Plataforma de Assinatura"
+      },
+      {
+        "name": "OFERTA ESPECIAL: REPLAY + 2 EBOOKS",
+        "gross_brl_est": 10999.46,
+        "orders": 173,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Lançamentos"
+      },
+      {
+        "name": "Excellence Dental Academy 19",
+        "gross_brl_est": 9186.83,
+        "orders": 98,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Plataforma de Assinatura"
+      },
+      {
+        "name": "Sniper Elite - ES",
+        "gross_brl_est": 6344.65,
+        "orders": 2,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Sniper Elite"
+      },
+      {
+        "name": "Replay Clínica de Maestría",
+        "gross_brl_est": 6143.76,
+        "orders": 167,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Lançamentos"
+      },
+      {
+        "name": "E-book Mesialización de Molares: Dominio clínico, biomecánico y estratégico",
+        "gross_brl_est": 4477.61,
+        "orders": 85,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Low Tickets"
+      },
+      {
+        "name": "Los 13 Mandamientos",
+        "gross_brl_est": 4099.51,
+        "orders": 83,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Low Tickets"
+      },
+      {
+        "name": "Manual Traccion de Caninos Retenidos- Diagnostico, Interceptación y Traccion Clínica Paso a Paso",
+        "gross_brl_est": 3951.67,
+        "orders": 93,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Low Tickets"
+      },
+      {
+        "name": "Excellence Dental Academy [Club]",
+        "gross_brl_est": 3354.73,
+        "orders": 3,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Plataforma de Assinatura"
+      },
+      {
+        "name": "OFERTA ESPECIAL: BIBLIOTECA ORTODÓNCICA COMPLETA",
+        "gross_brl_est": 2901.31,
+        "orders": 49,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Outros"
+      },
+      {
+        "name": "Protocolo de Attachments ",
+        "gross_brl_est": 2795.96,
+        "orders": 48,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Low Tickets"
+      },
+      {
+        "name": "Subscription creation",
+        "gross_brl_est": 2374.91,
+        "orders": 2,
+        "platforms": [
+          "Stripe"
+        ],
+        "funnel": "Plataforma de Assinatura"
+      },
+      {
+        "name": "Playbook Flujo de Tratamiento con Alineadores",
+        "gross_brl_est": 1985.89,
+        "orders": 41,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Low Tickets"
+      },
+      {
+        "name": "E-book Explorando las Complicaciones: Mesialización de Molares, Mordida Abierta, Sonrisa Gingival",
+        "gross_brl_est": 956.93,
+        "orders": 21,
+        "platforms": [
+          "Hotmart"
+        ],
+        "funnel": "Low Tickets"
+      }
+    ],
+    "days_14": [
+      {
+        "name": "2026-06-01",
+        "gross_brl_est": 6168.12,
+        "orders": 98
+      },
+      {
+        "name": "2026-06-02",
+        "gross_brl_est": 9653.71,
+        "orders": 115
+      },
+      {
+        "name": "2026-06-03",
+        "gross_brl_est": 6276.12,
+        "orders": 107
+      },
+      {
+        "name": "2026-06-04",
+        "gross_brl_est": 8917.25,
+        "orders": 168
+      },
+      {
+        "name": "2026-06-05",
+        "gross_brl_est": 5705.17,
+        "orders": 134
+      },
+      {
+        "name": "2026-06-06",
+        "gross_brl_est": 6240.2,
+        "orders": 132
+      },
+      {
+        "name": "2026-06-07",
+        "gross_brl_est": 5792.79,
+        "orders": 128
+      },
+      {
+        "name": "2026-06-08",
+        "gross_brl_est": 3862.59,
+        "orders": 89
+      },
+      {
+        "name": "2026-06-09",
+        "gross_brl_est": 6307.05,
+        "orders": 126
+      },
+      {
+        "name": "2026-06-10",
+        "gross_brl_est": 10986.07,
+        "orders": 139
+      },
+      {
+        "name": "2026-06-11",
+        "gross_brl_est": 8970.02,
+        "orders": 120
+      },
+      {
+        "name": "2026-06-12",
+        "gross_brl_est": 5151.32,
+        "orders": 123
+      },
+      {
+        "name": "2026-06-13",
+        "gross_brl_est": 6492.23,
+        "orders": 133
+      },
+      {
+        "name": "2026-06-14",
+        "gross_brl_est": 4539.13,
+        "orders": 85
+      }
+    ]
+  },
+  "sources_status": [
+    {
+      "source": "Hotmart XDental",
+      "status": "ok",
+      "orders": 1578
+    },
+    {
+      "source": "Hotmart RX",
+      "status": "ok",
+      "orders": 98
+    },
+    {
+      "source": "Stripe LLC XDental",
+      "status": "ok",
+      "orders": 13
+    },
+    {
+      "source": "Stripe BR XDental",
+      "status": "ok",
+      "orders": 8
+    },
+    {
+      "source": "Meta Ads",
+      "status": "ok",
+      "campaigns": 98
+    }
+  ],
+  "errors": [],
+  "transactions_sample": [
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 6255312,
+      "product_name": "E-book Mesialización de Molares: Dominio clínico, biomecánico y estratégico",
+      "currency": "ARS",
+      "gross_original": 16229.0,
+      "gross_brl_est": 57.80633462395561,
+      "funnel": "Low Tickets",
+      "transaction_id": "HP2247255232"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "GTQ",
+      "gross_original": 42.0,
+      "gross_brl_est": 28.50309869401516,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2480797814"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "MXN",
+      "gross_original": 106.72,
+      "gross_brl_est": 31.604652801921866,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2595452987"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "MXN",
+      "gross_original": 106.72,
+      "gross_brl_est": 31.604652801921866,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP1637058801"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7407833,
+      "product_name": "Los 13 Mandamientos",
+      "currency": "MXN",
+      "gross_original": 213.44,
+      "gross_brl_est": 63.20930560384373,
+      "funnel": "Low Tickets",
+      "transaction_id": "HP2429256786"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7787242,
+      "product_name": "OFERTA ESPECIAL: BIBLIOTECA ORTODÓNCICA COMPLETA",
+      "currency": "MXN",
+      "gross_original": 213.44,
+      "gross_brl_est": 63.20930560384373,
+      "funnel": "Outros",
+      "transaction_id": "HP2414636328"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "MXN",
+      "gross_original": 106.72,
+      "gross_brl_est": 31.604652801921866,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2542757712"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7842609,
+      "product_name": "OFERTA ESPECIAL: REPLAY + 2 EBOOKS",
+      "currency": "MXN",
+      "gross_original": 213.44,
+      "gross_brl_est": 63.20930560384373,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2541218716"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "MXN",
+      "gross_original": 106.72,
+      "gross_brl_est": 31.604652801921866,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3572345768C1"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7841964,
+      "product_name": "Replay Clínica de Maestría",
+      "currency": "MXN",
+      "gross_original": 106.72,
+      "gross_brl_est": 31.604652801921866,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3572345768C2"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "PEN",
+      "gross_original": 19.0,
+      "gross_brl_est": 28.52047770299075,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3548876085"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "PEN",
+      "gross_original": 19.0,
+      "gross_brl_est": 28.52047770299075,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3248387194"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "PEN",
+      "gross_original": 19.0,
+      "gross_brl_est": 28.52047770299075,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP0017650680"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "PYG",
+      "gross_original": 31742.0,
+      "gross_brl_est": 26.732892485180194,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3606958369"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 6255312,
+      "product_name": "E-book Mesialización de Molares: Dominio clínico, biomecánico y estratégico",
+      "currency": "EUR",
+      "gross_original": 10.4,
+      "gross_brl_est": 61.334135395103885,
+      "funnel": "Low Tickets",
+      "transaction_id": "HP1503136059"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7407787,
+      "product_name": "Playbook Flujo de Tratamiento con Alineadores",
+      "currency": "ARS",
+      "gross_original": 16229.0,
+      "gross_brl_est": 57.80633462395561,
+      "funnel": "Low Tickets",
+      "transaction_id": "HP2110285147"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "DOP",
+      "gross_original": 309.0,
+      "gross_brl_est": 27.329003794132472,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP4243363698"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7842609,
+      "product_name": "OFERTA ESPECIAL: REPLAY + 2 EBOOKS",
+      "currency": "DOP",
+      "gross_original": 617.0,
+      "gross_brl_est": 54.56956421029041,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP0019959697"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7407769,
+      "product_name": "Protocolo de Attachments ",
+      "currency": "ARS",
+      "gross_original": 16229.0,
+      "gross_brl_est": 57.80633462395561,
+      "funnel": "Low Tickets",
+      "transaction_id": "HP1832527090"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7787242,
+      "product_name": "OFERTA ESPECIAL: BIBLIOTECA ORTODÓNCICA COMPLETA",
+      "currency": "ARS",
+      "gross_original": 16229.0,
+      "gross_brl_est": 57.80633462395561,
+      "funnel": "Outros",
+      "transaction_id": "HP1805594667"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7407833,
+      "product_name": "Los 13 Mandamientos",
+      "currency": "PEN",
+      "gross_original": 37.0,
+      "gross_brl_est": 55.53987763213988,
+      "funnel": "Low Tickets",
+      "transaction_id": "HP3783866242"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7407833,
+      "product_name": "Los 13 Mandamientos",
+      "currency": "MXN",
+      "gross_original": 213.44,
+      "gross_brl_est": 63.20930560384373,
+      "funnel": "Low Tickets",
+      "transaction_id": "HP0154529867"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "EUR",
+      "gross_original": 6.05,
+      "gross_brl_est": 35.679953763497934,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2912825380"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "HNL",
+      "gross_original": 142.0,
+      "gross_brl_est": 27.478348706050365,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2124859633"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7407833,
+      "product_name": "Los 13 Mandamientos",
+      "currency": "HNL",
+      "gross_original": 282.0,
+      "gross_brl_est": 54.56967841624087,
+      "funnel": "Low Tickets",
+      "transaction_id": "HP2174876990"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7787242,
+      "product_name": "OFERTA ESPECIAL: BIBLIOTECA ORTODÓNCICA COMPLETA",
+      "currency": "HNL",
+      "gross_original": 282.0,
+      "gross_brl_est": 54.56967841624087,
+      "funnel": "Outros",
+      "transaction_id": "HP2168336259"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "PYG",
+      "gross_original": 31742.0,
+      "gross_brl_est": 26.732892485180194,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2008912296"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7841964,
+      "product_name": "Replay Clínica de Maestría",
+      "currency": "PYG",
+      "gross_original": 31742.0,
+      "gross_brl_est": 26.732892485180194,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2013914032"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "BOB",
+      "gross_original": 37.0,
+      "gross_brl_est": 27.663551401869164,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP1792298666"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7841964,
+      "product_name": "Replay Clínica de Maestría",
+      "currency": "BOB",
+      "gross_original": 37.0,
+      "gross_brl_est": 27.663551401869164,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP1773061221"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7407833,
+      "product_name": "Los 13 Mandamientos",
+      "currency": "COP",
+      "gross_original": 37677.0,
+      "gross_brl_est": 55.01255212482022,
+      "funnel": "Low Tickets",
+      "transaction_id": "HP3019293556"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "MXN",
+      "gross_original": 106.72,
+      "gross_brl_est": 31.604652801921866,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3651066575"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "GTQ",
+      "gross_original": 42.0,
+      "gross_brl_est": 28.50309869401516,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP1630365351"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7842609,
+      "product_name": "OFERTA ESPECIAL: REPLAY + 2 EBOOKS",
+      "currency": "GTQ",
+      "gross_original": 82.0,
+      "gross_brl_est": 55.6489069740296,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP1620361880"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "PEN",
+      "gross_original": 19.0,
+      "gross_brl_est": 28.52047770299075,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2184049667"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7842609,
+      "product_name": "OFERTA ESPECIAL: REPLAY + 2 EBOOKS",
+      "currency": "PEN",
+      "gross_original": 37.0,
+      "gross_brl_est": 55.53987763213988,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2184819165"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "USD",
+      "gross_original": 5.0,
+      "gross_brl_est": 25.48186201062084,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2320635526"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "MXN",
+      "gross_original": 106.72,
+      "gross_brl_est": 31.604652801921866,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2974924840C1"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7841964,
+      "product_name": "Replay Clínica de Maestría",
+      "currency": "MXN",
+      "gross_original": 106.72,
+      "gross_brl_est": 31.604652801921866,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2974924840C2"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "MXN",
+      "gross_original": 106.72,
+      "gross_brl_est": 31.604652801921866,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2680591931"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "USD",
+      "gross_original": 5.0,
+      "gross_brl_est": 25.48186201062084,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3499337590"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7842609,
+      "product_name": "OFERTA ESPECIAL: REPLAY + 2 EBOOKS",
+      "currency": "USD",
+      "gross_original": 10.0,
+      "gross_brl_est": 50.96372402124168,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3483562886"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "PEN",
+      "gross_original": 19.0,
+      "gross_brl_est": 28.52047770299075,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3320814101"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7842609,
+      "product_name": "OFERTA ESPECIAL: REPLAY + 2 EBOOKS",
+      "currency": "PEN",
+      "gross_original": 37.0,
+      "gross_brl_est": 55.53987763213988,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3407767352"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "USD",
+      "gross_original": 5.0,
+      "gross_brl_est": 25.48186201062084,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP2904146366"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "CLP",
+      "gross_original": 5603.0,
+      "gross_brl_est": 31.603025123011804,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP1076204342"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "MXN",
+      "gross_original": 106.72,
+      "gross_brl_est": 31.604652801921866,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP1947291176"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "USD",
+      "gross_original": 5.0,
+      "gross_brl_est": 25.48186201062084,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP1697589140"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 5544688,
+      "product_name": "Manual Traccion de Caninos Retenidos- Diagnostico, Interceptación y Traccion Clínica Paso a Paso",
+      "currency": "USD",
+      "gross_original": 5.0,
+      "gross_brl_est": 25.48186201062084,
+      "funnel": "Low Tickets",
+      "transaction_id": "HP1680275439"
+    },
+    {
+      "source": "Hotmart XDental",
+      "account": "Hotmart XDental",
+      "platform": "Hotmart",
+      "date": "2026-06-01",
+      "product_id": 7839134,
+      "product_name": "Clínica de Maestría",
+      "currency": "USD",
+      "gross_original": 5.0,
+      "gross_brl_est": 25.48186201062084,
+      "funnel": "Lançamentos",
+      "transaction_id": "HP3090380158"
+    }
+  ],
+  "ad_spend": {
+    "source": "Meta Ads",
+    "status": "ok",
+    "month_brl_est": 74598.56,
+    "ytd_brl_est": 119440.93,
+    "by_funnel": [
+      {
+        "name": "Lançamentos",
+        "spend_brl_est": 61206.57,
+        "campaigns": 54
+      },
+      {
+        "name": "Low Tickets",
+        "spend_brl_est": 13391.99,
+        "campaigns": 44
+      }
+    ],
+    "by_name": [
+      {
+        "name": "Clínica de Maestría",
+        "spend_brl_est": 61206.57,
+        "campaigns": 54
+      },
+      {
+        "name": "13 Mandamientos",
+        "spend_brl_est": 3459.11,
+        "campaigns": 8
+      },
+      {
+        "name": "Mesialización de Molares",
+        "spend_brl_est": 2816.41,
+        "campaigns": 8
+      },
+      {
+        "name": "Attachments",
+        "spend_brl_est": 2035.69,
+        "campaigns": 3
+      },
+      {
+        "name": "Tracción de Caninos",
+        "spend_brl_est": 2012.1,
+        "campaigns": 10
+      },
+      {
+        "name": "Flujo de Tratamiento",
+        "spend_brl_est": 1921.33,
+        "campaigns": 9
+      },
+      {
+        "name": "Explorando las Complicaciones",
+        "spend_brl_est": 1147.35,
+        "campaigns": 6
+      }
+    ],
+    "campaigns_sample": [
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52588902286939",
+        "campaign_name": "29_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVO_P4_-_PQ_10-06-2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 1644.34,
+        "spend_brl_est": 8380.168995708855
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52578610322339",
+        "campaign_name": "00_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVO_P1_-_LEVA_1_-_PQ_30_05_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 806.06,
+        "spend_brl_est": 4107.981938456207
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52585411521539",
+        "campaign_name": "11.1_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_TICKET_OB_-_PF_04_05_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 733.11,
+        "spend_brl_est": 3736.201571721249
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52585411778339",
+        "campaign_name": "16.1_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_PUBLICO_P1_-_ABERTO_-_PF_07_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 583.86,
+        "spend_brl_est": 2975.5679907042168
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52580645972139",
+        "campaign_name": "05_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVO_P3_-_LEVA_1_-_PF_02_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 500.66,
+        "spend_brl_est": 2551.5498068474863
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52583377292339",
+        "campaign_name": "20_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVOS_-_LEVA_2_-_PQ_05/06/2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 496.83,
+        "spend_brl_est": 2532.0307005473505
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52580644145139",
+        "campaign_name": "03_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVO_P1_-_LEVA_1_-_PF_02_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 477.05,
+        "spend_brl_est": 2431.2244544333344
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52588886666739",
+        "campaign_name": "28_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVO_P4_-_INTERESSE_-_PF_10_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 432.7,
+        "spend_brl_est": 2205.2003383991278
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52581526066739",
+        "campaign_name": "06_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVO_P1_S/POPUP_-_LEVA_1_-_PQ_03_05_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 407.74,
+        "spend_brl_est": 2077.9948832421082
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52581535689139",
+        "campaign_name": "07_-_XDENTAL_VENDAS_CDM_ABO_-_BEST_CRIATIVOS_1_4_1_P1_-_PQ_03/06/2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 365.91,
+        "spend_brl_est": 1864.8136256612545
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52582663814739",
+        "campaign_name": "15_-_XDENTAL_VENDAS_CDM_ABO_-_BEST_CRIATIVOS_1_4_1_P3_-_PF_04/06/2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 353.34,
+        "spend_brl_est": 1800.7522245665534
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52587604505339",
+        "campaign_name": "27_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVO_P4_-_PQ_09_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 300.82,
+        "spend_brl_est": 1533.0907460069923
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52578614188139",
+        "campaign_name": "02_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVO_P3_-_LEVA_1_-_PQ_30_05_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 296.17,
+        "spend_brl_est": 1509.392614337115
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52591294170539",
+        "campaign_name": "36_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVO_-_INTERESSE_-_PF_12_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 286.56,
+        "spend_brl_est": 1460.4164755527017
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52582661218739",
+        "campaign_name": "14_-_XDENTAL_VENDAS_CDM_ABO_-_BEST_CRIATIVOS_1_4_1_P1_-_PF_04/06/2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 280.83,
+        "spend_brl_est": 1431.21426168853
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_1365572205416501",
+        "campaign_id": "120247525516390246",
+        "campaign_name": "01_XDENTAL_PERPETUO_VENDAS_13MAN_ABO_-_TESTE_DE_CRIATIVO_-_LEVA_02_IMG_-_PF_22_05_2026",
+        "name": "13 Mandamientos",
+        "funnel": "Low Tickets",
+        "currency": "USD",
+        "spend_original": 275.28,
+        "spend_brl_est": 1402.9293948567408
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52588946711339",
+        "campaign_name": "30_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_PAGINAS_-_CARGOS_-_PF_10_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 274.93,
+        "spend_brl_est": 1401.1456645159976
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52582657921939",
+        "campaign_name": "12_-_XDENTAL_VENDAS_CDM_ABO_-_ESCASSEZ_MIX_PQ_03_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 256.71,
+        "spend_brl_est": 1308.289759349295
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52591286027739",
+        "campaign_name": "34_-_XDENTAL_VENDAS_CDM_ABO_-_SEGUIDORES_-_PQ_12_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 249.95,
+        "spend_brl_est": 1273.8382819109358
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52587603744939",
+        "campaign_name": "26_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_CRIATIVO_P4_-_INTERESSE_-_PF_09_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 248.73,
+        "spend_brl_est": 1267.6207075803443
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52581536537339",
+        "campaign_name": "08_-_XDENTAL_VENDAS_CDM_ABO_-_BEST_CRIATIVOS__1_4_1_P3_-_PQ_03/06/2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 243.53,
+        "spend_brl_est": 1241.1195710892987
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52585423418739",
+        "campaign_name": "23_-_XDENTAL_VENDAS_CDM_CBO_1_5_4_-_TESTE_DE_ESTRUTURA_P1_-_ABERTO_-_PF_07_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 192.89,
+        "spend_brl_est": 983.0392726457308
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_1466745004611733",
+        "campaign_id": "120251965432100538",
+        "campaign_name": "02_XDENTAL_PERPETUO_VENDAS_ATT_ABO_-_TESTE_DE_CRIATIVO_-_LEVA_02_IMG_-_PF_22_05_2026",
+        "name": "Attachments",
+        "funnel": "Low Tickets",
+        "currency": "USD",
+        "spend_original": 186.27,
+        "spend_brl_est": 949.3012873436688
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52587579440339",
+        "campaign_name": "18.2_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_PUBLICO_P4_-_LKL1%ALUNOS_-_PF_09_06_2026",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 185.16,
+        "spend_brl_est": 943.644313977311
+      },
+      {
+        "source": "Meta Ads",
+        "account": "act_910603368132181",
+        "campaign_id": "52591293140339",
+        "campaign_name": "30.1_-_XDENTAL_VENDAS_CDM_ABO_-_TESTE_DE_PAGINAS_-_CARGOS_-_PF_12_06_2026 — Cópia",
+        "name": "Clínica de Maestría",
+        "funnel": "Lançamentos",
+        "currency": "USD",
+        "spend_original": 175.62,
+        "spend_brl_est": 895.0249212610464
+      }
+    ]
+  },
+  "receivables": {
+    "status": "beta",
+    "source": "Google Sheets export — Cobrança Xdental",
+    "spreadsheet_id": "1psxy_r11E6g03TudqWBVWjPTJJZOiux-9TsZZHYeYSA",
+    "spreadsheet_name": "Cobrança Xdental",
+    "generated_at": "2026-06-12T22:18:45.090542-03:00",
+    "months": [
+      {
+        "month": "2026-06",
+        "expected_brl": 0.0,
+        "overdue_brl": 0.0,
+        "received_brl": 21527.68,
+        "pending_installments": 0,
+        "overdue_installments": 0
+      },
+      {
+        "month": "2026-07",
+        "expected_brl": 16197.13,
+        "overdue_brl": 0.0,
+        "received_brl": 0.0,
+        "pending_installments": 18,
+        "overdue_installments": 0
+      },
+      {
+        "month": "2026-08",
+        "expected_brl": 444.9,
+        "overdue_brl": 0.0,
+        "received_brl": 0.0,
+        "pending_installments": 2,
+        "overdue_installments": 0
+      }
+    ],
+    "products": [
+      {
+        "name": "Black Ortho Infinity",
+        "received_brl": 853443.56,
+        "expected_brl": 0.0,
+        "overdue_brl": 23885.21,
+        "pending_installments": 0,
+        "overdue_installments": 20
+      },
+      {
+        "name": "Sniper & Fredom",
+        "received_brl": 61403.74,
+        "expected_brl": 15363.67,
+        "overdue_brl": 4263.96,
+        "pending_installments": 14,
+        "overdue_installments": 4
+      },
+      {
+        "name": "Sniper VIP Mayo",
+        "received_brl": 118540.64,
+        "expected_brl": 0.0,
+        "overdue_brl": 17033.28,
+        "pending_installments": 0,
+        "overdue_installments": 5
+      },
+      {
+        "name": "Renovacion Sniper Elite",
+        "received_brl": 444.9,
+        "expected_brl": 889.8,
+        "overdue_brl": 3728.96,
+        "pending_installments": 4,
+        "overdue_installments": 4
+      },
+      {
+        "name": "Excellende Dental Academy",
+        "received_brl": 41668.96,
+        "expected_brl": 388.56,
+        "overdue_brl": 1588.96,
+        "pending_installments": 2,
+        "overdue_installments": 4
+      },
+      {
+        "name": "Dip Ortho Pro",
+        "received_brl": 99715.91,
+        "expected_brl": 0.0,
+        "overdue_brl": 1195.38,
+        "pending_installments": 0,
+        "overdue_installments": 1
+      },
+      {
+        "name": "Freedom",
+        "received_brl": 16754.05,
+        "expected_brl": 0.0,
+        "overdue_brl": 0.0,
+        "pending_installments": 0,
+        "overdue_installments": 0
+      }
+    ],
+    "pending_brl": 16642.03,
+    "overdue_brl": 51695.75,
+    "pending_installments": 20,
+    "overdue_installments": 38,
+    "at_risk_count": 86,
+    "source_note": "Forecast beta gerado da planilha Cobrança Xdental."
+  }
+}

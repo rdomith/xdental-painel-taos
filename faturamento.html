@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard Financeiro — XDental</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500;600&display=swap');
+:root{
+  --bg:#07070d; --panel:#10101b; --panel2:#151527; --panel3:#1c1731;
+  --text:#f7f4ff; --muted:#b2aac8; --faint:#817a96;
+  --line:rgba(255,255,255,.09); --line2:rgba(255,255,255,.16);
+  --violet:#9d62ff; --violet2:#c9a7ff; --cyan:#4ce6ff; --green:#57f2b4; --pink:#ff4fd8; --amber:#ffc857; --red:#ff6b8a;
+  --shadow:0 22px 90px rgba(0,0,0,.35); --glow-v:0 0 28px rgba(157,98,255,.26); --glow-c:0 0 26px rgba(76,230,255,.22); --glow-g:0 0 26px rgba(87,242,180,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{min-height:100%;background:#07070d;scrollbar-color:rgba(157,98,255,.35) rgba(255,255,255,.04);scrollbar-width:thin}
+body{min-height:100vh;background:radial-gradient(circle at 10% -12%,rgba(157,98,255,.26),transparent 34%),radial-gradient(circle at 88% 7%,rgba(76,230,255,.18),transparent 30%),linear-gradient(135deg,#06060b 0%,#0a0713 48%,#06060b 100%);font-family:'DM Sans',system-ui,sans-serif;color:var(--text);padding:26px;}
+body:before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.024) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.024) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.78),transparent 86%);pointer-events:none}
+.wrap{max-width:1460px;margin:0 auto;position:relative}
+.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:22px}.brand{display:flex;gap:18px;align-items:center}.logoBox{width:176px;height:76px;border:1px solid rgba(255,255,255,.1);border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden}.logoBox img{max-width:148px;max-height:48px;width:auto;height:auto;object-fit:contain;display:block;filter:drop-shadow(0 10px 22px rgba(0,0,0,.35))}.eyebrow{font:600 11px/1 'DM Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:10px;text-shadow:var(--glow-c)}h1{font-size:39px;line-height:1;font-weight:800;letter-spacing:-.055em}.sub{margin-top:10px;color:var(--muted);font-size:14px}.pill{border:1px solid rgba(201,167,255,.28);background:rgba(157,98,255,.11);box-shadow:var(--glow-v);border-radius:999px;padding:9px 14px;color:var(--violet2);font:600 12px/1 'DM Mono',monospace;white-space:nowrap}.pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 15px var(--green);margin-right:7px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:-4px 0 14px}.tab{border:1px solid var(--line);background:rgba(255,255,255,.035);color:var(--muted);border-radius:999px;padding:9px 13px;font-size:12px;font-weight:800;letter-spacing:.02em}.tab.active{color:#fff;border-color:rgba(76,230,255,.42);background:linear-gradient(135deg,rgba(76,230,255,.16),rgba(157,98,255,.18));box-shadow:var(--glow-c)}.goalGrid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:14px;margin-bottom:14px}.goal{padding:19px}.goalHead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:14px}.goalName{font-size:13px;font-weight:800;color:#fff}.goalMeta{font:700 10px 'DM Mono';color:var(--cyan);letter-spacing:.08em;text-transform:uppercase}.goalValue{font-size:32px;font-weight:800;letter-spacing:-.045em}.goalSub{margin-top:5px;color:var(--muted);font-size:12px}.progress{height:12px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.06);overflow:hidden;margin:14px 0}.progressFill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--violet),var(--cyan),var(--green));box-shadow:var(--glow-c)}.goalStats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.goalStat{border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.032);border-radius:14px;padding:10px}.goalStat span{display:block;color:var(--faint);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.05em}.goalStat b{display:block;margin-top:5px;font-size:13px}.grid-kpi{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:14px;margin-bottom:14px}.card{background:linear-gradient(180deg,rgba(255,255,255,.062),rgba(255,255,255,.026));border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);position:relative;overflow:hidden}.card:after{content:"";position:absolute;inset:0;border-radius:24px;background:linear-gradient(135deg,rgba(255,255,255,.09),transparent 26%,transparent 72%,rgba(157,98,255,.08));pointer-events:none}.kpi{padding:20px}.klabel{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:800}.kvalue{margin-top:10px;font-size:31px;font-weight:800;letter-spacing:-.045em}.kvalue.big{font-size:47px}.ksub{margin-top:7px;color:var(--faint);font-size:12px;line-height:1.4}.ok{color:var(--green)}.warn{color:var(--amber)}.cyan{color:var(--cyan)}.violet{color:var(--violet2)}.red{color:var(--red)}
+.main{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(370px,.82fr);gap:14px}.panel{padding:20px}.head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:16px}.title{font-size:15px;font-weight:800;letter-spacing:-.02em}.meta{font:600 11px/1.25 'DM Mono',monospace;color:var(--faint);text-align:right}.chartWrap{position:relative}.projectionBadge{position:absolute;right:12px;top:12px;z-index:2;border:1px solid rgba(87,242,180,.28);background:rgba(87,242,180,.09);color:var(--green);border-radius:15px;padding:10px 12px;box-shadow:var(--glow-g)}.projectionBadge b{display:block;font-size:18px;letter-spacing:-.035em}.projectionBadge span{display:block;margin-top:3px;font:600 10px 'DM Mono';color:#bafbe2}#lineChart{width:100%;height:430px;display:block}.chart-bg{fill:rgba(255,255,255,.02)}.axis{stroke:rgba(255,255,255,.08);stroke-width:1}.area{fill:url(#areaGrad)}.line{fill:none;stroke:url(#lineGrad);stroke-width:4;filter:drop-shadow(0 0 10px rgba(76,230,255,.55))}.projection-line{fill:none;stroke:rgba(87,242,180,.8);stroke-width:3;stroke-dasharray:9 8;filter:drop-shadow(0 0 8px rgba(87,242,180,.35))}.dot{fill:#fff;stroke:var(--cyan);stroke-width:3;filter:drop-shadow(0 0 8px rgba(76,230,255,.7))}.axis-label{fill:#9d96b5;font:600 11px 'DM Mono'}.point-label{fill:#f7f4ff;font:700 11px 'DM Sans';paint-order:stroke;stroke:#090711;stroke-width:4;stroke-linejoin:round}.projection-label{fill:#bafbe2;font:700 11px 'DM Sans';paint-order:stroke;stroke:#090711;stroke-width:4;stroke-linejoin:round}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.funnelGrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:14px}.funnelCard{border:1px solid rgba(255,255,255,.09);background:linear-gradient(145deg,rgba(157,98,255,.13),rgba(76,230,255,.045));border-radius:22px;padding:16px;min-height:136px;position:relative;overflow:hidden}.funnelCard:before{content:"";position:absolute;right:-20px;top:-24px;width:86px;height:86px;border-radius:50%;background:rgba(76,230,255,.08);filter:blur(4px)}.ficon{width:42px;height:42px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;background:linear-gradient(135deg,rgba(76,230,255,.20),rgba(157,98,255,.24));border:1px solid rgba(255,255,255,.13);box-shadow:var(--glow-c)}.ficon svg{width:27px;height:27px;display:block;filter:drop-shadow(0 4px 10px rgba(0,0,0,.25))}.fname{font-size:12px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.045em;min-height:30px}.fvalue{margin-top:9px;font-size:25px;font-weight:800;letter-spacing:-.045em}.fsub{margin-top:5px;color:var(--faint);font-size:12px}.barrow{display:grid;grid-template-columns:120px 1fr 88px;gap:10px;align-items:center;margin:12px 0}.barlabel{color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.track{height:12px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid rgba(255,255,255,.05)}.fill{height:100%;background:linear-gradient(90deg,var(--violet),var(--cyan));border-radius:999px;box-shadow:var(--glow-c)}.money{text-align:right;font:600 11px 'DM Mono';color:#e9e5ff}.source{display:flex;justify-content:space-between;gap:12px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:16px;padding:12px;margin-bottom:9px}.source b{font-size:13px}.source p{margin-top:4px;color:var(--faint);font-size:12px;line-height:1.35}.source span{font:600 11px 'DM Mono';color:var(--muted)}.badge-ok{color:var(--green)}.badge-err{color:var(--red)}
+.table{width:100%;border-collapse:collapse}.table th{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);text-align:left;padding:0 0 10px}.table th:last-child,.table td:last-child{text-align:right}.table td{padding:11px 0;border-top:1px solid rgba(255,255,255,.06);font-size:13px}.prod{font-weight:700;max-width:360px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tag{font-size:10px;color:var(--violet2);border:1px solid rgba(157,98,255,.25);background:rgba(157,98,255,.08);border-radius:999px;padding:3px 8px;display:inline-block}.empty{color:var(--faint);font-size:13px;padding:30px 0}.foot{margin-top:16px;color:var(--faint);font-size:12px;line-height:1.55}.billingGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}.productGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.billCard{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.035);border-radius:20px;padding:15px;min-height:126px}.billTop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.billName{font-size:13px;font-weight:800;line-height:1.2}.billValue{margin-top:12px;font-size:23px;font-weight:800;letter-spacing:-.04em}.billMeta{margin-top:8px;color:var(--faint);font-size:12px;line-height:1.35}.miniBadge{font:700 10px 'DM Mono';color:var(--amber);border:1px solid rgba(255,200,87,.22);background:rgba(255,200,87,.08);border-radius:999px;padding:4px 7px;white-space:nowrap}.monthBox{display:grid;grid-template-columns:72px 1fr 92px;gap:10px;align-items:center;margin:11px 0}.monthLabel{font:700 11px 'DM Mono';color:var(--muted)}.sectionTitle{margin:18px 0 12px;font-size:17px;font-weight:800;letter-spacing:-.025em}
+@media(max-width:1120px){.grid-kpi,.goalGrid,.main,.split,.funnelGrid,.billingGrid,.productGrid,.goalStats{grid-template-columns:1fr}.top,.brand{display:block}.logoBox{margin-bottom:14px}.pill{display:inline-flex;margin-top:14px}h1{font-size:31px}.kvalue.big{font-size:38px}.barrow{grid-template-columns:96px 1fr 78px}.projectionBadge{position:static;margin-bottom:8px}.monthBox{grid-template-columns:64px 1fr 80px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand">
+      <div class="logoBox"><img src="assets/xdental-logo-fundo-escuro.png" alt="XDental" /></div>
+      <div><div class="eyebrow">XDENTAL</div><h1>Dashboard Financeiro</h1><div class="sub">Visão executiva de receita, gastos com tráfego, funis ativos e cobranças previstas.</div></div>
+    </div>
+    <div class="pill"><span class="pulse"></span><span id="updated">Carregando…</span></div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active">GERAL</div><div class="tab">TRÁFEGO</div><div class="tab">LOW TICKETS</div><div class="tab">LANÇAMENTOS</div><div class="tab">PLATAFORMA</div><div class="tab">HIGH TICKET</div><div class="tab">COBRANÇAS</div>
+  </div>
+
+  <div class="goalGrid">
+    <div class="card goal"><div class="goalHead"><div><div class="goalName">Faturamento do mês</div><div class="goalMeta">realizado x meta</div></div><div class="tag" id="goalPct">META A DEFINIR</div></div><div id="goalRevenue" class="goalValue">—</div><div class="progress"><div id="goalFill" class="progressFill" style="width:0%"></div></div><div class="goalStats"><div class="goalStat"><span>Faltam</span><b id="goalMissing">—</b></div><div class="goalStat"><span>Meta/dia</span><b id="goalPerDay">—</b></div><div class="goalStat"><span>Fazendo/dia</span><b id="goalAvg">—</b></div><div class="goalStat"><span>Proj. mês</span><b id="goalProjected">—</b></div></div></div>
+    <div class="card goal"><div class="goalHead"><div><div class="goalName">Fluxo futuro</div><div class="goalMeta">parcelas previstas</div></div><div class="tag">COBRANÇA</div></div><div id="futureCash" class="goalValue violet">—</div><div class="goalSub" id="futureCashSub">parcelas futuras em aberto</div><div class="progress"><div id="futureFill" class="progressFill" style="width:0%"></div></div><div class="goalSub">Separado de faturamento realizado para não misturar caixa futuro com venda aprovada.</div></div>
+    <div class="card goal"><div class="goalHead"><div><div class="goalName">Alertas financeiros</div><div class="goalMeta">risco operacional</div></div><div class="tag">RADAR</div></div><div id="riskCash" class="goalValue warn">—</div><div class="goalSub" id="riskCashSub">cobrança vencida / alunos em risco</div><div class="goalStats" style="grid-template-columns:1fr 1fr"><div class="goalStat"><span>Vendas</span><b id="goalOrders">—</b></div><div class="goalStat"><span>Ticket médio</span><b id="avgTicket">—</b></div></div></div>
+  </div>
+
+  <div class="grid-kpi">
+    <div class="card kpi"><div class="klabel">Receita MTD</div><div id="total" class="kvalue big">—</div><div id="period" class="ksub">—</div></div>
+    <div class="card kpi"><div class="klabel">Gasto tráfego MTD</div><div id="adSpendMonth" class="kvalue warn">—</div><div class="ksub">Meta Ads · mês atual</div></div>
+    <div class="card kpi"><div class="klabel">Projeção mês</div><div id="projection" class="kvalue ok">—</div><div id="projectionSub" class="ksub">ritmo atual</div></div>
+    <div class="card kpi"><div class="klabel">Parcelas futuras</div><div id="pending" class="kvalue violet">—</div><div id="pendingSub" class="ksub">a receber</div></div>
+    <div class="card kpi"><div class="klabel">Cobrança vencida</div><div id="overdue" class="kvalue warn">—</div><div id="overdueSub" class="ksub">em aberto</div></div>
+  </div>
+
+
+  <div class="card panel" style="margin-bottom:14px">
+    <div class="head"><div><div class="title">Evolução diária de faturamento</div><div class="ksub">Linha principal com o faturamento realizado em cada dia. A linha de meta entra quando a meta mensal for definida.</div></div><div class="meta">mês atual</div></div>
+    <div class="chartWrap"><div class="projectionBadge"><b id="projectionBadge">—</b><span>projeção no ritmo atual</span></div><svg id="lineChart" viewBox="0 0 900 430" preserveAspectRatio="none"></svg></div>
+  </div>
+
+  <div class="card panel" style="margin-bottom:14px">
+    <div class="head"><div><div class="title">Gastos com tráfego</div><div class="ksub">Meta Ads consolidado no mesmo painel financeiro. Mês atual em evidência, com acumulado anual e quebra por funil/campanha.</div></div><div class="meta">Meta Ads</div></div>
+    <div class="goalGrid" style="grid-template-columns:1fr 1fr 1fr;margin-bottom:0">
+      <div class="goalStat"><span>Gasto do mês</span><b id="trafficMonth">—</b></div>
+      <div class="goalStat"><span>Gasto anual</span><b id="trafficYtd">—</b></div>
+      <div class="goalStat"><span>Fonte</span><b id="trafficStatus">Meta Ads</b></div>
+    </div>
+    <div class="split">
+      <div><div class="sectionTitle">Gasto por funil</div><div id="trafficFunnels"></div></div>
+      <div><div class="sectionTitle">Gasto por campanha/produto</div><div id="trafficCampaigns"></div></div>
+    </div>
+  </div>
+
+
+  <div class="main">
+    <div>
+      <div class="sectionTitle">Receita por frente de trabalho</div>
+      <div id="funnelCards" class="funnelGrid"></div>
+
+      <div class="split">
+        <div class="card panel"><div class="head"><div class="title">Ranking de funis</div><div class="meta">MTD</div></div><div id="funnels"></div></div>
+        <div class="card panel"><div class="head"><div class="title">Receita por fonte</div><div class="meta">conexões</div></div><div id="sources"></div></div>
+      </div>
+
+    </div>
+
+    <div>
+      <div class="card panel" style="margin-top:14px"><div class="head"><div><div class="title">Cobranças e receita futura</div><div class="ksub">Previsão por mês a partir da planilha de cobrança.</div></div><div class="meta">forecast</div></div><div id="receivablesMonths"></div></div>
+      <div class="card panel" style="margin-top:14px"><div class="head"><div class="title">Resumo de risco</div><div class="meta">pendências</div></div><div id="receivablesRisk" class="source"><div><b>Carregando cobranças…</b><p>Consolidando parcelas futuras, vencidas e alunos em risco.</p></div><span class="warn">load</span></div></div>
+    </div>
+  </div>
+
+  <div class="card panel" style="margin-top:14px"><div class="head"><div><div class="title">Produtos vendidos</div><div class="ksub">Tabela agora separa frente e contexto da venda para evitar distorção entre produto principal, recorrência, combo e classificação pendente.</div></div><div class="meta">top 25 MTD</div></div><table class="table"><thead><tr><th>Produto</th><th>Frente</th><th>Contexto</th><th>Pedidos</th><th>Receita</th></tr></thead><tbody id="products"></tbody></table></div>
+
+  <div class="sectionTitle">Produtos com parcelas a receber</div>
+  <div id="billingProducts" class="productGrid"></div>
+</div>
+<script>
+const money = v => (v||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+const shortMoney = v => Math.abs(v||0) >= 1000000 ? 'R$ '+((v||0)/1000000).toLocaleString('pt-BR',{maximumFractionDigits:1})+' mi' : money(v);
+const shortDate = d => { const [y,m,day]=d.split('-'); return `${day}/${m}` };
+const monthLabel = ym => { const [y,m]=ym.split('-'); return `${m}/${y.slice(2)}` };
+function funnelIcon(name){
+ const icons={
+  'Low Tickets':`<svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="27" fill="#ff5b7f"/><circle cx="32" cy="32" r="19" fill="#fff"/><circle cx="32" cy="32" r="11" fill="#4ce6ff"/><circle cx="32" cy="32" r="5" fill="#07070d"/></svg>`,
+  'Plataforma de Assinatura':`<svg viewBox="0 0 64 64"><path d="M32 6 56 25 32 58 8 25Z" fill="#7df7d0"/><path d="M8 25h48L45 38H19Z" fill="#c9a7ff"/><path d="M20 25 32 6l12 19-12 33Z" fill="#4ce6ff" opacity=".92"/></svg>`,
+  'Lançamentos':`<svg viewBox="0 0 64 64"><path d="M36 5c11 5 18 15 20 29L38 52 12 26C21 11 29 6 36 5Z" fill="#9d62ff"/><path d="M38 15c5 3 8 8 9 15L36 41 23 28c5-8 10-12 15-13Z" fill="#4ce6ff"/><circle cx="39" cy="25" r="5" fill="#fff"/><path d="M17 37 6 58l21-11Z" fill="#ffc857"/></svg>`,
+  'Sniper Elite':`<svg viewBox="0 0 64 64"><path d="M8 34c13-4 19-14 24-26 6 13 13 22 24 26-10 0-17 4-24 18C25 38 18 34 8 34Z" fill="#ffc857"/><path d="M25 29h14l-7 22Z" fill="#ff6b8a"/><circle cx="32" cy="25" r="5" fill="#07070d"/></svg>`,
+  'Diplomado':`<svg viewBox="0 0 64 64"><path d="M32 11 59 24 32 37 5 24Z" fill="#4ce6ff"/><path d="M15 31v13c7 8 27 8 34 0V31L32 39Z" fill="#9d62ff"/><path d="M55 25v17" stroke="#ffc857" stroke-width="4" stroke-linecap="round"/></svg>`,
+  'Diplomado Ortho Pro':`<svg viewBox="0 0 64 64"><path d="M32 11 59 24 32 37 5 24Z" fill="#4ce6ff"/><path d="M15 31v13c7 8 27 8 34 0V31L32 39Z" fill="#9d62ff"/><path d="M55 25v17" stroke="#ffc857" stroke-width="4" stroke-linecap="round"/></svg>`,
+  'Sniper VIP':`<svg viewBox="0 0 64 64"><path d="M18 56h28l4-32-11 9-7-19-7 19-11-9Z" fill="#ffc857"/><path d="M18 56h28" stroke="#fff" stroke-width="5" stroke-linecap="round"/></svg>`,
+  'Outros':`<svg viewBox="0 0 64 64"><path d="M13 22 32 11l19 11v24L32 57 13 46Z" fill="#817a96"/><path d="M13 22 32 33l19-11" fill="none" stroke="#fff" stroke-width="4" opacity=".75"/><path d="M32 33v24" stroke="#fff" stroke-width="4" opacity=".55"/></svg>`
+ };
+ return icons[name] || `<svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="24" fill="#4ce6ff"/><path d="M20 43h24M20 32h24M20 21h24" stroke="#07070d" stroke-width="5" stroke-linecap="round"/></svg>`;
+}
+function calcProjection(d){
+ const total=d.summary.total_brl_est||0; const end=new Date(d.period.end); const day=end.getDate(); const last=new Date(end.getFullYear(), end.getMonth()+1, 0).getDate(); const avg=total/Math.max(day,1); return {avg, projected:avg*last, day, last};
+}
+function bars(el, rows){ const max=Math.max(...rows.map(r=>r.gross_brl_est),1); el.innerHTML = rows.map(r=>`<div class="barrow"><div class="barlabel" title="${r.name}">${r.name}</div><div class="track"><div class="fill" style="width:${Math.max(4,r.gross_brl_est/max*100)}%"></div></div><div class="money">${money(r.gross_brl_est)}</div></div>`).join('') || '<div class="empty">Sem dados.</div>'; }
+function renderFunnelCards(rows){
+ const total = rows.reduce((a,r)=>a+(r.gross_brl_est||0),0)||1;
+ document.getElementById('funnelCards').innerHTML = rows.map(r=>`<div class="funnelCard"><div class="ficon">${funnelIcon(r.name)}</div><div class="fname">${r.name}</div><div class="fvalue">${shortMoney(r.gross_brl_est)}</div><div class="fsub">${r.orders||0} pedidos • ${((r.gross_brl_est||0)/total*100).toFixed(1).replace('.',',')}% da receita</div></div>`).join('') || '<div class="card panel empty">Sem dados de funis.</div>';
+}
+
+function renderAdSpend(spend){
+ const empty='<div class="empty">Meta Ads ainda sem gasto retornado no mapeamento atual.</div>';
+ document.getElementById('adSpendMonth').textContent=money((spend||{}).month_brl_est||0);
+ document.getElementById('trafficMonth').textContent=money((spend||{}).month_brl_est||0);
+ document.getElementById('trafficYtd').textContent=money((spend||{}).ytd_brl_est||0);
+ document.getElementById('trafficStatus').textContent=(spend||{}).status==='ok'?'Conectado':'Mapeando';
+ bars(document.getElementById('trafficFunnels'), (spend||{}).by_funnel||[]);
+ const rows=((spend||{}).by_name||[]).map(r=>({name:r.name, gross_brl_est:r.spend_brl_est||0}));
+ bars(document.getElementById('trafficCampaigns'), rows);
+}
+
+function renderReceivables(rec){
+ const pending=document.getElementById('pending'), pendingSub=document.getElementById('pendingSub'), overdue=document.getElementById('overdue'), overdueSub=document.getElementById('overdueSub');
+ const box=document.getElementById('receivablesMonths'), risk=document.getElementById('receivablesRisk'), prod=document.getElementById('billingProducts');
+ if(!rec || !(rec.months||[]).length){ pending.textContent='—'; overdue.textContent='—'; box.innerHTML='<div class="source"><div><b>Aguardando normalização da planilha</b><p>Leitura automática localizada. Próxima geração transforma colunas CUOTA em forecast mensal.</p></div><span class="warn">setup</span></div>'; prod.innerHTML='<div class="card panel empty">Sem produtos de cobrança normalizados.</div>'; return; }
+ pending.textContent=money(rec.pending_brl||0); pendingSub.textContent=`${rec.pending_installments||0} parcelas futuras`;
+ overdue.textContent=money(rec.overdue_brl||0); overdueSub.textContent=`${rec.overdue_installments||0} parcelas vencidas`;
+ const max=Math.max(...rec.months.map(m=>Math.max(m.expected_brl||0,m.received_brl||0,m.overdue_brl||0)),1);
+ box.innerHTML=rec.months.slice(0,8).map(m=>{ const shown=(m.expected_brl||0)>0?m.expected_brl:m.received_brl; const label=(m.expected_brl||0)>0?'previsto':'recebido'; return `<div class="monthBox"><div class="monthLabel">${monthLabel(m.month)}</div><div><div class="track"><div class="fill" style="width:${Math.max(3,(shown||0)/max*100)}%"></div></div><div class="ksub">${m.pending_installments||0} parcelas futuras • recebido ${money(m.received_brl||0)}</div></div><div class="money">${label}<br>${money(shown||0)}</div></div>`}).join('');
+ risk.innerHTML=`<div><b>${money(rec.overdue_brl||0)} em cobrança</b><p>${rec.overdue_installments||0} parcelas vencidas • ${rec.pending_installments||0} futuras • ${rec.at_risk_count||0} alunos em risco</p></div><span class="${(rec.at_risk_count||0)>0?'warn':'ok'}">${rec.status||'ok'}</span>`;
+ const products=(rec.products||[]).filter(p=>(p.expected_brl||0)>0 || (p.overdue_brl||0)>0).slice(0,8);
+ prod.innerHTML=products.map(p=>`<div class="billCard"><div class="billTop"><div class="billName">${p.name}</div><div class="miniBadge">${(p.pending_installments||0)+(p.overdue_installments||0)} parcelas</div></div><div class="billValue">${money((p.expected_brl||0)+(p.overdue_brl||0))}</div><div class="billMeta">A receber: ${money(p.expected_brl||0)}<br>Vencido: ${money(p.overdue_brl||0)}<br>Já recebido: ${money(p.received_brl||0)}</div></div>`).join('') || '<div class="card panel empty">Sem parcelas futuras/vencidas por produto.</div>';
+}
+function renderLine(rows, projection){
+ const svg=document.getElementById('lineChart'), W=900,H=430,pad=42; if(!rows.length){svg.innerHTML=''; return;}
+ const projectedDaily = projection.projected / projection.last; const max=Math.max(...rows.map(r=>r.gross_brl_est), projectedDaily, 1); const step=(W-pad*2)/(Math.max(rows.length,2)-1);
+ const pts=rows.map((r,i)=>[pad+i*step, H-pad-(r.gross_brl_est/max)*(H-pad*2), r]);
+ const d=pts.map((p,i)=>`${i?'L':'M'}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(' '); const area=`M${pad},${H-pad} `+d+` L${pts[pts.length-1][0]},${H-pad} Z`;
+ svg.innerHTML=`<defs><linearGradient id="lineGrad" x1="0" x2="1"><stop stop-color="#9d62ff"/><stop offset=".55" stop-color="#4ce6ff"/><stop offset="1" stop-color="#57f2b4"/></linearGradient><linearGradient id="areaGrad" x1="0" y1="0" y2="1"><stop stop-color="rgba(76,230,255,.24)"/><stop offset="1" stop-color="rgba(157,98,255,0)"/></linearGradient></defs><rect class="chart-bg" x="0" y="0" width="900" height="430" rx="18"/>${[0,.25,.5,.75,1].map(t=>`<line class="axis" x1="${pad}" x2="${W-pad}" y1="${pad+t*(H-pad*2)}" y2="${pad+t*(H-pad*2)}"/>`).join('')}<path class="area" d="${area}"/><path class="line" d="${d}"/>${pts.map(p=>`<circle class="dot" cx="${p[0]}" cy="${p[1]}" r="4"><title>${shortDate(p[2].name)} — ${money(p[2].gross_brl_est)}</title></circle>`).join('')}${pts.map((p,i)=>`<text class="point-label" x="${p[0]-24}" y="${Math.max(18,p[1]-12)}">${shortMoney(p[2].gross_brl_est)}</text>`).join('')}${pts.map((p,i)=> i%2===0?`<text class="axis-label" x="${p[0]-14}" y="${H-10}">${shortDate(p[2].name)}</text>`:'').join('')}<text class="axis-label" x="${pad}" y="20">${money(max)}</text>`;
+}
+
+function productContext(p){
+ const n=(p.name||'').toLowerCase(), f=(p.funnel||'').toLowerCase();
+ if(n.includes('combo')) return 'Combo';
+ if(n.includes('replay')) return 'Replay';
+ if(f.includes('low')) return 'Venda direta';
+ if(f.includes('lançamento')) return 'Produto principal';
+ if(f.includes('assinatura')) return 'Recorrência';
+ if(f.includes('outros')) return 'Classificar';
+ return 'Venda principal';
+}
+function renderGoals(d, proj){
+ const s=d.summary, rec=d.receivables||{}, target=(d.target||{}).month_brl;
+ document.getElementById('goalRevenue').textContent=money(s.total_brl_est);
+ document.getElementById('goalAvg').textContent=money(proj.avg);
+ document.getElementById('goalProjected').textContent=money(proj.projected);
+ document.getElementById('goalOrders').textContent=(s.orders||0).toLocaleString('pt-BR');
+ document.getElementById('avgTicket').textContent=money((s.total_brl_est||0)/Math.max(s.orders||0,1));
+ if(target){ const pct=Math.min(100,(s.total_brl_est||0)/target*100); document.getElementById('goalPct').textContent=pct.toFixed(1).replace('.',',')+'%'; document.getElementById('goalFill').style.width=Math.max(2,pct)+'%'; document.getElementById('goalMissing').textContent=money(Math.max(0,target-(s.total_brl_est||0))); document.getElementById('goalPerDay').textContent=money(Math.max(0,target-(s.total_brl_est||0))/Math.max(proj.last-proj.day+1,1)); }
+ else { document.getElementById('goalPct').textContent='CONFIGURAR META'; document.getElementById('goalFill').style.width='8%'; document.getElementById('goalMissing').textContent='aguardando'; document.getElementById('goalPerDay').textContent='aguardando'; }
+ document.getElementById('futureCash').textContent=money(rec.pending_brl||0); document.getElementById('futureCashSub').textContent=`${rec.pending_installments||0} parcelas futuras em aberto`; document.getElementById('futureFill').style.width=Math.max(3, Math.min(100,(rec.pending_brl||0)/Math.max((rec.pending_brl||0)+(rec.overdue_brl||0),1)*100))+'%';
+ document.getElementById('riskCash').textContent=money(rec.overdue_brl||0); document.getElementById('riskCashSub').textContent=`${rec.overdue_installments||0} parcelas vencidas • ${rec.at_risk_count||0} alunos em risco`;
+}
+
+fetch('data/revenue-dashboard.json?ts='+Date.now()).then(r=>r.json()).then(d=>{
+ const s=d.summary, proj=calcProjection(d); document.getElementById('total').textContent=money(s.total_brl_est); document.getElementById('period').textContent=`MTD desde ${new Date(d.period.start).toLocaleDateString('pt-BR')} • ${s.orders.toLocaleString('pt-BR')} pedidos`; document.getElementById('updated').textContent='Atualizado '+new Date(d.generated_at).toLocaleString('pt-BR');
+ document.getElementById('projection').textContent=money(proj.projected); document.getElementById('projectionSub').textContent=`média ${money(proj.avg)}/dia até ${proj.last}/${String(new Date(d.period.end).getMonth()+1).padStart(2,'0')}`; document.getElementById('projectionBadge').textContent=money(proj.projected);
+ renderGoals(d, proj); renderAdSpend(d.ad_spend); renderLine(s.days, proj); renderFunnelCards(s.funnels); bars(document.getElementById('funnels'),s.funnels); bars(document.getElementById('sources'),s.sources); renderReceivables(d.receivables);
+ document.getElementById('products').innerHTML=s.products.map(p=>`<tr><td class="prod" title="${p.name}">${p.name}</td><td><span class="tag">${p.funnel}</span></td><td>${productContext(p)}</td><td>${p.orders}</td><td>${money(p.gross_brl_est)}</td></tr>`).join('');
+}).catch(e=>{document.body.innerHTML='<div class="wrap"><div class="card panel"><h1>Erro ao carregar dados</h1><p class="sub">'+e+'</p></div></div>'});
+</script>
+</body>
+</html>
