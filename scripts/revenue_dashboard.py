@@ -27,6 +27,7 @@ LEGACY_ENV = Path("/root/backup-openclaw-antigo/openclaw-config/.env")
 BRT = timezone(timedelta(hours=-3))
 NOW = datetime.now(BRT)
 START_MONTH = NOW.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+START_YEAR = NOW.replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0)
 START_14D = (NOW - timedelta(days=13)).replace(hour=0, minute=0, second=0, microsecond=0)
 
 LOW_TICKET_IDS = {5544688, 6255312, 5694790, 7407787, 7407769, 7407833}
@@ -306,7 +307,8 @@ def meta_insights(env, specs, start, end):
             "access_token": token,
             "time_range": json.dumps({"since": start_s, "until": end_s}),
             "level": "campaign",
-            "fields": "campaign_id,campaign_name,spend,account_currency",
+            "fields": "campaign_id,campaign_name,spend,account_currency,date_start",
+            "time_increment": 1,
             "limit": 500,
         }
         url = f"{META_BASE}/{spec['account']}/insights"
@@ -329,6 +331,7 @@ def meta_insights(env, specs, start, end):
                         "account": spec["account"],
                         "campaign_id": it.get("campaign_id"),
                         "campaign_name": cname,
+                        "date": it.get("date_start") or start_s,
                         "name": spec["name"],
                         "funnel": spec["funnel"],
                         "currency": currency,
@@ -378,7 +381,7 @@ def main():
         source_specs.append(("Hotmart RX", env["HOTMART_RX_CLIENT_ID"], env["HOTMART_RX_CLIENT_SECRET"]))
     for label, cid, sec in source_specs:
         try:
-            got = hotmart_sales(label, cid, sec, START_MONTH, NOW)
+            got = hotmart_sales(label, cid, sec, START_YEAR, NOW)
             rows.extend(got)
             sources_status.append({"source": label, "status": "ok", "orders": len(got)})
         except Exception as e:
@@ -386,14 +389,15 @@ def main():
             sources_status.append({"source": label, "status": "erro", "message": str(e)[:180]})
     for label, item in [("Stripe LLC XDental", "Stripe LLC Xdental"), ("Stripe BR XDental", "Stripe BR Xdental")]:
         try:
-            got = stripe_charges(label, item, START_MONTH, NOW)
+            got = stripe_charges(label, item, START_YEAR, NOW)
             rows.extend(got)
             sources_status.append({"source": label, "status": "ok", "orders": len(got)})
         except Exception as e:
             errors.append(f"{label}: {e}")
             sources_status.append({"source": label, "status": "erro", "message": str(e)[:180]})
-    month_spend_rows, month_spend_errors = meta_insights(env, META_SPEND_SPECS, START_MONTH, NOW)
-    ytd_spend_rows, ytd_spend_errors = meta_insights(env, META_SPEND_SPECS, NOW.replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0), NOW)
+    ytd_spend_rows, ytd_spend_errors = meta_insights(env, META_SPEND_SPECS, START_YEAR, NOW)
+    month_spend_rows = [r for r in ytd_spend_rows if r.get("date", "") >= START_MONTH.date().isoformat()]
+    month_spend_errors = []
     for err in month_spend_errors + ytd_spend_errors:
         if err not in errors:
             errors.append(err)
@@ -402,8 +406,9 @@ def main():
         sources_status.append({"source": "Meta Ads", "status": "ok", "campaigns": len({r.get("campaign_id") for r in month_spend_rows if r.get("campaign_id")})})
     else:
         sources_status.append({"source": "Meta Ads", "status": "setup", "message": "Sem gasto retornado nos mapeamentos atuais"})
+    month_rows = [r for r in rows if r.get("date", "") >= START_MONTH.date().isoformat()]
     # fill missing last-14 day line with zero days
-    agg = aggregate(rows)
+    agg = aggregate(month_rows)
     existing = {d["name"]: d for d in agg["days"]}
     line = []
     for i in range(14):
@@ -424,6 +429,8 @@ def main():
         "target": {"month_brl": None, "daily_required_brl": None},
         "fx_to_brl_sample": {k: round(FX_TO_BRL.get(k, 0), 6) for k in ["USD", "EUR", "MXN", "ARS", "GTQ", "COP", "CLP", "PEN", "BRL"]},
         "summary": agg,
+        "records": [{"date": r.get("date"), "source": r.get("source"), "platform": r.get("platform"), "product_name": r.get("product_name"), "funnel": r.get("funnel"), "gross_brl_est": round(r.get("gross_brl_est") or 0, 2)} for r in rows],
+        "ad_spend_records": [{"date": r.get("date"), "name": r.get("name"), "funnel": r.get("funnel"), "campaign_name": r.get("campaign_name"), "spend_brl_est": round(r.get("spend_brl_est") or 0, 2)} for r in ytd_spend_rows],
         "sources_status": sources_status,
         "errors": errors,
         "transactions_sample": rows[:50],
