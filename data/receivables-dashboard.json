@@ -1,0 +1,686 @@
+{
+  "generated_at": "2026-06-16T09:04:10.702026-03:00",
+  "timezone": "America/Sao_Paulo",
+  "source": "Google Sheets export — Cobrança Xdental",
+  "source_file": "/root/.openclaw/workspace/projects/xdental-painel-taos/data/cobranca-xdental.xlsx",
+  "spreadsheet_id": "1psxy_r11E6g03TudqWBVWjPTJJZOiux-9TsZZHYeYSA",
+  "status": "beta",
+  "current_month": "2026-06",
+  "summary": {
+    "rows": 289,
+    "installments": 1119,
+    "future_expected_brl": 27509.1,
+    "overdue_brl": 66973.57,
+    "pending_installments": 41,
+    "overdue_installments": 93,
+    "at_risk_count": 86,
+    "cancelled_cells": 32
+  },
+  "months": [
+    {
+      "name": "2025-02",
+      "received_brl": 2269.42,
+      "expected_brl": 0.0,
+      "overdue_brl": 0.0,
+      "pending_installments": 0,
+      "overdue_installments": 0
+    },
+    {
+      "name": "2025-03",
+      "received_brl": 1364.57,
+      "expected_brl": 0.0,
+      "overdue_brl": 1486.93,
+      "pending_installments": 0,
+      "overdue_installments": 4
+    },
+    {
+      "name": "2025-04",
+      "received_brl": 1490.55,
+      "expected_brl": 0.0,
+      "overdue_brl": 2851.5,
+      "pending_installments": 0,
+      "overdue_installments": 7
+    },
+    {
+      "name": "2025-05",
+      "received_brl": 4097.05,
+      "expected_brl": 0.0,
+      "overdue_brl": 3980.23,
+      "pending_installments": 0,
+      "overdue_installments": 11
+    },
+    {
+      "name": "2025-06",
+      "received_brl": 4254.16,
+      "expected_brl": 0.0,
+      "overdue_brl": 4258.0,
+      "pending_installments": 0,
+      "overdue_installments": 11
+    },
+    {
+      "name": "2025-07",
+      "received_brl": 1462.95,
+      "expected_brl": 0.0,
+      "overdue_brl": 6543.56,
+      "pending_installments": 0,
+      "overdue_installments": 13
+    },
+    {
+      "name": "2025-08",
+      "received_brl": 4201.65,
+      "expected_brl": 0.0,
+      "overdue_brl": 1913.59,
+      "pending_installments": 0,
+      "overdue_installments": 4
+    },
+    {
+      "name": "2025-09",
+      "received_brl": 0.0,
+      "expected_brl": 0.0,
+      "overdue_brl": 5279.75,
+      "pending_installments": 0,
+      "overdue_installments": 8
+    },
+    {
+      "name": "2025-10",
+      "received_brl": 0.0,
+      "expected_brl": 0.0,
+      "overdue_brl": 2947.71,
+      "pending_installments": 0,
+      "overdue_installments": 5
+    },
+    {
+      "name": "2025-11",
+      "received_brl": 221300.71,
+      "expected_brl": 0.0,
+      "overdue_brl": 1665.55,
+      "pending_installments": 0,
+      "overdue_installments": 3
+    },
+    {
+      "name": "2025-12",
+      "received_brl": 229617.61,
+      "expected_brl": 0.0,
+      "overdue_brl": 1286.23,
+      "pending_installments": 0,
+      "overdue_installments": 2
+    },
+    {
+      "name": "2026-01",
+      "received_brl": 217735.12,
+      "expected_brl": 0.0,
+      "overdue_brl": 3996.9,
+      "pending_installments": 0,
+      "overdue_installments": 3
+    },
+    {
+      "name": "2026-02",
+      "received_brl": 239766.9,
+      "expected_brl": 0.0,
+      "overdue_brl": 7959.52,
+      "pending_installments": 0,
+      "overdue_installments": 5
+    },
+    {
+      "name": "2026-03",
+      "received_brl": 54374.32,
+      "expected_brl": 0.0,
+      "overdue_brl": 10664.84,
+      "pending_installments": 0,
+      "overdue_installments": 6
+    },
+    {
+      "name": "2026-04",
+      "received_brl": 68796.51,
+      "expected_brl": 0.0,
+      "overdue_brl": 8830.66,
+      "pending_installments": 0,
+      "overdue_installments": 7
+    },
+    {
+      "name": "2026-05",
+      "received_brl": 63226.03,
+      "expected_brl": 0.0,
+      "overdue_brl": 3308.6,
+      "pending_installments": 0,
+      "overdue_installments": 4
+    },
+    {
+      "name": "2026-06",
+      "received_brl": 30943.41,
+      "expected_brl": 1998.23,
+      "overdue_brl": 0.0,
+      "pending_installments": 2,
+      "overdue_installments": 0
+    },
+    {
+      "name": "2026-07",
+      "received_brl": 472.9,
+      "expected_brl": 23045.62,
+      "overdue_brl": 0.0,
+      "pending_installments": 32,
+      "overdue_installments": 0
+    },
+    {
+      "name": "2026-08",
+      "received_brl": 0.0,
+      "expected_brl": 1533.01,
+      "overdue_brl": 0.0,
+      "pending_installments": 6,
+      "overdue_installments": 0
+    },
+    {
+      "name": "2026-09",
+      "received_brl": 0.0,
+      "expected_brl": 932.24,
+      "overdue_brl": 0.0,
+      "pending_installments": 1,
+      "overdue_installments": 0
+    }
+  ],
+  "future_months": [
+    {
+      "name": "2026-06",
+      "received_brl": 30943.41,
+      "expected_brl": 1998.23,
+      "overdue_brl": 0.0,
+      "pending_installments": 2,
+      "overdue_installments": 0
+    },
+    {
+      "name": "2026-07",
+      "received_brl": 472.9,
+      "expected_brl": 23045.62,
+      "overdue_brl": 0.0,
+      "pending_installments": 32,
+      "overdue_installments": 0
+    },
+    {
+      "name": "2026-08",
+      "received_brl": 0.0,
+      "expected_brl": 1533.01,
+      "overdue_brl": 0.0,
+      "pending_installments": 6,
+      "overdue_installments": 0
+    },
+    {
+      "name": "2026-09",
+      "received_brl": 0.0,
+      "expected_brl": 932.24,
+      "overdue_brl": 0.0,
+      "pending_installments": 1,
+      "overdue_installments": 0
+    }
+  ],
+  "products": [
+    {
+      "name": "Excellende Dental Academy",
+      "received_brl": 26229.65,
+      "expected_brl": 1334.36,
+      "overdue_brl": 24775.58,
+      "pending_installments": 12,
+      "overdue_installments": 63
+    },
+    {
+      "name": "Sniper & Fredom",
+      "received_brl": 57565.86,
+      "expected_brl": 21333.53,
+      "overdue_brl": 2131.98,
+      "pending_installments": 20,
+      "overdue_installments": 2
+    },
+    {
+      "name": "Sniper VIP Mayo",
+      "received_brl": 88061.43,
+      "expected_brl": 0.0,
+      "overdue_brl": 17033.28,
+      "pending_installments": 0,
+      "overdue_installments": 5
+    },
+    {
+      "name": "Black Ortho Infinity",
+      "received_brl": 866800.09,
+      "expected_brl": 0.0,
+      "overdue_brl": 10528.68,
+      "pending_installments": 0,
+      "overdue_installments": 10
+    },
+    {
+      "name": "Freedom",
+      "received_brl": 8178.48,
+      "expected_brl": 0.0,
+      "overdue_brl": 8575.57,
+      "pending_installments": 0,
+      "overdue_installments": 10
+    },
+    {
+      "name": "Renovacion Sniper Elite",
+      "received_brl": 444.9,
+      "expected_brl": 4618.76,
+      "overdue_brl": 0.0,
+      "pending_installments": 8,
+      "overdue_installments": 0
+    },
+    {
+      "name": "Dip Ortho Pro",
+      "received_brl": 96982.81,
+      "expected_brl": 0.0,
+      "overdue_brl": 3928.48,
+      "pending_installments": 0,
+      "overdue_installments": 3
+    },
+    {
+      "name": "Sniper Elite",
+      "received_brl": 1110.64,
+      "expected_brl": 222.45,
+      "overdue_brl": 0.0,
+      "pending_installments": 1,
+      "overdue_installments": 0
+    }
+  ],
+  "sheet_stats": [
+    {
+      "sheet": "Sniper & Fredom",
+      "rows": 19,
+      "quota_cols": 12
+    },
+    {
+      "sheet": "Dip Ortho Pro",
+      "rows": 21,
+      "quota_cols": 12
+    },
+    {
+      "sheet": "Sniper VIP Mayo",
+      "rows": 12,
+      "quota_cols": 10
+    },
+    {
+      "sheet": "Black Ortho Infinity",
+      "rows": 183,
+      "quota_cols": 12
+    },
+    {
+      "sheet": "Freedom",
+      "rows": 7,
+      "quota_cols": 10
+    },
+    {
+      "sheet": "Xdental",
+      "rows": 42,
+      "quota_cols": 10
+    },
+    {
+      "sheet": "Sniper Elite",
+      "rows": 5,
+      "quota_cols": 10
+    }
+  ],
+  "sample_pending": [
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Hotmart",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 959.47,
+      "name": "Blanca Salas",
+      "email": "cenroof95@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1273.19,
+      "name": "Mikel Florit Pinzolas",
+      "email": "docmiguelflorit@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1017.46,
+      "name": "ANA LAURA ADORNI",
+      "email": "ana_adorni@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1017.46,
+      "name": "Liliana Gomez parra",
+      "email": "lilianagomezp2023@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Hotmart",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 959.47,
+      "name": "Ernesto Hernández Martínez",
+      "email": "neodent.integral@outlook.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1333.49,
+      "name": "Belen Ramos Salas",
+      "email": "ramossalasbelen@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1017.46,
+      "name": "Berlinessa Collado",
+      "email": "berlicollado@yahoo.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1017.46,
+      "name": "Gabriela alejandra leonardelli",
+      "email": "gabileo0601@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1017.46,
+      "name": "TERESITA LIBETH BUESO SERRANO",
+      "email": "teresitabueso3@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1293.2,
+      "name": "Barbara s freites afiuni",
+      "email": "barbarafreitesa@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1017.46,
+      "name": "Argelia Ferrero Romero",
+      "email": "argeferrero@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1017.46,
+      "name": "MANUEL ARTILES SANCHEZ",
+      "email": "callj21@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1273.19,
+      "name": "Melisa Minetti",
+      "email": "melisam78@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Hotmart",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 959.47,
+      "name": "Javier Tetlacuilo Fuentes",
+      "email": "jtfs.fuentes5@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1017.46,
+      "name": "Leticia Contreras Zapata",
+      "email": "cdeo_lcz@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Hotmart",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 959.47,
+      "name": "Margarita Ochoa",
+      "email": "mgov65@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1033.46,
+      "name": "Nehomar Mujica",
+      "email": "nehox.nm@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Stripe",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1017.46,
+      "name": "Doris Cristina Pihuave Montenegro",
+      "email": "montenegro_cris20@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Hotmart",
+      "month": "2026-04",
+      "quota": 1,
+      "status": "overdue",
+      "amount_brl_est": 1065.99,
+      "name": "Alfonso Cuesta",
+      "email": "pompicuesta@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Hotmart",
+      "month": "2026-05",
+      "quota": 2,
+      "status": "overdue",
+      "amount_brl_est": 1065.99,
+      "name": "Alfonso Cuesta",
+      "email": "pompicuesta@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Hotmart",
+      "month": "2026-06",
+      "quota": 3,
+      "status": "pending",
+      "amount_brl_est": 1065.99,
+      "name": "Alfonso Cuesta",
+      "email": "pompicuesta@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper & Fredom",
+      "product": "Sniper & Fredom",
+      "platform": "Hotmart",
+      "month": "2026-07",
+      "quota": 4,
+      "status": "pending",
+      "amount_brl_est": 1065.99,
+      "name": "Alfonso Cuesta",
+      "email": "pompicuesta@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Dip Ortho Pro",
+      "product": "Dip Ortho Pro",
+      "platform": "Hotmart",
+      "month": "2026-04",
+      "quota": 3,
+      "status": "overdue",
+      "amount_brl_est": 1366.55,
+      "name": "Mariuxi Labanda Gaona",
+      "email": "mariuxilabanada24@gmail.com",
+      "risk": true
+    },
+    {
+      "sheet": "Dip Ortho Pro",
+      "product": "Dip Ortho Pro",
+      "platform": "Hotmart",
+      "month": "2026-05",
+      "quota": 4,
+      "status": "overdue",
+      "amount_brl_est": 1366.55,
+      "name": "Mariuxi Labanda Gaona",
+      "email": "mariuxilabanada24@gmail.com",
+      "risk": true
+    },
+    {
+      "sheet": "Dip Ortho Pro",
+      "product": "Dip Ortho Pro",
+      "platform": "Stripe",
+      "month": "2026-03",
+      "quota": 1,
+      "status": "overdue",
+      "amount_brl_est": 1195.38,
+      "name": "Sofia Vergonjeanne",
+      "email": "sofivergonjeanne@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper VIP Mayo",
+      "product": "Sniper VIP Mayo",
+      "platform": "Stripe",
+      "month": "2026-02",
+      "quota": 1,
+      "status": "overdue",
+      "amount_brl_est": 3368.48,
+      "name": "Pierre Cortez",
+      "email": "pierrecortez1987@gmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper VIP Mayo",
+      "product": "Sniper VIP Mayo",
+      "platform": "Stripe",
+      "month": "2026-02",
+      "quota": 1,
+      "status": "overdue",
+      "amount_brl_est": 2422.01,
+      "name": "Marian Nasser",
+      "email": "marian-nasser@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper VIP Mayo",
+      "product": "Sniper VIP Mayo",
+      "platform": "Stripe",
+      "month": "2026-03",
+      "quota": 1,
+      "status": "overdue",
+      "amount_brl_est": 4129.83,
+      "name": "Donatella Tarasco",
+      "email": "d_tarasco@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper VIP Mayo",
+      "product": "Sniper VIP Mayo",
+      "platform": "Stripe",
+      "month": "2026-04",
+      "quota": 2,
+      "status": "overdue",
+      "amount_brl_est": 4129.83,
+      "name": "Donatella Tarasco",
+      "email": "d_tarasco@hotmail.com",
+      "risk": false
+    },
+    {
+      "sheet": "Sniper VIP Mayo",
+      "product": "Sniper VIP Mayo",
+      "platform": "Stripe",
+      "month": "2026-03",
+      "quota": 1,
+      "status": "overdue",
+      "amount_brl_est": 2983.13,
+      "name": "Carlos Lizarzaburu",
+      "email": "calc_123@hotmail.com",
+      "risk": false
+    }
+  ],
+  "notes": [
+    "Valores BRL são estimados. Hotmart sem símbolo é tratado como USD; Stripe sem símbolo é tratado como BRL.",
+    "Regra Monica/Ruan: vencimento de cada cota = data da compra + 30 dias × (nº da cota - 1); mês do cabeçalho é apenas referência visual.",
+    "Células vazias dentro do número de parcelas viram pendente ou vencido conforme vencimento calculado por D0+30 dias.",
+    "Linhas/células com Cancelado/Reembolso/Contestação são removidas da previsão e marcadas como canceladas."
+  ]
+}

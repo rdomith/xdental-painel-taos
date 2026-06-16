@@ -51690,96 +51690,112 @@
     "source": "Google Sheets export — Cobrança Xdental",
     "spreadsheet_id": "1psxy_r11E6g03TudqWBVWjPTJJZOiux-9TsZZHYeYSA",
     "spreadsheet_name": "Cobrança Xdental",
-    "generated_at": "2026-06-12T22:18:45.090542-03:00",
+    "generated_at": "2026-06-16T09:04:10.702026-03:00",
     "months": [
       {
         "month": "2026-06",
-        "expected_brl": 0.0,
+        "expected_brl": 1998.23,
         "overdue_brl": 0.0,
-        "received_brl": 21527.68,
-        "pending_installments": 0,
+        "received_brl": 30943.41,
+        "pending_installments": 2,
         "overdue_installments": 0
       },
       {
         "month": "2026-07",
-        "expected_brl": 16197.13,
+        "expected_brl": 23045.62,
         "overdue_brl": 0.0,
-        "received_brl": 0.0,
-        "pending_installments": 18,
+        "received_brl": 472.9,
+        "pending_installments": 32,
         "overdue_installments": 0
       },
       {
         "month": "2026-08",
-        "expected_brl": 444.9,
+        "expected_brl": 1533.01,
         "overdue_brl": 0.0,
         "received_brl": 0.0,
-        "pending_installments": 2,
+        "pending_installments": 6,
+        "overdue_installments": 0
+      },
+      {
+        "month": "2026-09",
+        "expected_brl": 932.24,
+        "overdue_brl": 0.0,
+        "received_brl": 0.0,
+        "pending_installments": 1,
         "overdue_installments": 0
       }
     ],
     "products": [
       {
-        "name": "Black Ortho Infinity",
-        "received_brl": 853443.56,
-        "expected_brl": 0.0,
-        "overdue_brl": 23885.21,
-        "pending_installments": 0,
-        "overdue_installments": 20
+        "name": "Excellende Dental Academy",
+        "received_brl": 26229.65,
+        "expected_brl": 1334.36,
+        "overdue_brl": 24775.58,
+        "pending_installments": 12,
+        "overdue_installments": 63
       },
       {
         "name": "Sniper & Fredom",
-        "received_brl": 61403.74,
-        "expected_brl": 15363.67,
-        "overdue_brl": 4263.96,
-        "pending_installments": 14,
-        "overdue_installments": 4
+        "received_brl": 57565.86,
+        "expected_brl": 21333.53,
+        "overdue_brl": 2131.98,
+        "pending_installments": 20,
+        "overdue_installments": 2
       },
       {
         "name": "Sniper VIP Mayo",
-        "received_brl": 118540.64,
+        "received_brl": 88061.43,
         "expected_brl": 0.0,
         "overdue_brl": 17033.28,
         "pending_installments": 0,
         "overdue_installments": 5
       },
       {
-        "name": "Renovacion Sniper Elite",
-        "received_brl": 444.9,
-        "expected_brl": 889.8,
-        "overdue_brl": 3728.96,
-        "pending_installments": 4,
-        "overdue_installments": 4
-      },
-      {
-        "name": "Excellende Dental Academy",
-        "received_brl": 41668.96,
-        "expected_brl": 388.56,
-        "overdue_brl": 1588.96,
-        "pending_installments": 2,
-        "overdue_installments": 4
-      },
-      {
-        "name": "Dip Ortho Pro",
-        "received_brl": 99715.91,
+        "name": "Black Ortho Infinity",
+        "received_brl": 866800.09,
         "expected_brl": 0.0,
-        "overdue_brl": 1195.38,
+        "overdue_brl": 10528.68,
         "pending_installments": 0,
-        "overdue_installments": 1
+        "overdue_installments": 10
       },
       {
         "name": "Freedom",
-        "received_brl": 16754.05,
+        "received_brl": 8178.48,
         "expected_brl": 0.0,
-        "overdue_brl": 0.0,
+        "overdue_brl": 8575.57,
         "pending_installments": 0,
+        "overdue_installments": 10
+      },
+      {
+        "name": "Renovacion Sniper Elite",
+        "received_brl": 444.9,
+        "expected_brl": 4618.76,
+        "overdue_brl": 0.0,
+        "pending_installments": 8,
+        "overdue_installments": 0
+      },
+      {
+        "name": "Dip Ortho Pro",
+        "received_brl": 96982.81,
+        "expected_brl": 0.0,
+        "overdue_brl": 3928.48,
+        "pending_installments": 0,
+        "overdue_installments": 3
+      },
+      {
+        "name": "Sniper Elite",
+        "received_brl": 1110.64,
+        "expected_brl": 222.45,
+        "overdue_brl": 0.0,
+        "pending_installments": 1,
         "overdue_installments": 0
       }
     ],
-    "pending_brl": 16642.03,
-    "overdue_brl": 51695.75,
-    "pending_installments": 20,
-    "overdue_installments": 38,
+    "pending_brl": 27509.1,
+    "overdue_brl": 66973.57,
+    "pending_installments": 41,
+    "overdue_installments": 93,
     "at_risk_count": 86,
-    "source_note": "Forecast beta gerado da planilha Cobrança Xdental."
+    "source_note": "Forecast beta gerado da planilha Cobrança Xdental pela regra D0+30 dias e cores da Monica."
   }
 }
