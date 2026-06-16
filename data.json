@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-06-15 · Radar segunda + Live Serginho + último dia lote zero",
+    "lastUpdated": "2026-06-16 · Reunião 9h + rollovers de ontem + calendário 2º semestre",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Segunda 15/06 atualizada: P0 comercial reforçado com live do Serginho no Instagram, escassez e último dia de lote zero, além de criativos Low Ticket, PDF M6, oferta Elite, financeiro Fabiano/Paul Medina e preparação do Downsell/Lançamento XDental de 29/06."
+    "headline": "Terça 16/06 atualizada: foco em reunião das 9h com Dax Neto, Sérgio e sócios para travar datas do segundo semestre; painel puxa rollovers de ontem — criativos Low Ticket, PDF M6, oferta Elite/CDM, financeiro Fabiano/Paul Medina, lançamento 29/06, captação 22/06, CIOCH/Chile e OralPlanner."
   },
   "fronts": [
     {
@@ -14,17 +14,17 @@
       "name": "Low Tickets",
       "status": "attention",
       "priority": "p0",
-      "progress": 80,
-      "owner": "Ruan + Bruno + Batista + Sérgio",
-      "summary": "Ruan tem novas imagens/criativos de Low Ticket para preparar e subir. Prioridade é virar pacote pronto para tráfego sem perder a cadência da semana.",
+      "progress": 82,
+      "owner": "Ruan + Bruno + Batista + Fabian",
+      "summary": "Rollover de ontem virou P0: imagens/criativos precisam ficar organizados para Fabian editar hoje e Batista subir na quarta.",
       "nextActions": [
-        "Organizar as imagens de Low Ticket que Ruan já tem",
-        "Preparar variações finais para subida",
-        "Subir/encaminhar para tráfego com nomeação clara por produto",
-        "Manter radar de produtos zerados e performance diária"
+        "Organizar imagens/criativos pendentes de ontem",
+        "Separar por produto e nomear variações",
+        "Acompanhar edição do Fabian hoje",
+        "Preparar subida do Batista na quarta"
       ],
       "blockers": [
-        "Se as imagens não forem finalizadas hoje, a semana perde volume de teste de criativos"
+        "Sem pacote claro hoje, a cadência de testes da semana atrasa"
       ]
     },
     {
@@ -47,17 +47,17 @@
       "name": "Diplomado Ortho Pro",
       "status": "risk",
       "priority": "p0",
-      "progress": 90,
+      "progress": 91,
       "owner": "Ruan / Clairo / Mônica / Sérgio",
-      "summary": "Ruan precisa terminar o material PDF do módulo 6: está fazendo as imagens para passar para a Clairo finalizar o design.",
+      "summary": "PDF M6 continua como pendência de ontem: terminar imagens e mandar pacote para Clairo finalizar design.",
       "nextActions": [
-        "Ruan finalizar imagens do PDF M6",
-        "Enviar pacote para Clairo com briefing fechado",
-        "Clairo finalizar design do PDF/material complementar",
-        "Registrar prazo de entrega e responsável pelo upload/comunicação"
+        "Finalizar imagens do PDF M6",
+        "Enviar pacote para Clairo",
+        "Definir responsável por upload/comunicação",
+        "Levar conflito M8 x Chile para o mapa de datas"
       ],
       "blockers": [
-        "PDF M6 segue afetando experiência dos alunos enquanto não for entregue"
+        "Material complementar vencido afeta experiência dos alunos"
       ]
     },
     {
@@ -65,17 +65,17 @@
       "name": "Plataforma de Assinatura",
       "status": "attention",
       "priority": "p0",
-      "progress": 74,
+      "progress": 76,
       "owner": "Ruan / financeiro / Paul Medina / equipe",
-      "summary": "Paul Medina gravou o curso da assinatura; pagamento precisa ser feito. Separar execução financeira do fluxo operacional de entrega/publicação.",
+      "summary": "Resolver pendência financeira do Paul Medina e manter pipeline de professores/cursos no radar do segundo semestre.",
       "nextActions": [
-        "Fazer pagamento do Paul Medina",
-        "Registrar comprovante/baixa no financeiro",
-        "Confirmar etapa seguinte do curso gravado: edição, upload e comunicação",
-        "Manter pipeline de professores de julho no radar"
+        "Resolver pagamento/baixa do Paul Medina",
+        "Registrar comprovante",
+        "Confirmar fluxo de edição/upload do curso",
+        "Incluir professores e datas no calendário 2º semestre"
       ],
       "blockers": [
-        "Pagamento de professor pendente pode gerar ruído na relação e atrasar próximos convites"
+        "Pagamento pendente gera ruído com professor e pipeline"
       ]
     },
     {
@@ -83,15 +83,17 @@
       "name": "Chile / CIOCH",
       "status": "attention",
       "priority": "p1",
-      "progress": 30,
+      "progress": 35,
       "owner": "Ruan / Vinícius / financeiro",
-      "summary": "Ruan viaja para a Colômbia na próxima semana; CIOCH continua no radar de prazos, mas não entrou como demanda nova de hoje.",
+      "summary": "Entrou na pauta de datas do segundo semestre: congresso 26-28/08, montagem 25/08, formulários 20/07 e gráfica/projeto 26/07.",
       "nextActions": [
-        "Manter prazos 20/07 formulários e 26/07 gráfica/projeto no radar",
-        "Revisar pendências antes da viagem se houver espaço"
+        "Revisar CIOCH na reunião de datas",
+        "Confirmar stand/pagamento e responsáveis",
+        "Marcar deadlines 20/07, 26/07 e 25/08",
+        "Checar conflito com Diplomado M8"
       ],
       "blockers": [
-        "Sem bloqueio novo hoje; risco é ficar invisível durante a semana da Colômbia"
+        "Risco de conflito de agenda com Diplomado e viagem/montagem"
       ]
     },
     {
@@ -99,19 +101,17 @@
       "name": "Sniper Elite / Clínica de Maestría",
       "status": "risk",
       "priority": "p0",
-      "progress": 66,
-      "owner": "Ruan / Lucas / Sérgio / time comercial",
-      "summary": "Hoje tem live do Serginho no Instagram. P0 comercial: usar a live para forçar escassez e último dia de lote zero, enquanto a oferta do Elite é alinhada com Lucas/Sérgio.",
+      "progress": 70,
+      "owner": "Ruan / Lucas / Sérgio / Dax Neto / time comercial",
+      "summary": "Pauta principal da reunião das 9h: travar datas, oferta, promessa, bônus, preço e operação do Elite/CDM para o segundo semestre.",
       "nextActions": [
-        "Preparar pauta da live do Serginho no Instagram",
-        "Forçar escassez e último dia de lote zero na comunicação",
-        "Ruan falar com Lucas sobre oferta do Elite",
-        "Preparar pontos para reunião com Serginho amanhã",
-        "Transformar decisão em briefing para página, comunicação e vendas"
+        "Usar reunião para fechar mapa de datas",
+        "Decidir promessa/oferta com Sérgio e sócios",
+        "Definir impacto no evento de sábado e captação 22/06",
+        "Transformar decisão em briefing de página, copy e tráfego"
       ],
       "blockers": [
-        "Se a live não entrar com urgência clara, perde força no último dia de lote zero",
-        "Sem oferta fechada, copy, página, vendas orgânicas e time ficam desalinhados"
+        "Sem decisão hoje, página/copy/tráfego e venda orgânica ficam travados"
       ]
     },
     {
@@ -119,15 +119,16 @@
       "name": "OralPlanner",
       "status": "attention",
       "priority": "p1",
-      "progress": 55,
+      "progress": 56,
       "owner": "Ruan / Felipe",
-      "summary": "Sem demanda nova no áudio de hoje; manter como rollover de cronograma/entrega.",
+      "summary": "Rollover: cobrar Felipe por cronograma real, marcos de entrega e bloqueios técnicos.",
       "nextActions": [
-        "Manter cobrança de cronograma de entrega com Felipe quando entrar no bloco operacional",
-        "Separar bloqueios técnicos de comunicação/lançamento"
+        "Cobrar cronograma com Felipe",
+        "Separar marcos técnicos e marcos de lançamento",
+        "Definir próxima entrega validável"
       ],
       "blockers": [
-        "Sem cronograma real, segue como atraso aberto"
+        "Sem cronograma real, a frente segue sem previsibilidade"
       ]
     },
     {
@@ -150,218 +151,205 @@
       "name": "Lançamentos / Downsell XDental",
       "status": "risk",
       "priority": "p0",
-      "progress": 60,
-      "owner": "Ruan / time XDental / Batista / Fabião / Mônica / Felipe",
-      "summary": "Evento deste sábado exige aquecimento e venda orgânica. Hoje tem live do Serginho no Instagram com foco em escassez/último dia de lote zero. Downsell/Lançamento XDental definido para 29/06; captação começa segunda 22/06 e precisa ficar pronto esta semana porque Ruan estará na Colômbia.",
+      "progress": 65,
+      "owner": "Ruan / sócios / Dax Neto / Sérgio / equipe XDental",
+      "summary": "Reunião de hoje precisa transformar datas do segundo semestre em plano operacional: evento 20/06, captação 22/06, lançamento 29/06 e calendário até Black.",
       "nextActions": [
-        "Preparar e executar live do Serginho no Instagram com CTA de último dia de lote zero",
-        "Alinhar com o time as ações desta semana e da próxima",
-        "Fechar plano de aquecimento para o evento de sábado",
-        "Definir ações de venda orgânica/endereço",
-        "Preparar captação do lançamento de 29/06 para iniciar em 22/06",
-        "Aguardar Ruan enviar o tema do Downsell para travar copy e peças"
+        "Travar calendário 2º semestre na reunião",
+        "Definir donos por frente e datas críticas",
+        "Estruturar Downsell 29/06",
+        "Preparar captação 22/06 antes da Colômbia",
+        "Fechar aquecimento/venda orgânica do evento de sábado"
       ],
       "blockers": [
-        "Se a equipe não sair alinhada esta semana, a captação começa atropelada enquanto Ruan estiver na Colômbia"
+        "Sem mapa de datas, o time entra em execução reativa e atropela captação"
       ]
     }
   ],
   "gargalos": [
     {
-      "title": "Live Serginho · último dia de lote zero",
+      "title": "Reunião 9h · datas do segundo semestre",
       "priority": "p0",
-      "frente": "Sniper Elite / Instagram",
-      "deadline": "Hoje 15/06",
-      "blocks": "Urgência comercial da Clínica/Elite e conversão do lote zero",
-      "owner": "Ruan / Sérgio / equipe",
-      "meta": "Ruan reforçou live no Instagram com escassez e último dia de lote zero"
+      "frente": "Direção / Calendário",
+      "deadline": "Hoje 16/06 · 09h",
+      "blocks": "Sem calendário travado, Elite/CDM, Diplomado, Chile, Plataforma e lançamentos seguem competindo por agenda e equipe",
+      "owner": "Ruan / Dax Neto / Sérgio / sócios",
+      "meta": "Atualizado em 16/06 com pedido do Ruan + Calendar"
     },
     {
-      "title": "Low Tickets · imagens/criativos para subir",
+      "title": "Rollover de ontem · criativos Low Ticket",
       "priority": "p0",
       "frente": "Low Tickets",
-      "deadline": "Hoje 15/06",
-      "blocks": "Cadência de teste de criativos da semana",
-      "owner": "Ruan / tráfego",
-      "meta": "Ruan informou que já tem imagens para preparar/subir"
+      "deadline": "Hoje 16/06",
+      "blocks": "Fabian edita hoje; se o pacote não estiver claro, a entrega de quarta e subida do Batista atrasam",
+      "owner": "Ruan / Fabian / Batista / Bruno",
+      "meta": "Atualizado em 16/06 com pedido do Ruan + Calendar"
     },
     {
       "title": "Diplomado M6 · PDF/imagens para Clairo",
       "priority": "p0",
       "frente": "Diplomado Ortho Pro",
-      "deadline": "Hoje 15/06",
-      "blocks": "Entrega do material complementar do módulo 6 aos alunos",
-      "owner": "Ruan / Clairo",
-      "meta": "Ruan está fazendo imagens para passar para design"
+      "deadline": "Hoje 16/06",
+      "blocks": "Entrega do material complementar do módulo 6 e percepção dos alunos",
+      "owner": "Ruan / Clairo / Mônica",
+      "meta": "Atualizado em 16/06 com pedido do Ruan + Calendar"
     },
     {
-      "title": "Elite · oferta com Lucas/Serginho",
+      "title": "Elite/CDM · oferta e calendário comercial",
       "priority": "p0",
-      "frente": "Sniper Elite",
-      "deadline": "Antes da reunião com Serginho em 16/06",
-      "blocks": "Página, copy, pitch, venda orgânica e direção comercial",
-      "owner": "Ruan / Lucas / Sérgio",
-      "meta": "Oferta precisa ser fechada esta semana"
+      "frente": "Sniper Elite / Clínica de Maestría",
+      "deadline": "Reunião 9h + fechamento pós-reunião",
+      "blocks": "Página, copy, tráfego, venda orgânica, evento de sábado e captação de 22/06",
+      "owner": "Ruan / Lucas / Sérgio / Dax Neto",
+      "meta": "Atualizado em 16/06 com pedido do Ruan + Calendar"
     },
     {
       "title": "Financeiro · Fabiano + Paul Medina",
       "priority": "p0",
       "frente": "Financeiro / Plataforma",
-      "deadline": "Manhã 15/06",
-      "blocks": "Comunicação ao BPO/Tamiris e pagamento do professor da assinatura",
+      "deadline": "Rollover de ontem",
+      "blocks": "Comunicação ao BPO/Tamiris e baixa/pagamento do professor da assinatura",
       "owner": "Ruan / BPO / Tamiris",
-      "meta": "Ruan acredita que ainda não comunicou entrada do Fabiano; Paul Medina precisa pagamento"
+      "meta": "Atualizado em 16/06 com pedido do Ruan + Calendar"
     },
     {
-      "title": "Lançamento 29/06 · plano pronto antes da Colômbia",
+      "title": "Lançamento 29/06 · plano antes da Colômbia",
       "priority": "p0",
       "frente": "Lançamentos / Downsell XDental",
-      "deadline": "Esta semana",
-      "blocks": "Captação começa 22/06 e Ruan viaja para Colômbia",
+      "deadline": "Esta semana · captação 22/06",
+      "blocks": "Captação começa enquanto Ruan estará na Colômbia; precisa sair com donos e datas",
       "owner": "Ruan / equipe XDental",
-      "meta": "Tema do Downsell será enviado por Ruan"
+      "meta": "Atualizado em 16/06 com pedido do Ruan + Calendar"
     },
     {
-      "title": "Evento sábado · aquecimento + venda orgânica",
+      "title": "CIOCH/Chile · prazos de julho e montagem agosto",
       "priority": "p1",
-      "frente": "Lançamentos / Clínica de Maestría",
-      "deadline": "Até sábado 20/06",
-      "blocks": "Última semana de presença, comparecimento e vendas orgânicas",
-      "owner": "Ruan / equipe",
-      "meta": "Ações desta semana e da próxima precisam ser alinhadas"
+      "frente": "Chile / CIOCH",
+      "deadline": "20/07 formulários · 26/07 gráfica · 25/08 montagem",
+      "blocks": "Stand, materiais e logística do congresso 26-28/08",
+      "owner": "Ruan / Vinícius",
+      "meta": "Atualizado em 16/06 com pedido do Ruan + Calendar"
     },
     {
-      "title": "OralPlanner · cronograma de entrega",
+      "title": "OralPlanner · cronograma real de entrega",
       "priority": "p1",
       "frente": "OralPlanner",
       "deadline": "Rollover da semana",
-      "blocks": "Sem cronograma real, a frente segue sem data de liberação",
+      "blocks": "Sem marcos de entrega, a frente segue invisível e sem data de liberação",
       "owner": "Ruan / Felipe",
-      "meta": "Rollover operacional"
+      "meta": "Atualizado em 16/06 com pedido do Ruan + Calendar"
     }
   ],
   "radarDoDia": [
     {
-      "time": "09h00",
-      "task": "📡 Atualizar painel/radar de segunda com áudio do Ruan",
+      "time": "08h58",
+      "task": "📡 Atualizar painel operacional para reunião das 9h",
       "frente": "📡 RADAR",
-      "status": "🔥",
-      "done": false
+      "status": "🔥"
     },
     {
-      "time": "hoje",
-      "task": "📲 Preparar live do Serginho no Instagram com roteiro curto, CTA e promessa do lote zero",
-      "frente": "📲 IG",
-      "status": "🔥",
-      "done": false
+      "time": "09h00",
+      "task": "🤝 Reunião Dax Neto + Sérgio + sócios: travar datas do segundo semestre e próximos lançamentos",
+      "frente": "🤝 REUNIÃO",
+      "status": "🔥"
     },
     {
-      "time": "hoje",
-      "task": "⏳ Forçar escassez: último dia de lote zero em stories, grupos e comunicação da live",
+      "time": "09h00",
+      "task": "🗓️ Levar pauta objetiva: Elite/CDM, Diplomado, CIOCH/Chile, Plataforma/App, Low Tickets e calendário até Black",
+      "frente": "🗓️ DATAS",
+      "status": "🔥"
+    },
+    {
+      "time": "pauta",
+      "task": "💎 Decidir direção do Sniper Elite/CDM: evento de sábado, oferta, promessa, bônus, preço e urgência",
       "frente": "💎 ELITE",
-      "status": "🔥",
-      "done": false
+      "status": "🔥"
     },
     {
-      "time": "manhã",
-      "task": "💰 Informar ao BPO/Tamiris a entrada do Fabiano no acidente",
-      "frente": "💰 FIN",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🎬 Fazer pagamento do Paul Medina e registrar baixa/comprovante",
-      "frente": "🎬 PA",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🛒 Organizar imagens/criativos de Low Ticket para subir",
-      "frente": "🛒 LT",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🎓 Terminar imagens do PDF M6 e preparar pacote para Clairo",
+      "time": "pauta",
+      "task": "🎓 Validar impactos do calendário do Diplomado no segundo semestre — encontros, módulos e conflito com Chile",
       "frente": "🎓 DOP",
-      "status": "🔥",
-      "done": false
+      "status": "📅"
     },
     {
-      "time": "dia todo",
-      "task": "💎 Falar com Lucas sobre oferta do Elite — promessa, bônus, preço/condição e urgência",
-      "frente": "💎 ELITE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "💎 Preparar pauta da reunião de amanhã com Serginho focada em oferta",
-      "frente": "💎 ELITE",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "🚀 Alinhar com o time ações desta semana e da próxima",
-      "frente": "🚀 LANÇ",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "📣 Definir aquecimento e ações de venda orgânica/endereço para o evento de sábado",
-      "frente": "📣 COM",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "🚀 Estruturar cronograma do Downsell/Lançamento XDental de 29/06",
-      "frente": "🚀 LANÇ",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "dia todo",
-      "task": "🎯 Preparar captação para começar segunda 22/06 — deixar tudo pronto antes da Colômbia",
-      "frente": "🎯 CAP",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "aguardando",
-      "task": "🧠 Ruan enviar tema do Downsell para fechar copy, página e peças",
-      "frente": "🚀 LANÇ",
-      "status": "⏳",
-      "done": false
+      "time": "pauta",
+      "task": "🇨🇱 Revisar CIOCH/Chile: congresso 26-28/08, montagem 25/08, prazos 20/07 e 26/07",
+      "frente": "🇨🇱 CHL",
+      "status": "📅"
     },
     {
       "time": "rollover",
-      "task": "🦷 OralPlanner: manter cobrança de cronograma de entrega com Felipe",
+      "task": "🛒 Low Tickets: organizar/subir imagens e criativos pendentes de ontem; hoje Fabian edita criativos",
+      "frente": "🛒 LT",
+      "status": "🔥"
+    },
+    {
+      "time": "rollover",
+      "task": "🎓 Diplomado M6: terminar imagens do PDF e encaminhar pacote para Clairo",
+      "frente": "🎓 DOP",
+      "status": "🔥"
+    },
+    {
+      "time": "rollover",
+      "task": "💎 Elite: fechar com Lucas/Sérgio promessa, bônus, preço/condição e direção da página/copy",
+      "frente": "💎 ELITE",
+      "status": "🔥"
+    },
+    {
+      "time": "rollover",
+      "task": "💰 Financeiro: comunicar BPO/Tamiris sobre entrada do Fabiano no acidente e resolver Paul Medina",
+      "frente": "💰 FIN",
+      "status": "🔥"
+    },
+    {
+      "time": "rollover",
+      "task": "🚀 Time XDental: alinhar ações desta semana e da próxima antes da viagem à Colômbia",
+      "frente": "🚀 OPS",
+      "status": "🔥"
+    },
+    {
+      "time": "rollover",
+      "task": "📣 Evento sábado 20/06: definir aquecimento, venda orgânica/endereço e operação de comparecimento",
+      "frente": "📣 COM",
+      "status": "📅"
+    },
+    {
+      "time": "rollover",
+      "task": "🚀 Downsell/Lançamento XDental 29/06: estruturar cronograma e preparar captação de 22/06",
+      "frente": "🚀 LANÇ",
+      "status": "🔥"
+    },
+    {
+      "time": "aguardando",
+      "task": "🧠 Ruan enviar/validar tema do Downsell para travar copy, página e peças",
+      "frente": "🚀 LANÇ",
+      "status": "⏳"
+    },
+    {
+      "time": "rollover",
+      "task": "🦷 OralPlanner: cobrar Felipe por cronograma, marcos de entrega e bloqueios técnicos",
       "frente": "🦷 ORAL",
-      "status": "📅",
-      "done": false
+      "status": "📅"
+    },
+    {
+      "time": "19h00",
+      "task": "🧠 Calendar pessoal: Mentoria Cloud Code — Módulo 5 Squads ao vivo",
+      "frente": "🧠 CLOUD",
+      "status": "📅"
     },
     {
       "time": "fim do dia",
-      "task": "📡 Fechar segunda com status: criativos LT, PDF M6, oferta Elite, financeiro e plano 29/06",
+      "task": "📡 Fechar terça com decisões da reunião, pendências resolvidas e próximos donos por frente",
       "frente": "📡 RADAR",
-      "status": "📅",
-      "done": false
+      "status": "📅"
     }
   ],
   "metrics": {
     "p0": 6,
     "p1": 2,
-    "p2": 1,
-    "p3": 1,
-    "done": 0,
-    "tasks": 16
+    "tasksToday": 17,
+    "doneToday": 0
   },
-  "radarExtra": "Atualizado em 15/06: adicionada live do Serginho no Instagram como P0 comercial, com comunicação de escassez e último dia de lote zero. Mantidos criativos Low Ticket, PDF M6, oferta Elite, financeiro e captação do lançamento de 29/06.",
+  "radarExtra": "📊 Atualizado em 16/06: reunião das 9h com Dax Neto, Sérgio e sócios virou P0 de calendário do segundo semestre. Rollovers de ontem puxados para o radar: criativos Low Ticket, PDF M6, oferta Elite/CDM, financeiro Fabiano/Paul Medina, lançamento 29/06, captação 22/06 e OralPlanner.",
   "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
 }
