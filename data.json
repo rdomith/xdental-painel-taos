@@ -6,7 +6,7 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça 30/06 atualizada: remover duplicidade de demandas críticas no topo e deixar o radar só como checklist por horário. P0 do dia: mensagens de conversão do Elite pós-abertura de matrículas, venda de ingressos do Freedom começando sábado, OralPlanner/onboard/API hoje, aulas Diplomado 14h e Elite 16h, além de CIOCH stand e pagamento Vitor Arguedas no BPO."
+    "headline": "Terça 30/06 atualizada: radar sem duplicidade no topo. Correção do Ruan: mensagens de conversão são para Excellence Dental Academy, não Elite. Entrou também reunião com a equipe para apresentar ações do 2º semestre e dar foco no Freedom de julho — ideal marcar hoje, máximo amanhã."
   },
   "fronts": [
     {
@@ -111,15 +111,15 @@
       "priority": "p0",
       "progress": 76,
       "owner": "Ruan / Mônica / Sérgio / equipe",
-      "summary": "Matrículas abriram ontem. Hoje o foco é conversão nos grupos e operação da aula do Elite às 16h, com mensagens alinhadas com Mônica.",
+      "summary": "Aula/imersão do Elite às 16h segue operacional, mas a conversão de matrículas abertas agora é de Excellence Dental Academy, não Elite.",
       "nextActions": [
-        "Preparar mensagens de conversão para os grupos",
-        "Alinhar com a equipe as próximas ações do Elite",
         "Confirmar operação da aula/imersão às 16h",
-        "Alinhar com Mônica os avisos no Telegram dos alunos"
+        "Alinhar com Mônica os avisos no Telegram dos alunos",
+        "Garantir sala/link/suporte da aula do Elite",
+        "Registrar pendências pós-aula"
       ],
       "blockers": [
-        "Sem cadência de conversão nas primeiras 24–48h, a abertura de matrículas perde tração"
+        "Se os avisos da aula não forem alinhados, aumenta ruído no grupo de alunos"
       ]
     },
     {
@@ -169,15 +169,17 @@
       "priority": "p0",
       "progress": 68,
       "owner": "Ruan / equipe XDental / tráfego / copy",
-      "summary": "P0 da semana: venda de ingressos do lançamento pago Freedom começa sábado 04/07. O lançamento acontece em 25/07 e precisa sair com página, copy, tráfego, grupos e owners alinhados antes de sábado.",
+      "summary": "P0 da semana: venda de ingressos do lançamento pago Freedom começa sábado 04/07. Além disso, Ruan precisa marcar hoje a reunião com a equipe para apresentar ações do 2º semestre e dar foco no Freedom de julho.",
       "nextActions": [
+        "Marcar hoje reunião com equipe sobre ações do 2º semestre",
+        "Apresentar próximo semestre e foco Freedom julho",
         "Alinhar próximas ações do lançamento Freedom",
         "Fechar página/checkout/copy/tráfego para venda de ingressos",
         "Definir comunicação de sábado e responsáveis",
         "Conferir se tudo está pronto até sexta"
       ],
       "blockers": [
-        "Se a venda de ingressos de sábado não sair redonda, o lançamento pago de 25/07 começa fraco"
+        "Sem reunião/alinhamento, a equipe entra no semestre sem foco claro e o Freedom de julho começa reativo"
       ]
     }
   ],
@@ -189,25 +191,25 @@
       "deadline": "Sábado 04/07",
       "blocks": "Captação do lançamento pago de 25/07; precisa de página, copy, checkout, tráfego, grupos e owners prontos antes de sábado",
       "owner": "Ruan / equipe XDental",
-      "meta": "Mais urgente da manhã segundo Ruan"
+      "meta": "Mais urgente da manhã segundo Ruan; foco da reunião do 2º semestre"
     },
     {
-      "title": "Elite · conversão pós-abertura + aula 16h",
+      "title": "Excellence Dental Academy · conversão pós-abertura",
       "priority": "p0",
-      "frente": "Sniper Elite / Clínica de Maestría",
+      "frente": "Excellence Dental Academy / Matrículas abertas",
       "deadline": "Hoje 30/06",
-      "blocks": "Matrículas abriram ontem; primeiras mensagens nos grupos e aula de hoje precisam empurrar conversão",
-      "owner": "Ruan / Mônica / Sérgio / equipe",
-      "meta": "Preparar mensagens de conversão e alinhar avisos com Mônica"
+      "blocks": "Matrículas abriram ontem no lançamento; primeiras mensagens nos grupos precisam empurrar conversão",
+      "owner": "Ruan / equipe XDental",
+      "meta": "Preparar mensagens de conversão para Excellence Dental Academy"
     },
     {
-      "title": "OralPlanner · onboard/liberação/API hoje",
+      "title": "Reunião equipe · ações do 2º semestre + Freedom julho",
       "priority": "p0",
-      "frente": "OralPlanner",
-      "deadline": "Hoje 30/06",
-      "blocks": "Compradores/assinantes ganharam acesso; sem tutorial e onboard, aumenta suporte e reduz adoção",
-      "owner": "Ruan / Felipe",
-      "meta": "Checar tutorial, traduzir onboard, liberar e enviar API"
+      "frente": "Gestão / Equipe XDental",
+      "deadline": "Marcar hoje · máximo amanhã 01/07",
+      "blocks": "Equipe precisa enxergar o próximo semestre e entrar alinhada no lançamento Freedom de julho",
+      "owner": "Ruan / equipe XDental",
+      "meta": "Apresentar 2º semestre e dar foco no lançamento Freedom"
     },
     {
       "title": "Agenda 14h · reunião EUA + Diplomado M6",
@@ -240,15 +242,15 @@
   "radarDoDia": [
     {
       "time": "manhã",
-      "task": "💎 Preparar mensagens de conversão do Elite/Clínica para enviar nos grupos — matrículas abriram ontem",
-      "frente": "💎 ELITE",
+      "task": "🏛️ Preparar mensagens de conversão da Excellence Dental Academy para enviar nos grupos — matrículas abriram ontem",
+      "frente": "🏛️ EXCELLENCE",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "manhã",
-      "task": "💎 Alinhar com a equipe as próximas ações do Elite: cadência, grupos, responsáveis e próximos disparos",
-      "frente": "💎 ELITE",
+      "time": "hoje",
+      "task": "👥 Marcar reunião com a equipe para apresentar ações do 2º semestre e dar foco no Freedom julho — ideal hoje, máximo amanhã",
+      "frente": "👥 EQUIPE",
       "status": "🔥",
       "done": false
     },
@@ -310,7 +312,7 @@
     },
     {
       "time": "fim do dia",
-      "task": "📡 Fechar terça: checar mensagens Elite, Freedom sábado, aulas 14h/16h, Vitor/BPO, CIOCH e OralPlanner",
+      "task": "📡 Fechar terça: checar mensagens Excellence, Freedom sábado, aulas 14h/16h, Vitor/BPO, CIOCH e OralPlanner",
       "frente": "📡 RADAR",
       "status": "📅",
       "done": false
@@ -324,6 +326,6 @@
     "done": 0,
     "tasks": 11
   },
-  "radarExtra": "Atualizado em 30/06 com áudio do Ruan no tópico Dados/Painel. Ajuste de layout: removida a duplicidade de demandas críticas no topo; radar fica como checklist por horários. Calendar XDental conferido para hoje: Diplomado M6, Sniper Elite, alinhamento Mônica e rotina Low Tickets/Fabian.",
+  "radarExtra": "Atualizado em 30/06 com áudio do Ruan no tópico Dados/Painel. Ajuste posterior: conversão corrigida para Excellence Dental Academy (não Elite) e adicionada reunião com a equipe para apresentar ações do 2º semestre, com foco no Freedom de julho. Calendar XDental conferido para hoje: Diplomado M6, Sniper Elite, alinhamento Mônica e rotina Low Tickets/Fabian.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
