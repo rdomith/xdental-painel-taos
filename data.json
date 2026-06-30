@@ -6,7 +6,7 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça 30/06 atualizada: radar sem duplicidade no topo. Correção do Ruan: mensagens de conversão são para Excellence Dental Academy, não Elite. Entrou também reunião com a equipe para apresentar ações do 2º semestre e dar foco no Freedom de julho — ideal marcar hoje, máximo amanhã."
+    "headline": "Terça 30/06 atualizada: radar sem duplicidade no topo. Correção do Ruan: mensagens de conversão são para Excellence Dental Academy, não Elite. Entrou reunião com a equipe para apresentar ações do 2º semestre/Freedom e também preparar hoje as questões da prova do M6 do Diplomado."
   },
   "fronts": [
     {
@@ -54,8 +54,9 @@
       "priority": "p1",
       "progress": 92,
       "owner": "Ruan / Mônica / Sérgio / suporte",
-      "summary": "Hoje tem Encuentro ao vivo do Módulo 6 com o Sérgio às 14h. Precisa garantir sala, aviso aos alunos, gravação e suporte, ainda mais porque há reunião externa no mesmo horário.",
+      "summary": "Hoje tem Encuentro ao vivo do Módulo 6 com o Sérgio às 14h e Ruan precisa preparar as questões da prova do M6 hoje, porque a liberação operacional da prova está marcada para amanhã com janela de 7 dias.",
       "nextActions": [
+        "Preparar hoje as questões da prova do Módulo 6",
         "Confirmar operação da aula do M6 às 14h",
         "Garantir aviso/link/suporte e gravação",
         "Registrar pendências pós-aula e próximos passos do módulo"
@@ -269,6 +270,13 @@
       "done": false
     },
     {
+      "time": "hoje",
+      "task": "🎓 Diplomado M6: preparar as questões da prova hoje — liberação operacional amanhã com janela de 7 dias",
+      "frente": "🎓 DOP",
+      "status": "🔥",
+      "done": false
+    },
+    {
       "time": "14h00",
       "task": "🎓 Diplomado M6: Encuentro ao vivo com Sérgio — garantir operação, aviso/link, suporte e gravação",
       "frente": "🎓 DOP",
@@ -324,8 +332,8 @@
     "p2": 1,
     "p3": 1,
     "done": 0,
-    "tasks": 11
+    "tasks": 12
   },
-  "radarExtra": "Atualizado em 30/06 com áudio do Ruan no tópico Dados/Painel. Ajuste posterior: conversão corrigida para Excellence Dental Academy (não Elite) e adicionada reunião com a equipe para apresentar ações do 2º semestre, com foco no Freedom de julho. Calendar XDental conferido para hoje: Diplomado M6, Sniper Elite, alinhamento Mônica e rotina Low Tickets/Fabian.",
+  "radarExtra": "Atualizado em 30/06 com áudio do Ruan no tópico Dados/Painel. Ajustes posteriores: conversão corrigida para Excellence Dental Academy (não Elite), adicionada reunião com a equipe para apresentar ações do 2º semestre/Freedom e adicionada preparação das questões da prova do M6 do Diplomado hoje. Calendar XDental conferido: Diplomado M6, Sniper Elite, alinhamento Mônica e rotina Low Tickets/Fabian.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
