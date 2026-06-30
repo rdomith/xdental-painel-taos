@@ -2,41 +2,44 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.9-persistent",
-    "lastUpdated": "2026-06-19 · Clínica amanhã + Felipe/comercial + calendário 2º semestre",
+    "lastUpdated": "2026-06-30 · Radar terça + Elite/Freedom/OralPlanner",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Sexta 19/06 atualizada: foco absoluto na virada pré-evento da Clínica de Maestría. Ruan tem Felipe às 9h30 para demandas do dia e link da transmissão, comercial às 11h para alinhar oferta com Karine/Bianca, workbook e mensagem de amanhã precisam sair hoje, mensagens de sábado e cadência de conversão domingo–quinta ficam prontas, e o calendário comercial do 2º semestre foi retomado para próxima etapa no Google Calendar."
+    "headline": "Terça 30/06 atualizada: remover duplicidade de demandas críticas no topo e deixar o radar só como checklist por horário. P0 do dia: mensagens de conversão do Elite pós-abertura de matrículas, venda de ingressos do Freedom começando sábado, OralPlanner/onboard/API hoje, aulas Diplomado 14h e Elite 16h, além de CIOCH stand e pagamento Vitor Arguedas no BPO."
   },
   "fronts": [
     {
       "id": "low-tickets",
+      "filter": "lowticket",
+      "icon": "🛒",
       "name": "Low Tickets",
       "status": "attention",
-      "priority": "p0",
+      "priority": "p1",
       "progress": 82,
-      "owner": "Ruan + Bruno + Batista + Fabian",
-      "summary": "Rollover de ontem virou P0: imagens/criativos precisam ficar organizados para Fabian editar hoje e Batista subir na quarta.",
+      "owner": "Ruan / Bruno / Batista / Fabian",
+      "summary": "Rotina de terça no Calendar: Fabian edita criativos. Não é o P0 do dia, mas segue no radar para não perder cadência de testes.",
       "nextActions": [
-        "Organizar imagens/criativos pendentes de ontem",
-        "Separar por produto e nomear variações",
-        "Acompanhar edição do Fabian hoje",
-        "Preparar subida do Batista na quarta"
+        "Confirmar edição dos criativos pelo Fabian",
+        "Preparar materiais para próxima subida do Batista",
+        "Manter leitura do radar 0 vendas/Hotmart"
       ],
       "blockers": [
-        "Sem pacote claro hoje, a cadência de testes da semana atrasa"
+        "Se a cadência de criativos atrasar, os testes da semana perdem velocidade"
       ]
     },
     {
       "id": "sniper-vip",
+      "filter": "sniper",
+      "icon": "🎯",
       "name": "Sniper VIP",
       "status": "done",
       "priority": "p3",
       "progress": 100,
       "owner": "Ruan / Sérgio / Klyro",
-      "summary": "Evento já concluído; sem demanda nova no áudio de hoje.",
+      "summary": "Evento concluído. Sem demanda nova no áudio de hoje.",
       "nextActions": [
-        "Manter apenas pós-evento/prova social quando entrar novo input"
+        "Manter pós-evento/prova social apenas quando entrar novo input"
       ],
       "blockers": [
         "Sem bloqueio crítico hoje"
@@ -44,103 +47,114 @@
     },
     {
       "id": "diplomado-ortho-pro",
+      "filter": "diplomado",
+      "icon": "🎓",
       "name": "Diplomado Ortho Pro",
       "status": "risk",
-      "priority": "p0",
-      "progress": 91,
-      "owner": "Ruan / Clairo / Mônica / Sérgio",
-      "summary": "PDF M6 continua como pendência de ontem: terminar imagens e mandar pacote para Clairo finalizar design.",
+      "priority": "p1",
+      "progress": 92,
+      "owner": "Ruan / Mônica / Sérgio / suporte",
+      "summary": "Hoje tem Encuentro ao vivo do Módulo 6 com o Sérgio às 14h. Precisa garantir sala, aviso aos alunos, gravação e suporte, ainda mais porque há reunião externa no mesmo horário.",
       "nextActions": [
-        "Finalizar imagens do PDF M6",
-        "Enviar pacote para Clairo",
-        "Definir responsável por upload/comunicação",
-        "Levar conflito M8 x Chile para o mapa de datas"
+        "Confirmar operação da aula do M6 às 14h",
+        "Garantir aviso/link/suporte e gravação",
+        "Registrar pendências pós-aula e próximos passos do módulo"
       ],
       "blockers": [
-        "Material complementar vencido afeta experiência dos alunos"
+        "Conflito de agenda às 14h exige operação bem delegada para não gerar ruído com alunos"
       ]
     },
     {
       "id": "plataforma-assinatura",
+      "filter": "plataforma",
+      "icon": "🎬",
       "name": "Plataforma de Assinatura",
       "status": "attention",
-      "priority": "p0",
-      "progress": 76,
-      "owner": "Ruan / financeiro / Paul Medina / equipe",
-      "summary": "Resolver pendência financeira do Paul Medina e manter pipeline de professores/cursos no radar do segundo semestre.",
+      "priority": "p1",
+      "progress": 84,
+      "owner": "Ruan / BPO / Vitor Arguedas / equipe",
+      "summary": "Próximo curso está pronto para lançamento/liberação em 03/07. Pendência de hoje: Ruan informar ao BPO o pagamento do professor Vitor Arguedas.",
       "nextActions": [
-        "Resolver pagamento/baixa do Paul Medina",
-        "Registrar comprovante",
-        "Confirmar fluxo de edição/upload do curso",
-        "Incluir professores e datas no calendário 2º semestre"
+        "Informar BPO sobre pagamento do Vitor Arguedas",
+        "Garantir liberação do curso em 03/07",
+        "Conferir comunicação aos assinantes e responsáveis"
       ],
       "blockers": [
-        "Pagamento pendente gera ruído com professor e pipeline"
+        "Pagamento não informado ao BPO pode gerar ruído financeiro com professor"
       ]
     },
     {
       "id": "chile-cioch",
+      "filter": "chile",
+      "icon": "🇨🇱",
       "name": "Chile / CIOCH",
-      "status": "attention",
+      "status": "risk",
       "priority": "p1",
-      "progress": 35,
-      "owner": "Ruan / Vinícius / financeiro",
-      "summary": "Entrou na pauta de datas do segundo semestre: congresso 26-28/08, montagem 25/08, formulários 20/07 e gráfica/projeto 26/07.",
+      "progress": 38,
+      "owner": "Ruan / empresa de design / Vinícius",
+      "summary": "Prazos do manual do expositor estão se aproximando. Ação permanente no radar: enviar e-mail para a empresa de design iniciar/propor o design do stand.",
       "nextActions": [
-        "Revisar CIOCH na reunião de datas",
-        "Confirmar stand/pagamento e responsáveis",
-        "Marcar deadlines 20/07, 26/07 e 25/08",
-        "Checar conflito com Diplomado M8"
+        "Enviar e-mail para empresa de design do stand",
+        "Anexar/usar requisitos do manual do expositor",
+        "Manter deadlines: 20/07 formulários, 26/07 gráfica/projeto e 25/08 montagem"
       ],
       "blockers": [
-        "Risco de conflito de agenda com Diplomado e viagem/montagem"
+        "Se o design do stand não começar agora, a data de gráfica/projeto especial fica apertada"
       ]
     },
     {
       "id": "sniper-elite",
+      "filter": "elite",
+      "icon": "💎",
       "name": "Sniper Elite / Clínica de Maestría",
       "status": "risk",
       "priority": "p0",
-      "progress": 70,
-      "owner": "Ruan / Lucas / Sérgio / Dax Neto / time comercial",
-      "summary": "Pauta principal da reunião das 9h: travar datas, oferta, promessa, bônus, preço e operação do Elite/CDM para o segundo semestre.",
+      "progress": 76,
+      "owner": "Ruan / Mônica / Sérgio / equipe",
+      "summary": "Matrículas abriram ontem. Hoje o foco é conversão nos grupos e operação da aula do Elite às 16h, com mensagens alinhadas com Mônica.",
       "nextActions": [
-        "Usar reunião para fechar mapa de datas",
-        "Decidir promessa/oferta com Sérgio e sócios",
-        "Definir impacto no evento de sábado e captação 22/06",
-        "Transformar decisão em briefing de página, copy e tráfego"
+        "Preparar mensagens de conversão para os grupos",
+        "Alinhar com a equipe as próximas ações do Elite",
+        "Confirmar operação da aula/imersão às 16h",
+        "Alinhar com Mônica os avisos no Telegram dos alunos"
       ],
       "blockers": [
-        "Sem decisão hoje, página/copy/tráfego e venda orgânica ficam travados"
+        "Sem cadência de conversão nas primeiras 24–48h, a abertura de matrículas perde tração"
       ]
     },
     {
       "id": "oralplanner",
+      "filter": "oralplanner",
+      "icon": "🧩",
       "name": "OralPlanner",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 56,
-      "owner": "Ruan / Felipe",
-      "summary": "Rollover: cobrar Felipe por cronograma real, marcos de entrega e bloqueios técnicos.",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 60,
+      "owner": "Ruan / Felipe / equipe",
+      "summary": "Hoje é dia de divulgação/onboard. Precisa verificar com Felipe se ele gravou o tutorial, traduzir/montar o onboard e liberar/envio API para compradores/assinantes.",
       "nextActions": [
-        "Cobrar cronograma com Felipe",
-        "Separar marcos técnicos e marcos de lançamento",
-        "Definir próxima entrega validável"
+        "Verificar com Felipe se o tutorial foi gravado",
+        "Traduzir e montar onboard dos assinantes/compradores",
+        "Liberar OralPlanner para quem ganhou acesso",
+        "Enviar API/comunicação para compradores hoje"
       ],
       "blockers": [
-        "Sem cronograma real, a frente segue sem previsibilidade"
+        "Sem tutorial/onboard, a liberação vira acesso solto e aumenta suporte"
       ]
     },
     {
       "id": "plataforma-app",
+      "filter": "plataforma",
+      "icon": "📱",
       "name": "Plataforma Própria (App)",
       "status": "on_track",
       "priority": "p2",
-      "progress": 72,
+      "progress": 74,
       "owner": "Ruan / Felipe / Suporte",
-      "summary": "Sem demanda nova no áudio de hoje; manter adoção e suporte em acompanhamento.",
+      "summary": "Sem demanda nova específica além do suporte à liberação do OralPlanner e comunicação aos assinantes.",
       "nextActions": [
-        "Monitorar dúvidas, acessos e reforços de migração"
+        "Monitorar dúvidas de acesso",
+        "Apoiar comunicação quando OralPlanner for liberado"
       ],
       "blockers": [
         "Sem bloqueio novo"
@@ -148,220 +162,168 @@
     },
     {
       "id": "lancamentos",
-      "name": "Lançamentos / Downsell XDental",
+      "filter": "lancamentos",
+      "icon": "🚀",
+      "name": "Lançamentos / Freedom",
       "status": "risk",
       "priority": "p0",
-      "progress": 65,
-      "owner": "Ruan / sócios / Dax Neto / Sérgio / equipe XDental",
-      "summary": "Reunião de hoje precisa transformar datas do segundo semestre em plano operacional: evento 20/06, captação 22/06, lançamento 29/06 e calendário até Black.",
+      "progress": 68,
+      "owner": "Ruan / equipe XDental / tráfego / copy",
+      "summary": "P0 da semana: venda de ingressos do lançamento pago Freedom começa sábado 04/07. O lançamento acontece em 25/07 e precisa sair com página, copy, tráfego, grupos e owners alinhados antes de sábado.",
       "nextActions": [
-        "Travar calendário 2º semestre na reunião",
-        "Definir donos por frente e datas críticas",
-        "Estruturar Downsell 29/06",
-        "Preparar captação 22/06 antes da Colômbia",
-        "Fechar aquecimento/venda orgânica do evento de sábado"
+        "Alinhar próximas ações do lançamento Freedom",
+        "Fechar página/checkout/copy/tráfego para venda de ingressos",
+        "Definir comunicação de sábado e responsáveis",
+        "Conferir se tudo está pronto até sexta"
       ],
       "blockers": [
-        "Sem mapa de datas, o time entra em execução reativa e atropela captação"
+        "Se a venda de ingressos de sábado não sair redonda, o lançamento pago de 25/07 começa fraco"
       ]
     }
   ],
   "gargalos": [
     {
-      "title": "Clínica de Maestría · operação de amanhã",
+      "title": "Freedom · venda de ingressos começa sábado",
       "priority": "p0",
-      "frente": "Clínica de Maestría / Sniper Elite",
-      "deadline": "Hoje 19/06",
-      "blocks": "Comparecimento, transmissão, abertura de matrículas e venda do Elite no evento de 20/06",
-      "owner": "Ruan / Felipe / Bruno / Sérgio",
-      "meta": "Workbook, mensagem de amanhã, link e sequência de sábado"
+      "frente": "Lançamentos / Freedom",
+      "deadline": "Sábado 04/07",
+      "blocks": "Captação do lançamento pago de 25/07; precisa de página, copy, checkout, tráfego, grupos e owners prontos antes de sábado",
+      "owner": "Ruan / equipe XDental",
+      "meta": "Mais urgente da manhã segundo Ruan"
     },
     {
-      "title": "Mensagens do evento · sábado inteiro",
+      "title": "Elite · conversão pós-abertura + aula 16h",
       "priority": "p0",
-      "frente": "Comunicação CDM",
-      "deadline": "Antes do fim da manhã",
-      "blocks": "Sequência do dia: lembretes, link, show-up, abertura de matrículas e próximos passos",
-      "owner": "Ruan / Bruno / TAOS",
-      "meta": "Preparar do primeiro disparo até matrículas abertas"
+      "frente": "Sniper Elite / Clínica de Maestría",
+      "deadline": "Hoje 30/06",
+      "blocks": "Matrículas abriram ontem; primeiras mensagens nos grupos e aula de hoje precisam empurrar conversão",
+      "owner": "Ruan / Mônica / Sérgio / equipe",
+      "meta": "Preparar mensagens de conversão e alinhar avisos com Mônica"
     },
     {
-      "title": "Conversão pós-abertura · domingo a quinta",
+      "title": "OralPlanner · onboard/liberação/API hoje",
       "priority": "p0",
-      "frente": "Matrículas abertas / Sniper Elite",
-      "deadline": "22/06 a 25/06",
-      "blocks": "Cadência diária de mensagem + imagem baseada na copy do Bruno e na oferta final",
-      "owner": "Ruan / Bruno",
-      "meta": "Imagens diárias de matrículas abertas"
-    },
-    {
-      "title": "Calendário comercial 2º semestre · virar Google Calendar",
-      "priority": "p0",
-      "frente": "Direção / Calendário",
-      "deadline": "Após validação do Ruan",
-      "blocks": "Visibilidade das ações 25/07, 17/08, CIOCH, 12/09, Black e planejamento 2027",
-      "owner": "Ruan / TAOS",
-      "meta": "Preferir eventos all-day/radar operacional"
-    },
-    {
-      "title": "Felipe · demandas do dia e link da transmissão",
-      "priority": "p0",
-      "frente": "Operação / Felipe",
-      "deadline": "09h30",
-      "blocks": "Tarefas levantadas no tópico Gestão + criação/liberação do link de transmissão",
+      "frente": "OralPlanner",
+      "deadline": "Hoje 30/06",
+      "blocks": "Compradores/assinantes ganharam acesso; sem tutorial e onboard, aumenta suporte e reduz adoção",
       "owner": "Ruan / Felipe",
-      "meta": "Reunião desta manhã"
+      "meta": "Checar tutorial, traduzir onboard, liberar e enviar API"
     },
     {
-      "title": "Comercial 11h · oferta Karine/Bianca",
+      "title": "Agenda 14h · reunião EUA + Diplomado M6",
       "priority": "p1",
-      "frente": "Comercial / Sniper Elite",
-      "deadline": "11h",
-      "blocks": "Time comercial entrar no sábado sabendo oferta, objeções, condição, matrícula e próximos dias",
-      "owner": "Ruan / Karine / Bianca",
-      "meta": "Alinhamento de oferta"
+      "frente": "Agenda / Diplomado",
+      "deadline": "14h hoje",
+      "blocks": "Reunião com plataforma de vendas dos EUA acontece no mesmo horário da aula ao vivo do Diplomado M6",
+      "owner": "Ruan / Mônica / Sérgio",
+      "meta": "Garantir operação delegada da aula"
     },
     {
-      "title": "CIOCH/Chile · prazos preservados",
+      "title": "Chile/CIOCH · design do stand",
       "priority": "p1",
       "frente": "Chile / CIOCH",
-      "deadline": "20/07 formulários · 26/07 gráfica · 25/08 montagem",
-      "blocks": "Stand, materiais e logística do congresso 26-28/08",
-      "owner": "Ruan / Vinícius",
-      "meta": "Entrar no calendário 2S"
+      "deadline": "Manter permanente até envio",
+      "blocks": "Prazo de gráfica/projeto especial do manual do expositor se aproxima; stand precisa entrar em produção",
+      "owner": "Ruan / empresa de design",
+      "meta": "Enviar e-mail com requisitos do manual"
     },
     {
-      "title": "Diplomado · conflito M8 × CIOCH",
+      "title": "Plataforma · pagamento Vitor Arguedas no BPO",
       "priority": "p1",
-      "frente": "Diplomado Ortho Pro",
-      "deadline": "25/08",
-      "blocks": "M8 conflita com montagem/viagem Chile; decisão precisa entrar no calendário 2S",
-      "owner": "Ruan / Mônica / equipe",
-      "meta": "Conflito já mapeado"
+      "frente": "Plataforma de Assinatura",
+      "deadline": "Hoje 30/06",
+      "blocks": "Curso de 03/07 está pronto, mas pendência financeira precisa ser informada ao BPO",
+      "owner": "Ruan / BPO",
+      "meta": "Pagamento do professor Vitor Arguedas"
     }
   ],
   "radarDoDia": [
     {
-      "time": "09h30",
-      "task": "👨‍💻 Reunião com Felipe: revisar demandas levantadas no tópico Gestão e travar entregas/owners de hoje",
-      "frente": "👨‍💻 FELIPE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "09h30",
-      "task": "🔗 Felipe: confirmar criação do link da transmissão da Clínica e horário de envio aos participantes",
-      "frente": "🔥 CDM",
+      "time": "manhã",
+      "task": "💎 Preparar mensagens de conversão do Elite/Clínica para enviar nos grupos — matrículas abriram ontem",
+      "frente": "💎 ELITE",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🔥 Revisar tudo que falta para o evento de amanhã: transmissão, grupos, disparos, workbook, oferta e abertura de matrículas",
-      "frente": "🔥 CDM",
+      "task": "💎 Alinhar com a equipe as próximas ações do Elite: cadência, grupos, responsáveis e próximos disparos",
+      "frente": "💎 ELITE",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "📩 Organizar horários de disparo das mensagens de hoje e de sábado — do primeiro lembrete até matrículas abertas",
-      "frente": "📩 COM",
+      "task": "🚀 Freedom: alinhar plano da venda de ingressos que começa sábado — página, checkout, copy, tráfego, grupos e owners",
+      "frente": "🚀 FREEDOM",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "hoje",
-      "task": "📘 Enviar workbook aos participantes da Clínica de Maestría",
-      "frente": "🔥 CDM",
-      "status": "🔥",
+      "time": "14h00",
+      "task": "🌎 Reunião com plataforma de vendas dos EUA: avaliar parceria e abertura de conta",
+      "frente": "🌎 PARCERIA",
+      "status": "📅",
       "done": false
     },
     {
-      "time": "hoje",
-      "task": "📣 Enviar mensagem “amanhã é o evento” nos canais/grupos definidos",
-      "frente": "📣 COM",
-      "status": "🔥",
+      "time": "14h00",
+      "task": "🎓 Diplomado M6: Encuentro ao vivo com Sérgio — garantir operação, aviso/link, suporte e gravação",
+      "frente": "🎓 DOP",
+      "status": "📅",
       "done": false
     },
     {
-      "time": "hoje",
-      "task": "🔗 Enviar link de transmissão assim que Felipe criar/liberar",
-      "frente": "🔥 CDM",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🧾 Preparar todas as mensagens de sábado: início do dia, lembretes, transmissão, abertura de matrículas e fechamento do dia",
-      "frente": "📩 COM",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "11h00",
-      "task": "💰 Reunião com comercial: alinhar oferta, matrícula, argumentos e objeções com Karine e Bianca",
-      "frente": "💰 COMERCIAL",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "após 11h",
-      "task": "✅ Consolidar resumo da oferta para o comercial usar durante a janela de matrículas abertas",
-      "frente": "💰 COMERCIAL",
+      "time": "16h00",
+      "task": "💎 Elite: aula/imersão com Sérgio — confirmar avisos no grupo e operação da sala",
+      "frente": "💎 ELITE",
       "status": "📅",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "🧲 Revisar mensagens de conversão pós-abertura — domingo até quinta, fechamento oficial da matrícula",
-      "frente": "🧲 CONV",
+      "task": "🎬 Plataforma: informar BPO sobre pagamento do professor Vitor Arguedas",
+      "frente": "🎬 PA",
       "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "🖼️ Preparar imagens diárias de matrículas abertas com base nas copies do Bruno e na oferta final",
-      "frente": "🖼️ DESIGN",
+      "task": "🇨🇱 Chile/CIOCH: enviar e-mail para empresa de design iniciar o design do stand conforme manual do expositor",
+      "frente": "🇨🇱 CHL",
       "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "🗓️ Retomar mapa do calendário comercial 2º semestre: 25/07, 17/08, CIOCH, VIP setembro, 12/09, Black 28/10/03/11 e planejamento 2027",
-      "frente": "🗓️ CAL",
+      "task": "🧩 OralPlanner: verificar com Felipe se tutorial foi gravado e pegar material para tradução/onboard",
+      "frente": "🧩 ORAL",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "próximo passo",
-      "task": "📅 Preparar lote para Google Calendar como eventos de dia todo/radar operacional — aguardar validação final do Ruan antes de criar",
-      "frente": "📅 GCAL",
-      "status": "⏳",
+      "time": "hoje",
+      "task": "🧩 OralPlanner: montar onboard, liberar acesso e enviar API/comunicação para compradores/assinantes",
+      "frente": "🧩 ORAL",
+      "status": "🔥",
       "done": false
     },
     {
       "time": "fim do dia",
-      "task": "📡 Fechar sexta: checar link/workbook/mensagens/comercial/conversão/imagens e atualizar painel com checks reais",
+      "task": "📡 Fechar terça: checar mensagens Elite, Freedom sábado, aulas 14h/16h, Vitor/BPO, CIOCH e OralPlanner",
       "frente": "📡 RADAR",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "observação",
-      "task": "⚠️ Calendar não conferido via ClawLink hoje por limite mensal da conta; painel usa áudio do Ruan + memória operacional validada",
-      "frente": "⚙️ TAOS",
       "status": "📅",
       "done": false
     }
   ],
   "metrics": {
-    "p0": 5,
+    "p0": 3,
     "p1": 3,
     "p2": 1,
-    "p3": 0,
+    "p3": 1,
     "done": 0,
-    "tasks": 16
+    "tasks": 11
   },
-  "radarExtra": "Atualizado em 19/06 com áudio do Ruan: CDM amanhã virou P0 operacional. Inclui Felipe 09h30, comercial 11h, workbook/link/mensagem de amanhã, mensagens de sábado, conversão domingo–quinta, imagens de matrículas abertas e calendário comercial 2º semestre pronto para próxima etapa no Google Calendar. Observação: ClawLink Calendar está bloqueado por limite mensal; não houve conferência direta do Calendar nesta execução.",
-  "sourceFile": "dashboard/xdental/imports/painel-2026-05-13-v2.9-correto.html"
+  "radarExtra": "Atualizado em 30/06 com áudio do Ruan no tópico Dados/Painel. Ajuste de layout: removida a duplicidade de demandas críticas no topo; radar fica como checklist por horários. Calendar XDental conferido para hoje: Diplomado M6, Sniper Elite, alinhamento Mônica e rotina Low Tickets/Fabian.",
+  "sourceFile": "projects/xdental-painel-taos/index.html"
 }
