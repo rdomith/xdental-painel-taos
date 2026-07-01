@@ -6,7 +6,7 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quarta 01/07 atualizada: P0 é tirar o onboarding do OralPlanner hoje, organizar Freedom antes das vendas de sábado, encaminhar gravação do Diplomado para edição do Fabián e preparar gravação do Elite/Serginho para upload na plataforma."
+    "headline": "Quarta 01/07 atualizada: P0 é tirar o onboarding do OralPlanner hoje, organizar Freedom antes das vendas de sábado, preparar copy dos 5 vídeos do Serginho, encaminhar gravação do Diplomado para edição do Fabián e preparar gravação do Elite/Serginho para upload na plataforma."
   },
   "fronts": [
     {
@@ -170,8 +170,9 @@
       "priority": "p0",
       "progress": 66,
       "owner": "Ruan / Batista / equipe XDental / tráfego",
-      "summary": "Vendas do Freedom começam sábado 04/07. Hoje precisa organizar datas/demandas e reunir com Batista para identificar melhores criativos e replicar.",
+      "summary": "Vendas do Freedom começam sábado 04/07. Hoje precisa organizar datas/demandas, reunir com Batista para identificar melhores criativos e preparar copy/roteiros dos 5 vídeos para Serginho gravar.",
       "nextActions": [
+        "Preparar copy/roteiros dos 5 vídeos para Serginho gravar",
         "Reunir com Batista para revisar melhores criativos do Freedom",
         "Definir quais criativos serão replicados/adaptados",
         "Organizar calendário de demandas até sábado",
@@ -208,7 +209,7 @@
       "deadline": "Hoje 01/07",
       "blocks": "A aula do encontro M6 não deve subir crua; precisa passar por Fabián",
       "owner": "Ruan / Fabián",
-      "meta": "Busca no Drive iniciada; confirmar arquivo correto antes de enviar ao Fabián"
+      "meta": "Gravação localizada no Drive: 30/06 12:40 GMT-3"
     },
     {
       "title": "Elite · gravação com Serginho para subir na plataforma",
@@ -256,6 +257,13 @@
     {
       "time": "hoje",
       "task": "🚀 Freedom: organizar calendário de demandas até sábado — página, checkout, copy, tráfego, grupos, criativos e owners",
+      "frente": "🚀 FREEDOM",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "🎥 Freedom/Serginho: preparar copy/roteiro de 5 vídeos criativos para o Sérgio gravar",
       "frente": "🚀 FREEDOM",
       "status": "🔥",
       "done": false
@@ -330,8 +338,8 @@
     "p2": 2,
     "p3": 1,
     "done": 0,
-    "tasks": 12
+    "tasks": 13
   },
-  "radarExtra": "Atualizado em 01/07 com áudio do Ruan + Google Calendar + Drive. Drive localizado: gravação/anotações de reunião com Sérgio/Elite em 30/06 12:40 GMT-3 (vídeo nin-qzqe-ipe e anotações Gemini). Diplomado M6 deve passar por Fabián antes de publicar. Calendar: rdomith tem ação XDental all-day 29/06-04/07; conta Excellence sem eventos; Rocket tem Catalina 15h, Financeiro RX 16h, Naty 17h e Check lançamento Manu 18h.",
+  "radarExtra": "Atualizado em 01/07 com áudio do Ruan + Google Calendar + Drive. Demanda nova 16h11: preparar copy/roteiros de 5 vídeos criativos para Serginho gravar no Freedom. Drive localizado: gravação/anotações de reunião com Sérgio/Elite em 30/06 12:40 GMT-3 (vídeo nin-qzqe-ipe e anotações Gemini). Diplomado M6 deve passar por Fabián antes de publicar. Calendar: rdomith tem ação XDental all-day 29/06-04/07; conta Excellence sem eventos; Rocket tem Catalina 15h, Financeiro RX 16h, Naty 17h e Check lançamento Manu 18h.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
