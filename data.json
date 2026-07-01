@@ -236,7 +236,7 @@
       "deadline": "01/07",
       "blocks": "Calendário operacional correto é rdomith@gmail.com: ação all-day XDental | Ação pós-Clínica + nova captação está ativa de 29/06 a 04/07",
       "owner": "Ruan",
-      "meta": "Não usar calendário contato@rocketagencia.com.br para painel XDental salvo pedido explícito"
+      "meta": "Usar apenas rdomith@gmail.com para painel XDental, salvo pedido explícito"
     }
   ],
   "radarDoDia": [
@@ -319,6 +319,6 @@
     "done": 0,
     "tasks": 10
   },
-  "radarExtra": "Atualizado em 01/07 com áudio do Ruan + Google Calendar + Drive. Demanda nova 16h11: preparar copy/roteiros de 5 vídeos criativos para Serginho gravar no Freedom. Drive localizado: gravação/anotações de reunião com Sérgio/Elite em 30/06 12:40 GMT-3 (vídeo nin-qzqe-ipe e anotações Gemini). Diplomado M6 deve passar por Fabián antes de publicar. Calendar correto consultado: rdomith@gmail.com tem XDental | Ação pós-Clínica + nova captação ativo 29/06-04/07. Eventos do contato@rocketagencia.com.br foram removidos do painel por não serem a fonte operacional da XDental.",
+  "radarExtra": "Atualizado em 01/07 com áudio do Ruan + Google Calendar + Drive. Demanda nova 16h11: preparar copy/roteiros de 5 vídeos criativos para Serginho gravar no Freedom. Drive localizado: gravação/anotações de reunião com Sérgio/Elite em 30/06 12:40 GMT-3 (vídeo nin-qzqe-ipe e anotações Gemini). Diplomado M6 deve passar por Fabián antes de publicar. Calendar correto consultado: rdomith@gmail.com tem XDental | Ação pós-Clínica + nova captação ativo 29/06-04/07. Eventos de outros calendários foram removidos do painel por não serem a fonte operacional da XDental.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
