@@ -234,9 +234,9 @@
       "priority": "p1",
       "frente": "Agenda",
       "deadline": "01/07",
-      "blocks": "Rocket tem Reunião Catalina 15h, Financeiro RX 16h, Reunião Naty 17h e Check lançamento Manu 18h; Calendar XDental sem eventos do dia",
+      "blocks": "Calendário operacional correto é rdomith@gmail.com: ação all-day XDental | Ação pós-Clínica + nova captação está ativa de 29/06 a 04/07",
       "owner": "Ruan",
-      "meta": "rdomith tem ação all-day XDental 29/06-04/07"
+      "meta": "Não usar calendário contato@rocketagencia.com.br para painel XDental salvo pedido explícito"
     }
   ],
   "radarDoDia": [
@@ -297,29 +297,8 @@
       "done": false
     },
     {
-      "time": "15h00",
-      "task": "📅 Rocket: Reunião Catalina no Google Calendar contato@rocketagencia.com.br",
-      "frente": "📅 AGENDA",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "16h00",
-      "task": "📅 Rocket: Financeiro RX no Google Calendar contato@rocketagencia.com.br",
-      "frente": "📅 AGENDA",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "17h00",
-      "task": "📅 Rocket: Reunião Naty no Google Calendar contato@rocketagencia.com.br",
-      "frente": "📅 AGENDA",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "18h00",
-      "task": "📅 Rocket: Check lançamento Manu no Google Calendar contato@rocketagencia.com.br",
+      "time": "dia todo",
+      "task": "📅 rdomith@gmail.com: XDental | Ação pós-Clínica + nova captação — ativo 29/06 a 04/07",
       "frente": "📅 AGENDA",
       "status": "📅",
       "done": false
@@ -338,8 +317,8 @@
     "p2": 2,
     "p3": 1,
     "done": 0,
-    "tasks": 13
+    "tasks": 10
   },
-  "radarExtra": "Atualizado em 01/07 com áudio do Ruan + Google Calendar + Drive. Demanda nova 16h11: preparar copy/roteiros de 5 vídeos criativos para Serginho gravar no Freedom. Drive localizado: gravação/anotações de reunião com Sérgio/Elite em 30/06 12:40 GMT-3 (vídeo nin-qzqe-ipe e anotações Gemini). Diplomado M6 deve passar por Fabián antes de publicar. Calendar: rdomith tem ação XDental all-day 29/06-04/07; conta Excellence sem eventos; Rocket tem Catalina 15h, Financeiro RX 16h, Naty 17h e Check lançamento Manu 18h.",
+  "radarExtra": "Atualizado em 01/07 com áudio do Ruan + Google Calendar + Drive. Demanda nova 16h11: preparar copy/roteiros de 5 vídeos criativos para Serginho gravar no Freedom. Drive localizado: gravação/anotações de reunião com Sérgio/Elite em 30/06 12:40 GMT-3 (vídeo nin-qzqe-ipe e anotações Gemini). Diplomado M6 deve passar por Fabián antes de publicar. Calendar correto consultado: rdomith@gmail.com tem XDental | Ação pós-Clínica + nova captação ativo 29/06-04/07. Eventos do contato@rocketagencia.com.br foram removidos do painel por não serem a fonte operacional da XDental.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
