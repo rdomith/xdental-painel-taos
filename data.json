@@ -1,12 +1,12 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.9-persistent",
-    "lastUpdated": "2026-06-30 · Radar terça + Elite/Freedom/OralPlanner",
+    "version": "2.10-persistent",
+    "lastUpdated": "2026-07-01 · Radar quarta + OralPlanner/Freedom/Gravações",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça 30/06 atualizada: radar sem duplicidade no topo. Correção do Ruan: mensagens de conversão são para Excellence Dental Academy, não Elite. Entrou reunião com a equipe para apresentar ações do 2º semestre/Freedom e também preparar hoje as questões da prova do M6 do Diplomado."
+    "headline": "Quarta 01/07 atualizada: P0 é tirar o onboarding do OralPlanner hoje, organizar Freedom antes das vendas de sábado, encaminhar gravação do Diplomado para edição do Fabián e preparar gravação do Elite/Serginho para upload na plataforma."
   },
   "fronts": [
     {
@@ -15,17 +15,16 @@
       "icon": "🛒",
       "name": "Low Tickets",
       "status": "attention",
-      "priority": "p1",
+      "priority": "p2",
       "progress": 82,
       "owner": "Ruan / Bruno / Batista / Fabian",
-      "summary": "Rotina de terça no Calendar: Fabian edita criativos. Não é o P0 do dia, mas segue no radar para não perder cadência de testes.",
+      "summary": "Sem demanda direta nova hoje, mas conecta com a frente de criativos: Batista precisa revisar vencedores do Freedom para replicar lógica criativa.",
       "nextActions": [
-        "Confirmar edição dos criativos pelo Fabian",
-        "Preparar materiais para próxima subida do Batista",
-        "Manter leitura do radar 0 vendas/Hotmart"
+        "Manter radar 0 vendas/Hotmart",
+        "Aproveitar aprendizados dos low tickets na análise de criativos do Freedom"
       ],
       "blockers": [
-        "Se a cadência de criativos atrasar, os testes da semana perdem velocidade"
+        "Sem bloqueio crítico hoje"
       ]
     },
     {
@@ -51,37 +50,38 @@
       "icon": "🎓",
       "name": "Diplomado Ortho Pro",
       "status": "risk",
-      "priority": "p1",
-      "progress": 92,
-      "owner": "Ruan / Mônica / Sérgio / suporte",
-      "summary": "Hoje tem Encuentro ao vivo do Módulo 6 com o Sérgio às 14h e Ruan precisa preparar as questões da prova do M6 hoje, porque a liberação operacional da prova está marcada para amanhã com janela de 7 dias.",
+      "priority": "p0",
+      "progress": 88,
+      "owner": "Ruan / Fabián / Sérgio / suporte",
+      "summary": "Pegar a gravação do encontro do M6 de ontem no Drive. A gravação não deve subir crua: precisa passar pelo Fabián para edição antes da publicação.",
       "nextActions": [
-        "Preparar hoje as questões da prova do Módulo 6",
-        "Confirmar operação da aula do M6 às 14h",
-        "Garantir aviso/link/suporte e gravação",
-        "Registrar pendências pós-aula e próximos passos do módulo"
+        "Pegar gravação do encontro do Diplomado M6 de 30/06 no Drive",
+        "Enviar gravação do Diplomado para Fabián editar",
+        "Após edição, preparar publicação na plataforma",
+        "Conferir se perguntas/prova M6 seguem no fluxo"
       ],
       "blockers": [
-        "Conflito de agenda às 14h exige operação bem delegada para não gerar ruído com alunos"
+        "Sem edição do Fabián, a aula do Diplomado não deve ser publicada"
       ]
     },
     {
       "id": "plataforma-assinatura",
       "filter": "plataforma",
       "icon": "🎬",
-      "name": "Plataforma de Assinatura",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 84,
-      "owner": "Ruan / BPO / Vitor Arguedas / equipe",
-      "summary": "Próximo curso está pronto para lançamento/liberação em 03/07. Pendência de hoje: Ruan informar ao BPO o pagamento do professor Vitor Arguedas.",
+      "name": "Plataforma / Aulas e uploads",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 76,
+      "owner": "Ruan / Felipe / suporte",
+      "summary": "Duas gravações precisam virar entrega: aula do Elite com Serginho pode ser preparada para subir; Diplomado só depois da edição do Fabián.",
       "nextActions": [
-        "Informar BPO sobre pagamento do Vitor Arguedas",
-        "Garantir liberação do curso em 03/07",
-        "Conferir comunicação aos assinantes e responsáveis"
+        "Localizar gravação com Serginho do Elite no Drive",
+        "Preparar gravação do Elite para upload na plataforma",
+        "Separar fluxo: Elite sobe direto; Diplomado vai primeiro para edição",
+        "Checar com Felipe pendências de plataforma hoje"
       ],
       "blockers": [
-        "Pagamento não informado ao BPO pode gerar ruído financeiro com professor"
+        "Se as gravações ficarem soltas no Drive, a entrega para alunos atrasa e vira cobrança no suporte"
       ]
     },
     {
@@ -89,38 +89,37 @@
       "filter": "chile",
       "icon": "🇨🇱",
       "name": "Chile / CIOCH",
-      "status": "risk",
-      "priority": "p1",
-      "progress": 38,
+      "status": "attention",
+      "priority": "p2",
+      "progress": 40,
       "owner": "Ruan / empresa de design / Vinícius",
-      "summary": "Prazos do manual do expositor estão se aproximando. Ação permanente no radar: enviar e-mail para a empresa de design iniciar/propor o design do stand.",
+      "summary": "Sem input novo no áudio, mas continua no radar por prazo de manual expositor e design do stand.",
       "nextActions": [
-        "Enviar e-mail para empresa de design do stand",
-        "Anexar/usar requisitos do manual do expositor",
-        "Manter deadlines: 20/07 formulários, 26/07 gráfica/projeto e 25/08 montagem"
+        "Manter follow-up do design do stand",
+        "Preservar deadlines: 20/07 formulários, 26/07 gráfica/projeto e 25/08 montagem"
       ],
       "blockers": [
-        "Se o design do stand não começar agora, a data de gráfica/projeto especial fica apertada"
+        "Atraso no design aperta produção gráfica e aprovação do stand"
       ]
     },
     {
       "id": "sniper-elite",
       "filter": "elite",
       "icon": "💎",
-      "name": "Sniper Elite / Clínica de Maestría",
+      "name": "Sniper Elite",
       "status": "risk",
       "priority": "p0",
-      "progress": 76,
-      "owner": "Ruan / Mônica / Sérgio / equipe",
-      "summary": "Aula/imersão do Elite às 16h segue operacional, mas a conversão de matrículas abertas agora é de Excellence Dental Academy, não Elite.",
+      "progress": 78,
+      "owner": "Ruan / Sérgio / equipe",
+      "summary": "A gravação com Serginho do Elite foi localizada em Drive como reunião de 30/06 12:40 GMT-3; precisa preparar para subir na plataforma.",
       "nextActions": [
-        "Confirmar operação da aula/imersão às 16h",
-        "Alinhar com Mônica os avisos no Telegram dos alunos",
-        "Garantir sala/link/suporte da aula do Elite",
-        "Registrar pendências pós-aula"
+        "Usar gravação: nin-qzqe-ipe (2026-06-30 12:40 GMT-3)",
+        "Conferir título/descrição antes do upload",
+        "Subir aula do Elite na plataforma",
+        "Avisar alunos após publicação"
       ],
       "blockers": [
-        "Se os avisos da aula não forem alinhados, aumenta ruído no grupo de alunos"
+        "Sem upload, a aula prometida do Elite não vira entrega visível para alunos"
       ]
     },
     {
@@ -130,17 +129,17 @@
       "name": "OralPlanner",
       "status": "risk",
       "priority": "p0",
-      "progress": 60,
+      "progress": 58,
       "owner": "Ruan / Felipe / equipe",
-      "summary": "Hoje é dia de divulgação/onboard. Precisa verificar com Felipe se ele gravou o tutorial, traduzir/montar o onboard e liberar/envio API para compradores/assinantes.",
+      "summary": "Onboarding precisa sair hoje. Prioridade é conferir com Felipe e fechar tutorial, material, comunicação/API e liberação de acesso.",
       "nextActions": [
-        "Verificar com Felipe se o tutorial foi gravado",
-        "Traduzir e montar onboard dos assinantes/compradores",
-        "Liberar OralPlanner para quem ganhou acesso",
-        "Enviar API/comunicação para compradores hoje"
+        "Conferir com Felipe hoje status do tutorial/onboarding",
+        "Finalizar material de onboarding em espanhol",
+        "Liberar acessos para compradores/assinantes elegíveis",
+        "Enviar comunicação/API ainda hoje"
       ],
       "blockers": [
-        "Sem tutorial/onboard, a liberação vira acesso solto e aumenta suporte"
+        "Se o onboarding não sair hoje, a liberação do OralPlanner vira acesso sem instrução e aumenta suporte"
       ]
     },
     {
@@ -148,17 +147,18 @@
       "filter": "plataforma",
       "icon": "📱",
       "name": "Plataforma Própria (App)",
-      "status": "on_track",
-      "priority": "p2",
-      "progress": 74,
+      "status": "attention",
+      "priority": "p1",
+      "progress": 72,
       "owner": "Ruan / Felipe / Suporte",
-      "summary": "Sem demanda nova específica além do suporte à liberação do OralPlanner e comunicação aos assinantes.",
+      "summary": "Hoje depende do Felipe em duas frentes: OralPlanner/onboarding e apoio para organizar upload das gravações/aulas.",
       "nextActions": [
-        "Monitorar dúvidas de acesso",
-        "Apoiar comunicação quando OralPlanner for liberado"
+        "Checar com Felipe pendências de plataforma",
+        "Garantir que OralPlanner e gravações não disputem o mesmo gargalo",
+        "Monitorar dúvidas de acesso após envio"
       ],
       "blockers": [
-        "Sem bloqueio novo"
+        "Felipe é ponto de atenção operacional hoje; sem check-in, duas entregas críticas podem travar"
       ]
     },
     {
@@ -168,172 +168,170 @@
       "name": "Lançamentos / Freedom",
       "status": "risk",
       "priority": "p0",
-      "progress": 68,
-      "owner": "Ruan / equipe XDental / tráfego / copy",
-      "summary": "P0 da semana: venda de ingressos do lançamento pago Freedom começa sábado 04/07. Além disso, Ruan precisa marcar hoje a reunião com a equipe para apresentar ações do 2º semestre e dar foco no Freedom de julho.",
+      "progress": 66,
+      "owner": "Ruan / Batista / equipe XDental / tráfego",
+      "summary": "Vendas do Freedom começam sábado 04/07. Hoje precisa organizar datas/demandas e reunir com Batista para identificar melhores criativos e replicar.",
       "nextActions": [
-        "Marcar hoje reunião com equipe sobre ações do 2º semestre",
-        "Apresentar próximo semestre e foco Freedom julho",
-        "Alinhar próximas ações do lançamento Freedom",
-        "Fechar página/checkout/copy/tráfego para venda de ingressos",
-        "Definir comunicação de sábado e responsáveis",
-        "Conferir se tudo está pronto até sexta"
+        "Reunir com Batista para revisar melhores criativos do Freedom",
+        "Definir quais criativos serão replicados/adaptados",
+        "Organizar calendário de demandas até sábado",
+        "Checar página, checkout, copy, tráfego, grupos e owners"
       ],
       "blockers": [
-        "Sem reunião/alinhamento, a equipe entra no semestre sem foco claro e o Freedom de julho começa reativo"
+        "Sábado está muito perto: sem donos e datas claras, o lançamento começa reativo"
       ]
     }
   ],
   "gargalos": [
     {
-      "title": "Freedom · venda de ingressos começa sábado",
+      "title": "OralPlanner · onboarding precisa sair hoje",
+      "priority": "p0",
+      "frente": "OralPlanner",
+      "deadline": "Hoje 01/07",
+      "blocks": "Liberação sem tutorial/onboarding aumenta suporte e reduz adoção da ferramenta",
+      "owner": "Ruan / Felipe",
+      "meta": "Conferir Felipe + finalizar material + comunicação/API"
+    },
+    {
+      "title": "Freedom · vendas começam sábado",
       "priority": "p0",
       "frente": "Lançamentos / Freedom",
       "deadline": "Sábado 04/07",
-      "blocks": "Captação do lançamento pago de 25/07; precisa de página, copy, checkout, tráfego, grupos e owners prontos antes de sábado",
-      "owner": "Ruan / equipe XDental",
-      "meta": "Mais urgente da manhã segundo Ruan; foco da reunião do 2º semestre"
+      "blocks": "Criativos, página, checkout, tráfego, grupos e owners precisam estar fechados antes de sábado",
+      "owner": "Ruan / Batista / equipe XDental",
+      "meta": "Reunião com Batista para replicar melhores criativos"
     },
     {
-      "title": "Excellence Dental Academy · conversão pós-abertura",
+      "title": "Diplomado · gravação precisa de edição antes de publicar",
       "priority": "p0",
-      "frente": "Excellence Dental Academy / Matrículas abertas",
-      "deadline": "Hoje 30/06",
-      "blocks": "Matrículas abriram ontem no lançamento; primeiras mensagens nos grupos precisam empurrar conversão",
-      "owner": "Ruan / equipe XDental",
-      "meta": "Preparar mensagens de conversão para Excellence Dental Academy"
+      "frente": "Diplomado Ortho Pro",
+      "deadline": "Hoje 01/07",
+      "blocks": "A aula do encontro M6 não deve subir crua; precisa passar por Fabián",
+      "owner": "Ruan / Fabián",
+      "meta": "Busca no Drive iniciada; confirmar arquivo correto antes de enviar ao Fabián"
     },
     {
-      "title": "Reunião equipe · ações do 2º semestre + Freedom julho",
+      "title": "Elite · gravação com Serginho para subir na plataforma",
       "priority": "p0",
-      "frente": "Gestão / Equipe XDental",
-      "deadline": "Marcar hoje · máximo amanhã 01/07",
-      "blocks": "Equipe precisa enxergar o próximo semestre e entrar alinhada no lançamento Freedom de julho",
-      "owner": "Ruan / equipe XDental",
-      "meta": "Apresentar 2º semestre e dar foco no lançamento Freedom"
+      "frente": "Sniper Elite",
+      "deadline": "Hoje 01/07",
+      "blocks": "Sem upload, a entrega para alunos fica invisível e vira cobrança no suporte",
+      "owner": "Ruan / suporte plataforma",
+      "meta": "Arquivo Drive: nin-qzqe-ipe (2026-06-30 12:40 GMT-3)"
     },
     {
-      "title": "Agenda 14h · reunião EUA + Diplomado M6",
+      "title": "Felipe · check-in operacional obrigatório",
       "priority": "p1",
-      "frente": "Agenda / Diplomado",
-      "deadline": "14h hoje",
-      "blocks": "Reunião com plataforma de vendas dos EUA acontece no mesmo horário da aula ao vivo do Diplomado M6",
-      "owner": "Ruan / Mônica / Sérgio",
-      "meta": "Garantir operação delegada da aula"
+      "frente": "Plataforma / OralPlanner",
+      "deadline": "Hoje 01/07",
+      "blocks": "Felipe concentra tutorial/onboarding e possíveis pendências de plataforma",
+      "owner": "Ruan / Felipe",
+      "meta": "Checar status ainda hoje"
     },
     {
-      "title": "Chile/CIOCH · design do stand",
+      "title": "Agenda Google · compromissos de hoje",
       "priority": "p1",
-      "frente": "Chile / CIOCH",
-      "deadline": "Manter permanente até envio",
-      "blocks": "Prazo de gráfica/projeto especial do manual do expositor se aproxima; stand precisa entrar em produção",
-      "owner": "Ruan / empresa de design",
-      "meta": "Enviar e-mail com requisitos do manual"
-    },
-    {
-      "title": "Plataforma · pagamento Vitor Arguedas no BPO",
-      "priority": "p1",
-      "frente": "Plataforma de Assinatura",
-      "deadline": "Hoje 30/06",
-      "blocks": "Curso de 03/07 está pronto, mas pendência financeira precisa ser informada ao BPO",
-      "owner": "Ruan / BPO",
-      "meta": "Pagamento do professor Vitor Arguedas"
+      "frente": "Agenda",
+      "deadline": "01/07",
+      "blocks": "Rocket tem Reunião Catalina 15h, Financeiro RX 16h, Reunião Naty 17h e Check lançamento Manu 18h; Calendar XDental sem eventos do dia",
+      "owner": "Ruan",
+      "meta": "rdomith tem ação all-day XDental 29/06-04/07"
     }
   ],
   "radarDoDia": [
     {
-      "time": "manhã",
-      "task": "🏛️ Preparar mensagens de conversão da Excellence Dental Academy para enviar nos grupos — matrículas abriram ontem",
-      "frente": "🏛️ EXCELLENCE",
+      "time": "agora",
+      "task": "🧩 OralPlanner: conferir com Felipe status do tutorial/onboarding e fechar o que falta para sair hoje",
+      "frente": "🧩 ORAL",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "hoje",
-      "task": "👥 Marcar reunião com a equipe para apresentar ações do 2º semestre e dar foco no Freedom julho — ideal hoje, máximo amanhã",
-      "frente": "👥 EQUIPE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🚀 Freedom: alinhar plano da venda de ingressos que começa sábado — página, checkout, copy, tráfego, grupos e owners",
+      "time": "agora",
+      "task": "🚀 Freedom: marcar/reunir com Batista para mapear melhores criativos e definir o que será replicado",
       "frente": "🚀 FREEDOM",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "14h00",
-      "task": "🌎 Reunião com plataforma de vendas dos EUA: avaliar parceria e abertura de conta",
-      "frente": "🌎 PARCERIA",
-      "status": "📅",
+      "time": "hoje",
+      "task": "🚀 Freedom: organizar calendário de demandas até sábado — página, checkout, copy, tráfego, grupos, criativos e owners",
+      "frente": "🚀 FREEDOM",
+      "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "🎓 Diplomado M6: preparar as questões da prova hoje — liberação operacional amanhã com janela de 7 dias",
+      "task": "🎓 Diplomado: pegar gravação do encontro M6 de ontem no Drive e enviar para Fabián editar antes de publicar",
       "frente": "🎓 DOP",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "14h00",
-      "task": "🎓 Diplomado M6: Encuentro ao vivo com Sérgio — garantir operação, aviso/link, suporte e gravação",
-      "frente": "🎓 DOP",
+      "time": "hoje",
+      "task": "💎 Elite: preparar gravação com Serginho para upload na plataforma — Drive localizado: nin-qzqe-ipe (30/06 12:40 GMT-3)",
+      "frente": "💎 ELITE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "📱 Plataforma: separar fluxo de upload — Elite pode subir; Diplomado aguarda edição do Fabián",
+      "frente": "📱 APP",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "👤 Felipe: check-in das pendências de OralPlanner, onboarding/API e apoio de plataforma",
+      "frente": "👤 FELIPE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "15h00",
+      "task": "📅 Rocket: Reunião Catalina no Google Calendar contato@rocketagencia.com.br",
+      "frente": "📅 AGENDA",
       "status": "📅",
       "done": false
     },
     {
       "time": "16h00",
-      "task": "💎 Elite: aula/imersão com Sérgio — confirmar avisos no grupo e operação da sala",
-      "frente": "💎 ELITE",
+      "task": "📅 Rocket: Financeiro RX no Google Calendar contato@rocketagencia.com.br",
+      "frente": "📅 AGENDA",
       "status": "📅",
       "done": false
     },
     {
-      "time": "hoje",
-      "task": "🎬 Plataforma: informar BPO sobre pagamento do professor Vitor Arguedas",
-      "frente": "🎬 PA",
-      "status": "🔥",
+      "time": "17h00",
+      "task": "📅 Rocket: Reunião Naty no Google Calendar contato@rocketagencia.com.br",
+      "frente": "📅 AGENDA",
+      "status": "📅",
       "done": false
     },
     {
-      "time": "hoje",
-      "task": "🇨🇱 Chile/CIOCH: enviar e-mail para empresa de design iniciar o design do stand conforme manual do expositor",
-      "frente": "🇨🇱 CHL",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "🧩 OralPlanner: verificar com Felipe se tutorial foi gravado e pegar material para tradução/onboard",
-      "frente": "🧩 ORAL",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "🧩 OralPlanner: montar onboard, liberar acesso e enviar API/comunicação para compradores/assinantes",
-      "frente": "🧩 ORAL",
-      "status": "🔥",
+      "time": "18h00",
+      "task": "📅 Rocket: Check lançamento Manu no Google Calendar contato@rocketagencia.com.br",
+      "frente": "📅 AGENDA",
+      "status": "📅",
       "done": false
     },
     {
       "time": "fim do dia",
-      "task": "📡 Fechar terça: checar mensagens Excellence, Freedom sábado, aulas 14h/16h, Vitor/BPO, CIOCH e OralPlanner",
+      "task": "📡 Fechar quarta: OralPlanner enviado, Freedom organizado, gravações encaminhadas e Felipe/Fabián alinhados",
       "frente": "📡 RADAR",
       "status": "📅",
       "done": false
     }
   ],
   "metrics": {
-    "p0": 3,
-    "p1": 3,
-    "p2": 1,
+    "p0": 4,
+    "p1": 2,
+    "p2": 2,
     "p3": 1,
     "done": 0,
     "tasks": 12
   },
-  "radarExtra": "Atualizado em 30/06 com áudio do Ruan no tópico Dados/Painel. Ajustes posteriores: conversão corrigida para Excellence Dental Academy (não Elite), adicionada reunião com a equipe para apresentar ações do 2º semestre/Freedom e adicionada preparação das questões da prova do M6 do Diplomado hoje. Calendar XDental conferido: Diplomado M6, Sniper Elite, alinhamento Mônica e rotina Low Tickets/Fabian.",
+  "radarExtra": "Atualizado em 01/07 com áudio do Ruan + Google Calendar + Drive. Drive localizado: gravação/anotações de reunião com Sérgio/Elite em 30/06 12:40 GMT-3 (vídeo nin-qzqe-ipe e anotações Gemini). Diplomado M6 deve passar por Fabián antes de publicar. Calendar: rdomith tem ação XDental all-day 29/06-04/07; conta Excellence sem eventos; Rocket tem Catalina 15h, Financeiro RX 16h, Naty 17h e Check lançamento Manu 18h.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
