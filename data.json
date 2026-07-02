@@ -1,12 +1,12 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.10-persistent",
-    "lastUpdated": "2026-07-01 · Radar quarta + OralPlanner/Freedom/Gravações",
+    "version": "2.11-persistent",
+    "lastUpdated": "2026-07-02 · Radar quinta + ClickUp/Calendar/Fabián",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quarta 01/07 atualizada: P0 é tirar o onboarding do OralPlanner hoje, organizar Freedom antes das vendas de sábado, preparar copy dos 5 vídeos do Serginho, encaminhar gravação do Diplomado para edição do Fabián e preparar gravação do Elite/Serginho para upload na plataforma."
+    "headline": "Quinta 02/07 atualizada: Fabián está com a edição da aula do Ecto/M7 do Diplomado e do encontro ao vivo Sérgio Guri/M6, com entrega provável até o fim do dia. P0 agora é repassar ao Fabián os criativos gravados pelo Sérgio no WhatsApp, com vídeos editados até amanhã no fim do dia. ClickUp Freedom tem 2 demandas de imagem hoje; calendário tem Low Tickets/Criativos ativos e ação pós-Clínica em andamento."
   },
   "fronts": [
     {
@@ -15,16 +15,18 @@
       "icon": "🛒",
       "name": "Low Tickets",
       "status": "attention",
-      "priority": "p2",
-      "progress": 82,
-      "owner": "Ruan / Bruno / Batista / Fabian",
-      "summary": "Sem demanda direta nova hoje, mas conecta com a frente de criativos: Batista precisa revisar vencedores do Freedom para replicar lógica criativa.",
+      "priority": "p1",
+      "progress": 83,
+      "owner": "Ruan / Bruno / Batista / Sérgio / Fabián",
+      "summary": "Calendário de hoje marca Low Tickets/Criativos ativos: Bruno entrega copies e Sérgio começa/grava criativos. A parte crítica é transformar os vídeos que Sérgio já mandou no WhatsApp em demanda de edição para Fabián.",
       "nextActions": [
+        "Repassar ao Fabián os vídeos de criativos enviados pelo Sérgio no WhatsApp",
+        "Confirmar prazo: vídeos editados até amanhã no final do dia",
         "Manter radar 0 vendas/Hotmart",
-        "Aproveitar aprendizados dos low tickets na análise de criativos do Freedom"
+        "Usar aprendizados dos criativos vencedores para Freedom"
       ],
       "blockers": [
-        "Sem bloqueio crítico hoje"
+        "Se os vídeos não entrarem hoje na fila do Fabián, o prazo de amanhã fica apertado"
       ]
     },
     {
@@ -49,19 +51,19 @@
       "filter": "diplomado",
       "icon": "🎓",
       "name": "Diplomado Ortho Pro",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 88,
-      "owner": "Ruan / Fabián / Sérgio / suporte",
-      "summary": "Pegar a gravação do encontro do M6 de ontem no Drive. A gravação não deve subir crua: precisa passar pelo Fabián para edição antes da publicação.",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 90,
+      "owner": "Ruan / Fabián / Sérgio",
+      "summary": "Fabián já recebeu ontem duas demandas de edição: aula do Ecto, módulo 7 do Diplomado, e encontro ao vivo do Sérgio Guri, módulo 6. Entrega provável até o final do dia de hoje.",
       "nextActions": [
-        "Pegar gravação do encontro do Diplomado M6 de 30/06 no Drive",
-        "Enviar gravação do Diplomado para Fabián editar",
-        "Após edição, preparar publicação na plataforma",
-        "Conferir se perguntas/prova M6 seguem no fluxo"
+        "Acompanhar entrega do Fabián até o final do dia",
+        "Validar edição da aula do Ecto/M7 antes de publicar",
+        "Validar edição do encontro ao vivo Sérgio Guri/M6 antes de publicar",
+        "Após aprovação, encaminhar para upload/publicação na plataforma"
       ],
       "blockers": [
-        "Sem edição do Fabián, a aula do Diplomado não deve ser publicada"
+        "Sem retorno do Fabián hoje, publicação do M7/M6 pode escorregar"
       ]
     },
     {
@@ -69,19 +71,19 @@
       "filter": "plataforma",
       "icon": "🎬",
       "name": "Plataforma / Aulas e uploads",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 76,
-      "owner": "Ruan / Felipe / suporte",
-      "summary": "Duas gravações precisam virar entrega: aula do Elite com Serginho pode ser preparada para subir; Diplomado só depois da edição do Fabián.",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 78,
+      "owner": "Ruan / Fabián / suporte plataforma",
+      "summary": "Fila de conteúdo depende das edições do Fabián: Ecto/M7 e encontro Sérgio Guri/M6 já estão com ele; nova entrada necessária é o pacote de criativos gravados pelo Sérgio.",
       "nextActions": [
-        "Localizar gravação com Serginho do Elite no Drive",
-        "Preparar gravação do Elite para upload na plataforma",
-        "Separar fluxo: Elite sobe direto; Diplomado vai primeiro para edição",
-        "Checar com Felipe pendências de plataforma hoje"
+        "Receber/validar entregas do Fabián até o final do dia",
+        "Organizar arquivos finais para upload quando aprovados",
+        "Não misturar publicação de aula com entrega de criativos — são filas separadas",
+        "Registrar nova demanda dos criativos para edição com prazo de amanhã"
       ],
       "blockers": [
-        "Se as gravações ficarem soltas no Drive, a entrega para alunos atrasa e vira cobrança no suporte"
+        "Acúmulo de edição no Fabián pode travar aulas e criativos ao mesmo tempo"
       ]
     },
     {
@@ -107,19 +109,17 @@
       "filter": "elite",
       "icon": "💎",
       "name": "Sniper Elite",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 78,
-      "owner": "Ruan / Sérgio / equipe",
-      "summary": "A gravação com Serginho do Elite foi localizada em Drive como reunião de 30/06 12:40 GMT-3; precisa preparar para subir na plataforma.",
+      "status": "attention",
+      "priority": "p2",
+      "progress": 80,
+      "owner": "Ruan / Sérgio / suporte plataforma",
+      "summary": "Sem nova demanda direta no áudio de hoje além do acompanhamento de edições já com Fabián e organização de criativos do Sérgio.",
       "nextActions": [
-        "Usar gravação: nin-qzqe-ipe (2026-06-30 12:40 GMT-3)",
-        "Conferir título/descrição antes do upload",
-        "Subir aula do Elite na plataforma",
-        "Avisar alunos após publicação"
+        "Manter gravações/aulas do Elite no radar de upload quando edição estiver pronta",
+        "Evitar publicar material que ainda precise de corte/revisão"
       ],
       "blockers": [
-        "Sem upload, a aula prometida do Elite não vira entrega visível para alunos"
+        "Sem bloqueio crítico novo hoje"
       ]
     },
     {
@@ -168,131 +168,108 @@
       "name": "Lançamentos / Freedom",
       "status": "risk",
       "priority": "p0",
-      "progress": 66,
-      "owner": "Ruan / Batista / equipe XDental / tráfego",
-      "summary": "Vendas do Freedom começam sábado 04/07. Hoje precisa organizar datas/demandas, reunir com Batista para identificar melhores criativos e preparar copy/roteiros dos 5 vídeos para Serginho gravar.",
+      "progress": 68,
+      "owner": "Ruan / Batista / Bruno / Sérgio / Fabián / Klyro",
+      "summary": "Freedom julho segue como P0. ClickUp trouxe 2 tarefas para hoje: Design de Criativos de captação em Imagem e Imagem de Capa dos Grupos do WhatsApp. Além disso, Ruan precisa enviar ao Fabián os vídeos de criativos gravados pelo Sérgio; prazo final: amanhã no fim do dia.",
       "nextActions": [
-        "Preparar copy/roteiros dos 5 vídeos para Serginho gravar",
-        "Reunir com Batista para revisar melhores criativos do Freedom",
-        "Definir quais criativos serão replicados/adaptados",
-        "Organizar calendário de demandas até sábado",
-        "Checar página, checkout, copy, tráfego, grupos e owners"
+        "Enviar ao Fabián os vídeos de criativos gravados pelo Sérgio no WhatsApp",
+        "Formalizar prazo com Fabián: entrega até amanhã no final do dia",
+        "ClickUp: executar/acompanhar [Captação] Design de Criativos de captação em Imagem",
+        "ClickUp: executar/acompanhar [Captação] Preparar a Imagem de Capa dos Grupos do Whatsapp",
+        "Checar com Batista/Bruno alinhamento de copies e criativos ativos"
       ],
       "blockers": [
-        "Sábado está muito perto: sem donos e datas claras, o lançamento começa reativo"
+        "Prazo de edição dos criativos é curto: se a demanda não for enviada hoje, amanhã vira gargalo real de lançamento"
       ]
     }
   ],
   "gargalos": [
     {
-      "title": "OralPlanner · onboarding precisa sair hoje",
+      "title": "Criativos Sérgio → Fabián · prazo amanhã",
       "priority": "p0",
-      "frente": "OralPlanner",
-      "deadline": "Hoje 01/07",
-      "blocks": "Liberação sem tutorial/onboarding aumenta suporte e reduz adoção da ferramenta",
-      "owner": "Ruan / Felipe",
-      "meta": "Conferir Felipe + finalizar material + comunicação/API"
-    },
-    {
-      "title": "Freedom · vendas começam sábado",
-      "priority": "p0",
-      "frente": "Lançamentos / Freedom",
-      "deadline": "Sábado 04/07",
-      "blocks": "Criativos, página, checkout, tráfego, grupos e owners precisam estar fechados antes de sábado",
-      "owner": "Ruan / Batista / equipe XDental",
-      "meta": "Reunião com Batista para replicar melhores criativos"
-    },
-    {
-      "title": "Diplomado · gravação precisa de edição antes de publicar",
-      "priority": "p0",
-      "frente": "Diplomado Ortho Pro",
-      "deadline": "Hoje 01/07",
-      "blocks": "A aula do encontro M6 não deve subir crua; precisa passar por Fabián",
+      "frente": "Lançamentos / Criativos",
+      "deadline": "Amanhã 03/07 · final do dia",
+      "blocks": "Vídeos gravados pelo Sérgio precisam entrar hoje na fila de edição; se atrasar, campanha/lançamento começa sem criativo pronto",
       "owner": "Ruan / Fabián",
-      "meta": "Gravação localizada no Drive: 30/06 12:40 GMT-3"
+      "meta": "Enviar vídeos do WhatsApp + briefing objetivo + prazo fechado"
     },
     {
-      "title": "Elite · gravação com Serginho para subir na plataforma",
-      "priority": "p0",
-      "frente": "Sniper Elite",
-      "deadline": "Hoje 01/07",
-      "blocks": "Sem upload, a entrega para alunos fica invisível e vira cobrança no suporte",
-      "owner": "Ruan / suporte plataforma",
-      "meta": "Arquivo Drive: nin-qzqe-ipe (2026-06-30 12:40 GMT-3)"
-    },
-    {
-      "title": "Felipe · check-in operacional obrigatório",
+      "title": "Fabián · duas edições já em andamento",
       "priority": "p1",
-      "frente": "Plataforma / OralPlanner",
-      "deadline": "Hoje 01/07",
-      "blocks": "Felipe concentra tutorial/onboarding e possíveis pendências de plataforma",
-      "owner": "Ruan / Felipe",
-      "meta": "Checar status ainda hoje"
+      "frente": "Diplomado / Plataforma",
+      "deadline": "Hoje 02/07 · final do dia",
+      "blocks": "Aula Ecto/M7 e encontro ao vivo Sérgio Guri/M6 dependem da entrega do editor antes de publicação",
+      "owner": "Fabián / Ruan",
+      "meta": "Acompanhar entrega provável até o fim do dia"
     },
     {
-      "title": "Agenda Google · compromissos de hoje",
+      "title": "ClickUp Freedom · imagens de criativos hoje",
       "priority": "p1",
-      "frente": "Agenda",
-      "deadline": "01/07",
-      "blocks": "Calendário operacional correto é rdomith@gmail.com: ação all-day XDental | Ação pós-Clínica + nova captação está ativa de 29/06 a 04/07",
+      "frente": "Lançamentos / Freedom",
+      "deadline": "Hoje 02/07",
+      "blocks": "Captação precisa das peças visuais: criativos em imagem e capa dos grupos de WhatsApp",
       "owner": "Ruan",
-      "meta": "Usar apenas rdomith@gmail.com para painel XDental, salvo pedido explícito"
+      "meta": "Tarefas ClickUp: 86ajaf92v e 86ajaf8we"
+    },
+    {
+      "title": "Calendário · Low Tickets/Criativos ativos",
+      "priority": "p1",
+      "frente": "Agenda / Low Tickets",
+      "deadline": "Hoje 02/07",
+      "blocks": "Agenda marca Bruno entregando copies e Sérgio começando/gravadando criativos; precisa sincronizar com edição do Fabián",
+      "owner": "Ruan / Bruno / Sérgio / Fabián",
+      "meta": "Evento XDental: “Low Tickets — QUI: Criativos ativos · Bruno entrega copies · Sérgio começa a gravar”"
+    },
+    {
+      "title": "Ação pós-Clínica + nova captação segue ativa",
+      "priority": "p2",
+      "frente": "Agenda / XDental",
+      "deadline": "29/06 a 04/07",
+      "blocks": "Janela all-day ativa no calendário até sábado; manter coerência com demandas de Freedom/captação",
+      "owner": "Ruan",
+      "meta": "Evento rdomith@gmail.com: XDental | Ação pós-Clínica + nova captação"
     }
   ],
   "radarDoDia": [
     {
       "time": "agora",
-      "task": "🧩 OralPlanner: conferir com Felipe status do tutorial/onboarding e fechar o que falta para sair hoje",
-      "frente": "🧩 ORAL",
+      "task": "🎬 Fabián: enviar os vídeos de criativos que Sérgio mandou no WhatsApp + briefing de edição",
+      "frente": "🎬 CRIATIVOS",
       "status": "🔥",
       "done": false
     },
     {
       "time": "agora",
-      "task": "🚀 Freedom: marcar/reunir com Batista para mapear melhores criativos e definir o que será replicado",
-      "frente": "🚀 FREEDOM",
+      "task": "⏱️ Fabián: combinar prazo fechado — vídeos dos criativos prontos até amanhã no final do dia",
+      "frente": "🎬 CRIATIVOS",
       "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "🚀 Freedom: organizar calendário de demandas até sábado — página, checkout, copy, tráfego, grupos, criativos e owners",
-      "frente": "🚀 FREEDOM",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "🎥 Freedom/Serginho: preparar copy/roteiro de 5 vídeos criativos para o Sérgio gravar",
-      "frente": "🚀 FREEDOM",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "🎓 Diplomado: pegar gravação do encontro M6 de ontem no Drive e enviar para Fabián editar antes de publicar",
+      "task": "🎓 Acompanhar Fabián: edição da aula do Ecto, módulo 7 do Diplomado — entrega provável até o fim do dia",
       "frente": "🎓 DOP",
       "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "💎 Elite: preparar gravação com Serginho para upload na plataforma — Drive localizado: nin-qzqe-ipe (30/06 12:40 GMT-3)",
-      "frente": "💎 ELITE",
+      "task": "🎓 Acompanhar Fabián: edição do encontro ao vivo Sérgio Guri, módulo 6 — entrega provável até o fim do dia",
+      "frente": "🎓 DOP",
       "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "📱 Plataforma: separar fluxo de upload — Elite pode subir; Diplomado aguarda edição do Fabián",
-      "frente": "📱 APP",
+      "task": "🖼️ ClickUp/Freedom: [Captação] Design de Criativos de captação em Imagem — à fazer",
+      "frente": "🚀 FREEDOM",
       "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "👤 Felipe: check-in das pendências de OralPlanner, onboarding/API e apoio de plataforma",
-      "frente": "👤 FELIPE",
+      "task": "🖼️ ClickUp/Freedom: [Captação] Preparar a Imagem de Capa dos Grupos do Whatsapp — à fazer",
+      "frente": "🚀 FREEDOM",
       "status": "🔥",
       "done": false
     },
@@ -304,21 +281,28 @@
       "done": false
     },
     {
+      "time": "dia todo",
+      "task": "📅 XDental: Low Tickets — QUI: Criativos ativos · Bruno entrega copies · Sérgio começa a gravar",
+      "frente": "📅 AGENDA",
+      "status": "📅",
+      "done": false
+    },
+    {
       "time": "fim do dia",
-      "task": "📡 Fechar quarta: OralPlanner enviado, Freedom organizado, gravações encaminhadas e Felipe/Fabián alinhados",
+      "task": "📡 Fechar quinta: Fabián com criativos recebidos, prazo confirmado para amanhã e entregas Ecto/M7 + Sérgio Guri/M6 acompanhadas",
       "frente": "📡 RADAR",
       "status": "📅",
       "done": false
     }
   ],
   "metrics": {
-    "p0": 4,
-    "p1": 2,
-    "p2": 2,
+    "p0": 1,
+    "p1": 4,
+    "p2": 3,
     "p3": 1,
     "done": 0,
-    "tasks": 10
+    "tasks": 9
   },
-  "radarExtra": "Atualizado em 01/07 com áudio do Ruan + Google Calendar + Drive. Demanda nova 16h11: preparar copy/roteiros de 5 vídeos criativos para Serginho gravar no Freedom. Drive localizado: gravação/anotações de reunião com Sérgio/Elite em 30/06 12:40 GMT-3 (vídeo nin-qzqe-ipe e anotações Gemini). Diplomado M6 deve passar por Fabián antes de publicar. Calendar correto consultado: rdomith@gmail.com tem XDental | Ação pós-Clínica + nova captação ativo 29/06-04/07. Eventos de outros calendários foram removidos do painel por não serem a fonte operacional da XDental.",
+  "radarExtra": "Atualizado em 02/07 com áudio do Ruan + ClickUp + Google Calendar. ClickUp consultado na lista Freedom julho/26: 2 tarefas abertas com vencimento hoje — Design de Criativos de captação em Imagem (86ajaf92v) e Imagem de Capa dos Grupos do Whatsapp (86ajaf8we). Lista Elite e demais listas operacionais consultadas sem tarefas abertas para hoje. Google Calendar: evento XDental de Low Tickets/Criativos ativos hoje e ação pós-Clínica/nova captação ativa 29/06-04/07. Não enviei mensagem ao Fabián: painel apenas registrou a demanda, porque comunicação com terceiro exige autorização explícita.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
