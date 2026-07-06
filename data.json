@@ -308,7 +308,7 @@
     },
     {
       "time": "dia todo",
-      "task": "📅 Calendar: Q2 XDental 08h30; Planning RX 10h; blocos Vinícius 11h20-14h30 e 18h10-20h30; Low Tickets all-day Sérgio/Fabián",
+      "task": "📅 Calendar Ruan: eventos all-day — definir tema/professor + Low Tickets: Sérgio entrega vídeos/Fabián inicia edição",
       "frente": "📅 AGENDA",
       "status": "📅",
       "done": false
@@ -329,6 +329,6 @@
     "done": 0,
     "tasks": 12
   },
-  "radarExtra": "Fontes conferidas em 06/07: áudio do Ruan, Google Calendar all-calendars e ClickUp workspace 9013084558. Calendar: Q2 XDental 08h30, Planning RX 10h, blocos Vinícius 11h20-14h30 e 18h10-20h30; rdomith tem eventos all-day de definição de tema/professor e Low Tickets — Sérgio entrega vídeos/Fabián inicia edição. ClickUp: 9 tarefas abertas vencendo hoje no workspace; 8 são Freedom/XDental e 1 é RX/Manu.",
+  "radarExtra": "Fontes conferidas em 06/07: áudio do Ruan, Google Calendar exclusivo `rdomith@gmail.com` e ClickUp workspace 9013084558. Correção permanente: para Painel/Radar XDental, usar somente o calendário `rdomith@gmail.com`; não puxar calendário do Vinícius/Rocket/contato/Excellence ou calendários conectados. Calendar Ruan hoje: definição tema/professor e Low Tickets — Sérgio entrega vídeos/Fabián inicia edição. ClickUp: 9 tarefas abertas vencendo hoje no workspace; 8 são Freedom/XDental e 1 é RX/Manu.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
