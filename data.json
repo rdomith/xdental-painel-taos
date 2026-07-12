@@ -6,7 +6,7 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Segunda 13/07 atualizada: P0 é alinhar as lives de aquecimento do evento de alinhadores com Felipe/Fabián/Batista, treinar Mônica no fluxo de invoices, programar pagamento do Héctor e destravar tarefas ClickUp de Freedom/Chile/Low Ticket Inglês."
+    "headline": "Segunda 13/07 atualizada: P0 é alinhar as lives de aquecimento do evento de alinhadores com Felipe/Fabián/Batista, treinar Mônica no fluxo de invoices, programar pagamento do Héctor e destravar tarefas ClickUp de Freedom/Chile/Low Ticket Inglês e enviar correções do PDF/e-book em inglês para a Clair de design."
   },
   "fronts": [
     {
@@ -100,9 +100,10 @@
       "priority": "p1",
       "progress": 82,
       "owner": "Ruan / Sérgio / Fabián",
-      "summary": "Calendar XDental marca segunda: Sérgio entrega vídeos e Fabián inicia edição; ClickUp também trouxe frente Low Ticket Inglês vencendo amanhã.",
+      "summary": "Calendar XDental marca segunda: Sérgio entrega vídeos e Fabián inicia edição; ClickUp também trouxe frente Low Ticket Inglês vencendo amanhã e Ruan adicionou correções no PDF/e-book em inglês para a Clair.",
       "nextActions": [
         "Conferir entrega dos vídeos do Sérgio e início da edição pelo Fabián",
+        "Enviar para a Clair de design as alterações/correções do PDF e e-book em inglês",
         "ClickUp: destravar Low Ticket Inglês — design, tradução de copy e dublagem de criativos",
         "Separar o que é rotina Low Tickets vs. o que entra no aquecimento de alinhadores"
       ],
@@ -232,6 +233,15 @@
       "deadline": "Seg 13/07",
       "blocks": "Produção gráfica de julho fica apertada",
       "owner": "Klyro / Ruan"
+    },
+    {
+      "title": "E-book Inglês · correções de PDF/material para Clair",
+      "priority": "p1",
+      "filter": "lowticket",
+      "frente": "Low Ticket Inglês",
+      "deadline": "Seg 13/07",
+      "blocks": "Material pode seguir com falhas de design/PDF",
+      "owner": "Ruan / Clair"
     }
   ],
   "radarDoDia": [
@@ -299,6 +309,13 @@
       "done": false
     },
     {
+      "time": "11:45",
+      "task": "📘 Enviar para a Clair de design as alterações/correções do PDF e e-book em inglês",
+      "frente": "🛒 LT-EN",
+      "status": "⚠️",
+      "done": false
+    },
+    {
       "time": "tarde",
       "task": "🛒 Calendar Low Tickets: confirmar vídeos do Sérgio e início da edição pelo Fabián; destravar Low Ticket Inglês no ClickUp",
       "frente": "🛒 LT",
@@ -315,12 +332,12 @@
   ],
   "metrics": {
     "p0": 4,
-    "p1": 3,
+    "p1": 4,
     "p2": 2,
     "p3": 0,
     "done": 0,
-    "tasks": 11
+    "tasks": 12
   },
-  "radarExtra": "Fontes conferidas em 12/07 para o radar de 13/07: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com/all-calendars mostra Low Tickets — SEG: Sérgio entrega vídeos · Fabián inicia edição; ClickUp workspace 9013084558 tem 8 tarefas abertas vencendo em 13/07: Chile/CIOCH diagramação do stand, 3 tarefas Low Ticket Inglês e 4 tarefas Freedom julho/26. Observação: pagamento do Héctor foi registrado como demanda operacional, sem executar transação financeira.",
+  "radarExtra": "Fontes conferidas em 12/07 para o radar de 13/07: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com/all-calendars mostra Low Tickets — SEG: Sérgio entrega vídeos · Fabián inicia edição; ClickUp workspace 9013084558 tem 8 tarefas abertas vencendo em 13/07: Chile/CIOCH diagramação do stand, 3 tarefas Low Ticket Inglês e 4 tarefas Freedom julho/26. Novo áudio complementar adicionou correções no PDF/e-book em inglês para a Clair de design. Observação: pagamento do Héctor foi registrado como demanda operacional, sem executar transação financeira.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
