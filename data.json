@@ -1,14 +1,96 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.14-persistent",
-    "lastUpdated": "2026-07-07 · Radar terça + ClickUp/Calendar",
+    "version": "2.15-persistent",
+    "lastUpdated": "2026-07-13 · Radar segunda + áudio Ruan + ClickUp/Calendar",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça 07/07 atualizada: foco do dia é captação Freedom no ClickUp (capas Facebook/YouTube + banners), PDF do Módulo 7 do Diplomado com Klyro e rotina Low Tickets com Fabián editando criativos."
+    "headline": "Segunda 13/07 atualizada: P0 é alinhar as lives de aquecimento do evento de alinhadores com Felipe/Fabián/Batista, treinar Mônica no fluxo de invoices, programar pagamento do Héctor e destravar tarefas ClickUp de Freedom/Chile/Low Ticket Inglês."
   },
   "fronts": [
+    {
+      "id": "alineadores",
+      "filter": "lancamentos",
+      "icon": "🦷",
+      "name": "Alineadores / Lives Instagram",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 74,
+      "owner": "Ruan / Felipe / Fabián / Batista",
+      "summary": "Aquecimento do evento de alinhadores começa amanhã: lives de segunda, quarta e sexta precisam de roteiro operacional, edição e tráfego alinhados logo cedo.",
+      "nextActions": [
+        "Ruan: falar com Felipe pela manhã para reorganizar as lives de segunda, quarta e sexta",
+        "Definir com Felipe transmissão Instagram: OBS ou StreamYard, testes e responsável técnico",
+        "Passar para Fabián edição das lives de aquecimento para Instagram",
+        "Alinhar com Batista o tráfego das lives e janelas de impulsionamento"
+      ],
+      "blockers": [
+        "Se Felipe/Batista/Fabián não forem alinhados de manhã, a live de segunda sai sem estrutura técnica e sem tráfego preparado"
+      ],
+      "done": "Áudio do Ruan ingerido: lives de aquecimento viraram P0 do radar de 13/07"
+    },
+    {
+      "id": "financeiro-invoice",
+      "filter": "financeiro",
+      "icon": "🧾",
+      "name": "Financeiro / Invoices alunos",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 66,
+      "owner": "Ruan / Mônica",
+      "summary": "Novo procedimento de invoice/fatura para alunos que compraram desde março precisa ser explicado à Mônica para ela preencher e enviar quando solicitarem.",
+      "nextActions": [
+        "Ruan: conversar com Mônica sobre o fluxo de invoice/fatura",
+        "Mostrar como preencher o invoice com dados dos alunos solicitantes",
+        "Padronizar: aplica para alunos que compraram de março em diante",
+        "Deixar Mônica como responsável por preencher e enviar aos alunos que pedirem fatura"
+      ],
+      "blockers": [
+        "Sem procedimento claro, pedidos de fatura ficam dependendo do Ruan e viram gargalo administrativo"
+      ],
+      "done": "Regra operacional registrada: compras a partir de março entram no novo fluxo de invoice"
+    },
+    {
+      "id": "plataforma-assinatura",
+      "filter": "plataforma",
+      "icon": "🎬",
+      "name": "Plataforma de Assinatura / Curso Joaquim",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 78,
+      "owner": "Ruan / Felipe / Prof. Joaquim Ariza",
+      "summary": "Agendar ainda esta semana a gravação de mais um curso para a plataforma de assinatura com Felipe e Joaquim Ariza.",
+      "nextActions": [
+        "Ruan: agendar a semana com Felipe e Prof. Joaquim Ariza",
+        "Definir data/horário de gravação e pauta do curso",
+        "Felipe: preparar setup de gravação, captação e pós-produção"
+      ],
+      "blockers": [
+        "Sem agenda fechada, a esteira mensal da assinatura perde previsibilidade"
+      ],
+      "done": "Demanda adicionada ao radar da plataforma de assinatura"
+    },
+    {
+      "id": "diplomado-ortho-pro",
+      "filter": "diplomado",
+      "icon": "🎓",
+      "name": "Diplomado Ortho Pro / Héctor Rodríguez",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 85,
+      "owner": "Ruan / Financeiro",
+      "summary": "Pagamento do professor Héctor Rodríguez deve ser programado e executado esta semana; TAOS registra como ação do Ruan/financeiro, sem executar transação.",
+      "nextActions": [
+        "Ruan: programar pagamento do Prof. Héctor Rodríguez",
+        "Separar dados/valor/comprovante e janela de pagamento da semana",
+        "Após pagar, registrar comprovante/status no controle financeiro"
+      ],
+      "blockers": [
+        "Pagamento de professor não pode ficar solto; risco de desgaste com fornecedor/docente"
+      ],
+      "done": "Pendência financeira registrada — execução depende de autorização/ação humana"
+    },
     {
       "id": "low-tickets",
       "filter": "lowticket",
@@ -16,74 +98,39 @@
       "name": "Low Tickets",
       "status": "attention",
       "priority": "p1",
-      "progress": 84,
-      "owner": "Ruan / Fabián / Batista / Bruno",
-      "summary": "Agenda XDental marca rotina de terça: Fabián edita criativos; Ruan acompanha gargalos de edição e repasse ao Batista.",
+      "progress": 82,
+      "owner": "Ruan / Sérgio / Fabián",
+      "summary": "Calendar XDental marca segunda: Sérgio entrega vídeos e Fabián inicia edição; ClickUp também trouxe frente Low Ticket Inglês vencendo amanhã.",
       "nextActions": [
-        "Acompanhar Fabián na edição dos criativos de Low Tickets",
-        "Checar gargalos de edição no meio do dia",
-        "Repassar ajustes/aprendizados ao Batista se houver bloqueio"
+        "Conferir entrega dos vídeos do Sérgio e início da edição pelo Fabián",
+        "ClickUp: destravar Low Ticket Inglês — design, tradução de copy e dublagem de criativos",
+        "Separar o que é rotina Low Tickets vs. o que entra no aquecimento de alinhadores"
       ],
       "blockers": [
-        "Se a edição travar hoje, a fila de criativos e testes da semana perde ritmo"
+        "Fila de criativos parada afeta tanto perpétuo quanto captações da semana"
       ],
-      "done": "Calendário XDental conferido: Low Tickets — TER: Fabian edita criativos"
+      "done": "Google Calendar conferido: Low Tickets — SEG: Sérgio entrega vídeos · Fabián inicia edição"
     },
     {
-      "id": "sniper-vip",
-      "filter": "sniper",
-      "icon": "🎯",
-      "name": "Sniper VIP",
-      "status": "done",
-      "priority": "p3",
-      "progress": 100,
-      "owner": "Ruan / Sérgio / Klyro",
-      "summary": "Evento concluído. Sem demanda nova no ClickUp/calendário para hoje.",
-      "nextActions": [
-        "Manter pós-evento/prova social apenas quando entrar novo input"
-      ],
-      "blockers": [
-        "Sem bloqueio crítico hoje"
-      ]
-    },
-    {
-      "id": "diplomado-ortho-pro",
-      "filter": "diplomado",
-      "icon": "🎓",
-      "name": "Diplomado Ortho Pro",
+      "id": "lancamento-freedom",
+      "filter": "lancamentos",
+      "icon": "🚀",
+      "name": "Lançamento Freedom julho/26",
       "status": "risk",
       "priority": "p0",
-      "progress": 88,
-      "owner": "Klyro / Ruan / Felipe",
-      "summary": "ClickUp trouxe P0 ainda aberto: fazer PDF do Módulo 7 — Clase III — Dr. Héctor Rodríguez, em andamento com Klyro.",
+      "progress": 71,
+      "owner": "Ruan / Felipe / Fabián / Lucas",
+      "summary": "ClickUp tem 4 tarefas Freedom vencendo amanhã: depoimentos para CPLs, disparos API/grupos antigos e cronograma do evento/oferta.",
       "nextActions": [
-        "Klyro: finalizar PDF do Módulo 7 — Clase III — Dr. Héctor Rodríguez",
-        "Ruan: conferir se PDF final está pronto para anexar/liberar junto ao M7",
-        "Depois de pronto, validar liberação/entrega para alunos"
+        "Felipe: fazer disparos API + mensagens para grupos antigos",
+        "Ruan/Fabián: editar novos depoimentos para CPLs",
+        "Ruan: levantar alunos para gravação de depoimentos",
+        "Ruan/Lucas: construir cronograma do evento e oferta"
       ],
       "blockers": [
-        "Sem PDF final, a entrega do Módulo 7 fica incompleta ou pode atrasar comunicação aos alunos"
+        "Captação Freedom pode perder tração se depoimentos, disparos e cronograma não avançarem juntos"
       ],
-      "done": "ClickUp conferido: tarefa 86ajcfn55 em andamento"
-    },
-    {
-      "id": "plataforma-assinatura",
-      "filter": "plataforma",
-      "icon": "🎬",
-      "name": "Plataforma / Aulas e uploads",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 81,
-      "owner": "Ruan / Felipe / suporte plataforma",
-      "summary": "Sem evento novo no Calendar, mas o PDF do M7 conecta com liberação/organização da entrega na plataforma.",
-      "nextActions": [
-        "Deixar plataforma pronta para receber PDF/material do M7 quando Klyro finalizar",
-        "Checar título, ordem e permissão de acesso antes de comunicar",
-        "Monitorar suporte após liberação"
-      ],
-      "blockers": [
-        "Material pronto sem validação de plataforma gera ruído com alunos"
-      ]
+      "done": "ClickUp conferido: 4 tarefas Freedom abertas para 13/07"
     },
     {
       "id": "chile-cioch",
@@ -91,17 +138,19 @@
       "icon": "🇨🇱",
       "name": "Chile / CIOCH",
       "status": "attention",
-      "priority": "p2",
-      "progress": 44,
-      "owner": "Ruan / empresa de design do stand / Vinícius",
-      "summary": "Sem demanda nova hoje em ClickUp/calendário, mas segue no radar por prazo crítico de julho.",
+      "priority": "p1",
+      "progress": 48,
+      "owner": "Klyro / Ruan",
+      "summary": "ClickUp trouxe tarefa vencendo amanhã: diagramação do stand com identidade da XDental.",
       "nextActions": [
-        "Manter cobrança do design do stand se ainda não houver retorno",
-        "Preservar deadlines: 20/07 formulários, 26/07 gráfica/projeto e 25/08 montagem"
+        "Klyro: avançar diagramação do stand com identidade da XDental",
+        "Ruan: revisar se a proposta visual respeita prazos críticos de julho",
+        "Manter deadlines: 20/07 formulários, 26/07 gráfica/projeto e 25/08 montagem"
       ],
       "blockers": [
-        "Sem design aprovado, produção gráfica do CIOCH fica espremida"
-      ]
+        "Sem diagramação aprovada, produção gráfica do CIOCH fica espremida"
+      ],
+      "done": "ClickUp conferido: tarefa 86ajeg46z aberta para 13/07"
     },
     {
       "id": "sniper-elite",
@@ -112,9 +161,9 @@
       "priority": "p2",
       "progress": 78,
       "owner": "Ruan / Sérgio / equipe",
-      "summary": "Sem demanda direta nova hoje; acompanhar apenas se entrar material/entrega pendente.",
+      "summary": "Sem demanda nova direta para amanhã; manter acompanhamento leve de entregas/aulas.",
       "nextActions": [
-        "Manter radar de aulas/entregas quando arquivo final ficar pronto"
+        "Acompanhar apenas se entrar material, aula ou suporte pendente"
       ],
       "blockers": [
         "Sem bloqueio crítico novo hoje"
@@ -129,158 +178,149 @@
       "priority": "p2",
       "progress": 60,
       "owner": "Ruan / Felipe / equipe",
-      "summary": "Sem input novo hoje em ClickUp/calendário. Manter acompanhamento leve.",
+      "summary": "Sem input novo no áudio, Calendar ou ClickUp para amanhã. Manter no radar secundário.",
       "nextActions": [
-        "Checar se existe pendência aberta de onboarding/acesso quando sobrar janela"
+        "Checar pendências de onboarding/acesso quando houver janela"
       ],
       "blockers": [
         "Sem bloqueio crítico novo hoje"
       ]
-    },
-    {
-      "id": "plataforma-app",
-      "filter": "plataforma",
-      "icon": "📱",
-      "name": "Plataforma Própria (App)",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 74,
-      "owner": "Ruan / Felipe / Suporte",
-      "summary": "Demanda conectada ao M7: garantir que a entrega/material esteja utilizável e comunicável.",
-      "nextActions": [
-        "Validar onde o PDF/material do M7 será disponibilizado",
-        "Garantir que alunos encontrem a entrega sem atrito"
-      ],
-      "blockers": [
-        "PDF final sem local claro de acesso vira cobrança no suporte"
-      ]
-    },
-    {
-      "id": "lancamentos",
-      "filter": "lancamentos",
-      "icon": "🚀",
-      "name": "Lançamentos / Freedom",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 70,
-      "owner": "Ruan / Diego / Klyro / Batista",
-      "summary": "ClickUp tem 3 demandas Freedom vencendo hoje: capas Facebook/Youtube e imagem de banners para captação.",
-      "nextActions": [
-        "Diego/Ruan: alterar capa do Facebook da captação Freedom",
-        "Diego/Ruan: alterar capa do YouTube da captação Freedom",
-        "Klyro/Ruan: preparar imagem de banners da captação",
-        "Checar se criativos estão coerentes com a promessa atual da captação"
-      ],
-      "blockers": [
-        "Sem capas e banners, a captação Freedom perde consistência visual nos canais de entrada"
-      ],
-      "done": "ClickUp conferido: tarefas 86ajaf91a, 86ajaf911 e 86ajaf8y3"
     }
   ],
   "gargalos": [
     {
-      "title": "Freedom · capas Facebook/YouTube vencem hoje",
+      "title": "Lives Alineadores · alinhar Felipe/Fabián/Batista logo cedo",
       "priority": "p0",
       "filter": "lancamentos",
-      "frente": "Lançamentos / Freedom",
-      "deadline": "Hoje 07/07",
-      "blocks": "Canais de entrada ficam desalinhados com a captação",
-      "owner": "Ruan / Diego"
+      "frente": "Alineadores / Lives Instagram",
+      "deadline": "Seg 13/07 manhã",
+      "blocks": "Live de segunda sem setup técnico, edição e tráfego",
+      "owner": "Ruan / Felipe / Fabián / Batista"
     },
     {
-      "title": "Freedom · banners de captação em andamento",
+      "title": "Invoices · Mônica precisa assumir novo procedimento",
       "priority": "p0",
-      "filter": "lancamentos",
-      "frente": "Lançamentos / Freedom",
-      "deadline": "Hoje 07/07",
-      "blocks": "Peças de divulgação atrasam ou saem sem padrão visual",
-      "owner": "Ruan / Klyro"
+      "filter": "financeiro",
+      "frente": "Financeiro / Invoices",
+      "deadline": "Seg 13/07",
+      "blocks": "Pedidos de fatura continuam centralizados no Ruan",
+      "owner": "Ruan / Mônica"
     },
     {
-      "title": "Diplomado M7 · PDF Clase III em andamento",
+      "title": "Héctor Rodríguez · pagamento da semana",
       "priority": "p0",
       "filter": "diplomado",
       "frente": "Diplomado Ortho Pro",
-      "deadline": "Hoje 07/07",
-      "blocks": "Entrega do Módulo 7 fica incompleta/atrasada",
-      "owner": "Klyro / Ruan"
+      "deadline": "Semana 13-17/07",
+      "blocks": "Risco de atraso/desgaste com professor",
+      "owner": "Ruan / Financeiro"
     },
     {
-      "title": "Low Tickets · edição criativos Fabián",
+      "title": "Freedom · 4 tarefas ClickUp vencem amanhã",
+      "priority": "p0",
+      "filter": "lancamentos",
+      "frente": "Lançamento Freedom",
+      "deadline": "Seg 13/07",
+      "blocks": "Captação perde tração sem disparos, depoimentos e cronograma",
+      "owner": "Ruan / Felipe / Fabián / Lucas"
+    },
+    {
+      "title": "Chile/CIOCH · diagramação do stand vence amanhã",
       "priority": "p1",
-      "filter": "lowticket",
-      "frente": "Low Tickets",
-      "deadline": "Hoje 07/07",
-      "blocks": "Sem edição andando, a fila semanal de testes perde velocidade",
-      "owner": "Fabián / Ruan / Batista"
+      "filter": "chile",
+      "frente": "Chile / CIOCH",
+      "deadline": "Seg 13/07",
+      "blocks": "Produção gráfica de julho fica apertada",
+      "owner": "Klyro / Ruan"
     }
   ],
   "radarDoDia": [
     {
-      "time": "agora",
-      "task": "🚀 Freedom: validar status das capas Facebook e YouTube com Diego e destravar execução",
-      "frente": "🚀 LANÇ",
+      "time": "08:30",
+      "task": "🦷 Falar com Felipe: reorganizar lives de aquecimento de segunda, quarta e sexta",
+      "frente": "🦷 ALIN",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "agora",
-      "task": "🎨 Freedom: acompanhar Klyro na imagem de banners de captação",
-      "frente": "🚀 LANÇ",
+      "time": "08:45",
+      "task": "📡 Definir com Felipe transmissão Instagram: OBS ou StreamYard + teste técnico",
+      "frente": "🦷 ALIN",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "09:00",
+      "task": "🎬 Passar para Fabián a edição das lives de aquecimento para Instagram",
+      "frente": "🦷 ALIN",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "09:15",
+      "task": "📈 Alinhar com Batista o tráfego das lives e janela de campanha",
+      "frente": "🦷 ALIN",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🎓 Diplomado M7: cobrar/acompanhar PDF Clase III — Dr. Héctor Rodríguez com Klyro",
+      "task": "🧾 Conversar com Mônica: preencher invoice/fatura com dados de alunos que compraram desde março e enviar aos solicitantes",
+      "frente": "🧾 FIN",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "🎬 Agendar com Felipe + Prof. Joaquim Ariza a gravação de mais um curso da plataforma de assinatura",
+      "frente": "🎬 PA",
+      "status": "⚠️",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "💸 Programar pagamento do Prof. Héctor Rodríguez para esta semana — execução financeira fica com Ruan/financeiro",
       "frente": "🎓 DIP",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "manhã",
-      "task": "🛒 Low Tickets: confirmar Fabián editando criativos e mapear gargalos de edição",
+      "time": "10:30",
+      "task": "🚀 ClickUp Freedom: disparos API/grupos antigos, depoimentos CPLs e cronograma do evento/oferta",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "11:30",
+      "task": "🇨🇱 ClickUp Chile: acompanhar Klyro na diagramação do stand com identidade XDental",
+      "frente": "🇨🇱 CHL",
+      "status": "⚠️",
+      "done": false
+    },
+    {
+      "time": "tarde",
+      "task": "🛒 Calendar Low Tickets: confirmar vídeos do Sérgio e início da edição pelo Fabián; destravar Low Ticket Inglês no ClickUp",
       "frente": "🛒 LT",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "meio do dia",
-      "task": "📣 Se houver gargalo em edição/criativo, repassar para Batista com contexto objetivo",
-      "frente": "🛒 LT",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "✅ Conferir se as 4 tarefas do ClickUp de hoje têm owner claro e próximo passo definido",
-      "frente": "🧾 CLICKUP",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "📱 Quando PDF M7 finalizar, validar onde será anexado/liberado na plataforma",
-      "frente": "📱 APP",
       "status": "⚠️",
       "done": false
     },
     {
       "time": "fim do dia",
-      "task": "✅ Fechamento: capas/banners Freedom encaminhados, PDF M7 avançado/finalizado e edição LT sem gargalo oculto",
+      "task": "✅ Fechamento: lives alinhadas, Mônica treinada, Joaquim agendado, Héctor programado e ClickUp de 13/07 sem P0 solto",
       "frente": "⚙️ TAOS",
       "status": "📅",
       "done": false
     }
   ],
   "metrics": {
-    "p0": 3,
-    "p1": 2,
-    "p2": 3,
-    "p3": 1,
+    "p0": 4,
+    "p1": 3,
+    "p2": 2,
+    "p3": 0,
     "done": 0,
-    "tasks": 8
+    "tasks": 11
   },
-  "radarExtra": "Fontes conferidas em 07/07: ClickUp workspace 9013084558 com 4 tarefas abertas vencendo hoje — PDF M7 Clase III (Klyro), capas Facebook/YouTube Freedom (Ruan/Diego) e banners Freedom (Klyro/Ruan). Google Calendar rdomith@gmail.com/all-calendars: calendário XDental tem rotina all-day Low Tickets — TER: Fabián edita criativos; primary sem eventos no dia.",
+  "radarExtra": "Fontes conferidas em 12/07 para o radar de 13/07: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com/all-calendars mostra Low Tickets — SEG: Sérgio entrega vídeos · Fabián inicia edição; ClickUp workspace 9013084558 tem 8 tarefas abertas vencendo em 13/07: Chile/CIOCH diagramação do stand, 3 tarefas Low Ticket Inglês e 4 tarefas Freedom julho/26. Observação: pagamento do Héctor foi registrado como demanda operacional, sem executar transação financeira.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
