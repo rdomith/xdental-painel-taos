@@ -6,7 +6,7 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Segunda 13/07 atualizada: P0 é alinhar lives de alinhadores com Felipe/Fabián/Batista, treinar Mônica nos invoices, programar pagamento do Héctor, destravar ClickUp de Freedom/Chile/Low Ticket Inglês e enviar correções do PDF/e-book em inglês para a Clair."
+    "headline": "Segunda 13/07 atualizada: P0 é alinhar as lives de aquecimento do evento de alinhadores com Felipe/Fabián/Batista, treinar Mônica no fluxo de invoices, programar pagamento do Héctor e destravar tarefas ClickUp de Freedom/Chile/Low Ticket Inglês e enviar correções do PDF/e-book em inglês para a Clair de design."
   },
   "fronts": [
     {
@@ -17,15 +17,17 @@
       "status": "risk",
       "priority": "p0",
       "progress": 74,
-      "owner": "Ruan / Felipe / Fabián / Batista",
-      "summary": "Aquecimento do evento de alinhadores começa amanhã: lives de segunda, quarta e sexta precisam de roteiro operacional, edição e tráfego alinhados logo cedo.",
+      "owner": "Ruan / Felipe / Fabián / Batista / Klyro",
+      "summary": "Aquecimento do evento de alinhadores começa amanhã: páginas e lives de segunda, quarta e sexta precisam de briefing, roteiro operacional, edição e tráfego alinhados logo cedo.",
       "nextActions": [
+        "Ruan: agendar logo cedo reunião com Klyro para passar demandas das páginas",
         "Ruan: falar com Felipe pela manhã para reorganizar as lives de segunda, quarta e sexta",
         "Definir com Felipe transmissão Instagram: OBS ou StreamYard, testes e responsável técnico",
         "Passar para Fabián edição das lives de aquecimento para Instagram",
         "Alinhar com Batista o tráfego das lives e janelas de impulsionamento"
       ],
       "blockers": [
+        "Se Klyro não receber as demandas das páginas cedo, as páginas podem virar gargalo da captação",
         "Se Felipe/Batista/Fabián não forem alinhados de manhã, a live de segunda sai sem estrutura técnica e sem tráfego preparado"
       ],
       "done": "Áudio do Ruan ingerido: lives de aquecimento viraram P0 do radar de 13/07"
@@ -190,6 +192,15 @@
   ],
   "gargalos": [
     {
+      "title": "Páginas Alineadores · reunião com Klyro logo cedo",
+      "priority": "p0",
+      "filter": "lancamentos",
+      "frente": "Alineadores / Páginas",
+      "deadline": "Seg 13/07 cedo",
+      "blocks": "Páginas da captação/evento podem atrasar ou sair sem briefing completo",
+      "owner": "Ruan / Klyro"
+    },
+    {
       "title": "Lives Alineadores · alinhar Felipe/Fabián/Batista logo cedo",
       "priority": "p0",
       "filter": "lancamentos",
@@ -245,6 +256,13 @@
     }
   ],
   "radarDoDia": [
+    {
+      "time": "08:15",
+      "task": "🎨 Agendar reunião logo cedo com Klyro para passar as demandas das páginas",
+      "frente": "🦷 PÁG",
+      "status": "🔥",
+      "done": false
+    },
     {
       "time": "08:30",
       "task": "🦷 Falar com Felipe: reorganizar lives de aquecimento de segunda, quarta e sexta",
@@ -331,13 +349,13 @@
     }
   ],
   "metrics": {
-    "p0": 4,
+    "p0": 5,
     "p1": 4,
     "p2": 2,
     "p3": 0,
     "done": 0,
-    "tasks": 12
+    "tasks": 13
   },
-  "radarExtra": "Fontes conferidas em 12/07 para o radar de 13/07: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com/all-calendars mostra Low Tickets — SEG: Sérgio entrega vídeos · Fabián inicia edição; ClickUp workspace 9013084558 tem 8 tarefas abertas vencendo em 13/07: Chile/CIOCH diagramação do stand, 3 tarefas Low Ticket Inglês e 4 tarefas Freedom julho/26. Novo áudio complementar adicionou correções no PDF/e-book em inglês para a Clair de design. Observação: pagamento do Héctor foi registrado como demanda operacional, sem executar transação financeira.",
+  "radarExtra": "Fontes conferidas em 12/07 para o radar de 13/07: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com/all-calendars mostra Low Tickets — SEG: Sérgio entrega vídeos · Fabián inicia edição; ClickUp workspace 9013084558 tem 8 tarefas abertas vencendo em 13/07: Chile/CIOCH diagramação do stand, 3 tarefas Low Ticket Inglês e 4 tarefas Freedom julho/26. Novo áudio complementar adicionou correções no PDF/e-book em inglês para a Clair de design. Pedido posterior adicionou reunião logo cedo com Klyro para demandas das páginas. Observação: pagamento do Héctor foi registrado como demanda operacional, sem executar transação financeira.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
