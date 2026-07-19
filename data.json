@@ -1,37 +1,37 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.16-current-fronts",
-    "lastUpdated": "2026-07-15 · Frentes julho + áudio Ruan + ClickUp/Calendar",
+    "version": "2.17-dradar-2026-07-20",
+    "lastUpdated": "2026-07-19 · Radar de amanhã 20/07 + áudio Ruan + Google Calendar",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Julho/26 reorganizado: Freedom virou E0 e concentra alinhadores/lives/aquecimento; financeiro/invoices saiu do painel; Plataforma aguarda Joaquim enviar tema/fotos para marcar gravação com Felipe; Diplomado tem Encuentro Héctor em 23/07 14h; Chile tem stand em diagramação e documentos até 20/07; Galeria Elite lançada; OralPlanner segue onboarding com Felipe."
+    "headline": "Segunda 20/07 é dia de destravar documentos CIOCH/Chile, reunião 10h com Antônio e Batista sobre captação/venda do evento de alinhadores, Felipe plugando pesquisa no fluxo de boas-vindas, Lucas entregando copy/narrativa dos slides e Joaquim no radar para marcar gravação do curso."
   },
   "fronts": [
     {
       "id": "lancamento-freedom",
       "filter": "lancamentos",
       "icon": "🚀",
-      "name": "Lançamento Freedom julho/26",
+      "name": "Evento Alinhadores / Freedom julho/26",
       "status": "risk",
       "priority": "p0",
       "progress": 64,
       "owner": "Ruan / Lucas / Felipe / Fabián / Batista / Klyro",
-      "summary": "Frente E0 de julho. Alinhadores/lives Instagram deixam de ser módulo separado e entram aqui. ClickUp mostra 123 tarefas abertas; próxima etapa operacional é incomodação/aquecimento do evento, ainda sem data no ClickUp. Existe decisão provável amanhã de migrar para modelo gratuito por baixa venda de ingressos, o que muda página de captação, criativos e campanhas.",
+      "summary": "Amanhã 20/07 tem reunião às 10h com Antônio e Batista para olhar dados de captação e venda de ingressos do evento de alinhadores. Operação precisa migrar/ajustar fluxo de captação gratuita, pesquisa, boas-vindas e preparar slides do evento de domingo com copy do Lucas.",
       "nextActions": [
-        "Sexta 17/07 14h: reunião com Sérgio e Lucas para narrativa, oferta e cronograma do evento de 26/09",
-        "Ruan/Lucas: construir cronograma do evento e oferta — tarefa ClickUp 86ajaf8uk com vencimento 17/07",
-        "Se virar gratuito: retirar venda de ingressos, reescrever página de captação, trocar criativos e reajustar campanhas",
-        "Felipe: manter disparos API + mensagens nos grupos antigos/currentes conforme fase",
-        "Fabián/Ruan: organizar depoimentos e melhores trechos para CPLs/aquecimento"
+        "20/07 10h: reunião Ruan + Antônio + Batista — dados de captação e venda de ingressos do evento de alinhadores",
+        "Felipe: duplicar/plugar pesquisa no fluxo de boas-vindas dos leads da captação gratuita",
+        "Felipe/Ruan: alinhar demandas da semana do lançamento",
+        "Lucas: enviar copy dos slides do evento de domingo dos alinhadores",
+        "Ruan: cobrar de Lucas o documento da narrativa que ainda falta"
       ],
       "blockers": [
-        "Decisão de modelo pago vs gratuito ainda pendente; se atrasar, página/campanhas/criativos ficam com briefing instável",
-        "A fase de incomodação/aquecimento está sem data no ClickUp; precisa ganhar cronograma depois da decisão",
-        "Alta concentração de tarefas abertas no lançamento — risco de dispersão se não priorizar a mudança de modelo primeiro"
+        "Sem pesquisa plugada no fluxo, lead gratuito entra sem segmentação/qualificação para o evento",
+        "Sem copy/narrativa do Lucas, preparação dos slides de domingo fica espremida",
+        "Dados de captação/venda precisam orientar a decisão de ajuste do evento amanhã cedo"
       ],
-      "done": "Reunião de sexta 17/07 14h criada no calendário do Ruan sem convidados externos; lives/alinhadores incorporados à frente Freedom."
+      "done": "Evento de alinhadores consolidado no radar de 20/07 com reunião 10h, fluxo Felipe e slides Lucas."
     },
     {
       "id": "plataforma-assinatura",
@@ -42,18 +42,18 @@
       "priority": "p1",
       "progress": 62,
       "owner": "Ruan / Felipe / Prof. Joaquim Ariza",
-      "summary": "Joaquim está estruturando o curso nesta semana e na próxima; gravação será combinada na semana que vem assim que ele der sinal. ClickUp da plataforma ainda mostra pendências antigas de curso/banners, então o próximo controle é confirmar o pacote de briefing antes de acionar Felipe.",
+      "summary": "Joaquim Ariza segue no radar desta semana: Ruan precisa falar com ele para marcar a data de gravação do curso e cobrar as informações que ainda não foram enviadas.",
       "nextActions": [
-        "Aguardar Joaquim enviar sinal para marcar gravação com Felipe na próxima semana",
-        "Cobrar/receber de Joaquim: tema do curso, foto profissional e foto ilustrativa do tema/caso",
-        "Felipe: preparar agenda/setup de gravação quando Joaquim confirmar",
-        "Revisar pendências ClickUp da lista [Plataforma] Cursos XDental: subir novo curso Hotmart/banners e edição Victor Arguedas ainda aparecem abertas"
+        "Semana 20-26/07: falar com Prof. Joaquim Ariza para marcar data da gravação do curso",
+        "Cobrar de Joaquim as informações pendentes do curso antes de acionar produção",
+        "Felipe: preparar agenda/setup de gravação assim que Joaquim confirmar",
+        "Depois da data marcada, transformar em tarefas de edição, upload e comunicação"
       ],
       "blockers": [
-        "Sem tema e fotos, Felipe não consegue fechar gravação nem pacote de comunicação",
-        "Pendências antigas abertas no ClickUp podem esconder atraso real da esteira mensal da assinatura"
+        "Sem informações do Joaquim, gravação e pacote de comunicação continuam sem briefing fechado",
+        "Se a data não for marcada nesta semana, o curso pode entrar em cima da hora na esteira da assinatura"
       ],
-      "done": "Reunião com Joaquim realizada em 14/07; curso em estruturação."
+      "done": "Reunião com Joaquim realizada em 14/07; curso segue para definição de data e informações finais."
     },
     {
       "id": "diplomado-ortho-pro",
@@ -64,7 +64,7 @@
       "priority": "p1",
       "progress": 76,
       "owner": "Ruan / Felipe / Mônica / professores",
-      "summary": "Encuentro ao vivo com Héctor Rodríguez foi remarcado para quinta 23/07/2026 às 14h Brasil e já aparece no calendário do Ruan. Processo do Diplomado segue pela régua fixa: confirmação professor, gravação, edição, PDF/pacote, upload Hotmart, comunicação, Encuentro e exame.",
+      "summary": "Encuentro ao vivo com Héctor Rodríguez segue no radar da semana: quinta 23/07/2026 às 14h Brasil. Amanhã não exige ação pesada, mas não pode sumir da visão operacional.",
       "nextActions": [
         "Manter no painel: 23/07 14h Brasil — Diplomado M7 Encuentro ao vivo com Dr. Héctor Rodríguez",
         "Revisar próximos módulos/professores pela régua D-30/D-14/D-10/D-7/D-2/D0",
@@ -108,18 +108,20 @@
       "priority": "p1",
       "progress": 54,
       "owner": "Ruan / Clairo/Klyro",
-      "summary": "Stand está em diagramação pela Clairo/Klyro e deve ficar pronto hoje. Prazo crítico do manual do expositor: organizar documentos até sexta e enviar/fechar até 20/07.",
+      "summary": "Prazo crítico amanhã 20/07: finalizar formulários do expositor, solicitar passaportes dos sócios no grupo XDental e confirmar com Sérgio se o 4º ingresso/credencial será gratuito ou pago. Formulários já estão parcialmente preenchidos pelo TAOS.",
       "nextActions": [
-        "Revisar arte/diagramação do stand assim que Clairo/Klyro entregar",
-        "Sexta 17/07: organizar documentos/formulários exigidos no manual do expositor",
-        "Segunda 20/07: enviar/fechar documentos e formulários do Chile/CIOCH",
-        "Manter próximos marcos no radar: 26/07 gráfica/projeto especial e 25/08 placas/montagem"
+        "20/07: pedir no grupo XDental os passaportes/documentos de Ruan, Sérgio, Lucas e Vinicius para credenciais",
+        "20/07: confirmar com Sérgio se ele consegue o 4º ingresso/credencial gratuito; se não, decidir compra da credencial extra",
+        "20/07: finalizar Formulário Nº2 de credenciais e revisar formulários Nº1, Nº3 e Nº5",
+        "20/07: enviar formulários para Ximena Ramírez em administracion@sortchile.cl",
+        "Manter próximos marcos no radar: 26/07 gráfica/projeto especial e 21/08 placas/patentes de montagem"
       ],
       "blockers": [
-        "Se documentos/formulários não forem enviados até 20/07, a frente Chile pode perder prazo de expositor",
-        "Sem aprovação da diagramação do stand, produção gráfica fica espremida"
+        "Sem documentos/passaportes dos sócios, o Formulário Nº2 de credenciais fica incompleto",
+        "A equipe tem 4 sócios viajando e só 3 credenciais previstas; precisa confirmar se Sérgio libera a 4ª gratuita ou se haverá pagamento",
+        "Se o envio não sair em 20/07, XDental perde prazo do manual do expositor"
       ],
-      "done": "Lembretes criados: 17/07 para organizar documentos e 20/07 para envio/fechamento."
+      "done": "PDF dos formulários CIOCH já separado e versão parcial preenchida com Excellence Dental Academy, stand B32 e passaporte do Vinicius."
     },
     {
       "id": "sniper-elite",
@@ -164,92 +166,97 @@
   ],
   "gargalos": [
     {
-      "title": "Freedom · decisão pago vs gratuito",
+      "title": "Alinhadores · reunião 10h + fluxo de captação gratuita",
       "priority": "p0",
       "filter": "lancamentos",
-      "frente": "Lançamento Freedom julho/26",
-      "deadline": "Qui 16/07 / sex 17/07",
-      "blocks": "Sem decisão, página de captação, criativos e campanhas podem seguir no modelo errado",
-      "owner": "Ruan / Lucas"
+      "frente": "Evento Alinhadores / Freedom",
+      "deadline": "Seg 20/07 10h",
+      "blocks": "Sem leitura dos dados e pesquisa no fluxo, captação gratuita entra desalinhada",
+      "owner": "Ruan / Antônio / Batista / Felipe / Lucas"
     },
     {
-      "title": "Freedom · narrativa/oferta/cronograma do evento 26/09",
+      "title": "Chile/CIOCH · formulários e credenciais vencem 20/07",
       "priority": "p0",
-      "filter": "lancamentos",
-      "frente": "Lançamento Freedom julho/26",
-      "deadline": "Sex 17/07 14h",
-      "blocks": "Evento fica sem tese, oferta e sequência clara de aquecimento/conversão",
-      "owner": "Ruan / Sérgio / Lucas"
+      "filter": "chile",
+      "frente": "Chile / CIOCH",
+      "deadline": "Seg 20/07",
+      "blocks": "Falta documento dos sócios e definição de 4ª credencial gratuita ou paga",
+      "owner": "Ruan / Sérgio / sócios"
     },
     {
-      "title": "Plataforma · Joaquim ainda deve briefing do curso",
+      "title": "Plataforma · Joaquim precisa marcar gravação",
       "priority": "p1",
       "filter": "plataforma",
       "frente": "Plataforma de Assinatura",
-      "deadline": "Semana 15-22/07",
-      "blocks": "Sem tema e fotos, não dá para agendar gravação com Felipe nem preparar comunicação",
+      "deadline": "Semana 20-26/07",
+      "blocks": "Sem data e informações do Joaquim, curso não entra na esteira de produção",
       "owner": "Ruan / Joaquim / Felipe"
     },
     {
-      "title": "Chile/CIOCH · documentos do expositor até 20/07",
+      "title": "Diplomado · Encuentro Héctor no radar",
       "priority": "p1",
-      "filter": "chile",
-      "frente": "Chile / CIOCH",
-      "deadline": "Organizar 17/07 · enviar 20/07",
-      "blocks": "Perda de prazo do manual do expositor e aperto de produção gráfica",
-      "owner": "Ruan / Clairo-Klyro"
-    },
-    {
-      "title": "OralPlanner · checar onboarding dos contemplados",
-      "priority": "p2",
-      "filter": "oralplanner",
-      "frente": "OralPlanner",
-      "deadline": "Semana 15-18/07",
-      "blocks": "Alunos contemplados podem ficar sem acesso/instrução",
-      "owner": "Ruan / Felipe"
+      "filter": "diplomado",
+      "frente": "Diplomado Ortho Pro",
+      "deadline": "Qui 23/07 14h",
+      "blocks": "Evento ao vivo precisa ficar visível na semana para evitar correria operacional",
+      "owner": "Ruan / Felipe / Héctor"
     }
   ],
   "radarDoDia": [
     {
-      "time": "manhã",
-      "task": "🚀 Freedom: confirmar tendência de migração para gratuito e listar impactos em página, criativos e campanhas",
+      "time": "10:00",
+      "task": "🚀 Alinhadores: reunião com Antônio e Batista para analisar dados de captação e venda de ingressos",
       "frente": "🚀 FREE",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🎬 Plataforma: aguardar/cobrar Joaquim — tema do curso, foto profissional e imagem ilustrativa do caso/tema",
-      "frente": "🎬 PA",
-      "status": "⚠️",
+      "task": "🇨🇱 Chile/CIOCH: confirmar com Sérgio se o 4º ingresso/credencial será gratuito; se não, decidir compra",
+      "frente": "🇨🇱 CHL",
+      "status": "🔥",
       "done": false
     },
     {
-      "time": "11:00",
-      "task": "🧩 OralPlanner: perguntar ao Felipe status do onboarding de todos os alunos contemplados",
-      "frente": "🧩 ORAL",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "14:00 sex",
-      "task": "🚀 Reunião Freedom/Alinhadores: Sérgio + Lucas — narrativa, oferta e cronograma do evento 26/09",
-      "frente": "🚀 FREE",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "sexta",
-      "task": "🇨🇱 Chile/CIOCH: organizar documentos/formulários do manual do expositor",
+      "time": "manhã",
+      "task": "🇨🇱 Chile/CIOCH: solicitar passaportes/documentos dos sócios no grupo XDental para credenciais",
       "frente": "🇨🇱 CHL",
       "status": "🔥",
       "done": false
     },
     {
       "time": "20/07",
-      "task": "🇨🇱 Chile/CIOCH: enviar/fechar documentos e formulários do expositor",
+      "task": "🇨🇱 Chile/CIOCH: finalizar formulários preenchidos e enviar para Ximena/administracion@sortchile.cl",
       "frente": "🇨🇱 CHL",
       "status": "📅",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "🚀 Felipe: duplicar/plugar pesquisa no fluxo de boas-vindas dos leads da captação gratuita dos alinhadores",
+      "frente": "🚀 FREE",
+      "status": "⚠️",
+      "done": false
+    },
+    {
+      "time": "manhã",
+      "task": "🚀 Felipe: alinhar demandas da semana do lançamento/evento de alinhadores",
+      "frente": "🚀 FREE",
+      "status": "⚠️",
+      "done": false
+    },
+    {
+      "time": "amanhã",
+      "task": "🚀 Lucas: enviar copy dos slides do evento de domingo dos alinhadores + documento da narrativa",
+      "frente": "🚀 FREE",
+      "status": "⚠️",
+      "done": false
+    },
+    {
+      "time": "semana",
+      "task": "🎬 Plataforma: falar com Prof. Joaquim Ariza para marcar gravação e cobrar informações pendentes",
+      "frente": "🎬 PA",
+      "status": "⚠️",
       "done": false
     },
     {
@@ -258,23 +265,16 @@
       "frente": "🎓 DIP",
       "status": "📅",
       "done": false
-    },
-    {
-      "time": "semana",
-      "task": "🛒 Low Tickets: manter 4 produtos ativos e ajustar fluxo de criativos sem Bruno Copp",
-      "frente": "🛒 LT",
-      "status": "⚠️",
-      "done": false
     }
   ],
   "metrics": {
     "p0": 2,
-    "p1": 2,
-    "p2": 1,
+    "p1": 3,
+    "p2": 0,
     "p3": 0,
     "done": 0,
-    "tasks": 8
+    "tasks": 9
   },
-  "radarExtra": "Fontes conferidas em 15/07: áudio do Ruan no tópico Dados/Painel; ClickUp workspace 9013084558, folder [Operações] XDental Academy; lista Freedom julho/26 com 123 tarefas abertas e tarefa [Planejamento] Construir cronograma do evento e oferta vencendo 17/07; lista Plataforma com pendências antigas de Hotmart/banners e curso Victor; lista Diplomado sem tarefas abertas; lista Chile/CIOCH com diagramação do stand em andamento; lista Low Ticket Inglês com 7 tarefas abertas. Google Calendar rdomith@gmail.com mostra Diplomado M7 Héctor em 23/07 14h, lançamento pago Freedom em 25/07 e reunião semanal de sócios. Criado evento no calendário para sexta 17/07 14h sobre narrativa/oferta/cronograma do evento 26/09, sem convidados externos. Criados lembretes de Chile em 17/07 e 20/07.",
+  "radarExtra": "Fontes conferidas em 19/07: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com não retornou eventos para 20/07, mas próximos eventos confirmados são Diplomado M7 Héctor em 23/07 14h, reunião semanal de sócios em 24/07 09h e lançamento Freedom em 25/07. Radar de amanhã foi atualizado com reunião 10h Antônio/Batista, pendências CIOCH/Chile, Felipe no fluxo de pesquisa/boas-vindas, Lucas com copy/narrativa dos slides e Joaquim Ariza no radar da semana.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
