@@ -1226,30 +1226,50 @@
 
     async function initRadar() {
       const done = await loadDone();
-      const items = root.querySelectorAll('.radar-item');
+      const list = root.querySelector('.radar-list');
+      const items = Array.from(root.querySelectorAll('.radar-item'));
+
+      function sortRadar() {
+        if (!list) return;
+        const ordered = Array.from(list.querySelectorAll('.radar-item'))
+          .sort((a, b) => {
+            const aDone = a.classList.contains('done') ? 0 : 1;
+            const bDone = b.classList.contains('done') ? 0 : 1;
+            if (aDone !== bDone) return aDone - bDone;
+            return Number(a.dataset.originalOrder || 0) - Number(b.dataset.originalOrder || 0);
+          });
+        ordered.forEach(item => list.appendChild(item));
+      }
+
       items.forEach(item => {
         const id = item.dataset.id;
+        const status = item.querySelector('.radar-status');
+        item.dataset.originalStatus = status?.textContent || '⏳';
+        item.dataset.originalOrder = item.dataset.originalOrder || String(items.indexOf(item));
         if (done.includes(id)) {
           item.classList.add('done');
-          item.querySelector('.radar-status').textContent = '✅';
+          if (status) status.textContent = '✅';
         }
         item.querySelector('.radar-check').addEventListener('click', async (e) => {
           e.stopPropagation();
           const currentDone = await loadDone();
+          const status = item.querySelector('.radar-status');
           if (item.classList.contains('done')) {
             item.classList.remove('done');
-            item.querySelector('.radar-status').textContent = '⏳';
+            if (status) status.textContent = item.dataset.originalStatus || '⏳';
             await saveDone(currentDone.filter(x => x !== id));
           } else {
             item.classList.add('done');
-            item.querySelector('.radar-status').textContent = '✅';
+            if (status) status.textContent = '✅';
             if (!currentDone.includes(id)) {
               currentDone.push(id);
               await saveDone(currentDone);
             }
           }
+          sortRadar();
         });
       });
+      sortRadar();
     }
     initRadar();
 
