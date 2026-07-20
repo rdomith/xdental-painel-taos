@@ -6,7 +6,7 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Segunda 20/07 é dia de destravar documentos CIOCH/Chile, reunião 10h com Antônio e Batista sobre captação/venda do evento de alinhadores, Felipe plugando pesquisa no fluxo de boas-vindas, Lucas entregando copy/narrativa dos slides e Joaquim no radar para marcar gravação do curso. Também entrou: camisa do Serginho/Fabinho para domingo, hashtag com Lucas, mapa/slide do evento e recuperação das imagens no Drive. Lives segunda/quarta/sexta precisam de temas com Sérgio e aviso ao Batista para tráfego."
+    "headline": "Segunda 20/07 é dia de destravar documentos CIOCH/Chile, reunião 10h com Antônio e Batista sobre captação/venda do evento de alinhadores, Felipe plugando pesquisa no fluxo de boas-vindas, Lucas entregando copy/narrativa dos slides e Joaquim no radar para marcar gravação do curso. Também entrou: camisa do Serginho/Fabinho para domingo, hashtag com Lucas, mapa/slide do evento e recuperação das imagens no Drive. Lives segunda/quarta/sexta precisam de temas com Sérgio e aviso ao Batista para tráfego. Também precisa enviar arquivos para impressão 3D dos moldes de anel em Volta Redonda."
   },
   "fronts": [
     {
@@ -30,7 +30,8 @@
         "Mapa do evento: recuperar imagens no Drive, aplicar alteração pedida pelo Sérgio e atualizar slide do mapa",
         "Sérgio: definir temas das lives de segunda, quarta e sexta",
         "Batista: alinhar calendário das lives para tráfego/impulsionamento",
-        "Live de segunda: fechar tema e CTA antes de rodar mídia"
+        "Live de segunda: fechar tema e CTA antes de rodar mídia",
+        "Impressão 3D: enviar arquivos amanhã para empresa de Volta Redonda imprimir moldes de anel"
       ],
       "blockers": [
         "Sem pesquisa plugada no fluxo, lead gratuito entra sem segmentação/qualificação para o evento",
@@ -39,9 +40,10 @@
         "Camisas têm lead time curto: se fornecedor não for acionado amanhã, risco real de não retirar até sexta",
         "Sem recuperar os arquivos/imagens originais do Drive, alteração do mapa vira retrabalho manual",
         "Sem tema das lives, Batista não consegue preparar tráfego e criativos com coerência",
-        "Live de segunda já está em cima: tema/CTA precisa sair amanhã cedo"
+        "Live de segunda já está em cima: tema/CTA precisa sair amanhã cedo",
+        "Moldes de anel dependem de produção física; se arquivo não for enviado cedo, compra/produto pode atrasar"
       ],
-      "done": "Evento de alinhadores consolidado no radar de 20/07 com reunião 10h, fluxo Felipe, slides Lucas, camisas, mapa do evento e lives da semana."
+      "done": "Evento de alinhadores consolidado no radar de 20/07 com reunião 10h, fluxo Felipe, slides Lucas, camisas, mapa, lives e impressão 3D."
     },
     {
       "id": "plataforma-assinatura",
@@ -194,6 +196,15 @@
       "owner": "Ruan / Sérgio / Batista"
     },
     {
+      "title": "Impressão 3D · moldes de anel",
+      "priority": "p0",
+      "filter": "lancamentos",
+      "frente": "Evento Alinhadores / Produto físico",
+      "deadline": "Seg 20/07 manhã",
+      "blocks": "Sem envio dos arquivos, moldes de anel podem atrasar a compra/produto",
+      "owner": "Ruan / fornecedor VR"
+    },
+    {
       "title": "Chile/CIOCH · formulários e credenciais vencem 20/07",
       "priority": "p0",
       "filter": "chile",
@@ -307,6 +318,13 @@
       "done": false
     },
     {
+      "time": "manhã",
+      "task": "🧩 Impressão 3D: enviar arquivos para empresa de Volta Redonda imprimir moldes de anel",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "done": false
+    },
+    {
       "time": "semana",
       "task": "🗺️ Mapa do evento: recuperar imagens no Drive, aplicar alteração pedida pelo Sérgio e atualizar slide do mapa",
       "frente": "🚀 FREE",
@@ -329,13 +347,13 @@
     }
   ],
   "metrics": {
-    "p0": 4,
+    "p0": 5,
     "p1": 3,
     "p2": 0,
     "p3": 0,
     "done": 0,
-    "tasks": 15
+    "tasks": 16
   },
-  "radarExtra": "Fontes conferidas em 19/07: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com não retornou eventos para 20/07, mas próximos eventos confirmados são Diplomado M7 Héctor em 23/07 14h, reunião semanal de sócios em 24/07 09h e lançamento Freedom em 25/07. Radar de amanhã foi atualizado com reunião 10h Antônio/Batista, pendências CIOCH/Chile, Felipe no fluxo de pesquisa/boas-vindas, Lucas com copy/narrativa dos slides e Joaquim Ariza no radar da semana. Super Silk VR (@supersilkvr) WhatsApp 24 99976-0958. Art Silk Serigrafia (@artsilk_serigrafia) pedidos.artsilkvr@gmail.com. Família Silk (@familia.silk). Verri Print (@lverri). Drive candidato encontrado: Google Doc MINI-IMPLANTES e ALINHADORES. Atualização adicional: lives segunda/quarta/sexta precisam de temas com Sérgio e alinhamento com Batista para tráfego.",
+  "radarExtra": "Fontes conferidas em 19/07: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com não retornou eventos para 20/07, mas próximos eventos confirmados são Diplomado M7 Héctor em 23/07 14h, reunião semanal de sócios em 24/07 09h e lançamento Freedom em 25/07. Radar de amanhã foi atualizado com reunião 10h Antônio/Batista, pendências CIOCH/Chile, Felipe no fluxo de pesquisa/boas-vindas, Lucas com copy/narrativa dos slides e Joaquim Ariza no radar da semana. Super Silk VR (@supersilkvr) WhatsApp 24 99976-0958. Art Silk Serigrafia (@artsilk_serigrafia) pedidos.artsilkvr@gmail.com. Família Silk (@familia.silk). Verri Print (@lverri). Drive candidato encontrado: Google Doc MINI-IMPLANTES e ALINHADORES. Atualização adicional: lives segunda/quarta/sexta precisam de temas com Sérgio e alinhamento com Batista para tráfego. Atualização adicional: enviar arquivos para impressão 3D de moldes de anel em empresa de Volta Redonda.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
