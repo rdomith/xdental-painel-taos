@@ -1,12 +1,12 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.17-dradar-2026-07-20",
-    "lastUpdated": "2026-07-19 · Radar de amanhã 20/07 + áudio Ruan + Google Calendar",
+    "version": "2.18-radar-2026-07-21",
+    "lastUpdated": "2026-07-21 · Radar de terça + áudio Ruan + Google Calendar",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Segunda 20/07 é dia de destravar documentos CIOCH/Chile, reunião 10h com Antônio e Batista sobre captação/venda do evento de alinhadores, Felipe plugando pesquisa no fluxo de boas-vindas, Lucas entregando copy/narrativa dos slides e Joaquim no radar para marcar gravação do curso. Também entrou: camisa do Serginho/Fabinho para domingo, hashtag com Lucas, mapa/slide do evento e recuperação das imagens no Drive. Lives segunda/quarta/sexta precisam de temas com Sérgio e aviso ao Batista para tráfego. Também precisa enviar arquivos para impressão 3D dos moldes de anel em Volta Redonda."
+    "headline": "Terça 21/07 é dia de execução concentrada para o evento de domingo: começar os slides com a copy enviada pelo Lucas, configurar WHOP hoje antes da reunião comercial de amanhã e preparar o briefing para as meninas ativarem a base do lançamento. Google Calendar rdomith@gmail.com não tem eventos hoje/amanhã; próximos confirmados são Diplomado M7 em 23/07, sócios em 24/07 e lançamento Freedom em 25/07."
   },
   "fronts": [
     {
@@ -16,56 +16,73 @@
       "name": "Evento Alinhadores / Freedom julho/26",
       "status": "risk",
       "priority": "p0",
-      "progress": 64,
-      "owner": "Ruan / Lucas / Felipe / Fabián / Batista / Klyro",
-      "summary": "Amanhã 20/07 tem reunião às 10h com Antônio e Batista para olhar dados de captação e venda de ingressos do evento de alinhadores. Além do fluxo de captação gratuita, a semana tem lives segunda/quarta/sexta; Ruan precisa pegar temas com Sérgio e avisar Batista para preparar tráfego.",
+      "progress": 72,
+      "owner": "Ruan / Lucas / Felipe / Batista / Equipe Comercial",
+      "summary": "Terça 21/07 virou dia de preparação pesada para o evento de domingo: Lucas já mandou a copy, então Ruan precisa começar os slides; WHOP precisa ficar configurado hoje porque amanhã tem reunião comercial; e o time comercial precisa sair alinhado para ativar a base do lançamento e puxar comparecimento para o evento.",
       "nextActions": [
-        "20/07 10h: reunião Ruan + Antônio + Batista — dados de captação e venda de ingressos do evento de alinhadores",
-        "Felipe: duplicar/plugar pesquisa no fluxo de boas-vindas dos leads da captação gratuita",
-        "Felipe/Ruan: alinhar demandas da semana do lançamento",
-        "Lucas: enviar copy dos slides do evento de domingo dos alinhadores",
-        "Ruan: cobrar de Lucas o documento da narrativa que ainda falta",
-        "Camisas domingo: pesquisar/fechar fornecedor em Volta Redonda amanhã para retirar até sexta no máximo",
-        "Lucas: confirmar hashtag que vai na camisa/arte",
-        "Mapa do evento: recuperar imagens no Drive, aplicar alteração pedida pelo Sérgio e atualizar slide do mapa",
-        "Sérgio: definir temas das lives de segunda, quarta e sexta",
-        "Batista: alinhar calendário das lives para tráfego/impulsionamento",
-        "Live de segunda: fechar tema e CTA antes de rodar mídia",
-        "Impressão 3D: enviar arquivos amanhã para empresa de Volta Redonda imprimir moldes de anel"
+        "Hoje: começar os slides do evento de domingo usando a copy enviada pelo Lucas",
+        "Hoje: configurar WHOP/plataforma de venda com produto, preço/oferta, checkout, acesso, pixels/links e teste de compra",
+        "Preparar briefing da reunião comercial de amanhã: oferta de domingo, abordagem da base, comparecimento no evento e próximos contatos",
+        "Felipe: confirmar se a pesquisa já foi plugada no fluxo de boas-vindas dos leads da captação gratuita",
+        "Sérgio/Batista: confirmar temas/CTAs das lives de quarta e sexta e tráfego direcionado",
+        "Mapa/slide do evento: recuperar imagens no Drive, aplicar alteração pedida pelo Sérgio e atualizar no deck",
+        "Camisas: confirmar hashtag/arte e garantir produção para retirada até sexta",
+        "Impressão 3D: confirmar se arquivos dos moldes de anel já foram enviados; se não, enviar hoje"
       ],
       "blockers": [
-        "Sem pesquisa plugada no fluxo, lead gratuito entra sem segmentação/qualificação para o evento",
-        "Sem copy/narrativa do Lucas, preparação dos slides de domingo fica espremida",
-        "Dados de captação/venda precisam orientar a decisão de ajuste do evento amanhã cedo",
-        "Camisas têm lead time curto: se fornecedor não for acionado amanhã, risco real de não retirar até sexta",
-        "Sem recuperar os arquivos/imagens originais do Drive, alteração do mapa vira retrabalho manual",
-        "Sem tema das lives, Batista não consegue preparar tráfego e criativos com coerência",
-        "Live de segunda já está em cima: tema/CTA precisa sair amanhã cedo",
-        "Moldes de anel dependem de produção física; se arquivo não for enviado cedo, compra/produto pode atrasar"
+        "Sem WHOP pronto hoje, a reunião comercial de amanhã vira alinhamento sem link/processo de venda validado",
+        "Sem slides iniciados hoje, a apresentação de domingo fica espremida nos últimos dias",
+        "Se o comercial não sair com briefing claro, a base pode ser abordada de forma fraca e o comparecimento do evento cai",
+        "Sem pesquisa/segmentação no fluxo, o lead gratuito chega menos qualificado para a oferta",
+        "Camisas, mapa e impressão 3D têm prazo físico/visual curto até domingo"
       ],
-      "done": "Evento de alinhadores consolidado no radar de 20/07 com reunião 10h, fluxo Felipe, slides Lucas, camisas, mapa, lives e impressão 3D."
+      "done": "Lucas já enviou a copy dos slides; demanda mudou de cobrança para produção do deck pelo Ruan."
     },
     {
-      "id": "plataforma-assinatura",
-      "filter": "plataforma",
-      "icon": "🎬",
-      "name": "Plataforma de Assinatura / Curso Joaquim",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 62,
-      "owner": "Ruan / Felipe / Prof. Joaquim Ariza",
-      "summary": "Joaquim Ariza segue no radar desta semana: Ruan precisa falar com ele para marcar a data de gravação do curso e cobrar as informações que ainda não foram enviadas.",
+      "id": "comercial-whop",
+      "filter": "lancamentos",
+      "icon": "💳",
+      "name": "WHOP / Oferta / Comercial",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 20,
+      "owner": "Ruan / Equipe Comercial",
+      "summary": "Nova frente operacional crítica para a oferta de domingo: configurar a plataforma WHOP hoje e deixar o roteiro comercial pronto para a reunião de amanhã com as meninas.",
       "nextActions": [
-        "Semana 20-26/07: falar com Prof. Joaquim Ariza para marcar data da gravação do curso",
-        "Cobrar de Joaquim as informações pendentes do curso antes de acionar produção",
-        "Felipe: preparar agenda/setup de gravação assim que Joaquim confirmar",
-        "Depois da data marcada, transformar em tarefas de edição, upload e comunicação"
+        "Criar/configurar produto/oferta no WHOP",
+        "Definir preço, moeda, checkout, página/link de pagamento e política de acesso/entrega",
+        "Testar fluxo completo: link, pagamento, confirmação, acesso e mensagem pós-compra",
+        "Separar links oficiais para a equipe comercial usar sem improviso",
+        "Montar pauta objetiva da reunião comercial: quem abordar, quando abordar, script, objeções, CTA de comparecimento e CTA da oferta de domingo"
       ],
       "blockers": [
-        "Sem informações do Joaquim, gravação e pacote de comunicação continuam sem briefing fechado",
-        "Se a data não for marcada nesta semana, o curso pode entrar em cima da hora na esteira da assinatura"
+        "Sem teste real do checkout, a equipe pode vender com link quebrado ou oferta incompleta",
+        "Sem pauta/script, cada pessoa aborda a base de um jeito e a campanha perde força"
       ],
-      "done": "Reunião com Joaquim realizada em 14/07; curso segue para definição de data e informações finais."
+      "done": "Lembrete de amanhã 09h BRT criado pelo TAOS para a reunião comercial."
+    },
+    {
+      "id": "chile-cioch",
+      "filter": "chile",
+      "icon": "🇨🇱",
+      "name": "Chile / CIOCH",
+      "status": "risk",
+      "priority": "p1",
+      "progress": 58,
+      "owner": "Ruan / Clairo/Klyro",
+      "summary": "Prazo de 20/07 passou sem confirmação explícita de conclusão neste tópico. Hoje precisa verificar se formulários/credenciais foram enviados; se não foram, resolver como pendência vencida.",
+      "nextActions": [
+        "Confirmar se os documentos/passaportes dos sócios foram recebidos",
+        "Confirmar com Sérgio se a 4ª credencial/ingresso será gratuita ou paga",
+        "Se ainda pendente: finalizar Formulário Nº2 de credenciais e revisar Nº1, Nº3 e Nº5",
+        "Se ainda pendente: enviar formulários para Ximena Ramírez em administracion@sortchile.cl",
+        "Manter próximos marcos no radar: 26/07 gráfica/projeto especial e 21/08 placas/patentes de montagem"
+      ],
+      "blockers": [
+        "Se o envio de formulários não tiver acontecido, a frente Chile está fora do prazo do manual do expositor",
+        "Sem definição da 4ª credencial, pode virar custo ou problema de acesso no evento"
+      ],
+      "done": "Formulários já estavam parcialmente preenchidos pelo TAOS; falta confirmação de envio/conclusão."
     },
     {
       "id": "diplomado-ortho-pro",
@@ -76,18 +93,38 @@
       "priority": "p1",
       "progress": 76,
       "owner": "Ruan / Felipe / Mônica / professores",
-      "summary": "Encuentro ao vivo com Héctor Rodríguez segue no radar da semana: quinta 23/07/2026 às 14h Brasil. Amanhã não exige ação pesada, mas não pode sumir da visão operacional.",
+      "summary": "Próximo evento confirmado no Calendar: quinta 23/07 às 14h Brasil, Encuentro ao vivo do M7 com Dr. Héctor Rodríguez. Não tem evento hoje no Calendar, mas precisa seguir visível.",
       "nextActions": [
         "Manter no painel: 23/07 14h Brasil — Diplomado M7 Encuentro ao vivo com Dr. Héctor Rodríguez",
+        "Checar comunicação/lembrete para alunos antes do Encuentro",
         "Revisar próximos módulos/professores pela régua D-30/D-14/D-10/D-7/D-2/D0",
-        "Checar se há material, edição, upload Hotmart ou comunicação pendente para próximos módulos",
-        "Depois do Encuentro, acompanhar janela de prova/exame conforme cronograma do Diplomado"
+        "Depois do Encuentro, acompanhar prova/exame conforme cronograma"
       ],
       "blockers": [
-        "Se o processo de módulos não for revisado semanalmente, professor/material/upload podem entrar em cima da hora",
-        "Lista ClickUp do Diplomado está sem tarefas abertas; usar calendário + processo fixo como fonte de controle até o ClickUp refletir as etapas"
+        "Se comunicação/agenda não forem checadas antes de quinta, o Encuentro pode entrar em cima da hora"
       ],
       "done": "Evento do Héctor confirmado no Google Calendar em 23/07 14h-15h30."
+    },
+    {
+      "id": "plataforma-assinatura",
+      "filter": "plataforma",
+      "icon": "🎬",
+      "name": "Plataforma de Assinatura / Curso Joaquim",
+      "status": "attention",
+      "priority": "p2",
+      "progress": 62,
+      "owner": "Ruan / Felipe / Prof. Joaquim Ariza",
+      "summary": "Joaquim Ariza segue como pendência da semana, mas hoje perde prioridade para WHOP + slides + comercial do evento de domingo.",
+      "nextActions": [
+        "Semana 20-26/07: falar com Prof. Joaquim Ariza para marcar data da gravação do curso",
+        "Cobrar informações pendentes do curso antes de acionar produção",
+        "Felipe: preparar agenda/setup de gravação assim que Joaquim confirmar",
+        "Depois da data marcada, transformar em tarefas de edição, upload e comunicação"
+      ],
+      "blockers": [
+        "Se a data não for marcada nesta semana, o curso pode entrar em cima da hora na esteira da assinatura"
+      ],
+      "done": "Reunião com Joaquim realizada em 14/07; curso segue para definição de data e informações finais."
     },
     {
       "id": "low-tickets",
@@ -98,62 +135,16 @@
       "priority": "p2",
       "progress": 68,
       "owner": "Ruan / Batista / Sérgio / Fabián",
-      "summary": "Segue em execução reduzida: apenas 4 produtos rodando e menor fluxo de novos criativos. Bruno Copp não faz mais parte da equipe, então qualquer referência antiga de copy/rotina com Bruno deve sair da leitura operacional atual.",
+      "summary": "Operação segue reduzida e monitorada. Hoje não é foco principal do Ruan, mas manter alerta diário e rotina dos produtos ativos.",
       "nextActions": [
         "Manter rotina dos 4 produtos ativos, sem forçar volume alto de novos criativos",
-        "ClickUp Low Ticket Inglês: subir campanha de tráfego, página de vendas, design/tradução/dublagem de criativos e diagramação do ebook",
         "Reorganizar responsabilidades de copy/criativos sem Bruno Copp",
         "Preservar alerta diário de 0 vendas por produto ativo via Hotmart"
       ],
       "blockers": [
-        "Fluxo reduzido de criativos diminui velocidade de testes; precisa priorizar somente vencedores/maiores alavancas",
-        "Referências antigas a Bruno no processo podem gerar cobrança para pessoa que saiu da equipe"
+        "Fluxo reduzido de criativos diminui velocidade de testes; priorizar vencedores/maiores alavancas"
       ],
       "done": "Status operacional atualizado: Bruno Copp fora da equipe; operação reduzida para 4 produtos ativos."
-    },
-    {
-      "id": "chile-cioch",
-      "filter": "chile",
-      "icon": "🇨🇱",
-      "name": "Chile / CIOCH",
-      "status": "risk",
-      "priority": "p1",
-      "progress": 54,
-      "owner": "Ruan / Clairo/Klyro",
-      "summary": "Prazo crítico amanhã 20/07: finalizar formulários do expositor, solicitar passaportes dos sócios no grupo XDental e confirmar com Sérgio se o 4º ingresso/credencial será gratuito ou pago. Formulários já estão parcialmente preenchidos pelo TAOS.",
-      "nextActions": [
-        "20/07: pedir no grupo XDental os passaportes/documentos de Ruan, Sérgio, Lucas e Vinicius para credenciais",
-        "20/07: confirmar com Sérgio se ele consegue o 4º ingresso/credencial gratuito; se não, decidir compra da credencial extra",
-        "20/07: finalizar Formulário Nº2 de credenciais e revisar formulários Nº1, Nº3 e Nº5",
-        "20/07: enviar formulários para Ximena Ramírez em administracion@sortchile.cl",
-        "Manter próximos marcos no radar: 26/07 gráfica/projeto especial e 21/08 placas/patentes de montagem"
-      ],
-      "blockers": [
-        "Sem documentos/passaportes dos sócios, o Formulário Nº2 de credenciais fica incompleto",
-        "A equipe tem 4 sócios viajando e só 3 credenciais previstas; precisa confirmar se Sérgio libera a 4ª gratuita ou se haverá pagamento",
-        "Se o envio não sair em 20/07, XDental perde prazo do manual do expositor"
-      ],
-      "done": "PDF dos formulários CIOCH já separado e versão parcial preenchida com Excellence Dental Academy, stand B32 e passaporte do Vinicius."
-    },
-    {
-      "id": "sniper-elite",
-      "filter": "elite",
-      "icon": "💎",
-      "name": "Sniper Elite / Galeria Elite",
-      "status": "ok",
-      "priority": "p2",
-      "progress": 88,
-      "owner": "Ruan / Sérgio / equipe",
-      "summary": "Galeria Elite foi lançada hoje e o link já foi enviado no grupo do Telegram; é um novo entregável do último lançamento.",
-      "nextActions": [
-        "Monitorar acesso e feedback dos alunos no Telegram",
-        "Acompanhar rotina mensal de novos casos/resoluções sem publicar casos bloqueados por áudio",
-        "Próxima extração/atualização da galeria segue na rotina mensal"
-      ],
-      "blockers": [
-        "Não há bloqueio crítico novo; cuidado apenas com casos pendentes/bloqueados na auditoria de áudio antes de publicar"
-      ],
-      "done": "Galeria Elite lançada e comunicada no Telegram."
     },
     {
       "id": "oralplanner",
@@ -164,7 +155,7 @@
       "priority": "p2",
       "progress": 58,
       "owner": "Ruan / Felipe",
-      "summary": "Felipe está fazendo onboarding de todos os alunos contemplados/que ganharam acesso. Precisa checar status para garantir que ninguém fique sem entrada.",
+      "summary": "Felipe está fazendo onboarding dos alunos contemplados/que ganharam acesso. Checagem segue como secundária da semana.",
       "nextActions": [
         "Ruan: verificar com Felipe o status do onboarding de todos os alunos contemplados",
         "Conferir lista de alunos, acesso liberado, comunicação enviada e pendências individuais",
@@ -174,160 +165,165 @@
         "Se o onboarding não for conferido, alunos contemplados podem ficar sem acesso ou sem instrução clara"
       ],
       "done": "Frente mantida no radar secundário com checagem objetiva para Felipe."
+    },
+    {
+      "id": "sniper-elite",
+      "filter": "elite",
+      "icon": "💎",
+      "name": "Sniper Elite / Galeria Elite",
+      "status": "ok",
+      "priority": "p2",
+      "progress": 88,
+      "owner": "Ruan / Sérgio / equipe",
+      "summary": "Galeria Elite segue lançada e sem bloqueio crítico novo. Manter monitoramento leve.",
+      "nextActions": [
+        "Monitorar acesso e feedback dos alunos no Telegram",
+        "Acompanhar rotina mensal de novos casos/resoluções sem publicar casos bloqueados por áudio"
+      ],
+      "blockers": [
+        "Cuidado com casos pendentes/bloqueados na auditoria de áudio antes de publicar"
+      ],
+      "done": "Galeria Elite lançada e comunicada no Telegram."
     }
   ],
   "gargalos": [
     {
-      "title": "Alinhadores · reunião 10h + fluxo de captação gratuita",
+      "title": "WHOP · plataforma de venda precisa ficar pronta hoje",
+      "priority": "p0",
+      "filter": "lancamentos",
+      "frente": "WHOP / Oferta / Comercial",
+      "deadline": "Ter 21/07",
+      "blocks": "Sem checkout/link testado, reunião comercial de amanhã fica sem execução real",
+      "owner": "Ruan"
+    },
+    {
+      "title": "Slides domingo · começar produção com copy do Lucas",
       "priority": "p0",
       "filter": "lancamentos",
       "frente": "Evento Alinhadores / Freedom",
-      "deadline": "Seg 20/07 10h",
-      "blocks": "Sem leitura dos dados e pesquisa no fluxo, captação gratuita entra desalinhada",
-      "owner": "Ruan / Antônio / Batista / Felipe / Lucas"
+      "deadline": "Ter 21/07",
+      "blocks": "Sem iniciar hoje, deck do evento fica espremido nos últimos dias",
+      "owner": "Ruan / Lucas"
     },
     {
-      "title": "Lives alinhadores · temas + tráfego",
+      "title": "Comercial amanhã · pauta e abordagem da base",
       "priority": "p0",
       "filter": "lancamentos",
-      "frente": "Evento Alinhadores / Freedom",
-      "deadline": "Seg 20/07 manhã",
-      "blocks": "Sem tema e calendário, Batista não consegue mandar tráfego certo para as lives de segunda/quarta/sexta",
-      "owner": "Ruan / Sérgio / Batista"
+      "frente": "Evento Alinhadores / Comercial",
+      "deadline": "Qua 22/07",
+      "blocks": "Sem script/oferta, meninas abordam base sem direção e comparecimento pode cair",
+      "owner": "Ruan / equipe comercial"
     },
     {
-      "title": "Impressão 3D · moldes de anel",
-      "priority": "p0",
-      "filter": "lancamentos",
-      "frente": "Evento Alinhadores / Produto físico",
-      "deadline": "Seg 20/07 manhã",
-      "blocks": "Sem envio dos arquivos, moldes de anel podem atrasar a compra/produto",
-      "owner": "Ruan / fornecedor VR"
-    },
-    {
-      "title": "Chile/CIOCH · formulários e credenciais vencem 20/07",
-      "priority": "p0",
+      "title": "Chile/CIOCH · pendência vencida precisa de confirmação",
+      "priority": "p1",
       "filter": "chile",
       "frente": "Chile / CIOCH",
-      "deadline": "Seg 20/07",
-      "blocks": "Falta documento dos sócios e definição de 4ª credencial gratuita ou paga",
+      "deadline": "Venceu 20/07",
+      "blocks": "Se formulários/credenciais não foram enviados, XDental está fora do prazo do expositor",
       "owner": "Ruan / Sérgio / sócios"
     },
     {
-      "title": "Plataforma · Joaquim precisa marcar gravação",
+      "title": "Evento domingo · produção física e visual curta",
       "priority": "p1",
-      "filter": "plataforma",
-      "frente": "Plataforma de Assinatura",
-      "deadline": "Semana 20-26/07",
-      "blocks": "Sem data e informações do Joaquim, curso não entra na esteira de produção",
-      "owner": "Ruan / Joaquim / Felipe"
+      "filter": "lancamentos",
+      "frente": "Evento Alinhadores / Produção",
+      "deadline": "Até sex 24/07",
+      "blocks": "Camisas, mapa e impressão 3D dependem de prazo físico/visual",
+      "owner": "Ruan / Lucas / fornecedor VR"
     },
     {
-      "title": "Diplomado · Encuentro Héctor no radar",
+      "title": "Diplomado · Encuentro Héctor quinta",
       "priority": "p1",
       "filter": "diplomado",
       "frente": "Diplomado Ortho Pro",
       "deadline": "Qui 23/07 14h",
-      "blocks": "Evento ao vivo precisa ficar visível na semana para evitar correria operacional",
+      "blocks": "Evento ao vivo precisa ficar visível na semana para comunicação/alinhamento",
       "owner": "Ruan / Felipe / Héctor"
     }
   ],
   "radarDoDia": [
     {
-      "time": "10:00",
-      "task": "🚀 Alinhadores: reunião com Antônio e Batista para analisar dados de captação e venda de ingressos",
+      "time": "manhã",
+      "task": "💳 WHOP: configurar produto/oferta, checkout, acesso/entrega, links oficiais e tracking básico",
       "frente": "🚀 FREE",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🇨🇱 Chile/CIOCH: confirmar com Sérgio se o 4º ingresso/credencial será gratuito; se não, decidir compra",
-      "frente": "🇨🇱 CHL",
+      "task": "🧪 WHOP: fazer teste completo do fluxo de compra/link/confirmação antes de liberar para comercial",
+      "frente": "🚀 FREE",
       "status": "🔥",
       "done": false
     },
     {
       "time": "manhã",
-      "task": "🇨🇱 Chile/CIOCH: solicitar passaportes/documentos dos sócios no grupo XDental para credenciais",
-      "frente": "🇨🇱 CHL",
+      "task": "🖥️ Slides domingo: começar deck do evento usando a copy enviada pelo Lucas",
+      "frente": "🚀 FREE",
       "status": "🔥",
       "done": false
     },
     {
-      "time": "20/07",
-      "task": "🇨🇱 Chile/CIOCH: finalizar formulários preenchidos e enviar para Ximena/administracion@sortchile.cl",
-      "frente": "🇨🇱 CHL",
-      "status": "📅",
+      "time": "hoje",
+      "task": "👥 Comercial: montar pauta da reunião de amanhã com oferta, script, objeções, CTA de comparecimento e contato com base",
+      "frente": "🚀 FREE",
+      "status": "🔥",
       "done": false
     },
     {
-      "time": "manhã",
-      "task": "🚀 Felipe: duplicar/plugar pesquisa no fluxo de boas-vindas dos leads da captação gratuita dos alinhadores",
+      "time": "hoje",
+      "task": "📲 Comercial: separar orientação para as meninas começarem contato com a base do lançamento a partir de amanhã",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "🚀 Felipe: confirmar se a pesquisa já foi plugada no fluxo de boas-vindas dos leads gratuitos",
       "frente": "🚀 FREE",
       "status": "⚠️",
       "done": false
     },
     {
-      "time": "manhã",
-      "task": "🚀 Felipe: alinhar demandas da semana do lançamento/evento de alinhadores",
+      "time": "hoje",
+      "task": "🎥 Sérgio/Batista: fechar temas/CTAs das lives de quarta e sexta e alinhamento de tráfego",
       "frente": "🚀 FREE",
       "status": "⚠️",
       "done": false
     },
     {
-      "time": "amanhã",
-      "task": "🚀 Lucas: enviar copy dos slides do evento de domingo dos alinhadores + documento da narrativa",
-      "frente": "🚀 FREE",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🎥 Sérgio: pegar temas das lives de segunda, quarta e sexta do evento de alinhadores",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🎥 Batista: avisar calendário das lives porque haverá tráfego direcionado para elas",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje/seg",
-      "task": "🎥 Live de segunda: confirmar tema, criativo/CTA e alinhamento de tráfego antes de rodar mídia",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "👕 Camisas: pesquisar fornecedores em Volta Redonda e enviar pedido das camisas do Serginho/Fabinho para retirar até sexta",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "👕 Lucas: confirmar hashtag que vai na camisa/arte do evento de domingo",
-      "frente": "🚀 FREE",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🧩 Impressão 3D: enviar arquivos para empresa de Volta Redonda imprimir moldes de anel",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "semana",
+      "time": "hoje",
       "task": "🗺️ Mapa do evento: recuperar imagens no Drive, aplicar alteração pedida pelo Sérgio e atualizar slide do mapa",
       "frente": "🚀 FREE",
+      "status": "⚠️",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "👕 Camisas: confirmar hashtag/arte com Lucas e garantir fornecedor para retirada até sexta",
+      "frente": "🚀 FREE",
+      "status": "⚠️",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "🧩 Impressão 3D: confirmar envio dos arquivos dos moldes de anel; se não saiu, enviar hoje",
+      "frente": "🚀 FREE",
+      "status": "⚠️",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "🇨🇱 Chile/CIOCH: confirmar se formulários e credenciais foram enviados ontem; se não, resolver como vencido",
+      "frente": "🇨🇱 CHL",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "🇨🇱 Chile/CIOCH: confirmar 4ª credencial/ingresso com Sérgio ou decidir compra",
+      "frente": "🇨🇱 CHL",
       "status": "⚠️",
       "done": false
     },
@@ -344,16 +340,23 @@
       "frente": "🎓 DIP",
       "status": "📅",
       "done": false
+    },
+    {
+      "time": "semana",
+      "task": "🧩 OralPlanner: verificar com Felipe onboarding dos alunos contemplados",
+      "frente": "🧩 ORAL",
+      "status": "⚠️",
+      "done": false
     }
   ],
   "metrics": {
-    "p0": 5,
+    "p0": 3,
     "p1": 3,
     "p2": 0,
     "p3": 0,
     "done": 0,
-    "tasks": 16
+    "tasks": 15
   },
-  "radarExtra": "Fontes conferidas em 19/07: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com não retornou eventos para 20/07, mas próximos eventos confirmados são Diplomado M7 Héctor em 23/07 14h, reunião semanal de sócios em 24/07 09h e lançamento Freedom em 25/07. Radar de amanhã foi atualizado com reunião 10h Antônio/Batista, pendências CIOCH/Chile, Felipe no fluxo de pesquisa/boas-vindas, Lucas com copy/narrativa dos slides e Joaquim Ariza no radar da semana. Super Silk VR (@supersilkvr) WhatsApp 24 99976-0958. Art Silk Serigrafia (@artsilk_serigrafia) pedidos.artsilkvr@gmail.com. Família Silk (@familia.silk). Verri Print (@lverri). Drive candidato encontrado: Google Doc MINI-IMPLANTES e ALINHADORES. Atualização adicional: lives segunda/quarta/sexta precisam de temas com Sérgio e alinhamento com Batista para tráfego. Atualização adicional: enviar arquivos para impressão 3D de moldes de anel em empresa de Volta Redonda.",
+  "radarExtra": "Fontes conferidas em 21/07 às 09:48 BRT: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com sem eventos em 21/07 e 22/07. Próximos eventos confirmados: Diplomado M7 Héctor em 23/07 14h, reunião semanal de sócios em 24/07 09h e XDental | Lançamento pago Freedom em 25/07. Pendências não confirmadas de 20/07 foram carregadas para hoje; Lucas já enviou a copy, então a tarefa virou produção dos slides pelo Ruan. Novo P0: WHOP configurado e testado antes da reunião comercial de amanhã. Lembrete criado para 22/07 às 09h BRT no tópico Dados/Painel.",
   "sourceFile": "projects/xdental-painel-taos/index.html"
 }
