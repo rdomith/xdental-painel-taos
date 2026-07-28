@@ -1,65 +1,56 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.18-radar-2026-07-21",
-    "lastUpdated": "2026-07-21 · Radar de terça + áudio Ruan + Google Calendar",
+    "version": "2.20-frentes-2026-07-28",
+    "lastUpdated": "2026-07-28 · Frentes oficiais + conversão Alineadores",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Terça 21/07 é dia de execução concentrada para o evento de domingo: começar os slides com a copy enviada pelo Lucas, configurar WHOP hoje antes da reunião comercial de amanhã e preparar o briefing para as meninas ativarem a base do lançamento. Google Calendar rdomith@gmail.com não tem eventos hoje/amanhã; próximos confirmados são Diplomado M7 em 23/07, sócios em 24/07 e lançamento Freedom em 25/07."
+    "headline": "Whoop removido do Kanban: não é frente. Painel agora trabalha com 7 frentes oficiais. Foco do dia é conversão do lançamento de Alineadores: lista Freedom para comercial, diagnóstico do disparo API sem interação, live de amanhã com Sérgio e fechamento de matrículas na sexta."
   },
   "fronts": [
     {
-      "id": "lancamento-freedom",
+      "id": "lancamento-alineadores",
       "filter": "lancamentos",
       "icon": "🚀",
-      "name": "Evento Alinhadores / Freedom julho/26",
+      "name": "Lançamento de Alineadores / Diplomado Freedom",
       "status": "risk",
       "priority": "p0",
-      "progress": 72,
-      "owner": "Ruan / Lucas / Felipe / Batista / Equipe Comercial",
-      "summary": "Terça 21/07 virou dia de preparação pesada para o evento de domingo: Lucas já mandou a copy, então Ruan precisa começar os slides; WHOP precisa ficar configurado hoje porque amanhã tem reunião comercial; e o time comercial precisa sair alinhado para ativar a base do lançamento e puxar comparecimento para o evento.",
+      "progress": 82,
+      "owner": "Ruan / Felipe / Mônica / Comercial / Sérgio",
+      "summary": "Fase de conversão. Matrículas fecham sexta-feira; hoje precisa aumentar ação comercial, entender por que o disparo API de ontem não gerou interação e preparar uma live de venda forte com Sérgio amanhã à noite.",
+      "exec": [
+        "Felipe: separar lista de alunos Freedom e acionar meninas do comercial para contato ativo",
+        "Ruan/Mônica: organizar Hotmart e liberar acessos necessários para o comercial",
+        "TAOS/Ruan: estruturar ângulo, roteiro e pitch da live de amanhã com Sérgio"
+      ],
+      "wait": [
+        "Felipe ainda não respondeu o que aconteceu no disparo API de ontem, que não gerou interação nenhuma",
+        "Sem lista + abordagem comercial hoje, perde-se a janela curta antes do fechamento de sexta"
+      ],
+      "next": [
+        "Confirmar status do disparo API: envio, segmentação, entrega, bloqueio, link e tracking",
+        "Criar script comercial: motivo do contato, diagnóstico do aluno, objeções e CTA para matrícula",
+        "Definir formato da live de amanhã: tema clínico + ponte para Diplomado Freedom + chamada para fechamento",
+        "Reforçar escassez real: matrículas encerram sexta-feira"
+      ],
+      "done": [
+        "Entrega/produto já estruturado como Diplomado Freedom de Alineadores; oferta vendida no domingo"
+      ],
       "nextActions": [
-        "Hoje: começar os slides do evento de domingo usando a copy enviada pelo Lucas",
-        "Hoje: configurar WHOP/plataforma de venda com produto, preço/oferta, checkout, acesso, pixels/links e teste de compra",
-        "Preparar briefing da reunião comercial de amanhã: oferta de domingo, abordagem da base, comparecimento no evento e próximos contatos",
-        "Felipe: confirmar se a pesquisa já foi plugada no fluxo de boas-vindas dos leads da captação gratuita",
-        "Sérgio/Batista: confirmar temas/CTAs das lives de quarta e sexta e tráfego direcionado",
-        "Mapa/slide do evento: recuperar imagens no Drive, aplicar alteração pedida pelo Sérgio e atualizar no deck",
-        "Camisas: confirmar hashtag/arte e garantir produção para retirada até sexta",
-        "Impressão 3D: confirmar se arquivos dos moldes de anel já foram enviados; se não, enviar hoje"
+        "Felipe: separar lista de alunos Freedom e acionar meninas do comercial para contato ativo",
+        "Ruan/Mônica: organizar Hotmart e liberar acessos necessários para o comercial",
+        "TAOS/Ruan: estruturar ângulo, roteiro e pitch da live de amanhã com Sérgio",
+        "Confirmar status do disparo API: envio, segmentação, entrega, bloqueio, link e tracking",
+        "Criar script comercial: motivo do contato, diagnóstico do aluno, objeções e CTA para matrícula",
+        "Definir formato da live de amanhã: tema clínico + ponte para Diplomado Freedom + chamada para fechamento",
+        "Reforçar escassez real: matrículas encerram sexta-feira"
       ],
       "blockers": [
-        "Sem WHOP pronto hoje, a reunião comercial de amanhã vira alinhamento sem link/processo de venda validado",
-        "Sem slides iniciados hoje, a apresentação de domingo fica espremida nos últimos dias",
-        "Se o comercial não sair com briefing claro, a base pode ser abordada de forma fraca e o comparecimento do evento cai",
-        "Sem pesquisa/segmentação no fluxo, o lead gratuito chega menos qualificado para a oferta",
-        "Camisas, mapa e impressão 3D têm prazo físico/visual curto até domingo"
+        "Felipe ainda não respondeu o que aconteceu no disparo API de ontem, que não gerou interação nenhuma",
+        "Sem lista + abordagem comercial hoje, perde-se a janela curta antes do fechamento de sexta"
       ],
-      "done": "Lucas já enviou a copy dos slides; demanda mudou de cobrança para produção do deck pelo Ruan."
-    },
-    {
-      "id": "comercial-whop",
-      "filter": "lancamentos",
-      "icon": "💳",
-      "name": "WHOP / Oferta / Comercial",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 20,
-      "owner": "Ruan / Equipe Comercial",
-      "summary": "Nova frente operacional crítica para a oferta de domingo: configurar a plataforma WHOP hoje e deixar o roteiro comercial pronto para a reunião de amanhã com as meninas.",
-      "nextActions": [
-        "Criar/configurar produto/oferta no WHOP",
-        "Definir preço, moeda, checkout, página/link de pagamento e política de acesso/entrega",
-        "Testar fluxo completo: link, pagamento, confirmação, acesso e mensagem pós-compra",
-        "Separar links oficiais para a equipe comercial usar sem improviso",
-        "Montar pauta objetiva da reunião comercial: quem abordar, quando abordar, script, objeções, CTA de comparecimento e CTA da oferta de domingo"
-      ],
-      "blockers": [
-        "Sem teste real do checkout, a equipe pode vender com link quebrado ou oferta incompleta",
-        "Sem pauta/script, cada pessoa aborda a base de um jeito e a campanha perde força"
-      ],
-      "done": "Lembrete de amanhã 09h BRT criado pelo TAOS para a reunião comercial."
+      "doneText": "Entrega/produto já estruturado como Diplomado Freedom de Alineadores; oferta vendida no domingo"
     },
     {
       "id": "chile-cioch",
@@ -67,22 +58,38 @@
       "icon": "🇨🇱",
       "name": "Chile / CIOCH",
       "status": "risk",
-      "priority": "p1",
-      "progress": 58,
-      "owner": "Ruan / Clairo/Klyro",
-      "summary": "Prazo de 20/07 passou sem confirmação explícita de conclusão neste tópico. Hoje precisa verificar se formulários/credenciais foram enviados; se não foram, resolver como pendência vencida.",
+      "priority": "p0",
+      "progress": 66,
+      "owner": "Ruan / Lucas / fornecedor gráfica stand",
+      "summary": "Frente urgente por dependência externa. Ruan já enviou dois e-mails sobre pagamento da gráfica do stand e ainda não teve resposta; precisa insistir hoje para pagar e liberar impressão.",
+      "exec": [
+        "Ruan: mandar terceiro e-mail hoje cobrando retorno/pagamento da gráfica do stand",
+        "Ruan: tentar canal alternativo se o e-mail não responder — telefone/WhatsApp/contato do congresso"
+      ],
+      "wait": [
+        "Fornecedor da gráfica ainda não respondeu sobre pagamento/impressão",
+        "Sem pagamento, a impressão do stand pode atrasar perto demais do evento"
+      ],
+      "next": [
+        "Confirmar recebimento do pagamento e data de produção/impressão",
+        "Lucas: comprar passagem de volta no horário/data já definidos",
+        "Manter 21/08 no radar para placas/patentes de montagem"
+      ],
+      "done": [
+        "Lucas já tem a data e horário necessários para compra da passagem de volta"
+      ],
       "nextActions": [
-        "Confirmar se os documentos/passaportes dos sócios foram recebidos",
-        "Confirmar com Sérgio se a 4ª credencial/ingresso será gratuita ou paga",
-        "Se ainda pendente: finalizar Formulário Nº2 de credenciais e revisar Nº1, Nº3 e Nº5",
-        "Se ainda pendente: enviar formulários para Ximena Ramírez em administracion@sortchile.cl",
-        "Manter próximos marcos no radar: 26/07 gráfica/projeto especial e 21/08 placas/patentes de montagem"
+        "Ruan: mandar terceiro e-mail hoje cobrando retorno/pagamento da gráfica do stand",
+        "Ruan: tentar canal alternativo se o e-mail não responder — telefone/WhatsApp/contato do congresso",
+        "Confirmar recebimento do pagamento e data de produção/impressão",
+        "Lucas: comprar passagem de volta no horário/data já definidos",
+        "Manter 21/08 no radar para placas/patentes de montagem"
       ],
       "blockers": [
-        "Se o envio de formulários não tiver acontecido, a frente Chile está fora do prazo do manual do expositor",
-        "Sem definição da 4ª credencial, pode virar custo ou problema de acesso no evento"
+        "Fornecedor da gráfica ainda não respondeu sobre pagamento/impressão",
+        "Sem pagamento, a impressão do stand pode atrasar perto demais do evento"
       ],
-      "done": "Formulários já estavam parcialmente preenchidos pelo TAOS; falta confirmação de envio/conclusão."
+      "doneText": "Lucas já tem a data e horário necessários para compra da passagem de volta"
     },
     {
       "id": "diplomado-ortho-pro",
@@ -91,40 +98,74 @@
       "name": "Diplomado Ortho Pro",
       "status": "attention",
       "priority": "p1",
-      "progress": 76,
-      "owner": "Ruan / Felipe / Mônica / professores",
-      "summary": "Próximo evento confirmado no Calendar: quinta 23/07 às 14h Brasil, Encuentro ao vivo do M7 com Dr. Héctor Rodríguez. Não tem evento hoje no Calendar, mas precisa seguir visível.",
+      "progress": 80,
+      "owner": "Ruan / Mônica / Felipe / Sérgio",
+      "summary": "M7 destravado: prova já foi feita por Ruan e enviada no grupo de suporte; precisa ficar no radar para liberação em 07/08. Próximo ponto é decidir com Sérgio se M8 será ao vivo ou gravado antes.",
+      "exec": [
+        "Painel: manter liberação da prova M7 em 07/08 visível até concluir",
+        "Ruan: perguntar ao Sérgio se M8 será gravado ao vivo ou antecipado"
+      ],
+      "wait": [
+        "Decisão do Sérgio sobre formato do M8",
+        "Se M8 ficar em cima da hora, reduz tempo para material complementar e organização da data"
+      ],
+      "next": [
+        "Argumento para Sérgio: antecipar libera agenda dele e permite preparar material complementar com mais qualidade",
+        "Mônica/Felipe: preparar liberação da prova M7 no dia 07/08",
+        "Manter janela da prova M7 aberta por 7 dias após liberação"
+      ],
+      "done": [
+        "Prova M7 feita por Ruan e enviada no grupo de suporte"
+      ],
       "nextActions": [
-        "Manter no painel: 23/07 14h Brasil — Diplomado M7 Encuentro ao vivo com Dr. Héctor Rodríguez",
-        "Checar comunicação/lembrete para alunos antes do Encuentro",
-        "Revisar próximos módulos/professores pela régua D-30/D-14/D-10/D-7/D-2/D0",
-        "Depois do Encuentro, acompanhar prova/exame conforme cronograma"
+        "Painel: manter liberação da prova M7 em 07/08 visível até concluir",
+        "Ruan: perguntar ao Sérgio se M8 será gravado ao vivo ou antecipado",
+        "Argumento para Sérgio: antecipar libera agenda dele e permite preparar material complementar com mais qualidade",
+        "Mônica/Felipe: preparar liberação da prova M7 no dia 07/08",
+        "Manter janela da prova M7 aberta por 7 dias após liberação"
       ],
       "blockers": [
-        "Se comunicação/agenda não forem checadas antes de quinta, o Encuentro pode entrar em cima da hora"
+        "Decisão do Sérgio sobre formato do M8",
+        "Se M8 ficar em cima da hora, reduz tempo para material complementar e organização da data"
       ],
-      "done": "Evento do Héctor confirmado no Google Calendar em 23/07 14h-15h30."
+      "doneText": "Prova M7 feita por Ruan e enviada no grupo de suporte"
     },
     {
       "id": "plataforma-assinatura",
       "filter": "plataforma",
       "icon": "🎬",
-      "name": "Plataforma de Assinatura / Curso Joaquim",
+      "name": "Plataforma de Assinatura",
       "status": "attention",
-      "priority": "p2",
-      "progress": 62,
-      "owner": "Ruan / Felipe / Prof. Joaquim Ariza",
-      "summary": "Joaquim Ariza segue como pendência da semana, mas hoje perde prioridade para WHOP + slides + comercial do evento de domingo.",
+      "priority": "p1",
+      "progress": 64,
+      "owner": "Ruan / Fabián / Mônica",
+      "summary": "Curso de agosto definido: transformar a Clínica de Maestría: Doblas y Finalización em curso para a plataforma. Agora precisa organizar bruto, briefar Fabián e publicar no início de agosto.",
+      "exec": [
+        "Ruan: separar arquivos brutos da Clínica de Maestría: Doblas y Finalización",
+        "Ruan: passar demanda para Fabián editar em formato de curso"
+      ],
+      "wait": [
+        "Sem edição iniciada agora, a liberação do início de agosto fica apertada"
+      ],
+      "next": [
+        "Definir estrutura do curso: módulos/aulas, cortes, abertura/fechamento e thumbnail/capa",
+        "Fabián: editar aulas e entregar primeira versão",
+        "Mônica: subir na Hotmart/plataforma e preparar comunicação aos assinantes"
+      ],
+      "done": [
+        "Curso do mês definido a partir do evento Clínica de Maestría"
+      ],
       "nextActions": [
-        "Semana 20-26/07: falar com Prof. Joaquim Ariza para marcar data da gravação do curso",
-        "Cobrar informações pendentes do curso antes de acionar produção",
-        "Felipe: preparar agenda/setup de gravação assim que Joaquim confirmar",
-        "Depois da data marcada, transformar em tarefas de edição, upload e comunicação"
+        "Ruan: separar arquivos brutos da Clínica de Maestría: Doblas y Finalización",
+        "Ruan: passar demanda para Fabián editar em formato de curso",
+        "Definir estrutura do curso: módulos/aulas, cortes, abertura/fechamento e thumbnail/capa",
+        "Fabián: editar aulas e entregar primeira versão",
+        "Mônica: subir na Hotmart/plataforma e preparar comunicação aos assinantes"
       ],
       "blockers": [
-        "Se a data não for marcada nesta semana, o curso pode entrar em cima da hora na esteira da assinatura"
+        "Sem edição iniciada agora, a liberação do início de agosto fica apertada"
       ],
-      "done": "Reunião com Joaquim realizada em 14/07; curso segue para definição de data e informações finais."
+      "doneText": "Curso do mês definido a partir do evento Clínica de Maestría"
     },
     {
       "id": "low-tickets",
@@ -133,113 +174,162 @@
       "name": "Low Tickets",
       "status": "attention",
       "priority": "p2",
-      "progress": 68,
+      "progress": 58,
       "owner": "Ruan / Batista / Sérgio / Fabián",
-      "summary": "Operação segue reduzida e monitorada. Hoje não é foco principal do Ruan, mas manter alerta diário e rotina dos produtos ativos.",
+      "summary": "Operação em marcha mais lenta. Precisa recuperar vendas e avançar a frente em inglês: traduzir páginas, adaptar criativos vencedores do espanhol e dublar vídeos do Sérgio.",
+      "exec": [
+        "Manter operação atual rodando sem perder alerta de vendas",
+        "Ruan: retomar página de venda em inglês iniciada no Claude"
+      ],
+      "wait": [
+        "Low Tickets está sem intensidade suficiente para recuperar vendas sozinho",
+        "Frente em inglês depende de tradução/adaptação e dublagem dos vídeos do Sérgio"
+      ],
+      "next": [
+        "Mapear melhores criativos por produto em espanhol",
+        "Traduzir/adaptar criativos vencedores para inglês",
+        "Traduzir páginas de venda para inglês",
+        "Dublar vídeos do Sérgio de espanhol para inglês"
+      ],
+      "done": [
+        "Material base em inglês já existe em boa quantidade"
+      ],
       "nextActions": [
-        "Manter rotina dos 4 produtos ativos, sem forçar volume alto de novos criativos",
-        "Reorganizar responsabilidades de copy/criativos sem Bruno Copp",
-        "Preservar alerta diário de 0 vendas por produto ativo via Hotmart"
+        "Manter operação atual rodando sem perder alerta de vendas",
+        "Ruan: retomar página de venda em inglês iniciada no Claude",
+        "Mapear melhores criativos por produto em espanhol",
+        "Traduzir/adaptar criativos vencedores para inglês",
+        "Traduzir páginas de venda para inglês",
+        "Dublar vídeos do Sérgio de espanhol para inglês"
       ],
       "blockers": [
-        "Fluxo reduzido de criativos diminui velocidade de testes; priorizar vencedores/maiores alavancas"
+        "Low Tickets está sem intensidade suficiente para recuperar vendas sozinho",
+        "Frente em inglês depende de tradução/adaptação e dublagem dos vídeos do Sérgio"
       ],
-      "done": "Status operacional atualizado: Bruno Copp fora da equipe; operação reduzida para 4 produtos ativos."
+      "doneText": "Material base em inglês já existe em boa quantidade"
     },
     {
       "id": "oralplanner",
       "filter": "oralplanner",
       "icon": "🧩",
       "name": "OralPlanner",
-      "status": "attention",
-      "priority": "p2",
-      "progress": 58,
+      "status": "risk",
+      "priority": "p1",
+      "progress": 45,
       "owner": "Ruan / Felipe",
-      "summary": "Felipe está fazendo onboarding dos alunos contemplados/que ganharam acesso. Checagem segue como secundária da semana.",
+      "summary": "Frente está solta: falta visibilidade se o onboarding foi concluído e se os usuários estão usando. Precisa cobrar Felipe por status de acesso, ativação e uso real.",
+      "exec": [
+        "Ruan: perguntar ao Felipe status do onboarding e uso do OralPlanner"
+      ],
+      "wait": [
+        "Sem dados de uso, não dá para saber se o projeto está gerando valor ou só ficando abandonado",
+        "Falta confirmar se todos entraram, acessaram e entenderam como usar"
+      ],
+      "next": [
+        "Felipe: trazer lista de usuários/alunos, acessos liberados e pendências",
+        "Checar uso real: logins, casos criados, dúvidas e travas",
+        "Definir ação de reativação/onboarding se adesão estiver baixa"
+      ],
+      "done": [],
       "nextActions": [
-        "Ruan: verificar com Felipe o status do onboarding de todos os alunos contemplados",
-        "Conferir lista de alunos, acesso liberado, comunicação enviada e pendências individuais",
-        "Registrar qualquer aluno travado para follow-up específico"
+        "Ruan: perguntar ao Felipe status do onboarding e uso do OralPlanner",
+        "Felipe: trazer lista de usuários/alunos, acessos liberados e pendências",
+        "Checar uso real: logins, casos criados, dúvidas e travas",
+        "Definir ação de reativação/onboarding se adesão estiver baixa"
       ],
       "blockers": [
-        "Se o onboarding não for conferido, alunos contemplados podem ficar sem acesso ou sem instrução clara"
+        "Sem dados de uso, não dá para saber se o projeto está gerando valor ou só ficando abandonado",
+        "Falta confirmar se todos entraram, acessaram e entenderam como usar"
       ],
-      "done": "Frente mantida no radar secundário com checagem objetiva para Felipe."
+      "doneText": ""
     },
     {
       "id": "sniper-elite",
       "filter": "elite",
       "icon": "💎",
       "name": "Sniper Elite / Galeria Elite",
-      "status": "ok",
-      "priority": "p2",
-      "progress": 88,
+      "status": "attention",
+      "priority": "p1",
+      "progress": 72,
       "owner": "Ruan / Sérgio / equipe",
-      "summary": "Galeria Elite segue lançada e sem bloqueio crítico novo. Manter monitoramento leve.",
+      "summary": "Aula de 27/07 não aconteceu; Sérgio precisa passar nova data para agosto. Também precisa atualizar a Galeria Elite com novos casos no final do mês, validando áudios antes de publicar.",
+      "exec": [
+        "Ruan: cobrar Sérgio pela nova data da aula reagendada para agosto",
+        "Ruan: separar casos para atualização da Galeria Elite até quinta, se possível"
+      ],
+      "wait": [
+        "Nova data da aula depende do Sérgio",
+        "Publicação de casos exige cuidado por histórico de áudios inconsistentes/bloqueados"
+      ],
+      "next": [
+        "Confirmar data da aula remarcada e comunicar alunos",
+        "Atualizar Galeria Elite com casos desde o corte correto",
+        "Validar mensagem do aluno + transcrição/áudio do Sérgio antes de publicar",
+        "Não publicar casos bloqueados ou sem evidência suficiente"
+      ],
+      "done": [
+        "Galeria Elite já está ativa; último marco de memória aponta casos desde início de junho, com referência conhecida em 02/06 e atualização auxiliar em 16/06"
+      ],
       "nextActions": [
-        "Monitorar acesso e feedback dos alunos no Telegram",
-        "Acompanhar rotina mensal de novos casos/resoluções sem publicar casos bloqueados por áudio"
+        "Ruan: cobrar Sérgio pela nova data da aula reagendada para agosto",
+        "Ruan: separar casos para atualização da Galeria Elite até quinta, se possível",
+        "Confirmar data da aula remarcada e comunicar alunos",
+        "Atualizar Galeria Elite com casos desde o corte correto",
+        "Validar mensagem do aluno + transcrição/áudio do Sérgio antes de publicar",
+        "Não publicar casos bloqueados ou sem evidência suficiente"
       ],
       "blockers": [
-        "Cuidado com casos pendentes/bloqueados na auditoria de áudio antes de publicar"
+        "Nova data da aula depende do Sérgio",
+        "Publicação de casos exige cuidado por histórico de áudios inconsistentes/bloqueados"
       ],
-      "done": "Galeria Elite lançada e comunicada no Telegram."
+      "doneText": "Galeria Elite já está ativa; último marco de memória aponta casos desde início de junho, com referência conhecida em 02/06 e atualização auxiliar em 16/06"
     }
   ],
   "gargalos": [
     {
-      "title": "WHOP · plataforma de venda precisa ficar pronta hoje",
+      "title": "Alineadores · venda ativa antes do fechamento",
       "priority": "p0",
       "filter": "lancamentos",
-      "frente": "WHOP / Oferta / Comercial",
-      "deadline": "Ter 21/07",
-      "blocks": "Sem checkout/link testado, reunião comercial de amanhã fica sem execução real",
+      "frente": "Lançamento de Alineadores",
+      "deadline": "Hoje → sex 31/07",
+      "blocks": "Sem comercial ativo + live forte, a conversão final perde tração",
+      "owner": "Ruan / Felipe / Comercial"
+    },
+    {
+      "title": "Disparo API · zero interação ontem",
+      "priority": "p0",
+      "filter": "lancamentos",
+      "frente": "Lançamento de Alineadores",
+      "deadline": "Hoje",
+      "blocks": "Se o disparo falhou, a base não está sendo ativada no momento mais crítico",
+      "owner": "Felipe"
+    },
+    {
+      "title": "Chile · pagamento da gráfica do stand",
+      "priority": "p0",
+      "filter": "chile",
+      "frente": "Chile / CIOCH",
+      "deadline": "Hoje",
+      "blocks": "Sem pagamento confirmado, não libera impressão do stand",
       "owner": "Ruan"
     },
     {
-      "title": "Slides domingo · começar produção com copy do Lucas",
-      "priority": "p0",
-      "filter": "lancamentos",
-      "frente": "Evento Alinhadores / Freedom",
-      "deadline": "Ter 21/07",
-      "blocks": "Sem iniciar hoje, deck do evento fica espremido nos últimos dias",
-      "owner": "Ruan / Lucas"
-    },
-    {
-      "title": "Comercial amanhã · pauta e abordagem da base",
-      "priority": "p0",
-      "filter": "lancamentos",
-      "frente": "Evento Alinhadores / Comercial",
-      "deadline": "Qua 22/07",
-      "blocks": "Sem script/oferta, meninas abordam base sem direção e comparecimento pode cair",
-      "owner": "Ruan / equipe comercial"
-    },
-    {
-      "title": "Chile/CIOCH · pendência vencida precisa de confirmação",
+      "title": "Plataforma · editar curso de agosto",
       "priority": "p1",
-      "filter": "chile",
-      "frente": "Chile / CIOCH",
-      "deadline": "Venceu 20/07",
-      "blocks": "Se formulários/credenciais não foram enviados, XDental está fora do prazo do expositor",
-      "owner": "Ruan / Sérgio / sócios"
+      "filter": "plataforma",
+      "frente": "Plataforma de Assinatura",
+      "deadline": "Início de agosto",
+      "blocks": "Sem edição com Fabián agora, curso do mês atrasa",
+      "owner": "Ruan / Fabián"
     },
     {
-      "title": "Evento domingo · produção física e visual curta",
+      "title": "OralPlanner · uso sem visibilidade",
       "priority": "p1",
-      "filter": "lancamentos",
-      "frente": "Evento Alinhadores / Produção",
-      "deadline": "Até sex 24/07",
-      "blocks": "Camisas, mapa e impressão 3D dependem de prazo físico/visual",
-      "owner": "Ruan / Lucas / fornecedor VR"
-    },
-    {
-      "title": "Diplomado · Encuentro Héctor quinta",
-      "priority": "p1",
-      "filter": "diplomado",
-      "frente": "Diplomado Ortho Pro",
-      "deadline": "Qui 23/07 14h",
-      "blocks": "Evento ao vivo precisa ficar visível na semana para comunicação/alinhamento",
-      "owner": "Ruan / Felipe / Héctor"
+      "filter": "oralplanner",
+      "frente": "OralPlanner",
+      "deadline": "Esta semana",
+      "blocks": "Sem dados de onboarding/uso, a frente fica solta e sem decisão",
+      "owner": "Felipe"
     }
   ],
   "radarDoDia": [
@@ -357,6 +447,78 @@
     "done": 0,
     "tasks": 15
   },
-  "radarExtra": "Fontes conferidas em 21/07 às 09:48 BRT: áudio do Ruan no tópico Dados/Painel; Google Calendar rdomith@gmail.com sem eventos em 21/07 e 22/07. Próximos eventos confirmados: Diplomado M7 Héctor em 23/07 14h, reunião semanal de sócios em 24/07 09h e XDental | Lançamento pago Freedom em 25/07. Pendências não confirmadas de 20/07 foram carregadas para hoje; Lucas já enviou a copy, então a tarefa virou produção dos slides pelo Ruan. Novo P0: WHOP configurado e testado antes da reunião comercial de amanhã. Lembrete criado para 22/07 às 09h BRT no tópico Dados/Painel.",
-  "sourceFile": "projects/xdental-painel-taos/index.html"
+  "radarExtra": "Whoop removido: configuração pontual não vira frente. Kanban limitado a frentes maiores, funis, eventos e projetos estruturais.",
+  "sourceFile": "projects/xdental-painel-taos/index.html",
+  "radar": [
+    {
+      "time": "hoje",
+      "task": "🚀 Felipe: separar lista Freedom e acionar meninas do comercial para contato ativo",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "id": "2026-07-28-01"
+    },
+    {
+      "time": "hoje",
+      "task": "📡 Felipe: explicar por que o disparo API de ontem não teve interação",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "id": "2026-07-28-02"
+    },
+    {
+      "time": "amanhã noite",
+      "task": "🎥 Preparar live do Sérgio com ângulo clínico + pitch do Diplomado Freedom",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "id": "2026-07-28-03"
+    },
+    {
+      "time": "sexta",
+      "task": "🔒 Fechamento das matrículas do Diplomado Freedom de Alineadores",
+      "frente": "🚀 FREE",
+      "status": "📅",
+      "id": "2026-07-28-04"
+    },
+    {
+      "time": "hoje",
+      "task": "🇨🇱 Ruan: cobrar novamente gráfica do stand para pagamento/impressão",
+      "frente": "🇨🇱 CHL",
+      "status": "🔥",
+      "id": "2026-07-28-05"
+    },
+    {
+      "time": "07/08",
+      "task": "🎓 Liberar prova M7 do Diplomado OrthoPro",
+      "frente": "🎓 DIP",
+      "status": "📅",
+      "id": "2026-07-28-06"
+    },
+    {
+      "time": "semana",
+      "task": "🎓 Perguntar ao Sérgio se M8 será ao vivo ou gravado antes",
+      "frente": "🎓 DIP",
+      "status": "⚠️",
+      "id": "2026-07-28-07"
+    },
+    {
+      "time": "início ago",
+      "task": "🎬 Fabián editar Clínica de Maestría como curso da assinatura",
+      "frente": "🎬 PA",
+      "status": "⚠️",
+      "id": "2026-07-28-08"
+    },
+    {
+      "time": "semana",
+      "task": "🧩 Felipe: trazer status de onboarding e uso do OralPlanner",
+      "frente": "🧩 ORAL",
+      "status": "⚠️",
+      "id": "2026-07-28-09"
+    },
+    {
+      "time": "quinta",
+      "task": "💎 Atualizar Galeria Elite com novos casos, validando áudios antes de publicar",
+      "frente": "💎 ELITE",
+      "status": "⚠️",
+      "id": "2026-07-28-10"
+    }
+  ]
 }
