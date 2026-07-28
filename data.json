@@ -447,7 +447,7 @@
     "done": 0,
     "tasks": 15
   },
-  "radarExtra": "Whoop removido: configuração pontual não vira frente. Kanban limitado a frentes maiores, funis, eventos e projetos estruturais.",
+  "radarExtra": "Radar em ordem cronológica crescente a partir de hoje: hoje → amanhã → próximos dias → datas futuras. Whoop removido: configuração pontual não vira frente.",
   "sourceFile": "projects/xdental-painel-taos/index.html",
   "radar": [
     {
@@ -465,11 +465,25 @@
       "id": "2026-07-28-02"
     },
     {
+      "time": "hoje",
+      "task": "🇨🇱 Ruan: cobrar novamente gráfica do stand para pagamento/impressão",
+      "frente": "🇨🇱 CHL",
+      "status": "🔥",
+      "id": "2026-07-28-05"
+    },
+    {
       "time": "amanhã noite",
       "task": "🎥 Preparar live do Sérgio com ângulo clínico + pitch do Diplomado Freedom",
       "frente": "🚀 FREE",
       "status": "🔥",
       "id": "2026-07-28-03"
+    },
+    {
+      "time": "quinta",
+      "task": "💎 Atualizar Galeria Elite com novos casos, validando áudios antes de publicar",
+      "frente": "💎 ELITE",
+      "status": "⚠️",
+      "id": "2026-07-28-10"
     },
     {
       "time": "sexta",
@@ -479,25 +493,18 @@
       "id": "2026-07-28-04"
     },
     {
-      "time": "hoje",
-      "task": "🇨🇱 Ruan: cobrar novamente gráfica do stand para pagamento/impressão",
-      "frente": "🇨🇱 CHL",
-      "status": "🔥",
-      "id": "2026-07-28-05"
-    },
-    {
-      "time": "07/08",
-      "task": "🎓 Liberar prova M7 do Diplomado OrthoPro",
-      "frente": "🎓 DIP",
-      "status": "📅",
-      "id": "2026-07-28-06"
-    },
-    {
-      "time": "semana",
+      "time": "até sexta",
       "task": "🎓 Perguntar ao Sérgio se M8 será ao vivo ou gravado antes",
       "frente": "🎓 DIP",
       "status": "⚠️",
       "id": "2026-07-28-07"
+    },
+    {
+      "time": "até sexta",
+      "task": "🧩 Felipe: trazer status de onboarding e uso do OralPlanner",
+      "frente": "🧩 ORAL",
+      "status": "⚠️",
+      "id": "2026-07-28-09"
     },
     {
       "time": "início ago",
@@ -507,18 +514,11 @@
       "id": "2026-07-28-08"
     },
     {
-      "time": "semana",
-      "task": "🧩 Felipe: trazer status de onboarding e uso do OralPlanner",
-      "frente": "🧩 ORAL",
-      "status": "⚠️",
-      "id": "2026-07-28-09"
-    },
-    {
-      "time": "quinta",
-      "task": "💎 Atualizar Galeria Elite com novos casos, validando áudios antes de publicar",
-      "frente": "💎 ELITE",
-      "status": "⚠️",
-      "id": "2026-07-28-10"
+      "time": "07/08",
+      "task": "🎓 Liberar prova M7 do Diplomado OrthoPro",
+      "frente": "🎓 DIP",
+      "status": "📅",
+      "id": "2026-07-28-06"
     }
   ]
 }
