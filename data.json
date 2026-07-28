@@ -6,33 +6,38 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Whoop removido do Kanban: não é frente. Painel agora trabalha com 7 frentes oficiais. Foco do dia é conversão do lançamento de Alineadores: lista Freedom para comercial, diagnóstico do disparo API sem interação, live de amanhã com Sérgio e fechamento de matrículas na sexta."
+    "headline": "Foco atualizado: além da conversão do Diplomado Freedom, o lançamento gratuito de 17/08 virou P0 de definição. Antes da captação começar na segunda, precisa definir produto vendido, tema do evento e narrativa central."
   },
   "fronts": [
     {
       "id": "lancamento-alineadores",
       "filter": "lancamentos",
       "icon": "🚀",
-      "name": "Lançamento de Alineadores / Diplomado Freedom",
+      "name": "Lançamentos · Alineadores agora + 17/08 próximo",
       "status": "risk",
       "priority": "p0",
       "progress": 82,
       "owner": "Ruan / Felipe / Mônica / Comercial / Sérgio",
-      "summary": "Fase de conversão. Matrículas fecham sexta-feira; hoje precisa aumentar ação comercial, entender por que o disparo API de ontem não gerou interação e preparar uma live de venda forte com Sérgio amanhã à noite.",
+      "summary": "Duas urgências na mesma frente: converter o Diplomado Freedom até sexta e definir o lançamento gratuito de 17/08 antes da captação começar na segunda — produto vendido, tema do evento e narrativa central.",
       "exec": [
         "Felipe: separar lista de alunos Freedom e acionar meninas do comercial para contato ativo",
         "Ruan/Mônica: organizar Hotmart e liberar acessos necessários para o comercial",
-        "TAOS/Ruan: estruturar ângulo, roteiro e pitch da live de amanhã com Sérgio"
+        "TAOS/Ruan: estruturar ângulo, roteiro e pitch da live de amanhã com Sérgio",
+        "Ruan/Lucas/TAOS: definir produto, tema e narrativa do lançamento gratuito de 17/08"
       ],
       "wait": [
         "Felipe ainda não respondeu o que aconteceu no disparo API de ontem, que não gerou interação nenhuma",
-        "Sem lista + abordagem comercial hoje, perde-se a janela curta antes do fechamento de sexta"
+        "Sem lista + abordagem comercial hoje, perde-se a janela curta antes do fechamento de sexta",
+        "17/08 ainda sem produto vendido, tema do evento e narrativa definida; isso bloqueia captação de segunda"
       ],
       "next": [
         "Confirmar status do disparo API: envio, segmentação, entrega, bloqueio, link e tracking",
         "Criar script comercial: motivo do contato, diagnóstico do aluno, objeções e CTA para matrícula",
         "Definir formato da live de amanhã: tema clínico + ponte para Diplomado Freedom + chamada para fechamento",
-        "Reforçar escassez real: matrículas encerram sexta-feira"
+        "Reforçar escassez real: matrículas encerram sexta-feira",
+        "Escolher produto/oferta do lançamento de 17/08",
+        "Definir promessa/tema do evento gratuito",
+        "Preparar página, criativos e copy de captação para segunda"
       ],
       "done": [
         "Entrega/produto já estruturado como Diplomado Freedom de Alineadores; oferta vendida no domingo"
@@ -41,14 +46,19 @@
         "Felipe: separar lista de alunos Freedom e acionar meninas do comercial para contato ativo",
         "Ruan/Mônica: organizar Hotmart e liberar acessos necessários para o comercial",
         "TAOS/Ruan: estruturar ângulo, roteiro e pitch da live de amanhã com Sérgio",
+        "Ruan/Lucas/TAOS: definir produto, tema e narrativa do lançamento gratuito de 17/08",
         "Confirmar status do disparo API: envio, segmentação, entrega, bloqueio, link e tracking",
         "Criar script comercial: motivo do contato, diagnóstico do aluno, objeções e CTA para matrícula",
         "Definir formato da live de amanhã: tema clínico + ponte para Diplomado Freedom + chamada para fechamento",
-        "Reforçar escassez real: matrículas encerram sexta-feira"
+        "Reforçar escassez real: matrículas encerram sexta-feira",
+        "Escolher produto/oferta do lançamento de 17/08",
+        "Definir promessa/tema do evento gratuito",
+        "Preparar página, criativos e copy de captação para segunda"
       ],
       "blockers": [
         "Felipe ainda não respondeu o que aconteceu no disparo API de ontem, que não gerou interação nenhuma",
-        "Sem lista + abordagem comercial hoje, perde-se a janela curta antes do fechamento de sexta"
+        "Sem lista + abordagem comercial hoje, perde-se a janela curta antes do fechamento de sexta",
+        "17/08 ainda sem produto vendido, tema do evento e narrativa definida; isso bloqueia captação de segunda"
       ],
       "doneText": "Entrega/produto já estruturado como Diplomado Freedom de Alineadores; oferta vendida no domingo"
     },
@@ -305,6 +315,15 @@
       "owner": "Felipe"
     },
     {
+      "title": "17/08 · definir produto, tema e narrativa do lançamento",
+      "priority": "p0",
+      "filter": "lancamentos",
+      "frente": "Lançamento gratuito XDental 17/08",
+      "deadline": "Antes da captação de segunda",
+      "blocks": "Sem produto/tema, não existem página, criativos, promessa, roteiro nem pitch consistentes",
+      "owner": "Ruan / Lucas / TAOS"
+    },
+    {
       "title": "Chile · pagamento da gráfica do stand",
       "priority": "p0",
       "filter": "chile",
@@ -491,6 +510,13 @@
       "frente": "🚀 FREE",
       "status": "📅",
       "id": "2026-07-28-04"
+    },
+    {
+      "time": "até sexta",
+      "task": "🚀 17/08: definir produto vendido, tema do evento e narrativa antes da captação de segunda",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "id": "2026-07-28-11"
     },
     {
       "time": "até sexta",
