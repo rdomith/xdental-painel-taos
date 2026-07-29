@@ -1,66 +1,68 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.20-frentes-2026-07-28",
-    "lastUpdated": "2026-07-28 · Frentes oficiais + conversão Alineadores",
+    "version": "2.21-incisivos-2026-07-29",
+    "lastUpdated": "2026-07-29 · Incisivos 17/08 definido + radar de execução",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Foco atualizado: além da conversão do Diplomado Freedom, o lançamento gratuito de 17/08 virou P0 de definição. Antes da captação começar na segunda, precisa definir produto vendido, tema do evento e narrativa central."
+    "headline": "Lançamento gratuito de 17/08 destravado: tema oficial será Masterclass Tracción de Incisivos Retenidos. Agora o gargalo virou execução: live de venda dos Alineadores hoje à noite e infraestrutura da captação de Incisivos pronta até amanhã para começar segunda."
   },
   "fronts": [
     {
       "id": "lancamento-alineadores",
       "filter": "lancamentos",
       "icon": "🚀",
-      "name": "Lançamentos · Alineadores agora + 17/08 próximo",
+      "name": "Lançamentos · Alineadores hoje + Incisivos 17/08",
       "status": "risk",
       "priority": "p0",
-      "progress": 82,
-      "owner": "Ruan / Felipe / Mônica / Comercial / Sérgio",
-      "summary": "Duas urgências na mesma frente: converter o Diplomado Freedom até sexta e definir o lançamento gratuito de 17/08 antes da captação começar na segunda — produto vendido, tema do evento e narrativa central.",
+      "progress": 72,
+      "owner": "Ruan / Felipe / Mônica / Comercial / Sérgio / Batista / Klyro",
+      "summary": "Duas frentes P0 simultâneas: hoje à noite tem encontro ao vivo com participantes da Imersão de Alineadores para vender o Diplomado Freedom; em paralelo, o lançamento gratuito de 17/08 foi definido como Masterclass Tracción de Incisivos Retenidos e precisa ter estrutura de captação pronta até amanhã.",
       "exec": [
-        "Felipe: separar lista de alunos Freedom e acionar meninas do comercial para contato ativo",
-        "Ruan/Mônica: organizar Hotmart e liberar acessos necessários para o comercial",
-        "TAOS/Ruan: estruturar ângulo, roteiro e pitch da live de amanhã com Sérgio",
-        "Ruan/Lucas/TAOS: definir produto, tema e narrativa do lançamento gratuito de 17/08"
+        "Hoje à noite: encontro ao vivo com participantes da Imersão de Alineadores para vender Diplomado Freedom",
+        "TAOS: mapear checklist do novo lançamento gratuito usando SMR como modelo operacional e Freedom/Elite como espinha dorsal de ClickUp",
+        "Ruan/Lucas/TAOS: adaptar promessa/narrativa para Masterclass Tracción de Incisivos Retenidos",
+        "Equipe: preparar página, criativos, automações e grupos para captação iniciar segunda 03/08"
       ],
       "wait": [
-        "Felipe ainda não respondeu o que aconteceu no disparo API de ontem, que não gerou interação nenhuma",
-        "Sem lista + abordagem comercial hoje, perde-se a janela curta antes do fechamento de sexta",
-        "17/08 ainda sem produto vendido, tema do evento e narrativa definida; isso bloqueia captação de segunda"
+        "Live de venda de hoje não está cadastrada no Google Calendar oficial rdomith@gmail.com; tratar como demanda manual crítica",
+        "Ainda falta confirmar se Ruan quer duplicar uma lista ClickUp agora e qual lista será a base final",
+        "Captação começa segunda; Ruan estará fora sexta/sábado/domingo, então amanhã virou deadline real de produção"
       ],
       "next": [
-        "Confirmar status do disparo API: envio, segmentação, entrega, bloqueio, link e tracking",
-        "Criar script comercial: motivo do contato, diagnóstico do aluno, objeções e CTA para matrícula",
-        "Definir formato da live de amanhã: tema clínico + ponte para Diplomado Freedom + chamada para fechamento",
-        "Reforçar escassez real: matrículas encerram sexta-feira",
-        "Escolher produto/oferta do lançamento de 17/08",
-        "Definir promessa/tema do evento gratuito",
-        "Preparar página, criativos e copy de captação para segunda"
+        "Fechar roteiro/ângulo da live de hoje: dor clínica + ponte para Diplomado Freedom + CTA de matrícula",
+        "Recuperar ativos do modelo SMR: página, criativos, SendFlow, planilha/UTM e radar de captação",
+        "Mapear ativos específicos antigos de Incisivos Retenidos, se existirem: página, criativos, copy, gravações e materiais",
+        "Definir página de captação nova/adaptada para Incisivos",
+        "Criar/preparar releases e grupos no SendFlow depois da aprovação do mapa",
+        "Preparar campanha Meta de cadastro/leads com padrão claro de nomenclatura e tracking",
+        "Preparar ClickUp/lista de tarefas do novo lançamento após confirmação de duplicação"
       ],
       "done": [
-        "Entrega/produto já estruturado como Diplomado Freedom de Alineadores; oferta vendida no domingo"
+        "Tema oficial do lançamento gratuito de 17/08 definido: Masterclass Tracción de Incisivos Retenidos",
+        "Modelo gratuito mais próximo identificado: Masterclass Segundos Molares Retenidos (SMR)",
+        "ClickUp conferido: Freedom julho tem 161 itens e Elite junho 168 itens; ambas servem como base estrutural, mas são mais pagas que gratuitas"
       ],
       "nextActions": [
-        "Felipe: separar lista de alunos Freedom e acionar meninas do comercial para contato ativo",
-        "Ruan/Mônica: organizar Hotmart e liberar acessos necessários para o comercial",
-        "TAOS/Ruan: estruturar ângulo, roteiro e pitch da live de amanhã com Sérgio",
-        "Ruan/Lucas/TAOS: definir produto, tema e narrativa do lançamento gratuito de 17/08",
-        "Confirmar status do disparo API: envio, segmentação, entrega, bloqueio, link e tracking",
-        "Criar script comercial: motivo do contato, diagnóstico do aluno, objeções e CTA para matrícula",
-        "Definir formato da live de amanhã: tema clínico + ponte para Diplomado Freedom + chamada para fechamento",
-        "Reforçar escassez real: matrículas encerram sexta-feira",
-        "Escolher produto/oferta do lançamento de 17/08",
-        "Definir promessa/tema do evento gratuito",
-        "Preparar página, criativos e copy de captação para segunda"
+        "Hoje à noite: encontro ao vivo com participantes da Imersão de Alineadores para vender Diplomado Freedom",
+        "TAOS: mapear checklist do novo lançamento gratuito usando SMR como modelo operacional e Freedom/Elite como espinha dorsal de ClickUp",
+        "Ruan/Lucas/TAOS: adaptar promessa/narrativa para Masterclass Tracción de Incisivos Retenidos",
+        "Equipe: preparar página, criativos, automações e grupos para captação iniciar segunda 03/08",
+        "Fechar roteiro/ângulo da live de hoje: dor clínica + ponte para Diplomado Freedom + CTA de matrícula",
+        "Recuperar ativos do modelo SMR: página, criativos, SendFlow, planilha/UTM e radar de captação",
+        "Mapear ativos específicos antigos de Incisivos Retenidos, se existirem: página, criativos, copy, gravações e materiais",
+        "Definir página de captação nova/adaptada para Incisivos",
+        "Criar/preparar releases e grupos no SendFlow depois da aprovação do mapa",
+        "Preparar campanha Meta de cadastro/leads com padrão claro de nomenclatura e tracking",
+        "Preparar ClickUp/lista de tarefas do novo lançamento após confirmação de duplicação"
       ],
       "blockers": [
-        "Felipe ainda não respondeu o que aconteceu no disparo API de ontem, que não gerou interação nenhuma",
-        "Sem lista + abordagem comercial hoje, perde-se a janela curta antes do fechamento de sexta",
-        "17/08 ainda sem produto vendido, tema do evento e narrativa definida; isso bloqueia captação de segunda"
+        "Live de venda de hoje não está cadastrada no Google Calendar oficial rdomith@gmail.com; tratar como demanda manual crítica",
+        "Ainda falta confirmar se Ruan quer duplicar uma lista ClickUp agora e qual lista será a base final",
+        "Captação começa segunda; Ruan estará fora sexta/sábado/domingo, então amanhã virou deadline real de produção"
       ],
-      "doneText": "Entrega/produto já estruturado como Diplomado Freedom de Alineadores; oferta vendida no domingo"
+      "doneText": "Tema oficial do lançamento gratuito de 17/08 definido: Masterclass Tracción de Incisivos Retenidos; Modelo gratuito mais próximo identificado: Masterclass Segundos Molares Retenidos (SMR); ClickUp conferido: Freedom julho tem 161 itens e Elite junho 168 itens; ambas servem como base estrutural, mas são mais pagas que gratuitas"
     },
     {
       "id": "chile-cioch",
@@ -297,31 +299,40 @@
   ],
   "gargalos": [
     {
-      "title": "Alineadores · venda ativa antes do fechamento",
+      "title": "Hoje à noite · live de venda Alineadores precisa sair redonda",
       "priority": "p0",
       "filter": "lancamentos",
-      "frente": "Lançamento de Alineadores",
-      "deadline": "Hoje → sex 31/07",
-      "blocks": "Sem comercial ativo + live forte, a conversão final perde tração",
-      "owner": "Ruan / Felipe / Comercial"
+      "frente": "Alineadores / Diplomado Freedom",
+      "deadline": "Hoje 29/07 à noite",
+      "blocks": "Sem roteiro e CTA claros, perde-se a melhor janela de conversão dos participantes da Imersão",
+      "owner": "Ruan / Sérgio / TAOS"
     },
     {
-      "title": "Disparo API · zero interação ontem",
+      "title": "17/08 Incisivos · estrutura de captação pronta até amanhã",
       "priority": "p0",
       "filter": "lancamentos",
-      "frente": "Lançamento de Alineadores",
-      "deadline": "Hoje",
-      "blocks": "Se o disparo falhou, a base não está sendo ativada no momento mais crítico",
-      "owner": "Felipe"
+      "frente": "Masterclass Tracción de Incisivos Retenidos",
+      "deadline": "Qui 30/07",
+      "blocks": "Ruan estará fora sex/sáb/dom; se não deixar pronto amanhã, captação de segunda começa fraca ou atrasada",
+      "owner": "Ruan / TAOS / Felipe / Batista / Klyro"
     },
     {
-      "title": "17/08 · definir produto, tema e narrativa do lançamento",
-      "priority": "p0",
+      "title": "ClickUp · decidir duplicação da lista do novo lançamento",
+      "priority": "p1",
       "filter": "lancamentos",
-      "frente": "Lançamento gratuito XDental 17/08",
-      "deadline": "Antes da captação de segunda",
-      "blocks": "Sem produto/tema, não existem página, criativos, promessa, roteiro nem pitch consistentes",
-      "owner": "Ruan / Lucas / TAOS"
+      "frente": "Operação / ClickUp",
+      "deadline": "Antes de criar tarefas",
+      "blocks": "Sem lista/tarefas, equipe trabalha no improviso; mas duplicar sem confirmação mexe em produção",
+      "owner": "Ruan / TAOS"
+    },
+    {
+      "title": "SendFlow · grupos Incisivos precisam ser criados após mapa",
+      "priority": "p1",
+      "filter": "lancamentos",
+      "frente": "Captação WhatsApp",
+      "deadline": "Antes de segunda 03/08",
+      "blocks": "Sem grupo/release pronto, campanha gera lead sem destino operacional",
+      "owner": "Felipe / TAOS"
     },
     {
       "title": "Chile · pagamento da gráfica do stand",
@@ -353,120 +364,134 @@
   ],
   "radarDoDia": [
     {
-      "time": "manhã",
-      "task": "💳 WHOP: configurar produto/oferta, checkout, acesso/entrega, links oficiais e tracking básico",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🧪 WHOP: fazer teste completo do fluxo de compra/link/confirmação antes de liberar para comercial",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "manhã",
-      "task": "🖥️ Slides domingo: começar deck do evento usando a copy enviada pelo Lucas",
+      "time": "hoje",
+      "task": "🎥 Live Alineadores: fechar roteiro clínico + ponte para Diplomado Freedom + CTA de matrícula",
       "frente": "🚀 FREE",
       "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "👥 Comercial: montar pauta da reunião de amanhã com oferta, script, objeções, CTA de comparecimento e contato com base",
+      "task": "📲 Live Alineadores: confirmar link/sala/transmissão, horário, comunicação nos grupos e responsável por suporte",
       "frente": "🚀 FREE",
       "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "📲 Comercial: separar orientação para as meninas começarem contato com a base do lançamento a partir de amanhã",
+      "task": "💰 Live Alineadores: garantir checkout/link/oferta do Diplomado Freedom funcionando antes da chamada",
       "frente": "🚀 FREE",
       "status": "🔥",
       "done": false
     },
     {
       "time": "hoje",
-      "task": "🚀 Felipe: confirmar se a pesquisa já foi plugada no fluxo de boas-vindas dos leads gratuitos",
+      "task": "🚀 Incisivos 17/08: assumir tema oficial Masterclass Tracción de Incisivos Retenidos e atualizar narrativa base",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "🔎 Incisivos: procurar ativos antigos específicos do evento — página, criativos, copies, grupos, docs e materiais",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "hoje",
+      "task": "📋 ClickUp: montar mapa de replicação sem alterar produção; base candidata SMR operacional + Freedom/Elite estrutural",
       "frente": "🚀 FREE",
       "status": "⚠️",
       "done": false
     },
     {
-      "time": "hoje",
-      "task": "🎥 Sérgio/Batista: fechar temas/CTAs das lives de quarta e sexta e alinhamento de tráfego",
+      "time": "amanhã",
+      "task": "🌐 Incisivos: definir/criar página de captação e página de obrigado com WhatsApp/SendFlow",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "amanhã",
+      "task": "🎨 Incisivos: recuperar/adaptar criativos e briefing para Batista/Klyro subir captação segunda",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "amanhã",
+      "task": "📲 SendFlow: criar/preparar releases e grupos WhatsApp do lançamento Incisivos após aprovação do mapa",
+      "frente": "🚀 FREE",
+      "status": "🔥",
+      "done": false
+    },
+    {
+      "time": "amanhã",
+      "task": "📈 Tracking: preparar padrão UTM/planilha/radar de captação para não repetir tracking furado",
       "frente": "🚀 FREE",
       "status": "⚠️",
       "done": false
     },
     {
-      "time": "hoje",
-      "task": "🗺️ Mapa do evento: recuperar imagens no Drive, aplicar alteração pedida pelo Sérgio e atualizar slide do mapa",
+      "time": "sexta",
+      "task": "🔒 Fechamento das matrículas do Diplomado Freedom de Alineadores",
       "frente": "🚀 FREE",
-      "status": "⚠️",
+      "status": "📅",
       "done": false
     },
     {
-      "time": "hoje",
-      "task": "👕 Camisas: confirmar hashtag/arte com Lucas e garantir fornecedor para retirada até sexta",
-      "frente": "🚀 FREE",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "🧩 Impressão 3D: confirmar envio dos arquivos dos moldes de anel; se não saiu, enviar hoje",
-      "frente": "🚀 FREE",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "🇨🇱 Chile/CIOCH: confirmar se formulários e credenciais foram enviados ontem; se não, resolver como vencido",
+      "time": "até sexta",
+      "task": "🇨🇱 Chile/CIOCH: confirmar resposta/pagamento da gráfica do stand",
       "frente": "🇨🇱 CHL",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "🇨🇱 Chile/CIOCH: confirmar 4ª credencial/ingresso com Sérgio ou decidir compra",
-      "frente": "🇨🇱 CHL",
       "status": "⚠️",
       "done": false
     },
     {
-      "time": "semana",
-      "task": "🎬 Plataforma: falar com Prof. Joaquim Ariza para marcar gravação e cobrar informações pendentes",
+      "time": "até sexta",
+      "task": "🎓 Perguntar ao Sérgio se M8 será ao vivo ou gravado antes",
+      "frente": "🎓 DIP",
+      "status": "⚠️",
+      "done": false
+    },
+    {
+      "time": "início ago",
+      "task": "🎬 Fabián editar Clínica de Maestría como curso da assinatura",
       "frente": "🎬 PA",
       "status": "⚠️",
       "done": false
     },
     {
-      "time": "23/07 14h",
-      "task": "🎓 Diplomado M7: Encuentro ao vivo com Dr. Héctor Rodríguez",
+      "time": "07/08",
+      "task": "🎓 Liberar prova M7 do Diplomado OrthoPro",
       "frente": "🎓 DIP",
       "status": "📅",
       "done": false
     },
     {
-      "time": "semana",
-      "task": "🧩 OralPlanner: verificar com Felipe onboarding dos alunos contemplados",
-      "frente": "🧩 ORAL",
-      "status": "⚠️",
+      "time": "03/08",
+      "task": "🚀 Início previsto da captação da Masterclass Tracción de Incisivos Retenidos",
+      "frente": "🚀 FREE",
+      "status": "📅",
+      "done": false
+    },
+    {
+      "time": "17/08",
+      "task": "🚀 Evento: Masterclass Tracción de Incisivos Retenidos",
+      "frente": "🚀 FREE",
+      "status": "📅",
       "done": false
     }
   ],
   "metrics": {
-    "p0": 3,
-    "p1": 3,
+    "p0": 2,
+    "p1": 2,
     "p2": 0,
     "p3": 0,
     "done": 0,
-    "tasks": 15
+    "tasks": 17
   },
-  "radarExtra": "Radar em ordem cronológica crescente a partir de hoje: hoje → amanhã → próximos dias → datas futuras. Whoop removido: configuração pontual não vira frente.",
+  "radarExtra": "Fontes conferidas em 29/07: áudio do Ruan no tópico Planejamento Lançamentos; Google Calendar oficial rdomith@gmail.com sem eventos cadastrados para 29/07 e 30/07; ClickUp lista Elite junho sem tarefas vencendo hoje; ClickUp Freedom julho tem 161 itens e Elite junho 168 itens. O lançamento 17/08 deixou de estar bloqueado por tema: agora é Masterclass Tracción de Incisivos Retenidos. Mudanças no ClickUp/SendFlow só serão executadas após confirmação explícita.",
   "sourceFile": "projects/xdental-painel-taos/index.html",
   "radar": [
     {
