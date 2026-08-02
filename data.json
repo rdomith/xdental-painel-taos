@@ -60,35 +60,35 @@
       "priority": "p0",
       "progress": 66,
       "owner": "Ruan / Lucas / fornecedor gráfica stand",
-      "summary": "Frente urgente por dependência externa. Ruan já enviou dois e-mails sobre pagamento da gráfica do stand e ainda não teve resposta; precisa insistir hoje para pagar e liberar impressão.",
+      "summary": "Frente urgente por dependência externa. Agora o ponto não é só pagamento: Ruan precisa confirmar com o pessoal do Chile se eles receberam o comprovante de pagamento da empresa do design para evitar ruído entre pagamento, design e produção do stand.",
       "exec": [
-        "Ruan: mandar terceiro e-mail hoje cobrando retorno/pagamento da gráfica do stand",
-        "Ruan: tentar canal alternativo se o e-mail não responder — telefone/WhatsApp/contato do congresso"
+        "Ruan: confirmar com o pessoal do Chile se receberam o comprovante de pagamento da empresa do design",
+        "Se não confirmarem recebimento, reenviar comprovante no canal certo e pedir confirmação objetiva"
       ],
       "wait": [
-        "Fornecedor da gráfica ainda não respondeu sobre pagamento/impressão",
-        "Sem pagamento, a impressão do stand pode atrasar perto demais do evento"
+        "Equipe do Chile confirmar recebimento do comprovante de pagamento",
+        "Sem confirmação, fica risco de desalinhamento com empresa de design/produção do stand"
       ],
       "next": [
-        "Confirmar recebimento do pagamento e data de produção/impressão",
-        "Lucas: comprar passagem de volta no horário/data já definidos",
+        "Confirmar próximos passos da empresa do design após comprovante recebido",
+        "Validar se há mais algum documento/arquivo pendente para produção do stand",
         "Manter 21/08 no radar para placas/patentes de montagem"
       ],
       "done": [
-        "Lucas já tem a data e horário necessários para compra da passagem de volta"
+        "Comprovante de pagamento já existe e precisa ser confirmado pelo Chile"
       ],
       "nextActions": [
-        "Ruan: mandar terceiro e-mail hoje cobrando retorno/pagamento da gráfica do stand",
-        "Ruan: tentar canal alternativo se o e-mail não responder — telefone/WhatsApp/contato do congresso",
-        "Confirmar recebimento do pagamento e data de produção/impressão",
-        "Lucas: comprar passagem de volta no horário/data já definidos",
+        "Ruan: confirmar com o pessoal do Chile se receberam o comprovante de pagamento da empresa do design",
+        "Se não confirmarem recebimento, reenviar comprovante no canal certo e pedir confirmação objetiva",
+        "Confirmar próximos passos da empresa do design após comprovante recebido",
+        "Validar se há mais algum documento/arquivo pendente para produção do stand",
         "Manter 21/08 no radar para placas/patentes de montagem"
       ],
       "blockers": [
-        "Fornecedor da gráfica ainda não respondeu sobre pagamento/impressão",
-        "Sem pagamento, a impressão do stand pode atrasar perto demais do evento"
+        "Equipe do Chile confirmar recebimento do comprovante de pagamento",
+        "Sem confirmação, fica risco de desalinhamento com empresa de design/produção do stand"
       ],
-      "doneText": "Lucas já tem a data e horário necessários para compra da passagem de volta"
+      "doneText": "Comprovante de pagamento já existe e precisa ser confirmado pelo Chile"
     },
     {
       "id": "diplomado-ortho-pro",
@@ -345,13 +345,13 @@
       "owner": "Ruan / TAOS"
     },
     {
-      "title": "Chile · pagamento da gráfica do stand",
+      "title": "Chile/CIOCH · confirmar recebimento do comprovante do design",
       "priority": "p0",
       "filter": "chile",
       "frente": "Chile / CIOCH",
-      "deadline": "Hoje",
-      "blocks": "Sem pagamento confirmado, não libera impressão do stand",
-      "owner": "Ruan"
+      "deadline": "Seg 03/08",
+      "blocks": "Sem confirmação de recebimento do comprovante, fica ruído entre pagamento, design e produção do stand",
+      "owner": "Ruan / equipe Chile"
     },
     {
       "title": "OralPlanner · uso sem visibilidade",
@@ -492,7 +492,7 @@
     },
     {
       "time": "pendente",
-      "task": "🇨🇱 Chile/CIOCH: confirmar resposta/pagamento da gráfica do stand",
+      "task": "🇨🇱 Chile/CIOCH: confirmar com equipe do Chile se receberam o comprovante de pagamento da empresa do design",
       "frente": "🇨🇱 CHL",
       "status": "⚠️"
     },
