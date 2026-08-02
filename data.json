@@ -1,68 +1,55 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.21-incisivos-2026-07-29",
-    "lastUpdated": "2026-07-29 · Incisivos 17/08 definido + radar de execução",
+    "version": "2.22-radar-2026-08-03",
+    "lastUpdated": "2026-08-02 · Radar de segunda 03/08 + semana Diplomado/Masterclass/Low Tickets",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Lançamento gratuito de 17/08 destravado: tema oficial será Masterclass Tracción de Incisivos Retenidos. Agora o gargalo virou execução: live de venda dos Alineadores hoje à noite e infraestrutura da captação de Incisivos pronta até amanhã para começar segunda."
+    "headline": "Segunda 03/08 virou dia de execução pesada: liberar M8 do Diplomado, começar/acompanhar captação da Masterclass, revisar fluxo de boas-vindas com Felipe, montar radar Low Ticket em inglês e alinhar Low Tickets LATAM com Batista."
   },
   "fronts": [
     {
       "id": "lancamento-alineadores",
       "filter": "lancamentos",
       "icon": "🚀",
-      "name": "Lançamentos · Alineadores hoje + Incisivos 17/08",
+      "name": "Lançamentos · Masterclass Incisivos 17/08",
       "status": "risk",
       "priority": "p0",
-      "progress": 72,
-      "owner": "Ruan / Felipe / Mônica / Comercial / Sérgio / Batista / Klyro",
-      "summary": "Duas frentes P0 simultâneas: hoje à noite tem encontro ao vivo com participantes da Imersão de Alineadores para vender o Diplomado Freedom; em paralelo, o lançamento gratuito de 17/08 foi definido como Masterclass Tracción de Incisivos Retenidos e precisa ter estrutura de captação pronta até amanhã.",
+      "progress": 58,
+      "owner": "Ruan / Felipe / Batista / Klyro / TAOS",
+      "summary": "Captação da Masterclass entra na semana crítica. O ponto de atenção agora não é só campanha no ar: precisa conferir números, disparos do fluxo de boas-vindas e a taxa baixa de respostas da pesquisa antes de escalar mídia.",
       "exec": [
-        "Hoje à noite: encontro ao vivo com participantes da Imersão de Alineadores para vender Diplomado Freedom",
-        "TAOS: mapear checklist do novo lançamento gratuito usando SMR como modelo operacional e Freedom/Elite como espinha dorsal de ClickUp",
-        "Ruan/Lucas/TAOS: adaptar promessa/narrativa para Masterclass Tracción de Incisivos Retenidos",
-        "Equipe: preparar página, criativos, automações e grupos para captação iniciar segunda 03/08"
+        "Acompanhar últimos números da Masterclass: leads, entrada no WhatsApp, taxa de pesquisa e evolução da captação",
+        "Ruan: conferir com Felipe status do lançamento da Masterclass e se todos os disparos do fluxo de boas-vindas estão saindo corretamente",
+        "Investigar baixa taxa de resposta da pesquisa: link, timing dos disparos, copy, grupos/WhatsApp e possíveis falhas de automação"
       ],
       "wait": [
-        "Live de venda de hoje não está cadastrada no Google Calendar oficial rdomith@gmail.com; tratar como demanda manual crítica",
-        "Ainda falta confirmar se Ruan quer duplicar uma lista ClickUp agora e qual lista será a base final",
-        "Captação começa segunda; Ruan estará fora sexta/sábado/domingo, então amanhã virou deadline real de produção"
+        "Dados atuais da Masterclass precisam ser conferidos antes de decidir aumento/ajuste de tráfego",
+        "Se a pesquisa continuar com baixa resposta, a segmentação/qualificação do lançamento fica cega"
       ],
       "next": [
-        "Fechar roteiro/ângulo da live de hoje: dor clínica + ponte para Diplomado Freedom + CTA de matrícula",
-        "Recuperar ativos do modelo SMR: página, criativos, SendFlow, planilha/UTM e radar de captação",
-        "Mapear ativos específicos antigos de Incisivos Retenidos, se existirem: página, criativos, copy, gravações e materiais",
-        "Definir página de captação nova/adaptada para Incisivos",
-        "Criar/preparar releases e grupos no SendFlow depois da aprovação do mapa",
-        "Preparar campanha Meta de cadastro/leads com padrão claro de nomenclatura e tracking",
-        "Preparar ClickUp/lista de tarefas do novo lançamento após confirmação de duplicação"
+        "Separar números do dia: leads totais, leads por origem, entrada em grupo, respostas da pesquisa e custo por lead",
+        "Pedir ao Felipe print/status do fluxo de boas-vindas e checar se há mensagens travadas ou ordem errada",
+        "Se houver queda entre cadastro e WhatsApp/pesquisa, revisar página de obrigado, botão e comunicação imediata"
       ],
       "done": [
-        "Tema oficial do lançamento gratuito de 17/08 definido: Masterclass Tracción de Incisivos Retenidos",
-        "Modelo gratuito mais próximo identificado: Masterclass Segundos Molares Retenidos (SMR)",
-        "ClickUp conferido: Freedom julho tem 161 itens e Elite junho 168 itens; ambas servem como base estrutural, mas são mais pagas que gratuitas"
+        "Tema oficial do lançamento gratuito definido: Masterclass Tracción de Incisivos Retenidos",
+        "Calendário oficial registra início da captação em 03/08 e evento em 17/08"
       ],
       "nextActions": [
-        "Hoje à noite: encontro ao vivo com participantes da Imersão de Alineadores para vender Diplomado Freedom",
-        "TAOS: mapear checklist do novo lançamento gratuito usando SMR como modelo operacional e Freedom/Elite como espinha dorsal de ClickUp",
-        "Ruan/Lucas/TAOS: adaptar promessa/narrativa para Masterclass Tracción de Incisivos Retenidos",
-        "Equipe: preparar página, criativos, automações e grupos para captação iniciar segunda 03/08",
-        "Fechar roteiro/ângulo da live de hoje: dor clínica + ponte para Diplomado Freedom + CTA de matrícula",
-        "Recuperar ativos do modelo SMR: página, criativos, SendFlow, planilha/UTM e radar de captação",
-        "Mapear ativos específicos antigos de Incisivos Retenidos, se existirem: página, criativos, copy, gravações e materiais",
-        "Definir página de captação nova/adaptada para Incisivos",
-        "Criar/preparar releases e grupos no SendFlow depois da aprovação do mapa",
-        "Preparar campanha Meta de cadastro/leads com padrão claro de nomenclatura e tracking",
-        "Preparar ClickUp/lista de tarefas do novo lançamento após confirmação de duplicação"
+        "Acompanhar últimos números da Masterclass: leads, entrada no WhatsApp, taxa de pesquisa e evolução da captação",
+        "Ruan: conferir com Felipe status do lançamento da Masterclass e se todos os disparos do fluxo de boas-vindas estão saindo corretamente",
+        "Investigar baixa taxa de resposta da pesquisa: link, timing dos disparos, copy, grupos/WhatsApp e possíveis falhas de automação",
+        "Separar números do dia: leads totais, leads por origem, entrada em grupo, respostas da pesquisa e custo por lead",
+        "Pedir ao Felipe print/status do fluxo de boas-vindas e checar se há mensagens travadas ou ordem errada",
+        "Se houver queda entre cadastro e WhatsApp/pesquisa, revisar página de obrigado, botão e comunicação imediata"
       ],
       "blockers": [
-        "Live de venda de hoje não está cadastrada no Google Calendar oficial rdomith@gmail.com; tratar como demanda manual crítica",
-        "Ainda falta confirmar se Ruan quer duplicar uma lista ClickUp agora e qual lista será a base final",
-        "Captação começa segunda; Ruan estará fora sexta/sábado/domingo, então amanhã virou deadline real de produção"
+        "Dados atuais da Masterclass precisam ser conferidos antes de decidir aumento/ajuste de tráfego",
+        "Se a pesquisa continuar com baixa resposta, a segmentação/qualificação do lançamento fica cega"
       ],
-      "doneText": "Tema oficial do lançamento gratuito de 17/08 definido: Masterclass Tracción de Incisivos Retenidos; Modelo gratuito mais próximo identificado: Masterclass Segundos Molares Retenidos (SMR); ClickUp conferido: Freedom julho tem 161 itens e Elite junho 168 itens; ambas servem como base estrutural, mas são mais pagas que gratuitas"
+      "doneText": "Tema oficial do lançamento gratuito definido: Masterclass Tracción de Incisivos Retenidos; Calendário oficial registra início da captação em 03/08 e evento em 17/08"
     },
     {
       "id": "chile-cioch",
@@ -107,40 +94,43 @@
       "id": "diplomado-ortho-pro",
       "filter": "diplomado",
       "icon": "🎓",
-      "name": "Diplomado Ortho Pro",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 80,
-      "owner": "Ruan / Mônica / Felipe / Sérgio",
-      "summary": "M7 destravado: prova já foi feita por Ruan e enviada no grupo de suporte; precisa ficar no radar para liberação em 07/08. Próximo ponto é decidir com Sérgio se M8 será ao vivo ou gravado antes.",
+      "name": "Diplomado Ortho Pro · M8 + prova M7",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 66,
+      "owner": "Ruan / Fabiano / Mônica / Felipe / TAOS",
+      "summary": "M8 precisa liberar em 03/08 com edição especial: junção de 3 aulas diferentes — 2 do Elite + 1 da XDental. Fabiano prometeu entrega amanhã cedo; se atrasar, a liberação do módulo fica em risco. Prova M7 segue para sexta 07/08.",
       "exec": [
-        "Painel: manter liberação da prova M7 em 07/08 visível até concluir",
-        "Ruan: perguntar ao Sérgio se M8 será gravado ao vivo ou antecipado"
+        "Amanhã cedo: cobrar Fabiano pela entrega final do M8 editado — 3 aulas combinadas, 2 Elite + 1 XDental",
+        "Validar arquivo final do M8, liberar para alunos e acionar comunicação operacional da liberação",
+        "Manter prova M7 no radar: liberar aos alunos em 07/08 e deixar aberta até 14/08"
       ],
       "wait": [
-        "Decisão do Sérgio sobre formato do M8",
-        "Se M8 ficar em cima da hora, reduz tempo para material complementar e organização da data"
+        "Entrega do Fabiano é o caminho crítico para liberar M8 no prazo",
+        "Sem validação final do arquivo, não publicar o módulo aos alunos"
       ],
       "next": [
-        "Argumento para Sérgio: antecipar libera agenda dele e permite preparar material complementar com mais qualidade",
-        "Mônica/Felipe: preparar liberação da prova M7 no dia 07/08",
-        "Manter janela da prova M7 aberta por 7 dias após liberação"
+        "Depois da liberação: iniciar PDF do M8 em 04/08 e enviar pacote para Klyro em 05/08 conforme calendário",
+        "06/08: confirmar com Stefan Cardon M9; 07/08: receber gravação/material do M9",
+        "09/08: iniciar edição M9 com Chicão após recebimento do material"
       ],
       "done": [
-        "Prova M7 feita por Ruan e enviada no grupo de suporte"
+        "Regra oficial das provas corrigida: prova libera 30 dias após módulo, preparação 7 dias antes, aberta por 7 dias",
+        "Calendário oficial já contém M8 03/08, prova M7 07/08, M9 06-09/08"
       ],
       "nextActions": [
-        "Painel: manter liberação da prova M7 em 07/08 visível até concluir",
-        "Ruan: perguntar ao Sérgio se M8 será gravado ao vivo ou antecipado",
-        "Argumento para Sérgio: antecipar libera agenda dele e permite preparar material complementar com mais qualidade",
-        "Mônica/Felipe: preparar liberação da prova M7 no dia 07/08",
-        "Manter janela da prova M7 aberta por 7 dias após liberação"
+        "Amanhã cedo: cobrar Fabiano pela entrega final do M8 editado — 3 aulas combinadas, 2 Elite + 1 XDental",
+        "Validar arquivo final do M8, liberar para alunos e acionar comunicação operacional da liberação",
+        "Manter prova M7 no radar: liberar aos alunos em 07/08 e deixar aberta até 14/08",
+        "Depois da liberação: iniciar PDF do M8 em 04/08 e enviar pacote para Klyro em 05/08 conforme calendário",
+        "06/08: confirmar com Stefan Cardon M9; 07/08: receber gravação/material do M9",
+        "09/08: iniciar edição M9 com Chicão após recebimento do material"
       ],
       "blockers": [
-        "Decisão do Sérgio sobre formato do M8",
-        "Se M8 ficar em cima da hora, reduz tempo para material complementar e organização da data"
+        "Entrega do Fabiano é o caminho crítico para liberar M8 no prazo",
+        "Sem validação final do arquivo, não publicar o módulo aos alunos"
       ],
-      "doneText": "Prova M7 feita por Ruan e enviada no grupo de suporte"
+      "doneText": "Regra oficial das provas corrigida: prova libera 30 dias após módulo, preparação 7 dias antes, aberta por 7 dias; Calendário oficial já contém M8 03/08, prova M7 07/08, M9 06-09/08"
     },
     {
       "id": "plataforma-assinatura",
@@ -183,42 +173,40 @@
       "id": "low-tickets",
       "filter": "lowticket",
       "icon": "🛒",
-      "name": "Low Tickets",
+      "name": "Low Tickets · Inglês + LATAM",
       "status": "attention",
-      "priority": "p2",
-      "progress": 58,
-      "owner": "Ruan / Batista / Sérgio / Fabián",
-      "summary": "Operação em marcha mais lenta. Precisa recuperar vendas e avançar a frente em inglês: traduzir páginas, adaptar criativos vencedores do espanhol e dublar vídeos do Sérgio.",
+      "priority": "p1",
+      "progress": 52,
+      "owner": "Ruan / Batista / TAOS",
+      "summary": "Amanhã precisa sair o radar do Low Ticket em inglês e um alinhamento com Batista sobre os funis LATAM ativos. Não é só relatório: é decidir o que escala, o que pausa e onde tem tracking/checkout para checar.",
       "exec": [
-        "Manter operação atual rodando sem perder alerta de vendas",
-        "Ruan: retomar página de venda em inglês iniciada no Claude"
+        "Montar relatório/radar da campanha Low Ticket em inglês com números atualizados",
+        "Ruan: falar com Batista sobre Low Tickets LATAM que estão rodando e próximos ajustes de campanha"
       ],
       "wait": [
-        "Low Tickets está sem intensidade suficiente para recuperar vendas sozinho",
-        "Frente em inglês depende de tradução/adaptação e dublagem dos vídeos do Sérgio"
+        "Sem conversa com Batista, risco de manter verba em campanha com sinal fraco ou sem diagnóstico claro",
+        "Radar em inglês precisa separar resultado real de tráfego, checkout e criativo para não virar análise genérica"
       ],
       "next": [
-        "Mapear melhores criativos por produto em espanhol",
-        "Traduzir/adaptar criativos vencedores para inglês",
-        "Traduzir páginas de venda para inglês",
-        "Dublar vídeos do Sérgio de espanhol para inglês"
+        "Conferir vendas/receita pela Hotmart e gasto/métricas pela Meta antes do diagnóstico",
+        "Separar por produto/campanha: vendas, gasto, CAC, ROAS, criativos ativos e próximos testes",
+        "Listar perguntas objetivas para Batista: o que está ativo, o que foi pausado, hipótese atual e próxima ação"
       ],
       "done": [
-        "Material base em inglês já existe em boa quantidade"
+        "Rotina Low Tickets já tem regra operacional: Hotmart como fonte da verdade para vendas e Meta Ads para mídia/tráfego"
       ],
       "nextActions": [
-        "Manter operação atual rodando sem perder alerta de vendas",
-        "Ruan: retomar página de venda em inglês iniciada no Claude",
-        "Mapear melhores criativos por produto em espanhol",
-        "Traduzir/adaptar criativos vencedores para inglês",
-        "Traduzir páginas de venda para inglês",
-        "Dublar vídeos do Sérgio de espanhol para inglês"
+        "Montar relatório/radar da campanha Low Ticket em inglês com números atualizados",
+        "Ruan: falar com Batista sobre Low Tickets LATAM que estão rodando e próximos ajustes de campanha",
+        "Conferir vendas/receita pela Hotmart e gasto/métricas pela Meta antes do diagnóstico",
+        "Separar por produto/campanha: vendas, gasto, CAC, ROAS, criativos ativos e próximos testes",
+        "Listar perguntas objetivas para Batista: o que está ativo, o que foi pausado, hipótese atual e próxima ação"
       ],
       "blockers": [
-        "Low Tickets está sem intensidade suficiente para recuperar vendas sozinho",
-        "Frente em inglês depende de tradução/adaptação e dublagem dos vídeos do Sérgio"
+        "Sem conversa com Batista, risco de manter verba em campanha com sinal fraco ou sem diagnóstico claro",
+        "Radar em inglês precisa separar resultado real de tráfego, checkout e criativo para não virar análise genérica"
       ],
-      "doneText": "Material base em inglês já existe em boa quantidade"
+      "doneText": "Rotina Low Tickets já tem regra operacional: Hotmart como fonte da verdade para vendas e Meta Ads para mídia/tráfego"
     },
     {
       "id": "oralplanner",
@@ -299,40 +287,40 @@
   ],
   "gargalos": [
     {
-      "title": "Hoje à noite · live de venda Alineadores precisa sair redonda",
+      "title": "M8 Diplomado · Fabiano é caminho crítico amanhã cedo",
+      "priority": "p0",
+      "filter": "diplomado",
+      "frente": "Diplomado Ortho Pro",
+      "deadline": "Seg 03/08 manhã",
+      "blocks": "Sem arquivo editado/final validado, a liberação do M8 aos alunos atrasa",
+      "owner": "Ruan / Fabiano / TAOS"
+    },
+    {
+      "title": "Masterclass · baixa resposta da pesquisa pode cegar o lançamento",
       "priority": "p0",
       "filter": "lancamentos",
-      "frente": "Alineadores / Diplomado Freedom",
-      "deadline": "Hoje 29/07 à noite",
-      "blocks": "Sem roteiro e CTA claros, perde-se a melhor janela de conversão dos participantes da Imersão",
-      "owner": "Ruan / Sérgio / TAOS"
+      "frente": "Masterclass Incisivos 17/08",
+      "deadline": "Seg 03/08",
+      "blocks": "Sem respostas suficientes, tráfego e oferta perdem leitura de qualidade dos leads",
+      "owner": "Felipe / Ruan"
     },
     {
-      "title": "17/08 Incisivos · estrutura de captação pronta até amanhã",
-      "priority": "p0",
-      "filter": "lancamentos",
-      "frente": "Masterclass Tracción de Incisivos Retenidos",
-      "deadline": "Qui 30/07",
-      "blocks": "Ruan estará fora sex/sáb/dom; se não deixar pronto amanhã, captação de segunda começa fraca ou atrasada",
-      "owner": "Ruan / TAOS / Felipe / Batista / Klyro"
-    },
-    {
-      "title": "ClickUp · decidir duplicação da lista do novo lançamento",
+      "title": "Low Tickets · alinhar inglês + LATAM com Batista",
       "priority": "p1",
-      "filter": "lancamentos",
-      "frente": "Operação / ClickUp",
-      "deadline": "Antes de criar tarefas",
-      "blocks": "Sem lista/tarefas, equipe trabalha no improviso; mas duplicar sem confirmação mexe em produção",
-      "owner": "Ruan / TAOS"
+      "filter": "lowticket",
+      "frente": "Low Tickets",
+      "deadline": "Seg 03/08",
+      "blocks": "Sem diagnóstico, risco de manter verba sem decisão clara de escala/pausa/testes",
+      "owner": "Ruan / Batista / TAOS"
     },
     {
-      "title": "SendFlow · grupos Incisivos precisam ser criados após mapa",
+      "title": "Financeiro pessoal/empresa · fechamento cartão + salário BPO",
       "priority": "p1",
-      "filter": "lancamentos",
-      "frente": "Captação WhatsApp",
-      "deadline": "Antes de segunda 03/08",
-      "blocks": "Sem grupo/release pronto, campanha gera lead sem destino operacional",
-      "owner": "Felipe / TAOS"
+      "filter": "financeiro",
+      "frente": "Financeiro",
+      "deadline": "Seg 03/08",
+      "blocks": "Se ficar para depois, mistura fechamento de cartão, salário e caixa operacional da semana",
+      "owner": "Ruan / BPO"
     },
     {
       "title": "Chile · pagamento da gráfica do stand",
@@ -364,123 +352,124 @@
   ],
   "radarDoDia": [
     {
-      "time": "hoje",
-      "task": "🎥 Live Alineadores: fechar roteiro clínico + ponte para Diplomado Freedom + CTA de matrícula",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "📲 Live Alineadores: confirmar link/sala/transmissão, horário, comunicação nos grupos e responsável por suporte",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "💰 Live Alineadores: garantir checkout/link/oferta do Diplomado Freedom funcionando antes da chamada",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "🚀 Incisivos 17/08: assumir tema oficial Masterclass Tracción de Incisivos Retenidos e atualizar narrativa base",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "🔎 Incisivos: procurar ativos antigos específicos do evento — página, criativos, copies, grupos, docs e materiais",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "hoje",
-      "task": "📋 ClickUp: montar mapa de replicação sem alterar produção; base candidata SMR operacional + Freedom/Elite estrutural",
-      "frente": "🚀 FREE",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "amanhã",
-      "task": "🌐 Incisivos: definir/criar página de captação e página de obrigado com WhatsApp/SendFlow",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "amanhã",
-      "task": "🎨 Incisivos: recuperar/adaptar criativos e briefing para Batista/Klyro subir captação segunda",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "amanhã",
-      "task": "📲 SendFlow: criar/preparar releases e grupos WhatsApp do lançamento Incisivos após aprovação do mapa",
-      "frente": "🚀 FREE",
-      "status": "🔥",
-      "done": false
-    },
-    {
-      "time": "amanhã",
-      "task": "📈 Tracking: preparar padrão UTM/planilha/radar de captação para não repetir tracking furado",
-      "frente": "🚀 FREE",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "sexta",
-      "task": "🔒 Fechamento das matrículas do Diplomado Freedom de Alineadores",
-      "frente": "🚀 FREE",
-      "status": "📅",
-      "done": false
-    },
-    {
-      "time": "até sexta",
-      "task": "🇨🇱 Chile/CIOCH: confirmar resposta/pagamento da gráfica do stand",
-      "frente": "🇨🇱 CHL",
-      "status": "⚠️",
-      "done": false
-    },
-    {
-      "time": "até sexta",
-      "task": "🎓 Perguntar ao Sérgio se M8 será ao vivo ou gravado antes",
+      "time": "manhã",
+      "task": "🎓 Cobrar Fabiano pela entrega final do M8 editado — junção de 3 aulas: 2 Elite + 1 XDental",
       "frente": "🎓 DIP",
-      "status": "⚠️",
-      "done": false
+      "status": "🔥"
     },
     {
-      "time": "início ago",
-      "task": "🎬 Fabián editar Clínica de Maestría como curso da assinatura",
-      "frente": "🎬 PA",
-      "status": "⚠️",
-      "done": false
+      "time": "manhã",
+      "task": "🎓 Validar arquivo final do M8 e liberar módulo aos alunos em 03/08",
+      "frente": "🎓 DIP",
+      "status": "🔥"
+    },
+    {
+      "time": "semana",
+      "task": "🧪 Preparar/liberar prova M7 do Diplomado na sexta 07/08 e manter aberta até 14/08",
+      "frente": "🎓 DIP",
+      "status": "📅"
+    },
+    {
+      "time": "amanhã",
+      "task": "🇺🇸 Montar relatório/radar da campanha Low Ticket em inglês",
+      "frente": "🛒 LT",
+      "status": "🔥"
+    },
+    {
+      "time": "amanhã",
+      "task": "📞 Falar com Batista sobre Low Tickets LATAM ativos: status, verba, criativos e próximos ajustes",
+      "frente": "🛒 LT",
+      "status": "🔥"
+    },
+    {
+      "time": "amanhã",
+      "task": "🚀 Masterclass Incisivos: acompanhar últimos números — leads, entrada WhatsApp, pesquisa, CPL e fonte",
+      "frente": "🚀 FREE",
+      "status": "🔥"
+    },
+    {
+      "time": "amanhã",
+      "task": "👤 Conferir com Felipe status do lançamento da Masterclass e gargalos operacionais",
+      "frente": "🚀 FREE",
+      "status": "🔥"
+    },
+    {
+      "time": "amanhã",
+      "task": "📨 Conferir com Felipe se os disparos do fluxo de boas-vindas estão corretos",
+      "frente": "🚀 FREE",
+      "status": "⚠️"
+    },
+    {
+      "time": "amanhã",
+      "task": "📊 Investigar baixa taxa de resposta da pesquisa dos leads da Masterclass",
+      "frente": "🚀 FREE",
+      "status": "⚠️"
+    },
+    {
+      "time": "amanhã",
+      "task": "💳 Fazer fechamento financeiro do cartão",
+      "frente": "💰 FIN",
+      "status": "⚠️"
+    },
+    {
+      "time": "amanhã",
+      "task": "💰 Pedir para o BPO executar/processar salário",
+      "frente": "💰 FIN",
+      "status": "⚠️"
+    },
+    {
+      "time": "04/08",
+      "task": "🎓 Diplomado M8: iniciar PDF do módulo ao vivo",
+      "frente": "🎓 DIP",
+      "status": "📅"
+    },
+    {
+      "time": "05/08",
+      "task": "🎓 Diplomado M8: enviar pacote PDF para Klyro",
+      "frente": "🎓 DIP",
+      "status": "📅"
+    },
+    {
+      "time": "06/08",
+      "task": "🎓 Diplomado M9: confirmar com Stefan Cardon entrega/material",
+      "frente": "🎓 DIP",
+      "status": "📅"
     },
     {
       "time": "07/08",
-      "task": "🎓 Liberar prova M7 do Diplomado OrthoPro",
+      "task": "🎓 Diplomado M9: receber gravação/material do professor",
       "frente": "🎓 DIP",
-      "status": "📅",
-      "done": false
+      "status": "📅"
     },
     {
-      "time": "03/08",
-      "task": "🚀 Início previsto da captação da Masterclass Tracción de Incisivos Retenidos",
-      "frente": "🚀 FREE",
-      "status": "📅",
-      "done": false
+      "time": "07/08",
+      "task": "🤝 Reunião semanal de sócios — Ruan, Lucas e Vinícius",
+      "frente": "🏢 XD",
+      "status": "📅"
     },
     {
-      "time": "17/08",
-      "task": "🚀 Evento: Masterclass Tracción de Incisivos Retenidos",
-      "frente": "🚀 FREE",
-      "status": "📅",
-      "done": false
+      "time": "09/08",
+      "task": "🎬 Diplomado M9: iniciar edição da aula com Chicão",
+      "frente": "🎓 DIP",
+      "status": "📅"
+    },
+    {
+      "time": "pendente",
+      "task": "🇨🇱 Chile/CIOCH: confirmar resposta/pagamento da gráfica do stand",
+      "frente": "🇨🇱 CHL",
+      "status": "⚠️"
+    },
+    {
+      "time": "pendente",
+      "task": "🎬 Plataforma: Fabián editar Clínica de Maestría como curso da assinatura",
+      "frente": "🎬 PA",
+      "status": "⚠️"
+    },
+    {
+      "time": "pendente",
+      "task": "🧩 OralPlanner: cobrar Felipe sobre onboarding, acessos e uso real",
+      "frente": "🧩 ORAL",
+      "status": "⚠️"
     }
   ],
   "metrics": {
@@ -489,9 +478,9 @@
     "p2": 0,
     "p3": 0,
     "done": 0,
-    "tasks": 17
+    "tasks": 20
   },
-  "radarExtra": "Fontes conferidas em 29/07: áudio do Ruan no tópico Planejamento Lançamentos; Google Calendar oficial rdomith@gmail.com sem eventos cadastrados para 29/07 e 30/07; ClickUp lista Elite junho sem tarefas vencendo hoje; ClickUp Freedom julho tem 161 itens e Elite junho 168 itens. O lançamento 17/08 deixou de estar bloqueado por tema: agora é Masterclass Tracción de Incisivos Retenidos. Mudanças no ClickUp/SendFlow só serão executadas após confirmação explícita.",
+  "radarExtra": "Fontes conferidas em 02/08: áudio do Ruan no tópico Dados/Painel; Google Calendar oficial rdomith@gmail.com para 03/08–09/08; pendências herdadas da última versão pública do painel. Observação: checks feitos no navegador do Ruan ficam em localStorage e não são legíveis pelo servidor; por segurança, mantive como pendente tudo que não tinha evidência clara de conclusão.",
   "sourceFile": "projects/xdental-painel-taos/index.html",
   "radar": [
     {
