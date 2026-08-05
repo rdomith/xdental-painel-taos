@@ -6,7 +6,7 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quarta 05/08 é dia de tirar a Plataforma da trava visual: finalizar todas as imagens/banners do novo curso da assinatura, enviar pacote PDF do M8 para Klyro e deixar sexta blindada para publicação do curso, liberação da prova M8 e aula do Freedom de Alinhadores."
+    "headline": "Quarta 05/08 é dia de tirar a Plataforma da trava visual e blindar sexta: finalizar imagens do novo curso, enviar PDF M8 para Klyro, confirmar prova M8, preparar publicação do curso e reunião 16h com Serginho/Lucas para fechar oferta do lançamento. Segunda 08h30 entra reunião Chile."
   },
   "fronts": [
     {
@@ -327,6 +327,15 @@
       "owner": "Ruan / Klyro"
     },
     {
+      "title": "Lançamento · fechar oferta com Serginho e Lucas",
+      "priority": "p0",
+      "filter": "lancamentos",
+      "frente": "Lançamento / Oferta",
+      "deadline": "Sex 07/08 · 16h",
+      "blocks": "Sem oferta fechada, o lançamento chega na semana seguinte sem promessa/estrutura comercial definida",
+      "owner": "Ruan / Serginho / Lucas"
+    },
+    {
       "title": "Freedom de Alinhadores · aula de sexta no radar",
       "priority": "p1",
       "filter": "diplomado",
@@ -334,6 +343,15 @@
       "deadline": "Sex 07/08",
       "blocks": "Precisa entrar na checagem operacional da sexta junto com prova M8 e publicação do curso",
       "owner": "Ruan / Equipe"
+    },
+    {
+      "title": "Chile · reunião de alinhamento segunda cedo",
+      "priority": "p1",
+      "filter": "chile",
+      "frente": "Chile / CIOCH",
+      "deadline": "Seg 10/08 · 08h30",
+      "blocks": "Precisa chegar com pendências de stand/design/comprovantes e próximos prazos organizados",
+      "owner": "Ruan / Equipe Chile"
     },
     {
       "title": "Low Tickets · alinhar inglês + LATAM com Batista",
@@ -422,6 +440,12 @@
       "status": "📅"
     },
     {
+      "time": "sexta 16h",
+      "task": "🚀 Reunião com Serginho e Lucas para fechar oferta do lançamento",
+      "frente": "🚀 FREE",
+      "status": "🔥"
+    },
+    {
       "time": "hoje",
       "task": "🚀 Masterclass Incisivos: revisar números de captação, entrada WhatsApp, pesquisa e CPL se ainda não foi marcado",
       "frente": "🚀 FREE",
@@ -438,6 +462,12 @@
       "task": "🛒 Low Tickets inglês/LATAM: manter diagnóstico com Batista e ranking dos próximos e-books",
       "frente": "🛒 LT",
       "status": "⚠️"
+    },
+    {
+      "time": "segunda 08h30",
+      "task": "🇨🇱 Reunião sobre Chile/CIOCH — levar status de stand, design, comprovante e próximos prazos",
+      "frente": "🇨🇱 CHL",
+      "status": "📅"
     },
     {
       "time": "pendente",
@@ -459,12 +489,12 @@
     }
   ],
   "metrics": {
-    "p0": 3,
-    "p1": 2,
+    "p0": 4,
+    "p1": 3,
     "p2": 0,
     "p3": 0,
     "done": 0,
-    "tasks": 14
+    "tasks": 16
   },
   "radarExtra": "Fontes conferidas em 05/08: áudio do Ruan no tópico Dados/Painel; Google Calendar oficial rdomith@gmail.com para 05/08; pendências herdadas da versão pública anterior. Como os checks do navegador ficam em localStorage do usuário, mantive como aberto tudo que não tinha evidência clara de conclusão.",
   "sourceFile": "projects/xdental-painel-taos/index.html",
