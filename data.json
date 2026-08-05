@@ -1,12 +1,12 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.22-radar-2026-08-03",
-    "lastUpdated": "2026-08-02 · Radar de segunda 03/08 + semana Diplomado/Masterclass/Low Tickets",
+    "version": "2.23-radar-2026-08-05",
+    "lastUpdated": "2026-08-05 · Radar de quarta + Plataforma/Diplomado",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Segunda 03/08 virou dia de execução pesada: liberar M8 do Diplomado, acompanhar Masterclass, revisar fluxo com Felipe, montar radar Low Ticket em inglês, alinhar LATAM com Batista, escolher os próximos 2 e-books para inglês e replanejar o MVP do Excellence Dental Club."
+    "headline": "Quarta 05/08 é dia de tirar a Plataforma da trava visual: finalizar todas as imagens/banners do novo curso da assinatura, enviar pacote PDF do M8 para Klyro e deixar sexta blindada para publicação do curso, liberação da prova M8 e aula do Freedom de Alinhadores."
   },
   "fronts": [
     {
@@ -14,40 +14,38 @@
       "filter": "lancamentos",
       "icon": "🚀",
       "name": "Lançamentos · Masterclass Incisivos 17/08",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 58,
+      "status": "attention",
+      "priority": "p1",
+      "progress": 60,
       "owner": "Ruan / Felipe / Batista / Klyro / TAOS",
-      "summary": "Captação da Masterclass entra na semana crítica. O ponto de atenção agora não é só campanha no ar: precisa conferir números, disparos do fluxo de boas-vindas e a taxa baixa de respostas da pesquisa antes de escalar mídia.",
+      "summary": "Masterclass Incisivos segue ativa como frente de captação, mas o foco operacional de hoje migrou para Plataforma e Diplomado. Manter conferência de números, fluxo de boas-vindas e pesquisa sem deixar cegar o lançamento.",
       "exec": [
-        "Acompanhar últimos números da Masterclass: leads, entrada no WhatsApp, taxa de pesquisa e evolução da captação",
-        "Ruan: conferir com Felipe status do lançamento da Masterclass e se todos os disparos do fluxo de boas-vindas estão saindo corretamente",
-        "Investigar baixa taxa de resposta da pesquisa: link, timing dos disparos, copy, grupos/WhatsApp e possíveis falhas de automação"
+        "Acompanhar números da Masterclass: leads, entrada no WhatsApp, respostas da pesquisa e CPL",
+        "Conferir com Felipe se os disparos do fluxo de boas-vindas seguem corretos",
+        "Investigar se a baixa taxa de resposta da pesquisa ainda continua"
       ],
       "wait": [
-        "Dados atuais da Masterclass precisam ser conferidos antes de decidir aumento/ajuste de tráfego",
-        "Se a pesquisa continuar com baixa resposta, a segmentação/qualificação do lançamento fica cega"
+        "Dados atualizados de captação antes de qualquer decisão de escala de mídia",
+        "Se a pesquisa continuar fraca, a leitura de qualidade dos leads fica comprometida"
       ],
       "next": [
-        "Separar números do dia: leads totais, leads por origem, entrada em grupo, respostas da pesquisa e custo por lead",
-        "Pedir ao Felipe print/status do fluxo de boas-vindas e checar se há mensagens travadas ou ordem errada",
-        "Se houver queda entre cadastro e WhatsApp/pesquisa, revisar página de obrigado, botão e comunicação imediata"
+        "Separar visão diária: leads totais, origem, entrada em grupo, pesquisa e custo",
+        "Se houver queda entre cadastro e WhatsApp/pesquisa, revisar página de obrigado e timing dos disparos"
       ],
       "done": [
         "Tema oficial do lançamento gratuito definido: Masterclass Tracción de Incisivos Retenidos",
         "Calendário oficial registra início da captação em 03/08 e evento em 17/08"
       ],
       "nextActions": [
-        "Acompanhar últimos números da Masterclass: leads, entrada no WhatsApp, taxa de pesquisa e evolução da captação",
-        "Ruan: conferir com Felipe status do lançamento da Masterclass e se todos os disparos do fluxo de boas-vindas estão saindo corretamente",
-        "Investigar baixa taxa de resposta da pesquisa: link, timing dos disparos, copy, grupos/WhatsApp e possíveis falhas de automação",
-        "Separar números do dia: leads totais, leads por origem, entrada em grupo, respostas da pesquisa e custo por lead",
-        "Pedir ao Felipe print/status do fluxo de boas-vindas e checar se há mensagens travadas ou ordem errada",
-        "Se houver queda entre cadastro e WhatsApp/pesquisa, revisar página de obrigado, botão e comunicação imediata"
+        "Acompanhar números da Masterclass: leads, entrada no WhatsApp, respostas da pesquisa e CPL",
+        "Conferir com Felipe se os disparos do fluxo de boas-vindas seguem corretos",
+        "Investigar se a baixa taxa de resposta da pesquisa ainda continua",
+        "Separar visão diária: leads totais, origem, entrada em grupo, pesquisa e custo",
+        "Se houver queda entre cadastro e WhatsApp/pesquisa, revisar página de obrigado e timing dos disparos"
       ],
       "blockers": [
-        "Dados atuais da Masterclass precisam ser conferidos antes de decidir aumento/ajuste de tráfego",
-        "Se a pesquisa continuar com baixa resposta, a segmentação/qualificação do lançamento fica cega"
+        "Dados atualizados de captação antes de qualquer decisão de escala de mídia",
+        "Se a pesquisa continuar fraca, a leitura de qualidade dos leads fica comprometida"
       ],
       "doneText": "Tema oficial do lançamento gratuito definido: Masterclass Tracción de Incisivos Retenidos; Calendário oficial registra início da captação em 03/08 e evento em 17/08"
     },
@@ -94,85 +92,87 @@
       "id": "diplomado-ortho-pro",
       "filter": "diplomado",
       "icon": "🎓",
-      "name": "Diplomado Ortho Pro · M8 + prova M7",
+      "name": "Diplomado / Freedom · M8 + sexta crítica",
       "status": "risk",
       "priority": "p0",
-      "progress": 66,
-      "owner": "Ruan / Fabiano / Mônica / Felipe / TAOS",
-      "summary": "M8 precisa liberar em 03/08 com edição especial: junção de 3 aulas diferentes — 2 do Elite + 1 da XDental. Fabiano prometeu entrega amanhã cedo; se atrasar, a liberação do módulo fica em risco. Prova M7 segue para sexta 07/08.",
+      "progress": 72,
+      "owner": "Ruan / Felipe / Klyro / TAOS",
+      "summary": "M8 já tem prova pronta com Felipe, mas precisa virar execução confirmada: pacote PDF para Klyro hoje, prova M8 liberada na sexta e aula do Freedom de Alinhadores também na sexta. Aqui não pode depender de memória verbal.",
       "exec": [
-        "Amanhã cedo: cobrar Fabiano pela entrega final do M8 editado — 3 aulas combinadas, 2 Elite + 1 XDental",
-        "Validar arquivo final do M8, liberar para alunos e acionar comunicação operacional da liberação",
-        "Manter prova M7 no radar: liberar aos alunos em 07/08 e deixar aberta até 14/08"
+        "Hoje: enviar pacote PDF do M8 para Klyro — item confirmado no Google Calendar oficial",
+        "Hoje: confirmar com Felipe que a prova do M8 está pronta, configurada e com liberação programada para sexta",
+        "Sexta: comprovar que a prova do M8 foi liberada aos alunos"
       ],
       "wait": [
-        "Entrega do Fabiano é o caminho crítico para liberar M8 no prazo",
-        "Sem validação final do arquivo, não publicar o módulo aos alunos"
+        "Confirmação objetiva do Felipe sobre prova M8 pronta/programada",
+        "Pacote PDF do M8 precisa chegar na Klyro hoje para não apertar a entrega",
+        "Aula do Freedom de Alinhadores na sexta precisa ficar visível no radar operacional"
       ],
       "next": [
-        "Depois da liberação: iniciar PDF do M8 em 04/08 e enviar pacote para Klyro em 05/08 conforme calendário",
-        "06/08: confirmar com Stefan Cardon M9; 07/08: receber gravação/material do M9",
-        "09/08: iniciar edição M9 com Chicão após recebimento do material"
+        "Sexta: acompanhar aula do Freedom de Alinhadores e checar se há material/comunicação pendente",
+        "Depois da prova liberada: registrar evidência/check no painel e remover gargalo",
+        "Manter M9/Stefan no radar se ainda houver material pendente da próxima etapa"
       ],
       "done": [
-        "Regra oficial das provas corrigida: prova libera 30 dias após módulo, preparação 7 dias antes, aberta por 7 dias",
-        "Calendário oficial já contém M8 03/08, prova M7 07/08, M9 06-09/08"
+        "Prova M8 já está pronta e Felipe já tem o material, segundo atualização do Ruan",
+        "Calendar de 05/08 confirma tarefa do pacote PDF do M8 para Klyro"
       ],
       "nextActions": [
-        "Amanhã cedo: cobrar Fabiano pela entrega final do M8 editado — 3 aulas combinadas, 2 Elite + 1 XDental",
-        "Validar arquivo final do M8, liberar para alunos e acionar comunicação operacional da liberação",
-        "Manter prova M7 no radar: liberar aos alunos em 07/08 e deixar aberta até 14/08",
-        "Depois da liberação: iniciar PDF do M8 em 04/08 e enviar pacote para Klyro em 05/08 conforme calendário",
-        "06/08: confirmar com Stefan Cardon M9; 07/08: receber gravação/material do M9",
-        "09/08: iniciar edição M9 com Chicão após recebimento do material"
+        "Hoje: enviar pacote PDF do M8 para Klyro — item confirmado no Google Calendar oficial",
+        "Hoje: confirmar com Felipe que a prova do M8 está pronta, configurada e com liberação programada para sexta",
+        "Sexta: comprovar que a prova do M8 foi liberada aos alunos",
+        "Sexta: acompanhar aula do Freedom de Alinhadores e checar se há material/comunicação pendente",
+        "Depois da prova liberada: registrar evidência/check no painel e remover gargalo",
+        "Manter M9/Stefan no radar se ainda houver material pendente da próxima etapa"
       ],
       "blockers": [
-        "Entrega do Fabiano é o caminho crítico para liberar M8 no prazo",
-        "Sem validação final do arquivo, não publicar o módulo aos alunos"
+        "Confirmação objetiva do Felipe sobre prova M8 pronta/programada",
+        "Pacote PDF do M8 precisa chegar na Klyro hoje para não apertar a entrega",
+        "Aula do Freedom de Alinhadores na sexta precisa ficar visível no radar operacional"
       ],
-      "doneText": "Regra oficial das provas corrigida: prova libera 30 dias após módulo, preparação 7 dias antes, aberta por 7 dias; Calendário oficial já contém M8 03/08, prova M7 07/08, M9 06-09/08"
+      "doneText": "Prova M8 já está pronta e Felipe já tem o material, segundo atualização do Ruan; Calendar de 05/08 confirma tarefa do pacote PDF do M8 para Klyro"
     },
     {
       "id": "plataforma-assinatura",
       "filter": "plataforma",
       "icon": "🎬",
-      "name": "Plataforma + Excellence Dental Club",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 46,
-      "owner": "Ruan / TAOS / Cloud",
-      "summary": "A pesquisa do Excellence Dental Club atrasou uma semana e precisa começar agora. A tarefa da semana é reformular no Cloud as datas do MVP/roadmap e reabrir a fase de pesquisa que era para ter rodado na semana passada.",
+      "name": "Plataforma de Assinatura · novo curso + imagens",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 62,
+      "owner": "Ruan / TAOS / Design / Plataforma",
+      "summary": "Curso novo da assinatura já está editado e pronto para subir. O gargalo real agora é visual: finalizar hoje as imagens/banners/capas para conseguir publicar na sexta sem virar correria de última hora.",
       "exec": [
-        "Reformular no Cloud as datas do MVP e roadmap do Excellence Dental Club",
-        "Iniciar esta semana as pesquisas do Excellence Dental Club com base no novo cronograma",
-        "Manter Clínica de Maestría como curso da assinatura no radar com Fabián"
+        "Hoje: finalizar imagens do design do novo curso da plataforma de assinatura",
+        "Fechar banners/capas/peças necessárias para upload e comunicação do curso",
+        "Organizar pacote final de assets para deixar publicação da sexta sem dependência visual"
       ],
       "wait": [
-        "Roadmap antigo ficou desalinhado porque a fase de pesquisa escorregou da semana passada para esta",
-        "Sem pesquisa, o MVP do Club perde validação antes de fechar parceiros/checkout"
+        "Sem imagens finais, o curso editado continua travado e não entra na plataforma",
+        "Publicação prevista para sexta depende do pacote visual estar fechado antes"
       ],
       "next": [
-        "Atualizar Fase 0/Semana 1 do roadmap: pesquisa agora em 03–08/08",
-        "Definir meta mínima da pesquisa: respostas, entrevistas e lista fundadora",
-        "Depois da pesquisa, revisar abertura fundadora e datas de plataforma/checkout"
+        "Conferir se todas as dimensões/formatos necessários estão cobertos: banner principal, thumbnail/capa, cards e peças de comunicação",
+        "Subir/entregar assets finais para quem vai publicar o curso",
+        "Sexta: publicar curso da assinatura depois de validar assets e arquivo editado"
       ],
       "done": [
-        "Produto definido: Excellence Dental Club a USD 5/mês",
-        "Pesquisa de validação já existe e precisa ser retomada com datas novas"
+        "Curso novo já está editado e pronto para upload",
+        "Ruan iniciou a produção visual ontem; falta finalizar pacote completo"
       ],
       "nextActions": [
-        "Reformular no Cloud as datas do MVP e roadmap do Excellence Dental Club",
-        "Iniciar esta semana as pesquisas do Excellence Dental Club com base no novo cronograma",
-        "Manter Clínica de Maestría como curso da assinatura no radar com Fabián",
-        "Atualizar Fase 0/Semana 1 do roadmap: pesquisa agora em 03–08/08",
-        "Definir meta mínima da pesquisa: respostas, entrevistas e lista fundadora",
-        "Depois da pesquisa, revisar abertura fundadora e datas de plataforma/checkout"
+        "Hoje: finalizar imagens do design do novo curso da plataforma de assinatura",
+        "Fechar banners/capas/peças necessárias para upload e comunicação do curso",
+        "Organizar pacote final de assets para deixar publicação da sexta sem dependência visual",
+        "Conferir se todas as dimensões/formatos necessários estão cobertos: banner principal, thumbnail/capa, cards e peças de comunicação",
+        "Subir/entregar assets finais para quem vai publicar o curso",
+        "Sexta: publicar curso da assinatura depois de validar assets e arquivo editado"
       ],
       "blockers": [
-        "Roadmap antigo ficou desalinhado porque a fase de pesquisa escorregou da semana passada para esta",
-        "Sem pesquisa, o MVP do Club perde validação antes de fechar parceiros/checkout"
+        "Sem imagens finais, o curso editado continua travado e não entra na plataforma",
+        "Publicação prevista para sexta depende do pacote visual estar fechado antes"
       ],
-      "doneText": "Produto definido: Excellence Dental Club a USD 5/mês; Pesquisa de validação já existe e precisa ser retomada com datas novas"
+      "doneText": "Curso novo já está editado e pronto para upload; Ruan iniciou a produção visual ontem; falta finalizar pacote completo"
     },
     {
       "id": "low-tickets",
@@ -300,22 +300,40 @@
   ],
   "gargalos": [
     {
-      "title": "M8 Diplomado · Fabiano é caminho crítico amanhã cedo",
+      "title": "Plataforma · imagens do novo curso travam publicação de sexta",
+      "priority": "p0",
+      "filter": "plataforma",
+      "frente": "Plataforma de Assinatura",
+      "deadline": "Hoje 05/08",
+      "blocks": "Sem banners/capas/imagens finais, o curso editado não sobe na sexta",
+      "owner": "Ruan / Design / TAOS"
+    },
+    {
+      "title": "Diplomado M8 · prova precisa estar programada e comprovada",
+      "priority": "p0",
+      "filter": "diplomado",
+      "frente": "Diplomado / Freedom",
+      "deadline": "Sex 07/08",
+      "blocks": "Se a prova não estiver liberada/programada com Felipe, vira falha de entrega aos alunos",
+      "owner": "Ruan / Felipe"
+    },
+    {
+      "title": "Diplomado M8 · pacote PDF para Klyro vence hoje",
       "priority": "p0",
       "filter": "diplomado",
       "frente": "Diplomado Ortho Pro",
-      "deadline": "Seg 03/08 manhã",
-      "blocks": "Sem arquivo editado/final validado, a liberação do M8 aos alunos atrasa",
-      "owner": "Ruan / Fabiano / TAOS"
+      "deadline": "Hoje 05/08",
+      "blocks": "Sem envio para Klyro hoje, material complementar aperta a janela da semana",
+      "owner": "Ruan / Klyro"
     },
     {
-      "title": "Masterclass · baixa resposta da pesquisa pode cegar o lançamento",
-      "priority": "p0",
-      "filter": "lancamentos",
-      "frente": "Masterclass Incisivos 17/08",
-      "deadline": "Seg 03/08",
-      "blocks": "Sem respostas suficientes, tráfego e oferta perdem leitura de qualidade dos leads",
-      "owner": "Felipe / Ruan"
+      "title": "Freedom de Alinhadores · aula de sexta no radar",
+      "priority": "p1",
+      "filter": "diplomado",
+      "frente": "Freedom / Diplomado Alinhadores",
+      "deadline": "Sex 07/08",
+      "blocks": "Precisa entrar na checagem operacional da sexta junto com prova M8 e publicação do curso",
+      "owner": "Ruan / Equipe"
     },
     {
       "title": "Low Tickets · alinhar inglês + LATAM com Batista",
@@ -334,15 +352,6 @@
       "deadline": "Seg 03/08",
       "blocks": "Se ficar para depois, mistura fechamento de cartão, salário e caixa operacional da semana",
       "owner": "Ruan / BPO"
-    },
-    {
-      "title": "Excellence Dental Club · roadmap atrasado precisa recalibrar",
-      "priority": "p1",
-      "filter": "plataforma",
-      "frente": "Excellence Dental Club",
-      "deadline": "Semana 03–08/08",
-      "blocks": "Sem pesquisa nesta semana, o MVP continua andando sem validação de demanda/preço/parceiros",
-      "owner": "Ruan / TAOS"
     },
     {
       "title": "Chile/CIOCH · confirmar recebimento do comprovante do design",
@@ -365,141 +374,75 @@
   ],
   "radarDoDia": [
     {
-      "time": "manhã",
-      "task": "🎓 Cobrar Fabiano pela entrega final do M8 editado — junção de 3 aulas: 2 Elite + 1 XDental",
-      "frente": "🎓 DIP",
-      "status": "🔥"
-    },
-    {
-      "time": "manhã",
-      "task": "🎓 Validar arquivo final do M8 e liberar módulo aos alunos em 03/08",
-      "frente": "🎓 DIP",
-      "status": "🔥"
-    },
-    {
-      "time": "semana",
-      "task": "🧪 Preparar/liberar prova M7 do Diplomado na sexta 07/08 e manter aberta até 14/08",
-      "frente": "🎓 DIP",
-      "status": "📅"
-    },
-    {
-      "time": "amanhã",
-      "task": "🇺🇸 Montar relatório/radar da campanha Low Ticket em inglês",
-      "frente": "🛒 LT",
-      "status": "🔥"
-    },
-    {
-      "time": "amanhã",
-      "task": "📞 Falar com Batista sobre Low Tickets LATAM ativos: status, verba, criativos e próximos ajustes",
-      "frente": "🛒 LT",
-      "status": "🔥"
-    },
-    {
-      "time": "amanhã",
-      "task": "🇺🇸 Escolher os 2 próximos e-books LATAM para traduzir/adaptar ao inglês — critério: melhores resultados históricos",
-      "frente": "🛒 LT",
-      "status": "🔥"
-    },
-    {
-      "time": "semana",
-      "task": "🌎 Iniciar processo dos 2 novos e-books em inglês: tradução → revisão Rogério/Penambá → continuidade operacional",
-      "frente": "🛒 LT",
-      "status": "⚠️"
-    },
-    {
-      "time": "amanhã",
-      "task": "🚀 Masterclass Incisivos: acompanhar últimos números — leads, entrada WhatsApp, pesquisa, CPL e fonte",
-      "frente": "🚀 FREE",
-      "status": "🔥"
-    },
-    {
-      "time": "amanhã",
-      "task": "👤 Conferir com Felipe status do lançamento da Masterclass e gargalos operacionais",
-      "frente": "🚀 FREE",
-      "status": "🔥"
-    },
-    {
-      "time": "amanhã",
-      "task": "📨 Conferir com Felipe se os disparos do fluxo de boas-vindas estão corretos",
-      "frente": "🚀 FREE",
-      "status": "⚠️"
-    },
-    {
-      "time": "amanhã",
-      "task": "📊 Investigar baixa taxa de resposta da pesquisa dos leads da Masterclass",
-      "frente": "🚀 FREE",
-      "status": "⚠️"
-    },
-    {
-      "time": "amanhã",
-      "task": "💳 Fazer fechamento financeiro do cartão",
-      "frente": "💰 FIN",
-      "status": "⚠️"
-    },
-    {
-      "time": "amanhã",
-      "task": "💰 Pedir para o BPO executar/processar salário",
-      "frente": "💰 FIN",
-      "status": "⚠️"
-    },
-    {
-      "time": "semana",
-      "task": "🧩 Excellence Dental Club: reformular no Cloud as datas do MVP e roadmap",
-      "frente": "🎬 PA",
-      "status": "⚠️"
-    },
-    {
-      "time": "semana",
-      "task": "🧩 Excellence Dental Club: iniciar pesquisas que atrasaram da semana passada para esta",
+      "time": "hoje",
+      "task": "🎬 Finalizar imagens do design do novo curso da plataforma de assinatura",
       "frente": "🎬 PA",
       "status": "🔥"
     },
     {
-      "time": "04/08",
-      "task": "🎓 Diplomado M8: iniciar PDF do módulo ao vivo",
+      "time": "hoje",
+      "task": "🎬 Fechar banners/capas/peças visuais necessárias para upload e publicação do curso",
+      "frente": "🎬 PA",
+      "status": "🔥"
+    },
+    {
+      "time": "hoje",
+      "task": "🎬 Organizar pacote final de assets para deixar publicação de sexta sem dependência visual",
+      "frente": "🎬 PA",
+      "status": "⚠️"
+    },
+    {
+      "time": "hoje",
+      "task": "🎓 Enviar pacote PDF do M8 para Klyro — item do Google Calendar oficial de 05/08",
+      "frente": "🎓 DIP",
+      "status": "🔥"
+    },
+    {
+      "time": "hoje",
+      "task": "🎓 Confirmar com Felipe que a prova do M8 está pronta, configurada e programada para sexta",
+      "frente": "🎓 DIP",
+      "status": "🔥"
+    },
+    {
+      "time": "sexta",
+      "task": "🎬 Publicar novo curso da plataforma de assinatura após validar assets + arquivo editado",
+      "frente": "🎬 PA",
+      "status": "📅"
+    },
+    {
+      "time": "sexta",
+      "task": "🎓 Comprovar que a prova do M8 foi liberada aos alunos",
       "frente": "🎓 DIP",
       "status": "📅"
     },
     {
-      "time": "05/08",
-      "task": "🎓 Diplomado M8: enviar pacote PDF para Klyro",
+      "time": "sexta",
+      "task": "🦷 Acompanhar aula do Freedom de Alinhadores e checar material/comunicação pendente",
       "frente": "🎓 DIP",
       "status": "📅"
     },
     {
-      "time": "06/08",
-      "task": "🎓 Diplomado M9: confirmar com Stefan Cardon entrega/material",
-      "frente": "🎓 DIP",
-      "status": "📅"
+      "time": "hoje",
+      "task": "🚀 Masterclass Incisivos: revisar números de captação, entrada WhatsApp, pesquisa e CPL se ainda não foi marcado",
+      "frente": "🚀 FREE",
+      "status": "⚠️"
     },
     {
-      "time": "07/08",
-      "task": "🎓 Diplomado M9: receber gravação/material do professor",
-      "frente": "🎓 DIP",
-      "status": "📅"
-    },
-    {
-      "time": "07/08",
-      "task": "🤝 Reunião semanal de sócios — Ruan, Lucas e Vinícius",
-      "frente": "🏢 XD",
-      "status": "📅"
-    },
-    {
-      "time": "09/08",
-      "task": "🎬 Diplomado M9: iniciar edição da aula com Chicão",
-      "frente": "🎓 DIP",
-      "status": "📅"
+      "time": "hoje",
+      "task": "🚀 Conferir com Felipe se fluxo de boas-vindas da Masterclass segue disparando corretamente",
+      "frente": "🚀 FREE",
+      "status": "⚠️"
     },
     {
       "time": "pendente",
-      "task": "🇨🇱 Chile/CIOCH: confirmar com equipe do Chile se receberam o comprovante de pagamento da empresa do design",
+      "task": "🛒 Low Tickets inglês/LATAM: manter diagnóstico com Batista e ranking dos próximos e-books",
+      "frente": "🛒 LT",
+      "status": "⚠️"
+    },
+    {
+      "time": "pendente",
+      "task": "🇨🇱 Chile/CIOCH: confirmar recebimento do comprovante de pagamento da empresa do design",
       "frente": "🇨🇱 CHL",
-      "status": "⚠️"
-    },
-    {
-      "time": "pendente",
-      "task": "🎬 Plataforma: Fabián editar Clínica de Maestría como curso da assinatura",
-      "frente": "🎬 PA",
       "status": "⚠️"
     },
     {
@@ -507,17 +450,23 @@
       "task": "🧩 OralPlanner: cobrar Felipe sobre onboarding, acessos e uso real",
       "frente": "🧩 ORAL",
       "status": "⚠️"
+    },
+    {
+      "time": "pendente",
+      "task": "💎 Sniper Elite/Galeria: cobrar nova data da aula reagendada e manter validação de casos/áudios",
+      "frente": "💎 ELITE",
+      "status": "⚠️"
     }
   ],
   "metrics": {
-    "p0": 2,
+    "p0": 3,
     "p1": 2,
     "p2": 0,
     "p3": 0,
     "done": 0,
-    "tasks": 24
+    "tasks": 14
   },
-  "radarExtra": "Fontes conferidas em 02/08: áudio do Ruan no tópico Dados/Painel; Google Calendar oficial rdomith@gmail.com para 03/08–09/08; pendências herdadas da última versão pública do painel. Observação: checks feitos no navegador do Ruan ficam em localStorage e não são legíveis pelo servidor; por segurança, mantive como pendente tudo que não tinha evidência clara de conclusão.",
+  "radarExtra": "Fontes conferidas em 05/08: áudio do Ruan no tópico Dados/Painel; Google Calendar oficial rdomith@gmail.com para 05/08; pendências herdadas da versão pública anterior. Como os checks do navegador ficam em localStorage do usuário, mantive como aberto tudo que não tinha evidência clara de conclusão.",
   "sourceFile": "projects/xdental-painel-taos/index.html",
   "radar": [
     {
