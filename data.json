@@ -1,53 +1,56 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.23-radar-2026-08-05",
-    "lastUpdated": "2026-08-05 · Radar de quarta + Plataforma/Diplomado",
+    "version": "2.24-radar-2026-08-06",
+    "lastUpdated": "2026-08-06 · Radar de quinta + e-books/Low Ticket/NoCode/M9",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quarta 05/08 é dia de tirar a Plataforma da trava visual e blindar sexta: finalizar imagens do novo curso, enviar PDF M8 para Klyro, confirmar prova M8, preparar publicação do curso e reunião 16h com Serginho/Lucas para fechar oferta do lançamento. Segunda 08h30 entra reunião Chile."
+    "headline": "Quinta 06/08 entrou com quatro movimentos novos: traduzir 2 e-books fortes para inglês e mandar para Rogério revisar; retomar Low Tickets buscando ROAS de equilíbrio para gerar base; modelar o funil tipo NoCode Startup para vender plataforma XDental/upsell pós-low ticket; e revisar hoje o Módulo 9 do Stefan Cardon, já gravado e liberado. Pendências de ontem seguem abertas até haver evidência de conclusão."
   },
   "fronts": [
     {
       "id": "lancamento-alineadores",
       "filter": "lancamentos",
       "icon": "🚀",
-      "name": "Lançamentos · Masterclass Incisivos 17/08",
+      "name": "Funil Plataforma XDental · modelo NoCode Startup",
       "status": "attention",
       "priority": "p1",
-      "progress": 60,
-      "owner": "Ruan / Felipe / Batista / Klyro / TAOS",
-      "summary": "Masterclass Incisivos segue ativa como frente de captação, mas o foco operacional de hoje migrou para Plataforma e Diplomado. Manter conferência de números, fluxo de boas-vindas e pesquisa sem deixar cegar o lançamento.",
+      "progress": 35,
+      "owner": "Ruan / TAOS / Equipe Comercial",
+      "summary": "Ideia forte para modelar rápido: criativo fala de um curso específico, página vende aquele curso como entrada, mas a oferta entrega também a plataforma inteira. Depois do low ticket, usar upsell/ponte para plataforma.",
       "exec": [
-        "Acompanhar números da Masterclass: leads, entrada no WhatsApp, respostas da pesquisa e CPL",
-        "Conferir com Felipe se os disparos do fluxo de boas-vindas seguem corretos",
-        "Investigar se a baixa taxa de resposta da pesquisa ainda continua"
+        "Mapear o funil da NoCode Startup: criativos por curso específico → página específica → oferta com plataforma completa incluída",
+        "Traduzir o modelo para XDental: curso/tema do criativo como porta de entrada e plataforma como valor principal embutido",
+        "Desenhar fluxo pós-compra low ticket com convite/upsell para plataforma XDental"
       ],
       "wait": [
-        "Dados atualizados de captação antes de qualquer decisão de escala de mídia",
-        "Se a pesquisa continuar fraca, a leitura de qualidade dos leads fica comprometida"
+        "Referências da página/criativos da NoCode Startup precisam ser capturadas para evitar modelagem abstrata",
+        "Definir qual produto/tema XDental será o primeiro teste desse modelo",
+        "Oferta da plataforma precisa ficar clara: o curso vende o clique, a plataforma justifica o ticket"
       ],
       "next": [
-        "Separar visão diária: leads totais, origem, entrada em grupo, pesquisa e custo",
-        "Se houver queda entre cadastro e WhatsApp/pesquisa, revisar página de obrigado e timing dos disparos"
+        "Criar wireframe simples da página: headline do curso, promessa específica, bônus/plataforma completa e checkout",
+        "Listar 5 ângulos de criativos por curso para testar o modelo",
+        "Definir onde entra o upsell pós-low ticket: obrigado, e-mail/WhatsApp ou order bump/checkout"
       ],
       "done": [
-        "Tema oficial do lançamento gratuito definido: Masterclass Tracción de Incisivos Retenidos",
-        "Calendário oficial registra início da captação em 03/08 e evento em 17/08"
+        "Direção aprovada por Ruan: modelar NoCode Startup e adaptar para XDental/plataforma"
       ],
       "nextActions": [
-        "Acompanhar números da Masterclass: leads, entrada no WhatsApp, respostas da pesquisa e CPL",
-        "Conferir com Felipe se os disparos do fluxo de boas-vindas seguem corretos",
-        "Investigar se a baixa taxa de resposta da pesquisa ainda continua",
-        "Separar visão diária: leads totais, origem, entrada em grupo, pesquisa e custo",
-        "Se houver queda entre cadastro e WhatsApp/pesquisa, revisar página de obrigado e timing dos disparos"
+        "Mapear o funil da NoCode Startup: criativos por curso específico → página específica → oferta com plataforma completa incluída",
+        "Traduzir o modelo para XDental: curso/tema do criativo como porta de entrada e plataforma como valor principal embutido",
+        "Desenhar fluxo pós-compra low ticket com convite/upsell para plataforma XDental",
+        "Criar wireframe simples da página: headline do curso, promessa específica, bônus/plataforma completa e checkout",
+        "Listar 5 ângulos de criativos por curso para testar o modelo",
+        "Definir onde entra o upsell pós-low ticket: obrigado, e-mail/WhatsApp ou order bump/checkout"
       ],
       "blockers": [
-        "Dados atualizados de captação antes de qualquer decisão de escala de mídia",
-        "Se a pesquisa continuar fraca, a leitura de qualidade dos leads fica comprometida"
+        "Referências da página/criativos da NoCode Startup precisam ser capturadas para evitar modelagem abstrata",
+        "Definir qual produto/tema XDental será o primeiro teste desse modelo",
+        "Oferta da plataforma precisa ficar clara: o curso vende o clique, a plataforma justifica o ticket"
       ],
-      "doneText": "Tema oficial do lançamento gratuito definido: Masterclass Tracción de Incisivos Retenidos; Calendário oficial registra início da captação em 03/08 e evento em 17/08"
+      "doneText": "Direção aprovada por Ruan: modelar NoCode Startup e adaptar para XDental/plataforma"
     },
     {
       "id": "chile-cioch",
@@ -92,134 +95,127 @@
       "id": "diplomado-ortho-pro",
       "filter": "diplomado",
       "icon": "🎓",
-      "name": "Diplomado / Freedom · M8 + sexta crítica",
+      "name": "Diplomado / Freedom · M9 Stefan + pendências M8",
       "status": "risk",
       "priority": "p0",
-      "progress": 72,
-      "owner": "Ruan / Felipe / Klyro / TAOS",
-      "summary": "M8 já tem prova pronta com Felipe, mas precisa virar execução confirmada: pacote PDF para Klyro hoje, prova M8 liberada na sexta e aula do Freedom de Alinhadores também na sexta. Aqui não pode depender de memória verbal.",
+      "progress": 76,
+      "owner": "Ruan / TAOS / Felipe / Klyro",
+      "summary": "Stefan Cardon já gravou e liberou o Módulo 9; a revisão precisa acontecer hoje. Também seguem abertas as pendências de ontem até evidência: pacote PDF M8 para Klyro e prova/liberação M8 com Felipe.",
       "exec": [
-        "Hoje: enviar pacote PDF do M8 para Klyro — item confirmado no Google Calendar oficial",
-        "Hoje: confirmar com Felipe que a prova do M8 está pronta, configurada e com liberação programada para sexta",
-        "Sexta: comprovar que a prova do M8 foi liberada aos alunos"
+        "Hoje: revisar o Módulo 9 do Stefan Cardon, já gravado e liberado",
+        "Preparar resposta para Stefan: agradecer, confirmar recebimento/liberação e explicar que o pagamento será mais para o final do mês — não enviar sem ok do Ruan",
+        "Checar pendência de ontem: pacote PDF do M8 para Klyro"
       ],
       "wait": [
-        "Confirmação objetiva do Felipe sobre prova M8 pronta/programada",
-        "Pacote PDF do M8 precisa chegar na Klyro hoje para não apertar a entrega",
-        "Aula do Freedom de Alinhadores na sexta precisa ficar visível no radar operacional"
+        "Evidência de que o PDF M8 foi enviado para Klyro",
+        "Confirmação de que prova/liberação do M8 está pronta/programada com Felipe",
+        "Aprovação do Ruan antes de qualquer mensagem direta ao Stefan sobre pagamento"
       ],
       "next": [
-        "Sexta: acompanhar aula do Freedom de Alinhadores e checar se há material/comunicação pendente",
-        "Depois da prova liberada: registrar evidência/check no painel e remover gargalo",
-        "Manter M9/Stefan no radar se ainda houver material pendente da próxima etapa"
+        "Depois da revisão M9: registrar ajustes necessários e próximos responsáveis",
+        "Sexta: comprovar prova M8 liberada aos alunos",
+        "Sexta: acompanhar aula do Freedom de Alinhadores e checar material/comunicação pendente"
       ],
       "done": [
-        "Prova M8 já está pronta e Felipe já tem o material, segundo atualização do Ruan",
-        "Calendar de 05/08 confirma tarefa do pacote PDF do M8 para Klyro"
+        "Calendar oficial de 06/08 marca Diplomado M09 — confirmar com professor (Dr. Stefan Cardon)",
+        "Ruan informou em áudio que Stefan já gravou e liberou o M9"
       ],
       "nextActions": [
-        "Hoje: enviar pacote PDF do M8 para Klyro — item confirmado no Google Calendar oficial",
-        "Hoje: confirmar com Felipe que a prova do M8 está pronta, configurada e com liberação programada para sexta",
-        "Sexta: comprovar que a prova do M8 foi liberada aos alunos",
-        "Sexta: acompanhar aula do Freedom de Alinhadores e checar se há material/comunicação pendente",
-        "Depois da prova liberada: registrar evidência/check no painel e remover gargalo",
-        "Manter M9/Stefan no radar se ainda houver material pendente da próxima etapa"
+        "Hoje: revisar o Módulo 9 do Stefan Cardon, já gravado e liberado",
+        "Preparar resposta para Stefan: agradecer, confirmar recebimento/liberação e explicar que o pagamento será mais para o final do mês — não enviar sem ok do Ruan",
+        "Checar pendência de ontem: pacote PDF do M8 para Klyro",
+        "Depois da revisão M9: registrar ajustes necessários e próximos responsáveis",
+        "Sexta: comprovar prova M8 liberada aos alunos",
+        "Sexta: acompanhar aula do Freedom de Alinhadores e checar material/comunicação pendente"
       ],
       "blockers": [
-        "Confirmação objetiva do Felipe sobre prova M8 pronta/programada",
-        "Pacote PDF do M8 precisa chegar na Klyro hoje para não apertar a entrega",
-        "Aula do Freedom de Alinhadores na sexta precisa ficar visível no radar operacional"
+        "Evidência de que o PDF M8 foi enviado para Klyro",
+        "Confirmação de que prova/liberação do M8 está pronta/programada com Felipe",
+        "Aprovação do Ruan antes de qualquer mensagem direta ao Stefan sobre pagamento"
       ],
-      "doneText": "Prova M8 já está pronta e Felipe já tem o material, segundo atualização do Ruan; Calendar de 05/08 confirma tarefa do pacote PDF do M8 para Klyro"
+      "doneText": "Calendar oficial de 06/08 marca Diplomado M09 — confirmar com professor (Dr. Stefan Cardon); Ruan informou em áudio que Stefan já gravou e liberou o M9"
     },
     {
       "id": "plataforma-assinatura",
       "filter": "plataforma",
       "icon": "🎬",
-      "name": "Plataforma de Assinatura · novo curso + imagens",
+      "name": "Plataforma de Assinatura · curso novo + assets",
       "status": "risk",
       "priority": "p0",
-      "progress": 62,
+      "progress": 63,
       "owner": "Ruan / TAOS / Design / Plataforma",
-      "summary": "Curso novo da assinatura já está editado e pronto para subir. O gargalo real agora é visual: finalizar hoje as imagens/banners/capas para conseguir publicar na sexta sem virar correria de última hora.",
+      "summary": "Pendência herdada de ontem: curso novo já estava editado, mas dependia de imagens/banners/capas para conseguir publicar sem correria.",
       "exec": [
-        "Hoje: finalizar imagens do design do novo curso da plataforma de assinatura",
-        "Fechar banners/capas/peças necessárias para upload e comunicação do curso",
-        "Organizar pacote final de assets para deixar publicação da sexta sem dependência visual"
+        "Conferir se as imagens do design do novo curso foram finalizadas ontem; se não, fechar hoje",
+        "Fechar banners/capas/peças visuais necessárias para upload e publicação do curso",
+        "Organizar pacote final de assets para deixar publicação de sexta sem dependência visual"
       ],
       "wait": [
         "Sem imagens finais, o curso editado continua travado e não entra na plataforma",
         "Publicação prevista para sexta depende do pacote visual estar fechado antes"
       ],
       "next": [
-        "Conferir se todas as dimensões/formatos necessários estão cobertos: banner principal, thumbnail/capa, cards e peças de comunicação",
-        "Subir/entregar assets finais para quem vai publicar o curso",
-        "Sexta: publicar curso da assinatura depois de validar assets e arquivo editado"
+        "Sexta: publicar curso da assinatura depois de validar assets e arquivo editado",
+        "Depois de publicar: registrar link/evidência no painel e remover pendência"
       ],
       "done": [
-        "Curso novo já está editado e pronto para upload",
-        "Ruan iniciou a produção visual ontem; falta finalizar pacote completo"
+        "Curso novo já estava editado e pronto para upload na última atualização"
       ],
       "nextActions": [
-        "Hoje: finalizar imagens do design do novo curso da plataforma de assinatura",
-        "Fechar banners/capas/peças necessárias para upload e comunicação do curso",
-        "Organizar pacote final de assets para deixar publicação da sexta sem dependência visual",
-        "Conferir se todas as dimensões/formatos necessários estão cobertos: banner principal, thumbnail/capa, cards e peças de comunicação",
-        "Subir/entregar assets finais para quem vai publicar o curso",
-        "Sexta: publicar curso da assinatura depois de validar assets e arquivo editado"
+        "Conferir se as imagens do design do novo curso foram finalizadas ontem; se não, fechar hoje",
+        "Fechar banners/capas/peças visuais necessárias para upload e publicação do curso",
+        "Organizar pacote final de assets para deixar publicação de sexta sem dependência visual",
+        "Sexta: publicar curso da assinatura depois de validar assets e arquivo editado",
+        "Depois de publicar: registrar link/evidência no painel e remover pendência"
       ],
       "blockers": [
         "Sem imagens finais, o curso editado continua travado e não entra na plataforma",
         "Publicação prevista para sexta depende do pacote visual estar fechado antes"
       ],
-      "doneText": "Curso novo já está editado e pronto para upload; Ruan iniciou a produção visual ontem; falta finalizar pacote completo"
+      "doneText": "Curso novo já estava editado e pronto para upload na última atualização"
     },
     {
       "id": "low-tickets",
       "filter": "lowticket",
       "icon": "🛒",
-      "name": "Low Tickets · Inglês + LATAM",
+      "name": "Low Tickets · retomada de investimento + base",
       "status": "attention",
       "priority": "p1",
-      "progress": 52,
+      "progress": 48,
       "owner": "Ruan / Batista / TAOS",
-      "summary": "Amanhã precisa sair o radar do Low Ticket em inglês, o alinhamento com Batista sobre LATAM e a escolha dos próximos 2 e-books para traduzir ao inglês. O critério é simples: pegar os 2 melhores e-books que rodaram no LATAM e repetir o processo de Tracción.",
+      "summary": "A frente volta para o jogo com objetivo pragmático: não precisa lucro imediato, precisa pelo menos se pagar em ROAS para formar base e alimentar oferta maior depois.",
       "exec": [
-        "Montar relatório/radar da campanha Low Ticket em inglês com números atualizados",
-        "Ruan: falar com Batista sobre Low Tickets LATAM que estão rodando e próximos ajustes de campanha",
-        "Selecionar os 2 melhores e-books LATAM para próxima tradução/adaptação ao inglês"
+        "Retomar diagnóstico de investimento dos low tickets com Batista: campanhas ativas, verba atual, produtos com melhor ROAS e gargalos de checkout/tracking",
+        "Definir regra de escala defensiva: manter anúncios que fiquem próximos do break-even e cortem perda clara rápido",
+        "Separar os 2 e-books mais fortes para tradução ao inglês e envio ao Rogério para revisão"
       ],
       "wait": [
-        "Sem conversa com Batista, risco de manter verba em campanha com sinal fraco ou sem diagnóstico claro",
-        "Radar em inglês precisa separar resultado real de tráfego, checkout e criativo para não virar análise genérica",
-        "Sem ranking LATAM por performance, a escolha dos próximos 2 e-books vira chute"
+        "Ranking atualizado dos e-books por vendas/ROAS para escolher os dois melhores sem achismo",
+        "Confirmação operacional de quais campanhas voltam primeiro e com qual limite de perda aceitável",
+        "Tradução para inglês precisa sair antes da revisão do Rogério"
       ],
       "next": [
-        "Conferir vendas/receita pela Hotmart e gasto/métricas pela Meta antes do diagnóstico",
-        "Separar por produto/campanha: vendas, gasto, CAC, ROAS, criativos ativos e próximos testes",
-        "Rankear e-books LATAM por lucro/ROAS/volume para escolher os 2 próximos em inglês",
-        "Para cada e-book escolhido: traduzir para inglês, mandar para Rogério/Penambá revisar e só depois dar continuidade operacional",
-        "Listar perguntas objetivas para Batista: o que está ativo, o que foi pausado, hipótese atual e próxima ação"
+        "Depois da tradução: enviar ao Rogério para revisão técnica/idiomática antes de qualquer publicação",
+        "Montar base de campanha em inglês com promessa, criativos e página sem duplicar estrutura ruim",
+        "Conectar compra low ticket com oferta de plataforma/assinatura como próximo passo natural"
       ],
       "done": [
-        "Rotina Low Tickets já tem regra operacional: Hotmart como fonte da verdade para vendas e Meta Ads para mídia/tráfego"
+        "Diretriz estratégica definida por Ruan: Low Ticket pode operar no empate se estiver gerando base qualificada"
       ],
       "nextActions": [
-        "Montar relatório/radar da campanha Low Ticket em inglês com números atualizados",
-        "Ruan: falar com Batista sobre Low Tickets LATAM que estão rodando e próximos ajustes de campanha",
-        "Selecionar os 2 melhores e-books LATAM para próxima tradução/adaptação ao inglês",
-        "Conferir vendas/receita pela Hotmart e gasto/métricas pela Meta antes do diagnóstico",
-        "Separar por produto/campanha: vendas, gasto, CAC, ROAS, criativos ativos e próximos testes",
-        "Rankear e-books LATAM por lucro/ROAS/volume para escolher os 2 próximos em inglês",
-        "Para cada e-book escolhido: traduzir para inglês, mandar para Rogério/Penambá revisar e só depois dar continuidade operacional",
-        "Listar perguntas objetivas para Batista: o que está ativo, o que foi pausado, hipótese atual e próxima ação"
+        "Retomar diagnóstico de investimento dos low tickets com Batista: campanhas ativas, verba atual, produtos com melhor ROAS e gargalos de checkout/tracking",
+        "Definir regra de escala defensiva: manter anúncios que fiquem próximos do break-even e cortem perda clara rápido",
+        "Separar os 2 e-books mais fortes para tradução ao inglês e envio ao Rogério para revisão",
+        "Depois da tradução: enviar ao Rogério para revisão técnica/idiomática antes de qualquer publicação",
+        "Montar base de campanha em inglês com promessa, criativos e página sem duplicar estrutura ruim",
+        "Conectar compra low ticket com oferta de plataforma/assinatura como próximo passo natural"
       ],
       "blockers": [
-        "Sem conversa com Batista, risco de manter verba em campanha com sinal fraco ou sem diagnóstico claro",
-        "Radar em inglês precisa separar resultado real de tráfego, checkout e criativo para não virar análise genérica",
-        "Sem ranking LATAM por performance, a escolha dos próximos 2 e-books vira chute"
+        "Ranking atualizado dos e-books por vendas/ROAS para escolher os dois melhores sem achismo",
+        "Confirmação operacional de quais campanhas voltam primeiro e com qual limite de perda aceitável",
+        "Tradução para inglês precisa sair antes da revisão do Rogério"
       ],
-      "doneText": "Rotina Low Tickets já tem regra operacional: Hotmart como fonte da verdade para vendas e Meta Ads para mídia/tráfego"
+      "doneText": "Diretriz estratégica definida por Ruan: Low Ticket pode operar no empate se estiver gerando base qualificada"
     },
     {
       "id": "oralplanner",
@@ -300,130 +296,140 @@
   ],
   "gargalos": [
     {
-      "title": "Plataforma · imagens do novo curso travam publicação de sexta",
-      "priority": "p0",
+      "title": "M9 Stefan Cardon · revisar hoje",
+      "filter": "diplomado",
+      "frente": "Diplomado / Freedom",
+      "deadline": "Hoje 06/08",
+      "blocks": "Sem revisão hoje, o M9 começa a atrasar a cadeia de edição/liberação",
+      "owner": "Ruan / TAOS"
+    },
+    {
+      "title": "Stefan Cardon · resposta com pagamento no fim do mês",
+      "filter": "diplomado",
+      "frente": "Diplomado / Freedom",
+      "deadline": "Após revisão M9",
+      "blocks": "Mensagem envolve terceiro e pagamento; precisa de aprovação do Ruan antes de enviar",
+      "owner": "Ruan"
+    },
+    {
+      "title": "E-books em inglês · selecionar 2 melhores e traduzir",
+      "filter": "lowticket",
+      "frente": "Low Tickets / Conteúdo",
+      "deadline": "Esta semana",
+      "blocks": "Sem seleção por performance, tradução pode gastar energia no produto errado",
+      "owner": "Ruan / TAOS"
+    },
+    {
+      "title": "Low Ticket · retomada com ROAS de equilíbrio",
+      "filter": "lowticket",
+      "frente": "Low Tickets",
+      "deadline": "Esta semana",
+      "blocks": "Sem mídia rodando, não gera base nova para ofertas maiores",
+      "owner": "Ruan / Batista"
+    },
+    {
+      "title": "Funil NoCode Startup · modelar para XDental",
+      "filter": "lancamentos",
+      "frente": "Plataforma / Lançamentos",
+      "deadline": "Rápido · primeira versão",
+      "blocks": "Sem modelo de página/oferta, a plataforma continua dependendo de lançamentos maiores",
+      "owner": "Ruan / TAOS"
+    },
+    {
+      "title": "Plataforma · assets do curso novo",
       "filter": "plataforma",
       "frente": "Plataforma de Assinatura",
-      "deadline": "Hoje 05/08",
-      "blocks": "Sem banners/capas/imagens finais, o curso editado não sobe na sexta",
+      "deadline": "Hoje/amanhã",
+      "blocks": "Sem banners/capas/imagens finais, o curso editado não sobe com qualidade",
       "owner": "Ruan / Design / TAOS"
     },
     {
-      "title": "Diplomado M8 · prova precisa estar programada e comprovada",
-      "priority": "p0",
+      "title": "Diplomado M8 · PDF Klyro e prova com Felipe",
       "filter": "diplomado",
       "frente": "Diplomado / Freedom",
-      "deadline": "Sex 07/08",
-      "blocks": "Se a prova não estiver liberada/programada com Felipe, vira falha de entrega aos alunos",
-      "owner": "Ruan / Felipe"
-    },
-    {
-      "title": "Diplomado M8 · pacote PDF para Klyro vence hoje",
-      "priority": "p0",
-      "filter": "diplomado",
-      "frente": "Diplomado Ortho Pro",
-      "deadline": "Hoje 05/08",
-      "blocks": "Sem envio para Klyro hoje, material complementar aperta a janela da semana",
-      "owner": "Ruan / Klyro"
-    },
-    {
-      "title": "Lançamento · fechar oferta com Serginho e Lucas",
-      "priority": "p0",
-      "filter": "lancamentos",
-      "frente": "Lançamento / Oferta",
-      "deadline": "Sex 07/08 · 16h",
-      "blocks": "Sem oferta fechada, o lançamento chega na semana seguinte sem promessa/estrutura comercial definida",
-      "owner": "Ruan / Serginho / Lucas"
-    },
-    {
-      "title": "Freedom de Alinhadores · aula de sexta no radar",
-      "priority": "p1",
-      "filter": "diplomado",
-      "frente": "Freedom / Diplomado Alinhadores",
-      "deadline": "Sex 07/08",
-      "blocks": "Precisa entrar na checagem operacional da sexta junto com prova M8 e publicação do curso",
-      "owner": "Ruan / Equipe"
+      "deadline": "Pendente de ontem",
+      "blocks": "Sem evidência, risco de falha de entrega do M8 continua aberto",
+      "owner": "Ruan / Felipe / Klyro"
     },
     {
       "title": "Chile · reunião de alinhamento segunda cedo",
-      "priority": "p1",
       "filter": "chile",
       "frente": "Chile / CIOCH",
       "deadline": "Seg 10/08 · 08h30",
-      "blocks": "Precisa chegar com pendências de stand/design/comprovantes e próximos prazos organizados",
+      "blocks": "Precisa chegar com stand/design/comprovantes e próximos prazos organizados",
       "owner": "Ruan / Equipe Chile"
-    },
-    {
-      "title": "Low Tickets · alinhar inglês + LATAM com Batista",
-      "priority": "p1",
-      "filter": "lowticket",
-      "frente": "Low Tickets",
-      "deadline": "Seg 03/08",
-      "blocks": "Sem diagnóstico, risco de manter verba sem decisão clara de escala/pausa/testes",
-      "owner": "Ruan / Batista / TAOS"
-    },
-    {
-      "title": "Financeiro pessoal/empresa · fechamento cartão + salário BPO",
-      "priority": "p1",
-      "filter": "financeiro",
-      "frente": "Financeiro",
-      "deadline": "Seg 03/08",
-      "blocks": "Se ficar para depois, mistura fechamento de cartão, salário e caixa operacional da semana",
-      "owner": "Ruan / BPO"
-    },
-    {
-      "title": "Chile/CIOCH · confirmar recebimento do comprovante do design",
-      "priority": "p0",
-      "filter": "chile",
-      "frente": "Chile / CIOCH",
-      "deadline": "Seg 03/08",
-      "blocks": "Sem confirmação de recebimento do comprovante, fica ruído entre pagamento, design e produção do stand",
-      "owner": "Ruan / equipe Chile"
-    },
-    {
-      "title": "OralPlanner · uso sem visibilidade",
-      "priority": "p1",
-      "filter": "oralplanner",
-      "frente": "OralPlanner",
-      "deadline": "Esta semana",
-      "blocks": "Sem dados de onboarding/uso, a frente fica solta e sem decisão",
-      "owner": "Felipe"
     }
   ],
   "radarDoDia": [
     {
       "time": "hoje",
-      "task": "🎬 Finalizar imagens do design do novo curso da plataforma de assinatura",
-      "frente": "🎬 PA",
+      "task": "🎓 Revisar o Módulo 9 do Stefan Cardon — gravado e liberado",
+      "frente": "🎓 DIP",
       "status": "🔥"
     },
     {
       "time": "hoje",
-      "task": "🎬 Fechar banners/capas/peças visuais necessárias para upload e publicação do curso",
-      "frente": "🎬 PA",
-      "status": "🔥"
-    },
-    {
-      "time": "hoje",
-      "task": "🎬 Organizar pacote final de assets para deixar publicação de sexta sem dependência visual",
-      "frente": "🎬 PA",
+      "task": "🎓 Preparar mensagem para Stefan: agradecer, confirmar recebimento e explicar pagamento mais para o fim do mês — pedir ok do Ruan antes de enviar",
+      "frente": "🎓 DIP",
       "status": "⚠️"
     },
     {
       "time": "hoje",
-      "task": "🎓 Enviar pacote PDF do M8 para Klyro — item do Google Calendar oficial de 05/08",
+      "task": "🎓 Checar pendência de ontem: pacote PDF do M8 para Klyro",
       "frente": "🎓 DIP",
+      "status": "⚠️"
+    },
+    {
+      "time": "hoje",
+      "task": "🎓 Confirmar pendência de ontem: prova/liberação do M8 com Felipe",
+      "frente": "🎓 DIP",
+      "status": "⚠️"
+    },
+    {
+      "time": "hoje",
+      "task": "📚 Selecionar os 2 e-books mais fortes para traduzir para inglês",
+      "frente": "🛒 LT",
       "status": "🔥"
     },
     {
       "time": "hoje",
-      "task": "🎓 Confirmar com Felipe que a prova do M8 está pronta, configurada e programada para sexta",
-      "frente": "🎓 DIP",
+      "task": "📚 Iniciar tradução dos 2 e-books escolhidos e preparar pacote para revisão do Rogério",
+      "frente": "🛒 LT",
       "status": "🔥"
     },
     {
+      "time": "hoje",
+      "task": "🛒 Retomar plano de investimento Low Ticket com meta de ROAS no mínimo se pagando para gerar base",
+      "frente": "🛒 LT",
+      "status": "🔥"
+    },
+    {
+      "time": "hoje",
+      "task": "🛒 Levantar campanhas/produtos que podem voltar primeiro com limite de perda controlado",
+      "frente": "🛒 LT",
+      "status": "⚠️"
+    },
+    {
+      "time": "hoje",
+      "task": "🧩 Modelar funil NoCode Startup: criativo por curso → página do curso → plataforma completa incluída",
+      "frente": "🚀 FUNIL",
+      "status": "🔥"
+    },
+    {
+      "time": "hoje",
+      "task": "🧩 Adaptar modelo para XDental e desenhar upsell/ponte pós-compra do low ticket para plataforma",
+      "frente": "🚀 FUNIL",
+      "status": "🔥"
+    },
+    {
+      "time": "pendente ontem",
+      "task": "🎬 Finalizar imagens/banners/capas do novo curso da plataforma de assinatura",
+      "frente": "🎬 PA",
+      "status": "⚠️"
+    },
+    {
       "time": "sexta",
-      "task": "🎬 Publicar novo curso da plataforma de assinatura após validar assets + arquivo editado",
+      "task": "🎬 Publicar novo curso da plataforma após validar assets + arquivo editado",
       "frente": "🎬 PA",
       "status": "📅"
     },
@@ -443,37 +449,13 @@
       "time": "sexta 16h",
       "task": "🚀 Reunião com Serginho e Lucas para fechar oferta do lançamento",
       "frente": "🚀 FREE",
-      "status": "🔥"
-    },
-    {
-      "time": "hoje",
-      "task": "🚀 Masterclass Incisivos: revisar números de captação, entrada WhatsApp, pesquisa e CPL se ainda não foi marcado",
-      "frente": "🚀 FREE",
-      "status": "⚠️"
-    },
-    {
-      "time": "hoje",
-      "task": "🚀 Conferir com Felipe se fluxo de boas-vindas da Masterclass segue disparando corretamente",
-      "frente": "🚀 FREE",
-      "status": "⚠️"
-    },
-    {
-      "time": "pendente",
-      "task": "🛒 Low Tickets inglês/LATAM: manter diagnóstico com Batista e ranking dos próximos e-books",
-      "frente": "🛒 LT",
-      "status": "⚠️"
-    },
-    {
-      "time": "segunda 08h30",
-      "task": "🇨🇱 Reunião sobre Chile/CIOCH — levar status de stand, design, comprovante e próximos prazos",
-      "frente": "🇨🇱 CHL",
       "status": "📅"
     },
     {
-      "time": "pendente",
-      "task": "🇨🇱 Chile/CIOCH: confirmar recebimento do comprovante de pagamento da empresa do design",
+      "time": "segunda 08h30",
+      "task": "🇨🇱 Reunião sobre Chile/CIOCH — levar status de stand, design, comprovantes e próximos prazos",
       "frente": "🇨🇱 CHL",
-      "status": "⚠️"
+      "status": "📅"
     },
     {
       "time": "pendente",
@@ -489,14 +471,13 @@
     }
   ],
   "metrics": {
-    "p0": 4,
-    "p1": 3,
-    "p2": 0,
-    "p3": 0,
-    "done": 0,
-    "tasks": 16
+    "tasks": 18,
+    "today": 10,
+    "week": 5,
+    "waiting": 7,
+    "done": 0
   },
-  "radarExtra": "Fontes conferidas em 05/08: áudio do Ruan no tópico Dados/Painel; Google Calendar oficial rdomith@gmail.com para 05/08; pendências herdadas da versão pública anterior. Como os checks do navegador ficam em localStorage do usuário, mantive como aberto tudo que não tinha evidência clara de conclusão.",
+  "radarExtra": "Fontes conferidas em 06/08: áudio do Ruan no tópico Dados/Painel; Google Calendar oficial rdomith@gmail.com para 05/08 e 06/08. Itens de ontem continuam abertos por falta de evidência de conclusão no ambiente do TAOS; checks feitos no navegador do usuário ficam em localStorage.",
   "sourceFile": "projects/xdental-painel-taos/index.html",
   "radar": [
     {
