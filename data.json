@@ -6,51 +6,58 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Quinta 06/08 entrou com quatro movimentos novos: traduzir 2 e-books fortes para inglês e mandar para Rogério revisar; retomar Low Tickets buscando ROAS de equilíbrio para gerar base; modelar o funil tipo NoCode Startup para vender plataforma XDental/upsell pós-low ticket; e revisar hoje o Módulo 9 do Stefan Cardon, já gravado e liberado. Pendências de ontem seguem abertas até haver evidência de conclusão."
+    "headline": "Quinta 06/08 entrou com cinco movimentos: fazer criativos para o lançamento da Masterclass Tracción de Incisivos Retenidos; traduzir 2 e-books fortes para inglês e mandar para Rogério revisar; retomar Low Tickets buscando ROAS de equilíbrio para gerar base; modelar o funil tipo NoCode Startup para vender plataforma XDental/upsell pós-low ticket; e revisar hoje o Módulo 9 do Stefan Cardon, já gravado e liberado. Pendências de ontem seguem abertas até haver evidência de conclusão."
   },
   "fronts": [
     {
       "id": "lancamento-alineadores",
       "filter": "lancamentos",
       "icon": "🚀",
-      "name": "Funil Plataforma XDental · modelo NoCode Startup",
+      "name": "Funis XDental · criativos Masterclass + modelo NoCode",
       "status": "attention",
       "priority": "p1",
       "progress": 35,
       "owner": "Ruan / TAOS / Equipe Comercial",
-      "summary": "Ideia forte para modelar rápido: criativo fala de um curso específico, página vende aquele curso como entrada, mas a oferta entrega também a plataforma inteira. Depois do low ticket, usar upsell/ponte para plataforma.",
+      "summary": "Dois blocos ativos hoje: produzir criativos para o lançamento da Masterclass Tracción de Incisivos Retenidos e modelar o funil tipo NoCode Startup para vender plataforma XDental/upsell pós-low ticket.",
       "exec": [
+        "Hoje: fazer criativos para o lançamento da Masterclass Tracción de Incisivos Retenidos",
         "Mapear o funil da NoCode Startup: criativos por curso específico → página específica → oferta com plataforma completa incluída",
         "Traduzir o modelo para XDental: curso/tema do criativo como porta de entrada e plataforma como valor principal embutido",
         "Desenhar fluxo pós-compra low ticket com convite/upsell para plataforma XDental"
       ],
       "wait": [
+        "Criativos da Masterclass precisam sair hoje para não deixar a captação depender só do material atual",
         "Referências da página/criativos da NoCode Startup precisam ser capturadas para evitar modelagem abstrata",
         "Definir qual produto/tema XDental será o primeiro teste desse modelo",
         "Oferta da plataforma precisa ficar clara: o curso vende o clique, a plataforma justifica o ticket"
       ],
       "next": [
+        "Depois dos criativos: subir/enviar para tráfego e acompanhar primeiros sinais de CTR/CPL",
         "Criar wireframe simples da página: headline do curso, promessa específica, bônus/plataforma completa e checkout",
         "Listar 5 ângulos de criativos por curso para testar o modelo",
         "Definir onde entra o upsell pós-low ticket: obrigado, e-mail/WhatsApp ou order bump/checkout"
       ],
       "done": [
-        "Direção aprovada por Ruan: modelar NoCode Startup e adaptar para XDental/plataforma"
+        "Direção aprovada por Ruan: modelar NoCode Startup e adaptar para XDental/plataforma",
+        "Tema oficial do lançamento gratuito definido: Masterclass Tracción de Incisivos Retenidos"
       ],
       "nextActions": [
+        "Hoje: fazer criativos para o lançamento da Masterclass Tracción de Incisivos Retenidos",
         "Mapear o funil da NoCode Startup: criativos por curso específico → página específica → oferta com plataforma completa incluída",
         "Traduzir o modelo para XDental: curso/tema do criativo como porta de entrada e plataforma como valor principal embutido",
         "Desenhar fluxo pós-compra low ticket com convite/upsell para plataforma XDental",
+        "Depois dos criativos: subir/enviar para tráfego e acompanhar primeiros sinais de CTR/CPL",
         "Criar wireframe simples da página: headline do curso, promessa específica, bônus/plataforma completa e checkout",
         "Listar 5 ângulos de criativos por curso para testar o modelo",
         "Definir onde entra o upsell pós-low ticket: obrigado, e-mail/WhatsApp ou order bump/checkout"
       ],
       "blockers": [
+        "Criativos da Masterclass precisam sair hoje para não deixar a captação depender só do material atual",
         "Referências da página/criativos da NoCode Startup precisam ser capturadas para evitar modelagem abstrata",
         "Definir qual produto/tema XDental será o primeiro teste desse modelo",
         "Oferta da plataforma precisa ficar clara: o curso vende o clique, a plataforma justifica o ticket"
       ],
-      "doneText": "Direção aprovada por Ruan: modelar NoCode Startup e adaptar para XDental/plataforma"
+      "doneText": "Direção aprovada por Ruan: modelar NoCode Startup e adaptar para XDental/plataforma; Tema oficial do lançamento gratuito definido: Masterclass Tracción de Incisivos Retenidos"
     },
     {
       "id": "chile-cioch",
@@ -411,6 +418,12 @@
     },
     {
       "time": "hoje",
+      "task": "🚀 Fazer criativos para o lançamento da Masterclass Tracción de Incisivos Retenidos",
+      "frente": "🚀 FREE",
+      "status": "🔥"
+    },
+    {
+      "time": "hoje",
       "task": "🧩 Modelar funil NoCode Startup: criativo por curso → página do curso → plataforma completa incluída",
       "frente": "🚀 FUNIL",
       "status": "🔥"
@@ -471,7 +484,7 @@
     }
   ],
   "metrics": {
-    "tasks": 18,
+    "tasks": 19,
     "today": 10,
     "week": 5,
     "waiting": 7,
