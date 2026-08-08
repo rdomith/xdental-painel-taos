@@ -1,42 +1,72 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.25-clean-radar-kanban-2026-08-08",
-    "lastUpdated": "2026-08-08 · Painel limpo: Radar Operacional + Kanban por Frente",
+    "version": "2.26-kanban-operacional-2026-08-08",
+    "lastUpdated": "2026-08-08 · Kanban atualizado por frente + colunas visuais",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Home limpa para uso diário: apenas Radar Operacional com demandas e Kanban por Frente. Frentes atualizadas para Sniper Elite, Chile/CIOCH, Diplomado, Plataforma de Assinatura, Low Tickets + Inglês, OralPlanner em segundo plano, XDental Club MVP e Funil perpétuo da Plataforma de Assinatura."
+    "headline": "Kanban atualizado para uso real: Lançamento 17/08 como primeira frente, Sniper Elite com confirmação de data/processo, Chile com reunião e controle financeiro separado, Diplomado Freedom com próxima data 24/08, Plataforma com post do curso da Prodaex, Low Tickets em inglês, OralPlanner stand-by, XDental Club MVP Fase 1 e Funil perpétuo da plataforma."
   },
   "fronts": [
+    {
+      "id": "lancamento-masterclass-17-08",
+      "filter": "lancamento",
+      "icon": "🚀",
+      "name": "Lançamento · Masterclass 17/08",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 42,
+      "owner": "Ruan / TAOS / Batista / Equipe",
+      "summary": "Frente principal de vendas agora: captação da Masterclass de 17/08 rodando, com aquecimento começando em 10/08 e acompanhamento diário de leads até o evento.",
+      "exec": [
+        "Acompanhar captação da Masterclass de 17/08: leads, entrada nos grupos e custo por lead",
+        "Organizar ações de aquecimento que começam segunda 10/08",
+        "Computar diariamente entrada de leads e evolução da base até o evento"
+      ],
+      "wait": [
+        "Dados diários de leads/captação precisam entrar no radar para decisão rápida",
+        "Aquecimento depende de calendário de mensagens e responsáveis",
+        "Criativos/tráfego precisam ser acompanhados para não descobrir gargalo tarde"
+      ],
+      "next": [
+        "Montar régua de aquecimento de 10/08 até 17/08",
+        "Separar checklist de páginas, grupos, tracking e comunicação",
+        "Atualizar radar todos os dias com leads, gargalos e próxima ação"
+      ],
+      "done": [
+        "Data da Masterclass definida: 17/08",
+        "Frente de lançamento criada como primeira frente do Kanban"
+      ]
+    },
     {
       "id": "sniper-elite",
       "filter": "elite",
       "icon": "💎",
       "name": "Sniper Elite / Galeria Elite",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 55,
-      "owner": "Ruan / Sérgio / TAOS",
-      "summary": "Frente ativa de continuidade do Elite: manter aula reagendada, Biblioteca/Galeria de Casos e validação de materiais sob controle, sem publicar casos com áudio inconsistente.",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 50,
+      "owner": "Ruan / Sérgio / Mônica / Felipe / Diego",
+      "summary": "Prioridade imediata: confirmar com Serginho a data de agosto do Elite. Processo operacional dos encontros precisa ficar padronizado: aviso, link, aula, gravação e subida nas plataformas.",
       "exec": [
-        "Confirmar nova data da aula reagendada do Sniper Elite com Sérgio",
-        "Mapear próximo lote de casos para a Galeria Elite/Biblioteca de Casos",
-        "Manter auditoria de áudio/transcrição antes de qualquer publicação"
+        "Segunda: confirmar com Serginho a data de agosto do Sniper Elite",
+        "Mapear processo dos encontros Elite: aviso aos alunos, link de transmissão, aula ao vivo, gravação e subida nas plataformas",
+        "Felipe cria o link da transmissão um dia antes e envia para Sérgio"
       ],
       "wait": [
-        "Nova data da aula depende do Sérgio",
-        "Casos bloqueados seguem fora de publicação até validação de áudio",
-        "Definir ritmo de atualização mensal da Galeria Elite"
+        "Nova data de agosto depende do Sérgio",
+        "Processos do Sniper Elite ainda precisam ser criados/organizados na área de processos",
+        "Sem link criado e enviado ao Sérgio um dia antes, aumenta risco operacional no dia da aula"
       ],
       "next": [
-        "Depois da data: preparar comunicação aos alunos",
-        "Separar casos aptos e casos bloqueados em listas diferentes",
-        "Atualizar painel com evidência quando a próxima aula/lote for confirmado"
+        "Um dia antes: Mônica envia aviso aos alunos de que amanhã terá encontro",
+        "No dia: Mônica avisa que é o dia da aula e depois avisa quando estiver ao vivo",
+        "Depois da aula: pegar gravação do MIT e passar para Mônica subir na plataforma e para Diego subir na plataforma do Sérgio"
       ],
       "done": [
-        "Galeria Elite já existe e está ativa",
-        "Regra de segurança preservada: não publicar caso com áudio inconsistente"
+        "Fluxo operacional base do Elite definido por Ruan",
+        "Regra mantida: casos/áudios da Galeria só sobem após validação"
       ]
     },
     {
@@ -46,55 +76,56 @@
       "name": "Evento Chile / CIOCH",
       "status": "risk",
       "priority": "p0",
-      "progress": 66,
-      "owner": "Ruan / Lucas / equipe Chile",
-      "summary": "Frente crítica por data fixa e dependências externas: stand, design, comprovantes, prazos de montagem e presença no CIOCH.",
+      "progress": 72,
+      "owner": "Ruan / Sérgio / Lucas / TAOS",
+      "summary": "Segunda 08h30 tem reunião com Ruan, Sérgio e Lucas para decidir stand, oferta/venda e ativação. Operacional principal já foi resolvido; falta controle financeiro consolidado.",
       "exec": [
-        "Confirmar status do stand/design e comprovantes com equipe do Chile",
-        "Organizar checklist de documentos, arquivos e prazos até montagem",
-        "Levar status consolidado para próxima reunião de alinhamento"
+        "Segunda 08h30: reunião Chile com Ruan, Sérgio e Lucas",
+        "Levar pauta objetiva: o que vender, como ativar o stand e quais ações fazer no evento",
+        "Iniciar controle financeiro separado dos gastos do Chile"
       ],
       "wait": [
-        "Confirmação da equipe do Chile sobre recebimento/andamento",
-        "Fornecedor/design confirmar próximos passos de produção",
-        "Risco de prazo se alguma etapa externa ficar sem dono"
+        "Definição de stand/oferta/ativação depende da reunião de segunda",
+        "Controle financeiro precisa consolidar pagamento do evento, stand, design/gráfica, passagens, hotéis e polos",
+        "Polos compradas: pagamento previsto para segunda"
       ],
       "next": [
-        "Revalidar prazo de 21/08 para placas/patentes de montagem",
-        "Criar checklist final de viagem/evento",
-        "Registrar no radar qualquer pendência crítica com data e responsável"
+        "Depois da reunião: transformar decisões em checklist de execução",
+        "Montar planilha de gastos do Chile fora do painel operacional",
+        "Registrar no painel só prazos/decisões que virarem ação operacional"
       ],
       "done": [
-        "Chile/CIOCH mantido como frente fixa do painel operacional"
+        "Pagamento do evento/stand/design e parte gráfica encaminhados segundo Ruan",
+        "Demais custos conhecidos até agora: passagens, hotéis e quatro polos"
       ]
     },
     {
-      "id": "diplomado",
+      "id": "diplomado-freedom",
       "filter": "diplomado",
       "icon": "🎓",
-      "name": "Diplomado / Freedom",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 74,
+      "name": "Diplomado Freedom / Alinhadores",
+      "status": "operational",
+      "priority": "p1",
+      "progress": 78,
       "owner": "Ruan / TAOS / Felipe / professores",
-      "summary": "Frente central de entrega acadêmica: módulos, provas, PDFs, professores, comunicação aos alunos e reposicionamento como diplomado/curso de extensão.",
+      "summary": "Evento e primeiro encontro ao vivo já realizados. Próxima data crítica: 24/08, liberação do Módulo 2 de Alinhadores.",
       "exec": [
-        "Revisar pendências abertas de módulos, provas e materiais",
-        "Manter controle semanal de professores, gravações, edição e liberação",
-        "Acompanhar ajustes de ementa/carga horária/módulos quando surgirem"
+        "Manter próximas datas do Diplomado Freedom mapeadas",
+        "Registrar 24/08 como próxima liberação: Módulo 2 de Alinhadores",
+        "Conferir se comunicação/material do Módulo 2 precisam entrar no radar antes da liberação"
       ],
       "wait": [
-        "Evidência de envio/liberação de materiais pendentes",
-        "Confirmação de responsáveis internos antes de remover tarefas do radar",
-        "Alinhamentos acadêmicos dependem de Fabio/Sérgio quando envolver ementa"
+        "Sem nova ação crítica até aproximação do Módulo 2",
+        "Materiais/comunicação dependem de checagem prévia na semana da liberação"
       ],
       "next": [
-        "Atualizar o radar com próximas datas críticas dos módulos",
-        "Separar tarefas por professor/módulo para evitar bola caída",
-        "Registrar comprovação de liberação quando cada entrega sair"
+        "Na semana anterior a 24/08: revisar material, upload e comunicação aos alunos",
+        "Adicionar ao radar qualquer pendência de professor/material/prova que aparecer",
+        "Manter cadência de encontros e liberações visível"
       ],
       "done": [
-        "Diplomado segue como frente fixa de Kanban operacional"
+        "Primeiro encontro ao vivo do Diplomado Freedom realizado na sexta",
+        "Evento inicial do Diplomado Freedom concluído"
       ]
     },
     {
@@ -104,56 +135,54 @@
       "name": "Plataforma de Assinatura",
       "status": "attention",
       "priority": "p1",
-      "progress": 62,
-      "owner": "Ruan / TAOS / Design / Plataforma",
-      "summary": "Frente de operação da assinatura atual: cursos, assets, upload, comunicação, experiência do aluno e rotina de publicação.",
+      "progress": 68,
+      "owner": "Ruan / TAOS / Diego / Design",
+      "summary": "Curso do mês de agosto já foi publicado. Próxima demanda é comunicar no feed que o curso da Prodaex foi liberado dentro da plataforma.",
       "exec": [
-        "Conferir próximos cursos/materiais da plataforma",
-        "Garantir assets necessários: capas, banners, thumbnails e arquivos finais",
-        "Registrar pendências de publicação no radar operacional"
+        "Preparar imagem/briefing para Diego fazer post no feed sobre o curso liberado",
+        "Mensagem central: novo curso da Prodaex liberado na plataforma — curso do mês de agosto",
+        "Garantir que comunicação do feed aponte para a plataforma e gere percepção de valor recorrente"
       ],
       "wait": [
-        "Materiais dependem de design/edição antes de upload",
-        "Sem evidência de publicação, tarefa continua aberta",
-        "Calendário de novos cursos precisa seguir visível"
+        "Diego precisa receber briefing/imagem para produzir o post",
+        "Confirmar nome/descrição final do curso antes da arte final"
       ],
       "next": [
-        "Criar checklist padrão de publicação de curso",
-        "Conectar publicação com comunicação aos assinantes",
-        "Remover do painel qualquer bloco antigo que não ajude execução"
+        "Depois do post: registrar comunicação concluída",
+        "Criar checklist recorrente: publicou curso → avisou no feed → avisou base/alunos se aplicável",
+        "Mapear próximo curso/mês no calendário da plataforma"
       ],
       "done": [
-        "Frente preservada no painel limpo como operação da assinatura"
+        "Curso do mês de agosto publicado na plataforma"
       ]
     },
     {
-      "id": "lowtickets",
+      "id": "lowtickets-ingles",
       "filter": "lowticket",
       "icon": "🛒",
       "name": "Low Tickets + Inglês",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 48,
-      "owner": "Ruan / Batista / TAOS / Rogério",
-      "summary": "Low Tickets ficam como motor de aquisição e base. A vertente em inglês entra dentro da mesma frente, não como frente solta.",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 45,
+      "owner": "Ruan / TAOS / Rogério",
+      "summary": "Frente comercial em inglês: selecionar os 2 e-books que mais venderam em espanhol/América Latina, traduzir para inglês no Claude e enviar ao Rogério para revisão.",
       "exec": [
-        "Retomar diagnóstico de campanhas/produtos low ticket com foco em break-even e base",
-        "Selecionar e acompanhar e-books prioritários para versão em inglês",
-        "Organizar fluxo de revisão do Rogério antes de publicar material em inglês"
+        "Selecionar os 2 e-books com melhor performance em espanhol/América Latina",
+        "Traduzir os 2 e-books para inglês no Claude",
+        "Enviar versão traduzida ao Rogério para revisão"
       ],
       "wait": [
-        "Ranking atualizado de vendas/ROAS para escolher produtos sem achismo",
-        "Confirmação de quais campanhas voltam primeiro e com qual verba",
-        "Tradução/revisão em inglês antes de mídia ou página"
+        "Ranking de vendas/performance para escolher os dois e-books sem achismo",
+        "Revisão do Rogério antes de finalizar o e-book completo",
+        "Definir sequência de finalização: revisão, ajustes, diagramação/página e venda"
       ],
       "next": [
-        "Definir regra de corte/escala para campanhas low ticket",
-        "Montar pacote de página/criativos para os produtos em inglês",
-        "Conectar comprador low ticket à oferta maior/plataforma"
+        "Após revisão: aplicar ajustes do Rogério",
+        "Preparar versão final completa dos e-books em inglês",
+        "Montar próxima etapa comercial: página, checkout, criativos e acompanhamento de vendas"
       ],
       "done": [
-        "Diretriz mantida: low ticket pode empatar se estiver gerando base qualificada",
-        "Inglês agora fica explicitamente dentro da frente Low Tickets"
+        "Inglês fica dentro da frente Low Tickets, como Ruan definiu"
       ]
     },
     {
@@ -163,54 +192,54 @@
       "name": "OralPlanner",
       "status": "paused",
       "priority": "p2",
-      "progress": 30,
+      "progress": 28,
       "owner": "Ruan / Felipe",
-      "summary": "Projeto mantido no painel, mas em segundo plano. Só deve subir prioridade se houver sinal claro de uso, entrega ou decisão estratégica.",
+      "summary": "Stand-by. A próxima checagem útil é entender se o pessoal está usando de verdade antes de recolocar energia operacional.",
       "exec": [
-        "Manter OralPlanner visível como frente secundária",
-        "Cobrar status apenas quando houver janela operacional ou decisão pendente relevante"
+        "Manter OralPlanner em stand-by no Kanban",
+        "Quando houver janela: verificar uso real pela equipe/pessoas com acesso"
       ],
       "wait": [
-        "Sem dados recentes de uso/adesão",
-        "Falta clareza sobre próximo marco do MVP/produto",
-        "Baixa prioridade frente às frentes comerciais e acadêmicas"
+        "Sem prioridade imediata frente às frentes comerciais",
+        "Falta evidência recente de uso/adesão",
+        "Próxima decisão depende de dados de utilização"
       ],
       "next": [
-        "Quando retomar: levantar usuários, acessos, casos criados e travas",
-        "Definir se OralPlanner vira produto, bônus ou ferramenta interna",
-        "Atualizar Kanban só com evidência nova"
+        "Levantar usuários ativos, acessos e casos criados",
+        "Separar travas reais de produto/onboarding",
+        "Decidir se volta para pauta ativa ou permanece em segundo plano"
       ],
       "done": [
-        "Reposicionado como segundo plano, sem sumir do radar"
+        "Reposicionado como segundo plano, sem desaparecer do painel"
       ]
     },
     {
       "id": "xdental-club",
       "filter": "club",
       "icon": "🏛️",
-      "name": "XDental Club · MVP novo produto",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 15,
+      "name": "XDental Club · MVP Fase 1",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 22,
       "owner": "Ruan / TAOS",
-      "summary": "Nova frente de trabalho: MVP do XDental Club, possível novo produto/oferta. Precisa sair do campo de ideia e virar escopo mínimo testável.",
+      "summary": "Segunda começa a Fase 1 do MVP: perguntar e pesquisar com a base de alunos para validar dor, desejo e oferta antes de montar produto completo.",
       "exec": [
-        "Abrir frente formal do XDental Club no Kanban",
-        "Definir hipótese do MVP: para quem, promessa, entrega mínima e preço/oferta",
-        "Listar ativos reaproveitáveis da plataforma/assinatura para montar o primeiro pacote"
+        "Segunda: iniciar MVP Fase 1 do XDental Club",
+        "Preparar pesquisa/perguntas para a base de alunos",
+        "Definir o que a pesquisa precisa descobrir: dor, desejo, formato, benefício e disposição de compra"
       ],
       "wait": [
-        "Falta definição do escopo mínimo do MVP",
-        "Falta decidir se o Club será oferta separada, camada da assinatura ou produto de entrada",
-        "Sem dono operacional além de Ruan/TAOS neste primeiro momento"
+        "Falta questionário final da Fase 1",
+        "Falta definir canal de envio e amostra da base",
+        "Sem respostas da base, não avançar para escopo fechado do produto"
       ],
       "next": [
-        "Montar canvas simples: público, promessa, entrega, preço, canal de venda",
-        "Definir primeira versão em 1 página de oferta + checklist de entrega",
-        "Depois da validação: transformar em tarefas por responsável"
+        "Consolidar respostas e padrões de demanda",
+        "Transformar aprendizados em hipótese de oferta do Club",
+        "Definir MVP Fase 2 a partir dos dados coletados"
       ],
       "done": [
-        "Frente criada no painel operacional conforme pedido do Ruan"
+        "Frente XDental Club criada no Kanban como MVP de novo produto"
       ]
     },
     {
@@ -218,90 +247,114 @@
       "filter": "funil-perpetuo",
       "icon": "♾️",
       "name": "Funil perpétuo da Plataforma de Assinatura",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 20,
+      "status": "attention",
+      "priority": "p1",
+      "progress": 25,
       "owner": "Ruan / TAOS / Tráfego",
-      "summary": "Novo funil corrigido no painel como funil perpétuo da plataforma de assinatura: aquisição contínua com oferta da plataforma, sem depender só de lançamentos.",
+      "summary": "Começar a estruturar o motor perpétuo da plataforma: oferta contínua, páginas, criativos, checkout e conexão com low tickets/conteúdo.",
       "exec": [
-        "Corrigir frente antiga/erro e nomear como Funil perpétuo da Plataforma de Assinatura",
-        "Modelar primeira versão do fluxo: anúncio/tema → página → checkout/oferta da plataforma",
-        "Definir como low ticket e conteúdo gratuito alimentam esse funil"
+        "Começar desenho do funil perpétuo da plataforma de assinatura",
+        "Definir primeira promessa/tema de entrada para tráfego",
+        "Mapear fluxo mínimo: anúncio → página → oferta da plataforma → checkout"
       ],
       "wait": [
-        "Falta escolher primeira promessa/tema de entrada",
-        "Falta clarear oferta: plataforma completa, assinatura, trial, bônus ou curso-gancho",
-        "Sem página/funil desenhado, a assinatura segue sem motor perpétuo"
+        "Falta escolher primeira oferta/tema âncora",
+        "Falta definir mecânica: assinatura direta, trial, curso-gancho ou bônus",
+        "Sem wireframe, tráfego ainda fica sem destino claro"
       ],
       "next": [
         "Criar wireframe da página e sequência de conversão",
-        "Listar criativos por dor/tema específico para tráfego",
+        "Listar criativos por dor/tema específico",
         "Definir KPI mínimo: CPL, checkout, conversão, CAC e payback"
       ],
       "done": [
-        "Frente renomeada e separada de lançamentos pontuais"
+        "Frente separada de lançamentos pontuais e mantida como motor contínuo"
       ]
     }
   ],
   "gargalos": [],
   "radarDoDia": [
     {
-      "time": "hoje",
-      "task": "⚙️ Limpar o painel operacional e deixar só Radar Operacional + Kanban por Frente",
-      "frente": "⚙️ PAINEL",
+      "time": "segunda",
+      "task": "🚀 Lançamento: acompanhar captação da Masterclass 17/08 e computar entrada de leads",
+      "frente": "🚀 LANÇ",
       "status": "🔥"
     },
     {
-      "time": "hoje",
-      "task": "🧭 Atualizar frentes fixas do Kanban: Elite, Chile, Diplomado, Plataforma, Low Tickets, OralPlanner, XDental Club e Funil Perpétuo",
-      "frente": "⚙️ PAINEL",
+      "time": "segunda",
+      "task": "🚀 Iniciar aquecimento da Masterclass: ações e mensagens a partir de 10/08",
+      "frente": "🚀 LANÇ",
       "status": "🔥"
     },
     {
-      "time": "hoje",
-      "task": "🏛️ Abrir frente XDental Club como MVP de novo produto",
-      "frente": "🏛️ CLUB",
+      "time": "segunda",
+      "task": "💎 Confirmar com Serginho a data de agosto do Sniper Elite",
+      "frente": "💎 ELITE",
       "status": "🔥"
     },
     {
-      "time": "hoje",
-      "task": "♾️ Corrigir “novo funil” para Funil perpétuo da Plataforma de Assinatura",
-      "frente": "♾️ FUNIL",
+      "time": "segunda 08h30",
+      "task": "🇨🇱 Reunião Chile com Ruan, Sérgio e Lucas: stand, venda/oferta e ativação",
+      "frente": "🇨🇱 CHL",
+      "status": "🔥"
+    },
+    {
+      "time": "segunda",
+      "task": "🇨🇱 Iniciar controle financeiro do Chile fora do painel: evento, stand, design/gráfica, passagens, hotéis e polos",
+      "frente": "🇨🇱 CHL",
+      "status": "⚠️"
+    },
+    {
+      "time": "24/08",
+      "task": "🎓 Diplomado Freedom: liberação do Módulo 2 de Alinhadores",
+      "frente": "🎓 DIP",
+      "status": "📅"
+    },
+    {
+      "time": "agora",
+      "task": "🎬 Plataforma: preparar briefing/imagem para Diego postar curso da Prodaex liberado no feed",
+      "frente": "🎬 PA",
+      "status": "🔥"
+    },
+    {
+      "time": "agora",
+      "task": "🛒 Low Tickets Inglês: selecionar 2 e-books campeões em espanhol/América Latina",
+      "frente": "🛒 LT",
       "status": "🔥"
     },
     {
       "time": "próximo",
-      "task": "🛒 Manter inglês dentro da frente Low Tickets, com seleção/tradução/revisão do Rogério",
+      "task": "🛒 Traduzir os 2 e-books para inglês no Claude e enviar ao Rogério para revisão",
       "frente": "🛒 LT",
       "status": "⚠️"
     },
     {
+      "time": "segunda",
+      "task": "🏛️ XDental Club: iniciar MVP Fase 1 com pesquisa/perguntas para a base de alunos",
+      "frente": "🏛️ CLUB",
+      "status": "🔥"
+    },
+    {
       "time": "próximo",
-      "task": "🧩 Rebaixar OralPlanner para segundo plano sem apagar a frente",
-      "frente": "🧩 ORAL",
+      "task": "♾️ Funil perpétuo: começar desenho do fluxo anúncio → página → oferta da plataforma → checkout",
+      "frente": "♾️ FUNIL",
       "status": "⚠️"
     },
     {
-      "time": "depois",
-      "task": "📌 Atualizar tarefas reais de cada frente depois da limpeza estrutural do painel",
-      "frente": "⚙️ PAINEL",
-      "status": "📅"
-    },
-    {
-      "time": "depois",
-      "task": "🔎 Remover da Home links/blocos que não são usados no dia a dia operacional",
-      "frente": "⚙️ PAINEL",
-      "status": "📅"
+      "time": "stand-by",
+      "task": "🧩 OralPlanner: manter em segundo plano e depois verificar uso real pela equipe",
+      "frente": "🧩 ORAL",
+      "status": "📌"
     }
   ],
   "metrics": {
-    "items": 8,
-    "fronts": 8,
-    "today": 4,
-    "week": 2,
+    "items": 12,
+    "fronts": 9,
+    "today": 7,
+    "week": 4,
     "done": 0
   },
-  "radarExtra": "Fonte: áudio do Ruan no tópico Dados/Painel em 08/08. Próximo passo: atualizar o conteúdo real de cada frente depois da limpeza estrutural.",
-  "sourceFile": "audio-telegram-4945-2026-08-08",
+  "radarExtra": "Detalhes financeiros do Chile ficam em memória/controle separado; no painel entram só reunião, decisão e criação do controle financeiro.",
+  "sourceFile": "audio-telegram-4951-2026-08-08",
   "radar": []
 }
