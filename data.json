@@ -1,43 +1,59 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.26-kanban-operacional-2026-08-08",
-    "lastUpdated": "2026-08-08 · Kanban atualizado por frente + colunas visuais",
+    "version": "2.27-radar-frentes-2026-08-12",
+    "lastUpdated": "2026-08-12 · Radar por frente de trabalho",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Kanban atualizado para uso real: Lançamento 17/08 como primeira frente, Sniper Elite com confirmação de data/processo, Chile com reunião e controle financeiro separado, Diplomado Freedom com próxima data 24/08, Plataforma com post do curso da Prodaex, Low Tickets em inglês, OralPlanner stand-by, XDental Club MVP Fase 1 e Funil perpétuo da plataforma."
+    "headline": "Radar operacional reorganizado por frente: data/horário, badge da frente e descrição da demanda. Foco absoluto da semana no lançamento de 17/08; Chile e lançamento de 12/09 entram como bloco principal da próxima semana."
   },
   "fronts": [
     {
       "id": "lancamento-masterclass-17-08",
       "filter": "lancamento",
       "icon": "🚀",
-      "name": "Lançamento · Masterclass 17/08",
+      "name": "Lançamento atual · Evento 17/08",
       "status": "risk",
       "priority": "p0",
-      "progress": 42,
-      "owner": "Ruan / TAOS / Batista / Equipe",
-      "summary": "Frente principal de vendas agora: captação da Masterclass de 17/08 rodando, com aquecimento começando em 10/08 e acompanhamento diário de leads até o evento.",
+      "progress": 58,
+      "owner": "Ruan / Fabián / Serginho / TAOS / Equipe",
+      "summary": "Frente número 1 desta semana. Criativos já foram enviados para o Fabián editar; agora o gargalo real é fechar oferta e slides do evento para o Serginho, além dos materiais do dia.",
       "exec": [
-        "Acompanhar captação da Masterclass de 17/08: leads, entrada nos grupos e custo por lead",
-        "Organizar ações de aquecimento que começam segunda 10/08",
-        "Computar diariamente entrada de leads e evolução da base até o evento"
+        "Conferir demandas do ClickUp do lançamento atual e puxar para o radar o que estiver bloqueando o evento",
+        "Definir a oferta final do evento — prioridade máxima porque destrava os slides",
+        "Fazer os slides do evento para o Serginho com a oferta fechada",
+        "Preparar materiais do dia do evento: peças, links, checklist operacional e suporte de transmissão/venda"
       ],
       "wait": [
-        "Dados diários de leads/captação precisam entrar no radar para decisão rápida",
-        "Aquecimento depende de calendário de mensagens e responsáveis",
-        "Criativos/tráfego precisam ser acompanhados para não descobrir gargalo tarde"
+        "Slides dependem da oferta final fechada por Ruan",
+        "Materiais do evento dependem de consolidar as tarefas do ClickUp",
+        "Edição dos criativos está com Fabián; acompanhar entrega para não atrasar campanha"
       ],
       "next": [
-        "Montar régua de aquecimento de 10/08 até 17/08",
-        "Separar checklist de páginas, grupos, tracking e comunicação",
-        "Atualizar radar todos os dias com leads, gargalos e próxima ação"
+        "Depois da oferta: revisar narrativa, CTA, bônus/condições e objeções principais",
+        "Depois dos slides: separar versão para Serginho e checklist de uso no dia",
+        "Acompanhar Calendar oficial até 17/08 e transformar qualquer evento crítico em demanda do radar"
       ],
       "done": [
-        "Data da Masterclass definida: 17/08",
-        "Frente de lançamento criada como primeira frente do Kanban"
-      ]
+        "Ruan já passou os vídeos de criativo para Fabián editar",
+        "Calendar oficial confirma evento XDental | Lançamento gratuito XDental em 17/08"
+      ],
+      "nextActions": [
+        "Conferir demandas do ClickUp do lançamento atual e puxar para o radar o que estiver bloqueando o evento",
+        "Definir a oferta final do evento — prioridade máxima porque destrava os slides",
+        "Fazer os slides do evento para o Serginho com a oferta fechada",
+        "Preparar materiais do dia do evento: peças, links, checklist operacional e suporte de transmissão/venda",
+        "Depois da oferta: revisar narrativa, CTA, bônus/condições e objeções principais",
+        "Depois dos slides: separar versão para Serginho e checklist de uso no dia",
+        "Acompanhar Calendar oficial até 17/08 e transformar qualquer evento crítico em demanda do radar"
+      ],
+      "blockers": [
+        "Slides dependem da oferta final fechada por Ruan",
+        "Materiais do evento dependem de consolidar as tarefas do ClickUp",
+        "Edição dos criativos está com Fabián; acompanhar entrega para não atrasar campanha"
+      ],
+      "doneText": "Ruan já passou os vídeos de criativo para Fabián editar; Calendar oficial confirma evento XDental | Lançamento gratuito XDental em 17/08"
     },
     {
       "id": "sniper-elite",
@@ -67,94 +83,144 @@
       "done": [
         "Fluxo operacional base do Elite definido por Ruan",
         "Regra mantida: casos/áudios da Galeria só sobem após validação"
-      ]
+      ],
+      "nextActions": [
+        "Segunda: confirmar com Serginho a data de agosto do Sniper Elite",
+        "Mapear processo dos encontros Elite: aviso aos alunos, link de transmissão, aula ao vivo, gravação e subida nas plataformas",
+        "Felipe cria o link da transmissão um dia antes e envia para Sérgio",
+        "Um dia antes: Mônica envia aviso aos alunos de que amanhã terá encontro",
+        "No dia: Mônica avisa que é o dia da aula e depois avisa quando estiver ao vivo",
+        "Depois da aula: pegar gravação do MIT e passar para Mônica subir na plataforma e para Diego subir na plataforma do Sérgio"
+      ],
+      "blockers": [
+        "Nova data de agosto depende do Sérgio",
+        "Processos do Sniper Elite ainda precisam ser criados/organizados na área de processos",
+        "Sem link criado e enviado ao Sérgio um dia antes, aumenta risco operacional no dia da aula"
+      ],
+      "doneText": "Fluxo operacional base do Elite definido por Ruan; Regra mantida: casos/áudios da Galeria só sobem após validação"
     },
     {
       "id": "chile-cioch",
       "filter": "chile",
       "icon": "🇨🇱",
       "name": "Evento Chile / CIOCH",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 72,
+      "status": "attention",
+      "priority": "p1",
+      "progress": 64,
       "owner": "Ruan / Sérgio / Lucas / TAOS",
-      "summary": "Segunda 08h30 tem reunião com Ruan, Sérgio e Lucas para decidir stand, oferta/venda e ativação. Operacional principal já foi resolvido; falta controle financeiro consolidado.",
+      "summary": "Operacional do Chile entra forte na próxima semana, que antecede o evento. Pagamento do aluguel da TV do stand já foi feito; restam demandas do ClickUp e checklist final.",
       "exec": [
-        "Segunda 08h30: reunião Chile com Ruan, Sérgio e Lucas",
-        "Levar pauta objetiva: o que vender, como ativar o stand e quais ações fazer no evento",
-        "Iniciar controle financeiro separado dos gastos do Chile"
+        "Registrar pagamento já feito do aluguel da TV para o stand",
+        "Mapear demandas pendentes do ClickUp relacionadas ao Chile",
+        "Separar o que precisa ser resolvido na semana que antecede o evento: stand, materiais, logística, equipe e comunicação"
       ],
       "wait": [
-        "Definição de stand/oferta/ativação depende da reunião de segunda",
-        "Controle financeiro precisa consolidar pagamento do evento, stand, design/gráfica, passagens, hotéis e polos",
-        "Polos compradas: pagamento previsto para segunda"
+        "Lista final de demandas do ClickUp ainda precisa ser conferida item por item",
+        "Demandas não urgentes ficam para próxima semana por orientação do Ruan",
+        "Risco: semana que vem terá Chile + preparação do lançamento de 12/09 ao mesmo tempo"
       ],
       "next": [
-        "Depois da reunião: transformar decisões em checklist de execução",
-        "Montar planilha de gastos do Chile fora do painel operacional",
-        "Registrar no painel só prazos/decisões que virarem ação operacional"
+        "Próxima semana: executar checklist Chile como bloco concentrado",
+        "Conferir materiais físicos/digitais, TV, stand, comprovantes e responsabilidades",
+        "Atualizar painel diariamente na semana anterior ao evento"
       ],
       "done": [
-        "Pagamento do evento/stand/design e parte gráfica encaminhados segundo Ruan",
-        "Demais custos conhecidos até agora: passagens, hotéis e quatro polos"
-      ]
+        "Aluguel da TV para o stand já foi pago por Ruan"
+      ],
+      "nextActions": [
+        "Registrar pagamento já feito do aluguel da TV para o stand",
+        "Mapear demandas pendentes do ClickUp relacionadas ao Chile",
+        "Separar o que precisa ser resolvido na semana que antecede o evento: stand, materiais, logística, equipe e comunicação",
+        "Próxima semana: executar checklist Chile como bloco concentrado",
+        "Conferir materiais físicos/digitais, TV, stand, comprovantes e responsabilidades",
+        "Atualizar painel diariamente na semana anterior ao evento"
+      ],
+      "blockers": [
+        "Lista final de demandas do ClickUp ainda precisa ser conferida item por item",
+        "Demandas não urgentes ficam para próxima semana por orientação do Ruan",
+        "Risco: semana que vem terá Chile + preparação do lançamento de 12/09 ao mesmo tempo"
+      ],
+      "doneText": "Aluguel da TV para o stand já foi pago por Ruan"
     },
     {
       "id": "diplomado-freedom",
       "filter": "diplomado",
       "icon": "🎓",
-      "name": "Diplomado Freedom / Alinhadores",
-      "status": "operational",
+      "name": "Diplomado / Rotina acadêmica",
+      "status": "attention",
       "priority": "p1",
-      "progress": 78,
+      "progress": 72,
       "owner": "Ruan / TAOS / Felipe / professores",
-      "summary": "Evento e primeiro encontro ao vivo já realizados. Próxima data crítica: 24/08, liberação do Módulo 2 de Alinhadores.",
+      "summary": "Além da rotina acadêmica, o Calendar oficial aponta encerramento da prova M7 em 14/08. Manter no radar para não perder prazo operacional.",
       "exec": [
-        "Manter próximas datas do Diplomado Freedom mapeadas",
-        "Registrar 24/08 como próxima liberação: Módulo 2 de Alinhadores",
-        "Conferir se comunicação/material do Módulo 2 precisam entrar no radar antes da liberação"
+        "14/08: encerrar prova do Módulo 7 conforme Calendar oficial",
+        "Manter próximas datas acadêmicas do Diplomado mapeadas no painel",
+        "Conferir se há comunicação/material pendente antes de cada liberação"
       ],
       "wait": [
-        "Sem nova ação crítica até aproximação do Módulo 2",
-        "Materiais/comunicação dependem de checagem prévia na semana da liberação"
+        "Encerramento da prova M7 precisa de confirmação operacional no dia 14/08",
+        "Próximas ações dependem da cadência de módulos/provas e evidências de liberação"
       ],
       "next": [
-        "Na semana anterior a 24/08: revisar material, upload e comunicação aos alunos",
-        "Adicionar ao radar qualquer pendência de professor/material/prova que aparecer",
-        "Manter cadência de encontros e liberações visível"
+        "Depois de encerrar M7: registrar evidência e remover do radar",
+        "Na semana anterior a 24/08: revisar material, upload e comunicação do próximo módulo",
+        "Adicionar qualquer pendência de professor/material/prova que aparecer"
       ],
       "done": [
-        "Primeiro encontro ao vivo do Diplomado Freedom realizado na sexta",
-        "Evento inicial do Diplomado Freedom concluído"
-      ]
+        "Evento inicial do Diplomado Freedom já realizado"
+      ],
+      "nextActions": [
+        "14/08: encerrar prova do Módulo 7 conforme Calendar oficial",
+        "Manter próximas datas acadêmicas do Diplomado mapeadas no painel",
+        "Conferir se há comunicação/material pendente antes de cada liberação",
+        "Depois de encerrar M7: registrar evidência e remover do radar",
+        "Na semana anterior a 24/08: revisar material, upload e comunicação do próximo módulo",
+        "Adicionar qualquer pendência de professor/material/prova que aparecer"
+      ],
+      "blockers": [
+        "Encerramento da prova M7 precisa de confirmação operacional no dia 14/08",
+        "Próximas ações dependem da cadência de módulos/provas e evidências de liberação"
+      ],
+      "doneText": "Evento inicial do Diplomado Freedom já realizado"
     },
     {
       "id": "plataforma-assinatura",
       "filter": "plataforma",
       "icon": "🎬",
       "name": "Plataforma de Assinatura",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 68,
+      "status": "stable",
+      "priority": "p2",
+      "progress": 70,
       "owner": "Ruan / TAOS / Diego / Design",
-      "summary": "Curso do mês de agosto já foi publicado. Próxima demanda é comunicar no feed que o curso da Prodaex foi liberado dentro da plataforma.",
+      "summary": "Sem nova urgência explícita no áudio de hoje. Mantida como frente separada para demandas de curso, comunicação e recorrência da assinatura.",
       "exec": [
-        "Preparar imagem/briefing para Diego fazer post no feed sobre o curso liberado",
-        "Mensagem central: novo curso da Prodaex liberado na plataforma — curso do mês de agosto",
-        "Garantir que comunicação do feed aponte para a plataforma e gere percepção de valor recorrente"
+        "Manter rotina de comunicação dos cursos publicados na plataforma",
+        "Conferir se há demanda pendente de feed/comunicação do curso liberado",
+        "Mapear próximo curso/mês para evitar correria de assets e upload"
       ],
       "wait": [
-        "Diego precisa receber briefing/imagem para produzir o post",
-        "Confirmar nome/descrição final do curso antes da arte final"
+        "Depende de novas demandas ou confirmação de pendências abertas",
+        "Sem evidência final de todos os materiais/comunicações, manter em observação leve"
       ],
       "next": [
-        "Depois do post: registrar comunicação concluída",
-        "Criar checklist recorrente: publicou curso → avisou no feed → avisou base/alunos se aplicável",
-        "Mapear próximo curso/mês no calendário da plataforma"
+        "Quando surgir nova publicação: curso publicado → feed/base avisados → evidência registrada",
+        "Criar checklist recorrente da assinatura por mês"
       ],
       "done": [
-        "Curso do mês de agosto publicado na plataforma"
-      ]
+        "Curso do mês de agosto já estava publicado na última atualização"
+      ],
+      "nextActions": [
+        "Manter rotina de comunicação dos cursos publicados na plataforma",
+        "Conferir se há demanda pendente de feed/comunicação do curso liberado",
+        "Mapear próximo curso/mês para evitar correria de assets e upload",
+        "Quando surgir nova publicação: curso publicado → feed/base avisados → evidência registrada",
+        "Criar checklist recorrente da assinatura por mês"
+      ],
+      "blockers": [
+        "Depende de novas demandas ou confirmação de pendências abertas",
+        "Sem evidência final de todos os materiais/comunicações, manter em observação leve"
+      ],
+      "doneText": "Curso do mês de agosto já estava publicado na última atualização"
     },
     {
       "id": "lowtickets-ingles",
@@ -183,7 +249,21 @@
       ],
       "done": [
         "Inglês fica dentro da frente Low Tickets, como Ruan definiu"
-      ]
+      ],
+      "nextActions": [
+        "Selecionar os 2 e-books com melhor performance em espanhol/América Latina",
+        "Traduzir os 2 e-books para inglês no Claude",
+        "Enviar versão traduzida ao Rogério para revisão",
+        "Após revisão: aplicar ajustes do Rogério",
+        "Preparar versão final completa dos e-books em inglês",
+        "Montar próxima etapa comercial: página, checkout, criativos e acompanhamento de vendas"
+      ],
+      "blockers": [
+        "Ranking de vendas/performance para escolher os dois e-books sem achismo",
+        "Revisão do Rogério antes de finalizar o e-book completo",
+        "Definir sequência de finalização: revisão, ajustes, diagramação/página e venda"
+      ],
+      "doneText": "Inglês fica dentro da frente Low Tickets, como Ruan definiu"
     },
     {
       "id": "oralplanner",
@@ -211,7 +291,20 @@
       ],
       "done": [
         "Reposicionado como segundo plano, sem desaparecer do painel"
-      ]
+      ],
+      "nextActions": [
+        "Manter OralPlanner em stand-by no Kanban",
+        "Quando houver janela: verificar uso real pela equipe/pessoas com acesso",
+        "Levantar usuários ativos, acessos e casos criados",
+        "Separar travas reais de produto/onboarding",
+        "Decidir se volta para pauta ativa ou permanece em segundo plano"
+      ],
+      "blockers": [
+        "Sem prioridade imediata frente às frentes comerciais",
+        "Falta evidência recente de uso/adesão",
+        "Próxima decisão depende de dados de utilização"
+      ],
+      "doneText": "Reposicionado como segundo plano, sem desaparecer do painel"
     },
     {
       "id": "xdental-club",
@@ -240,121 +333,223 @@
       ],
       "done": [
         "Frente XDental Club criada no Kanban como MVP de novo produto"
-      ]
+      ],
+      "nextActions": [
+        "Segunda: iniciar MVP Fase 1 do XDental Club",
+        "Preparar pesquisa/perguntas para a base de alunos",
+        "Definir o que a pesquisa precisa descobrir: dor, desejo, formato, benefício e disposição de compra",
+        "Consolidar respostas e padrões de demanda",
+        "Transformar aprendizados em hipótese de oferta do Club",
+        "Definir MVP Fase 2 a partir dos dados coletados"
+      ],
+      "blockers": [
+        "Falta questionário final da Fase 1",
+        "Falta definir canal de envio e amostra da base",
+        "Sem respostas da base, não avançar para escopo fechado do produto"
+      ],
+      "doneText": "Frente XDental Club criada no Kanban como MVP de novo produto"
     },
     {
       "id": "funil-perpetuo-plataforma",
-      "filter": "funil-perpetuo",
-      "icon": "♾️",
-      "name": "Funil perpétuo da Plataforma de Assinatura",
+      "filter": "miniimplantes",
+      "icon": "🦷",
+      "name": "Próximo lançamento · Diplomado Mini-Implantes 12/09",
       "status": "attention",
       "priority": "p1",
-      "progress": 25,
-      "owner": "Ruan / TAOS / Tráfego",
-      "summary": "Começar a estruturar o motor perpétuo da plataforma: oferta contínua, páginas, criativos, checkout e conexão com low tickets/conteúdo.",
+      "progress": 22,
+      "owner": "Ruan / TAOS / Serginho / Tráfego / Equipe",
+      "summary": "Próxima semana precisa preparar o lançamento do Diplomado de Mini-Implantes, com evento em 12/09 e início comercial/captação previsto para 21 ou 22/08 segundo Ruan.",
       "exec": [
-        "Começar desenho do funil perpétuo da plataforma de assinatura",
-        "Definir primeira promessa/tema de entrada para tráfego",
-        "Mapear fluxo mínimo: anúncio → página → oferta da plataforma → checkout"
+        "Organizar escopo do lançamento do Diplomado de Mini-Implantes",
+        "Definir promessa, oferta, calendário e responsáveis do lançamento de 12/09",
+        "Preparar base operacional na próxima semana em paralelo ao Chile"
       ],
       "wait": [
-        "Falta escolher primeira oferta/tema âncora",
-        "Falta definir mecânica: assinatura direta, trial, curso-gancho ou bônus",
-        "Sem wireframe, tráfego ainda fica sem destino claro"
+        "Ainda falta organizar tudo: oferta, narrativa, datas, materiais, página/grupos e tráfego",
+        "Conflito de carga operacional: próxima semana também concentra demandas do Chile",
+        "Início comercial/captação em 21 ou 22/08 precisa ser confirmado no calendário operacional"
       ],
       "next": [
-        "Criar wireframe da página e sequência de conversão",
-        "Listar criativos por dor/tema específico",
-        "Definir KPI mínimo: CPL, checkout, conversão, CAC e payback"
+        "Próxima semana: montar checklist completo do lançamento 12/09",
+        "Separar materiais mínimos: página, criativos, grupos/WhatsApp, calendário de mensagens, slides/oferta",
+        "Depois de definido: criar radar próprio por data até o evento"
       ],
       "done": [
-        "Frente separada de lançamentos pontuais e mantida como motor contínuo"
-      ]
+        "Frente identificada por Ruan no áudio de 12/08"
+      ],
+      "nextActions": [
+        "Organizar escopo do lançamento do Diplomado de Mini-Implantes",
+        "Definir promessa, oferta, calendário e responsáveis do lançamento de 12/09",
+        "Preparar base operacional na próxima semana em paralelo ao Chile",
+        "Próxima semana: montar checklist completo do lançamento 12/09",
+        "Separar materiais mínimos: página, criativos, grupos/WhatsApp, calendário de mensagens, slides/oferta",
+        "Depois de definido: criar radar próprio por data até o evento"
+      ],
+      "blockers": [
+        "Ainda falta organizar tudo: oferta, narrativa, datas, materiais, página/grupos e tráfego",
+        "Conflito de carga operacional: próxima semana também concentra demandas do Chile",
+        "Início comercial/captação em 21 ou 22/08 precisa ser confirmado no calendário operacional"
+      ],
+      "doneText": "Frente identificada por Ruan no áudio de 12/08"
     }
   ],
-  "gargalos": [],
+  "gargalos": [
+    {
+      "title": "Oferta do lançamento 17/08 ainda não está fechada",
+      "filter": "lancamento",
+      "frente": "Lançamento 17/08",
+      "deadline": "Agora / esta semana",
+      "blocks": "Sem oferta fechada, os slides do Serginho e os materiais de venda ficam travados",
+      "owner": "Ruan"
+    },
+    {
+      "title": "Slides do evento para Serginho",
+      "filter": "lancamento",
+      "frente": "Lançamento 17/08",
+      "deadline": "Antes do evento 17/08",
+      "blocks": "Evento pode chegar sem narrativa/CTA redondo se os slides atrasarem",
+      "owner": "Ruan / TAOS"
+    },
+    {
+      "title": "Demandas ClickUp do lançamento atual",
+      "filter": "lancamento",
+      "frente": "Lançamento 17/08",
+      "deadline": "Hoje / amanhã",
+      "blocks": "Se ficar só na memória, alguma peça/material do evento pode passar batido",
+      "owner": "Ruan / TAOS"
+    },
+    {
+      "title": "Chile + lançamento 12/09 vão colidir na próxima semana",
+      "filter": "chile",
+      "frente": "Chile / Mini-Implantes",
+      "deadline": "Próxima semana",
+      "blocks": "Duas frentes pesadas na mesma semana; precisa checklist segmentado para não virar bagunça",
+      "owner": "Ruan / TAOS"
+    },
+    {
+      "title": "Diplomado M7 — encerrar prova",
+      "filter": "diplomado",
+      "frente": "Diplomado",
+      "deadline": "14/08",
+      "blocks": "Prazo acadêmico confirmado no Calendar oficial",
+      "owner": "Ruan / Felipe / TAOS"
+    }
+  ],
   "radarDoDia": [
     {
-      "time": "segunda",
-      "task": "🚀 Lançamento: acompanhar captação da Masterclass 17/08 e computar entrada de leads",
-      "frente": "🚀 LANÇ",
+      "time": "Hoje · 12/08",
+      "frontLabel": "Lançamento 17/08",
+      "frontClass": "lancamento",
+      "task": "Conferir demandas do ClickUp do lançamento atual e puxar para o radar os itens que bloqueiam evento/material.",
       "status": "🔥"
     },
     {
-      "time": "segunda",
-      "task": "🚀 Iniciar aquecimento da Masterclass: ações e mensagens a partir de 10/08",
-      "frente": "🚀 LANÇ",
+      "time": "Hoje · 12/08",
+      "frontLabel": "Lançamento 17/08",
+      "frontClass": "lancamento",
+      "task": "Definir a oferta final do evento — item mais urgente porque destrava os slides.",
       "status": "🔥"
     },
     {
-      "time": "segunda",
-      "task": "💎 Confirmar com Serginho a data de agosto do Sniper Elite",
-      "frente": "💎 ELITE",
+      "time": "Hoje/amanhã",
+      "frontLabel": "Lançamento 17/08",
+      "frontClass": "lancamento",
+      "task": "Fazer os slides do evento para o Serginho a partir da oferta fechada.",
       "status": "🔥"
     },
     {
-      "time": "segunda 08h30",
-      "task": "🇨🇱 Reunião Chile com Ruan, Sérgio e Lucas: stand, venda/oferta e ativação",
-      "frente": "🇨🇱 CHL",
+      "time": "Esta semana",
+      "frontLabel": "Lançamento 17/08",
+      "frontClass": "lancamento",
+      "task": "Preparar materiais do dia do evento: peças, links, checklist operacional e suporte de transmissão/venda.",
       "status": "🔥"
     },
     {
-      "time": "segunda",
-      "task": "🇨🇱 Iniciar controle financeiro do Chile fora do painel: evento, stand, design/gráfica, passagens, hotéis e polos",
-      "frente": "🇨🇱 CHL",
+      "time": "Em edição",
+      "frontLabel": "Lançamento 17/08",
+      "frontClass": "lancamento",
+      "task": "Acompanhar entrega do Fabián nos criativos — vídeos já foram enviados por Ruan.",
       "status": "⚠️"
     },
     {
-      "time": "24/08",
-      "task": "🎓 Diplomado Freedom: liberação do Módulo 2 de Alinhadores",
-      "frente": "🎓 DIP",
+      "time": "14/08",
+      "frontLabel": "Diplomado",
+      "frontClass": "diplomado",
+      "task": "Encerrar prova do Módulo 7 conforme Calendar oficial.",
       "status": "📅"
     },
     {
-      "time": "agora",
-      "task": "🎬 Plataforma: preparar briefing/imagem para Diego postar curso da Prodaex liberado no feed",
-      "frente": "🎬 PA",
-      "status": "🔥"
+      "time": "14/08 · 09h",
+      "frontLabel": "Gestão",
+      "frontClass": "gestao",
+      "task": "Reunião semanal de sócios — usar para alinhar oferta, lançamento 17/08, Chile e carga da próxima semana se fizer sentido.",
+      "status": "📅"
     },
     {
-      "time": "agora",
-      "task": "🛒 Low Tickets Inglês: selecionar 2 e-books campeões em espanhol/América Latina",
-      "frente": "🛒 LT",
-      "status": "🔥"
+      "time": "17/08",
+      "frontLabel": "Lançamento 17/08",
+      "frontClass": "lancamento",
+      "task": "Evento XDental | Lançamento gratuito XDental confirmado no Calendar oficial.",
+      "status": "📅"
     },
     {
-      "time": "próximo",
-      "task": "🛒 Traduzir os 2 e-books para inglês no Claude e enviar ao Rogério para revisão",
-      "frente": "🛒 LT",
+      "time": "Próxima semana",
+      "frontLabel": "Chile / CIOCH",
+      "frontClass": "chile",
+      "task": "Executar demandas pendentes do Chile que estão no ClickUp: stand, materiais, logística, comprovantes e responsáveis.",
       "status": "⚠️"
     },
     {
-      "time": "segunda",
-      "task": "🏛️ XDental Club: iniciar MVP Fase 1 com pesquisa/perguntas para a base de alunos",
-      "frente": "🏛️ CLUB",
-      "status": "🔥"
-    },
-    {
-      "time": "próximo",
-      "task": "♾️ Funil perpétuo: começar desenho do fluxo anúncio → página → oferta da plataforma → checkout",
-      "frente": "♾️ FUNIL",
+      "time": "Próxima semana",
+      "frontLabel": "Chile / CIOCH",
+      "frontClass": "chile",
+      "task": "Revisar checklist final da semana que antecede o evento do Chile.",
       "status": "⚠️"
     },
     {
-      "time": "stand-by",
-      "task": "🧩 OralPlanner: manter em segundo plano e depois verificar uso real pela equipe",
-      "frente": "🧩 ORAL",
+      "time": "Concluído",
+      "frontLabel": "Chile / CIOCH",
+      "frontClass": "chile",
+      "task": "Pagamento do aluguel da TV do stand já feito por Ruan — manter como concluído/evidência operacional.",
+      "status": "✅"
+    },
+    {
+      "time": "Próxima semana",
+      "frontLabel": "Mini-Implantes 12/09",
+      "frontClass": "miniimplantes",
+      "task": "Organizar o lançamento do Diplomado de Mini-Implantes: promessa, oferta, calendário, página/grupos, criativos e responsáveis.",
+      "status": "🔥"
+    },
+    {
+      "time": "21 ou 22/08",
+      "frontLabel": "Mini-Implantes 12/09",
+      "frontClass": "miniimplantes",
+      "task": "Preparar início comercial/captação do lançamento de 12/09 para 21 ou 22 de agosto, conforme orientação do Ruan.",
+      "status": "📅"
+    },
+    {
+      "time": "12/09",
+      "frontLabel": "Mini-Implantes 12/09",
+      "frontClass": "miniimplantes",
+      "task": "Evento/lançamento do Diplomado de Mini-Implantes — criar radar próprio quando checklist inicial estiver fechado.",
+      "status": "📅"
+    },
+    {
+      "time": "Sempre",
+      "frontLabel": "Gestão",
+      "frontClass": "gestao",
+      "task": "Ao atualizar o painel, cruzar demandas novas com Google Calendar oficial rdomith@gmail.com antes de publicar.",
       "status": "📌"
     }
   ],
   "metrics": {
-    "items": 12,
-    "fronts": 9,
+    "tasks": 15,
     "today": 7,
-    "week": 4,
-    "done": 0
+    "week": 7,
+    "waiting": 5,
+    "done": 1
   },
-  "radarExtra": "Detalhes financeiros do Chile ficam em memória/controle separado; no painel entram só reunião, decisão e criação do controle financeiro.",
-  "sourceFile": "audio-telegram-4951-2026-08-08",
+  "radarExtra": "Fontes conferidas em 12/08: áudio do Ruan no tópico Dados/Painel + Google Calendar oficial rdomith@gmail.com de 12/08 a 20/08. Calendar trouxe M7 encerrar prova em 14/08, reunião semanal de sócios em 14/08 e lançamento gratuito XDental em 17/08.",
+  "sourceFile": "tmp_update_painel_20260812.py",
   "radar": []
 }
