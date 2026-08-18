@@ -1,220 +1,192 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.28-lancamento-2026-08-17",
-    "lastUpdated": "2026-08-17 · Foco lançamento",
+    "version": "2.29-miniimplantes-2026-08-18",
+    "lastUpdated": "2026-08-18 · Mini-Implantes + ClickUp",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Painel limpo para foco exclusivo no lançamento de hoje: vendas, copies de grupos/API, imagens de matrículas abertas, vídeo do Fabián com cronômetro, reunião de oferta com Antônio, conversa com Sérgio e ações pós-abertura."
+    "headline": "Foco agora: construir o evento pago de Mini-Implantes/Diplomado Sniper para iniciar vendas de ingressos sábado 22/08 e preparar o evento de 12/09, com ClickUp replicado do Freedom julho."
   },
   "fronts": [
     {
-      "id": "lancamento-2026-08-17",
-      "filter": "lancamento",
-      "icon": "🚀",
-      "name": "Lançamento atual · Carrinho aberto",
+      "id": "miniimplantes-evento-2026-09-12",
+      "filter": "miniimplantes",
+      "icon": "🦷",
+      "name": "Evento Mini-Implantes · 12/09",
       "status": "risk",
       "priority": "p0",
-      "progress": 35,
-      "owner": "Ruan / TAOS / Antônio / Sérgio / Fabián / Equipe",
-      "summary": "Frente única de hoje. O gargalo é fechar oferta e transformar isso em copy, API, imagens, vídeo com cronômetro e plano pós-abertura.",
+      "progress": 18,
+      "owner": "Ruan / TAOS / Design / Dev / Felipe",
+      "summary": "Frente crítica: colocar o evento pago de Mini-Implantes em condição de venda até sábado 22/08. Sem logo, página, criativos e grupos, a captação não começa limpa.",
       "exec": [
-        "Dashboard de vendas do lançamento para acompanhar matrículas caindo",
-        "Sequência de copy para grupos hoje",
-        "Copy adaptada para envio via API",
-        "Imagens de “matrículas abertas”",
-        "Briefing para Fabián editar vídeo pré-evento com cronômetro"
+        "Definir nome/narrativa e criar a logo do evento",
+        "Escrever copy da página de vendas",
+        "Construir/publicar página de vendas",
+        "Escrever copy dos criativos de imagem",
+        "Produzir design dos criativos de imagem"
       ],
       "wait": [
-        "Oferta final depende da reunião com Antônio às 15:30",
-        "Ações pós-abertura dependem da oferta e dos primeiros sinais de venda",
-        "Validação com Sérgio depois da conversa de oferta"
+        "Oferta e promessa final do evento para travar copy",
+        "Página pronta antes de começar vendas sábado",
+        "Grupos do evento dependem de briefing para Felipe"
       ],
       "next": [
-        "Após reunião: ajustar promessa, bônus, CTA e urgência nas mensagens",
-        "Depois da abertura: monitorar vendas e identificar se precisa reforço rápido",
-        "Se vendas lentas: disparar ação de objeções/prova/escassez",
-        "Amanhã: voltar as demais demandas para o painel"
+        "Pedir para Felipe criar os grupos do evento no fluxo padrão de evento pago",
+        "Preparar página de obrigado + entrada nos grupos + links de suporte",
+        "Revisar permissões dos grupos antes da captação",
+        "Montar checklist do dia 12/09: transmissão, links, suporte, CTA e venda"
       ],
       "done": [
-        "Painel operacional limpo para foco exclusivo no lançamento"
+        "Diretriz do Ruan registrada: vendas de ingressos começam sábado 22/08"
+      ]
+    },
+    {
+      "id": "clickup-diplomado-sniper-setembro-2026",
+      "filter": "clickup",
+      "icon": "✅",
+      "name": "ClickUp · [Lançamento] Diplomado Sniper setembro 2026",
+      "status": "ok",
+      "priority": "p0",
+      "progress": 100,
+      "owner": "TAOS / mesmos responsáveis do Freedom julho",
+      "summary": "Replicar o lançamento Freedom julho como base operacional do novo lançamento, mantendo responsáveis e áreas para não reconstruir processo do zero.",
+      "exec": [],
+      "wait": [
+        "Ajuste fino de datas do cronograma de setembro, se Ruan quiser travar calendário por tarefa"
       ],
-      "nextActions": [
-        "Dashboard de vendas do lançamento para acompanhar matrículas caindo",
-        "Sequência de copy para grupos hoje",
-        "Copy adaptada para envio via API",
-        "Imagens de “matrículas abertas”",
-        "Briefing para Fabián editar vídeo pré-evento com cronômetro",
-        "Reunião com Antônio às 15:30 para fechar oferta",
-        "Conversar com Sérgio depois para validar promessa e reforços",
-        "Definir ações pós-abertura de carrinho"
+      "next": [
+        "Usar a lista como cockpit do lançamento pago",
+        "Se quiser, próximo passo é redistribuir datas por semana até 12/09"
       ],
-      "blockers": [
-        "Oferta final ainda não fechada",
-        "Ações pós-abertura ainda precisam ser definidas",
-        "Vídeo depende do Fabián"
-      ],
-      "doneText": "Painel operacional limpo para foco exclusivo no lançamento"
+      "done": [
+        "Lista criada no ClickUp: [Lançamento] Diplomado Sniper setembro 2026",
+        "161 tarefas/subtarefas replicadas da lista Freedom julho/26",
+        "Responsáveis preservados e status resetado para à fazer",
+        "Visualizações recriadas: Etapas, Áreas, Semanas, Gantt e CENTRAL DE LINKS"
+      ]
     }
   ],
   "gargalos": [
     {
-      "title": "Oferta do lançamento 17/08 ainda não está fechada",
-      "filter": "lancamento",
-      "frente": "Lançamento 17/08",
-      "deadline": "Agora / esta semana",
-      "blocks": "Sem oferta fechada, os slides do Serginho e os materiais de venda ficam travados",
-      "owner": "Ruan"
-    },
-    {
-      "title": "Slides do evento para Serginho",
-      "filter": "lancamento",
-      "frente": "Lançamento 17/08",
-      "deadline": "Antes do evento 17/08",
-      "blocks": "Evento pode chegar sem narrativa/CTA redondo se os slides atrasarem",
+      "title": "Venda de ingressos começa sábado sem margem para atraso",
+      "filter": "miniimplantes",
+      "frente": "Mini-Implantes 12/09",
+      "deadline": "22/08",
+      "blocks": "Sem logo, página, criativos e grupos, a captação/venda entra improvisada.",
       "owner": "Ruan / TAOS"
     },
     {
-      "title": "Demandas ClickUp do lançamento atual",
-      "filter": "lancamento",
-      "frente": "Lançamento 17/08",
-      "deadline": "Hoje / amanhã",
-      "blocks": "Se ficar só na memória, alguma peça/material do evento pode passar batido",
-      "owner": "Ruan / TAOS"
+      "title": "Grupos do evento dependem de briefing e execução do Felipe",
+      "filter": "miniimplantes",
+      "frente": "Grupos / Sendflow",
+      "deadline": "Antes da captação",
+      "blocks": "Sem grupos e permissões conferidas, perde entrada de lead/comprador no fluxo padrão.",
+      "owner": "Felipe / TAOS"
     },
     {
-      "title": "Chile + lançamento 12/09 vão colidir na próxima semana",
-      "filter": "chile",
-      "frente": "Chile / Mini-Implantes",
-      "deadline": "Próxima semana",
-      "blocks": "Duas frentes pesadas na mesma semana; precisa checklist segmentado para não virar bagunça",
-      "owner": "Ruan / TAOS"
-    },
-    {
-      "title": "Diplomado M7 — encerrar prova",
-      "filter": "diplomado",
-      "frente": "Diplomado",
-      "deadline": "14/08",
-      "blocks": "Prazo acadêmico confirmado no Calendar oficial",
-      "owner": "Ruan / Felipe / TAOS"
+      "title": "ClickUp do lançamento de setembro criado",
+      "filter": "clickup",
+      "frente": "Diplomado Sniper setembro 2026",
+      "deadline": "Concluído em 18/08",
+      "blocks": "Sem bloqueio de clonagem; próximo risco é não ajustar datas do cronograma.",
+      "owner": "TAOS / Ruan"
     }
   ],
   "radarDoDia": [
     {
-      "time": "Hoje · 12/08",
-      "frontLabel": "Lançamento 17/08",
-      "frontClass": "lancamento",
-      "task": "Conferir demandas do ClickUp do lançamento atual e puxar para o radar os itens que bloqueiam evento/material.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje · 12/08",
-      "frontLabel": "Lançamento 17/08",
-      "frontClass": "lancamento",
-      "task": "Definir a oferta final do evento — item mais urgente porque destrava os slides.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje/amanhã",
-      "frontLabel": "Lançamento 17/08",
-      "frontClass": "lancamento",
-      "task": "Fazer os slides do evento para o Serginho a partir da oferta fechada.",
-      "status": "🔥"
-    },
-    {
-      "time": "Esta semana",
-      "frontLabel": "Lançamento 17/08",
-      "frontClass": "lancamento",
-      "task": "Preparar materiais do dia do evento: peças, links, checklist operacional e suporte de transmissão/venda.",
-      "status": "🔥"
-    },
-    {
-      "time": "Em edição",
-      "frontLabel": "Lançamento 17/08",
-      "frontClass": "lancamento",
-      "task": "Acompanhar entrega do Fabián nos criativos — vídeos já foram enviados por Ruan.",
-      "status": "⚠️"
-    },
-    {
-      "time": "14/08",
-      "frontLabel": "Diplomado",
-      "frontClass": "diplomado",
-      "task": "Encerrar prova do Módulo 7 conforme Calendar oficial.",
-      "status": "📅"
-    },
-    {
-      "time": "14/08 · 09h",
-      "frontLabel": "Gestão",
-      "frontClass": "gestao",
-      "task": "Reunião semanal de sócios — usar para alinhar oferta, lançamento 17/08, Chile e carga da próxima semana se fizer sentido.",
-      "status": "📅"
-    },
-    {
-      "time": "17/08",
-      "frontLabel": "Lançamento 17/08",
-      "frontClass": "lancamento",
-      "task": "Evento XDental | Lançamento gratuito XDental confirmado no Calendar oficial.",
-      "status": "📅"
-    },
-    {
-      "time": "Próxima semana",
-      "frontLabel": "Chile / CIOCH",
-      "frontClass": "chile",
-      "task": "Executar demandas pendentes do Chile que estão no ClickUp: stand, materiais, logística, comprovantes e responsáveis.",
-      "status": "⚠️"
-    },
-    {
-      "time": "Próxima semana",
-      "frontLabel": "Chile / CIOCH",
-      "frontClass": "chile",
-      "task": "Revisar checklist final da semana que antecede o evento do Chile.",
-      "status": "⚠️"
-    },
-    {
-      "time": "Concluído",
-      "frontLabel": "Chile / CIOCH",
-      "frontClass": "chile",
-      "task": "Pagamento do aluguel da TV do stand já feito por Ruan — manter como concluído/evidência operacional.",
-      "status": "✅"
-    },
-    {
-      "time": "Próxima semana",
+      "time": "Agora",
       "frontLabel": "Mini-Implantes 12/09",
       "frontClass": "miniimplantes",
-      "task": "Organizar o lançamento do Diplomado de Mini-Implantes: promessa, oferta, calendário, página/grupos, criativos e responsáveis.",
+      "task": "Criar logo/identidade do evento de Mini-Implantes para destravar página e criativos.",
       "status": "🔥"
     },
     {
-      "time": "21 ou 22/08",
+      "time": "Hoje",
       "frontLabel": "Mini-Implantes 12/09",
       "frontClass": "miniimplantes",
-      "task": "Preparar início comercial/captação do lançamento de 12/09 para 21 ou 22 de agosto, conforme orientação do Ruan.",
+      "task": "Escrever a copy da página de vendas com promessa, mecanismo, prova, oferta e CTA para ingresso.",
+      "status": "🔥"
+    },
+    {
+      "time": "Hoje",
+      "frontLabel": "Mini-Implantes 12/09",
+      "frontClass": "miniimplantes",
+      "task": "Construir a página de vendas e deixar pronta para início das vendas no sábado 22/08.",
+      "status": "🔥"
+    },
+    {
+      "time": "Hoje",
+      "frontLabel": "Mini-Implantes 12/09",
+      "frontClass": "miniimplantes",
+      "task": "Escrever copies dos criativos de imagem: ângulos, headlines, bullets e CTAs.",
+      "status": "🔥"
+    },
+    {
+      "time": "Na sequência",
+      "frontLabel": "Mini-Implantes 12/09",
+      "frontClass": "miniimplantes",
+      "task": "Produzir o design dos criativos de imagem a partir das copies aprovadas.",
+      "status": "⚠️"
+    },
+    {
+      "time": "Depois dos assets",
+      "frontLabel": "Grupos / Felipe",
+      "frontClass": "miniimplantes",
+      "task": "Pedir para Felipe criar os grupos do evento no fluxo padrão de evento pago.",
+      "status": "📌"
+    },
+    {
+      "time": "Antes da captação",
+      "frontLabel": "Grupos / Sendflow",
+      "frontClass": "miniimplantes",
+      "task": "Validar página de obrigado, entrada nos grupos, permissões e links antes de rodar tráfego/vendas.",
+      "status": "⚠️"
+    },
+    {
+      "time": "Sábado 22/08",
+      "frontLabel": "Venda de ingressos",
+      "frontClass": "miniimplantes",
+      "task": "Começar vendas de ingressos do evento com página, criativos e grupos prontos.",
       "status": "📅"
     },
     {
       "time": "12/09",
-      "frontLabel": "Mini-Implantes 12/09",
+      "frontLabel": "Evento",
       "frontClass": "miniimplantes",
-      "task": "Evento/lançamento do Diplomado de Mini-Implantes — criar radar próprio quando checklist inicial estiver fechado.",
+      "task": "Preparar checklist do dia do evento: transmissão, suporte, links, CTA e rotina de venda.",
       "status": "📅"
     },
     {
-      "time": "Sempre",
-      "frontLabel": "Gestão",
-      "frontClass": "gestao",
-      "task": "Ao atualizar o painel, cruzar demandas novas com Google Calendar oficial rdomith@gmail.com antes de publicar.",
-      "status": "📌"
+      "time": "Agora",
+      "frontLabel": "ClickUp",
+      "frontClass": "clickup",
+      "task": "Duplicar [Lançamento] Freedom julho/26 para [Lançamento] Diplomado Sniper setembro 2026.",
+      "status": "🔥"
+    },
+    {
+      "time": "Agora",
+      "frontLabel": "ClickUp",
+      "frontClass": "clickup",
+      "task": "Manter as mesmas pessoas responsáveis e as mesmas áreas/demandas da lista modelo.",
+      "status": "🔥"
+    },
+    {
+      "time": "Concluído",
+      "frontLabel": "ClickUp",
+      "frontClass": "clickup",
+      "task": "Lista [Lançamento] Diplomado Sniper setembro 2026 criada com 161 tarefas/subtarefas, mesmas áreas/responsáveis e views recriadas.",
+      "status": "✅"
     }
   ],
   "metrics": {
-    "tasks": 15,
+    "tasks": 12,
     "today": 7,
-    "week": 7,
+    "week": 4,
     "waiting": 5,
-    "done": 1
+    "done": 3
   },
-  "radarExtra": "Fontes conferidas em 12/08: áudio do Ruan no tópico Dados/Painel + Google Calendar oficial rdomith@gmail.com de 12/08 a 20/08. Calendar trouxe M7 encerrar prova em 14/08, reunião semanal de sócios em 14/08 e lançamento gratuito XDental em 17/08.",
-  "sourceFile": "tmp_update_painel_20260812.py",
+  "radarExtra": "Fontes: áudio do Ruan em 18/08 no tópico Dados/Painel + diretriz operacional do fluxo padrão de evento pago. Calendar oficial não retornou novos eventos nesta checagem via gog; painel focado no comando direto do Ruan.",
+  "sourceFile": "tmp_update_panel_20260818.py",
   "radar": []
 }
