@@ -1,275 +1,294 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.30-radar-manhã-2026-08-19",
-    "lastUpdated": "2026-08-19 · demandas da manhã",
+    "version": "2.31-radar-2026-08-31",
+    "lastUpdated": "2026-08-31 · demandas do dia",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Foco fechado nas demandas de hoje: mensagens de conversão dos grupos, bônus da formação prática de Mini-Implante, flyer do Chile para gráfica, briefing do vídeo institucional e estrutura do lançamento 12/09 para vender no sábado."
+    "headline": "Foco do dia: calendário operacional, plano de aquecimento do lançamento 12/09, testes/campanhas e reuniões com Batista e Adônio."
   },
   "fronts": [
     {
-      "id": "mensagens-conversao-lancamento-atual",
-      "filter": "conversao",
-      "icon": "💬",
-      "name": "Mensagens de conversão · grupos do lançamento atual",
+      "id": "calendario-31-08-diplomado-elite-financeiro",
+      "filter": "calendario",
+      "icon": "📅",
+      "name": "Calendário 31/08 · Diplomado, Elite e fechamento",
       "status": "risk",
       "priority": "p0",
-      "progress": 55,
-      "owner": "Ruan / TAOS / Felipe",
-      "summary": "Ajuste rápido, mas crítico para hoje: revisar as mensagens de conversão dos grupos do lançamento que está rodando agora para aumentar intenção e resposta antes da venda/CTA.",
+      "progress": 42,
+      "owner": "Ruan / TAOS / Operação",
+      "summary": "Hoje tem quatro itens de calendário: prova M08, galeria Elite, PDF M09 e fechamento Fabinho. O ponto sensível é separar execução operacional de qualquer repasse financeiro, que precisa de aprovação do Ruan.",
       "exec": [
-        "Ajustar mensagens de conversão já existentes para os grupos do lançamento atual",
-        "Revisar CTA, objeções, urgência e clareza da próxima ação",
-        "Separar versão pronta para disparo/uso nos grupos hoje de manhã"
+        "Diplomado M08: preparar prova hoje para liberar aos alunos em 03/09.",
+        "Elite: extrair casos e atualizar galeria.",
+        "Diplomado M09: iniciar PDF do módulo.",
+        "Fechamento Fabinho: preparar conferência/entrega e deixar repasse apenas para aprovação do Ruan."
       ],
       "wait": [
-        "Confirmar se há algum link/CTA final específico antes do disparo",
-        "Se houver mudança de oferta ou bônus, refletir nas mensagens antes de enviar"
+        "Confirmação de prova M08 pronta no ambiente correto antes de 03/09.",
+        "Evidência do arquivo final/aprovado do M09 antes de qualquer pagamento de professor em 01/09.",
+        "Aprovação explícita do Ruan para qualquer operação financeira ligada ao fechamento Fabinho."
       ],
       "next": [
-        "Depois do ajuste: validar tom com Ruan e liberar para execução",
-        "Acompanhar resposta dos grupos e ajustar uma segunda mensagem se necessário"
+        "03/09: liberar prova M08 aos alunos.",
+        "08/09: liberar módulo M09 aos alunos.",
+        "10/09: encerrar prova M08.",
+        "11/09: reunião semanal de sócios."
       ],
       "done": [
-        "Base das mensagens já existe; tarefa é ajuste/refino, não criação do zero"
+        "Calendar rdomith@gmail.com conferido de 31/08 a 12/09."
       ]
     },
     {
-      "id": "bonus-formacao-pratica-mini-implante",
-      "filter": "bonus",
-      "icon": "🎁",
-      "name": "Bônus · Formação prática de Mini-Implante",
-      "status": "attention",
-      "priority": "p0",
-      "progress": 45,
-      "owner": "Ruan / Felipe / TAOS",
-      "summary": "Bônus precisa ser liberado hoje. É item simples, mas tem impacto direto de promessa entregue e percepção de valor do lançamento/produto.",
-      "exec": [
-        "Liberar hoje o bônus da formação prática de Mini-Implante",
-        "Conferir acesso/link/material antes de comunicar",
-        "Preparar comunicação curta de liberação do bônus"
-      ],
-      "wait": [
-        "Confirmação final do local de entrega/acesso do bônus",
-        "Evidência de que o material está disponível para o aluno"
-      ],
-      "next": [
-        "Depois de liberar: registrar evidência e remover do radar de urgência",
-        "Se houver grupo/base envolvida, alinhar mensagem de aviso com as mensagens de conversão"
-      ],
-      "done": []
-    },
-    {
-      "id": "chile-cioch-materiais-grafica-video",
-      "filter": "chile",
-      "icon": "🇨🇱",
-      "name": "Chile / CIOCH · flyer + vídeo institucional",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 38,
-      "owner": "Ruan / TAOS / Design / Fabián",
-      "summary": "Bloco mais sensível da manhã: finalizar o panfleto/flyer do evento do Chile e mandar para a gráfica a tempo. Em paralelo, passar para Fabián a ideia do vídeo institucional XDental que vai rodar na TV do evento.",
-      "exec": [
-        "Terminar agora de manhã o flyer/panfleto que será entregue no evento do Chile",
-        "Revisar texto, hierarquia visual, QR/link e informações antes de enviar para a gráfica",
-        "Enviar arquivo final para a gráfica com margem para produção e retirada",
-        "Compor briefing do vídeo institucional XDental para Fabián produzir"
-      ],
-      "wait": [
-        "Prazo de gráfica é apertado: qualquer ajuste no flyer precisa ser fechado de manhã",
-        "Definir a ideia central do vídeo institucional: marca, autoridade, comunidade, cursos, cases e CTA visual",
-        "Confirmar formato/duração ideal para rodar em loop na TV do stand"
-      ],
-      "next": [
-        "Depois do envio para gráfica: salvar comprovante/arquivo final no painel de evidências",
-        "Enviar para Fabián: roteiro visual, estrutura por blocos e referências do vídeo institucional",
-        "Preparar checklist do stand: TV, arquivo final, formato, pendrive/link e teste de reprodução"
-      ],
-      "done": []
-    },
-    {
-      "id": "lancamento-12-09-paginas-checkout-sendflow",
+      "id": "lancamento-12-09-aquecimento-mini-implantes",
       "filter": "setembro",
       "icon": "🚀",
-      "name": "Lançamento 12/09 · páginas, checkout, grupos e Sendflow",
+      "name": "Lançamento 12/09 · aquecimento Mini-Implantes",
       "status": "risk",
       "priority": "p0",
-      "progress": 28,
-      "owner": "Ruan / TAOS / Dev / Felipe / Tráfego",
-      "summary": "Depois das urgências da manhã, a frente é deixar a máquina do lançamento de 12/09 pronta para captação/vendas no sábado: páginas finalizadas, checkout personalizado conectado, grupos criados e campanha no Sendflow pronta.",
+      "progress": 35,
+      "owner": "Ruan / TAOS / Batista / Adônio",
+      "summary": "Prioridade comercial do dia: revisar o plano de aquecimento e começar a rodar a preparação do lançamento pago de 12/09, Formação Prática em Mini-Implantes.",
       "exec": [
-        "Continuar/finalizar as páginas de vendas de ingressos",
-        "Ajustar o checkout personalizado",
-        "Pegar o link final do checkout e inserir na página de vendas",
-        "Finalizar/publicar a página de vendas sem pendência crítica"
+        "Revisar o plano de aquecimento do lançamento de 12/09.",
+        "Transformar o plano em calendário de ações até 12/09.",
+        "Produzir mais testes para criativos/campanhas.",
+        "Preparar pauta da reunião com Batista sobre campanhas e testes."
       ],
       "wait": [
-        "Página depende do link final do checkout personalizado",
-        "Grupos de WhatsApp dependem de criação + permissões revisadas",
-        "Campanha Sendflow depende dos grupos corretos e links finais"
+        "Rascunhos adicionais que o Ruan comentou que vai passar depois.",
+        "Direção final das campanhas após reunião com Batista.",
+        "Validação da reunião das 16h com Adônio sobre testes/extensão do lançamento."
       ],
       "next": [
-        "Criar grupos de WhatsApp do lançamento",
-        "Criar campanha no Sendflow conectando página/obrigado/grupos",
-        "Validar fluxo completo: página → checkout → obrigado → WhatsApp → suporte",
-        "Deixar tudo pronto para captação/vendas começarem sábado 22/08"
+        "Após reunião com Batista: converter decisões em tarefas de tráfego no painel.",
+        "Após reunião com Adônio às 16h: atualizar bloco de testes, pendências e responsáveis.",
+        "Garantir que aquecimento tenha cadência diária até 12/09."
       ],
       "done": [
-        "ClickUp do lançamento de setembro já foi criado a partir do Freedom julho/26"
+        "Data do lançamento confirmada no Calendar: 12/09/2026."
       ]
+    },
+    {
+      "id": "diplomado-m09-m10-risco-liberacao",
+      "filter": "diplomado",
+      "icon": "🎓",
+      "name": "Diplomado · M09 e M10 próximos marcos",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 30,
+      "owner": "Ruan / TAOS / Mônica / Felipe",
+      "summary": "M09 tem liberação em 08/09. Se PDF, upload e checklist final não andarem esta semana, vira atraso visível para aluno.",
+      "exec": [
+        "M09: iniciar PDF do módulo hoje.",
+        "M09: checar arquivo final, edição, upload e agendamento na Hotmart.",
+        "M08: preparar/liberar prova e garantir encerramento em 10/09.",
+        "M10: confirmar com Dr. Sérgio Cury em 05/09."
+      ],
+      "wait": [
+        "Confirmação de gravação/edit final do M09.",
+        "Confirmação de PDF/material complementar do M09.",
+        "Confirmação de upload/agendamento antes de 07/09."
+      ],
+      "next": [
+        "06/09: checkpoint final pré-liberação M09.",
+        "07/09: subir módulo M09 na Hotmart.",
+        "08/09: liberar M09 aos alunos.",
+        "05/10: próxima liberação M10."
+      ],
+      "done": []
+    },
+    {
+      "id": "reunioes-e-decisoes-do-dia-31-08",
+      "filter": "reunioes",
+      "icon": "🧭",
+      "name": "Reuniões do dia · Batista e Adônio",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 25,
+      "owner": "Ruan / TAOS",
+      "summary": "As reuniões de hoje precisam virar decisão operacional no painel, não só conversa solta. Batista mexe no tráfego; Adônio fecha revisão de testes/extensão às 16h.",
+      "exec": [
+        "Reunião da manhã com Batista: revisar campanhas, testes e próximos criativos.",
+        "Reunião 16h com Adônio: revisar parte dos testes/extensão do lançamento.",
+        "Registrar decisões das duas reuniões como próximos passos objetivos."
+      ],
+      "wait": [
+        "Outputs da reunião com Batista.",
+        "Outputs da reunião das 16h com Adônio.",
+        "Rascunhos adicionais prometidos pelo Ruan."
+      ],
+      "next": [
+        "Depois de cada reunião: atualizar responsáveis, prazo e status.",
+        "Separar o que é P0 de hoje do que entra como cadência de aquecimento."
+      ],
+      "done": []
     }
   ],
   "gargalos": [
     {
-      "title": "Flyer do Chile precisa sair hoje de manhã para não perder prazo da gráfica",
-      "filter": "chile",
-      "frente": "Chile / CIOCH",
-      "deadline": "Manhã de 19/08",
-      "blocks": "Sem arquivo final enviado cedo, aumenta risco de não produzir/retirar a tempo do evento.",
-      "owner": "Ruan / TAOS / Design"
+      "title": "M09 libera em 08/09 e ainda precisa de PDF/upload/checkpoint final",
+      "filter": "diplomado",
+      "frente": "Diplomado Ortho Pro",
+      "deadline": "08/09/2026",
+      "blocks": "Sem PDF, arquivo final e upload/agendamento fechados esta semana, o atraso vira experiência ruim para aluno.",
+      "owner": "Ruan / TAOS / Mônica / Felipe"
     },
     {
-      "title": "Venda/captação de sábado depende do fluxo completo do lançamento 12/09",
+      "title": "Aquecimento do lançamento 12/09 precisa começar agora",
       "filter": "setembro",
-      "frente": "Lançamento 12/09",
-      "deadline": "Antes de 22/08",
-      "blocks": "Página, checkout, grupos e Sendflow precisam estar conectados; se um elo falhar, perde lead/venda.",
-      "owner": "Ruan / TAOS / Felipe / Dev"
-    },
-    {
-      "title": "Mensagens dos grupos precisam ser ajustadas antes do pico de conversão",
-      "filter": "conversao",
-      "frente": "Lançamento atual",
-      "deadline": "Hoje de manhã",
-      "blocks": "Sem mensagens afiadas, grupo fica aquecido mas sem direcionamento claro para ação.",
-      "owner": "Ruan / TAOS"
-    },
-    {
-      "title": "Vídeo institucional para TV do Chile precisa de briefing claro para Fabián",
-      "filter": "chile",
-      "frente": "Chile / Stand",
+      "frente": "Mini-Implantes 12/09",
       "deadline": "Hoje",
-      "blocks": "Sem direção, Fabián pode produzir algo bonito mas genérico; precisa vender autoridade e presença internacional da XDental.",
-      "owner": "Ruan / TAOS / Fabián"
+      "blocks": "Se o plano não virar cadência diária e testes de campanha hoje, a janela comercial fica curta demais.",
+      "owner": "Ruan / TAOS / Batista / Adônio"
+    },
+    {
+      "title": "Fechamento Fabinho envolve repasse financeiro",
+      "filter": "calendario",
+      "frente": "Financeiro / Operação",
+      "deadline": "Hoje",
+      "blocks": "TAOS pode preparar conferência e entrega, mas não executa repasse sem aprovação explícita do Ruan.",
+      "owner": "Ruan"
+    },
+    {
+      "title": "Reuniões de Batista e Adônio precisam virar tarefas executáveis",
+      "filter": "reunioes",
+      "frente": "Tráfego / Testes",
+      "deadline": "Hoje após cada reunião",
+      "blocks": "Sem registro de decisão, o lançamento fica dependente de memória e perde velocidade de execução.",
+      "owner": "Ruan / TAOS"
     }
   ],
   "radarDoDia": [
     {
-      "time": "Agora de manhã",
-      "frontLabel": "Mensagens conversão",
-      "frontClass": "conversao",
-      "task": "Ajustar as mensagens de conversão já existentes para os grupos do lançamento atual.",
-      "status": "🔥"
-    },
-    {
-      "time": "Agora de manhã",
-      "frontLabel": "Mensagens conversão",
-      "frontClass": "conversao",
-      "task": "Revisar CTA, objeções, urgência e clareza da próxima ação antes de liberar o texto.",
+      "time": "Hoje",
+      "frontLabel": "Diplomado M08",
+      "frontClass": "calendario",
+      "task": "Preparar prova do M08 para liberação aos alunos em 03/09.",
       "status": "🔥"
     },
     {
       "time": "Hoje",
-      "frontLabel": "Bônus Mini-Implante",
-      "frontClass": "bonus",
-      "task": "Liberar o bônus da formação prática de Mini-Implante.",
+      "frontLabel": "Elite",
+      "frontClass": "calendario",
+      "task": "Extrair casos e atualizar galeria do Elite.",
       "status": "🔥"
     },
     {
-      "time": "Antes de avisar",
-      "frontLabel": "Bônus Mini-Implante",
-      "frontClass": "bonus",
-      "task": "Conferir acesso/link/material e preparar a comunicação curta de liberação do bônus.",
+      "time": "Hoje",
+      "frontLabel": "Diplomado M09",
+      "frontClass": "diplomado",
+      "task": "Iniciar PDF do módulo M09.",
+      "status": "🔥"
+    },
+    {
+      "time": "Hoje",
+      "frontLabel": "Fechamento Fabinho",
+      "frontClass": "calendario",
+      "task": "Preparar conferência/entrega do fechamento; qualquer repasse financeiro fica pendente de aprovação do Ruan.",
       "status": "⚠️"
     },
     {
-      "time": "Agora de manhã",
-      "frontLabel": "Chile / CIOCH",
-      "frontClass": "chile",
-      "task": "Terminar o flyer/panfleto do evento do Chile para mandar para a gráfica.",
-      "status": "🔥"
-    },
-    {
-      "time": "Antes da gráfica",
-      "frontLabel": "Chile / CIOCH",
-      "frontClass": "chile",
-      "task": "Revisar QR/link, texto, hierarquia visual, informações do evento e arquivo final de impressão.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje de manhã",
-      "frontLabel": "Chile / CIOCH",
-      "frontClass": "chile",
-      "task": "Enviar o arquivo final para a gráfica a tempo de produzir e retirar antes do evento.",
+      "time": "Agora",
+      "frontLabel": "Aquecimento 12/09",
+      "frontClass": "setembro",
+      "task": "Revisar o plano de aquecimento da Formação Prática em Mini-Implantes.",
       "status": "🔥"
     },
     {
       "time": "Hoje",
-      "frontLabel": "Vídeo institucional",
-      "frontClass": "chile",
-      "task": "Compor briefing para Fabián do vídeo institucional XDental que vai rodar na TV do stand no Chile.",
-      "status": "⚠️"
+      "frontLabel": "Aquecimento 12/09",
+      "frontClass": "setembro",
+      "task": "Transformar o plano de aquecimento em calendário de ações até 12/09.",
+      "status": "🔥"
     },
     {
       "time": "Hoje",
-      "frontLabel": "Vídeo institucional",
-      "frontClass": "chile",
-      "task": "Definir ideia do vídeo: autoridade XDental, comunidade, cursos, cases/resultados, presença internacional e CTA visual em loop.",
+      "frontLabel": "Testes/campanhas",
+      "frontClass": "setembro",
+      "task": "Produzir mais testes para criativos e campanhas do lançamento.",
+      "status": "🔥"
+    },
+    {
+      "time": "Manhã",
+      "frontLabel": "Batista",
+      "frontClass": "reunioes",
+      "task": "Usar a reunião com Batista para fechar direção de campanhas, testes e próximos criativos.",
       "status": "📌"
     },
     {
-      "time": "Na sequência",
-      "frontLabel": "Lançamento 12/09",
-      "frontClass": "setembro",
-      "task": "Continuar/finalizar as páginas de vendas de ingressos.",
-      "status": "🔥"
+      "time": "16h",
+      "frontLabel": "Adônio",
+      "frontClass": "reunioes",
+      "task": "Revisar com Adônio a parte dos testes/extensão do lançamento.",
+      "status": "📌"
     },
     {
-      "time": "Na sequência",
-      "frontLabel": "Checkout",
-      "frontClass": "setembro",
-      "task": "Ajustar o checkout personalizado e pegar o link final.",
-      "status": "🔥"
-    },
-    {
-      "time": "Depois do checkout",
-      "frontLabel": "Página de vendas",
-      "frontClass": "setembro",
-      "task": "Inserir o link do checkout na página e finalizar/publicar a página sem pendência crítica.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje",
-      "frontLabel": "WhatsApp",
-      "frontClass": "setembro",
-      "task": "Criar os grupos de WhatsApp do lançamento 12/09.",
+      "time": "01/09",
+      "frontLabel": "Diplomado M09",
+      "frontClass": "diplomado",
+      "task": "Programar pagamento do professor somente se arquivo final estiver entregue/aprovado e com aprovação do Ruan.",
       "status": "⚠️"
     },
     {
-      "time": "Hoje",
-      "frontLabel": "Sendflow",
-      "frontClass": "setembro",
-      "task": "Criar a campanha no Sendflow e conectar grupos/links para captação e vendas.",
-      "status": "⚠️"
-    },
-    {
-      "time": "Antes de sábado",
-      "frontLabel": "Fluxo completo",
-      "frontClass": "setembro",
-      "task": "Validar página → checkout → obrigado → WhatsApp → suporte antes das vendas começarem sábado 22/08.",
+      "time": "03/09",
+      "frontLabel": "Diplomado M08",
+      "frontClass": "diplomado",
+      "task": "Liberar prova M08 aos alunos.",
       "status": "📅"
+    },
+    {
+      "time": "05/09",
+      "frontLabel": "Diplomado M10",
+      "frontClass": "diplomado",
+      "task": "Confirmar com Dr. Sérgio Cury o M10.",
+      "status": "📅"
+    },
+    {
+      "time": "06/09",
+      "frontLabel": "Diplomado M09",
+      "frontClass": "diplomado",
+      "task": "Fazer checkpoint final pré-liberação do M09.",
+      "status": "📅"
+    },
+    {
+      "time": "07/09",
+      "frontLabel": "Diplomado M09",
+      "frontClass": "diplomado",
+      "task": "Subir módulo M09 na Hotmart.",
+      "status": "📅"
+    },
+    {
+      "time": "08/09",
+      "frontLabel": "Diplomado M09",
+      "frontClass": "diplomado",
+      "task": "Liberar módulo M09 aos alunos.",
+      "status": "🔥"
+    },
+    {
+      "time": "10/09",
+      "frontLabel": "Diplomado M08",
+      "frontClass": "diplomado",
+      "task": "Encerrar prova M08.",
+      "status": "📅"
+    },
+    {
+      "time": "12/09",
+      "frontLabel": "Lançamento",
+      "frontClass": "setembro",
+      "task": "Lançamento pago pré-Black / Formação Prática em Mini-Implantes.",
+      "status": "🔥"
     }
   ],
   "metrics": {
-    "tasks": 15,
-    "today": 14,
-    "week": 1,
+    "tasks": 17,
+    "today": 9,
+    "week": 7,
     "waiting": 8,
     "done": 1
   },
-  "radarExtra": "Fonte: áudio do Ruan em 19/08 no tópico Dados/Painel. Por orientação explícita, painel foi limpo e ficou focado somente nas demandas citadas para hoje/agora de manhã.",
-  "sourceFile": "tmp_update_panel_20260819.py",
+  "radarExtra": "Fontes: áudio do Ruan em 31/08 no tópico Dados/Painel + Google Calendar rdomith@gmail.com de 31/08 a 12/09. Painel focado nas demandas de hoje, no aquecimento do lançamento 12/09 e nos próximos marcos críticos do Diplomado.",
+  "sourceFile": "tmp_update_panel_20260831.js",
   "radar": []
 }
