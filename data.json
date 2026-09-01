@@ -1,294 +1,217 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.31-radar-2026-08-31",
-    "lastUpdated": "2026-08-31 · demandas do dia",
+    "version": "2.32-radar-2026-09-01",
+    "lastUpdated": "2026-09-01 · demandas de hoje",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Foco do dia: calendário operacional, plano de aquecimento do lançamento 12/09, testes/campanhas e reuniões com Batista e Adônio."
+    "headline": "Foco do dia: finalizar aquecimento da formacao, preparar disparos de venda de ingressos e iniciar o mapa de dados do ano para quinta."
   },
   "fronts": [
     {
-      "id": "calendario-31-08-diplomado-elite-financeiro",
+      "id": "calendario-01-09-sem-eventos",
       "filter": "calendario",
       "icon": "📅",
-      "name": "Calendário 31/08 · Diplomado, Elite e fechamento",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 42,
-      "owner": "Ruan / TAOS / Operação",
-      "summary": "Hoje tem quatro itens de calendário: prova M08, galeria Elite, PDF M09 e fechamento Fabinho. O ponto sensível é separar execução operacional de qualquer repasse financeiro, que precisa de aprovação do Ruan.",
-      "exec": [
-        "Diplomado M08: preparar prova hoje para liberar aos alunos em 03/09.",
-        "Elite: extrair casos e atualizar galeria.",
-        "Diplomado M09: iniciar PDF do módulo.",
-        "Fechamento Fabinho: preparar conferência/entrega e deixar repasse apenas para aprovação do Ruan."
-      ],
-      "wait": [
-        "Confirmação de prova M08 pronta no ambiente correto antes de 03/09.",
-        "Evidência do arquivo final/aprovado do M09 antes de qualquer pagamento de professor em 01/09.",
-        "Aprovação explícita do Ruan para qualquer operação financeira ligada ao fechamento Fabinho."
-      ],
-      "next": [
-        "03/09: liberar prova M08 aos alunos.",
-        "08/09: liberar módulo M09 aos alunos.",
-        "10/09: encerrar prova M08.",
-        "11/09: reunião semanal de sócios."
-      ],
+      "name": "Calendario 01/09 · sem eventos oficiais hoje",
+      "status": "stable",
+      "priority": "p1",
+      "progress": 100,
+      "owner": "Ruan / TAOS",
+      "summary": "Google Calendar oficial do Ruan conferido em 01/09: nenhum evento no calendario primario nem no calendario XDental. O painel fica limpo com as demandas passadas no audio.",
+      "exec": [],
+      "wait": [],
+      "next": [],
       "done": [
-        "Calendar rdomith@gmail.com conferido de 31/08 a 12/09."
+        "Calendar rdomith@gmail.com conferido para 01/09: sem eventos.",
+        "Calendario XDental da conta rdomith@gmail.com conferido para 01/09: sem eventos."
       ]
     },
     {
-      "id": "lancamento-12-09-aquecimento-mini-implantes",
+      "id": "formacao-mini-implantes-aquecimento-01-09",
       "filter": "setembro",
       "icon": "🚀",
-      "name": "Lançamento 12/09 · aquecimento Mini-Implantes",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 35,
-      "owner": "Ruan / TAOS / Batista / Adônio",
-      "summary": "Prioridade comercial do dia: revisar o plano de aquecimento e começar a rodar a preparação do lançamento pago de 12/09, Formação Prática em Mini-Implantes.",
-      "exec": [
-        "Revisar o plano de aquecimento do lançamento de 12/09.",
-        "Transformar o plano em calendário de ações até 12/09.",
-        "Produzir mais testes para criativos/campanhas.",
-        "Preparar pauta da reunião com Batista sobre campanhas e testes."
-      ],
-      "wait": [
-        "Rascunhos adicionais que o Ruan comentou que vai passar depois.",
-        "Direção final das campanhas após reunião com Batista.",
-        "Validação da reunião das 16h com Adônio sobre testes/extensão do lançamento."
-      ],
-      "next": [
-        "Após reunião com Batista: converter decisões em tarefas de tráfego no painel.",
-        "Após reunião com Adônio às 16h: atualizar bloco de testes, pendências e responsáveis.",
-        "Garantir que aquecimento tenha cadência diária até 12/09."
-      ],
-      "done": [
-        "Data do lançamento confirmada no Calendar: 12/09/2026."
-      ]
-    },
-    {
-      "id": "diplomado-m09-m10-risco-liberacao",
-      "filter": "diplomado",
-      "icon": "🎓",
-      "name": "Diplomado · M09 e M10 próximos marcos",
+      "name": "Formacao Mini-Implantes · aquecimento de hoje",
       "status": "risk",
       "priority": "p0",
       "progress": 30,
-      "owner": "Ruan / TAOS / Mônica / Felipe",
-      "summary": "M09 tem liberação em 08/09. Se PDF, upload e checklist final não andarem esta semana, vira atraso visível para aluno.",
+      "owner": "Ruan / TAOS / Sergio",
+      "summary": "Prioridade do dia: finalizar o plano de aquecimento da formacao e passar para o Sergio. Sem isso, o lancamento perde cadencia antes da janela comercial apertar.",
       "exec": [
-        "M09: iniciar PDF do módulo hoje.",
-        "M09: checar arquivo final, edição, upload e agendamento na Hotmart.",
-        "M08: preparar/liberar prova e garantir encerramento em 10/09.",
-        "M10: confirmar com Dr. Sérgio Cury em 05/09."
+        "Finalizar o plano de aquecimento da Formacao Pratica em Mini-Implantes.",
+        "Passar o plano de aquecimento para o Sergio hoje.",
+        "Fechar a sequencia de argumentos/ofertas para transformar em copy e disparos."
       ],
       "wait": [
-        "Confirmação de gravação/edit final do M09.",
-        "Confirmação de PDF/material complementar do M09.",
-        "Confirmação de upload/agendamento antes de 07/09."
+        "Validacao do Sergio sobre o plano de aquecimento.",
+        "Confirmacao final do angulo comercial antes dos disparos."
       ],
       "next": [
-        "06/09: checkpoint final pré-liberação M09.",
-        "07/09: subir módulo M09 na Hotmart.",
-        "08/09: liberar M09 aos alunos.",
-        "05/10: próxima liberação M10."
+        "Depois da validacao: transformar o plano em cadencia diaria de aquecimento.",
+        "Alinhar o que entra em trafego, base e grupos antigos."
       ],
       "done": []
     },
     {
-      "id": "reunioes-e-decisoes-do-dia-31-08",
-      "filter": "reunioes",
-      "icon": "🧭",
-      "name": "Reuniões do dia · Batista e Adônio",
-      "status": "attention",
-      "priority": "p1",
-      "progress": 25,
-      "owner": "Ruan / TAOS",
-      "summary": "As reuniões de hoje precisam virar decisão operacional no painel, não só conversa solta. Batista mexe no tráfego; Adônio fecha revisão de testes/extensão às 16h.",
+      "id": "disparos-venda-ingressos-apei-base-grupos",
+      "filter": "comercial",
+      "icon": "📡",
+      "name": "Disparos de hoje · APEI/base e grupos antigos",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 20,
+      "owner": "Ruan / Felipe / TAOS",
+      "summary": "Duas acoes comerciais separadas precisam sair hoje: API para a base e mensagem real de venda de ingressos nos grupos antigos. A copy ainda precisa ser preparada e combinada com Felipe.",
       "exec": [
-        "Reunião da manhã com Batista: revisar campanhas, testes e próximos criativos.",
-        "Reunião 16h com Adônio: revisar parte dos testes/extensão do lançamento.",
-        "Registrar decisões das duas reuniões como próximos passos objetivos."
+        "Preparar a copy do disparo via API para a base.",
+        "Preparar a mensagem de venda de ingressos para grupos antigos.",
+        "Combinar com Felipe o disparo via API ainda hoje.",
+        "Separar claramente: API para base e mensagem nos grupos antigos sao duas acoes diferentes."
       ],
       "wait": [
-        "Outputs da reunião com Batista.",
-        "Outputs da reunião das 16h com Adônio.",
-        "Rascunhos adicionais prometidos pelo Ruan."
+        "Aprovacao do Ruan antes de qualquer envio externo ou em massa.",
+        "Confirmacao do Felipe sobre janela e execucao do disparo."
       ],
       "next": [
-        "Depois de cada reunião: atualizar responsáveis, prazo e status.",
-        "Separar o que é P0 de hoje do que entra como cadência de aquecimento."
+        "Apos envio: monitorar respostas, cliques e vendas de ingresso.",
+        "Registrar qual canal gerou venda para nao misturar API com grupos antigos."
       ],
       "done": []
+    },
+    {
+      "id": "dados-ano-reuniao-contador-batista",
+      "filter": "dados",
+      "icon": "🗺️",
+      "name": "Dados do ano · world map para quinta-feira",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 15,
+      "owner": "Ruan / TAOS / Batista",
+      "summary": "Precisa comecar hoje a organizacao dos dados do ano para apresentar na reuniao de quinta com contador, conectando o que ja foi feito no ano e os dados de aquecimento.",
+      "exec": [
+        "Comecar a organizar os dados do ano dentro do material do Batista.",
+        "Montar um world map com o que a XDental fez no ano.",
+        "Separar os dados de aquecimento que precisam entrar na apresentacao de quinta-feira."
+      ],
+      "wait": [
+        "Fonte final dos dados do ano que entrarao no mapa.",
+        "Briefing fechado com Batista para amarrar narrativa e numeros."
+      ],
+      "next": [
+        "Ate quinta: consolidar visual e roteiro para a reuniao com contador.",
+        "Transformar o mapa em uma visao simples: feito no ano, dados de aquecimento e proximas decisoes."
+      ],
+      "done": [
+        "Briefings fechados com Batista, segundo audio do Ruan."
+      ]
     }
   ],
   "gargalos": [
     {
-      "title": "M09 libera em 08/09 e ainda precisa de PDF/upload/checkpoint final",
-      "filter": "diplomado",
-      "frente": "Diplomado Ortho Pro",
-      "deadline": "08/09/2026",
-      "blocks": "Sem PDF, arquivo final e upload/agendamento fechados esta semana, o atraso vira experiência ruim para aluno.",
-      "owner": "Ruan / TAOS / Mônica / Felipe"
+      "title": "Disparos de venda precisam sair hoje",
+      "filter": "comercial",
+      "frente": "Comercial / Lançamento",
+      "deadline": "01/09/2026",
+      "blocks": "Copy e alinhamento com Felipe ainda nao estao fechados; sem isso, base e grupos antigos nao viram venda de ingresso hoje.",
+      "owner": "Ruan / Felipe"
     },
     {
-      "title": "Aquecimento do lançamento 12/09 precisa começar agora",
+      "title": "Plano de aquecimento precisa chegar no Sergio",
       "filter": "setembro",
-      "frente": "Mini-Implantes 12/09",
+      "frente": "Formacao Mini-Implantes",
       "deadline": "Hoje",
-      "blocks": "Se o plano não virar cadência diária e testes de campanha hoje, a janela comercial fica curta demais.",
-      "owner": "Ruan / TAOS / Batista / Adônio"
+      "blocks": "Sem validacao do Sergio, o aquecimento fica sem cadencia e sem voz do expert.",
+      "owner": "Ruan / Sergio"
     },
     {
-      "title": "Fechamento Fabinho envolve repasse financeiro",
-      "filter": "calendario",
-      "frente": "Financeiro / Operação",
-      "deadline": "Hoje",
-      "blocks": "TAOS pode preparar conferência e entrega, mas não executa repasse sem aprovação explícita do Ruan.",
-      "owner": "Ruan"
-    },
-    {
-      "title": "Reuniões de Batista e Adônio precisam virar tarefas executáveis",
-      "filter": "reunioes",
-      "frente": "Tráfego / Testes",
-      "deadline": "Hoje após cada reunião",
-      "blocks": "Sem registro de decisão, o lançamento fica dependente de memória e perde velocidade de execução.",
-      "owner": "Ruan / TAOS"
+      "title": "Mapa de dados para quinta ainda precisa nascer",
+      "filter": "dados",
+      "frente": "Dados / Batista / Contador",
+      "deadline": "03/09/2026",
+      "blocks": "A reuniao de quinta precisa de narrativa e numeros organizados; se deixar para ultima hora, vira apresentacao corrida.",
+      "owner": "Ruan / TAOS / Batista"
     }
   ],
   "radarDoDia": [
     {
-      "time": "Hoje",
-      "frontLabel": "Diplomado M08",
-      "frontClass": "calendario",
-      "task": "Preparar prova do M08 para liberação aos alunos em 03/09.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje",
-      "frontLabel": "Elite",
-      "frontClass": "calendario",
-      "task": "Extrair casos e atualizar galeria do Elite.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje",
-      "frontLabel": "Diplomado M09",
-      "frontClass": "diplomado",
-      "task": "Iniciar PDF do módulo M09.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje",
-      "frontLabel": "Fechamento Fabinho",
-      "frontClass": "calendario",
-      "task": "Preparar conferência/entrega do fechamento; qualquer repasse financeiro fica pendente de aprovação do Ruan.",
-      "status": "⚠️"
-    },
-    {
       "time": "Agora",
-      "frontLabel": "Aquecimento 12/09",
+      "frontLabel": "Aquecimento",
       "frontClass": "setembro",
-      "task": "Revisar o plano de aquecimento da Formação Prática em Mini-Implantes.",
+      "task": "Finalizar o plano de aquecimento da Formacao Pratica em Mini-Implantes.",
       "status": "🔥"
     },
     {
       "time": "Hoje",
-      "frontLabel": "Aquecimento 12/09",
+      "frontLabel": "Sergio",
       "frontClass": "setembro",
-      "task": "Transformar o plano de aquecimento em calendário de ações até 12/09.",
+      "task": "Passar para o Sergio o plano de aquecimento da formacao.",
       "status": "🔥"
     },
     {
       "time": "Hoje",
-      "frontLabel": "Testes/campanhas",
-      "frontClass": "setembro",
-      "task": "Produzir mais testes para criativos e campanhas do lançamento.",
+      "frontLabel": "Copy API",
+      "frontClass": "comercial",
+      "task": "Preparar copy do disparo via API para a base.",
       "status": "🔥"
     },
     {
-      "time": "Manhã",
-      "frontLabel": "Batista",
-      "frontClass": "reunioes",
-      "task": "Usar a reunião com Batista para fechar direção de campanhas, testes e próximos criativos.",
-      "status": "📌"
+      "time": "Hoje",
+      "frontLabel": "Felipe",
+      "frontClass": "comercial",
+      "task": "Combinar com Felipe o disparo via API ainda hoje.",
+      "status": "🔥"
     },
     {
-      "time": "16h",
-      "frontLabel": "Adônio",
-      "frontClass": "reunioes",
-      "task": "Revisar com Adônio a parte dos testes/extensão do lançamento.",
-      "status": "📌"
+      "time": "Hoje",
+      "frontLabel": "Grupos antigos",
+      "frontClass": "comercial",
+      "task": "Preparar mensagem real de venda de ingressos para grupos antigos.",
+      "status": "🔥"
     },
     {
-      "time": "01/09",
-      "frontLabel": "Diplomado M09",
-      "frontClass": "diplomado",
-      "task": "Programar pagamento do professor somente se arquivo final estiver entregue/aprovado e com aprovação do Ruan.",
+      "time": "Hoje",
+      "frontLabel": "Ingressos",
+      "frontClass": "comercial",
+      "task": "Disparo de venda de ingressos precisa sair hoje, apos aprovacao do Ruan.",
       "status": "⚠️"
     },
     {
-      "time": "03/09",
-      "frontLabel": "Diplomado M08",
-      "frontClass": "diplomado",
-      "task": "Liberar prova M08 aos alunos.",
+      "time": "Hoje",
+      "frontLabel": "Dados do ano",
+      "frontClass": "dados",
+      "task": "Comecar a organizar os dados do ano dentro do material do Batista.",
+      "status": "📌"
+    },
+    {
+      "time": "Hoje",
+      "frontLabel": "World map",
+      "frontClass": "dados",
+      "task": "Montar world map com o que foi feito no ano e dados de aquecimento.",
+      "status": "📌"
+    },
+    {
+      "time": "Quinta",
+      "frontLabel": "Contador",
+      "frontClass": "dados",
+      "task": "Preparar apresentacao para reuniao de quinta-feira com contador.",
       "status": "📅"
     },
     {
-      "time": "05/09",
-      "frontLabel": "Diplomado M10",
-      "frontClass": "diplomado",
-      "task": "Confirmar com Dr. Sérgio Cury o M10.",
-      "status": "📅"
-    },
-    {
-      "time": "06/09",
-      "frontLabel": "Diplomado M09",
-      "frontClass": "diplomado",
-      "task": "Fazer checkpoint final pré-liberação do M09.",
-      "status": "📅"
-    },
-    {
-      "time": "07/09",
-      "frontLabel": "Diplomado M09",
-      "frontClass": "diplomado",
-      "task": "Subir módulo M09 na Hotmart.",
-      "status": "📅"
-    },
-    {
-      "time": "08/09",
-      "frontLabel": "Diplomado M09",
-      "frontClass": "diplomado",
-      "task": "Liberar módulo M09 aos alunos.",
-      "status": "🔥"
-    },
-    {
-      "time": "10/09",
-      "frontLabel": "Diplomado M08",
-      "frontClass": "diplomado",
-      "task": "Encerrar prova M08.",
-      "status": "📅"
-    },
-    {
-      "time": "12/09",
-      "frontLabel": "Lançamento",
-      "frontClass": "setembro",
-      "task": "Lançamento pago pré-Black / Formação Prática em Mini-Implantes.",
-      "status": "🔥"
+      "time": "Conferido",
+      "frontLabel": "Calendar",
+      "frontClass": "calendario",
+      "task": "Google Calendar rdomith@gmail.com e calendario XDental conferidos para 01/09: sem eventos hoje.",
+      "status": "✅"
     }
   ],
   "metrics": {
-    "tasks": 17,
-    "today": 9,
-    "week": 7,
-    "waiting": 8,
-    "done": 1
+    "tasks": 10,
+    "today": 8,
+    "week": 1,
+    "waiting": 6,
+    "done": 3
   },
-  "radarExtra": "Fontes: áudio do Ruan em 31/08 no tópico Dados/Painel + Google Calendar rdomith@gmail.com de 31/08 a 12/09. Painel focado nas demandas de hoje, no aquecimento do lançamento 12/09 e nos próximos marcos críticos do Diplomado.",
-  "sourceFile": "tmp_update_panel_20260831.js",
+  "radarExtra": "Fontes: audio do Ruan em 01/09 no topico Dados/Painel + Google Calendar rdomith@gmail.com consultado para 01/09. Calendar oficial sem eventos hoje; painel limpo para mostrar apenas demandas de hoje e preparacao de quinta.",
+  "sourceFile": "inline-update-20260901",
   "radar": []
 }
