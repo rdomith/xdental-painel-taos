@@ -1,217 +1,258 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.32-radar-2026-09-01",
-    "lastUpdated": "2026-09-01 · demandas de hoje",
+    "version": "2.33-radar-2026-09-08",
+    "lastUpdated": "2026-09-08 · comandos de hoje",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Foco do dia: finalizar aquecimento da formacao, preparar disparos de venda de ingressos e iniciar o mapa de dados do ano para quinta."
+    "headline": "Foco do dia: reunião 14h com Sérgio, destravar API/Felipe, subir Dominando el MARPE e limpar execução do lançamento pré-Black de sábado."
   },
   "fronts": [
     {
-      "id": "calendario-01-09-sem-eventos",
-      "filter": "calendario",
-      "icon": "📅",
-      "name": "Calendario 01/09 · sem eventos oficiais hoje",
-      "status": "stable",
-      "priority": "p1",
-      "progress": 100,
-      "owner": "Ruan / TAOS",
-      "summary": "Google Calendar oficial do Ruan conferido em 01/09: nenhum evento no calendario primario nem no calendario XDental. O painel fica limpo com as demandas passadas no audio.",
-      "exec": [],
-      "wait": [],
-      "next": [],
+      "id": "lancamento-pre-black-2026-09-08",
+      "filter": "lancamento",
+      "icon": "🚀",
+      "name": "Lançamento pré-Black · sábado 12/09",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 35,
+      "owner": "Ruan / Sérgio / Felipe / Luna / Tráfego",
+      "summary": "O lançamento de sábado precisa sair da zona de conversa e virar execução hoje: oferta fechada com Sérgio, API corrigida com Felipe, ClickUp conferido e ação de compradores puxando presença/VIP.",
+      "exec": [
+        "Reunião presencial 14h com Sérgio: fechar oferta do lançamento de sábado.",
+        "Validar na mesma reunião como a Black Friday entra sem confundir a oferta atual.",
+        "Conferir no ClickUp todas as demandas do lançamento, principalmente mensagens da fase de intensificação.",
+        "Preparar ação com Luna para compradores de ingresso levarem mais gente e aquecerem presença/VIP.",
+        "Pedir variações novas de criativos para tráfego nesta reta final."
+      ],
+      "wait": [
+        "Decisão final da oferta com Sérgio.",
+        "Confirmação do que entra no lançamento de sábado versus o que fica para Black.",
+        "Status real das tarefas do ClickUp após conferência."
+      ],
+      "next": [
+        "Após a reunião: transformar decisões em checklist de copy, tráfego, grupos e checkout.",
+        "Depois da ação com Luna: acompanhar respostas, presença e novas vendas de ingresso."
+      ],
       "done": [
-        "Calendar rdomith@gmail.com conferido para 01/09: sem eventos.",
-        "Calendario XDental da conta rdomith@gmail.com conferido para 01/09: sem eventos."
+        "Data confirmada no Google Calendar: sábado 12/09/2026."
       ]
     },
     {
-      "id": "formacao-mini-implantes-aquecimento-01-09",
-      "filter": "setembro",
-      "icon": "🚀",
-      "name": "Formacao Mini-Implantes · aquecimento de hoje",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 30,
-      "owner": "Ruan / TAOS / Sergio",
-      "summary": "Prioridade do dia: finalizar o plano de aquecimento da formacao e passar para o Sergio. Sem isso, o lancamento perde cadencia antes da janela comercial apertar.",
-      "exec": [
-        "Finalizar o plano de aquecimento da Formacao Pratica em Mini-Implantes.",
-        "Passar o plano de aquecimento para o Sergio hoje.",
-        "Fechar a sequencia de argumentos/ofertas para transformar em copy e disparos."
-      ],
-      "wait": [
-        "Validacao do Sergio sobre o plano de aquecimento.",
-        "Confirmacao final do angulo comercial antes dos disparos."
-      ],
-      "next": [
-        "Depois da validacao: transformar o plano em cadencia diaria de aquecimento.",
-        "Alinhar o que entra em trafego, base e grupos antigos."
-      ],
-      "done": []
-    },
-    {
-      "id": "disparos-venda-ingressos-apei-base-grupos",
-      "filter": "comercial",
+      "id": "felipe-api-sniper-marpe-2026-09-08",
+      "filter": "felipe",
       "icon": "📡",
-      "name": "Disparos de hoje · APEI/base e grupos antigos",
+      "name": "Felipe · API, Sniper e Dominando el MARPE",
       "status": "risk",
       "priority": "p0",
       "progress": 20,
-      "owner": "Ruan / Felipe / TAOS",
-      "summary": "Duas acoes comerciais separadas precisam sair hoje: API para a base e mensagem real de venda de ingressos nos grupos antigos. A copy ainda precisa ser preparada e combinada com Felipe.",
+      "owner": "Ruan / Felipe",
+      "summary": "Felipe concentra dois bloqueios comerciais e operacionais: a API provavelmente não foi disparada na semana passada e o novo curso Dominando el MARPE ainda não subiu na plataforma.",
       "exec": [
-        "Preparar a copy do disparo via API para a base.",
-        "Preparar a mensagem de venda de ingressos para grupos antigos.",
-        "Combinar com Felipe o disparo via API ainda hoje.",
-        "Separar claramente: API para base e mensagem nos grupos antigos sao duas acoes diferentes."
+        "Confirmar com Felipe se a API da semana passada foi disparada ou não.",
+        "Se não disparou: cobrar plano de correção e janela de disparo hoje.",
+        "Reforçar prioridade máxima: dublagem do Sniper.",
+        "Cobrar upload/publicação do curso Dominando el MARPE na plataforma XDental.",
+        "Pedir horário exato em que o MARPE ficará publicado."
       ],
       "wait": [
-        "Aprovacao do Ruan antes de qualquer envio externo ou em massa.",
-        "Confirmacao do Felipe sobre janela e execucao do disparo."
+        "Confirmação de Felipe sobre disparo da API.",
+        "Prazo de publicação do Dominando el MARPE.",
+        "Status da dublagem do Sniper."
       ],
       "next": [
-        "Apos envio: monitorar respostas, cliques e vendas de ingresso.",
-        "Registrar qual canal gerou venda para nao misturar API com grupos antigos."
+        "Com MARPE publicado: alinhar Mônica e liberar arte para Diego.",
+        "Com API disparada: monitorar venda de API/ingressos e registrar origem."
       ],
       "done": []
     },
     {
-      "id": "dados-ano-reuniao-contador-batista",
-      "filter": "dados",
-      "icon": "🗺️",
-      "name": "Dados do ano · world map para quinta-feira",
+      "id": "black-friday-tour-sergio-2026-09-08",
+      "filter": "black",
+      "icon": "⚡",
+      "name": "Black Friday · narrativa e Tour com Sérgio",
       "status": "attention",
       "priority": "p1",
-      "progress": 15,
-      "owner": "Ruan / TAOS / Batista",
-      "summary": "Precisa comecar hoje a organizacao dos dados do ano para apresentar na reuniao de quinta com contador, conectando o que ja foi feito no ano e os dados de aquecimento.",
+      "progress": 25,
+      "owner": "Ruan / Sérgio",
+      "summary": "A Black precisa sair da ideia solta para narrativa de venda. O diferencial possível é o Tour com Sérgio em capitais, amarrado como chance/benefício dentro da oferta.",
       "exec": [
-        "Comecar a organizar os dados do ano dentro do material do Batista.",
-        "Montar um world map com o que a XDental fez no ano.",
-        "Separar os dados de aquecimento que precisam entrar na apresentacao de quinta-feira."
+        "Revisar o material da reunião de hoje com ideias narrativas para Black.",
+        "Levar para Sérgio a proposta do Tour em capitais no ano que vem.",
+        "Definir como o Tour entra na oferta: bônus, chance, critério ou privilégio para compradores da Black.",
+        "Avaliar como o Tour também pode vender presencialmente para mais pessoas nas cidades."
       ],
       "wait": [
-        "Fonte final dos dados do ano que entrarao no mapa.",
-        "Briefing fechado com Batista para amarrar narrativa e numeros."
+        "Validação de Sérgio sobre disposição para o Tour.",
+        "Lista inicial de capitais/cidades viáveis.",
+        "Definição do encaixe comercial dentro da Black."
       ],
       "next": [
-        "Ate quinta: consolidar visual e roteiro para a reuniao com contador.",
-        "Transformar o mapa em uma visao simples: feito no ano, dados de aquecimento e proximas decisoes."
+        "Depois da reunião: consolidar narrativa, mecânica e promessa central da Black.",
+        "Separar decisões de Black das demandas urgentes do lançamento de sábado."
+      ],
+      "done": []
+    },
+    {
+      "id": "diplomado-marpe-comunicacao-2026-09-08",
+      "filter": "diplomado",
+      "icon": "🎓",
+      "name": "Diplomado e curso do mês · M09 + MARPE",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 30,
+      "owner": "Ruan / Mônica / Felipe / Diego",
+      "summary": "Hoje tem liberação do M09 no calendário e o Dominando el MARPE precisa entrar como curso novo do mês. Sem upload, Mônica e Diego ficam travados.",
+      "exec": [
+        "Confirmar liberação do Diplomado M09 aos alunos hoje.",
+        "Alinhar com Mônica que Dominando el MARPE é o novo curso do mês.",
+        "Confirmar com Mônica fluxo de liberação/comunicação do MARPE.",
+        "Fazer arte para Diego postar sobre o novo curso do mês.",
+        "Só passar arte final para Diego depois de nome, promessa e status de publicação estarem confirmados."
+      ],
+      "wait": [
+        "Status final do upload do MARPE por Felipe.",
+        "Confirmação de Mônica sobre comunicação do curso do mês.",
+        "Informações finais para a arte do Diego."
+      ],
+      "next": [
+        "Após publicação do MARPE: liberar Diego para postagem.",
+        "Depois da liberação M09: registrar se houve qualquer pendência com alunos."
       ],
       "done": [
-        "Briefings fechados com Batista, segundo audio do Ruan."
+        "Google Calendar 08/09 conferido: Diplomado M09 — liberar módulo aos alunos."
       ]
     }
   ],
   "gargalos": [
     {
-      "title": "Disparos de venda precisam sair hoje",
-      "filter": "comercial",
-      "frente": "Comercial / Lançamento",
-      "deadline": "01/09/2026",
-      "blocks": "Copy e alinhamento com Felipe ainda nao estao fechados; sem isso, base e grupos antigos nao viram venda de ingresso hoje.",
+      "title": "API provavelmente não foi disparada",
+      "filter": "felipe",
+      "frente": "Lançamento pré-Black",
+      "deadline": "Hoje",
+      "blocks": "Quase não houve venda de API; se o disparo não saiu, a operação perdeu tração antes do lançamento de sábado.",
       "owner": "Ruan / Felipe"
     },
     {
-      "title": "Plano de aquecimento precisa chegar no Sergio",
-      "filter": "setembro",
-      "frente": "Formacao Mini-Implantes",
+      "title": "Dominando el MARPE ainda não subiu",
+      "filter": "diplomado",
+      "frente": "Curso do mês / Plataforma XDental",
       "deadline": "Hoje",
-      "blocks": "Sem validacao do Sergio, o aquecimento fica sem cadencia e sem voz do expert.",
-      "owner": "Ruan / Sergio"
+      "blocks": "Sem upload, Mônica não consegue organizar comunicação e Diego não consegue postar com segurança.",
+      "owner": "Felipe / Mônica / Diego"
     },
     {
-      "title": "Mapa de dados para quinta ainda precisa nascer",
-      "filter": "dados",
-      "frente": "Dados / Batista / Contador",
-      "deadline": "03/09/2026",
-      "blocks": "A reuniao de quinta precisa de narrativa e numeros organizados; se deixar para ultima hora, vira apresentacao corrida.",
-      "owner": "Ruan / TAOS / Batista"
+      "title": "Oferta de sábado precisa ser fechada na reunião das 14h",
+      "filter": "lancamento",
+      "frente": "Lançamento pago pré-Black",
+      "deadline": "08/09/2026 14h",
+      "blocks": "Sem oferta fechada, copy, tráfego, grupos, ação de compradores e checkout ficam sem direção na reta final.",
+      "owner": "Ruan / Sérgio"
+    },
+    {
+      "title": "Black Friday precisa de narrativa clara",
+      "filter": "black",
+      "frente": "Black Friday 2026",
+      "deadline": "Hoje na reunião",
+      "blocks": "A ideia do Tour com Sérgio pode ser o diferencial, mas precisa de validação e encaixe comercial para não virar promessa solta.",
+      "owner": "Ruan / Sérgio"
     }
   ],
   "radarDoDia": [
     {
-      "time": "Agora",
-      "frontLabel": "Aquecimento",
-      "frontClass": "setembro",
-      "task": "Finalizar o plano de aquecimento da Formacao Pratica em Mini-Implantes.",
+      "time": "Antes 14h",
+      "frontLabel": "Material Black",
+      "frontClass": "black",
+      "task": "Revisar material da reunião com Sérgio: narrativa Black + ideia do Tour nas capitais.",
+      "status": "🔥"
+    },
+    {
+      "time": "14h",
+      "frontLabel": "Sérgio",
+      "frontClass": "lancamento",
+      "task": "Reunião presencial: fechar oferta do lançamento de sábado e separar o que é pré-Black do que é Black.",
       "status": "🔥"
     },
     {
       "time": "Hoje",
-      "frontLabel": "Sergio",
-      "frontClass": "setembro",
-      "task": "Passar para o Sergio o plano de aquecimento da formacao.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje",
-      "frontLabel": "Copy API",
-      "frontClass": "comercial",
-      "task": "Preparar copy do disparo via API para a base.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje",
-      "frontLabel": "Felipe",
-      "frontClass": "comercial",
-      "task": "Combinar com Felipe o disparo via API ainda hoje.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje",
-      "frontLabel": "Grupos antigos",
-      "frontClass": "comercial",
-      "task": "Preparar mensagem real de venda de ingressos para grupos antigos.",
-      "status": "🔥"
-    },
-    {
-      "time": "Hoje",
-      "frontLabel": "Ingressos",
-      "frontClass": "comercial",
-      "task": "Disparo de venda de ingressos precisa sair hoje, apos aprovacao do Ruan.",
+      "frontLabel": "Felipe/API",
+      "frontClass": "felipe",
+      "task": "Confirmar se a API da semana passada foi disparada; se não, cobrar correção e janela de disparo hoje.",
       "status": "⚠️"
     },
     {
       "time": "Hoje",
-      "frontLabel": "Dados do ano",
-      "frontClass": "dados",
-      "task": "Comecar a organizar os dados do ano dentro do material do Batista.",
+      "frontLabel": "Sniper",
+      "frontClass": "felipe",
+      "task": "Reforçar com Felipe prioridade máxima: dublagem do Sniper.",
+      "status": "🔥"
+    },
+    {
+      "time": "Hoje",
+      "frontLabel": "MARPE",
+      "frontClass": "felipe",
+      "task": "Cobrar Felipe pelo upload/publicação do Dominando el MARPE.",
+      "status": "⚠️"
+    },
+    {
+      "time": "Hoje",
+      "frontLabel": "Mônica",
+      "frontClass": "diplomado",
+      "task": "Alinhar que Dominando el MARPE é o curso novo do mês e confirmar fluxo de comunicação.",
       "status": "📌"
     },
     {
       "time": "Hoje",
-      "frontLabel": "World map",
-      "frontClass": "dados",
-      "task": "Montar world map com o que foi feito no ano e dados de aquecimento.",
+      "frontLabel": "Diego",
+      "frontClass": "diplomado",
+      "task": "Preparar arte para Diego postar o novo curso do mês após confirmação de publicação/promessa.",
       "status": "📌"
     },
     {
-      "time": "Quinta",
-      "frontLabel": "Contador",
-      "frontClass": "dados",
-      "task": "Preparar apresentacao para reuniao de quinta-feira com contador.",
-      "status": "📅"
+      "time": "Hoje",
+      "frontLabel": "ClickUp",
+      "frontClass": "lancamento",
+      "task": "Conferir demandas do lançamento no ClickUp, principalmente mensagens da fase de intensificação.",
+      "status": "🔥"
     },
     {
-      "time": "Conferido",
-      "frontLabel": "Calendar",
-      "frontClass": "calendario",
-      "task": "Google Calendar rdomith@gmail.com e calendario XDental conferidos para 01/09: sem eventos hoje.",
-      "status": "✅"
+      "time": "Hoje",
+      "frontLabel": "Luna/VIP",
+      "frontClass": "lancamento",
+      "task": "Preparar ação com Luna para compradores de ingresso levarem mais gente e aquecerem presença/VIP.",
+      "status": "🔥"
+    },
+    {
+      "time": "Hoje",
+      "frontLabel": "Criativos",
+      "frontClass": "lancamento",
+      "task": "Pedir variações novas de criativos para tráfego nesta reta final.",
+      "status": "📌"
+    },
+    {
+      "time": "Hoje",
+      "frontLabel": "Diplomado M09",
+      "frontClass": "diplomado",
+      "task": "Confirmar liberação do módulo M09 aos alunos.",
+      "status": "⚠️"
+    },
+    {
+      "time": "12/09",
+      "frontLabel": "Lançamento",
+      "frontClass": "lancamento",
+      "task": "Lançamento pago pré-Black acontece sábado.",
+      "status": "📅"
     }
   ],
   "metrics": {
-    "tasks": 10,
-    "today": 8,
+    "tasks": 12,
+    "today": 11,
     "week": 1,
-    "waiting": 6,
-    "done": 3
+    "waiting": 11,
+    "done": 2
   },
-  "radarExtra": "Fontes: audio do Ruan em 01/09 no topico Dados/Painel + Google Calendar rdomith@gmail.com consultado para 01/09. Calendar oficial sem eventos hoje; painel limpo para mostrar apenas demandas de hoje e preparacao de quinta.",
-  "sourceFile": "inline-update-20260901",
+  "radarExtra": "Fontes: áudios/textos do Ruan em 08/09 no tópico Dados/Painel + Google Calendar rdomith@gmail.com consultado em 08/09. Conteúdo antigo removido da tela: painel agora mostra apenas demandas de hoje e marcos imediatos do lançamento de sábado.",
+  "sourceFile": "tmp_update_panel_20260908.js",
   "radar": []
 }
