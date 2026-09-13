@@ -197,6 +197,33 @@ const fronts = [
       'Passar pacote final para Felipe com ordem de envio.'
     ],
     done: []
+  },
+  {
+    id: 'contrato-faciencia-2026-09-14',
+    filter: 'contrato',
+    icon: 'CT',
+    name: 'Contrato · Faciencia',
+    status: 'risk',
+    priority: 'p0',
+    progress: 10,
+    owner: 'Ruan',
+    summary: 'Assinatura de contrato com a Faciencia precisa entrar como P0 administrativo, mas com revisão mínima antes da assinatura por envolver acordo formal.',
+    exec: [
+      'Localizar versão final do contrato com a Faciencia.',
+      'Revisar pontos críticos antes de assinar: partes, escopo, valores, prazos, obrigações, multa/rescisão e foro.',
+      'Assinar somente se a versão estiver final e sem pendência jurídica/comercial.',
+      'Salvar o contrato assinado no Drive/pasta correta depois da assinatura.'
+    ],
+    wait: [
+      'Versão final do contrato.',
+      'Confirmação de que não há cláusula pendente ou ponto comercial em aberto.',
+      'Definição da pasta/arquivo final para arquivamento.'
+    ],
+    next: [
+      'Após assinatura: registrar contrato assinado e avisar internamente quem precisa saber.',
+      'Se houver dúvida em cláusula: pausar assinatura e resolver antes.'
+    ],
+    done: []
   }
 ];
 
@@ -212,6 +239,7 @@ const radar = [
   ['Amanhã', 'Cata', 'comercial', 'Reunião com Cata do comercial para alinhar próximas ações.', 'P0'],
   ['Amanhã', 'WhatsApp', 'comercial', 'Refinar mensagens dos grupos do lançamento do Diplomado para Felipe enviar.', 'P0'],
   ['Amanhã', 'Imagens', 'imagens', 'Preparar imagens de conversão para colocar antes das mensagens nos grupos.', 'P1'],
+  ['Amanhã', 'Faciencia', 'contrato', 'Assinar contrato com a Faciencia após revisão dos pontos críticos.', 'P0'],
   ['Amanhã', 'Sérgio', 'live', 'Alinhar live de quarta como resumo especial do evento, idealmente às 20h.', 'P0'],
   ['Amanhã', 'Felipe', 'live', 'Pedir Felipe no horário da live para cobrir link/envio se Ruan estiver no avião.', 'ALERTA'],
   ['16/09', 'Férias', 'pre-ferias', 'Início das férias no Google Calendar.', 'CAL'],
@@ -228,7 +256,7 @@ const data = {
     owner: 'Ruan Domith',
     operator: 'TAOS',
     status: 'operational',
-    headline: 'Foco de amanhã: blindar a operação antes das férias, com Fabián, Freedom 21/09, Stefan/M09 22/09, Cata/comercial, WhatsApp, live com Sérgio e imagens de conversão.'
+    headline: 'Foco de amanhã: blindar a operação antes das férias, com Fabián, Freedom 21/09, Stefan/M09 22/09, Cata/comercial, WhatsApp, contrato Faciencia, live com Sérgio e imagens de conversão.'
   },
   fronts,
   gargalos: [
@@ -263,6 +291,14 @@ const data = {
       deadline: '14/09/2026',
       blocks: 'Se Sérgio não confirmar 20h e Felipe não ficar de backup, o envio de link pode falhar enquanto Ruan estiver no avião.',
       owner: 'Ruan / Sérgio / Felipe'
+    },
+    {
+      title: 'Contrato com a Faciencia precisa de revisão antes da assinatura',
+      filter: 'contrato',
+      frente: 'Administrativo / Contratos',
+      deadline: '14/09/2026',
+      blocks: 'Contrato é acordo formal. O risco não é executar, é assinar versão com cláusula, valor, prazo ou obrigação desalinhada.',
+      owner: 'Ruan'
     }
   ],
   radarDoDia: radar.map(([time, frontLabel, frontClass, task, status]) => ({ time, frontLabel, frontClass, task, status })),
@@ -295,7 +331,8 @@ const colors = {
   stefan: '#a78bfa',
   comercial: '#fb7185',
   live: '#06b6d4',
-  imagens: '#e879f9'
+  imagens: '#e879f9',
+  contrato: '#f97316'
 };
 
 function radarItem(item, index) {
@@ -315,14 +352,14 @@ function frontCard(front) {
 }
 
 const content = `<div class="container">
-  <header class="header"><div class="header-top"><div class="brand"><div class="brand-mark"><img src="assets/xdental-logo-fundo-escuro.png" alt="Excellence Dental Academy"></div><div class="brand-info"><h1>Painel XDental</h1><div class="subtitle">v2.34 · Radar de amanhã 14/09</div></div></div><div class="header-meta"><div class="meta-pill"><span class="dot"></span>Atualizado 13/09 · foco amanhã</div><div class="meta-pill">Pré-férias · Freedom · Stefan M09 · Comercial</div></div></div>
-    <div class="alert-bar" style="background: linear-gradient(90deg, rgba(56, 189, 248, 0.24) 0%, rgba(251, 113, 133, 0.12) 100%); border: 1px solid rgba(56, 189, 248, 0.45); color: #f8fafc; box-shadow: 0 12px 38px rgba(56, 189, 248, 0.10);"><span style="font-size: 13px; font-weight: 800; color: #7dd3fc;">TAOS</span><span><strong style="color: #c4b5fd;">Foco fechado:</strong> amanhã é dia de blindar a operação antes das férias: Fabián, Freedom 21/09, Stefan/M09 22/09, Cata, WhatsApp, Sérgio/Felipe e imagens de conversão.</span></div>
-    <div class="filters-bar"><div class="filter-group"><span class="filter-label">Frente</span><button class="filter-btn active" data-filter="frente" data-value="all">Todas</button><button class="filter-btn" data-filter="frente" data-value="pre-ferias">Pré-férias</button><button class="filter-btn" data-filter="frente" data-value="fabian">Fabián</button><button class="filter-btn" data-filter="frente" data-value="freedom">Freedom</button><button class="filter-btn" data-filter="frente" data-value="stefan">Stefan M09</button><button class="filter-btn" data-filter="frente" data-value="comercial">Comercial</button><button class="filter-btn" data-filter="frente" data-value="live">Live</button><button class="filter-btn" data-filter="frente" data-value="imagens">Imagens</button></div></div>
+  <header class="header"><div class="header-top"><div class="brand"><div class="brand-mark"><img src="assets/xdental-logo-fundo-escuro.png" alt="Excellence Dental Academy"></div><div class="brand-info"><h1>Painel XDental</h1><div class="subtitle">v2.34 · Radar de amanhã 14/09</div></div></div><div class="header-meta"><div class="meta-pill"><span class="dot"></span>Atualizado 13/09 · foco amanhã</div><div class="meta-pill">Pré-férias · Freedom · Stefan M09 · Comercial · Contrato</div></div></div>
+    <div class="alert-bar" style="background: linear-gradient(90deg, rgba(56, 189, 248, 0.24) 0%, rgba(251, 113, 133, 0.12) 100%); border: 1px solid rgba(56, 189, 248, 0.45); color: #f8fafc; box-shadow: 0 12px 38px rgba(56, 189, 248, 0.10);"><span style="font-size: 13px; font-weight: 800; color: #7dd3fc;">TAOS</span><span><strong style="color: #c4b5fd;">Foco fechado:</strong> amanhã é dia de blindar a operação antes das férias: Fabián, Freedom 21/09, Stefan/M09 22/09, Cata, WhatsApp, contrato Faciencia, Sérgio/Felipe e imagens de conversão.</span></div>
+    <div class="filters-bar"><div class="filter-group"><span class="filter-label">Frente</span><button class="filter-btn active" data-filter="frente" data-value="all">Todas</button><button class="filter-btn" data-filter="frente" data-value="pre-ferias">Pré-férias</button><button class="filter-btn" data-filter="frente" data-value="fabian">Fabián</button><button class="filter-btn" data-filter="frente" data-value="freedom">Freedom</button><button class="filter-btn" data-filter="frente" data-value="stefan">Stefan M09</button><button class="filter-btn" data-filter="frente" data-value="comercial">Comercial</button><button class="filter-btn" data-filter="frente" data-value="live">Live</button><button class="filter-btn" data-filter="frente" data-value="imagens">Imagens</button><button class="filter-btn" data-filter="frente" data-value="contrato">Contrato</button></div></div>
   </header>
 <section class="radar-card"><div class="radar-head"><div class="radar-title-block"><h2>Radar operacional · Segunda 14/09</h2><div class="radar-subtitle">Pré-férias: deixar delegações, links, mensagens e imagens prontos antes de 16/09</div></div><div class="meta-pill">${radar.length} itens · America/Sao_Paulo</div></div><div class="radar-table-head"><span></span><span>Data / horário</span><span>Frente</span><span>Demanda</span><span>Status</span></div><ul class="radar-list">
 ${data.radarDoDia.map(radarItem).join('\n')}
 </ul><div class="radar-extra"><span class="radar-extra-icon">TAOS</span>${esc(data.radarExtra)}</div></section>
-<section class="kanban-section"><h2 class="kanban-section-title">Kanban das demandas de amanhã <span class="kanban-section-count">Pré-férias + Diplomado + Comercial + Conteúdo</span></h2><div class="kanban-actions"><button class="kanban-action-btn" id="expand-all">Expandir todas</button><button class="kanban-action-btn" id="collapse-all">Recolher todas</button></div>
+<section class="kanban-section"><h2 class="kanban-section-title">Kanban das demandas de amanhã <span class="kanban-section-count">Pré-férias + Diplomado + Comercial + Contratos + Conteúdo</span></h2><div class="kanban-actions"><button class="kanban-action-btn" id="expand-all">Expandir todas</button><button class="kanban-action-btn" id="collapse-all">Recolher todas</button></div>
     ${fronts.map(frontCard).join('\n')}
   </section>
 <footer class="footer">Painel operacional XDental · Atualizado pelo TAOS em 13/09/2026<br>Fontes: áudio do Ruan no tópico Dados/Painel + Google Calendar rdomith@gmail.com</footer>

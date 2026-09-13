@@ -6,7 +6,7 @@
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Foco de amanhã: blindar a operação antes das férias, com Fabián, Freedom 21/09, Stefan/M09 22/09, Cata/comercial, WhatsApp, live com Sérgio e imagens de conversão."
+    "headline": "Foco de amanhã: blindar a operação antes das férias, com Fabián, Freedom 21/09, Stefan/M09 22/09, Cata/comercial, WhatsApp, contrato Faciencia, live com Sérgio e imagens de conversão."
   },
   "fronts": [
     {
@@ -202,6 +202,33 @@
         "Passar pacote final para Felipe com ordem de envio."
       ],
       "done": []
+    },
+    {
+      "id": "contrato-faciencia-2026-09-14",
+      "filter": "contrato",
+      "icon": "CT",
+      "name": "Contrato · Faciencia",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 10,
+      "owner": "Ruan",
+      "summary": "Assinatura de contrato com a Faciencia precisa entrar como P0 administrativo, mas com revisão mínima antes da assinatura por envolver acordo formal.",
+      "exec": [
+        "Localizar versão final do contrato com a Faciencia.",
+        "Revisar pontos críticos antes de assinar: partes, escopo, valores, prazos, obrigações, multa/rescisão e foro.",
+        "Assinar somente se a versão estiver final e sem pendência jurídica/comercial.",
+        "Salvar o contrato assinado no Drive/pasta correta depois da assinatura."
+      ],
+      "wait": [
+        "Versão final do contrato.",
+        "Confirmação de que não há cláusula pendente ou ponto comercial em aberto.",
+        "Definição da pasta/arquivo final para arquivamento."
+      ],
+      "next": [
+        "Após assinatura: registrar contrato assinado e avisar internamente quem precisa saber.",
+        "Se houver dúvida em cláusula: pausar assinatura e resolver antes."
+      ],
+      "done": []
     }
   ],
   "gargalos": [
@@ -236,6 +263,14 @@
       "deadline": "14/09/2026",
       "blocks": "Se Sérgio não confirmar 20h e Felipe não ficar de backup, o envio de link pode falhar enquanto Ruan estiver no avião.",
       "owner": "Ruan / Sérgio / Felipe"
+    },
+    {
+      "title": "Contrato com a Faciencia precisa de revisão antes da assinatura",
+      "filter": "contrato",
+      "frente": "Administrativo / Contratos",
+      "deadline": "14/09/2026",
+      "blocks": "Contrato é acordo formal. O risco não é executar, é assinar versão com cláusula, valor, prazo ou obrigação desalinhada.",
+      "owner": "Ruan"
     }
   ],
   "radarDoDia": [
@@ -318,6 +353,13 @@
     },
     {
       "time": "Amanhã",
+      "frontLabel": "Faciencia",
+      "frontClass": "contrato",
+      "task": "Assinar contrato com a Faciencia após revisão dos pontos críticos.",
+      "status": "P0"
+    },
+    {
+      "time": "Amanhã",
       "frontLabel": "Sérgio",
       "frontClass": "live",
       "task": "Alinhar live de quarta como resumo especial do evento, idealmente às 20h.",
@@ -360,10 +402,10 @@
     }
   ],
   "metrics": {
-    "tasks": 17,
+    "tasks": 18,
     "today": 13,
     "week": 4,
-    "waiting": 21,
+    "waiting": 24,
     "done": 3
   },
   "radarExtra": "Fontes: áudio do Ruan em 13/09 no tópico Dados/Painel + Google Calendar rdomith@gmail.com consultado de 14/09 a 23/09. Conteúdo antigo removido da tela. Observação: prova Freedom 21/09 foi citada no áudio, mas não apareceu no Calendar consultado.",
