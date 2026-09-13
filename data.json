@@ -1,258 +1,372 @@
 {
   "dashboard": {
     "name": "Painel Operacional XDental",
-    "version": "2.33-radar-2026-09-08",
-    "lastUpdated": "2026-09-08 · comandos de hoje",
+    "version": "2.34-radar-2026-09-14-pre-ferias",
+    "lastUpdated": "2026-09-13 · radar de amanhã",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Foco do dia: reunião 14h com Sérgio, destravar API/Felipe, subir Dominando el MARPE e limpar execução do lançamento pré-Black de sábado."
+    "headline": "Foco de amanhã: blindar a operação antes das férias, com Fabián, Freedom 21/09, Stefan/M09 22/09, Cata/comercial, WhatsApp, live com Sérgio e imagens de conversão."
   },
   "fronts": [
     {
-      "id": "lancamento-pre-black-2026-09-08",
-      "filter": "lancamento",
-      "icon": "🚀",
-      "name": "Lançamento pré-Black · sábado 12/09",
+      "id": "pre-ferias-operacional-2026-09-14",
+      "filter": "pre-ferias",
+      "icon": "PF",
+      "name": "Pré-férias · blindagem operacional 16/09 a 23/09",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 28,
+      "owner": "Ruan / TAOS / Operação",
+      "summary": "Segunda é o dia de deixar a operação sem dependência do Ruan antes das férias. O período crítico vai de 16/09 a 23/09, com Freedom dia 21 e encontro do Diplomado M09 dia 22.",
+      "exec": [
+        "Limpar o painel antigo e trabalhar só com as demandas novas do áudio de 13/09.",
+        "Mapear as ações que acontecem durante as férias: prova Freedom em 21/09 e encontro M09/Stefan em 22/09.",
+        "Separar o que precisa estar delegado antes de quarta-feira 16/09.",
+        "Garantir responsáveis claros para Mônica e Felipe nas ações dos dias 21 e 22."
+      ],
+      "wait": [
+        "Confirmação final de quem cobre cada ação enquanto Ruan estiver fora.",
+        "Validação de que os links e comunicações dos dias 21 e 22 estão prontos antes da viagem.",
+        "Conferência do evento da prova Freedom no Google Calendar, pois não apareceu na consulta feita em 13/09."
+      ],
+      "next": [
+        "15/09: fazer checkpoint final de cobertura com Mônica e Felipe.",
+        "16/09: início das férias no Calendar.",
+        "23/09: retorno previsto e revisão do que aconteceu durante a ausência."
+      ],
+      "done": [
+        "Google Calendar rdomith@gmail.com conferido em 13/09: férias de 16/09 a 23/09, evento M09/Stefan em 22/09 e pagamento professor M09 em 23/09."
+      ]
+    },
+    {
+      "id": "fabian-diplomado-anclaje-2026-09-14",
+      "filter": "fabian",
+      "icon": "ED",
+      "name": "Fabián · próximas edições do Diplomado",
+      "status": "attention",
+      "priority": "p0",
+      "progress": 20,
+      "owner": "Ruan / Fabián",
+      "summary": "Alinhar com Fabián as próximas edições dos conteúdos do Diplomado de Anclaje antes da viagem, para não deixar produção parada enquanto Ruan estiver fora.",
+      "exec": [
+        "Alinhar amanhã com Fabián as próximas edições dos conteúdos do Diplomado de Anclaje.",
+        "Definir ordem de prioridade dos conteúdos que precisam ser editados primeiro.",
+        "Confirmar prazo de entrega ou checkpoint durante o período 16/09 a 23/09."
+      ],
+      "wait": [
+        "Lista de conteúdos pendentes de edição.",
+        "Disponibilidade de Fabián e prazo real de entrega.",
+        "Confirmação do que precisa de revisão do Ruan antes das férias."
+      ],
+      "next": [
+        "Após o alinhamento: transformar combinado em checklist por conteúdo.",
+        "Deixar combinado se Fabián manda prévias para Mônica/Felipe ou espera retorno do Ruan."
+      ],
+      "done": []
+    },
+    {
+      "id": "freedom-prova-2026-09-21",
+      "filter": "freedom",
+      "icon": "FR",
+      "name": "Freedom · liberação da prova em 21/09",
+      "status": "risk",
+      "priority": "p0",
+      "progress": 60,
+      "owner": "Ruan / Mônica",
+      "summary": "A prova do Freedom já está pronta e enviada para Mônica, mas precisa de um novo alinhamento para garantir liberação correta no dia 21/09 durante as férias.",
+      "exec": [
+        "Reunir ou falar novamente com Mônica sobre a prova do Freedom.",
+        "Confirmar que a prova está pronta, no formato certo e com data de liberação em 21/09.",
+        "Validar comunicação aos alunos e responsável por acompanhar eventuais dúvidas.",
+        "Conferir se o evento da prova Freedom está corretamente registrado no Calendar."
+      ],
+      "wait": [
+        "Confirmação de Mônica sobre liberação e comunicação.",
+        "Confirmação do registro no Calendar, pois não apareceu na consulta de 13/09.",
+        "Definição de quem resolve problema operacional no dia 21/09 se o Ruan estiver offline."
+      ],
+      "next": [
+        "21/09: liberar prova do Freedom.",
+        "Após liberação: registrar se houve problema ou dúvida recorrente dos alunos."
+      ],
+      "done": [
+        "Ruan informou que a prova já está pronta e já foi enviada para Mônica."
+      ]
+    },
+    {
+      "id": "diplomado-m09-stefan-2026-09-22",
+      "filter": "stefan",
+      "icon": "M9",
+      "name": "Diplomado M09 · encontro ao vivo com Stefan Cardon",
       "status": "risk",
       "priority": "p0",
       "progress": 35,
-      "owner": "Ruan / Sérgio / Felipe / Luna / Tráfego",
-      "summary": "O lançamento de sábado precisa sair da zona de conversa e virar execução hoje: oferta fechada com Sérgio, API corrigida com Felipe, ClickUp conferido e ação de compradores puxando presença/VIP.",
+      "owner": "Ruan / Felipe / Mônica / Stefan Cardon",
+      "summary": "O encontro ao vivo do módulo 9 está no Calendar em 22/09 às 14h BRT, mas Ruan precisa falar com Felipe e deixar Meet/link/comunicação prontos antes da viagem.",
       "exec": [
-        "Reunião presencial 14h com Sérgio: fechar oferta do lançamento de sábado.",
-        "Validar na mesma reunião como a Black Friday entra sem confundir a oferta atual.",
-        "Conferir no ClickUp todas as demandas do lançamento, principalmente mensagens da fase de intensificação.",
-        "Preparar ação com Luna para compradores de ingresso levarem mais gente e aquecerem presença/VIP.",
-        "Pedir variações novas de criativos para tráfego nesta reta final."
+        "Falar com Felipe sobre o encontro ao vivo com Stefan Cardon em 22/09.",
+        "Confirmar com Mônica o fluxo de comunicação do encontro M09.",
+        "Criar o Meet e mandar o link para Stefan/Felipe/Mônica.",
+        "Deixar Felipe como cobertura operacional caso Ruan não consiga atuar no horário."
       ],
       "wait": [
-        "Decisão final da oferta com Sérgio.",
-        "Confirmação do que entra no lançamento de sábado versus o que fica para Black.",
-        "Status real das tarefas do ClickUp após conferência."
+        "Confirmação de Felipe sobre participação/cobertura.",
+        "Link do Meet criado e enviado.",
+        "Confirmação de Mônica sobre envio do link aos alunos."
       ],
       "next": [
-        "Após a reunião: transformar decisões em checklist de copy, tráfego, grupos e checkout.",
-        "Depois da ação com Luna: acompanhar respostas, presença e novas vendas de ingresso."
+        "22/09 14h BRT: encontro ao vivo M09 com Dr. Stefan Cardon.",
+        "23/09: Calendar marca programação de pagamento do professor se arquivo final estiver entregue/aprovado."
       ],
       "done": [
-        "Data confirmada no Google Calendar: sábado 12/09/2026."
+        "Evento confirmado no Google Calendar: Diplomado M9 — Encuentro ao vivo com Dr. Stefan Cardon em 22/09, 14h-15h30 BRT."
       ]
     },
     {
-      "id": "felipe-api-sniper-marpe-2026-09-08",
-      "filter": "felipe",
-      "icon": "📡",
-      "name": "Felipe · API, Sniper e Dominando el MARPE",
-      "status": "risk",
-      "priority": "p0",
-      "progress": 20,
-      "owner": "Ruan / Felipe",
-      "summary": "Felipe concentra dois bloqueios comerciais e operacionais: a API provavelmente não foi disparada na semana passada e o novo curso Dominando el MARPE ainda não subiu na plataforma.",
-      "exec": [
-        "Confirmar com Felipe se a API da semana passada foi disparada ou não.",
-        "Se não disparou: cobrar plano de correção e janela de disparo hoje.",
-        "Reforçar prioridade máxima: dublagem do Sniper.",
-        "Cobrar upload/publicação do curso Dominando el MARPE na plataforma XDental.",
-        "Pedir horário exato em que o MARPE ficará publicado."
-      ],
-      "wait": [
-        "Confirmação de Felipe sobre disparo da API.",
-        "Prazo de publicação do Dominando el MARPE.",
-        "Status da dublagem do Sniper."
-      ],
-      "next": [
-        "Com MARPE publicado: alinhar Mônica e liberar arte para Diego.",
-        "Com API disparada: monitorar venda de API/ingressos e registrar origem."
-      ],
-      "done": []
-    },
-    {
-      "id": "black-friday-tour-sergio-2026-09-08",
-      "filter": "black",
-      "icon": "⚡",
-      "name": "Black Friday · narrativa e Tour com Sérgio",
+      "id": "comercial-cata-whatsapp-diplomado-2026-09-14",
+      "filter": "comercial",
+      "icon": "CO",
+      "name": "Comercial + Cata · ações e WhatsApp do Diplomado",
       "status": "attention",
       "priority": "p1",
       "progress": 25,
-      "owner": "Ruan / Sérgio",
-      "summary": "A Black precisa sair da ideia solta para narrativa de venda. O diferencial possível é o Tour com Sérgio em capitais, amarrado como chance/benefício dentro da oferta.",
+      "owner": "Ruan / Cata / Felipe",
+      "summary": "A reunião com Cata precisa sair com ações comerciais claras e as mensagens dos grupos de WhatsApp refinadas para Felipe disparar no lançamento do Diplomado.",
       "exec": [
-        "Revisar o material da reunião de hoje com ideias narrativas para Black.",
-        "Levar para Sérgio a proposta do Tour em capitais no ano que vem.",
-        "Definir como o Tour entra na oferta: bônus, chance, critério ou privilégio para compradores da Black.",
-        "Avaliar como o Tour também pode vender presencialmente para mais pessoas nas cidades."
+        "Fazer reunião com Cata do comercial sobre as próximas ações.",
+        "Refinar mensagens dos grupos de WhatsApp do lançamento do Diplomado.",
+        "Separar versão final das mensagens para Felipe fazer os envios.",
+        "Definir cadência e objetivo de cada mensagem nos grupos."
       ],
       "wait": [
-        "Validação de Sérgio sobre disposição para o Tour.",
-        "Lista inicial de capitais/cidades viáveis.",
-        "Definição do encaixe comercial dentro da Black."
+        "Direção final da conversa com Cata.",
+        "Mensagens aprovadas para Felipe.",
+        "Confirmação de Felipe sobre execução dos envios."
       ],
       "next": [
-        "Depois da reunião: consolidar narrativa, mecânica e promessa central da Black.",
-        "Separar decisões de Black das demandas urgentes do lançamento de sábado."
+        "Após reunião: transformar decisões comerciais em tarefas objetivas.",
+        "Após mensagens finais: passar para Felipe com datas e horários de envio."
       ],
       "done": []
     },
     {
-      "id": "diplomado-marpe-comunicacao-2026-09-08",
-      "filter": "diplomado",
-      "icon": "🎓",
-      "name": "Diplomado e curso do mês · M09 + MARPE",
+      "id": "live-quarta-resumo-evento-2026-09-16",
+      "filter": "live",
+      "icon": "LV",
+      "name": "Live de quarta · resumo especial do evento",
       "status": "risk",
       "priority": "p0",
       "progress": 30,
-      "owner": "Ruan / Mônica / Felipe / Diego",
-      "summary": "Hoje tem liberação do M09 no calendário e o Dominando el MARPE precisa entrar como curso novo do mês. Sem upload, Mônica e Diego ficam travados.",
+      "owner": "Ruan / Sérgio / Felipe",
+      "summary": "A live de quarta precisa ser alinhada com Sérgio para 20h, com Felipe preparado para cobrir link/envio caso Ruan esteja no avião.",
       "exec": [
-        "Confirmar liberação do Diplomado M09 aos alunos hoje.",
-        "Alinhar com Mônica que Dominando el MARPE é o novo curso do mês.",
-        "Confirmar com Mônica fluxo de liberação/comunicação do MARPE.",
-        "Fazer arte para Diego postar sobre o novo curso do mês.",
-        "Só passar arte final para Diego depois de nome, promessa e status de publicação estarem confirmados."
+        "Alinhar com Sérgio a live de quarta-feira como encontro especial de resumo do evento.",
+        "Tentar programar para 20h e confirmar disponibilidade de Sérgio.",
+        "Pedir para Felipe participar/cobrir o horário.",
+        "Garantir que o link seja enviado para o pessoal mesmo se Ruan não conseguir fazer do avião."
       ],
       "wait": [
-        "Status final do upload do MARPE por Felipe.",
-        "Confirmação de Mônica sobre comunicação do curso do mês.",
-        "Informações finais para a arte do Diego."
+        "Confirmação de Sérgio para quarta às 20h.",
+        "Confirmação de Felipe como backup operacional.",
+        "Link final para envio ao grupo/público."
       ],
       "next": [
-        "Após publicação do MARPE: liberar Diego para postagem.",
-        "Depois da liberação M09: registrar se houve qualquer pendência com alunos."
+        "Com horário confirmado: mandar link e orientar Felipe sobre contingência.",
+        "Depois da live: registrar dúvidas e oportunidades comerciais geradas."
       ],
-      "done": [
-        "Google Calendar 08/09 conferido: Diplomado M09 — liberar módulo aos alunos."
-      ]
+      "done": []
+    },
+    {
+      "id": "imagens-conversao-whatsapp-2026-09-14",
+      "filter": "imagens",
+      "icon": "IMG",
+      "name": "Imagens de conversão · grupos de WhatsApp",
+      "status": "attention",
+      "priority": "p1",
+      "progress": 15,
+      "owner": "Ruan",
+      "summary": "Antes das mensagens dos grupos, Ruan quer deixar imagens de conversão separadas. Isso precisa ficar pronto amanhã para não virar gargalo na terça/quarta.",
+      "exec": [
+        "Preparar amanhã as imagens de conversão.",
+        "Separar uma imagem para acompanhar cada bloco de mensagem dos grupos.",
+        "Organizar os arquivos antes de finalizar as mensagens para Felipe."
+      ],
+      "wait": [
+        "Lista final de mensagens dos grupos.",
+        "Definição de quantas imagens serão necessárias.",
+        "Validação visual das imagens antes de passar para Felipe."
+      ],
+      "next": [
+        "Com imagens prontas: anexar ao pacote de mensagens de WhatsApp.",
+        "Passar pacote final para Felipe com ordem de envio."
+      ],
+      "done": []
     }
   ],
   "gargalos": [
     {
-      "title": "API provavelmente não foi disparada",
-      "filter": "felipe",
-      "frente": "Lançamento pré-Black",
-      "deadline": "Hoje",
-      "blocks": "Quase não houve venda de API; se o disparo não saiu, a operação perdeu tração antes do lançamento de sábado.",
-      "owner": "Ruan / Felipe"
+      "title": "Freedom dia 21 não apareceu no Calendar consultado",
+      "filter": "freedom",
+      "frente": "Freedom / Prova",
+      "deadline": "14/09/2026",
+      "blocks": "Ruan informou que está no calendário, mas a consulta ao rdomith@gmail.com entre 20/09 e 22/09 mostrou apenas FÉRIAS. Precisa conferir para não passar batido durante ausência.",
+      "owner": "Ruan / Mônica"
     },
     {
-      "title": "Dominando el MARPE ainda não subiu",
-      "filter": "diplomado",
-      "frente": "Curso do mês / Plataforma XDental",
-      "deadline": "Hoje",
-      "blocks": "Sem upload, Mônica não consegue organizar comunicação e Diego não consegue postar com segurança.",
-      "owner": "Felipe / Mônica / Diego"
+      "title": "Ruan sai de férias em 16/09 com ações críticas nos dias 21 e 22",
+      "filter": "pre-ferias",
+      "frente": "Pré-férias / Operação",
+      "deadline": "16/09/2026",
+      "blocks": "Sem cobertura clara de Mônica/Felipe, qualquer falha de link, envio ou liberação cai no colo do Ruan durante férias.",
+      "owner": "Ruan / TAOS"
     },
     {
-      "title": "Oferta de sábado precisa ser fechada na reunião das 14h",
-      "filter": "lancamento",
-      "frente": "Lançamento pago pré-Black",
-      "deadline": "08/09/2026 14h",
-      "blocks": "Sem oferta fechada, copy, tráfego, grupos, ação de compradores e checkout ficam sem direção na reta final.",
-      "owner": "Ruan / Sérgio"
+      "title": "Encontro M09/Stefan precisa de link e backup operacional",
+      "filter": "stefan",
+      "frente": "Diplomado M09",
+      "deadline": "14/09/2026",
+      "blocks": "O evento está no Calendar para 22/09 às 14h BRT, mas Felipe ainda precisa ser alinhado e o Meet precisa ficar criado/enviado.",
+      "owner": "Ruan / Felipe / Mônica"
     },
     {
-      "title": "Black Friday precisa de narrativa clara",
-      "filter": "black",
-      "frente": "Black Friday 2026",
-      "deadline": "Hoje na reunião",
-      "blocks": "A ideia do Tour com Sérgio pode ser o diferencial, mas precisa de validação e encaixe comercial para não virar promessa solta.",
-      "owner": "Ruan / Sérgio"
+      "title": "Live de quarta depende de Sérgio + Felipe",
+      "filter": "live",
+      "frente": "Lançamento / Resumo do evento",
+      "deadline": "14/09/2026",
+      "blocks": "Se Sérgio não confirmar 20h e Felipe não ficar de backup, o envio de link pode falhar enquanto Ruan estiver no avião.",
+      "owner": "Ruan / Sérgio / Felipe"
     }
   ],
   "radarDoDia": [
     {
-      "time": "Antes 14h",
-      "frontLabel": "Material Black",
-      "frontClass": "black",
-      "task": "Revisar material da reunião com Sérgio: narrativa Black + ideia do Tour nas capitais.",
-      "status": "🔥"
+      "time": "Manhã",
+      "frontLabel": "Painel",
+      "frontClass": "pre-ferias",
+      "task": "Usar só as demandas novas do áudio de 13/09; painel antigo limpo.",
+      "status": "OK"
     },
     {
-      "time": "14h",
-      "frontLabel": "Sérgio",
-      "frontClass": "lancamento",
-      "task": "Reunião presencial: fechar oferta do lançamento de sábado e separar o que é pré-Black do que é Black.",
-      "status": "🔥"
+      "time": "Amanhã",
+      "frontLabel": "Fabián",
+      "frontClass": "fabian",
+      "task": "Alinhar próximas edições dos conteúdos do Diplomado de Anclaje.",
+      "status": "P0"
     },
     {
-      "time": "Hoje",
-      "frontLabel": "Felipe/API",
-      "frontClass": "felipe",
-      "task": "Confirmar se a API da semana passada foi disparada; se não, cobrar correção e janela de disparo hoje.",
-      "status": "⚠️"
+      "time": "Amanhã",
+      "frontLabel": "Férias",
+      "frontClass": "pre-ferias",
+      "task": "Mapear cobertura do período 16/09 a 23/09 antes da viagem.",
+      "status": "P0"
     },
     {
-      "time": "Hoje",
-      "frontLabel": "Sniper",
-      "frontClass": "felipe",
-      "task": "Reforçar com Felipe prioridade máxima: dublagem do Sniper.",
-      "status": "🔥"
+      "time": "Amanhã",
+      "frontLabel": "Freedom",
+      "frontClass": "freedom",
+      "task": "Falar novamente com Mônica sobre a prova do Freedom que libera em 21/09.",
+      "status": "P0"
     },
     {
-      "time": "Hoje",
-      "frontLabel": "MARPE",
-      "frontClass": "felipe",
-      "task": "Cobrar Felipe pelo upload/publicação do Dominando el MARPE.",
-      "status": "⚠️"
+      "time": "Amanhã",
+      "frontLabel": "Calendar",
+      "frontClass": "freedom",
+      "task": "Conferir/ajustar registro da prova Freedom no Google Calendar; não apareceu na consulta de 13/09.",
+      "status": "ALERTA"
     },
     {
-      "time": "Hoje",
+      "time": "Amanhã",
+      "frontLabel": "Stefan M09",
+      "frontClass": "stefan",
+      "task": "Falar com Felipe sobre o encontro ao vivo com Stefan Cardon em 22/09.",
+      "status": "P0"
+    },
+    {
+      "time": "Amanhã",
+      "frontLabel": "Meet",
+      "frontClass": "stefan",
+      "task": "Criar o Meet do M09 e enviar link para Stefan/Felipe/Mônica.",
+      "status": "P1"
+    },
+    {
+      "time": "Amanhã",
       "frontLabel": "Mônica",
-      "frontClass": "diplomado",
-      "task": "Alinhar que Dominando el MARPE é o curso novo do mês e confirmar fluxo de comunicação.",
-      "status": "📌"
+      "frontClass": "stefan",
+      "task": "Confirmar com Mônica o fluxo de comunicação do encontro M09.",
+      "status": "P1"
     },
     {
-      "time": "Hoje",
-      "frontLabel": "Diego",
-      "frontClass": "diplomado",
-      "task": "Preparar arte para Diego postar o novo curso do mês após confirmação de publicação/promessa.",
-      "status": "📌"
+      "time": "Amanhã",
+      "frontLabel": "Cata",
+      "frontClass": "comercial",
+      "task": "Reunião com Cata do comercial para alinhar próximas ações.",
+      "status": "P0"
     },
     {
-      "time": "Hoje",
-      "frontLabel": "ClickUp",
-      "frontClass": "lancamento",
-      "task": "Conferir demandas do lançamento no ClickUp, principalmente mensagens da fase de intensificação.",
-      "status": "🔥"
+      "time": "Amanhã",
+      "frontLabel": "WhatsApp",
+      "frontClass": "comercial",
+      "task": "Refinar mensagens dos grupos do lançamento do Diplomado para Felipe enviar.",
+      "status": "P0"
     },
     {
-      "time": "Hoje",
-      "frontLabel": "Luna/VIP",
-      "frontClass": "lancamento",
-      "task": "Preparar ação com Luna para compradores de ingresso levarem mais gente e aquecerem presença/VIP.",
-      "status": "🔥"
+      "time": "Amanhã",
+      "frontLabel": "Imagens",
+      "frontClass": "imagens",
+      "task": "Preparar imagens de conversão para colocar antes das mensagens nos grupos.",
+      "status": "P1"
     },
     {
-      "time": "Hoje",
-      "frontLabel": "Criativos",
-      "frontClass": "lancamento",
-      "task": "Pedir variações novas de criativos para tráfego nesta reta final.",
-      "status": "📌"
+      "time": "Amanhã",
+      "frontLabel": "Sérgio",
+      "frontClass": "live",
+      "task": "Alinhar live de quarta como resumo especial do evento, idealmente às 20h.",
+      "status": "P0"
     },
     {
-      "time": "Hoje",
-      "frontLabel": "Diplomado M09",
-      "frontClass": "diplomado",
-      "task": "Confirmar liberação do módulo M09 aos alunos.",
-      "status": "⚠️"
+      "time": "Amanhã",
+      "frontLabel": "Felipe",
+      "frontClass": "live",
+      "task": "Pedir Felipe no horário da live para cobrir link/envio se Ruan estiver no avião.",
+      "status": "ALERTA"
     },
     {
-      "time": "12/09",
-      "frontLabel": "Lançamento",
-      "frontClass": "lancamento",
-      "task": "Lançamento pago pré-Black acontece sábado.",
-      "status": "📅"
+      "time": "16/09",
+      "frontLabel": "Férias",
+      "frontClass": "pre-ferias",
+      "task": "Início das férias no Google Calendar.",
+      "status": "CAL"
+    },
+    {
+      "time": "21/09",
+      "frontLabel": "Freedom",
+      "frontClass": "freedom",
+      "task": "Liberação da prova do Freedom durante as férias.",
+      "status": "CAL"
+    },
+    {
+      "time": "22/09 14h",
+      "frontLabel": "Stefan M09",
+      "frontClass": "stefan",
+      "task": "Encontro ao vivo do módulo 9 com Dr. Stefan Cardon.",
+      "status": "CAL"
+    },
+    {
+      "time": "23/09",
+      "frontLabel": "Retorno",
+      "frontClass": "pre-ferias",
+      "task": "Retorno previsto e revisão do que rodou durante a ausência.",
+      "status": "CAL"
     }
   ],
   "metrics": {
-    "tasks": 12,
-    "today": 11,
-    "week": 1,
-    "waiting": 11,
-    "done": 2
+    "tasks": 17,
+    "today": 13,
+    "week": 4,
+    "waiting": 21,
+    "done": 3
   },
-  "radarExtra": "Fontes: áudios/textos do Ruan em 08/09 no tópico Dados/Painel + Google Calendar rdomith@gmail.com consultado em 08/09. Conteúdo antigo removido da tela: painel agora mostra apenas demandas de hoje e marcos imediatos do lançamento de sábado.",
-  "sourceFile": "tmp_update_panel_20260908.js",
+  "radarExtra": "Fontes: áudio do Ruan em 13/09 no tópico Dados/Painel + Google Calendar rdomith@gmail.com consultado de 14/09 a 23/09. Conteúdo antigo removido da tela. Observação: prova Freedom 21/09 foi citada no áudio, mas não apareceu no Calendar consultado.",
+  "sourceFile": "tmp_update_panel_20260913.js",
   "radar": []
 }
