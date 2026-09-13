@@ -2,11 +2,11 @@
   "dashboard": {
     "name": "Painel Operacional XDental",
     "version": "2.34-radar-2026-09-14-pre-ferias",
-    "lastUpdated": "2026-09-13 · radar de amanhã",
+    "lastUpdated": "2026-09-13 · painel do dia 14/09",
     "owner": "Ruan Domith",
     "operator": "TAOS",
     "status": "operational",
-    "headline": "Foco de amanhã: blindar a operação antes das férias, com Fabián, Freedom 21/09, Stefan/M09 22/09, Cata/comercial, WhatsApp, contrato Faciencia, live com Sérgio e imagens de conversão."
+    "headline": "Foco de hoje: blindar a operação antes das férias, com Fabián, Freedom 21/09, Stefan/M09 22/09, Cata/comercial, WhatsApp, contrato Faciencia, live com Sérgio e imagens de conversão."
   },
   "fronts": [
     {
@@ -282,91 +282,91 @@
       "status": "OK"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Fabián",
       "frontClass": "fabian",
       "task": "Alinhar próximas edições dos conteúdos do Diplomado de Anclaje.",
       "status": "P0"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Férias",
       "frontClass": "pre-ferias",
       "task": "Mapear cobertura do período 16/09 a 23/09 antes da viagem.",
       "status": "P0"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Freedom",
       "frontClass": "freedom",
       "task": "Falar novamente com Mônica sobre a prova do Freedom que libera em 21/09.",
       "status": "P0"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Calendar",
       "frontClass": "freedom",
       "task": "Conferir/ajustar registro da prova Freedom no Google Calendar; não apareceu na consulta de 13/09.",
       "status": "ALERTA"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Stefan M09",
       "frontClass": "stefan",
       "task": "Falar com Felipe sobre o encontro ao vivo com Stefan Cardon em 22/09.",
       "status": "P0"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Meet",
       "frontClass": "stefan",
       "task": "Criar o Meet do M09 e enviar link para Stefan/Felipe/Mônica.",
       "status": "P1"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Mônica",
       "frontClass": "stefan",
       "task": "Confirmar com Mônica o fluxo de comunicação do encontro M09.",
       "status": "P1"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Cata",
       "frontClass": "comercial",
       "task": "Reunião com Cata do comercial para alinhar próximas ações.",
       "status": "P0"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "WhatsApp",
       "frontClass": "comercial",
       "task": "Refinar mensagens dos grupos do lançamento do Diplomado para Felipe enviar.",
       "status": "P0"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Imagens",
       "frontClass": "imagens",
       "task": "Preparar imagens de conversão para colocar antes das mensagens nos grupos.",
       "status": "P1"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Faciencia",
       "frontClass": "contrato",
       "task": "Assinar contrato com a Faciencia após revisão dos pontos críticos.",
       "status": "P0"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Sérgio",
       "frontClass": "live",
       "task": "Alinhar live de quarta como resumo especial do evento, idealmente às 20h.",
       "status": "P0"
     },
     {
-      "time": "Amanhã",
+      "time": "Hoje",
       "frontLabel": "Felipe",
       "frontClass": "live",
       "task": "Pedir Felipe no horário da live para cobrir link/envio se Ruan estiver no avião.",

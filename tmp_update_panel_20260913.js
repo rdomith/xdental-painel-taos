@@ -229,19 +229,19 @@ const fronts = [
 
 const radar = [
   ['Manhã', 'Painel', 'pre-ferias', 'Usar só as demandas novas do áudio de 13/09; painel antigo limpo.', 'OK'],
-  ['Amanhã', 'Fabián', 'fabian', 'Alinhar próximas edições dos conteúdos do Diplomado de Anclaje.', 'P0'],
-  ['Amanhã', 'Férias', 'pre-ferias', 'Mapear cobertura do período 16/09 a 23/09 antes da viagem.', 'P0'],
-  ['Amanhã', 'Freedom', 'freedom', 'Falar novamente com Mônica sobre a prova do Freedom que libera em 21/09.', 'P0'],
-  ['Amanhã', 'Calendar', 'freedom', 'Conferir/ajustar registro da prova Freedom no Google Calendar; não apareceu na consulta de 13/09.', 'ALERTA'],
-  ['Amanhã', 'Stefan M09', 'stefan', 'Falar com Felipe sobre o encontro ao vivo com Stefan Cardon em 22/09.', 'P0'],
-  ['Amanhã', 'Meet', 'stefan', 'Criar o Meet do M09 e enviar link para Stefan/Felipe/Mônica.', 'P1'],
-  ['Amanhã', 'Mônica', 'stefan', 'Confirmar com Mônica o fluxo de comunicação do encontro M09.', 'P1'],
-  ['Amanhã', 'Cata', 'comercial', 'Reunião com Cata do comercial para alinhar próximas ações.', 'P0'],
-  ['Amanhã', 'WhatsApp', 'comercial', 'Refinar mensagens dos grupos do lançamento do Diplomado para Felipe enviar.', 'P0'],
-  ['Amanhã', 'Imagens', 'imagens', 'Preparar imagens de conversão para colocar antes das mensagens nos grupos.', 'P1'],
-  ['Amanhã', 'Faciencia', 'contrato', 'Assinar contrato com a Faciencia após revisão dos pontos críticos.', 'P0'],
-  ['Amanhã', 'Sérgio', 'live', 'Alinhar live de quarta como resumo especial do evento, idealmente às 20h.', 'P0'],
-  ['Amanhã', 'Felipe', 'live', 'Pedir Felipe no horário da live para cobrir link/envio se Ruan estiver no avião.', 'ALERTA'],
+  ['Hoje', 'Fabián', 'fabian', 'Alinhar próximas edições dos conteúdos do Diplomado de Anclaje.', 'P0'],
+  ['Hoje', 'Férias', 'pre-ferias', 'Mapear cobertura do período 16/09 a 23/09 antes da viagem.', 'P0'],
+  ['Hoje', 'Freedom', 'freedom', 'Falar novamente com Mônica sobre a prova do Freedom que libera em 21/09.', 'P0'],
+  ['Hoje', 'Calendar', 'freedom', 'Conferir/ajustar registro da prova Freedom no Google Calendar; não apareceu na consulta de 13/09.', 'ALERTA'],
+  ['Hoje', 'Stefan M09', 'stefan', 'Falar com Felipe sobre o encontro ao vivo com Stefan Cardon em 22/09.', 'P0'],
+  ['Hoje', 'Meet', 'stefan', 'Criar o Meet do M09 e enviar link para Stefan/Felipe/Mônica.', 'P1'],
+  ['Hoje', 'Mônica', 'stefan', 'Confirmar com Mônica o fluxo de comunicação do encontro M09.', 'P1'],
+  ['Hoje', 'Cata', 'comercial', 'Reunião com Cata do comercial para alinhar próximas ações.', 'P0'],
+  ['Hoje', 'WhatsApp', 'comercial', 'Refinar mensagens dos grupos do lançamento do Diplomado para Felipe enviar.', 'P0'],
+  ['Hoje', 'Imagens', 'imagens', 'Preparar imagens de conversão para colocar antes das mensagens nos grupos.', 'P1'],
+  ['Hoje', 'Faciencia', 'contrato', 'Assinar contrato com a Faciencia após revisão dos pontos críticos.', 'P0'],
+  ['Hoje', 'Sérgio', 'live', 'Alinhar live de quarta como resumo especial do evento, idealmente às 20h.', 'P0'],
+  ['Hoje', 'Felipe', 'live', 'Pedir Felipe no horário da live para cobrir link/envio se Ruan estiver no avião.', 'ALERTA'],
   ['16/09', 'Férias', 'pre-ferias', 'Início das férias no Google Calendar.', 'CAL'],
   ['21/09', 'Freedom', 'freedom', 'Liberação da prova do Freedom durante as férias.', 'CAL'],
   ['22/09 14h', 'Stefan M09', 'stefan', 'Encontro ao vivo do módulo 9 com Dr. Stefan Cardon.', 'CAL'],
@@ -252,11 +252,11 @@ const data = {
   dashboard: {
     name: 'Painel Operacional XDental',
     version: '2.34-radar-2026-09-14-pre-ferias',
-    lastUpdated: '2026-09-13 · radar de amanhã',
+    lastUpdated: '2026-09-13 · painel do dia 14/09',
     owner: 'Ruan Domith',
     operator: 'TAOS',
     status: 'operational',
-    headline: 'Foco de amanhã: blindar a operação antes das férias, com Fabián, Freedom 21/09, Stefan/M09 22/09, Cata/comercial, WhatsApp, contrato Faciencia, live com Sérgio e imagens de conversão.'
+    headline: 'Foco de hoje: blindar a operação antes das férias, com Fabián, Freedom 21/09, Stefan/M09 22/09, Cata/comercial, WhatsApp, contrato Faciencia, live com Sérgio e imagens de conversão.'
   },
   fronts,
   gargalos: [
@@ -352,14 +352,14 @@ function frontCard(front) {
 }
 
 const content = `<div class="container">
-  <header class="header"><div class="header-top"><div class="brand"><div class="brand-mark"><img src="assets/xdental-logo-fundo-escuro.png" alt="Excellence Dental Academy"></div><div class="brand-info"><h1>Painel XDental</h1><div class="subtitle">v2.34 · Radar de amanhã 14/09</div></div></div><div class="header-meta"><div class="meta-pill"><span class="dot"></span>Atualizado 13/09 · foco amanhã</div><div class="meta-pill">Pré-férias · Freedom · Stefan M09 · Comercial · Contrato</div></div></div>
-    <div class="alert-bar" style="background: linear-gradient(90deg, rgba(56, 189, 248, 0.24) 0%, rgba(251, 113, 133, 0.12) 100%); border: 1px solid rgba(56, 189, 248, 0.45); color: #f8fafc; box-shadow: 0 12px 38px rgba(56, 189, 248, 0.10);"><span style="font-size: 13px; font-weight: 800; color: #7dd3fc;">TAOS</span><span><strong style="color: #c4b5fd;">Foco fechado:</strong> amanhã é dia de blindar a operação antes das férias: Fabián, Freedom 21/09, Stefan/M09 22/09, Cata, WhatsApp, contrato Faciencia, Sérgio/Felipe e imagens de conversão.</span></div>
+  <header class="header"><div class="header-top"><div class="brand"><div class="brand-mark"><img src="assets/xdental-logo-fundo-escuro.png" alt="Excellence Dental Academy"></div><div class="brand-info"><h1>Painel XDental</h1><div class="subtitle">v2.34 · Painel do dia 14/09</div></div></div><div class="header-meta"><div class="meta-pill"><span class="dot"></span>Atualizado 13/09 · foco de hoje</div><div class="meta-pill">Pré-férias · Freedom · Stefan M09 · Comercial · Contrato</div></div></div>
+    <div class="alert-bar" style="background: linear-gradient(90deg, rgba(56, 189, 248, 0.24) 0%, rgba(251, 113, 133, 0.12) 100%); border: 1px solid rgba(56, 189, 248, 0.45); color: #f8fafc; box-shadow: 0 12px 38px rgba(56, 189, 248, 0.10);"><span style="font-size: 13px; font-weight: 800; color: #7dd3fc;">TAOS</span><span><strong style="color: #c4b5fd;">Foco fechado:</strong> hoje é dia de blindar a operação antes das férias: Fabián, Freedom 21/09, Stefan/M09 22/09, Cata, WhatsApp, contrato Faciencia, Sérgio/Felipe e imagens de conversão.</span></div>
     <div class="filters-bar"><div class="filter-group"><span class="filter-label">Frente</span><button class="filter-btn active" data-filter="frente" data-value="all">Todas</button><button class="filter-btn" data-filter="frente" data-value="pre-ferias">Pré-férias</button><button class="filter-btn" data-filter="frente" data-value="fabian">Fabián</button><button class="filter-btn" data-filter="frente" data-value="freedom">Freedom</button><button class="filter-btn" data-filter="frente" data-value="stefan">Stefan M09</button><button class="filter-btn" data-filter="frente" data-value="comercial">Comercial</button><button class="filter-btn" data-filter="frente" data-value="live">Live</button><button class="filter-btn" data-filter="frente" data-value="imagens">Imagens</button><button class="filter-btn" data-filter="frente" data-value="contrato">Contrato</button></div></div>
   </header>
 <section class="radar-card"><div class="radar-head"><div class="radar-title-block"><h2>Radar operacional · Segunda 14/09</h2><div class="radar-subtitle">Pré-férias: deixar delegações, links, mensagens e imagens prontos antes de 16/09</div></div><div class="meta-pill">${radar.length} itens · America/Sao_Paulo</div></div><div class="radar-table-head"><span></span><span>Data / horário</span><span>Frente</span><span>Demanda</span><span>Status</span></div><ul class="radar-list">
 ${data.radarDoDia.map(radarItem).join('\n')}
 </ul><div class="radar-extra"><span class="radar-extra-icon">TAOS</span>${esc(data.radarExtra)}</div></section>
-<section class="kanban-section"><h2 class="kanban-section-title">Kanban das demandas de amanhã <span class="kanban-section-count">Pré-férias + Diplomado + Comercial + Contratos + Conteúdo</span></h2><div class="kanban-actions"><button class="kanban-action-btn" id="expand-all">Expandir todas</button><button class="kanban-action-btn" id="collapse-all">Recolher todas</button></div>
+<section class="kanban-section"><h2 class="kanban-section-title">Kanban das demandas de hoje <span class="kanban-section-count">Pré-férias + Diplomado + Comercial + Contratos + Conteúdo</span></h2><div class="kanban-actions"><button class="kanban-action-btn" id="expand-all">Expandir todas</button><button class="kanban-action-btn" id="collapse-all">Recolher todas</button></div>
     ${fronts.map(frontCard).join('\n')}
   </section>
 <footer class="footer">Painel operacional XDental · Atualizado pelo TAOS em 13/09/2026<br>Fontes: áudio do Ruan no tópico Dados/Painel + Google Calendar rdomith@gmail.com</footer>
@@ -375,10 +375,10 @@ if (start === -1 || end === -1) {
 
 let next = current.slice(0, start) + content + current.slice(end);
 next = next
-  .replace(/<title>.*?<\/title>/, '<title>Painel XDental · 14/09 · radar pré-férias</title>')
-  .replace(/<!-- deploy-bust: .*? -->/, '<!-- deploy-bust: 2026-09-13T22:15Z -->')
+  .replace(/<title>.*?<\/title>/, '<title>Painel XDental · 14/09 · painel do dia</title>')
+  .replace(/<!-- deploy-bust: .*? -->/, '<!-- deploy-bust: 2026-09-13T23:12Z -->')
   .replace(/const STORAGE_KEY = 'xdental_radar_[^']+';/, "const STORAGE_KEY = 'xdental_radar_2026_09_14_pre_ferias';")
   .replaceAll("status.textContent = '✅';", "status.textContent = 'OK';");
 
 fs.writeFileSync(indexPath, next);
-fs.writeFileSync(path.join(repo, '.pages-rebuild'), '2026-09-13T22:15Z\n');
+fs.writeFileSync(path.join(repo, '.pages-rebuild'), '2026-09-13T23:12Z\n');
